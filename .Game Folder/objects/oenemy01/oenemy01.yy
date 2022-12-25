@@ -1,0 +1,43 @@
+{
+  "spriteId": {
+    "name": "sEnemy01",
+    "path": "sprites/sEnemy01/sEnemy01.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "managed": true,
+  "spriteMaskId": {
+    "name": "sEnemy01",
+    "path": "sprites/sEnemy01/sEnemy01.yy",
+  },
+  "persistent": false,
+  "parentObjectId": {
+    "name": "ENEMY",
+    "path": "objects/ENEMY/ENEMY.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [],
+  "properties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"hp","path":"objects/pCut/pCut.yy",},"objectId":{"name":"pCut","path":"objects/pCut/pCut.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
+  "parent": {
+    "name": "Genull",
+    "path": "folders/Objects/Enemys/Genull.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "oEnemy01",
+  "tags": [],
+  "resourceType": "GMObject",
+}
