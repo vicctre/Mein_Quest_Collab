@@ -1,0 +1,9 @@
+# ingore all .txt files
+*.txt
+
+
+# ignore all .piskel files 
+*.piskel
+
+# ignore the full folder 
+PISKEL FILES/*
