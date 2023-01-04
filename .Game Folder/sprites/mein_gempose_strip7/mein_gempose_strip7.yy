@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "Mein_GemPose_strip7",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,30 +27,18 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"2c05c1cb-50b0-4ca7-a35b-2c12fbb414f9","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2c05c1cb-50b0-4ca7-a35b-2c12fbb414f9","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"LayerId":{"name":"ff40e2cf-7a8b-432a-8f0a-b8358389c39c","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Mein_GemPose_strip7","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","name":"2c05c1cb-50b0-4ca7-a35b-2c12fbb414f9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0f989cec-03c4-4669-b85f-a4d610907503","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0f989cec-03c4-4669-b85f-a4d610907503","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"LayerId":{"name":"ff40e2cf-7a8b-432a-8f0a-b8358389c39c","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Mein_GemPose_strip7","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","name":"0f989cec-03c4-4669-b85f-a4d610907503","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f4ba2d63-2510-4c44-8b5b-497b5a44b3ed","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f4ba2d63-2510-4c44-8b5b-497b5a44b3ed","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"LayerId":{"name":"ff40e2cf-7a8b-432a-8f0a-b8358389c39c","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Mein_GemPose_strip7","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","name":"f4ba2d63-2510-4c44-8b5b-497b5a44b3ed","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"74387a47-0b7d-48e2-8b76-45cc7b15f693","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"74387a47-0b7d-48e2-8b76-45cc7b15f693","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"LayerId":{"name":"ff40e2cf-7a8b-432a-8f0a-b8358389c39c","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Mein_GemPose_strip7","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","name":"74387a47-0b7d-48e2-8b76-45cc7b15f693","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"b0cadb64-1bff-49af-a722-4d6eefebebe5","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b0cadb64-1bff-49af-a722-4d6eefebebe5","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"LayerId":{"name":"ff40e2cf-7a8b-432a-8f0a-b8358389c39c","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Mein_GemPose_strip7","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","name":"b0cadb64-1bff-49af-a722-4d6eefebebe5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"00faeeac-0d62-4d71-b9d9-6dd1b7f5d76d","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"00faeeac-0d62-4d71-b9d9-6dd1b7f5d76d","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"LayerId":{"name":"ff40e2cf-7a8b-432a-8f0a-b8358389c39c","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Mein_GemPose_strip7","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","name":"00faeeac-0d62-4d71-b9d9-6dd1b7f5d76d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ad9f7f31-c177-4c66-9995-a9c15af402ae","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ad9f7f31-c177-4c66-9995-a9c15af402ae","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"LayerId":{"name":"ff40e2cf-7a8b-432a-8f0a-b8358389c39c","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Mein_GemPose_strip7","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","name":"ad9f7f31-c177-4c66-9995-a9c15af402ae","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2c05c1cb-50b0-4ca7-a35b-2c12fbb414f9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0f989cec-03c4-4669-b85f-a4d610907503",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f4ba2d63-2510-4c44-8b5b-497b5a44b3ed",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"74387a47-0b7d-48e2-8b76-45cc7b15f693",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b0cadb64-1bff-49af-a722-4d6eefebebe5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"00faeeac-0d62-4d71-b9d9-6dd1b7f5d76d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ad9f7f31-c177-4c66-9995-a9c15af402ae",},
   ],
   "sequence": {
-    "spriteId": {"name":"Mein_GemPose_strip7","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "Mein_GemPose_strip7",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -55,18 +46,18 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 7.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"abd21231-db74-4566-a069-f571bc80bd0f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c05c1cb-50b0-4ca7-a35b-2c12fbb414f9","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"488fce7b-3a66-4098-9ed9-2175e6ac3e70","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0f989cec-03c4-4669-b85f-a4d610907503","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"b6c8afa6-2375-44c4-936e-c63508baf29d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f4ba2d63-2510-4c44-8b5b-497b5a44b3ed","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"8088f59b-fce0-4fbd-b679-610ded94e83d","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"74387a47-0b7d-48e2-8b76-45cc7b15f693","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"4ac0b8b2-7f2e-4694-b009-7a24e3c1fdf4","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b0cadb64-1bff-49af-a722-4d6eefebebe5","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"07f4e021-8d1e-43b5-8553-32684edafd93","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"00faeeac-0d62-4d71-b9d9-6dd1b7f5d76d","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"0742f846-2324-474d-9daf-8c29e2c67c92","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ad9f7f31-c177-4c66-9995-a9c15af402ae","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"abd21231-db74-4566-a069-f571bc80bd0f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c05c1cb-50b0-4ca7-a35b-2c12fbb414f9","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"488fce7b-3a66-4098-9ed9-2175e6ac3e70","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0f989cec-03c4-4669-b85f-a4d610907503","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b6c8afa6-2375-44c4-936e-c63508baf29d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f4ba2d63-2510-4c44-8b5b-497b5a44b3ed","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8088f59b-fce0-4fbd-b679-610ded94e83d","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"74387a47-0b7d-48e2-8b76-45cc7b15f693","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4ac0b8b2-7f2e-4694-b009-7a24e3c1fdf4","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b0cadb64-1bff-49af-a722-4d6eefebebe5","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"07f4e021-8d1e-43b5-8553-32684edafd93","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"00faeeac-0d62-4d71-b9d9-6dd1b7f5d76d","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0742f846-2324-474d-9daf-8c29e2c67c92","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ad9f7f31-c177-4c66-9995-a9c15af402ae","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -82,22 +73,13 @@
     "yorigin": 18,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Mein_GemPose_strip7","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},
-    "resourceVersion": "1.4",
-    "name": "Mein_GemPose_strip7",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ff40e2cf-7a8b-432a-8f0a-b8358389c39c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ff40e2cf-7a8b-432a-8f0a-b8358389c39c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Mein NU",
     "path": "folders/Sprites/Mein NU.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Mein_GemPose_strip7",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

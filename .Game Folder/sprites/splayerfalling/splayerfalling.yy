@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sPlayerFalling",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"86bad655-e9ce-4f4d-b2b2-acfde3376c25","path":"sprites/sPlayerFalling/sPlayerFalling.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"86bad655-e9ce-4f4d-b2b2-acfde3376c25","path":"sprites/sPlayerFalling/sPlayerFalling.yy",},"LayerId":{"name":"96c11223-3a74-4d04-9fd8-c51c27cf76c7","path":"sprites/sPlayerFalling/sPlayerFalling.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sPlayerFalling","path":"sprites/sPlayerFalling/sPlayerFalling.yy",},"resourceVersion":"1.0","name":"86bad655-e9ce-4f4d-b2b2-acfde3376c25","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"642d2e6d-4464-4d5e-b9e3-ce98242a532a","path":"sprites/sPlayerFalling/sPlayerFalling.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"642d2e6d-4464-4d5e-b9e3-ce98242a532a","path":"sprites/sPlayerFalling/sPlayerFalling.yy",},"LayerId":{"name":"96c11223-3a74-4d04-9fd8-c51c27cf76c7","path":"sprites/sPlayerFalling/sPlayerFalling.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sPlayerFalling","path":"sprites/sPlayerFalling/sPlayerFalling.yy",},"resourceVersion":"1.0","name":"642d2e6d-4464-4d5e-b9e3-ce98242a532a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"86bad655-e9ce-4f4d-b2b2-acfde3376c25",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"642d2e6d-4464-4d5e-b9e3-ce98242a532a",},
   ],
   "sequence": {
-    "spriteId": {"name":"sPlayerFalling","path":"sprites/sPlayerFalling/sPlayerFalling.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sPlayerFalling",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 14.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d016aa84-73df-43bb-b85a-5e3805a763f7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"86bad655-e9ce-4f4d-b2b2-acfde3376c25","path":"sprites/sPlayerFalling/sPlayerFalling.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"f2581b68-5667-4756-bffd-4bf19ec954c5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"642d2e6d-4464-4d5e-b9e3-ce98242a532a","path":"sprites/sPlayerFalling/sPlayerFalling.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"d016aa84-73df-43bb-b85a-5e3805a763f7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"86bad655-e9ce-4f4d-b2b2-acfde3376c25","path":"sprites/sPlayerFalling/sPlayerFalling.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f2581b68-5667-4756-bffd-4bf19ec954c5","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"642d2e6d-4464-4d5e-b9e3-ce98242a532a","path":"sprites/sPlayerFalling/sPlayerFalling.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 19,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sPlayerFalling","path":"sprites/sPlayerFalling/sPlayerFalling.yy",},
-    "resourceVersion": "1.4",
-    "name": "sPlayerFalling",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"96c11223-3a74-4d04-9fd8-c51c27cf76c7","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"96c11223-3a74-4d04-9fd8-c51c27cf76c7","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Mein Sprites",
     "path": "folders/Sprites/Mein Sprites.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sPlayerFalling",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

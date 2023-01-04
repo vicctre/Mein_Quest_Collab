@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "Mein_Fall_14FPS_strip2",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b8321ca3-d08d-47dd-83a2-d1f2ec5ae70b","path":"sprites/Mein_Fall_14FPS_strip2/Mein_Fall_14FPS_strip2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b8321ca3-d08d-47dd-83a2-d1f2ec5ae70b","path":"sprites/Mein_Fall_14FPS_strip2/Mein_Fall_14FPS_strip2.yy",},"LayerId":{"name":"360f61b6-b723-4bb5-9358-9624cc8fb4d2","path":"sprites/Mein_Fall_14FPS_strip2/Mein_Fall_14FPS_strip2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Mein_Fall_14FPS_strip2","path":"sprites/Mein_Fall_14FPS_strip2/Mein_Fall_14FPS_strip2.yy",},"resourceVersion":"1.0","name":"b8321ca3-d08d-47dd-83a2-d1f2ec5ae70b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ee2aa36c-a42c-4a33-b53e-4223069ce6ad","path":"sprites/Mein_Fall_14FPS_strip2/Mein_Fall_14FPS_strip2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ee2aa36c-a42c-4a33-b53e-4223069ce6ad","path":"sprites/Mein_Fall_14FPS_strip2/Mein_Fall_14FPS_strip2.yy",},"LayerId":{"name":"360f61b6-b723-4bb5-9358-9624cc8fb4d2","path":"sprites/Mein_Fall_14FPS_strip2/Mein_Fall_14FPS_strip2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Mein_Fall_14FPS_strip2","path":"sprites/Mein_Fall_14FPS_strip2/Mein_Fall_14FPS_strip2.yy",},"resourceVersion":"1.0","name":"ee2aa36c-a42c-4a33-b53e-4223069ce6ad","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b8321ca3-d08d-47dd-83a2-d1f2ec5ae70b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ee2aa36c-a42c-4a33-b53e-4223069ce6ad",},
   ],
   "sequence": {
-    "spriteId": {"name":"Mein_Fall_14FPS_strip2","path":"sprites/Mein_Fall_14FPS_strip2/Mein_Fall_14FPS_strip2.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "Mein_Fall_14FPS_strip2",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"175c74c9-e010-47c1-9d2b-4d12ca699c10","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b8321ca3-d08d-47dd-83a2-d1f2ec5ae70b","path":"sprites/Mein_Fall_14FPS_strip2/Mein_Fall_14FPS_strip2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"059ae57b-b2d9-4882-8f2c-aad4f9357e7f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ee2aa36c-a42c-4a33-b53e-4223069ce6ad","path":"sprites/Mein_Fall_14FPS_strip2/Mein_Fall_14FPS_strip2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"175c74c9-e010-47c1-9d2b-4d12ca699c10","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b8321ca3-d08d-47dd-83a2-d1f2ec5ae70b","path":"sprites/Mein_Fall_14FPS_strip2/Mein_Fall_14FPS_strip2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"059ae57b-b2d9-4882-8f2c-aad4f9357e7f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ee2aa36c-a42c-4a33-b53e-4223069ce6ad","path":"sprites/Mein_Fall_14FPS_strip2/Mein_Fall_14FPS_strip2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 18,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Mein_Fall_14FPS_strip2","path":"sprites/Mein_Fall_14FPS_strip2/Mein_Fall_14FPS_strip2.yy",},
-    "resourceVersion": "1.4",
-    "name": "Mein_Fall_14FPS_strip2",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"360f61b6-b723-4bb5-9358-9624cc8fb4d2","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"360f61b6-b723-4bb5-9358-9624cc8fb4d2","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Mein NU",
     "path": "folders/Sprites/Mein NU.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Mein_Fall_14FPS_strip2",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
