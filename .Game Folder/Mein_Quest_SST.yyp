@@ -132,7 +132,6 @@
     {"id":{"name":"Mein_Jump","path":"sprites/Mein_Jump/Mein_Jump.yy",},"order":24,},
     {"id":{"name":"Mein_EXP02_strip16","path":"sprites/Mein_EXP02_strip16/Mein_EXP02_strip16.yy",},"order":16,},
     {"id":{"name":"autotiling","path":"scripts/autotiling/autotiling.yy",},"order":1,},
-    {"id":{"name":"oPlayerBase","path":"objects/oPlayerBase/oPlayerBase.yy",},"order":0,},
     {"id":{"name":"sShanteeCycle","path":"sprites/sShanteeCycle/sShanteeCycle.yy",},"order":0,},
     {"id":{"name":"oDed2","path":"objects/oDed2/oDed2.yy",},"order":0,},
     {"id":{"name":"TestingGround","path":"rooms/TestingGround/TestingGround.yy",},"order":0,},

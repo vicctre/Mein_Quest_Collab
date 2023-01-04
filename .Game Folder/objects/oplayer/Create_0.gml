@@ -1,6 +1,14 @@
 
 event_inherited()
 
+enum PLAYERSTATE {
+	FREE,
+	ATTACK_SLASH,
+	ATTACK_COMBO,
+}
+
+scr_debug_ini()
+
 /// main parameters
 hsp_max = 3
 vsp_max = 7
@@ -30,3 +38,34 @@ gp_hinp = 0
 gp_hinp_treshold = 0.2
 
 has_control = true
+state = PLAYERSTATE.FREE
+
+function animate() {
+	if hsp != 0 {
+		image_xscale = sign(hsp)
+	}
+	switch state {
+		case PLAYERSTATE.FREE: {
+			if down_free {
+				if vsp < 0 {
+					sprite_index = sPlayerJump
+				} else {
+					sprite_index = sPlayerFalling
+				}
+				break
+			}
+			if abs(hsp) {
+				sprite_index = sPlayerW
+			} else {
+				sprite_index = sPlayer	
+			}
+			break
+		}
+		case PLAYERSTATE.ATTACK_SLASH: {
+			break
+		}
+		case PLAYERSTATE.ATTACK_COMBO: {
+			break
+		}
+	}
+}

@@ -1,6 +1,6 @@
 /// @desc move to next room 
 
-with (oPlayer) 
+with (oPlayerRef) 
 {
 	if (hascontrol) 
 	{

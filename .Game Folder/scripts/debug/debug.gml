@@ -54,7 +54,7 @@ function scr_debug_show_var(text, var_) {
 		return false
 	var font = draw_get_font()
 	var h_allign = draw_get_halign()
-	draw_set_font(fnt_gui)
+	//draw_set_font(fnt_gui)
 	draw_set_halign(fa_left)
 	global.VAR_BAR_LENGTH += 1;
 	draw_text(global.VAR_BAR_X,

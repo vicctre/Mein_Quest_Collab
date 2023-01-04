@@ -58,7 +58,6 @@ if ((!right_free and key_right) or (!left_free and key_left)) and abs(input_move
 if ((vsp < 0) and !up_free) {
 	vsp = 0
 }
-
 // reset jumps if on ground
 else if !down_free {
 	jumps = jumps_max
@@ -99,3 +98,5 @@ if abs(hsp) or abs(vsp)
 	scr_move_coord_contact_obj(hsp, vsp, wall_obj)
 
 scr_camera_set_pos(0, x, y)
+
+animate()
