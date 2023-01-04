@@ -1,7 +1,26 @@
 
-key_left = keyboard_check(vk_left) or keyboard_check(ord("A"))
-key_right = keyboard_check(vk_right) or keyboard_check(ord("D"))
-key_jump = keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("Z"))
+if has_control {
+	key_left = keyboard_check(vk_left) or keyboard_check(ord("A"))
+	key_right = keyboard_check(vk_right) or keyboard_check(ord("D"))
+	key_jump = keyboard_check_pressed(vk_space) 
+			   or keyboard_check_pressed(ord("W"))
+			   or gamepad_button_check_pressed(0, gp_face1)
+	//key_down = keyboard_check_pressed(vk_down) or keyboard_check(ord("S"))
+	key_attack = keyboard_check_pressed(ord("X"))
+	
+	var gp_hinp = gamepad_axis_value(0, gp_axislh)
+	if abs(gp_hinp) > gp_hinp_treshold {
+		key_left = abs(min(gp_hinp, 0))
+		key_right = max(gp_hinp, 0)
+	}
+
+} else {
+	key_left = false
+	key_right = false
+	key_jump = false
+	//key_down = false
+	key_attack = false
+}
 
 // contact walls
 up_free = place_empty(x, y - 1, wall_obj)

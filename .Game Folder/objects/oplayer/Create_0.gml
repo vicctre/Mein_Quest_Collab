@@ -25,3 +25,8 @@ on_ground = 0 // used to fake ground for smoother jumping
 on_wall = false
 
 wall_obj = oWall
+
+gp_hinp = 0
+gp_hinp_treshold = 0.2
+
+has_control = true
