@@ -1,7 +1,4 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "Basic_Attack",
   "spriteId": {
     "name": "sAttack_Hitbox01",
     "path": "sprites/sAttack_Hitbox01/sAttack_Hitbox01.yy",
@@ -28,12 +25,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"pCut","path":"objects/pCut/pCut.yy",},},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"pCut","path":"objects/pCut/pCut.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Objects/Player.yy",
+    "name": "Mein Objects",
+    "path": "folders/Objects/Mein Objects.yy",
   },
+  "resourceVersion": "1.0",
+  "name": "Basic_Attack",
+  "tags": [],
+  "resourceType": "GMObject",
 }

@@ -1,7 +1,4 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "oCrate",
   "spriteId": {
     "name": "sCutCube",
     "path": "sprites/sCutCube/sCutCube.yy",
@@ -28,16 +25,20 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"hp","path":"objects/pCut/pCut.yy",},"objectId":{"name":"pCut","path":"objects/pCut/pCut.yy",},"value":"1",},
+    {"propertyId":{"name":"hp","path":"objects/pCut/pCut.yy",},"objectId":{"name":"pCut","path":"objects/pCut/pCut.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "INGAME_Objects",
     "path": "folders/Objects/INGAME_Objects.yy",
   },
+  "resourceVersion": "1.0",
+  "name": "oCrate",
+  "tags": [],
+  "resourceType": "GMObject",
 }

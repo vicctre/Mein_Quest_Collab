@@ -1,7 +1,4 @@
 {
-  "resourceType": "GMSprite",
-  "resourceVersion": "1.0",
-  "name": "Mein_FallTransition_14FPS_strip3",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -17,7 +14,6 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "DynamicTexturePage": false,
   "width": 48,
   "height": 36,
   "textureGroupId": {
@@ -28,14 +24,18 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bff6de94-3ab7-465f-b86f-2d0d9c3513dd",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"55db9c30-54db-4f32-85d7-079eebe74522",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"035f57e3-b793-4a1e-aed2-7514a4433740",},
+    {"compositeImage":{"FrameId":{"name":"bff6de94-3ab7-465f-b86f-2d0d9c3513dd","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"bff6de94-3ab7-465f-b86f-2d0d9c3513dd","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"LayerId":{"name":"8effac0d-ca8b-4f54-91e6-578ae7b1f6e0","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Mein_FallTransition_14FPS_strip3","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"resourceVersion":"1.0","name":"bff6de94-3ab7-465f-b86f-2d0d9c3513dd","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"55db9c30-54db-4f32-85d7-079eebe74522","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"55db9c30-54db-4f32-85d7-079eebe74522","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"LayerId":{"name":"8effac0d-ca8b-4f54-91e6-578ae7b1f6e0","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Mein_FallTransition_14FPS_strip3","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"resourceVersion":"1.0","name":"55db9c30-54db-4f32-85d7-079eebe74522","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"035f57e3-b793-4a1e-aed2-7514a4433740","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"035f57e3-b793-4a1e-aed2-7514a4433740","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"LayerId":{"name":"8effac0d-ca8b-4f54-91e6-578ae7b1f6e0","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Mein_FallTransition_14FPS_strip3","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"resourceVersion":"1.0","name":"035f57e3-b793-4a1e-aed2-7514a4433740","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "resourceType": "GMSequence",
-    "resourceVersion": "1.4",
-    "name": "Mein_FallTransition_14FPS_strip3",
+    "spriteId": {"name":"Mein_FallTransition_14FPS_strip3","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -43,14 +43,14 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"31a16e1f-c0d7-4cdf-909f-39c021e9b6e9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bff6de94-3ab7-465f-b86f-2d0d9c3513dd","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"44f2082f-b56d-4e0f-8f23-74ecb2f3bf00","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"55db9c30-54db-4f32-85d7-079eebe74522","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"2e5dd39e-66ec-416d-98f5-1bae349c6adc","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"035f57e3-b793-4a1e-aed2-7514a4433740","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"31a16e1f-c0d7-4cdf-909f-39c021e9b6e9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bff6de94-3ab7-465f-b86f-2d0d9c3513dd","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"44f2082f-b56d-4e0f-8f23-74ecb2f3bf00","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"55db9c30-54db-4f32-85d7-079eebe74522","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"2e5dd39e-66ec-416d-98f5-1bae349c6adc","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"035f57e3-b793-4a1e-aed2-7514a4433740","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -66,13 +66,22 @@
     "yorigin": 18,
     "eventToFunction": {},
     "eventStubScript": null,
+    "parent": {"name":"Mein_FallTransition_14FPS_strip3","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},
+    "resourceVersion": "1.4",
+    "name": "Mein_FallTransition_14FPS_strip3",
+    "tags": [],
+    "resourceType": "GMSequence",
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8effac0d-ca8b-4f54-91e6-578ae7b1f6e0","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8effac0d-ca8b-4f54-91e6-578ae7b1f6e0","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Mein NU",
     "path": "folders/Sprites/Mein NU.yy",
   },
+  "resourceVersion": "1.0",
+  "name": "Mein_FallTransition_14FPS_strip3",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

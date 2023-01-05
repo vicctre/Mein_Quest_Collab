@@ -1,7 +1,4 @@
 {
-  "resourceType": "GMSprite",
-  "resourceVersion": "1.0",
-  "name": "Mein_crouch",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -17,7 +14,6 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "DynamicTexturePage": false,
   "width": 48,
   "height": 36,
   "textureGroupId": {
@@ -28,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"43f5b0f8-de5b-4266-bb78-20ebe5f84f0b",},
+    {"compositeImage":{"FrameId":{"name":"43f5b0f8-de5b-4266-bb78-20ebe5f84f0b","path":"sprites/Mein_crouch/Mein_crouch.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"43f5b0f8-de5b-4266-bb78-20ebe5f84f0b","path":"sprites/Mein_crouch/Mein_crouch.yy",},"LayerId":{"name":"128f5b1e-9c05-4ff2-b60c-52531a350830","path":"sprites/Mein_crouch/Mein_crouch.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Mein_crouch","path":"sprites/Mein_crouch/Mein_crouch.yy",},"resourceVersion":"1.0","name":"43f5b0f8-de5b-4266-bb78-20ebe5f84f0b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "resourceType": "GMSequence",
-    "resourceVersion": "1.4",
-    "name": "Mein_crouch",
+    "spriteId": {"name":"Mein_crouch","path":"sprites/Mein_crouch/Mein_crouch.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,12 +37,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5be97c9f-fa9c-44b7-9b89-184bf61a12ed","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"43f5b0f8-de5b-4266-bb78-20ebe5f84f0b","path":"sprites/Mein_crouch/Mein_crouch.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"5be97c9f-fa9c-44b7-9b89-184bf61a12ed","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"43f5b0f8-de5b-4266-bb78-20ebe5f84f0b","path":"sprites/Mein_crouch/Mein_crouch.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,13 +58,22 @@
     "yorigin": 18,
     "eventToFunction": {},
     "eventStubScript": null,
+    "parent": {"name":"Mein_crouch","path":"sprites/Mein_crouch/Mein_crouch.yy",},
+    "resourceVersion": "1.4",
+    "name": "Mein_crouch",
+    "tags": [],
+    "resourceType": "GMSequence",
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"128f5b1e-9c05-4ff2-b60c-52531a350830","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"128f5b1e-9c05-4ff2-b60c-52531a350830","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Mein NU",
     "path": "folders/Sprites/Mein NU.yy",
   },
+  "resourceVersion": "1.0",
+  "name": "Mein_crouch",
+  "tags": [],
+  "resourceType": "GMSprite",
 }

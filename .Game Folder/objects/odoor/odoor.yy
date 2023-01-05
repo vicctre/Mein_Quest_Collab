@@ -1,7 +1,4 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "oDoor",
   "spriteId": {
     "name": "Sprite2",
     "path": "sprites/Sprite2/Sprite2.yy",
@@ -25,7 +22,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oPlayerRef","path":"objects/oPlayerRef/oPlayerRef.yy",},},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,4 +30,8 @@
     "name": "INGAME_Objects",
     "path": "folders/Objects/INGAME_Objects.yy",
   },
+  "resourceVersion": "1.0",
+  "name": "oDoor",
+  "tags": [],
+  "resourceType": "GMObject",
 }

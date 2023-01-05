@@ -1,7 +1,4 @@
 {
-  "resourceType": "GMObject",
-  "resourceVersion": "1.0",
-  "name": "oPlayerDamage",
   "spriteId": {
     "name": "sDamage",
     "path": "sprites/sDamage/sDamage.yy",
@@ -28,14 +25,18 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Mein Objects",
-    "path": "folders/References/Mein Objects.yy",
+    "path": "folders/Objects/Mein Objects.yy",
   },
+  "resourceVersion": "1.0",
+  "name": "oPlayerDamage",
+  "tags": [],
+  "resourceType": "GMObject",
 }

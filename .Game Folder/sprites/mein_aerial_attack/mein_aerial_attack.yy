@@ -1,7 +1,4 @@
 {
-  "resourceType": "GMSprite",
-  "resourceVersion": "1.0",
-  "name": "Mein_Aerial_Attack",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -17,7 +14,6 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "DynamicTexturePage": false,
   "width": 144,
   "height": 108,
   "textureGroupId": {
@@ -28,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4106508d-b15f-4422-8fa1-ef7042eb6301",},
+    {"compositeImage":{"FrameId":{"name":"4106508d-b15f-4422-8fa1-ef7042eb6301","path":"sprites/Mein_Aerial_Attack/Mein_Aerial_Attack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4106508d-b15f-4422-8fa1-ef7042eb6301","path":"sprites/Mein_Aerial_Attack/Mein_Aerial_Attack.yy",},"LayerId":{"name":"9a9e1ea2-050d-416c-9ec4-89764db0e33f","path":"sprites/Mein_Aerial_Attack/Mein_Aerial_Attack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Mein_Aerial_Attack","path":"sprites/Mein_Aerial_Attack/Mein_Aerial_Attack.yy",},"resourceVersion":"1.0","name":"4106508d-b15f-4422-8fa1-ef7042eb6301","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "resourceType": "GMSequence",
-    "resourceVersion": "1.4",
-    "name": "Mein_Aerial_Attack",
+    "spriteId": {"name":"Mein_Aerial_Attack","path":"sprites/Mein_Aerial_Attack/Mein_Aerial_Attack.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,12 +37,12 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 1.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
-      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"442f5b0f-26d9-40b3-8a81-5340d9d4f2ac","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4106508d-b15f-4422-8fa1-ef7042eb6301","path":"sprites/Mein_Aerial_Attack/Mein_Aerial_Attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"442f5b0f-26d9-40b3-8a81-5340d9d4f2ac","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4106508d-b15f-4422-8fa1-ef7042eb6301","path":"sprites/Mein_Aerial_Attack/Mein_Aerial_Attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,13 +58,22 @@
     "yorigin": 54,
     "eventToFunction": {},
     "eventStubScript": null,
+    "parent": {"name":"Mein_Aerial_Attack","path":"sprites/Mein_Aerial_Attack/Mein_Aerial_Attack.yy",},
+    "resourceVersion": "1.4",
+    "name": "Mein_Aerial_Attack",
+    "tags": [],
+    "resourceType": "GMSequence",
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9a9e1ea2-050d-416c-9ec4-89764db0e33f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9a9e1ea2-050d-416c-9ec4-89764db0e33f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Mein NU",
     "path": "folders/Sprites/Mein NU.yy",
   },
+  "resourceVersion": "1.0",
+  "name": "Mein_Aerial_Attack",
+  "tags": [],
+  "resourceType": "GMSprite",
 }
