@@ -1,64 +1,139 @@
-//controls 
-//key_left = keyboard_check(vk_left); 
-//key_right = keyboard_check(vk_right); 
-//key_jump = keyboard_check_pressed(vk_space); 
-//key_Attack = keyboard_check_pressed(ord("X")) 
 
-//if (key_left) or (key_right) or (key_jump)
-	//{
-	//controller = 0; 
-	//}
-	//Get Player Input 
-
-if (hascontrol) 
-{
-
-	key_left = keyboard_check(vk_left) or keyboard_check(ord("A")); 
-	key_right = keyboard_check(vk_right) or keyboard_check(ord("D"));  
-	key_jump = keyboard_check_pressed(vk_space) or keyboard_check(ord("W"));
-	key_down = keyboard_check_pressed(vk_down) or keyboard_check(ord("S")); 
-	key_Attack = keyboard_check_pressed(ord("X"));;
-
-if (key_left) || (key_right) || (key_jump) || (key_down)
-{
-	controller = 0; 
-}
+if has_control {
+	key_left = keyboard_check(vk_left) or keyboard_check(ord("A"))
+	key_right = keyboard_check(vk_right) or keyboard_check(ord("D"))
+	key_jump = keyboard_check_pressed(vk_space) 
+			   or keyboard_check_pressed(ord("W"))
+			   or gamepad_button_check_pressed(0, gp_face1)
+	//key_down = keyboard_check_pressed(vk_down) or keyboard_check(ord("S"))
+	key_attack = keyboard_check_pressed(ord("X"))
 	
-if (abs(gamepad_axis_value(0,gp_axislh) > 0.2))
-{
-	key_left = abs(min(gamepad_axis_value(0,gp_axislh),0));
-	key_right = max(gamepad_axis_value(0, gp_axislh),0); 
-	
+	var gp_hinp = gamepad_axis_value(0, gp_axislh)
+	if abs(gp_hinp) > gp_hinp_treshold {
+		key_left = abs(min(gp_hinp, 0))
+		key_right = max(gp_hinp, 0)
+	}
+
+} else {
+	key_left = false
+	key_right = false
+	key_jump = false
+	//key_down = false
+	key_attack = false
 }
 
-if (gamepad_button_check_pressed(0,gp_face1))
-{
-	key_jump = 1; 
-	controller = 1; 
+attack_pause_timer--
+if key_attack and !attack_pause_timer {
+	state = PLAYERSTATE.ATTACK_SLASH
+	sprite_index = sPlayerAttack
+	image_index = 0
+	audio_play_sound(SFX_AttackWiff,5,false)
+	attack_pause_timer = attack_pause_time
 }
+
+// contact walls
+up_free = place_empty(x, y - 1, wall_obj)
+down_free = place_empty(x, y + 1, wall_obj)
+left_free = place_empty(x - 1, y, wall_obj)
+right_free = place_empty(x + 1, y, wall_obj)
+
+// can we move hor?
+move_h = key_right*right_free - key_left*left_free
+
+// do we try to move?
+input_move_h = key_right - key_left
+
+// moving hor
+hsp_to = move_h * hsp_max
+
+hsp = approach(hsp, hsp_to, acc)
+vsp = approach(vsp, vsp_max, grav)
+
+// reset on_wall
+on_wall = false
+
+// used to fake ground for smoother jumping
+on_ground--
+
+if !down_free
+	on_ground = on_ground_delay
+
+// on wall
+if ((!right_free and key_right) or (!left_free and key_left)) and abs(input_move_h)
+	on_wall = true
+
+// handle vertical sp
+// hit ceil
+if ((vsp < 0) and !up_free) {
+	vsp = 0
 }
-else
-{
-	key_left = 0; 
-	key_right = 0; 
-	key_jump = 0; 
-	key_down = 0; 
-	key_Attack = 0; 
+// reset jumps if on ground
+else if !down_free {
+	jumps = jumps_max
+	// land on ground
+	if vsp > 0
+		vsp = 0
+}
+
+// jumping
+if key_jump
+	jump_pressed = jump_press_delay
+
+if jump_pressed {
+	jump_pressed--
+	// wall jump
+	if on_wall {
+		jumps = jumps_max
+		jump_pressed = 0
+		vsp = jump_sp
+		hsp = -input_move_h * hsp_max
+	}
+	// ordinary jump
+	else if jumps {
+		vsp = jump_sp
+		jumps -= down_free and !on_ground
+		jump_pressed = 0
+	}
 }
 
 
-//if (gamepad_button_check_pressed(0,gp_face3))
-//{
-	//key_Attack = 1; 
-	//controller = 1; 
-//}
-//this doesnt get the attack to work on the controller still...fix later? 
-
-switch (state) 
-{
-	case PLAYERSTATE.FREE: PlayerState_Free(); break; 
-	case PLAYERSTATE.ATTACK_SLASH: PlayerState_Attack_Slash(); break; 
-	case PLAYERSTATE.ATTACK_COMBO: PlayerState_Attack_Combo(); break; 
-	
+if hsp != 0 {
+	image_xscale = sign(hsp)
 }
 
+switch state {
+	case PLAYERSTATE.FREE: {
+		break
+	}
+	case PLAYERSTATE.ATTACK_SLASH: {
+		if !down_free {
+			hsp = 0
+		}
+		if image_index >= attack_perform_frame and !attack_performed {
+			preform_attack(sAttack, image_xscale, 1)
+		}
+		if is_animation_end() {
+			state = PLAYERSTATE.FREE
+			sprite_index = sPlayer
+			attack_performed = false
+		}
+		break
+	}
+	case PLAYERSTATE.ATTACK_COMBO: {
+		break
+	}
+}
+
+// block hor sp if wall contact
+if ((hsp > 0) and !right_free) or ((hsp < 0) and !left_free)
+	hsp = 0
+
+dir = point_direction(0, 0, hsp, vsp)
+
+// handle collisions
+if abs(hsp) or abs(vsp)
+	scr_move_coord_contact_obj(hsp, vsp, wall_obj)
+
+scr_camera_set_pos(0, x, y)
+
+animate()

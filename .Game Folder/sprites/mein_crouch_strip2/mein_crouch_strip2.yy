@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "Mein_crouch_strip2",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 48,
   "height": 36,
   "textureGroupId": {
@@ -24,15 +28,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7b6f4997-bed8-4721-b7ba-411e95cdfbed","path":"sprites/Mein_crouch_strip2/Mein_crouch_strip2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7b6f4997-bed8-4721-b7ba-411e95cdfbed","path":"sprites/Mein_crouch_strip2/Mein_crouch_strip2.yy",},"LayerId":{"name":"c0e5b38e-669b-41f3-b0a3-1aa4ebda17d1","path":"sprites/Mein_crouch_strip2/Mein_crouch_strip2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Mein_crouch_strip2","path":"sprites/Mein_crouch_strip2/Mein_crouch_strip2.yy",},"resourceVersion":"1.0","name":"7b6f4997-bed8-4721-b7ba-411e95cdfbed","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"65dd8322-fc73-4986-801f-d53f81dd71b0","path":"sprites/Mein_crouch_strip2/Mein_crouch_strip2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"65dd8322-fc73-4986-801f-d53f81dd71b0","path":"sprites/Mein_crouch_strip2/Mein_crouch_strip2.yy",},"LayerId":{"name":"c0e5b38e-669b-41f3-b0a3-1aa4ebda17d1","path":"sprites/Mein_crouch_strip2/Mein_crouch_strip2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Mein_crouch_strip2","path":"sprites/Mein_crouch_strip2/Mein_crouch_strip2.yy",},"resourceVersion":"1.0","name":"65dd8322-fc73-4986-801f-d53f81dd71b0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7b6f4997-bed8-4721-b7ba-411e95cdfbed",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"65dd8322-fc73-4986-801f-d53f81dd71b0",},
   ],
   "sequence": {
-    "spriteId": {"name":"Mein_crouch_strip2","path":"sprites/Mein_crouch_strip2/Mein_crouch_strip2.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "Mein_crouch_strip2",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +42,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"2df0eba4-8663-433c-a6b5-18bbbcf0097a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7b6f4997-bed8-4721-b7ba-411e95cdfbed","path":"sprites/Mein_crouch_strip2/Mein_crouch_strip2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"546fd079-c3c4-4916-a293-66c41468db49","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"65dd8322-fc73-4986-801f-d53f81dd71b0","path":"sprites/Mein_crouch_strip2/Mein_crouch_strip2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"2df0eba4-8663-433c-a6b5-18bbbcf0097a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7b6f4997-bed8-4721-b7ba-411e95cdfbed","path":"sprites/Mein_crouch_strip2/Mein_crouch_strip2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"546fd079-c3c4-4916-a293-66c41468db49","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"65dd8322-fc73-4986-801f-d53f81dd71b0","path":"sprites/Mein_crouch_strip2/Mein_crouch_strip2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +64,13 @@
     "yorigin": 18,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Mein_crouch_strip2","path":"sprites/Mein_crouch_strip2/Mein_crouch_strip2.yy",},
-    "resourceVersion": "1.4",
-    "name": "Mein_crouch_strip2",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c0e5b38e-669b-41f3-b0a3-1aa4ebda17d1","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c0e5b38e-669b-41f3-b0a3-1aa4ebda17d1","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Mein NU",
     "path": "folders/Sprites/Mein NU.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Mein_crouch_strip2",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
