@@ -1,18 +1,12 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Basic_Attack",
-  "spriteId": {
-    "name": "sAttack_Hitbox01",
-    "path": "sprites/sAttack_Hitbox01/sAttack_Hitbox01.yy",
-  },
+  "name": "oAttack",
+  "spriteId": null,
   "solid": false,
-  "visible": false,
+  "visible": true,
   "managed": true,
-  "spriteMaskId": {
-    "name": "sAttack_Hitbox01",
-    "path": "sprites/sAttack_Hitbox01/sAttack_Hitbox01.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
@@ -28,12 +22,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"pCut","path":"objects/pCut/pCut.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Objects/Player.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }

@@ -1,15 +1,22 @@
-if (place_meeting(x,y,pCut))
-{
-	with (instance_place(x,y,pCut))
-	{
-		hp--; 
-		flash = 3; 
-		hitfrom = other.direction 
-	
-	}
-	instance_destroy(); 
-}
 
+with other {
+	hp--
+	flash = 3
+	hitfrom = other.direction
+}
+instance_destroy()
+
+//if (place_meeting(x,y,pCut))
+//{
+//	with (instance_place(x,y,pCut))
+//	{
+//		hp--; 
+//		flash = 3; 
+//		hitfrom = other.direction 
+	
+//	}
+//	instance_destroy(); 
+//}
 
 //This is all for the gun in the tutorial 
 	//x= lengthdir_x(1, spd)

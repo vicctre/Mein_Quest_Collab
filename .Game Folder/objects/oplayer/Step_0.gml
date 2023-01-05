@@ -22,6 +22,15 @@ if has_control {
 	key_attack = false
 }
 
+attack_pause_timer--
+if key_attack and !attack_pause_timer {
+	state = PLAYERSTATE.ATTACK_SLASH
+	sprite_index = sPlayerAttack
+	image_index = 0
+	audio_play_sound(SFX_AttackWiff,5,false)
+	attack_pause_timer = attack_pause_time
+}
+
 // contact walls
 up_free = place_empty(x, y - 1, wall_obj)
 down_free = place_empty(x, y + 1, wall_obj)
@@ -84,6 +93,34 @@ if jump_pressed {
 		vsp = jump_sp
 		jumps -= down_free and !on_ground
 		jump_pressed = 0
+	}
+}
+
+
+if hsp != 0 {
+	image_xscale = sign(hsp)
+}
+
+switch state {
+	case PLAYERSTATE.FREE: {
+		break
+	}
+	case PLAYERSTATE.ATTACK_SLASH: {
+		if !down_free {
+			hsp = 0
+		}
+		if image_index >= attack_perform_frame and !attack_performed {
+			preform_attack(sAttack, image_xscale, 1)
+		}
+		if is_animation_end() {
+			state = PLAYERSTATE.FREE
+			sprite_index = sPlayer
+			attack_performed = false
+		}
+		break
+	}
+	case PLAYERSTATE.ATTACK_COMBO: {
+		break
 	}
 }
 

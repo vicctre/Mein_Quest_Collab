@@ -40,6 +40,12 @@ gp_hinp_treshold = 0.2
 has_control = true
 state = PLAYERSTATE.FREE
 
+attack_pause_time = 15
+attack_pause_timer = 0
+attack_perform_frame = 2
+attack_performed = false
+list_hit_by_attack = ds_list_create()
+
 function animate() {
 	if hsp != 0 {
 		image_xscale = sign(hsp)

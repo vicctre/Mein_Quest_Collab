@@ -380,3 +380,7 @@ function object_name(inst) {
 
 // stub function to use as a deafault callback
 function scr_stub() {}
+
+function is_animation_end() {
+	return abs(image_index - (image_number - 1)) < 1
+}

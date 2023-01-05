@@ -1,5 +1,6 @@
-/// @description Create wall
+event_inherited()
 
+/// @description Create wall
 mywall = instance_create_layer(x,y,layer,oWall); 
 
 //used to resize sprites 
