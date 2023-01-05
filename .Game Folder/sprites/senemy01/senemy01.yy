@@ -98,7 +98,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Genull",
-    "path": "folders/Sprites/Enemy Sprites/Genull.yy",
+    "path": "folders/Sprites/Enemy Sprites/NME Basic/Genull.yy",
   },
   "resourceVersion": "1.0",
   "name": "sEnemy01",

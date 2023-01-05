@@ -159,7 +159,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":560.0,"y":880.0,"resourceVersion":"1.0","name":"inst_73260AEF","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":592.0,"y":880.0,"resourceVersion":"1.0","name":"inst_5366A74","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"oWall","tags":[],"resourceType":"GMRInstanceLayer",},
-    {"tilesetId":{"name":"AutoTile_W1_1","path":"tilesets/AutoTile_W1_1/AutoTile_W1_1.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":25,"SerialiseHeight":31,"TileSerialiseData":[
+    {"tilesetId":null,"x":0,"y":0,"tiles":{"SerialiseWidth":25,"SerialiseHeight":31,"TileSerialiseData":[
 47,47,47,47,47,24,0,0,0,0,0,0,0,0,0,0,0,16,47,47,47,47,47,47,47,
 47,47,47,47,47,24,0,0,0,0,0,0,0,0,0,0,0,16,47,47,47,47,47,47,47,
 47,47,47,47,47,24,0,0,0,0,0,0,0,0,0,0,0,16,47,47,47,47,47,47,47,
@@ -360,8 +360,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Testing Rooms",
+    "path": "folders/Rooms/Testing Rooms.yy",
   },
   "resourceVersion": "1.0",
   "name": "TestingGround2",

@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Shantee",
-    "path": "folders/Sprites/Enemy Sprites/Shantee.yy",
+    "path": "folders/Sprites/Enemy Sprites/NME Basic/Shantee.yy",
   },
   "resourceVersion": "1.0",
   "name": "sShanteeD",

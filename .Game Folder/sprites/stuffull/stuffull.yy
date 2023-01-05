@@ -97,8 +97,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Genull",
-    "path": "folders/Sprites/Enemy Sprites/Genull.yy",
+    "name": "Mini Bosses",
+    "path": "folders/Sprites/Enemy Sprites/Mini Bosses.yy",
   },
   "resourceVersion": "1.0",
   "name": "sTuffull",
