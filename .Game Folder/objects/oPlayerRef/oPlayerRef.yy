@@ -45,7 +45,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Mein Objects",
-    "path": "folders/References/Mein Objects.yy",
+    "name": "References",
+    "path": "folders/References.yy",
   },
 }
