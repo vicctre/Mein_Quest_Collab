@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oWall",
   "spriteId": {
     "name": "sWall",
     "path": "sprites/sWall/sWall.yy",
@@ -28,8 +31,4 @@
     "name": "INGAME_Objects",
     "path": "folders/Objects/INGAME_Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oWall",
-  "tags": [],
-  "resourceType": "GMObject",
 }

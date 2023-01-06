@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oEnemy01",
   "spriteId": {
     "name": "sEnemy01",
     "path": "sprites/sEnemy01/sEnemy01.yy",
@@ -30,14 +33,10 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"hp","path":"objects/pCut/pCut.yy",},"objectId":{"name":"pCut","path":"objects/pCut/pCut.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"hp","path":"objects/pCut/pCut.yy",},"objectId":{"name":"pCut","path":"objects/pCut/pCut.yy",},"value":"1",},
   ],
   "parent": {
     "name": "Genull",
     "path": "folders/Objects/Enemys/Genull.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oEnemy01",
-  "tags": [],
-  "resourceType": "GMObject",
 }
