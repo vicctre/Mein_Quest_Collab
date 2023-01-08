@@ -46,6 +46,11 @@ attack_perform_frame = 2
 attack_performed = false
 list_hit_by_attack = ds_list_create()
 
+is_sprinting = false
+sprint_double_press_time = 0.5 * room_speed
+sprint_double_press_timer = 0
+sprint_last_pressed_dir = 0
+
 function animate() {
 	if hsp != 0 {
 		image_xscale = sign(hsp)
@@ -61,7 +66,11 @@ function animate() {
 				break
 			}
 			if abs(hsp) {
-				sprite_index = sPlayerW
+				if is_sprinting {
+					sprite_index = sMeinSprint
+				} else {
+					sprite_index = sPlayerW
+				}
 			} else {
 				sprite_index = sPlayer	
 			}

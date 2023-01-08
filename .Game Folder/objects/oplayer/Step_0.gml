@@ -1,5 +1,7 @@
 
 if has_control {
+	key_left_pressed = keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"))
+	key_right_pressed = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"))
 	key_left = keyboard_check(vk_left) or keyboard_check(ord("A"))
 	key_right = keyboard_check(vk_right) or keyboard_check(ord("D"))
 	key_jump = keyboard_check_pressed(vk_space) 
@@ -39,14 +41,32 @@ right_free = place_empty(x + 1, y, wall_obj)
 
 // can we move hor?
 move_h = key_right*right_free - key_left*left_free
-
 // do we try to move?
 input_move_h = key_right - key_left
-
 // moving hor
 hsp_to = move_h * hsp_max
 
-hsp = approach(hsp, hsp_to, acc)
+sprint_double_press_timer--
+if sprint_double_press_timer == 0 {
+	sprint_last_pressed_dir = 0
+}
+var _sprint_press_dir = key_right_pressed - key_left_pressed
+if !is_sprinting {
+	if (key_left_pressed or key_right_pressed) 
+			and sprint_last_pressed_dir == _sprint_press_dir {
+		is_sprinting = true
+	}
+} else {
+	if move_h == 0 {
+		is_sprinting = false
+	}
+}
+if _sprint_press_dir != 0 {
+	sprint_double_press_timer = sprint_double_press_time
+	sprint_last_pressed_dir = _sprint_press_dir
+}
+
+hsp = approach(hsp, hsp_to * (1 + is_sprinting), acc)
 vsp = approach(vsp, vsp_max, grav)
 
 // reset on_wall
