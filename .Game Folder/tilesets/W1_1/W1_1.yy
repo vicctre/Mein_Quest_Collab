@@ -2,7 +2,10 @@
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
   "name": "W1_1",
-  "spriteId": null,
+  "spriteId": {
+    "name": "W1_1_Tileset",
+    "path": "sprites/W1_1_Tileset/W1_1_Tileset.yy",
+  },
   "tileWidth": 32,
   "tileHeight": 32,
   "tilexoff": 0,
@@ -19,7 +22,7 @@
   "out_columns": 7,
   "tile_count": 49,
   "autoTileSets": [
-    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"autotile_1","tiles":[
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"W1_1_tiles","tiles":[
         47,
         1,
         2,
