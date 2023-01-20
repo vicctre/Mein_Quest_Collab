@@ -83,6 +83,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Shantee",
-    "path": "folders/Sprites/Enemy Sprites/Shantee.yy",
+    "path": "folders/Sprites/Enemy Sprites/NME Basic/Shantee.yy",
   },
 }
