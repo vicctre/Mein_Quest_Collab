@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oDed2",
   "spriteId": {
     "name": "sShanteeD",
     "path": "sprites/sShanteeD/sShanteeD.yy",
@@ -31,8 +34,4 @@
     "name": "Shante",
     "path": "folders/Objects/Enemys/Shante.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oDed2",
-  "tags": [],
-  "resourceType": "GMObject",
 }

@@ -1,11 +1,10 @@
 {
+  "resourceType": "GMShader",
+  "resourceVersion": "1.0",
+  "name": "SHWhite",
   "type": 1,
   "parent": {
     "name": "Shaders",
-    "path": "folders/Shaders.yy",
+    "path": "folders/Scripts/Shaders.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "SHWhite",
-  "tags": [],
-  "resourceType": "GMShader",
 }
