@@ -53,7 +53,8 @@ if sprint_double_press_timer == 0 {
 var _sprint_press_dir = key_right_pressed - key_left_pressed
 if !is_sprinting {
 	if (key_left_pressed or key_right_pressed) 
-			and sprint_last_pressed_dir == _sprint_press_dir {
+			and sprint_last_pressed_dir == _sprint_press_dir
+			and !down_free {
 		is_sprinting = true
 	}
 } else {
