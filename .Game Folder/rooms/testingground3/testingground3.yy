@@ -18,8 +18,8 @@
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"effects","instances":[],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_29582AD4_1_1","properties":[],"isDnd":false,"objectId":{"name":"oPlayerRef","path":"objects/oPlayerRef/oPlayerRef.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":72.0,"y":723.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_25635949_1_1","properties":[],"isDnd":false,"objectId":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":736.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3F23E919","properties":[],"isDnd":false,"objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":54.0,"y":721.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Enemys","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_27A4CA48_1_1","properties":[],"isDnd":false,"objectId":{"name":"oEnemy01","path":"objects/oEnemy01/oEnemy01.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":992.0,"y":768.0,},
@@ -177,7 +177,6 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_29582AD4_1_1","path":"rooms/TestingGround3/TestingGround3.yy",},
     {"name":"inst_2D72E2F4_1_1","path":"rooms/TestingGround3/TestingGround3.yy",},
     {"name":"inst_7AFDAB0D_1_1","path":"rooms/TestingGround3/TestingGround3.yy",},
     {"name":"inst_18E5AD97_1_1","path":"rooms/TestingGround3/TestingGround3.yy",},
@@ -313,6 +312,7 @@
     {"name":"inst_40E3BC68","path":"rooms/TestingGround3/TestingGround3.yy",},
     {"name":"inst_57234A57","path":"rooms/TestingGround3/TestingGround3.yy",},
     {"name":"inst_2DCD7D","path":"rooms/TestingGround3/TestingGround3.yy",},
+    {"name":"inst_3F23E919","path":"rooms/TestingGround3/TestingGround3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

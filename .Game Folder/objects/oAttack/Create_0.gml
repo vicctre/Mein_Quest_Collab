@@ -6,3 +6,4 @@ for (var i = 0; i < num; ++i) {
     list_hit_by_attack[| i].set_hit(damage)
 }
 ds_list_destroy(list_hit_by_attack)
+instance_destroy()
