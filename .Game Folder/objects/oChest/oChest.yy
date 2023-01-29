@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oPinnik",
+  "name": "oChest",
   "spriteId": {
-    "name": "sPinnik",
-    "path": "sprites/sPinnik/sPinnik.yy",
+    "name": "sTreasure",
+    "path": "sprites/sTreasure/sTreasure.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "NMEs needing code",
-    "path": "folders/Objects/Enemys/NMEs needing code.yy",
+    "name": "INGAME_Objects",
+    "path": "folders/Objects/INGAME_Objects.yy",
   },
 }

@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oPinnik",
+  "name": "oApploon",
   "spriteId": {
-    "name": "sPinnik",
-    "path": "sprites/sPinnik/sPinnik.yy",
+    "name": "sApploon",
+    "path": "sprites/sApploon/sApploon.yy",
   },
   "solid": false,
   "visible": true,

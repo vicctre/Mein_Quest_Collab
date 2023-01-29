@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemys",
-    "path": "folders/Objects/Enemys.yy",
+    "name": "NMEs needing code",
+    "path": "folders/Objects/Enemys/NMEs needing code.yy",
   },
 }
