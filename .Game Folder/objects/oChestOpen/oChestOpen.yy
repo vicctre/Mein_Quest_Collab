@@ -1,20 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oChest",
+  "name": "oChestOpen",
   "spriteId": {
-    "name": "sChest",
-    "path": "sprites/sChest/sChest.yy",
+    "name": "sChestOpen",
+    "path": "sprites/sChestOpen/sChestOpen.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "pCut",
-    "path": "objects/pCut/pCut.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -28,12 +25,10 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"hp","path":"objects/pCut/pCut.yy",},"objectId":{"name":"pCut","path":"objects/pCut/pCut.yy",},"value":"1",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "INGAME_Objects",
     "path": "folders/Objects/INGAME_Objects.yy",

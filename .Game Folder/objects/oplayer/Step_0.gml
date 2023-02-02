@@ -2,6 +2,8 @@
 if has_control {
 	key_left_pressed = keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"))
 	key_right_pressed = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"))
+	key_up_pressed = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"))
+	key_down_pressed = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"))
 	key_left = keyboard_check(vk_left) or keyboard_check(ord("A"))
 	key_right = keyboard_check(vk_right) or keyboard_check(ord("D"))
 	key_jump = keyboard_check_pressed(vk_space) 
@@ -117,6 +119,15 @@ if jump_pressed {
 	}
 }
 
+//enter door
+var door = instance_place(x, y, oDoor)
+if key_up_pressed and door {
+	if has_control {
+		has_control = false; 
+		SlideTransition(TRANS_MODE.GOTO, door.target); 
+	}
+}
+
 
 if hsp != 0 {
 	image_xscale = sign(hsp)
@@ -131,7 +142,7 @@ switch state {
 			hsp = 0
 		}
 		if image_index >= attack_perform_frame and !attack_performed {
-			preform_attack(sAttack, image_xscale, 1)
+			perform_attack(sAttack, image_xscale, 1)
 		}
 		if is_animation_end() {
 			state = PLAYERSTATE.FREE
@@ -158,11 +169,3 @@ if abs(hsp) or abs(vsp)
 scr_camera_set_pos(0, x, y)
 
 animate()
-
-var door = instance_place(x, y, oDoor)
-if door {
-	if (has_control) {
-		has_control = false;
-		SlideTransition(TRANS_MODE.GOTO, door.target); 
-	}
-}
