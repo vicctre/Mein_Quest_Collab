@@ -1,4 +1,0 @@
-/// @desc 
-instance_destroy(); 
-
-
