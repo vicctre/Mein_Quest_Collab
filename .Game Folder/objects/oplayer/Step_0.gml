@@ -82,7 +82,10 @@ if !down_free
 	on_ground = on_ground_delay
 
 // on wall
-if ((!right_free and key_right) or (!left_free and key_left)) and abs(input_move_h)
+if ((!right_free and key_right) 
+		or (!left_free and key_left)) 
+		and abs(input_move_h)
+		and wall_jump_on
 	on_wall = true
 
 // handle vertical sp
