@@ -1,10 +1,10 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "TreeTowerTiles",
+  "name": "Tree_Tiles_V2",
   "spriteId": {
-    "name": "sTree_Tower",
-    "path": "sprites/sTree_Tower/sTree_Tower.yy",
+    "name": "sTree_Outside_V2",
+    "path": "sprites/sTree_Outside_V2/sTree_Outside_V2.yy",
   },
   "tileWidth": 32,
   "tileHeight": 32,
@@ -51,7 +51,7 @@
     "TileSerialiseData": [],
   },
   "parent": {
-    "name": "Old stuff",
-    "path": "folders/Tile Sets/Old stuff.yy",
+    "name": "Tile Sets",
+    "path": "folders/Tile Sets.yy",
   },
 }
