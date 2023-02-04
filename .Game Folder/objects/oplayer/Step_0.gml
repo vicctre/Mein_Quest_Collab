@@ -26,15 +26,6 @@ if has_control {
 	key_attack = false
 }
 
-attack_pause_timer--
-if key_attack and !attack_pause_timer {
-	state = PLAYERSTATE.ATTACK_SLASH
-	sprite_index = sPlayerAttack
-	image_index = 0
-	audio_play_sound(SFX_AttackWiff,5,false)
-	attack_pause_timer = attack_pause_time
-}
-
 // contact walls
 up_free = place_empty(x, y - 1, wall_obj)
 down_free = place_empty(x, y + 1, wall_obj)
@@ -42,51 +33,100 @@ left_free = place_empty(x - 1, y, wall_obj)
 right_free = place_empty(x + 1, y, wall_obj)
 
 // can we move hor?
-move_h = key_right*right_free - key_left*left_free
+move_h = (key_right*right_free - key_left*left_free) * has_control
 // do we try to move?
 input_move_h = key_right - key_left
 // moving hor
 hsp_to = move_h * hsp_max
 
-sprint_double_press_timer--
-if sprint_double_press_timer == 0 {
-	sprint_last_pressed_dir = 0
-}
-var _sprint_press_dir = key_right_pressed - key_left_pressed
-if !is_sprinting {
-	if (key_left_pressed or key_right_pressed) 
-			and sprint_last_pressed_dir == _sprint_press_dir
-			and !down_free {
-		is_sprinting = true
+if has_control {
+
+	attack_pause_timer--
+	if key_attack and !attack_pause_timer {
+		state = PLAYERSTATE.ATTACK_SLASH
+		sprite_index = sPlayerAttack
+		image_index = 0
+		audio_play_sound(SFX_AttackWiff,5,false)
+		attack_pause_timer = attack_pause_time
 	}
-} else {
-	if move_h == 0 {
-		is_sprinting = false
+
+	sprint_double_press_timer--
+	if sprint_double_press_timer == 0 {
+		sprint_last_pressed_dir = 0
 	}
-}
-if _sprint_press_dir != 0 {
-	sprint_double_press_timer = sprint_double_press_time
-	sprint_last_pressed_dir = _sprint_press_dir
+	var _sprint_press_dir = key_right_pressed - key_left_pressed
+	if !is_sprinting {
+		if (key_left_pressed or key_right_pressed) 
+				and sprint_last_pressed_dir == _sprint_press_dir
+				and !down_free {
+			is_sprinting = true
+		}
+	} else {
+		if move_h == 0 {
+			is_sprinting = false
+		}
+	}
+	if _sprint_press_dir != 0 {
+		sprint_double_press_timer = sprint_double_press_time
+		sprint_last_pressed_dir = _sprint_press_dir
+	}
+
+	// reset on_wall
+	on_wall = false
+
+	// used to fake ground for smoother jumping
+	on_ground--
+
+	if !down_free
+		on_ground = on_ground_delay
+
+	// on wall
+	if ((!right_free and key_right) 
+			or (!left_free and key_left)) 
+			and abs(input_move_h)
+			and wall_jump_on
+		on_wall = true
+
+	// jumping
+	if key_jump
+		jump_pressed = jump_press_delay
+
+	if jump_pressed {
+		jump_pressed--
+		// wall jump
+		if on_wall {
+			jumps = jumps_max
+			jump_pressed = 0
+			vsp = jump_sp
+			hsp = -input_move_h * hsp_max
+		}
+		// ordinary jump
+		else if jumps {
+			vsp = jump_sp
+			jumps -= down_free and !on_ground
+			jump_pressed = 0
+		}
+	}
+
+	// enemies
+	var enemy = instance_place(x, y, ENEMY)
+	if enemy != noone {
+		Kill()
+	}
+
+	// enter door
+	var door = instance_place(x, y, oDoor)
+	if key_up_pressed and door {
+		if has_control {
+			has_control = false; 
+			SlideTransition(TRANS_MODE.GOTO, door.target); 
+		}
+	}
+
 }
 
 hsp = approach(hsp, hsp_to * (1 + is_sprinting), acc)
 vsp = approach(vsp, vsp_max, grav)
-
-// reset on_wall
-on_wall = false
-
-// used to fake ground for smoother jumping
-on_ground--
-
-if !down_free
-	on_ground = on_ground_delay
-
-// on wall
-if ((!right_free and key_right) 
-		or (!left_free and key_left)) 
-		and abs(input_move_h)
-		and wall_jump_on
-	on_wall = true
 
 // handle vertical sp
 // hit ceil
@@ -100,37 +140,6 @@ else if !down_free {
 	if vsp > 0
 		vsp = 0
 }
-
-// jumping
-if key_jump
-	jump_pressed = jump_press_delay
-
-if jump_pressed {
-	jump_pressed--
-	// wall jump
-	if on_wall {
-		jumps = jumps_max
-		jump_pressed = 0
-		vsp = jump_sp
-		hsp = -input_move_h * hsp_max
-	}
-	// ordinary jump
-	else if jumps {
-		vsp = jump_sp
-		jumps -= down_free and !on_ground
-		jump_pressed = 0
-	}
-}
-
-//enter door
-var door = instance_place(x, y, oDoor)
-if key_up_pressed and door {
-	if has_control {
-		has_control = false; 
-		SlideTransition(TRANS_MODE.GOTO, door.target); 
-	}
-}
-
 
 if hsp != 0 {
 	image_xscale = sign(hsp)
@@ -157,6 +166,12 @@ switch state {
 	case PLAYERSTATE.ATTACK_COMBO: {
 		break
 	}
+	case PLAYERSTATE.DEAD: {
+		if !down_free and !alarm[1] and oTransition.IsOff() {
+			alarm[1] = 60
+		}
+		break
+	}
 }
 
 // block hor sp if wall contact
@@ -171,4 +186,4 @@ if abs(hsp) or abs(vsp)
 
 scr_camera_set_pos(0, x, y)
 
-animate()
+Animate()

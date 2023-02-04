@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Old",
-    "path": "folders/Sprites/Tile_Tests/Old.yy",
+    "name": "Mein_Quest_SST",
+    "path": "Mein_Quest_SST.yyp",
   },
 }

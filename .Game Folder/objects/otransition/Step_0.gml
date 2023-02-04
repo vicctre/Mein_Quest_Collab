@@ -34,7 +34,8 @@ if (mode != TRANS_MODE.OFF)
 			}
 			case TRANS_MODE.RESTART: 
 			{
-				game_restart(); 
+				mode = TRANS_MODE.OFF; 
+				Restart()
 				break; 
 			}
 		}

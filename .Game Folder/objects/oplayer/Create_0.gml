@@ -5,6 +5,7 @@ enum PLAYERSTATE {
 	FREE,
 	ATTACK_SLASH,
 	ATTACK_COMBO,
+	DEAD,
 }
 
 scr_debug_ini()
@@ -52,7 +53,7 @@ sprint_double_press_time = 0.5 * room_speed
 sprint_double_press_timer = 0
 sprint_last_pressed_dir = 0
 
-function animate() {
+function Animate() {
 	if hsp != 0 {
 		image_xscale = sign(hsp)
 	}
@@ -83,5 +84,18 @@ function animate() {
 		case PLAYERSTATE.ATTACK_COMBO: {
 			break
 		}
+		case PLAYERSTATE.DEAD: {
+			break
+		}
 	}
+}
+
+function Kill() {
+	sprite_index = sPlayerDead
+	state = PLAYERSTATE.DEAD
+	has_control = false
+	vsp = jump_sp
+	hsp = 0
+	//y -= 30
+	game_set_speed(30, gamespeed_fps)
 }
