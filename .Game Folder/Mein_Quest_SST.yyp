@@ -8,6 +8,7 @@
     {"id":{"name":"Mein_JumpUp_strip3","path":"sprites/Mein_JumpUp_strip3/Mein_JumpUp_strip3.yy",},"order":0,},
     {"id":{"name":"camera","path":"scripts/camera/camera.yy",},"order":2,},
     {"id":{"name":"ui","path":"scripts/ui/ui.yy",},"order":8,},
+    {"id":{"name":"sAttackCirlce","path":"sprites/sAttackCirlce/sAttackCirlce.yy",},"order":16,},
     {"id":{"name":"sEnemy01","path":"sprites/sEnemy01/sEnemy01.yy",},"order":0,},
     {"id":{"name":"oContact","path":"objects/oContact/oContact.yy",},"order":4,},
     {"id":{"name":"TestingGround2","path":"rooms/TestingGround2/TestingGround2.yy",},"order":2,},

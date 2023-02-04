@@ -47,13 +47,17 @@ if has_control {
 		if !down_free {
 			state = PLAYERSTATE.ATTACK_SLASH
 			sprite_index = sPlayerAttack
-		} else {
+			audio_play_sound(SFX_AttackWiff,5,false)
+			attack_pause_timer = attack_pause_time
+		} else if !aeral_attack_used {
 			state = PLAYERSTATE.ATTACK_AERAL
 			sprite_index = sPlayerAttackAeral
 			aeral_attack_timer = aeral_attack_time
+			perform_attack(sAttackCirlce, 1, 1)
+			audio_play_sound(SFX_AttackWiff,5,false)
+			attack_pause_timer = attack_pause_time
+			aeral_attack_used = true
 		}
-		audio_play_sound(SFX_AttackWiff,5,false)
-		attack_pause_timer = attack_pause_time
 	}
 
 	sprint_double_press_timer--
@@ -142,6 +146,7 @@ if ((vsp < 0) and !up_free) {
 // reset jumps if on ground
 else if !down_free {
 	jumps = jumps_max
+	aeral_attack_used = false
 	// land on ground
 	if vsp > 0
 		vsp = 0
@@ -176,6 +181,7 @@ switch state {
 	}
 	case PLAYERSTATE.ATTACK_AERAL: {
 		vsp = 0
+		hsp = 0
 		image_angle += aeral_attack_spin_sp
 		if !aeral_attack_timer-- {
 			state = PLAYERSTATE.FREE
