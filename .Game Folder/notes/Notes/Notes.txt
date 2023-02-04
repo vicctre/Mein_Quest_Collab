@@ -1,0 +1,4 @@
+
+Player sprite collsion mask bounds relative to center:
+-12 11
+-5 12

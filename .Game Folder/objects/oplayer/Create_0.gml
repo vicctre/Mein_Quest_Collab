@@ -5,6 +5,7 @@ enum PLAYERSTATE {
 	FREE,
 	ATTACK_SLASH,
 	ATTACK_COMBO,
+	ATTACK_AERAL,
 	DEAD,
 }
 
@@ -43,11 +44,18 @@ gp_hinp_treshold = 0.2
 has_control = true
 state = PLAYERSTATE.FREE
 
+
+// attacks
 attack_pause_time = 15
 attack_pause_timer = 0
 attack_perform_frame = 2
 attack_performed = false
 list_hit_by_attack = ds_list_create()
+
+// aeral attack
+aeral_attack_spin_sp = 36
+aeral_attack_time = 30
+aeral_attack_timer = 0
 
 is_sprinting = false
 sprint_double_press_time = 0.5 * room_speed

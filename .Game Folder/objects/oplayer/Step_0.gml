@@ -43,9 +43,15 @@ if has_control {
 
 	attack_pause_timer--
 	if key_attack and !attack_pause_timer {
-		state = PLAYERSTATE.ATTACK_SLASH
-		sprite_index = sPlayerAttack
 		image_index = 0
+		if !down_free {
+			state = PLAYERSTATE.ATTACK_SLASH
+			sprite_index = sPlayerAttack
+		} else {
+			state = PLAYERSTATE.ATTACK_AERAL
+			sprite_index = sPlayerAttackAeral
+			aeral_attack_timer = aeral_attack_time
+		}
 		audio_play_sound(SFX_AttackWiff,5,false)
 		attack_pause_timer = attack_pause_time
 	}
@@ -152,6 +158,8 @@ switch state {
 	case PLAYERSTATE.ATTACK_SLASH: {
 		if !down_free {
 			hsp = 0
+		} else {
+			vsp = 0
 		}
 		if image_index >= attack_perform_frame and !attack_performed {
 			perform_attack(sAttack, image_xscale, 1)
@@ -164,6 +172,16 @@ switch state {
 		break
 	}
 	case PLAYERSTATE.ATTACK_COMBO: {
+		break
+	}
+	case PLAYERSTATE.ATTACK_AERAL: {
+		vsp = 0
+		image_angle += aeral_attack_spin_sp
+		if !aeral_attack_timer-- {
+			state = PLAYERSTATE.FREE
+			sprite_index = sPlayerFalling
+			image_angle = 0
+		}
 		break
 	}
 	case PLAYERSTATE.DEAD: {

@@ -1,8 +1,8 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "Mein_Aerial_Attack",
-  "bboxMode": 0,
+  "name": "sPlayerAttackAeral",
+  "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
   "origin": 4,
@@ -10,10 +10,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 31,
-  "bbox_right": 112,
-  "bbox_top": 8,
-  "bbox_bottom": 97,
+  "bbox_left": 60,
+  "bbox_right": 83,
+  "bbox_top": 49,
+  "bbox_bottom": 66,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -33,7 +33,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "Mein_Aerial_Attack",
+    "name": "sPlayerAttackAeral",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -45,7 +45,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"442f5b0f-26d9-40b3-8a81-5340d9d4f2ac","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4106508d-b15f-4422-8fa1-ef7042eb6301","path":"sprites/Mein_Aerial_Attack/Mein_Aerial_Attack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"442f5b0f-26d9-40b3-8a81-5340d9d4f2ac","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4106508d-b15f-4422-8fa1-ef7042eb6301","path":"sprites/sPlayerAttackAeral/sPlayerAttackAeral.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Mein NU",
-    "path": "folders/Sprites/Mein NU.yy",
+    "name": "Mein Sprites",
+    "path": "folders/Sprites/Mein Sprites.yy",
   },
 }
