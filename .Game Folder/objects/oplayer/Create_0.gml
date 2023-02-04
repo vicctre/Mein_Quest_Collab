@@ -9,6 +9,7 @@ enum PLAYERSTATE {
 }
 
 scr_debug_ini()
+global.VAR_BAR_ROW_DELTA = 30
 
 /// main parameters
 hsp_max = 3
@@ -61,7 +62,7 @@ function Animate() {
 		case PLAYERSTATE.FREE: {
 			if down_free {
 				if vsp < 0 {
-					sprite_index = sPlayerJump
+					sprite_index = jumps ? sPlayerJump : sPlayerDoubleJump
 				} else {
 					sprite_index = sPlayerFalling
 				}

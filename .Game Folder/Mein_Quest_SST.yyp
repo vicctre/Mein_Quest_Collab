@@ -142,7 +142,7 @@
     {"id":{"name":"oChestOpen","path":"objects/oChestOpen/oChestOpen.yy",},"order":6,},
     {"id":{"name":"sTitlePrototype3","path":"sprites/sTitlePrototype3/sTitlePrototype3.yy",},"order":5,},
     {"id":{"name":"SFX_Land","path":"sounds/SFX_Land/SFX_Land.yy",},"order":1,},
-    {"id":{"name":"Mein_DoubleJump_strip10","path":"sprites/Mein_DoubleJump_strip10/Mein_DoubleJump_strip10.yy",},"order":14,},
+    {"id":{"name":"sPlayerDoubleJump","path":"sprites/sPlayerDoubleJump/sPlayerDoubleJump.yy",},"order":14,},
     {"id":{"name":"geometry","path":"scripts/geometry/geometry.yy",},"order":4,},
     {"id":{"name":"sChestOpen","path":"sprites/sChestOpen/sChestOpen.yy",},"order":1,},
     {"id":{"name":"sShanteeAttack","path":"sprites/sShanteeAttack/sShanteeAttack.yy",},"order":5,},
