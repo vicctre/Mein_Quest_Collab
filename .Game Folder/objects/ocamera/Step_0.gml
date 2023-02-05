@@ -31,13 +31,10 @@ camera_set_view_pos(cam,x-view_w_half,y-view_h_half);
 if (layer_exists("BG2")) 
 {
 	layer_x("BG2",x/2); 
-	
 }
-
 
 if (layer_exists("BG3")) 
 {
-
 	layer_x("BG3", x - view_w_half);
 }
 
@@ -45,4 +42,3 @@ if (layer_exists("BG1"))
 {
 	layer_x("BG1",x/4)
 }
-
