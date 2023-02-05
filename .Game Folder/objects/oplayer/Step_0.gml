@@ -182,11 +182,11 @@ switch state {
 	case PLAYERSTATE.ATTACK_AERAL: {
 		vsp = 0
 		hsp = 0
-		image_angle += aeral_attack_spin_sp
+		image_draw_angle += aeral_attack_spin_sp
 		if !aeral_attack_timer-- {
 			state = PLAYERSTATE.FREE
 			sprite_index = sPlayerFalling
-			image_angle = 0
+			image_draw_angle = 0
 		}
 		break
 	}
