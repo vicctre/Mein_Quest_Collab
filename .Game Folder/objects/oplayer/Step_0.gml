@@ -121,7 +121,7 @@ if has_control {
 	// enemies
 	var enemy = instance_place(x, y, ENEMY)
 	if enemy != noone {
-		Kill()
+		Hit()
 	}
 
 	// enter door
@@ -150,10 +150,6 @@ else if !down_free {
 	// land on ground
 	if vsp > 0
 		vsp = 0
-}
-
-if hsp != 0 {
-	image_xscale = sign(hsp)
 }
 
 switch state {
@@ -193,6 +189,14 @@ switch state {
 	case PLAYERSTATE.DEAD: {
 		if !down_free and !alarm[1] and oTransition.IsOff() {
 			alarm[1] = 60
+		}
+		break
+	}
+	case PLAYERSTATE.HIT: {
+		hsp = hit.hsp * -image_xscale
+		if !hit.timer-- {
+			has_control = true
+			state = PLAYERSTATE.FREE
 		}
 		break
 	}

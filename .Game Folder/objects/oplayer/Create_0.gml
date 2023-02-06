@@ -7,6 +7,7 @@ enum PLAYERSTATE {
 	ATTACK_COMBO,
 	ATTACK_AERAL,
 	DEAD,
+	HIT,
 }
 
 scr_debug_ini()
@@ -66,15 +67,21 @@ sprint_double_press_time = 0.5 * room_speed
 sprint_double_press_timer = 0
 sprint_last_pressed_dir = 0
 
+// hit state
+hit = {
+	vsp: -4,
+	hsp: 4,
+	time: 45,
+	timer: 0
+}
+
 // create player-related ui
 instance_create_layer(0, 0, "ui", oUI)
 
 function Animate() {
-	if hsp != 0 {
-		image_xscale = sign(hsp)
-	}
 	switch state {
 		case PLAYERSTATE.FREE: {
+			animate_update_xscale()
 			if down_free {
 				if vsp < 0 {
 					sprite_index = jumps ? sPlayerJump : sPlayerDoubleJump
@@ -103,6 +110,9 @@ function Animate() {
 		case PLAYERSTATE.DEAD: {
 			break
 		}
+		case PLAYERSTATE.HIT: {
+			break
+		}
 	}
 }
 
@@ -112,7 +122,25 @@ function Kill() {
 	has_control = false
 	vsp = jump_sp
 	hsp = 0
-	hp--
 	//y -= 30
 	game_set_speed(30, gamespeed_fps)
+}
+
+function Hit() {
+	hp--
+	if !hp {
+		Kill()
+		return;
+	}
+	vsp = hit.vsp
+	hsp = hit.hsp * -image_xscale
+	has_control = false
+	hit.timer = hit.time
+	state = PLAYERSTATE.HIT
+}
+
+function animate_update_xscale() {
+	if hsp != 0 {
+		image_xscale = sign(hsp)
+	}
 }
