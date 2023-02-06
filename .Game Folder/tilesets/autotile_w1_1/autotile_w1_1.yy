@@ -134,7 +134,7 @@
     "TileSerialiseData": [],
   },
   "parent": {
-    "name": "Old stuff",
-    "path": "folders/Tile Sets/Old stuff.yy",
+    "name": "Mein_Quest_SST",
+    "path": "Mein_Quest_SST.yyp",
   },
 }
