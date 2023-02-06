@@ -13,6 +13,8 @@ scr_debug_ini()
 global.VAR_BAR_ROW_DELTA = 30
 
 /// main parameters
+hp_max = 4
+hp = hp_max
 hsp_max = 3
 vsp_max = 7
 acc = 1.1
@@ -64,6 +66,9 @@ sprint_double_press_time = 0.5 * room_speed
 sprint_double_press_timer = 0
 sprint_last_pressed_dir = 0
 
+// create player-related ui
+instance_create_layer(0, 0, "ui", oUI)
+
 function Animate() {
 	if hsp != 0 {
 		image_xscale = sign(hsp)
@@ -107,6 +112,7 @@ function Kill() {
 	has_control = false
 	vsp = jump_sp
 	hsp = 0
+	hp--
 	//y -= 30
 	game_set_speed(30, gamespeed_fps)
 }
