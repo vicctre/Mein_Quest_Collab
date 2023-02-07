@@ -176,8 +176,11 @@
     {"id":{"name":"TestingGround","path":"rooms/TestingGround/TestingGround.yy",},"order":1,},
   ],
   "Options": [
+    {"name":"Android","path":"options/android/options_android.yy",},
+    {"name":"iOS","path":"options/ios/options_ios.yy",},
     {"name":"Linux","path":"options/linux/options_linux.yy",},
     {"name":"macOS","path":"options/mac/options_mac.yy",},
+    {"name":"tvOS","path":"options/tvos/options_tvos.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -233,7 +236,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/Scripts/Shaders.yy","order":13,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sequences","folderPath":"folders/Sequences.yy","order":9,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sounds","folderPath":"folders/Sounds.yy","order":2,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":16,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy","order":15,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Backgrounds","folderPath":"folders/Sprites/Backgrounds.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"W1-1","folderPath":"folders/Sprites/Backgrounds/W1-1.yy","order":1,},
@@ -254,6 +256,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Items","folderPath":"folders/Sprites/Other/Items.yy","order":13,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile_Tests","folderPath":"folders/Sprites/Tile_Tests.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI stuff","folderPath":"folders/Sprites/UI stuff.yy","order":7,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":16,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":6,},
   ],
   "AudioGroups": [

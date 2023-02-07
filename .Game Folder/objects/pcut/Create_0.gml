@@ -9,5 +9,9 @@ function set_hit(damage=0) {
 	else {
 		state = ENEMYSTATE.DEAD
 	}
+	
+	//
+	var player = instance_find(oPlayer, 0);
+	test = sign(x-oPlayer.x);
 }
 
