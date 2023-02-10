@@ -211,8 +211,17 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_27BFBB32","properties":[],"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":16.0,"y":-16.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7250DB23","properties":[],"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":400.0,"y":-16.0,},
       ],"visible":false,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"OuterTree","tilesetId":null,"x":0,"y":0,"tiles":{"SerialiseWidth":0,"SerialiseHeight":0,"TileSerialiseData":[
-],},"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"OuterTree","tilesetId":{"name":"TreeTower_Outside","path":"tilesets/TreeTower_Outside/TreeTower_Outside.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":13,"SerialiseHeight":30,"TileCompressedData":[
+1,2,-11,-2147483648,2,12,2,-11,-2147483648,-2,12,-11,-2147483648,
+-2,12,-11,-2147483648,-2,12,-11,-2147483648,-2,12,-11,-2147483648,-2,
+12,-11,-2147483648,-2,12,-11,-2147483648,-2,12,-11,-2147483648,-2,12,
+-11,-2147483648,-2,12,-11,-2147483648,-2,12,-11,-2147483648,-2,12,-11,
+-2147483648,-2,12,-11,-2147483648,-2,12,-11,-2147483648,-2,12,-11,-2147483648,
+-2,12,-11,-2147483648,-2,12,-11,-2147483648,-2,12,-11,-2147483648,-2,
+12,-11,-2147483648,-2,12,-11,-2147483648,-2,12,-11,-2147483648,-2,12,
+-11,-2147483648,-2,12,-11,-2147483648,-2,12,-11,-2147483648,-2,12,-11,
+-2147483648,-2,12,-11,-2147483648,-2,12,-11,-2147483648,-2,12,-11,-2147483648,
+-2,12,-11,-2147483648,1,12,],},"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","tilesetId":{"name":"sTree_Tower_Inside","path":"tilesets/sTree_Tower_Inside/sTree_Tower_Inside.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":13,"SerialiseHeight":30,"TileCompressedData":[
 -44,-2147483648,-2,0,1,42,-5,-2147483648,-7,33,1,27,-12,
 -2147483648,1,44,-38,-2147483648,1,42,-12,-2147483648,1,32,-10,-2147483648,

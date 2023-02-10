@@ -1,10 +1,10 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "TreeTowerTiles",
+  "name": "TreeTower_Outside",
   "spriteId": {
-    "name": "sTree_Tower",
-    "path": "sprites/sTree_Tower/sTree_Tower.yy",
+    "name": "Tree_outside",
+    "path": "sprites/Tree_outside/Tree_outside.yy",
   },
   "tileWidth": 32,
   "tileHeight": 32,
