@@ -87,6 +87,7 @@
     {"id":{"name":"sCoin","path":"sprites/sCoin/sCoin.yy",},"order":4,},
     {"id":{"name":"sEldoon_Small","path":"sprites/sEldoon_Small/sEldoon_Small.yy",},"order":2,},
     {"id":{"name":"oLanding","path":"objects/oLanding/oLanding.yy",},"order":4,},
+    {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},"order":7,},
     {"id":{"name":"common","path":"scripts/common/common.yy",},"order":12,},
     {"id":{"name":"Label_2","path":"sprites/Label_2/Label_2.yy",},"order":0,},
     {"id":{"name":"oFleater","path":"objects/oFleater/oFleater.yy",},"order":1,},
