@@ -3,7 +3,6 @@ vsp = vsp + grv;
 //dont walk off edges 
 if (grounded) && (afraidofheights) && (!place_meeting(x+hsp,y+1,oWall)) 
 {
-	
 	hsp = -hsp; 
 }
 

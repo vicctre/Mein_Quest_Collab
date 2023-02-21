@@ -12,6 +12,6 @@ function set_hit(damage=0) {
 	
 	//
 	var player = instance_find(oPlayer, 0);
-	test = sign(x-oPlayer.x);
+	hitDirection = sign(x-oPlayer.x);
 }
 

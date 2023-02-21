@@ -1,14 +1,14 @@
 if(hp <= 0) 
 {
+	if (deadSprite == -1)
+		show_message("Error: this enemy's death sprite is not set");
 	
-	with(instance_create_layer(x,y,layer,oEnemy01Ded)) 
-	{
-		image_xscale = other.test; 
-		hsp = image_xscale*lengthdir_x(3,direction); 
-		vsp = lengthdir_y(3,direction)-3;
-		image_yscale = other.size;
-	}
-	
+	var inst = instance_create_layer(x,y,layer, deadEnemy);
+	inst.sprite_index = deadSprite;
+	inst.image_xscale = -hitDirection; 
+	inst.hsp = hitDirection*2;
+	inst.vsp = -5;
+	inst.image_yscale = size;
 	instance_destroy(); 
 }
 
