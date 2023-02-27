@@ -74,7 +74,6 @@
     {"name":"inst_449DF079","path":"rooms/TestingGround/TestingGround.yy",},
     {"name":"inst_59988F5B","path":"rooms/TestingGround/TestingGround.yy",},
     {"name":"inst_461BE1F9","path":"rooms/TestingGround/TestingGround.yy",},
-    {"name":"inst_25635949","path":"rooms/TestingGround/TestingGround.yy",},
     {"name":"inst_9DB72DA","path":"rooms/TestingGround/TestingGround.yy",},
     {"name":"inst_165ABAA5","path":"rooms/TestingGround/TestingGround.yy",},
     {"name":"inst_34DCEF6C","path":"rooms/TestingGround/TestingGround.yy",},
@@ -146,7 +145,6 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"effects","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"ui","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_25635949","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":928.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_67B55750","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"propertyId":{"name":"variable_name","path":"objects/oDoor/oDoor.yy",},"value":"0",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":896.0,},

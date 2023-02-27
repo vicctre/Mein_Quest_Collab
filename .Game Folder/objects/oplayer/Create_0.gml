@@ -144,3 +144,5 @@ function animate_update_xscale() {
 		image_xscale = sign(hsp)
 	}
 }
+
+instance_create_layer(x, y, layer, oCamera)

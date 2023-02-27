@@ -28,17 +28,24 @@ shake_remain = max(0,shake_remain - ((1/shake_length)*shake_magnitude));
 //Update Camera View 
 camera_set_view_pos(cam,x-view_w_half,y-view_h_half); 
 
+
+// bgr parallax
+if layer_exists("BG1") {
+	var parallax = 0.5
+	layer_x("BG1", (x + global.bgr1_xoffset) * parallax)
+	layer_y("BG1", (y + global.bgr1_yoffset) * parallax)
+}
+
 if (layer_exists("BG2")) 
 {
-	layer_x("BG2",x/2); 
+	var parallax = 0.7
+	layer_x("BG2", (x + global.bgr2_xoffset) * parallax)
+	layer_y("BG2", (y + global.bgr2_yoffset) * parallax)
 }
 
 if (layer_exists("BG3")) 
 {
-	layer_x("BG3", x - view_w_half);
-}
-
-if (layer_exists("BG1"))
-{
-	layer_x("BG1",x/4)
+	var parallax = 0.9
+	layer_x("BG3", (x + global.bgr3_xoffset) * parallax)
+	layer_y("BG3", (y + global.bgr3_yoffset) * parallax)
 }

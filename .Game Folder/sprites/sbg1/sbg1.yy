@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ea0a56de-4298-459f-993d-856d1cb9177b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "W1-1",
     "path": "folders/Sprites/Backgrounds/W1-1.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 320,
-    "yorigin": 240,
+    "yorigin": 140,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
