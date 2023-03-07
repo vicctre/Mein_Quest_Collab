@@ -2,14 +2,21 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "oFleater",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"grv","path":"objects/ENEMY/ENEMY.yy",},"value":"0",},
+  ],
   "parent": {
     "name": "NMEs needing code",
     "path": "folders/Objects/Enemys/NMEs needing code.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "ENEMY",
+    "path": "objects/ENEMY/ENEMY.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

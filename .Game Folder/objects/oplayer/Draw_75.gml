@@ -1,5 +1,5 @@
 
-event_inherited()
+event_inherited();
 
 scr_debug_show_var("key_left", key_left)
 scr_debug_show_var("key_right", key_right)
@@ -12,3 +12,5 @@ scr_debug_show_var("has_control", has_control)
 scr_debug_show_var("image_xscale", image_xscale)
 
 scr_debug_scripts_update()
+
+draw_text(1300, 100, "coins: " + string(global.coins));

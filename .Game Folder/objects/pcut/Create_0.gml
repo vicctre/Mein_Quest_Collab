@@ -1,17 +1,19 @@
+invincible = false;
 
-function set_hit(damage=0) { 
-	hp -= damage
-	flash = true
-	if (hp > 0) {
-		state = ENEMYSTATE.HIT 
-		hitNow = true
-	}
-	else {
-		state = ENEMYSTATE.DEAD
-	}
+function set_hit(damage=0) {
+	if (!invincible) {
+		hp -= damage
+		flash = true
+		if (hp > 0) {
+			state = ENEMYSTATE.HIT 
+			hitNow = true
+		}
+		else {
+			state = ENEMYSTATE.DEAD
+		}
 	
-	//
-	var player = instance_find(oPlayer, 0);
-	hitDirection = sign(x-oPlayer.x);
+		//
+		hitDirection = sign(x-oPlayer.x);
+	}
 }
 

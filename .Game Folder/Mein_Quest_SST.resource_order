@@ -89,6 +89,7 @@
     {"name":"oPlayerRef","order":1,"path":"objects/oPlayerRef/oPlayerRef.yy",},
     {"name":"Mein_Idle_strip14","order":23,"path":"sprites/Mein_Idle_strip14/Mein_Idle_strip14.yy",},
     {"name":"Auto_Tile_templateV1","order":2,"path":"sprites/Auto_Tile_templateV1/Auto_Tile_templateV1.yy",},
+    {"name":"oCoinFizzle","order":8,"path":"objects/oCoinFizzle/oCoinFizzle.yy",},
     {"name":"oShante_Attack","order":2,"path":"objects/oShante_Attack/oShante_Attack.yy",},
     {"name":"Mein_FallTransition_14FPS_strip3","order":19,"path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},
     {"name":"Mein_crouch_strip2","order":11,"path":"sprites/Mein_crouch_strip2/Mein_crouch_strip2.yy",},

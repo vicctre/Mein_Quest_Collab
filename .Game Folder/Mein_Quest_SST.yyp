@@ -120,6 +120,7 @@
     {"id":{"name":"Mein_Idle_strip14","path":"sprites/Mein_Idle_strip14/Mein_Idle_strip14.yy",},"order":23,},
     {"id":{"name":"Sprite16","path":"sprites/Sprite16/Sprite16.yy",},"order":0,},
     {"id":{"name":"Auto_Tile_templateV1","path":"sprites/Auto_Tile_templateV1/Auto_Tile_templateV1.yy",},"order":2,},
+    {"id":{"name":"oCoinFizzle","path":"objects/oCoinFizzle/oCoinFizzle.yy",},"order":8,},
     {"id":{"name":"sApploon","path":"sprites/sApploon/sApploon.yy",},"order":0,},
     {"id":{"name":"oShante_Attack","path":"objects/oShante_Attack/oShante_Attack.yy",},"order":2,},
     {"id":{"name":"Mein_FallTransition_14FPS_strip3","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},"order":19,},

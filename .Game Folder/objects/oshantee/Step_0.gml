@@ -1,51 +1,29 @@
-vsp = vsp + grv; 
+event_inherited();
+cooldown = max(0, cooldown-1);
+var dir = sign(oPlayer.x-x);
+if (!attacking)
+	image_xscale = dir;
 
-//dont walk off edges 
-if (grounded) && (afraidofheights) && (!place_meeting(x+hsp,y+1,oWall)) 
-{
-	
-	hsp = -hsp; 
-}
 
-//Collision (horizontal) 
-if (place_meeting(x+hsp,y,oWall))
-{
-	while (!place_meeting(x+sign(hsp),y,oWall))
-	{
-		x = x + sign(hsp); 
+if (attacking) {
+	image_index += 0.2;
+	if (image_index == 6) {
+		var inst = instance_create_layer(x, y, layer, oShante_Attack);
+		inst.image_xscale = image_xscale;
 	}
-	hsp = -hsp; 
-}
-x = x + hsp; 
-
-//Collision (vertical) 
-if (place_meeting(x,y+vsp,oWall))
-{
-	while (!place_meeting(x,y+sign(vsp),oWall))
-	{
-		y = y + sign(vsp); 
+	if (image_index == image_number) {
+		attacking = false;
+		sprite_index = sShanteeIdle;
+		cooldown = cooldown_max;
 	}
-	vsp = 0; 
-}
-y = y + vsp; 
-
-//Animations 
-
-if (!place_meeting(x,y+1,oWall)) 
-{
-	grounded = false; 
-
-}
-else 
-{
-	grounded = true; 
-
-
 }
 
-if (hsp != 0) image_xscale = sign(hsp) * size; 
-image_yscale = size; 
-
-
-
-
+var xDiff = abs(oPlayer.x-x);
+var yDiff = abs(oPlayer.y-y);
+if (xDiff <= 80 && yDiff <= 30) {
+	if (!attacking && cooldown == 0) {
+		attacking = true;
+		sprite_index = sShanteeCycle;
+		image_index = 0;
+	}
+}
