@@ -157,6 +157,7 @@
     {"name":"Basic_Attack","order":1,"path":"objects/Basic_Attack/Basic_Attack.yy",},
     {"name":"TreeTower_Outside","order":6,"path":"tilesets/TreeTower_Outside/TreeTower_Outside.yy",},
     {"name":"W1_2_part2","order":2,"path":"rooms/W1_2_part2/W1_2_part2.yy",},
+    {"name":"Globals","order":15,"path":"scripts/Globals/Globals.yy",},
     {"name":"sPlayerJump","order":3,"path":"sprites/sPlayerJump/sPlayerJump.yy",},
     {"name":"DeadSpinOut","order":7,"path":"scripts/DeadSpinOut/DeadSpinOut.yy",},
     {"name":"Mein_idle_8FPS_strip4","order":22,"path":"sprites/Mein_idle_8FPS_strip4/Mein_idle_8FPS_strip4.yy",},

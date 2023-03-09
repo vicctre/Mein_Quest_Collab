@@ -127,7 +127,7 @@ function Kill() {
 }
 
 function Hit() {
-	hp--
+	hp -= PLAYER_INVINCIBLE == false
 	if !hp {
 		Kill()
 		return;
@@ -137,6 +137,7 @@ function Hit() {
 	has_control = false
 	hit.timer = hit.time
 	state = PLAYERSTATE.HIT
+	sprite_index = sPlayerDamage
 }
 
 function animate_update_xscale() {

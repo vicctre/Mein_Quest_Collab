@@ -202,6 +202,7 @@ switch state {
 		if !hit.timer-- {
 			has_control = true
 			state = PLAYERSTATE.FREE
+			sprite_index = sPlayer
 		}
 		break
 	}

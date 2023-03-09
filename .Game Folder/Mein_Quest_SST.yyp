@@ -6,7 +6,9 @@
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
   ],
   "configs": {
-    "children": [],
+    "children": [
+      {"children":[],"name":"Dev",},
+    ],
     "name": "Default",
   },
   "defaultScriptType": 1,
@@ -204,6 +206,7 @@
     {"id":{"name":"Basic_Attack","path":"objects/Basic_Attack/Basic_Attack.yy",},"order":1,},
     {"id":{"name":"TreeTower_Outside","path":"tilesets/TreeTower_Outside/TreeTower_Outside.yy",},"order":6,},
     {"id":{"name":"W1_2_part2","path":"rooms/W1_2_part2/W1_2_part2.yy",},"order":2,},
+    {"id":{"name":"Globals","path":"scripts/Globals/Globals.yy",},"order":15,},
     {"id":{"name":"sPlayerJump","path":"sprites/sPlayerJump/sPlayerJump.yy",},"order":3,},
     {"id":{"name":"DeadSpinOut","path":"scripts/DeadSpinOut/DeadSpinOut.yy",},"order":7,},
     {"id":{"name":"Mein_idle_8FPS_strip4","path":"sprites/Mein_idle_8FPS_strip4/Mein_idle_8FPS_strip4.yy",},"order":22,},
