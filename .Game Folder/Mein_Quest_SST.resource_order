@@ -63,7 +63,7 @@
     {"name":"oDust","order":3,"path":"sprites/oDust/oDust.yy",},
     {"name":"sInDoor","order":9,"path":"sprites/sInDoor/sInDoor.yy",},
     {"name":"Mein_LogRide_strip5","order":2,"path":"sprites/Mein_LogRide_strip5/Mein_LogRide_strip5.yy",},
-    {"name":"sDamage","order":10,"path":"sprites/sDamage/sDamage.yy",},
+    {"name":"sPlayerDamage","order":10,"path":"sprites/sPlayerDamage/sPlayerDamage.yy",},
     {"name":"sPlayerA","order":1,"path":"sprites/sPlayerA/sPlayerA.yy",},
     {"name":"Mein_crouch","order":10,"path":"sprites/Mein_crouch/Mein_crouch.yy",},
     {"name":"sPlayerAttackAeral","order":15,"path":"sprites/sPlayerAttackAeral/sPlayerAttackAeral.yy",},

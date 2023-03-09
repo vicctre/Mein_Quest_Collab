@@ -71,7 +71,7 @@ sprint_last_pressed_dir = 0
 hit = {
 	vsp: -4,
 	hsp: 4,
-	time: 45,
+	time: 20,
 	timer: 0
 }
 

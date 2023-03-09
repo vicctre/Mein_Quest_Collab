@@ -89,7 +89,7 @@
     {"id":{"name":"sInDoor","path":"sprites/sInDoor/sInDoor.yy",},"order":9,},
     {"id":{"name":"W1_1","path":"tilesets/W1_1/W1_1.yy",},"order":0,},
     {"id":{"name":"Mein_LogRide_strip5","path":"sprites/Mein_LogRide_strip5/Mein_LogRide_strip5.yy",},"order":2,},
-    {"id":{"name":"sDamage","path":"sprites/sDamage/sDamage.yy",},"order":10,},
+    {"id":{"name":"sPlayerDamage","path":"sprites/sPlayerDamage/sPlayerDamage.yy",},"order":10,},
     {"id":{"name":"sPlayerA","path":"sprites/sPlayerA/sPlayerA.yy",},"order":1,},
     {"id":{"name":"Mein_crouch","path":"sprites/Mein_crouch/Mein_crouch.yy",},"order":10,},
     {"id":{"name":"sPlayerAttackAeral","path":"sprites/sPlayerAttackAeral/sPlayerAttackAeral.yy",},"order":15,},
