@@ -8,6 +8,7 @@ enum PLAYERSTATE {
 	ATTACK_AERAL,
 	DEAD,
 	HIT,
+	ENTER_DOOR,
 }
 
 scr_debug_ini()
@@ -21,6 +22,7 @@ vsp_max = 7
 acc = 1.1
 grav = 0.3
 jump_sp = -7
+double_jump_sp = -6
 hsp_to = 0	// how sp_x and sp_y change
 hsp = 0
 vsp = 0
@@ -71,22 +73,37 @@ sprint_last_pressed_dir = 0
 hit = {
 	vsp: -4,
 	hsp: 4,
-	time: 45,
+	time: 20,
 	timer: 0
 }
+
+// room transition
+enter_room = noone
 
 // create player-related ui
 instance_create_layer(0, 0, "ui", oUI)
 
 function Animate() {
+	image_speed = 1
 	switch state {
 		case PLAYERSTATE.FREE: {
 			animate_update_xscale()
 			if down_free {
 				if vsp < 0 {
-					sprite_index = jumps ? sPlayerJump : sPlayerDoubleJump
+					if jumps {
+						sprite_index = sPlayerJump
+					} else {
+						sprite_index = sPlayerDoubleJump
+						if is_animation_end() {
+							image_speed = 0	
+						}
+					}
 				} else {
-					sprite_index = sPlayerFalling
+					if jumps {
+						sprite_index = sPlayerFalling
+					} else {
+						sprite_index = sPlayerFallDj
+					}
 				}
 				break
 			}
@@ -113,6 +130,12 @@ function Animate() {
 		case PLAYERSTATE.HIT: {
 			break
 		}
+		case PLAYERSTATE.ENTER_DOOR: {
+			if is_animation_end() {
+				image_speed = 0
+			}
+			break
+		}
 	}
 }
 
@@ -127,7 +150,7 @@ function Kill() {
 }
 
 function Hit() {
-	hp--
+	hp -= PLAYER_INVINCIBLE == false
 	if !hp {
 		Kill()
 		return;
@@ -137,6 +160,7 @@ function Hit() {
 	has_control = false
 	hit.timer = hit.time
 	state = PLAYERSTATE.HIT
+	sprite_index = sPlayerDamage
 }
 
 function animate_update_xscale() {

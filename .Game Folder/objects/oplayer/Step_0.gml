@@ -1,4 +1,9 @@
 
+//// Debug
+if keyboard_check_pressed(ord("Q")) {
+	room_speed = room_speed == 60 ? 5 : 60
+}
+
 if has_control {
 	key_left_pressed = keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"))
 	key_right_pressed = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"))
@@ -112,8 +117,8 @@ if has_control {
 		}
 		// ordinary jump
 		else if jumps {
-			vsp = jump_sp
 			jumps -= down_free and !on_ground
+			vsp = jumps ? jump_sp : double_jump_sp
 			jump_pressed = 0
 		}
 	}
@@ -126,13 +131,11 @@ if has_control {
 
 	// enter door
 	var door = instance_place(x, y, oDoor)
-	if key_up_pressed and door {
-		if has_control {
-			has_control = false; 
-			SlideTransition(TRANS_MODE.GOTO, door.target); 
-		}
+	if !down_free and key_up_pressed and door {
+		state = PLAYERSTATE.ENTER_DOOR
+		enter_room = door.room_to_go
+		sprite_index = sPlayerEnterDoor
 	}
-
 }
 
 hsp = approach(hsp, hsp_to * (1 + is_sprinting), acc)
@@ -197,6 +200,13 @@ switch state {
 		if !hit.timer-- {
 			has_control = true
 			state = PLAYERSTATE.FREE
+			sprite_index = sPlayer
+		}
+		break
+	}
+	case PLAYERSTATE.ENTER_DOOR: {
+		if is_animation_end() {
+			SlideTransition(TRANS_MODE.GOTO, enter_room)
 		}
 		break
 	}
