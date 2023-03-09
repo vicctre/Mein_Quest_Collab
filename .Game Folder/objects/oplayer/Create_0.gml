@@ -8,6 +8,7 @@ enum PLAYERSTATE {
 	ATTACK_AERAL,
 	DEAD,
 	HIT,
+	ENTER_DOOR,
 }
 
 scr_debug_ini()
@@ -76,6 +77,9 @@ hit = {
 	timer: 0
 }
 
+// room transition
+enter_room = noone
+
 // create player-related ui
 instance_create_layer(0, 0, "ui", oUI)
 
@@ -124,6 +128,12 @@ function Animate() {
 			break
 		}
 		case PLAYERSTATE.HIT: {
+			break
+		}
+		case PLAYERSTATE.ENTER_DOOR: {
+			if is_animation_end() {
+				image_speed = 0
+			}
 			break
 		}
 	}

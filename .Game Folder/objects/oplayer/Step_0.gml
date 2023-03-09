@@ -131,13 +131,11 @@ if has_control {
 
 	// enter door
 	var door = instance_place(x, y, oDoor)
-	if key_up_pressed and door {
-		if has_control {
-			has_control = false; 
-			SlideTransition(TRANS_MODE.GOTO, door.target); 
-		}
+	if !down_free and key_up_pressed and door {
+		state = PLAYERSTATE.ENTER_DOOR
+		enter_room = door.room_to_go
+		sprite_index = sPlayerEnterDoor
 	}
-
 }
 
 hsp = approach(hsp, hsp_to * (1 + is_sprinting), acc)
@@ -203,6 +201,12 @@ switch state {
 			has_control = true
 			state = PLAYERSTATE.FREE
 			sprite_index = sPlayer
+		}
+		break
+	}
+	case PLAYERSTATE.ENTER_DOOR: {
+		if is_animation_end() {
+			SlideTransition(TRANS_MODE.GOTO, enter_room)
 		}
 		break
 	}

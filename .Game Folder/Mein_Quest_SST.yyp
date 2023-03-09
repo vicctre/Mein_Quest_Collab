@@ -105,7 +105,7 @@
     {"id":{"name":"sShanteeIdle","path":"sprites/sShanteeIdle/sShanteeIdle.yy",},"order":6,},
     {"id":{"name":"S_T_T_Inside","path":"sprites/S_T_T_Inside/S_T_T_Inside.yy",},"order":6,},
     {"id":{"name":"Notes","path":"notes/Notes/Notes.yy",},"order":0,},
-    {"id":{"name":"Mein_door_12FPS_strip9","path":"sprites/Mein_door_12FPS_strip9/Mein_door_12FPS_strip9.yy",},"order":13,},
+    {"id":{"name":"sPlayerEnterDoor","path":"sprites/sPlayerEnterDoor/sPlayerEnterDoor.yy",},"order":13,},
     {"id":{"name":"Mein_GemPose_strip7","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},"order":20,},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},"order":1,},
     {"id":{"name":"W1_2_part3","path":"rooms/W1_2_part3/W1_2_part3.yy",},"order":3,},

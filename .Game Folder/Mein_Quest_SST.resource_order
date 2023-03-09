@@ -75,7 +75,7 @@
     {"name":"sBG2","order":1,"path":"sprites/sBG2/sBG2.yy",},
     {"name":"sShanteeIdle","order":6,"path":"sprites/sShanteeIdle/sShanteeIdle.yy",},
     {"name":"S_T_T_Inside","order":6,"path":"sprites/S_T_T_Inside/S_T_T_Inside.yy",},
-    {"name":"Mein_door_12FPS_strip9","order":13,"path":"sprites/Mein_door_12FPS_strip9/Mein_door_12FPS_strip9.yy",},
+    {"name":"sPlayerEnterDoor","order":13,"path":"sprites/sPlayerEnterDoor/sPlayerEnterDoor.yy",},
     {"name":"Mein_GemPose_strip7","order":20,"path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},
     {"name":"oMenu","order":1,"path":"objects/oMenu/oMenu.yy",},
     {"name":"W1_2_part3","order":3,"path":"rooms/W1_2_part3/W1_2_part3.yy",},
