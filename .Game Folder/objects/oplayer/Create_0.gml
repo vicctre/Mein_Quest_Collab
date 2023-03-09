@@ -80,14 +80,26 @@ hit = {
 instance_create_layer(0, 0, "ui", oUI)
 
 function Animate() {
+	image_speed = 1
 	switch state {
 		case PLAYERSTATE.FREE: {
 			animate_update_xscale()
 			if down_free {
 				if vsp < 0 {
-					sprite_index = jumps ? sPlayerJump : sPlayerDoubleJump
+					if jumps {
+						sprite_index = sPlayerJump
+					} else {
+						sprite_index = sPlayerDoubleJump
+						if is_animation_end() {
+							image_speed = 0	
+						}
+					}
 				} else {
-					sprite_index = sPlayerFalling
+					if jumps {
+						sprite_index = sPlayerFalling
+					} else {
+						sprite_index = sPlayerFallDj
+					}
 				}
 				break
 			}

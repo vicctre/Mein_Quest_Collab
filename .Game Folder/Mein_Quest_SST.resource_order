@@ -144,7 +144,7 @@
     {"name":"sPlayerFalling","order":2,"path":"sprites/sPlayerFalling/sPlayerFalling.yy",},
     {"name":"SFX_CutCube","order":8,"path":"sounds/SFX_CutCube/SFX_CutCube.yy",},
     {"name":"SFX_Death","order":6,"path":"sounds/SFX_Death/SFX_Death.yy",},
-    {"name":"Mein_FallDJ_strip2","order":18,"path":"sprites/Mein_FallDJ_strip2/Mein_FallDJ_strip2.yy",},
+    {"name":"sPlayerFallDj","order":18,"path":"sprites/sPlayerFallDj/sPlayerFallDj.yy",},
     {"name":"EnemyState_Dead","order":4,"path":"scripts/EnemyState_Dead/EnemyState_Dead.yy",},
     {"name":"oPlayerDead","order":2,"path":"objects/oPlayerDead/oPlayerDead.yy",},
     {"name":"sPush","order":7,"path":"sprites/sPush/sPush.yy",},

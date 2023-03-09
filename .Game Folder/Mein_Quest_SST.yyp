@@ -190,7 +190,7 @@
     {"id":{"name":"sPlayerFalling","path":"sprites/sPlayerFalling/sPlayerFalling.yy",},"order":2,},
     {"id":{"name":"SFX_CutCube","path":"sounds/SFX_CutCube/SFX_CutCube.yy",},"order":8,},
     {"id":{"name":"SFX_Death","path":"sounds/SFX_Death/SFX_Death.yy",},"order":6,},
-    {"id":{"name":"Mein_FallDJ_strip2","path":"sprites/Mein_FallDJ_strip2/Mein_FallDJ_strip2.yy",},"order":18,},
+    {"id":{"name":"sPlayerFallDj","path":"sprites/sPlayerFallDj/sPlayerFallDj.yy",},"order":18,},
     {"id":{"name":"EnemyState_Dead","path":"scripts/EnemyState_Dead/EnemyState_Dead.yy",},"order":4,},
     {"id":{"name":"sMeinHP","path":"sprites/sMeinHP/sMeinHP.yy",},"order":0,},
     {"id":{"name":"oPlayerDead","path":"objects/oPlayerDead/oPlayerDead.yy",},"order":2,},
