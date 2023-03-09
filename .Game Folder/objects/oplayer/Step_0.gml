@@ -1,4 +1,9 @@
 
+//// Debug
+if keyboard_check_pressed(ord("Q")) {
+	room_speed = room_speed == 60 ? 5 : 60
+}
+
 if has_control {
 	key_left_pressed = keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"))
 	key_right_pressed = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"))
