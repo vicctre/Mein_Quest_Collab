@@ -21,6 +21,7 @@ vsp_max = 7
 acc = 1.1
 grav = 0.3
 jump_sp = -7
+double_jump_sp = -6
 hsp_to = 0	// how sp_x and sp_y change
 hsp = 0
 vsp = 0

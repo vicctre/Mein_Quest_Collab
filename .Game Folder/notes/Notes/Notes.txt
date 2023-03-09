@@ -5,9 +5,9 @@ Player sprite collsion mask bounds relative to center:
 
 Alex ToDo:
 //* Reduce push back/slide when taking damage 
-* Damage animation added 
+//* Damage animation added 
 * Door animation added for entering a door 
-* Reduce Meins double jump height (Initial jump- 3 blocks, double jump-2) 
+//* Reduce Meins double jump height (Initial jump- 3 blocks, double jump-2) 
 * Add double jump falling animation 
 * Add Mein crouch and hitbox change 
 * Pushing animation against walls and objects (like oCutCube) 

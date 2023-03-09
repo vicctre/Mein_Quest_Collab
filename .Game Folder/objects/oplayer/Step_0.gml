@@ -117,8 +117,8 @@ if has_control {
 		}
 		// ordinary jump
 		else if jumps {
-			vsp = jump_sp
 			jumps -= down_free and !on_ground
+			vsp = jumps ? jump_sp : double_jump_sp
 			jump_pressed = 0
 		}
 	}
