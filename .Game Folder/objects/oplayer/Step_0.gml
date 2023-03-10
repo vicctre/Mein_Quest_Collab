@@ -45,7 +45,6 @@ input_move_h = key_right - key_left
 hsp_to = move_h * hsp_max
 
 if has_control {
-
 	attack_pause_timer--
 	if key_attack and !attack_pause_timer {
 		image_index = 0
@@ -58,7 +57,7 @@ if has_control {
 			state = PLAYERSTATE.ATTACK_AERAL
 			sprite_index = sPlayerAttackAeral
 			aeral_attack_timer = aeral_attack_time
-			perform_attack(sAttackCirlce, 1, 1)
+			aeral_attack_inst = perform_attack(sAttackCirlce, 1, 1, false)
 			audio_play_sound(SFX_AttackWiff,5,false)
 			attack_pause_timer = attack_pause_time
 			aeral_attack_used = true
@@ -179,13 +178,16 @@ switch state {
 		break
 	}
 	case PLAYERSTATE.ATTACK_AERAL: {
-		vsp = 0
-		hsp = 0
-		image_draw_angle += aeral_attack_spin_sp
+		//vsp = 0
+		//hsp = 0
+		aeral_attack_inst.x = x
+		aeral_attack_inst.y = y
+		image_draw_angle += aeral_attack_spin_sp * -image_xscale
 		if !aeral_attack_timer-- {
 			state = PLAYERSTATE.FREE
 			sprite_index = sPlayerFalling
 			image_draw_angle = 0
+			instance_destroy(aeral_attack_inst)
 		}
 		break
 	}

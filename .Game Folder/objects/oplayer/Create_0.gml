@@ -58,11 +58,12 @@ attack_performed = false
 list_hit_by_attack = ds_list_create()
 
 // aeral attack
-aeral_attack_spin_sp = 45
-aeral_attack_time = 20
+aeral_attack_spin_sp = 30
+aeral_attack_time = 10
 aeral_attack_timer = 0
 aeral_attack_used = false
 image_draw_angle = 0
+aeral_attack_inst = noone
 
 is_sprinting = false
 sprint_double_press_time = 0.5 * room_speed
