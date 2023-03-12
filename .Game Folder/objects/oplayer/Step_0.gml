@@ -130,7 +130,7 @@ if has_control {
 	}
 	
 	// pushing
-	if !down_free 
+	if !down_free and state != PLAYERSTATE.ATTACK_SLASH
 			and (key_right and !right_free
 				 or key_left and !left_free) {
 		state = PLAYERSTATE.PUSHING
