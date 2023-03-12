@@ -211,9 +211,8 @@ switch state {
 		break
 	}
 	case PLAYERSTATE.DEAD: {
-		if !down_free and !alarm[1] and oTransition.IsOff() {
-			alarm[1] = 60
-		}
+		hsp = 0
+		vsp = 0
 		break
 	}
 	case PLAYERSTATE.HIT: {

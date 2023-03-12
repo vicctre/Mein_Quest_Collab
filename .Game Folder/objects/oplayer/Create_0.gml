@@ -149,10 +149,16 @@ function Kill() {
 	sprite_index = sPlayerDead
 	state = PLAYERSTATE.DEAD
 	has_control = false
-	vsp = jump_sp
 	hsp = 0
 	//y -= 30
 	game_set_speed(30, gamespeed_fps)
+	var inst = instance_create_layer(x, y, layer, deadEnemy)
+	inst.sprite_index = sPlayerDead
+	inst.vsp = global.player_dead_vsp
+	inst.hsp = global.player_dead_hsp * -image_xscale
+	visible = false
+	// transition
+	alarm[1] = 60
 }
 
 function Hit() {

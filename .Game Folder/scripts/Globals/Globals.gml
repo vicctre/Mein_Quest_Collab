@@ -5,3 +5,6 @@ Read more in manual.
 */
 #macro Default:PLAYER_INVINCIBLE false
 #macro Dev:PLAYER_INVINCIBLE true
+
+player_dead_vsp = -4
+player_dead_hsp = 3
