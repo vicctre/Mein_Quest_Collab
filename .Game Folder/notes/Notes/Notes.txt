@@ -9,8 +9,8 @@ Alex ToDo:
 //* Reduce Meins double jump height (Initial jump- 3 blocks, double jump-2) 
 //* Add double jump falling animation 
 //* Door animation added for entering a door 
-* Aerial attack sprite changed for its reduced range, animation lasts as long as 
-	the hitbox, and it shouldn’t halt you in place anymore
+//* Aerial attack sprite changed for its reduced range, animation lasts as long as 
+//	the hitbox, and it shouldn’t halt you in place anymore
 * Add Mein crouch and hitbox change 
 * Pushing animation against walls and objects (like oCutCube) 
 * Upon death, Mein should also do a spin out animation
