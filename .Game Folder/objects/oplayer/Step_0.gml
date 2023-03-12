@@ -128,6 +128,14 @@ if has_control {
 		state = PLAYERSTATE.CROUCH
 		mask_index = sCrouch
 	}
+	
+	// pushing
+	if !down_free 
+			and (key_right and !right_free
+				 or key_left and !left_free) {
+		state = PLAYERSTATE.PUSHING
+		sprite_index = sPush
+	}
 
 	// enemies
 	var enemy = instance_place(x, y, ENEMY)
@@ -174,6 +182,15 @@ switch state {
 		if !key_down or down_free {
 			state = ENEMYSTATE.FREE
 			mask_index = sPlayer
+		}
+		break
+	}
+	case PLAYERSTATE.PUSHING: {
+		
+		if !(key_right and !right_free
+				 or key_left and !left_free) {
+			state = ENEMYSTATE.FREE
+			sprite_index = sPlayer
 		}
 		break
 	}

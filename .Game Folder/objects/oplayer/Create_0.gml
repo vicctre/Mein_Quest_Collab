@@ -4,6 +4,7 @@ event_inherited()
 enum PLAYERSTATE {
 	FREE,
 	CROUCH,
+	PUSHING,
 	ATTACK_SLASH,
 	ATTACK_COMBO,
 	ATTACK_AERAL,
