@@ -9,6 +9,7 @@ if has_control {
 	key_right_pressed = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"))
 	key_up_pressed = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"))
 	key_down_pressed = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"))
+	key_down = keyboard_check(vk_down) or keyboard_check(ord("S"))
 	key_left = keyboard_check(vk_left) or keyboard_check(ord("A"))
 	key_right = keyboard_check(vk_right) or keyboard_check(ord("D"))
 	key_jump = keyboard_check_pressed(vk_space) 
@@ -121,11 +122,20 @@ if has_control {
 			jump_pressed = 0
 		}
 	}
+	
+	// crouching
+	if key_down and !down_free {
+		state = PLAYERSTATE.CROUCH
+		mask_index = sCrouch
+	}
 
 	// enemies
 	var enemy = instance_place(x, y, ENEMY)
 	if enemy != noone {
 		Hit()
+		if instance_exists(aeral_attack_inst) {
+			instance_destroy(aeral_attack_inst)	
+		}
 	}
 
 	// enter door
@@ -156,6 +166,15 @@ else if !down_free {
 
 switch state {
 	case PLAYERSTATE.FREE: {
+		break
+	}
+	case PLAYERSTATE.CROUCH: {
+		hsp = 0
+		vsp = 0
+		if !key_down or down_free {
+			state = ENEMYSTATE.FREE
+			mask_index = sPlayer
+		}
 		break
 	}
 	case PLAYERSTATE.ATTACK_SLASH: {

@@ -3,6 +3,7 @@ event_inherited()
 
 enum PLAYERSTATE {
 	FREE,
+	CROUCH,
 	ATTACK_SLASH,
 	ATTACK_COMBO,
 	ATTACK_AERAL,
@@ -135,6 +136,10 @@ function Animate() {
 			if is_animation_end() {
 				image_speed = 0
 			}
+			break
+		}
+		case PLAYERSTATE.CROUCH: {
+			sprite_index = sCrouch
 			break
 		}
 	}
