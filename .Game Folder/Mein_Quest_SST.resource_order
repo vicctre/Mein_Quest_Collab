@@ -29,6 +29,7 @@
     {"name":"W1-1","order":1,"path":"folders/Sprites/Backgrounds/W1-1.yy",},
     {"name":"Enemy Sprites","order":4,"path":"folders/Sprites/Enemy Sprites.yy",},
     {"name":"Mini Bosses","order":11,"path":"folders/Sprites/Enemy Sprites/Mini Bosses.yy",},
+    {"name":"Tuffull","order":2,"path":"folders/Sprites/Enemy Sprites/Mini Bosses/Tuffull.yy",},
     {"name":"NME Basic","order":10,"path":"folders/Sprites/Enemy Sprites/NME Basic.yy",},
     {"name":"Apploon","order":5,"path":"folders/Sprites/Enemy Sprites/NME Basic/Apploon.yy",},
     {"name":"Fleater","order":1,"path":"folders/Sprites/Enemy Sprites/NME Basic/Fleater.yy",},
@@ -46,7 +47,6 @@
     {"name":"UI stuff","order":7,"path":"folders/Sprites/UI stuff.yy",},
     {"name":"Tile Sets","order":16,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
-    {"name":"Tuffull","order":2,"path":"folders/Sprites/Enemy Sprites/Mini Bosses/Tuffull.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sShanteeWindUp","order":4,"path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},
