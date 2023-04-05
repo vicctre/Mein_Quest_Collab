@@ -1,0 +1,46 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oTuffull",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pCut","path":"objects/pCut/pCut.yy",},"propertyId":{"name":"hp","path":"objects/pCut/pCut.yy",},"value":"1",},
+  ],
+  "parent": {
+    "name": "NMEs needing code",
+    "path": "folders/Objects/Enemys/NMEs needing code.yy",
+  },
+  "parentObjectId": {
+    "name": "ENEMY",
+    "path": "objects/ENEMY/ENEMY.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [],
+  "solid": false,
+  "spriteId": {
+    "name": "sTuffull_Idle",
+    "path": "sprites/sTuffull_Idle/sTuffull_Idle.yy",
+  },
+  "spriteMaskId": {
+    "name": "sTuffull_Idle",
+    "path": "sprites/sTuffull_Idle/sTuffull_Idle.yy",
+  },
+  "visible": true,
+}
