@@ -150,6 +150,7 @@
     {"id":{"name":"sContact","path":"sprites/sContact/sContact.yy",},},
     {"id":{"name":"TestingGround3","path":"rooms/TestingGround3/TestingGround3.yy",},},
     {"id":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},},
+    {"id":{"name":"ApploonSpawner","path":"objects/ApploonSpawner/ApploonSpawner.yy",},},
     {"id":{"name":"RoomBase","path":"rooms/RoomBase/RoomBase.yy",},},
     {"id":{"name":"RoomTemplate","path":"rooms/RoomTemplate/RoomTemplate.yy",},},
     {"id":{"name":"SFX_AttackWiff","path":"sounds/SFX_AttackWiff/SFX_AttackWiff.yy",},},

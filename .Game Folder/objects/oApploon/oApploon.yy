@@ -4,11 +4,13 @@
   "name": "oApploon",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"grv","path":"objects/ENEMY/ENEMY.yy",},"value":"0",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"hsp","path":"objects/ENEMY/ENEMY.yy",},"value":"0",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"vsp","path":"objects/ENEMY/ENEMY.yy",},"value":"1.5",},
   ],
   "parent": {
     "name": "NMEs needing code",

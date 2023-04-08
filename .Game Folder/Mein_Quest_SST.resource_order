@@ -110,6 +110,7 @@
     {"name":"EnemyState_Hit","order":2,"path":"scripts/EnemyState_Hit/EnemyState_Hit.yy",},
     {"name":"sContact","order":7,"path":"sprites/sContact/sContact.yy",},
     {"name":"TestingGround3","order":3,"path":"rooms/TestingGround3/TestingGround3.yy",},
+    {"name":"ApploonSpawner","order":4,"path":"objects/ApploonSpawner/ApploonSpawner.yy",},
     {"name":"RoomBase","order":4,"path":"rooms/RoomBase/RoomBase.yy",},
     {"name":"RoomTemplate","order":6,"path":"rooms/RoomTemplate/RoomTemplate.yy",},
     {"name":"SFX_AttackWiff","order":2,"path":"sounds/SFX_AttackWiff/SFX_AttackWiff.yy",},

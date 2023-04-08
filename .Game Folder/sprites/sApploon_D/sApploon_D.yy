@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"486c1956-080b-4066-876c-4ea5c8c05f87","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Apploon",
     "path": "folders/Sprites/Enemy Sprites/NME Basic/Apploon.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 24,
-    "yorigin": 18,
+    "yorigin": 19,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
