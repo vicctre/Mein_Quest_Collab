@@ -4,13 +4,20 @@ Player sprite collsion mask bounds relative to center:
 -5 12
 
 Alex ToDo:
-//* Reduce push back/slide when taking damage 
-//* Damage animation added 
-//* Reduce Meins double jump height (Initial jump- 3 blocks, double jump-2) 
-//* Add double jump falling animation 
-//* Door animation added for entering a door 
-//* Aerial attack sprite changed for its reduced range, animation lasts as long as 
-//	the hitbox, and it shouldn’t halt you in place anymore
-//* Add Mein crouch and hitbox change
-//* Pushing animation against walls and objects (like oCutCube) 
-//* Upon death, Mein should also do a spin out animation
+Game functionality
+* Camera check; make sure the camera follows the player properly and works with parallax backgrounds properly✅
+
+Mein: 
+* when taking damage, give the player is given invincibility frames to recover easier 
+*aerial attack damage reduced (8hp->1hp) 
+* Allow Mein to Attack after using an aerial attack (when using the aerial attack, the next attack on the ground will not register) 
+* Death spin out changes rotation depending on where the player was hit (left or right side) POLISH
+* Aerial attack spins based on which way the player is facing; facing right looks perfect, but facing left look like it’s going backwards POLISH
+* Door entrance animation slowed down POLISH
+
+Environments: 
+* finish adding backgrounds with P. scrolling to both W1-1 and 1-2 and adjust accordingly 
+* Spikes deal 1 damage now, and launch Mein upwards/downwards to avoid multiple hits from them 
+
+Items: 
+* Make sure both healing items heal their own amount of HP 
