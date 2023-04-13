@@ -138,6 +138,7 @@ function Animate() {
 			break
 		}
 		case PLAYERSTATE.ENTER_DOOR: {
+			image_speed = global.player_door_enter_anim_sp
 			if is_animation_end() {
 				image_speed = 0
 			}
