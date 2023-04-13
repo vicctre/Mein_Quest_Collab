@@ -202,4 +202,11 @@ function draw_invincibility_blinking() {
 		0, c, alpha)
 }
 
+function aeral_attack_finish() {
+	state = PLAYERSTATE.FREE
+	sprite_index = sPlayerFalling
+	image_draw_angle = 0
+	instance_destroy(aeral_attack_inst)
+}
+
 instance_create_layer(x, y, layer, oCamera)

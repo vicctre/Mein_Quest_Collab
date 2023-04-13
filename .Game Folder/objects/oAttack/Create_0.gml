@@ -1,17 +1,22 @@
 
 // damage - define via creation args
-list_hit_by_attack = ds_list_create()
+hit_instances_list = ds_list_create()
+new_instances_list = ds_list_create()
 
 function perform() {
-	ds_list_clear(list_hit_by_attack)
-	var num = instance_place_list(x, y, pCut, list_hit_by_attack, false)
+	var num = instance_place_list(x, y, pCut, new_instances_list, false)
 	for (var i = 0; i < num; ++i) {
-	    list_hit_by_attack[| i].set_hit(damage)
+		var inst = new_instances_list[| i]
+		if ds_list_find_index(hit_instances_list, inst) == -1 {
+			inst.set_hit(damage)
+			ds_list_add(hit_instances_list, inst)
+		}
 	}
+	if one_frame {
+		instance_destroy()
+		return;
+	}
+	ds_list_clear(new_instances_list)
 }
 
 perform()
-if one_frame {
-	ds_list_destroy(list_hit_by_attack)
-	instance_destroy()
-}

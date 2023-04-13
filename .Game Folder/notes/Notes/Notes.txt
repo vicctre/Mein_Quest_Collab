@@ -9,8 +9,8 @@ Game functionality
 //  parallax backgrounds properly
 
 Mein: 
-* when taking damage, give the player is given invincibility frames to recover easier 
-* aerial attack damage reduced (8hp->1hp) 
+//* when taking damage, give the player is given invincibility frames to recover easier 
+//* aerial attack damage reduced (8hp->1hp) 
 * Allow Mein to Attack after using an aerial attack (when using the aerial attack, 
   the next attack on the ground will not register) 
 * Death spin out changes rotation depending on where the player was hit (left or right side) POLISH

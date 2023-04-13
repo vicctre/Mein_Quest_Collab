@@ -381,6 +381,10 @@ function object_name(inst) {
 // stub function to use as a deafault callback
 function scr_stub() {}
 
+function mouse_collision(obj_or_inst) {
+	return collision_point(mouse_x, mouse_y, obj_or_inst, false, true)
+}
+
 function is_animation_end() {
 	return abs(image_index - (image_number - 1)) < 1
 }

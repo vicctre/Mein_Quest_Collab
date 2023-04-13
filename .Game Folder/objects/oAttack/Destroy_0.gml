@@ -1,0 +1,3 @@
+
+ds_list_destroy(hit_instances_list)
+ds_list_destroy(new_instances_list)

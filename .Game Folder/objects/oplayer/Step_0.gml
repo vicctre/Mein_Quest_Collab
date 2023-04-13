@@ -142,8 +142,9 @@ if has_control {
 	var attack = instance_place(x, y, ENEMYATTACK)
 	if enemy != noone or attack != noone {
 		Hit()
-		if instance_exists(aeral_attack_inst) {
-			instance_destroy(aeral_attack_inst)	
+		if state == PLAYERSTATE.ATTACK_AERAL and instance_exists(aeral_attack_inst) {
+			instance_destroy(aeral_attack_inst)
+			aeral_attack_finish()
 		}
 	}
 
@@ -215,16 +216,11 @@ switch state {
 		break
 	}
 	case PLAYERSTATE.ATTACK_AERAL: {
-		//vsp = 0
-		//hsp = 0
 		aeral_attack_inst.x = x
 		aeral_attack_inst.y = y
 		image_draw_angle += aeral_attack_spin_sp * -image_xscale
 		if !aeral_attack_timer-- {
-			state = PLAYERSTATE.FREE
-			sprite_index = sPlayerFalling
-			image_draw_angle = 0
-			instance_destroy(aeral_attack_inst)
+			aeral_attack_finish()
 		}
 		break
 	}
