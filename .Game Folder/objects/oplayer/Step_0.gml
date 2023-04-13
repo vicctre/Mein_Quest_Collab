@@ -124,9 +124,10 @@ if has_control {
 	}
 	
 	// crouching
-	if key_down and !down_free {
+	if key_down and !down_free and state != PLAYERSTATE.CROUCH {
 		state = PLAYERSTATE.CROUCH
 		mask_index = sCrouch
+		start_crouch_transition()
 	}
 	
 	// pushing
@@ -184,6 +185,7 @@ switch state {
 		if !key_down or down_free {
 			state = ENEMYSTATE.FREE
 			mask_index = sPlayer
+			start_crouch_transition(true)
 		}
 		break
 	}

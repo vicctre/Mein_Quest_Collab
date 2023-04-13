@@ -90,10 +90,32 @@ enter_room = noone
 // create player-related ui
 instance_create_layer(0, 0, "ui", oUI)
 
+function start_crouch_transition(reverse = false) {
+	sprite_index = sCrouchTransition
+	image_index = reverse ? (image_number - 1) : 0
+}
+
+function animate_crouch_transition(sprite_to, img_sp) {
+	image_speed = img_sp
+	if sprite_index == sCrouchTransition {
+		if is_animation_end() {
+			sprite_index = sprite_to
+			// transition finished
+			return false
+		}
+		return true
+	}
+	// still in transition
+	return false
+}
+
 function Animate() {
 	image_speed = 1
 	switch state {
 		case PLAYERSTATE.FREE: {
+			if animate_crouch_transition(sPlayer, -1) {
+				break	
+			}
 			animate_update_xscale()
 			if down_free {
 				if vsp < 0 {
@@ -145,7 +167,9 @@ function Animate() {
 			break
 		}
 		case PLAYERSTATE.CROUCH: {
-			sprite_index = sCrouch
+			if !animate_crouch_transition(sCrouch, 1) {
+				sprite_index = sCrouch
+			}
 			break
 		}
 	}

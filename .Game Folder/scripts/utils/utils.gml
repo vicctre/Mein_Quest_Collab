@@ -386,5 +386,18 @@ function mouse_collision(obj_or_inst) {
 }
 
 function is_animation_end() {
-	return abs(image_index - (image_number - 1)) < 1
+	static get_treshold = function() {
+		var tmp = sprite_frames_per_step(sprite_index)
+		return sprite_frames_per_step(sprite_index)
+	}
+	return abs(image_index - (image_number - 1)) < get_treshold()
+}
+
+function sprite_frames_per_step(spr) {
+	var tmp = sprite_get_speed(spr)
+	if sprite_get_speed_type(spr) == spritespeed_framespersecond {
+		return sprite_get_speed(spr) / room_speed 
+	} else {
+		return sprite_get_speed(spr)
+	}
 }

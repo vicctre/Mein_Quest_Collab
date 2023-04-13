@@ -173,7 +173,7 @@
     {"id":{"name":"W1_1_part2","path":"rooms/W1_1_part2/W1_1_part2.yy",},},
     {"id":{"name":"Mein_JumpUp_strip5","path":"sprites/Mein_JumpUp_strip5/Mein_JumpUp_strip5.yy",},},
     {"id":{"name":"sCrouch","path":"sprites/sCrouch/sCrouch.yy",},},
-    {"id":{"name":"Mein_Crouch_transition","path":"sprites/Mein_Crouch_transition/Mein_Crouch_transition.yy",},},
+    {"id":{"name":"sCrouchTransition","path":"sprites/sCrouchTransition/sCrouchTransition.yy",},},
     {"id":{"name":"sPlayerW","path":"sprites/sPlayerW/sPlayerW.yy",},},
     {"id":{"name":"sPlayerAttack","path":"sprites/sPlayerAttack/sPlayerAttack.yy",},},
     {"id":{"name":"sChest","path":"sprites/sChest/sChest.yy",},},

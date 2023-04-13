@@ -130,7 +130,7 @@
     {"name":"W1_1_part2","order":5,"path":"rooms/W1_1_part2/W1_1_part2.yy",},
     {"name":"Mein_JumpUp_strip5","order":1,"path":"sprites/Mein_JumpUp_strip5/Mein_JumpUp_strip5.yy",},
     {"name":"sCrouch","order":8,"path":"sprites/sCrouch/sCrouch.yy",},
-    {"name":"Mein_Crouch_transition","order":27,"path":"sprites/Mein_Crouch_transition/Mein_Crouch_transition.yy",},
+    {"name":"sCrouchTransition","order":17,"path":"sprites/sCrouchTransition/sCrouchTransition.yy",},
     {"name":"sPlayerW","order":4,"path":"sprites/sPlayerW/sPlayerW.yy",},
     {"name":"sPlayerAttack","order":5,"path":"sprites/sPlayerAttack/sPlayerAttack.yy",},
     {"name":"oCrate","order":2,"path":"objects/oCrate/oCrate.yy",},

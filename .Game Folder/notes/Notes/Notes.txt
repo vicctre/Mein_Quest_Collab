@@ -16,7 +16,7 @@ Mein:
 //* Death spin out changes rotation depending on where the player was hit (left or right side) POLISH
 //* Aerial attack spins based on which way the player is facing; facing right looks perfect
 //  but facing left look like it’s going backwards POLISH
-* Door entrance animation slowed down POLISH
+//* Door entrance animation slowed down POLISH
 * Use new crouch animation
 
 Environments: 
