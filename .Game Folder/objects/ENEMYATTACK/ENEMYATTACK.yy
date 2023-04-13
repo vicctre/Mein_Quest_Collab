@@ -1,20 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oShante_Attack",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "name": "ENEMYATTACK",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Shante",
-    "path": "folders/Objects/Enemys/Shante.yy",
+    "name": ".ParentsClub",
+    "path": "folders/Objects/.ParentsClub.yy",
   },
-  "parentObjectId": {
-    "name": "ENEMYATTACK",
-    "path": "objects/ENEMYATTACK/ENEMYATTACK.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,10 +25,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sShanteeHitbox",
-    "path": "sprites/sShanteeHitbox/sShanteeHitbox.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
