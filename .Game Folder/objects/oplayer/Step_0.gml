@@ -188,7 +188,6 @@ switch state {
 		break
 	}
 	case PLAYERSTATE.PUSHING: {
-		
 		if !(key_right and !right_free
 				 or key_left and !left_free) {
 			state = ENEMYSTATE.FREE
@@ -216,8 +215,11 @@ switch state {
 		break
 	}
 	case PLAYERSTATE.ATTACK_AERAL: {
-		aeral_attack_inst.x = x
+		aeral_attack_inst.x = x 
 		aeral_attack_inst.y = y
+		if abs(hsp) {
+			image_xscale = sign(hsp)
+		}
 		image_draw_angle += aeral_attack_spin_sp * -image_xscale
 		if !aeral_attack_timer-- {
 			aeral_attack_finish()

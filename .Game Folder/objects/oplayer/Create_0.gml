@@ -161,6 +161,7 @@ function Kill() {
 	inst.sprite_index = sPlayerDead
 	inst.vsp = global.player_dead_vsp
 	inst.hsp = global.player_dead_hsp * -image_xscale
+	inst.image_xscale = image_xscale
 	visible = false
 	// transition
 	alarm[1] = 60
