@@ -139,7 +139,8 @@ if has_control {
 
 	// enemies
 	var enemy = instance_place(x, y, ENEMY)
-	if enemy != noone {
+	var attack = instance_place(x, y, ENEMYATTACK)
+	if enemy != noone or attack != noone {
 		Hit()
 		if instance_exists(aeral_attack_inst) {
 			instance_destroy(aeral_attack_inst)	

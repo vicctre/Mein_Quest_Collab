@@ -149,6 +149,7 @@
     {"id":{"name":"EnemyState_Hit","path":"scripts/EnemyState_Hit/EnemyState_Hit.yy",},},
     {"id":{"name":"sContact","path":"sprites/sContact/sContact.yy",},},
     {"id":{"name":"TestingGround3","path":"rooms/TestingGround3/TestingGround3.yy",},},
+    {"id":{"name":"ENEMYATTACK","path":"objects/ENEMYATTACK/ENEMYATTACK.yy",},},
     {"id":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},},
     {"id":{"name":"ApploonSpawner","path":"objects/ApploonSpawner/ApploonSpawner.yy",},},
     {"id":{"name":"RoomBase","path":"rooms/RoomBase/RoomBase.yy",},},
