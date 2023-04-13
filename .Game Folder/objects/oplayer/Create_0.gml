@@ -206,6 +206,7 @@ function aeral_attack_finish() {
 	state = PLAYERSTATE.FREE
 	sprite_index = sPlayerFalling
 	image_draw_angle = 0
+	attack_performed = false
 	instance_destroy(aeral_attack_inst)
 }
 
