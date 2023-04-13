@@ -72,6 +72,10 @@ sprint_double_press_time = 0.5 * room_speed
 sprint_double_press_timer = 0
 sprint_last_pressed_dir = 0
 
+invincibility_time = global.player_invincibilty_time
+invincibility_timer = 0
+invincibility_blinking_gain = 14
+
 // hit state
 hit = {
 	vsp: -4,
@@ -174,12 +178,25 @@ function Hit() {
 	hit.timer = hit.time
 	state = PLAYERSTATE.HIT
 	sprite_index = sPlayerDamage
+	invincibility_timer = invincibility_time
 }
 
 function animate_update_xscale() {
 	if hsp != 0 {
 		image_xscale = sign(hsp)
 	}
+}
+
+function draw_invincibility_blinking() {
+	var c = c_red
+	var alpha = 0.5 - lengthdir_x(
+		0.5, invincibility_blinking_gain * invincibility_timer)
+	draw_sprite_ext(
+		sprite_index,
+		image_index,
+		x, y,
+		image_xscale, image_yscale,
+		0, c, alpha)
 }
 
 instance_create_layer(x, y, layer, oCamera)

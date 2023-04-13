@@ -8,3 +8,4 @@ Read more in manual.
 
 player_dead_vsp = -4
 player_dead_hsp = 3
+player_invincibilty_time = 90

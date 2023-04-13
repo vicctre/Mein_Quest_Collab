@@ -5,4 +5,9 @@ if state == PLAYERSTATE.ATTACK_AERAL {
 		image_draw_angle, c_white, 1)
 } else {
 	draw_self()
+	if invincibility_timer-- {
+		draw_invincibility_blinking()
+	}
 }
+
+
