@@ -167,6 +167,9 @@ function Kill() {
 }
 
 function Hit() {
+	if invincibility_timer {
+		return;	
+	}
 	hp -= PLAYER_INVINCIBLE == false
 	if !hp {
 		Kill()
