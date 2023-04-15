@@ -96,8 +96,8 @@ function start_crouch_transition(reverse = false) {
 }
 
 function animate_crouch_transition(sprite_to, img_sp) {
-	image_speed = img_sp
 	if sprite_index == sCrouchTransition {
+		image_speed = img_sp
 		if is_animation_end() {
 			sprite_index = sprite_to
 			// transition finished
