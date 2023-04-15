@@ -12,6 +12,7 @@ scr_debug_show_var("has_control", has_control)
 scr_debug_show_var("sprite_xoffset", sprite_xoffset)
 scr_debug_show_var("sprite_yoffset", sprite_yoffset)
 scr_debug_show_var("image_xscale", image_xscale)
+scr_debug_show_var("image_speed", image_speed)
 
 
 
