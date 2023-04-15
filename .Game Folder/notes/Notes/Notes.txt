@@ -17,7 +17,8 @@ Mein:
 //* Aerial attack spins based on which way the player is facing; facing right looks perfect
 //  but facing left look like it’s going backwards POLISH
 //* Door entrance animation slowed down POLISH
-* Use new crouch animation
+//* Use new crouch animation
+* use white for iframes blinking
 
 Environments: 
 * finish adding backgrounds with P. scrolling to both W1-1 and 1-2 and adjust accordingly 
