@@ -13,8 +13,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"vsp","path":"objects/ENEMY/ENEMY.yy",},"value":"2",},
   ],
   "parent": {
-    "name": "NMEs needing code",
-    "path": "folders/Objects/Enemys/NMEs needing code.yy",
+    "name": "Apploon",
+    "path": "folders/Objects/Enemies/Small Enemies/Apploon.yy",
   },
   "parentObjectId": {
     "name": "ENEMY",

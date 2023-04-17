@@ -19,8 +19,8 @@ global.VAR_BAR_ROW_DELTA = 30
 /// main parameters
 hp_max = 4
 hp = hp_max
-hsp_max = 3
-vsp_max = 7
+hsp_max = 2.5
+vsp_max = 5.5
 acc = 1.1
 grav = 0.3
 jump_sp = -7
