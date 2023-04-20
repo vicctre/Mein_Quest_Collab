@@ -59,7 +59,6 @@
     {"name":"sTuffull_HitWall_dead","order":1,"path":"sprites/sTuffull_HitWall_dead/sTuffull_HitWall_dead.yy",},
     {"name":"camera","order":1,"path":"scripts/camera/camera.yy",},
     {"name":"sApploon_D","order":1,"path":"sprites/sApploon_D/sApploon_D.yy",},
-    {"name":"ui","order":5,"path":"scripts/ui/ui.yy",},
     {"name":"sAttackCirlce","order":16,"path":"sprites/sAttackCirlce/sAttackCirlce.yy",},
     {"name":"oContact","order":2,"path":"objects/oContact/oContact.yy",},
     {"name":"TestingGround2","order":2,"path":"rooms/TestingGround2/TestingGround2.yy",},
