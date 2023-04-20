@@ -24,18 +24,23 @@ function scr_move_coord_contact_glide(hsp, vsp, obj) {
 }
 
 function scr_move_coord_contact_obj(hsp, vsp, obj) {
-	scr_move_coord(hsp, vsp)
-	//collision
-	var contact = instance_place(x, y, obj)
-	if contact  {
+	if place_meeting(x + hsp, y + vsp, obj)  {
 		// move out of an object
 		var dir = point_direction(0, 0, hsp, vsp)
-		while place_meeting(x, y, contact) {
-	        x -= lengthdir_x(1, dir)
-	        y -= lengthdir_y(1, dir)
+		var dx = lengthdir_x(1, dir)
+		var dy = lengthdir_y(1, dir)
+		while true {
+			contact = instance_place(x + dx, y + dy, obj)
+			if contact == noone {
+		        x += dx
+		        y += dy
+			} else {
+				break
+			}
 		}
 		return contact
 	}
+	scr_move_coord(hsp, vsp)
 	return noone
 }
 

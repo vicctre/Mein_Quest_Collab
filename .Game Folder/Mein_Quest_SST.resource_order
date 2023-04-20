@@ -50,9 +50,9 @@
     {"name":"Tile_Tests","order":1,"path":"folders/Sprites/Tile_Tests.yy",},
     {"name":"UI stuff","order":7,"path":"folders/Sprites/UI stuff.yy",},
     {"name":"Tile Sets","order":16,"path":"folders/Tile Sets.yy",},
-    {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
     {"name":"1_1","order":9,"path":"folders/Tile Sets/1_1.yy",},
     {"name":"1_2","order":10,"path":"folders/Tile Sets/1_2.yy",},
+    {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sShanteeWindUp","order":4,"path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},
