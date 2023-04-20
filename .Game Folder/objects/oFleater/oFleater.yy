@@ -10,8 +10,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"grv","path":"objects/ENEMY/ENEMY.yy",},"value":"0",},
   ],
   "parent": {
-    "name": "NMEs needing code",
-    "path": "folders/Objects/Enemys/NMEs needing code.yy",
+    "name": "Fleater",
+    "path": "folders/Objects/Enemies/Small Enemies/Fleater.yy",
   },
   "parentObjectId": {
     "name": "ENEMY",

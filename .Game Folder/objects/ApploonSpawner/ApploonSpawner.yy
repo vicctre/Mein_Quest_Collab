@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "NMEs needing code",
-    "path": "folders/Objects/Enemys/NMEs needing code.yy",
+    "name": "Apploon",
+    "path": "folders/Objects/Enemies/Small Enemies/Apploon.yy",
   },
   "parentObjectId": null,
   "persistent": false,

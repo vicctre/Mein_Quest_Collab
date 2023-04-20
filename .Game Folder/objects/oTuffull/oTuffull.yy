@@ -12,8 +12,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pCut","path":"objects/pCut/pCut.yy",},"propertyId":{"name":"hp","path":"objects/pCut/pCut.yy",},"value":"1",},
   ],
   "parent": {
-    "name": "NMEs needing code",
-    "path": "folders/Objects/Enemys/NMEs needing code.yy",
+    "name": "Bosses",
+    "path": "folders/Objects/Enemies/Bosses.yy",
   },
   "parentObjectId": {
     "name": "ENEMY",

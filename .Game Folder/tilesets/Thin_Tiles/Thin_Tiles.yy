@@ -12,19 +12,19 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "1_1",
+    "path": "folders/Tile Sets/1_1.yy",
   },
   "spriteId": {
-    "name": "Sprite113",
-    "path": "sprites/Sprite113/Sprite113.yy",
+    "name": "sThinBG",
+    "path": "sprites/sThinBG/sThinBG.yy",
   },
   "spriteNoExport": true,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
   },
-  "tile_count": 30,
+  "tile_count": 25,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -52,11 +52,6 @@
       22,
       23,
       24,
-      25,
-      26,
-      27,
-      28,
-      29,
     ],
     "SerialiseFrameCount": 1,
   },

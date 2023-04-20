@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Genull",
-    "path": "folders/Objects/Enemys/Genull.yy",
+    "path": "folders/Objects/Enemies/Small Enemies/Genull.yy",
   },
   "parentObjectId": null,
   "persistent": false,

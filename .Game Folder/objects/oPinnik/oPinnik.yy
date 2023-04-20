@@ -11,8 +11,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"hsp","path":"objects/ENEMY/ENEMY.yy",},"value":"0",},
   ],
   "parent": {
-    "name": "NMEs needing code",
-    "path": "folders/Objects/Enemys/NMEs needing code.yy",
+    "name": "Pinnik",
+    "path": "folders/Objects/Enemies/Small Enemies/Pinnik.yy",
   },
   "parentObjectId": {
     "name": "ENEMY",

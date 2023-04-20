@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "1_2",
+    "path": "folders/Tile Sets/1_2.yy",
   },
   "spriteId": {
     "name": "Tree_Inside_BG",

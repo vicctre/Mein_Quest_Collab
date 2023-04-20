@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Shante",
-    "path": "folders/Objects/Enemys/Shante.yy",
+    "path": "folders/Objects/Enemies/Small Enemies/Shante.yy",
   },
   "parentObjectId": {
     "name": "ENEMYATTACK",
@@ -35,5 +35,5 @@
     "path": "sprites/sShanteeHitbox/sShanteeHitbox.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
