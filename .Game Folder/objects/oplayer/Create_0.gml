@@ -217,15 +217,16 @@ function animate_update_xscale() {
 }
 
 function draw_invincibility_blinking() {
-	var c = c_red
 	var alpha = 0.5 - lengthdir_x(
 		0.5, invincibility_blinking_gain * invincibility_timer)
+	gpu_set_fog(true, global.player_damage_blinking_color, 0, 0)
 	draw_sprite_ext(
 		sprite_index,
 		image_index,
 		x, y,
 		image_xscale, image_yscale,
-		0, c, alpha)
+		0, c_white, alpha)
+	gpu_set_fog(false, global.player_damage_blinking_color, 0, 0)
 }
 
 function aeral_attack_finish() {
