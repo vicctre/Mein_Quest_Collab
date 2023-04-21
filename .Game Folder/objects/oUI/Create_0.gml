@@ -9,10 +9,7 @@ hp = {
 }
 
 function hp_bar_get_index() {
-	if !instance_exists(oPlayer) {
-		return 0
-	}
-	return oPlayer.hp
+	return global.player_hp
 }
 
 function draw_hp_bar() {

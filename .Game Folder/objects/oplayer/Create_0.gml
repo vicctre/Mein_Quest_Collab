@@ -17,8 +17,7 @@ scr_debug_ini()
 global.VAR_BAR_ROW_DELTA = 30
 
 /// main parameters
-hp_max = 4
-hp = hp_max
+// hp - see global.player_hp
 hsp_max = 2.5
 vsp_max = 5.5
 acc = 1.1
@@ -194,10 +193,10 @@ function Kill() {
 
 function Hit() {
 	if invincibility_timer {
-		return;	
+		return;
 	}
-	hp -= PLAYER_INVINCIBLE == false
-	if !hp {
+	global.player_hp -= PLAYER_INVINCIBLE == false
+	if !global.player_hp {
 		Kill()
 		return;
 	}
