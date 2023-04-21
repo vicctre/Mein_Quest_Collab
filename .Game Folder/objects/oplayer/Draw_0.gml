@@ -11,4 +11,7 @@ if state == PLAYERSTATE.ATTACK_AERAL {
 	}
 }
 
-
+var prev_color = draw_get_color();
+draw_set_color(c_white);
+draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
+draw_set_color(prev_color);

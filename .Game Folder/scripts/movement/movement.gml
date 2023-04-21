@@ -11,7 +11,9 @@ function scr_move_coord(hsp, vsp) {
 }
 
 function scr_move_coord_contact_obj(hsp, vsp, obj) {
-	if place_meeting(x + hsp, y + vsp, obj)  {
+	var contact_normal = place_meeting(x + hsp, y + vsp, obj);
+	var contact_thin = thin_platform_check(hsp, vsp);
+	if contact_normal || contact_thin {
 		// move out of an object
 		var dir = point_direction(0, 0, hsp, vsp)
 		var dx = lengthdir_x(1, dir)
@@ -19,7 +21,8 @@ function scr_move_coord_contact_obj(hsp, vsp, obj) {
 		var contact
 		while true {
 			contact = instance_place(x + dx, y + dy, obj)
-			if contact == noone {
+			var contact_thin = thin_platform_check(dx, dy);
+			if contact == noone && contact_thin == noone {
 		        x += dx
 		        y += dy
 			} else {
@@ -30,4 +33,11 @@ function scr_move_coord_contact_obj(hsp, vsp, obj) {
 	}
 	scr_move_coord(hsp, vsp)
 	return noone
+}
+
+function thin_platform_check(hsp, vsp) {
+	var contact_thin = instance_place(x + hsp, y + vsp, oThinPlatform);
+	if (contact_thin == noone || contact_thin.bbox_top < bbox_bottom || place_meeting(x, y, contact_thin) || key_down)
+		return noone;
+	return contact_thin;
 }

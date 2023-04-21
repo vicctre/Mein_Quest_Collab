@@ -34,7 +34,7 @@ if has_control {
 
 // contact walls
 up_free = place_empty(x, y - 1, wall_obj)
-down_free = place_empty(x, y + 1, wall_obj)
+down_free = place_empty(x, y + 1, wall_obj) && !thin_platform_check(0, 1);
 left_free = place_empty(x - 1, y, wall_obj)
 right_free = place_empty(x + 1, y, wall_obj)
 
