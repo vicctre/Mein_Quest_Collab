@@ -53,6 +53,7 @@
     {"name":"1_1","order":9,"path":"folders/Tile Sets/1_1.yy",},
     {"name":"1_2","order":10,"path":"folders/Tile Sets/1_2.yy",},
     {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
+    {"name":"LevelTransition","order":9,"path":"folders/Objects/LevelTransition.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sShanteeWindUp","order":4,"path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},
@@ -178,6 +179,7 @@
     {"name":"sPush","order":7,"path":"sprites/sPush/sPush.yy",},
     {"name":"sWall","order":1,"path":"sprites/sWall/sWall.yy",},
     {"name":"sCutCubeBreak","order":2,"path":"sprites/sCutCubeBreak/sCutCubeBreak.yy",},
+    {"name":"LevelTransition","order":16,"path":"scripts/LevelTransition/LevelTransition.yy",},
     {"name":"SFX_Menu_select","order":4,"path":"sounds/SFX_Menu_select/SFX_Menu_select.yy",},
     {"name":"W1_2_Tileset","order":3,"path":"sprites/W1_2_Tileset/W1_2_Tileset.yy",},
     {"name":"Testing2","order":4,"path":"sprites/Testing2/Testing2.yy",},

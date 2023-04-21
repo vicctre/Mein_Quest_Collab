@@ -65,6 +65,7 @@ changeState = function(newState) {
 			image_xscale = -hitDirection; 
 			hsp = hitDirection*2;
 			vsp = -5;
+			StartTuffulDefeatedTransition()
 		break;
 	}
 }

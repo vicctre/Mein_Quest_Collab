@@ -196,6 +196,7 @@ function Hit() {
 		return;
 	}
 	global.player_hp -= PLAYER_INVINCIBLE == false
+	show_debug_message("Hit")
 	if !global.player_hp {
 		Kill()
 		return;
@@ -236,4 +237,11 @@ function aeral_attack_finish() {
 	instance_destroy(aeral_attack_inst)
 }
 
+function check_reset_hp() {
+	if room == W1_1_part1 {
+		global.player_hp = global.player_hp_max	
+	}
+}
+
 instance_create_layer(x, y, layer, oCamera)
+check_reset_hp()
