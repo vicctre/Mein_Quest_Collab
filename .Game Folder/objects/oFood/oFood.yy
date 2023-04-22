@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "INGAME_Objects",
-    "path": "folders/Objects/INGAME_Objects.yy",
+    "name": "Items",
+    "path": "folders/Objects/Items.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -31,6 +31,9 @@
     "name": "sFood",
     "path": "sprites/sFood/sFood.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sEldoon_Small",
+    "path": "sprites/sEldoon_Small/sEldoon_Small.yy",
+  },
   "visible": true,
 }

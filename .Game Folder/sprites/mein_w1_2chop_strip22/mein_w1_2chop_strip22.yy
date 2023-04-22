@@ -47,7 +47,7 @@
   "origin": 4,
   "parent": {
     "name": "Mein NU",
-    "path": "folders/Sprites/Mein NU.yy",
+    "path": "folders/Sprites/Mein Sprites/Mein NU.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

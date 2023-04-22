@@ -69,7 +69,7 @@
   "origin": 4,
   "parent": {
     "name": "Hazards",
-    "path": "folders/Sprites/Other/Hazards.yy",
+    "path": "folders/Sprites/Hazards.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

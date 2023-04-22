@@ -73,7 +73,7 @@
   "origin": 4,
   "parent": {
     "name": "Environment",
-    "path": "folders/Sprites/Other/Environment.yy",
+    "path": "folders/Sprites/Environment.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

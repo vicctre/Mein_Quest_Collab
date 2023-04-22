@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Obj.",
-    "path": "folders/Sprites/Other/Obj..yy",
+    "path": "folders/Sprites/Misc./Obj..yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

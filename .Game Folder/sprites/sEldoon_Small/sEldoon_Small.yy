@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sEldoon_Small",
-  "bbox_bottom": 28,
+  "bbox_bottom": 23,
   "bbox_left": 2,
-  "bbox_right": 27,
+  "bbox_right": 28,
   "bbox_top": 5,
   "bboxMode": 2,
   "collisionKind": 1,
@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Items",
-    "path": "folders/Sprites/Other/Items.yy",
+    "path": "folders/Sprites/Items.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
