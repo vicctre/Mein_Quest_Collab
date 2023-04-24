@@ -33,8 +33,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Mein NU",
-    "path": "folders/Sprites/Mein Sprites/Mein NU.yy",
+    "name": "Mein Sprites",
+    "path": "folders/Sprites/Mein Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -55,7 +55,7 @@
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 20.0,
     "playbackSpeedType": 0,
     "showBackdrop": true,
     "showBackdropImage": false,

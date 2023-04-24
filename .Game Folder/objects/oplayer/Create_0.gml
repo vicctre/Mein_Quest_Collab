@@ -137,7 +137,7 @@ function Animate() {
 			}
 			if abs(hsp) {
 				if is_sprinting {
-					sprite_index = sMeinSprint
+					sprite_index = sRun
 				} else {
 					sprite_index = sPlayerW
 				}
