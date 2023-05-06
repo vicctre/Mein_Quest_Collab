@@ -174,7 +174,6 @@ def main():
   print(f'Child rooms updated: {len(child_rooms)}')  
   save_child_rooms(child_rooms)
   print('Done')
-  pass
 
 
 if __name__ == '__main__':
