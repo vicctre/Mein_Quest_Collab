@@ -18,7 +18,23 @@ Mein:
 //  but facing left look like it’s going backwards POLISH
 //* Door entrance animation slowed down POLISH
 //* Use new crouch animation
-* use white for iframes blinking
+//* use white for iframes blinking
+
+- Fix infinite spawning backgrounds (add some basic colors) 
+- Add backgrounds with parallax scrolling to W1-2 
+- Spikes now deal 1 damage to the player and launch them upward to prevent players from
+  falling into them again 
+- when collecting coins, Mein has a little freeze frame, and halts his movement for a second.
+  Fix so collecting coins feels smoother 
+- Crouching then pressing a direction makes Mein start doing the wrong animation.
+  When pushing a direction while crouching, Mein should keep crouching and simply change directions
+  he’s facing 
+- Adjust Meins acceleration (improve game feel) (Tre) 
+- When pushing against a wall and jumping, Mein should not be using his pushing animation
+  while jumping POLISH
+- Whenever Mein takes damage, the HP bar should do a little shake POLISH 
+- When Mein is landing from a jump, and dashing, small dust effects should appear
+  around and behind him respectively POLISH
 
 Environments: 
 * finish adding backgrounds with P. scrolling to both W1-1 and 1-2 and adjust accordingly 
