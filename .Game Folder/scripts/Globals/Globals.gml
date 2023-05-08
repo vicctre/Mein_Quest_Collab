@@ -6,8 +6,8 @@ Read more in manual.
 #macro Default:PLAYER_INVINCIBLE false
 #macro Dev:PLAYER_INVINCIBLE true
 
-player_dead_vsp = -4
-player_dead_hsp = 3
+player_dead_vsp = -5
+player_dead_hsp = 0
 player_hp_max = 4
 player_hp = player_hp_max
 player_invincibilty_time = 90

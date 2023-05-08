@@ -79,7 +79,7 @@
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
-    "playbackSpeed": 19.0,
+    "playbackSpeed": 22.0,
     "playbackSpeedType": 0,
     "showBackdrop": true,
     "showBackdropImage": false,
