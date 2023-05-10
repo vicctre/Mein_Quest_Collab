@@ -1,9 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oEldoon_Small",
+  "name": "oCollectible_Parent",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -11,10 +13,7 @@
     "name": "Items",
     "path": "folders/Objects/Items.yy",
   },
-  "parentObjectId": {
-    "name": "oCollectible_Parent",
-    "path": "objects/oCollectible_Parent/oCollectible_Parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,10 +29,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sEldoon_Small",
-    "path": "sprites/sEldoon_Small/sEldoon_Small.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

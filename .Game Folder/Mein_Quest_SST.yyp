@@ -157,6 +157,7 @@
     {"id":{"name":"W1_2_part4_AutoScroller1","path":"rooms/W1_2_part4_AutoScroller1/W1_2_part4_AutoScroller1.yy",},},
     {"id":{"name":"oChest","path":"objects/oChest/oChest.yy",},},
     {"id":{"name":"sShantee","path":"sprites/sShantee/sShantee.yy",},},
+    {"id":{"name":"oCollectible_Parent","path":"objects/oCollectible_Parent/oCollectible_Parent.yy",},},
     {"id":{"name":"EnemyState_Hit","path":"scripts/EnemyState_Hit/EnemyState_Hit.yy",},},
     {"id":{"name":"sContact","path":"sprites/sContact/sContact.yy",},},
     {"id":{"name":"TestingGround3","path":"rooms/TestingGround3/TestingGround3.yy",},},
