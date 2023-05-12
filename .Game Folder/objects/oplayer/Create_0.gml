@@ -119,6 +119,64 @@ function check_perform_jump() {
 		}
 	}
 }
+function check_perform_sprint() {
+	sprint_double_press_timer--
+	if sprint_double_press_timer == 0 {
+		sprint_last_pressed_dir = 0
+	}
+	var _sprint_press_dir = key_right_pressed - key_left_pressed
+	if !is_sprinting {
+		if (key_left_pressed or key_right_pressed) 
+				and sprint_last_pressed_dir == _sprint_press_dir
+				and !down_free {
+			is_sprinting = true
+		}
+	} else {
+		if move_h == 0 {
+			is_sprinting = false
+		}
+	}
+	if _sprint_press_dir != 0 {
+		sprint_double_press_timer = sprint_double_press_time
+		sprint_last_pressed_dir = _sprint_press_dir
+	}
+}
+function check_perform_crouch() {
+	if key_down and !down_free and state != PLAYERSTATE.CROUCH {
+		state = PLAYERSTATE.CROUCH
+		mask_index = sCrouch
+		start_crouch_transition()
+	}
+}
+function check_perform_push() {
+	if !down_free and state != PLAYERSTATE.ATTACK_SLASH
+			and (key_right and !right_free
+				 or key_left and !left_free) {
+		state = PLAYERSTATE.PUSHING
+		sprite_index = sPush
+	}
+}
+
+function check_perform_attack() {
+	attack_pause_timer--
+	if key_attack and !attack_pause_timer {
+		image_index = 0
+		if !down_free {
+			state = PLAYERSTATE.ATTACK_SLASH
+			sprite_index = sPlayerAttack
+			audio_play_sound(SFX_AttackWiff,5,false)
+			attack_pause_timer = attack_pause_time
+		} else if !aeral_attack_used {
+			state = PLAYERSTATE.ATTACK_AERAL
+			sprite_index = sPlayerAttackAeral
+			aeral_attack_timer = aeral_attack_time
+			aeral_attack_inst = perform_attack(sAttackCirlce, 1, 1, false)
+			audio_play_sound(SFX_AttackWiff,5,false)
+			attack_pause_timer = attack_pause_time
+			aeral_attack_used = true
+		}
+	}
+}
 
 function Animate() {
 	image_speed = 1
