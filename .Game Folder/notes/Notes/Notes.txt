@@ -4,23 +4,8 @@ Player sprite collsion mask bounds relative to center:
 -5 12
 
 Alex ToDo:
-Game functionality
-//* Camera check; make sure the camera follows the player properly and works with
-//  parallax backgrounds properly
-
 Mein:
-//* when taking damage, give the player is given invincibility frames to recover easier 
-//* aerial attack damage reduced (8hp->1hp) 
-//* Allow Mein to Attack after using an aerial attack (when using the aerial attack, 
-//  the next attack on the ground will not register) 
-//* Death spin out changes rotation depending on where the player was hit (left or right side) POLISH
-//* Aerial attack spins based on which way the player is facing; facing right looks perfect
-//  but facing left look like it’s going backwards POLISH
-//* Door entrance animation slowed down POLISH
-//* Use new crouch animation
-//* use white for iframes blinking
-
-- Fix infinite spawning backgrounds (add some basic colors) 
+//- Fix infinite spawning backgrounds (add some basic colors) 
 - Add backgrounds with parallax scrolling to W1-2 
 - Spikes now deal 1 damage to the player and launch them upward to prevent players from
   falling into them again 

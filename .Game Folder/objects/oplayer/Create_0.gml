@@ -1,6 +1,4 @@
 
-event_inherited()
-
 enum PLAYERSTATE {
 	FREE,
 	CROUCH,
