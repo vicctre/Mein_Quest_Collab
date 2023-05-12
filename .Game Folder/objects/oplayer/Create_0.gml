@@ -102,7 +102,6 @@ function animate_crouch_transition(sprite_to, img_sp) {
 		}
 		return true
 	}
-	// still in transition
 	return false
 }
 
@@ -116,8 +115,11 @@ function check_perform_jump() {
 			jumps -= down_free and !on_ground
 			vsp = jumps ? jump_sp : double_jump_sp
 			jump_pressed = 0
+            state = PLAYERSTATE.FREE
+            return true
 		}
 	}
+    return false
 }
 function check_perform_sprint() {
 	sprint_double_press_timer--
@@ -140,13 +142,16 @@ function check_perform_sprint() {
 		sprint_double_press_timer = sprint_double_press_time
 		sprint_last_pressed_dir = _sprint_press_dir
 	}
+    return is_sprinting
 }
 function check_perform_crouch() {
 	if key_down and !down_free and state != PLAYERSTATE.CROUCH {
 		state = PLAYERSTATE.CROUCH
 		mask_index = sCrouch
 		start_crouch_transition()
+        return true
 	}
+    return false
 }
 function check_perform_push() {
 	if !down_free and state != PLAYERSTATE.ATTACK_SLASH
@@ -154,7 +159,9 @@ function check_perform_push() {
 				 or key_left and !left_free) {
 		state = PLAYERSTATE.PUSHING
 		sprite_index = sPush
+        return true
 	}
+    return false
 }
 
 function check_perform_attack() {
@@ -166,7 +173,9 @@ function check_perform_attack() {
 			sprite_index = sPlayerAttack
 			audio_play_sound(SFX_AttackWiff,5,false)
 			attack_pause_timer = attack_pause_time
-		} else if !aeral_attack_used {
+            return true
+		}
+        if !aeral_attack_used {
 			state = PLAYERSTATE.ATTACK_AERAL
 			sprite_index = sPlayerAttackAeral
 			aeral_attack_timer = aeral_attack_time
@@ -174,8 +183,10 @@ function check_perform_attack() {
 			audio_play_sound(SFX_AttackWiff,5,false)
 			attack_pause_timer = attack_pause_time
 			aeral_attack_used = true
+            return true
 		}
 	}
+    return false
 }
 
 function Animate() {

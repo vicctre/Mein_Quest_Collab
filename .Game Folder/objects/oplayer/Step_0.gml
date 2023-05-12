@@ -46,19 +46,11 @@ input_move_h = key_right - key_left
 hsp_to = move_h * hsp_max
 
 if has_control {
-	
-	check_perform_attack()
-	check_perform_sprint()
-	check_perform_crouch()
-	check_perform_push()
-	check_perform_jump()
 
 	// used to fake ground for smoother jumping
 	on_ground--
 	if !down_free
 		on_ground = on_ground_delay
-
-
 
 	// enemies
 	var enemy = instance_place(x, y, ENEMY)
@@ -99,6 +91,11 @@ else if !down_free {
 
 switch state {
 	case PLAYERSTATE.FREE: {
+		check_perform_attack()
+		check_perform_sprint()
+		check_perform_crouch()
+		check_perform_push()
+		check_perform_jump()
 		break
 	}
 	case PLAYERSTATE.CROUCH: {
@@ -112,6 +109,9 @@ switch state {
 		break
 	}
 	case PLAYERSTATE.PUSHING: {
+		check_perform_jump()
+		check_perform_attack()
+		check_perform_crouch()
 		if !(key_right and !right_free
 				 or key_left and !left_free) {
 			state = ENEMYSTATE.FREE
@@ -168,6 +168,7 @@ switch state {
 		if is_animation_end() {
 			SlideTransition(TRANS_MODE.GOTO, enter_room)
 		}
+		hsp = 0
 		break
 	}
 }
