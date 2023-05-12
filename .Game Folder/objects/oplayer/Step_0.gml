@@ -95,34 +95,8 @@ if has_control {
 	if !down_free
 		on_ground = on_ground_delay
 
-	// on wall
-	if ((!right_free and key_right) 
-			or (!left_free and key_left)) 
-			and abs(input_move_h)
-			and wall_jump_on
-		on_wall = true
+	check_perform_jump()
 
-	// jumping
-	if key_jump
-		jump_pressed = jump_press_delay
-
-	if jump_pressed {
-		jump_pressed--
-		// wall jump
-		if on_wall {
-			jumps = jumps_max
-			jump_pressed = 0
-			vsp = jump_sp
-			hsp = -input_move_h * hsp_max
-		}
-		// ordinary jump
-		else if jumps {
-			jumps -= down_free and !on_ground
-			vsp = jumps ? jump_sp : double_jump_sp
-			jump_pressed = 0
-		}
-	}
-	
 	// crouching
 	if key_down and !down_free and state != PLAYERSTATE.CROUCH {
 		state = PLAYERSTATE.CROUCH

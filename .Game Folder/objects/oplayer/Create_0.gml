@@ -106,6 +106,20 @@ function animate_crouch_transition(sprite_to, img_sp) {
 	return false
 }
 
+function check_perform_jump() {
+	if key_jump
+		jump_pressed = jump_press_delay
+
+	if jump_pressed {
+		jump_pressed--
+		if jumps {
+			jumps -= down_free and !on_ground
+			vsp = jumps ? jump_sp : double_jump_sp
+			jump_pressed = 0
+		}
+	}
+}
+
 function Animate() {
 	image_speed = 1
 	switch state {

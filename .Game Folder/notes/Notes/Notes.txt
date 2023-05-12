@@ -5,7 +5,8 @@ Player sprite collsion mask bounds relative to center:
 
 Alex ToDo:
 Mein:
-//- Fix infinite spawning backgrounds (add some basic colors) 
+//- Fix infinite spawning backgrounds (add some basic colors)
+- Fix stucking in walls: jump + aeral attack + change direction
 - Add backgrounds with parallax scrolling to W1-2 
 - Spikes now deal 1 damage to the player and launch them upward to prevent players from
   falling into them again 
