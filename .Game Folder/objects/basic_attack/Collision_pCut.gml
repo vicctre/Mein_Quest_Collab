@@ -2,7 +2,7 @@
 with other {
 	hp--
 	flash = 3
-	hitfrom = other.direction
+	//hitfrom = other.direction <- commented this out to see if it breaks anything cuz it looks like it does nothing
 }
 instance_destroy()
 
