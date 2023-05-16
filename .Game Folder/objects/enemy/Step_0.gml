@@ -5,7 +5,7 @@ if (grounded) && (afraidofheights) && (!collision_point(x + abs(bbox_right-x) * 
 {
 	hsp = -hsp; 
 }
-if (abs(baseX-x) > leashRange) {
+if (flying && abs(baseX-x) > leashRange) {
 	hsp = abs(hsp)*sign(baseX-x);
 }
 //Collision (horizontal) 
