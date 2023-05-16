@@ -1,9 +1,5 @@
 event_inherited();
 cooldown = max(0, cooldown-1);
-var dir = sign(oPlayer.x-x);
-if (!attacking)
-	image_xscale = dir;
-
 
 if (attacking) {
 	image_index += 0.2;

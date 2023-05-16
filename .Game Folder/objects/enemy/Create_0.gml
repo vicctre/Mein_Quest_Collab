@@ -9,6 +9,7 @@ baseY = y;
 leashRange = 100;
 flying = false;
 flysp = 0;
+attacking = false;
 
 enum ENEMYSTATE 
 {
