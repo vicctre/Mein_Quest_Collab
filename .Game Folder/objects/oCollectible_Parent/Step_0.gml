@@ -8,8 +8,10 @@ if (place_meeting(x, y+vspd, oWall)) {
 	while(!place_meeting(x, y+sign(vspd), oWall)) {
 		y += sign(vspd);
 	}
-	if (vspd > 0)
+	if (vspd > 0) {
 		activated = true;
+		flashing = true;
+	}
 	vspd = 0;
 }
 y += vspd;

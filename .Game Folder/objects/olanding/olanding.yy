@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Mein Objects",
-    "path": "folders/References/Mein Objects.yy",
+    "path": "folders/Shader/Mein Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,
