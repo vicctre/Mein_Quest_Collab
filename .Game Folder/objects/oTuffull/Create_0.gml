@@ -1,6 +1,6 @@
 event_inherited();
 deadSprite = sTuffull_HitWall_dead;
-hp = 20;
+hp = 5//20; //set this back to 20 when ur done testing
 spd_walk = 3;
 spd_charge = 5.5;
 spd_jump = 3;
@@ -15,6 +15,10 @@ stun_time = 50;
 walk_time = 40;
 jump_prep_time = 20;
 charge_count = 3;
+
+flash_timer = 0;
+flash_loop_duration = 40 //how many steps a full loop takes
+flash_percent_max = 0.35; //0 = no flash, 1 = fully red
 
 changeState = function(newState) {
 	if (boss_state == newState)

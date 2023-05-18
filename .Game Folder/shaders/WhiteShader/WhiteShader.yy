@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "WhiteShader",
   "parent": {
-    "name": "Shader",
-    "path": "folders/Shader.yy",
+    "name": "Shaders",
+    "path": "folders/Shaders.yy",
   },
   "type": 1,
 }
