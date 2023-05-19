@@ -1,8 +1,8 @@
 event_inherited();
 collected = function() {
-	//repeat(20) {
-	//	var inst = instance_create_layer(x+random(30)-15,y+random(30)-15,layer,oCoinFizzle);
-	//	inst.direction = 90+random(20)-10;
-	//	inst.speed = 1;
-	//}
+	repeat(7) {
+		var inst = instance_create_depth(x+random(30)-15,y+random(30)-15,depth,oHealFizzle);
+		inst.direction = point_direction(x, y, inst.x, inst.y);
+		inst.speed = 0.5;
+	}
 }
