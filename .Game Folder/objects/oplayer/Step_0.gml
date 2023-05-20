@@ -96,6 +96,8 @@ switch state {
 		check_perform_crouch()
 		check_perform_push()
 		check_perform_jump()
+		
+		check_spikes()
 		break
 	}
 	case PLAYERSTATE.CROUCH: {

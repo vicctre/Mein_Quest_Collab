@@ -189,6 +189,13 @@ function check_perform_attack() {
     return false
 }
 
+function check_spikes() {
+	var spike = instance_place(x, y, oSpikes)
+	if spike != noone {
+		Hit()
+	}
+}
+
 function Animate() {
 	image_speed = 1
 	switch state {
