@@ -8,12 +8,15 @@ BASE_ROOM_FNAME = 'RoomBase.yy'
 DEPTH_STEP = 100
 ROOT_PATH = 'rooms'
 ADDED_CHILD_ROOMS = {
-  'W1_1_part1',
-  'W1_1_part2',
-  'W1_1_part3',
-  'W1_1_part4',
+  # 'W1_1_part1',
+  # 'W1_1_part2',
+  # 'W1_1_part3',
+  # 'W1_1_part4',
+  # 'W1_2_.+',
+  '^W1_1_part2$'
 }
 
+kDepth = 'depth'
 kType = 'resourceType'
 kTypeRoom = 'GMRoom'
 kParentRoom = 'parentRoom'
@@ -24,20 +27,22 @@ kColor = 'colour'
 class Layer:
   def __init__(self, raw_json):
     self.source_json = raw_json
-    self.name = raw_json['name']
+    self.name = raw_json[kName]
     self.type = raw_json[kType]
-    self.depth = raw_json['depth']
-    self.layer_type = raw_json[kType]
+    self.depth = raw_json[kDepth]
     self.color = raw_json[kColor] if self.type == kTypeBackground else None
 
   def serialize(self):
     result = deepcopy(self.source_json)
-    result['name'] = self.name
+    result[kName] = self.name
     result[kType] = self.type
-    result['depth'] = self.depth
+    result[kDepth] = self.depth
     if self.type == kTypeBackground:
       result[kColor] = self.color
     return result
+  
+  def __repr__(self):
+    return f'Layer({self.type}, {self.name})'
 
 
 class Room:
@@ -103,40 +108,68 @@ def get_base_room():
 
 
 def get_child_rooms(base_room:Room):
+  def is_child(dest, src):
+    parent_info = dest[kParentRoom]
+    return parent_info != None and parent_info[kName] == src.name
   def is_hand_added(raw_json):
-    return raw_json[kName] in ADDED_CHILD_ROOMS
+    name = raw_json[kName]
+    print(f'Checking {name}')
+    for pattern in ADDED_CHILD_ROOMS:
+      if re.search(pattern, name) != None:
+        return True
+    return False
+
   paths = find_files('.+\.yy')
   result = []
   for pth in paths:
     raw = load_json(pth)
-    parent_info = raw[kParentRoom]
-    if (parent_info != None and parent_info[kName] == base_room.name
-        or is_hand_added(raw)):
+    if (is_hand_added(raw)):
       result.append(Room(raw, pth))
   return result
-    
+
+
+class RoomUpdater:
+  def __init__(self, src, dest):
+    self.source_room = src
+    self.dest_room = dest
+    self.dest_layer_names = self.get_layer_names_set(dest)
+
+  def get_layer_names_set(self, dest):
+    return {layer.name for layer in dest.layers}
+
+  def layer_is_absent(self, src_layer):
+    return src_layer.name not in self.dest_layer_names
+
+  def run(self):
+    print(f'Updating room {self.dest_room.name}')
+    source_layers = self.source_room.layers
+    dest_layers = self.dest_room.layers
+    j = 0
+    for i in range(len(source_layers)):
+      ch_lr = dest_layers[j]
+      bs_lr = source_layers[i]
+      if bs_lr.name == 'ui':
+        test = True
+      if ch_lr.name != bs_lr.name and self.layer_is_absent(bs_lr):
+        print(f'Inserting {bs_lr.name} layer')
+        dest_layers.insert(j, bs_lr)
+        j += 1
+        continue
+      if ch_lr.type == kTypeBackground:
+        ch_lr.color = bs_lr.color
+        print('Update color')
+
 
 def update_child_rooms(child_rooms, base_room:Room):
   base_layers = base_room.layers
   result = []
   for chld in child_rooms:
-    if len(chld.layers) != len(base_layers):
-      print(f'WARNING: {chld.name} child room skipped bc of different layers structure')
-      continue
-    for i in range(len(base_layers)):
-      ch_lr = chld.layers[i]
-      bs_lr = base_layers[i]
-      if (ch_lr.name, ch_lr.type) != (bs_lr.name, bs_lr.type):
-        print(f'WARNING: {chld.name} child room skipped bc of different layers structure')
-        break
-      if ch_lr.type == kTypeBackground:
-        ch_lr.color = bs_lr.color
-        print('Updated color')
-    else:
+    try:
+      RoomUpdater(base_room, chld).run()
       result.append(chld)
+    except Exception as e:
+      print(f'Failed to update room {chld.name}: {str(e)}')
   return result
-        
-      
 
 
 def save_child_rooms(rooms):
