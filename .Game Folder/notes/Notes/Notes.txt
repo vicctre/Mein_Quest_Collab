@@ -13,9 +13,9 @@ Mein:
 //- Crouching then pressing a direction makes Mein start doing the wrong animation.
 //  When pushing a direction while crouching, Mein should keep crouching and simply change directions
 //  he’s facing 
-- Adjust Meins acceleration (improve game feel) (Tre) 
-- When pushing against a wall and jumping, Mein should not be using his pushing animation
-  while jumping POLISH
+//- Adjust Meins acceleration (improve game feel) (Tre)
+//- When pushing against a wall and jumping, Mein should not be using his pushing animation
+//  while jumping POLISH
 - Whenever Mein takes damage, the HP bar should do a little shake POLISH 
 - When Mein is landing from a jump, and dashing, small dust effects should appear
   around and behind him respectively POLISH

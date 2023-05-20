@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "oDust",
-    "path": "sprites/oDust/oDust.yy",
+    "name": "sDust",
+    "path": "sprites/sDust/sDust.yy",
   },
   "spriteMaskId": null,
   "visible": true,

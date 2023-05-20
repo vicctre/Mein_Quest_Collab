@@ -105,7 +105,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oFood","path":"objects/oFood/oFood.yy",},},
     {"id":{"name":"Tree_outside","path":"sprites/Tree_outside/Tree_outside.yy",},},
-    {"id":{"name":"oDust","path":"sprites/oDust/oDust.yy",},},
+    {"id":{"name":"sDust","path":"sprites/sDust/sDust.yy",},},
     {"id":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},},
     {"id":{"name":"oEldoon_Small","path":"objects/oEldoon_Small/oEldoon_Small.yy",},},
     {"id":{"name":"sTuffull_charge","path":"sprites/sTuffull_charge/sTuffull_charge.yy",},},
