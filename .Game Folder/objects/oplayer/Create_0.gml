@@ -18,7 +18,8 @@ global.VAR_BAR_ROW_DELTA = 30
 // hp - see global.player_hp
 hsp_max = 2.5
 vsp_max = 5.5
-acc = 1.1
+acc = global.player_accel
+decel = global.player_decel
 grav = 0.3
 jump_sp = -7
 double_jump_sp = -6
@@ -29,7 +30,6 @@ dir = 0
 move_h = 0
 
 rm_sp_min = 5
-rm_sp_max = 60
 
 jumps_max = 1
 jumps = jumps_max
@@ -37,12 +37,9 @@ jump_press_delay = 15
 jump_pressed = 0
 on_ground_delay = 10
 on_ground = 0 // used to fake ground for smoother jumping
-on_wall = false
-wall_jump_on = false
 
 wall_obj = oWall
 
-gp_hinp = 0
 gp_hinp_treshold = 0.2
 
 has_control = true
@@ -68,6 +65,7 @@ is_sprinting = false
 sprint_double_press_time = 0.5 * room_speed
 sprint_double_press_timer = 0
 sprint_last_pressed_dir = 0
+sprint_add_sp_gain = 0.5
 
 invincibility_time = global.player_invincibilty_time
 invincibility_timer = 0

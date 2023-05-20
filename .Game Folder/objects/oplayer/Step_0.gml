@@ -46,7 +46,6 @@ input_move_h = key_right - key_left
 hsp_to = move_h * hsp_max
 
 if has_control {
-
 	// used to fake ground for smoother jumping
 	on_ground--
 	if !down_free
@@ -72,7 +71,8 @@ if has_control {
 	}
 }
 
-hsp = approach(hsp, hsp_to * (1 + is_sprinting), acc)
+var is_accelerating = sign(hsp) == 0 or sign(hsp) == sign(hsp_to)
+hsp = approach(hsp, hsp_to * (1 + is_sprinting*sprint_add_sp_gain), is_accelerating ? acc : decel)
 vsp = approach(vsp, vsp_max, grav)
 
 // handle vertical sp
@@ -96,13 +96,15 @@ switch state {
 		check_perform_crouch()
 		check_perform_push()
 		check_perform_jump()
-		
 		check_spikes()
 		break
 	}
 	case PLAYERSTATE.CROUCH: {
 		hsp = 0
 		vsp = 0
+		if abs(input_move_h) != 0 {
+			image_xscale = input_move_h	
+		}
 		if !key_down or down_free {
 			state = ENEMYSTATE.FREE
 			mask_index = sPlayer

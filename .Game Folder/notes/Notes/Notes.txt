@@ -8,13 +8,11 @@ Mein:
 //- Fix infinite spawning backgrounds (add some basic colors)
 //- Fix stucking in walls: jump + aeral attack + change direction
 //- Add backgrounds with parallax scrolling to W1-2 
-- Spikes now deal 1 damage to the player and launch them upward to prevent players from
-  falling into them again 
-- when collecting coins, Mein has a little freeze frame, and halts his movement for a second.
-  Fix so collecting coins feels smoother 
-- Crouching then pressing a direction makes Mein start doing the wrong animation.
-  When pushing a direction while crouching, Mein should keep crouching and simply change directions
-  he’s facing 
+//- Spikes now deal 1 damage to the player and launch them upward to prevent players from
+//  falling into them again 
+//- Crouching then pressing a direction makes Mein start doing the wrong animation.
+//  When pushing a direction while crouching, Mein should keep crouching and simply change directions
+//  he’s facing 
 - Adjust Meins acceleration (improve game feel) (Tre) 
 - When pushing against a wall and jumping, Mein should not be using his pushing animation
   while jumping POLISH
