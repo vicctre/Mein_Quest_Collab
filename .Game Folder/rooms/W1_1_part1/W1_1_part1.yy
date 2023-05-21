@@ -158,8 +158,6 @@
     {"name":"inst_23A10C99","path":"rooms/W1_1_part1/W1_1_part1.yy",},
     {"name":"inst_40A76E9A","path":"rooms/W1_1_part1/W1_1_part1.yy",},
     {"name":"inst_685EAE96","path":"rooms/W1_1_part1/W1_1_part1.yy",},
-    {"name":"inst_432C7BEE","path":"rooms/W1_1_part1/W1_1_part1.yy",},
-    {"name":"inst_43DB6F20","path":"rooms/W1_1_part1/W1_1_part1.yy",},
   ],
   "isDnd": false,
   "layers": [

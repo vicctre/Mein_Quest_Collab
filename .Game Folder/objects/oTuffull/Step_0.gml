@@ -1,4 +1,5 @@
 timer = max(0, timer-1);
+
 switch(boss_state) {
 	case "Idle":
 		hsp = 0;
@@ -15,6 +16,7 @@ switch(boss_state) {
 		}
 	break;
 	case "Charge":
+		hsp = lerp(hsp, hsp_target, 0.14);
 		if (place_meeting(x+hsp, y, oWall)) {
 			changeState("Stunned");
 		}
