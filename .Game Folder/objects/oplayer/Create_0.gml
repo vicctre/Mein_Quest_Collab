@@ -17,7 +17,7 @@ global.VAR_BAR_ROW_DELTA = 30
 /// main parameters
 // hp - see global.player_hp
 hsp_max = 2.5
-vsp_max = 5.5
+vsp_max = 6
 acc = global.player_accel
 decel = global.player_decel
 grav = 0.3
