@@ -225,6 +225,7 @@
     {"name":"oHealFizzle","order":15,"path":"objects/oHealFizzle/oHealFizzle.yy",},
     {"name":"Mein_Attack_22FPS_strip7","order":9,"path":"sprites/Mein_Attack_22FPS_strip7/Mein_Attack_22FPS_strip7.yy",},
     {"name":"sShanteeHitbox","order":3,"path":"sprites/sShanteeHitbox/sShanteeHitbox.yy",},
+    {"name":"ResizeCamera","order":17,"path":"scripts/ResizeCamera/ResizeCamera.yy",},
     {"name":"Mein_Damage_16FPS_strip4","order":12,"path":"sprites/Mein_Damage_16FPS_strip4/Mein_Damage_16FPS_strip4.yy",},
     {"name":"Restart","order":14,"path":"scripts/Restart/Restart.yy",},
     {"name":"Mein_EXP01_strip8","order":15,"path":"sprites/Mein_EXP01_strip8/Mein_EXP01_strip8.yy",},

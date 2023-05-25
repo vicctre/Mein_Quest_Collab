@@ -261,6 +261,7 @@ function Animate() {
 }
 
 function Kill() {
+	global.player_hp = 0;
 	sprite_index = sPlayerDead
 	state = PLAYERSTATE.DEAD
 	has_control = false

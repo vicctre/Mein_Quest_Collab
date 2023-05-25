@@ -1,5 +1,11 @@
 /// Update Camera
 
+//update zoom
+if (cam_zoom_current != cam_zoom_target) {
+	cam_zoom_current = lerp(cam_zoom_current, cam_zoom_target, 0.05);
+	ResizeCamera();
+}
+
 //update destination aka where ever the player is 
 if (instance_exists(follow)) 
 {

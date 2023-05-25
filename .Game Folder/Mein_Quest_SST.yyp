@@ -289,6 +289,7 @@
     {"id":{"name":"oHealFizzle","path":"objects/oHealFizzle/oHealFizzle.yy",},},
     {"id":{"name":"Mein_Attack_22FPS_strip7","path":"sprites/Mein_Attack_22FPS_strip7/Mein_Attack_22FPS_strip7.yy",},},
     {"id":{"name":"sShanteeHitbox","path":"sprites/sShanteeHitbox/sShanteeHitbox.yy",},},
+    {"id":{"name":"ResizeCamera","path":"scripts/ResizeCamera/ResizeCamera.yy",},},
     {"id":{"name":"Mein_Damage_16FPS_strip4","path":"sprites/Mein_Damage_16FPS_strip4/Mein_Damage_16FPS_strip4.yy",},},
     {"id":{"name":"Restart","path":"scripts/Restart/Restart.yy",},},
     {"id":{"name":"Mein_EXP01_strip8","path":"sprites/Mein_EXP01_strip8/Mein_EXP01_strip8.yy",},},

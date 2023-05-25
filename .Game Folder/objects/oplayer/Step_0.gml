@@ -187,6 +187,9 @@ dir = point_direction(0, 0, hsp, vsp)
 if abs(hsp) or abs(vsp)
 	scr_move_coord_contact_obj(hsp, vsp, wall_obj)
 
-scr_camera_set_pos(0, x, y)
-
 Animate()
+
+//fall out of world
+if (global.player_hp > 0 && bbox_bottom > room_height) {
+	Kill();
+}
