@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "SFX_CutCube",
+  "name": "SFX_DoubleJump",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.236032,
+  "duration": 0.381383,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "More SFX",
+    "path": "folders/Sounds/More SFX.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "sfx_cutcube.wav",
+  "soundFile": "SFX_DoubleJump.wav",
   "type": 0,
-  "volume": 0.15,
+  "volume": 1.0,
 }
