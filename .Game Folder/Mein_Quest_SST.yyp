@@ -236,7 +236,7 @@
     {"id":{"name":"SFX_Crouch","path":"sounds/SFX_Crouch/SFX_Crouch.yy",},},
     {"id":{"name":"sFleater_D","path":"sprites/sFleater_D/sFleater_D.yy",},},
     {"id":{"name":"W1_1_part3","path":"rooms/W1_1_part3/W1_1_part3.yy",},},
-    {"id":{"name":"shake","path":"scripts/shake/shake.yy",},},
+    {"id":{"name":"shaker","path":"scripts/shaker/shaker.yy",},},
     {"id":{"name":"fMenu","path":"fonts/fMenu/fMenu.yy",},},
     {"id":{"name":"sTuffull_walking","path":"sprites/sTuffull_walking/sTuffull_walking.yy",},},
     {"id":{"name":"sWater_Tile","path":"sprites/sWater_Tile/sWater_Tile.yy",},},

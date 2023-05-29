@@ -3,7 +3,7 @@ function Shaker() constructor {
 	time = 30
 	timer = 0
 	rot_magnitude = 5
-	
+
 	angle = 0
 
 	step = function() {
@@ -14,8 +14,8 @@ function Shaker() constructor {
 		timer--
 		angle = random_range(-rot_magnitude, rot_magnitude)
 	}
-	
+
 	shake = function() {
-		timer = time	
+		timer = time
 	}
 }
