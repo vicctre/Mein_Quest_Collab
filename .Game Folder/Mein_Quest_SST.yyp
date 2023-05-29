@@ -212,6 +212,7 @@
     {"id":{"name":"sLog_Ride_Segments","path":"sprites/sLog_Ride_Segments/sLog_Ride_Segments.yy",},},
     {"id":{"name":"sCrouch","path":"sprites/sCrouch/sCrouch.yy",},},
     {"id":{"name":"Mein_Death","path":"sprites/Mein_Death/Mein_Death.yy",},},
+    {"id":{"name":"oEffects","path":"objects/oEffects/oEffects.yy",},},
     {"id":{"name":"sDoor","path":"sprites/sDoor/sDoor.yy",},},
     {"id":{"name":"WhiteShader","path":"shaders/WhiteShader/WhiteShader.yy",},},
     {"id":{"name":"Label_3","path":"sprites/Label_3/Label_3.yy",},},

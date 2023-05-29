@@ -163,6 +163,7 @@
     {"name":"sLog_Ride_Segments","order":6,"path":"sprites/sLog_Ride_Segments/sLog_Ride_Segments.yy",},
     {"name":"sCrouch","order":17,"path":"sprites/sCrouch/sCrouch.yy",},
     {"name":"Mein_Death","order":8,"path":"sprites/Mein_Death/Mein_Death.yy",},
+    {"name":"oEffects","order":4,"path":"objects/oEffects/oEffects.yy",},
     {"name":"sDoor","order":3,"path":"sprites/sDoor/sDoor.yy",},
     {"name":"WhiteShader","order":2,"path":"shaders/WhiteShader/WhiteShader.yy",},
     {"name":"Label_3","order":2,"path":"sprites/Label_3/Label_3.yy",},

@@ -5,7 +5,7 @@ Player sprite collsion mask bounds relative to center:
 
 Alex ToDo:
 Mein:
-* Whenever Mein takes damage, the HP bar should do a little shake POLISH 
+//* Whenever Mein takes damage, the HP bar should do a little shake POLISH 
 * When Mein is landing from a jump, and dashing, small dust effects should appear
   around and behind him respectively POLISH
 * Fix double jump where Mein seems to be pushed back by a pixel during the double jump fall animation
