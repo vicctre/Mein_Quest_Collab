@@ -295,6 +295,7 @@ function Hit() {
 	state = PLAYERSTATE.HIT
 	sprite_index = sPlayerDamage
 	invincibility_timer = invincibility_time
+	oUI.shake_hp()
 }
 
 function animate_update_xscale() {
