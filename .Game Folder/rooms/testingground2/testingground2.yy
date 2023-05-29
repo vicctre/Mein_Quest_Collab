@@ -310,7 +310,7 @@
 1,24,-10,0,1,40,-6,28,2,8,24,-5,47,1,24,-17,0,2,16,24,-5,47,4,2,20,
 20,36,-14,0,2,16,24,-8,47,1,24,-14,0,2,16,24,-8,47,1,24,-8,0,2,34,36,
 -4,0,2,16,24,-8,47,1,2,-8,20,2,1,2,-4,20,2,1,24,-24,47,1,24,-24,28,
-1,38,],"TileDataFormat":1,},"tilesetId":{"name":"AutoTile_W1_1","path":"tilesets/AutoTile_W1_1/AutoTile_W1_1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+1,38,],"TileDataFormat":1,},"tilesetId":null,"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4294947328,"depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
