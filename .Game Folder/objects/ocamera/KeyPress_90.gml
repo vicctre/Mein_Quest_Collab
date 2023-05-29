@@ -1,0 +1,1 @@
+cam_zoom_target = cam_zoom_target % 2 + 1;

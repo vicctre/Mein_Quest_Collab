@@ -1,13 +1,14 @@
 event_inherited();
 deadSprite = sTuffull_HitWall_dead;
-hp = 5//20; //set this back to 20 when ur done testing
+hp = 20; //set this back to 20 when ur done testing
 spd_walk = 3;
-spd_charge = 5.5;
+spd_charge = 5.6;
 spd_jump = 3;
 jump_height = 8;
 boss_state = "Idle";
 timer = 80;
 image_xscale = -size;
+hsp_target = 0; //speed to accelerate hsp towards
 
 idle_time = 30;
 charge_prep_time = 50;
@@ -36,12 +37,13 @@ changeState = function(newState) {
 			sprite_index = sTuffull_charge_prep;
 		break;
 		case "Charge":
-			hsp = image_xscale*spd_charge;
+			hsp_target = image_xscale*spd_charge;
 			sprite_index = sTuffull_charge;
 		break;
 		case "Stunned":
 			wallX = x;
 			hsp = 0;
+			hsp_target = 0;
 			timer = stun_time;
 			sprite_index = sTuffull_HitWall_dead;
 		break;
