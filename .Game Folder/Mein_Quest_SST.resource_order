@@ -182,6 +182,7 @@
     {"name":"Mein_walk_strip8","order":6,"path":"sprites/Mein_walk_strip8/Mein_walk_strip8.yy",},
     {"name":"SFX_Crouch","order":2,"path":"sounds/SFX_Crouch/SFX_Crouch.yy",},
     {"name":"sFleater_D","order":1,"path":"sprites/sFleater_D/sFleater_D.yy",},
+    {"name":"shake","order":7,"path":"scripts/shake/shake.yy",},
     {"name":"sTuffull_walking","order":3,"path":"sprites/sTuffull_walking/sTuffull_walking.yy",},
     {"name":"sWater_Tile","order":1,"path":"sprites/sWater_Tile/sWater_Tile.yy",},
     {"name":"sMeinHP_Extra","order":3,"path":"sprites/sMeinHP_Extra/sMeinHP_Extra.yy",},
