@@ -1,8 +1,10 @@
 
 var hp_spr = sMeinHP
+var hp_scale = 2
 hp = {
-	xoffset: 15 + sprite_get_xoffset(hp_spr),
-	yoffset: 15 + sprite_get_yoffset(hp_spr),
+	scale: hp_scale,
+	xoffset: 15 + sprite_get_xoffset(hp_spr) * hp_scale,
+	yoffset: 15 + sprite_get_yoffset(hp_spr) * hp_scale,
 	spr: hp_spr,
 	max_ind: sprite_get_number(hp_spr)
 }
@@ -13,10 +15,8 @@ function hp_bar_get_index() {
 }
 
 function draw_hp_bar() {
-	var xx = scr_camx(0) + hp.xoffset
-	var yy = scr_camy(0) + hp.yoffset
-	draw_sprite_ext(hp.spr, hp_bar_get_index(), xx, yy,
-					1, 1, hp_shake.angle, c_white, 1)
+	draw_sprite_ext(hp.spr, hp_bar_get_index(), hp.xoffset, hp.yoffset,
+					hp.scale, hp.scale, hp_shake.angle, c_white, 1)
 }
 
 function shake_hp() {

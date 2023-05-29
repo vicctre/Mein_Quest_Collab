@@ -24,3 +24,8 @@ menu_top = menu_y - ((menu_itemheight * 1.5) * menu_items);
 menu_cursor = 2; 
 
 global.coins = 0;
+
+function StartNew() {
+	SlideTransition(TRANS_MODE.NEXT)
+	global.player_hp = global.player_hp_max
+}

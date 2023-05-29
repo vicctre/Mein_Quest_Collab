@@ -45,13 +45,19 @@ gp_hinp_treshold = 0.2
 has_control = true
 state = PLAYERSTATE.FREE
 
-
 // attacks
 attack_pause_time = 15
 attack_pause_timer = 0
 attack_perform_frame = 2
 attack_performed = false
 list_hit_by_attack = ds_list_create()
+
+up_free = false
+left_free = false
+right_free = false
+down_free = false
+// landing detection
+prev_down_free = false
 
 // aeral attack
 aeral_attack_spin_sp = 30
@@ -62,6 +68,7 @@ image_draw_angle = 0
 aeral_attack_inst = noone
 
 is_sprinting = false
+prev_is_sprinting = false
 sprint_double_press_time = 0.5 * room_speed
 sprint_double_press_timer = 0
 sprint_last_pressed_dir = 0
@@ -276,6 +283,7 @@ function Kill() {
 	visible = false
 	// transition
 	alarm[1] = 60
+	oUI.shake_hp()
 }
 
 function Hit() {
@@ -329,6 +337,24 @@ function check_reset_hp() {
 	if room == W1_1_part1 {
 		global.player_hp = global.player_hp_max	
 	}
+}
+
+function check_just_landed() {
+	return !down_free and prev_down_free
+}
+
+function check_sprint_started() {
+	return !prev_is_sprinting and is_sprinting
+}
+
+_dust_yoffset = -sprite_get_height(sDust) + sprite_get_yoffset(sDust)
+function dust_effect() {
+	oEffects.emit_dust(
+		x, bbox_bottom + _dust_yoffset)
+}
+
+function sprint_effect() {
+	oEffects.emit_sprint_dust(x, bbox_bottom + _dust_yoffset, -input_move_h)
 }
 
 instance_create_layer(x, y, layer, oCamera)

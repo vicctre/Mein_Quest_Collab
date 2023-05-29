@@ -32,9 +32,12 @@ if has_control {
 	key_attack = false
 }
 
+prev_is_sprinting = is_sprinting
+prev_down_free = down_free
+
 // contact walls
-up_free = place_empty(x, y - 1, wall_obj)
 down_free = place_empty(x, y + 1, wall_obj) && !thin_platform_check(0, 1);
+up_free = place_empty(x, y - 1, wall_obj)
 left_free = place_empty(x - 1, y, wall_obj)
 right_free = place_empty(x + 1, y, wall_obj)
 
@@ -97,6 +100,12 @@ switch state {
 		check_perform_push()
 		check_perform_jump()
 		check_spikes()
+		if check_just_landed() {
+			dust_effect()
+		}
+		if check_sprint_started() {
+			sprint_effect()	
+		}
 		break
 	}
 	case PLAYERSTATE.CROUCH: {
