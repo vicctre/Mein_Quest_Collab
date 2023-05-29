@@ -1,8 +1,8 @@
 
 var hp_spr = sMeinHP
 hp = {
-	xoffset: 15,
-	yoffset: 15,
+	xoffset: 15 + sprite_get_xoffset(hp_spr),
+	yoffset: 15 + sprite_get_yoffset(hp_spr),
 	spr: hp_spr,
 	max_ind: sprite_get_number(hp_spr)
 }
