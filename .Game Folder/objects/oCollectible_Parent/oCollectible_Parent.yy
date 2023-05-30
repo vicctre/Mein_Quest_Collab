@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": ".ParentsClub",
-    "path": "folders/Objects/.ParentsClub.yy",
+    "name": "Items",
+    "path": "folders/Objects/Items.yy",
   },
   "parentObjectId": null,
   "persistent": false,
