@@ -5,3 +5,5 @@ CutCubeSound = false;
 
 EnemyKOSound = false; 
 
+HealSFX = false; 
+

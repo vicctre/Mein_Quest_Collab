@@ -181,6 +181,7 @@
     {"id":{"name":"RoomBase","path":"rooms/RoomBase/RoomBase.yy",},},
     {"id":{"name":"RoomTemplate","path":"rooms/RoomTemplate/RoomTemplate.yy",},},
     {"id":{"name":"SFX_AttackWiff","path":"sounds/SFX_AttackWiff/SFX_AttackWiff.yy",},},
+    {"id":{"name":"SFX_Door","path":"sounds/SFX_Door/SFX_Door.yy",},},
     {"id":{"name":"sRun","path":"sprites/sRun/sRun.yy",},},
     {"id":{"name":"sBG4","path":"sprites/sBG4/sBG4.yy",},},
     {"id":{"name":"sCoin_FX","path":"sprites/sCoin_FX/sCoin_FX.yy",},},

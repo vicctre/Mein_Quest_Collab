@@ -71,6 +71,7 @@ if has_control {
 		state = PLAYERSTATE.ENTER_DOOR
 		enter_room = door.room_to_go
 		sprite_index = sPlayerEnterDoor
+		audio_play_sound(SFX_Door, 6, false)
 	}
 }
 

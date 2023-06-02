@@ -21,3 +21,13 @@ if EnemyKOSound == true
 	//reset variable 
 	EnemyKOSound = false; 
 }
+
+if HealSFX == true 
+{
+	//play sound 
+	var _snd = audio_play_sound(SFX_Heal, 5, false);
+	audio_sound_gain(_snd, _sfxVol, 0); 
+	
+	//reset variable 
+	HealSFX = false; 
+}

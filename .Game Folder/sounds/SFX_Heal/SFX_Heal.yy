@@ -12,12 +12,12 @@
   "conversionMode": 0,
   "duration": 0.41415,
   "parent": {
-    "name": "Need to be Added SFX",
-    "path": "folders/Sounds/Need to be Added SFX.yy",
+    "name": "Sounds",
+    "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,
   "soundFile": "SFX_Heal.wav",
   "type": 0,
-  "volume": 0.7,
+  "volume": 0.2,
 }

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "SFX_Jump",
+  "name": "SFX_Door",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.381383,
+  "duration": 0.61585,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Need to be Added SFX",
+    "path": "folders/Sounds/Need to be Added SFX.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "sfx_jump.wav",
+  "soundFile": "SFX_Door.wav",
   "type": 0,
   "volume": 0.4,
 }
