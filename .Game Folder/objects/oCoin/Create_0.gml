@@ -1,9 +1,9 @@
 event_inherited();
 collected = function() {
-	repeat(10) {
-		var inst = instance_create_depth(x+random(30)-15,y+random(30)-15,depth,oCoinFizzle);
-		inst.direction = 90+random(20)-10;
-		inst.speed = 1;
+	for(var i = 0; i < 8; i++) {
+		var inst = instance_create_depth(x,y,depth,oCoinFizzle);
+		inst.direction = i*45;
+		inst.speed = 0.5;
 	}
 	global.coins++;
 }
