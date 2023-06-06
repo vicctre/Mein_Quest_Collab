@@ -2,7 +2,7 @@
 if (room == W1_1_part4) {
 	x = 240
 	y = 200
-	cam_zoom_target = 0.85;
+	cam_zoom_target = 0.8;
 	SnapCamera();
 	follow = id;
 	cam_width = 480;
