@@ -137,7 +137,7 @@
     {"name":"RoomBase","order":4,"path":"rooms/RoomBase/RoomBase.yy",},
     {"name":"RoomTemplate","order":6,"path":"rooms/RoomTemplate/RoomTemplate.yy",},
     {"name":"SFX_AttackWiff","order":1,"path":"sounds/SFX_AttackWiff/SFX_AttackWiff.yy",},
-    {"name":"SFX_Door","order":7,"path":"sounds/SFX_Door/SFX_Door.yy",},
+    {"name":"SFX_Door","order":13,"path":"sounds/SFX_Door/SFX_Door.yy",},
     {"name":"sRun","order":10,"path":"sprites/sRun/sRun.yy",},
     {"name":"sBG4","order":1,"path":"sprites/sBG4/sBG4.yy",},
     {"name":"sCoin_FX","order":5,"path":"sprites/sCoin_FX/sCoin_FX.yy",},

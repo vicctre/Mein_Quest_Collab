@@ -12,12 +12,12 @@
   "conversionMode": 0,
   "duration": 0.61585,
   "parent": {
-    "name": "Need to be Added SFX",
-    "path": "folders/Sounds/Need to be Added SFX.yy",
+    "name": "Sounds",
+    "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,
   "soundFile": "SFX_Door.wav",
   "type": 0,
-  "volume": 0.4,
+  "volume": 0.25,
 }
