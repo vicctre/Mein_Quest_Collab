@@ -8,8 +8,10 @@ Mein:
 //* Whenever Mein takes damage, the HP bar should do a little shake POLISH 
 //* When Mein is landing from a jump, and dashing, small dust effects should appear
 //  around and behind him respectively POLISH
-* Fix double jump where Mein seems to be pushed back by a pixel during the double jump fall animation
-* adjust crouch hurtbox to have the same width as standing, but still half the height
+* Fix double jump where Mein seems to be pushed back by a pixel 
+	during the double jump fall animation
+* adjust crouch hurtbox to have the same width as standing,	
+	but still half the height
 
 Environments: 
 * finish adding backgrounds with P. scrolling to both W1-1 and 1-2 and adjust accordingly 
@@ -22,4 +24,4 @@ Environments:
 * Mess around with lighting (shadows) and “fog” to give the backgrounds more depth (See Tre for details and ideas)
 
 Items: 
-* Make sure both healing items heal their own amount of HP 
+* Make sure both healing items heal their own amount of HP

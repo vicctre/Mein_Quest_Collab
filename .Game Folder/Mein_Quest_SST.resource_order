@@ -218,7 +218,7 @@
     {"name":"Mein_idle_8FPS_strip4","order":22,"path":"sprites/Mein_idle_8FPS_strip4/Mein_idle_8FPS_strip4.yy",},
     {"name":"sTitlePrototype2","order":1,"path":"sprites/sTitlePrototype2/sTitlePrototype2.yy",},
     {"name":"pCut","order":1,"path":"objects/pCut/pCut.yy",},
-    {"name":"KillPlayer","order":8,"path":"scripts/KillPlayer/KillPlayer.yy",},
+    {"name":"Player","order":8,"path":"scripts/Player/Player.yy",},
     {"name":"oApploon","order":1,"path":"objects/oApploon/oApploon.yy",},
     {"name":"oChestOpen","order":6,"path":"objects/oChestOpen/oChestOpen.yy",},
     {"name":"sTitlePrototype3","order":2,"path":"sprites/sTitlePrototype3/sTitlePrototype3.yy",},

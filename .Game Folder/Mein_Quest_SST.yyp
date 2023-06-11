@@ -281,7 +281,7 @@
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"sTitlePrototype2","path":"sprites/sTitlePrototype2/sTitlePrototype2.yy",},},
     {"id":{"name":"pCut","path":"objects/pCut/pCut.yy",},},
-    {"id":{"name":"KillPlayer","path":"scripts/KillPlayer/KillPlayer.yy",},},
+    {"id":{"name":"Player","path":"scripts/Player/Player.yy",},},
     {"id":{"name":"oApploon","path":"objects/oApploon/oApploon.yy",},},
     {"id":{"name":"oChestOpen","path":"objects/oChestOpen/oChestOpen.yy",},},
     {"id":{"name":"sTitlePrototype3","path":"sprites/sTitlePrototype3/sTitlePrototype3.yy",},},
