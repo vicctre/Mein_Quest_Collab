@@ -8,14 +8,14 @@ Mein:
 //* Whenever Mein takes damage, the HP bar should do a little shake POLISH 
 //* When Mein is landing from a jump, and dashing, small dust effects should appear
 //  around and behind him respectively POLISH
-* Fix double jump where Mein seems to be pushed back by a pixel 
-	during the double jump fall animation - can't reproduce
-* adjust crouch hurtbox to have the same width as standing,	
-	but still half the height
+//* Fix double jump where Mein seems to be pushed back by a pixel 
+//	during the double jump fall animation - can't reproduce
+//* adjust crouch hurtbox to have the same width as standing,	
+//	but still half the height
 
 Environments: 
 * finish adding backgrounds with P. scrolling to both W1-1 and 1-2 and adjust accordingly 
-* Spikes deal 1 damage now, and launch Mein upwards/downwards to avoid multiple hits from them 
+//* Spikes deal 1 damage now, and launch Mein upwards/downwards to avoid multiple hits from them 
 * when player dies, pause the game for 1 second (60 frames) and then proceed to have the  
 	player fall to their death at full rate (no 30fps slow down anymore)
 * Have the “onto stage” sequence play before starting every stage
