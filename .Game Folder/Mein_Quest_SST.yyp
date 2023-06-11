@@ -229,6 +229,7 @@
     {"id":{"name":"RedShader","path":"shaders/RedShader/RedShader.yy",},},
     {"id":{"name":"W1_1_part4","path":"rooms/W1_1_part4/W1_1_part4.yy",},},
     {"id":{"name":"sBG1","path":"sprites/sBG1/sBG1.yy",},},
+    {"id":{"name":"SFX_Damage_pt2","path":"sounds/SFX_Damage_pt2/SFX_Damage_pt2.yy",},},
     {"id":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},},
     {"id":{"name":"oPlayerDamage","path":"objects/oPlayerDamage/oPlayerDamage.yy",},},
     {"id":{"name":"debug","path":"scripts/debug/debug.yy",},},
