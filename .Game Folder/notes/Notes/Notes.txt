@@ -9,19 +9,21 @@ Mein:
 //* When Mein is landing from a jump, and dashing, small dust effects should appear
 //  around and behind him respectively POLISH
 * Fix double jump where Mein seems to be pushed back by a pixel 
-	during the double jump fall animation
+	during the double jump fall animation - can't reproduce
 * adjust crouch hurtbox to have the same width as standing,	
 	but still half the height
 
 Environments: 
 * finish adding backgrounds with P. scrolling to both W1-1 and 1-2 and adjust accordingly 
 * Spikes deal 1 damage now, and launch Mein upwards/downwards to avoid multiple hits from them 
-* when player dies, pause the game for 1 second (60 frames) and then proceed to have the player fall to their death at full rate (no 30fps slow down anymore)
+* when player dies, pause the game for 1 second (60 frames) and then proceed to have the  
+	player fall to their death at full rate (no 30fps slow down anymore)
 * Have the “onto stage” sequence play before starting every stage
 * Implement Special UI for all Hud elements (discuss fonts and ideas)
 * Implement a pause menu, allowing you to “resume” or “quit”
 * Make HP bar Draw GUI for easier manipulation 
-* Mess around with lighting (shadows) and “fog” to give the backgrounds more depth (See Tre for details and ideas)
+* Mess around with lighting (shadows) and “fog” to give the backgrounds more depth 
+	(See Tre for details and ideas)
 
 Items: 
-* Make sure both healing items heal their own amount of HP
+//* Make sure both healing items heal their own amount of HP

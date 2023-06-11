@@ -32,7 +32,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"05016b9b-cfc4-478f-8d0e-dd06ea40d1d3","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Mein Sprites",
     "path": "folders/Sprites/Mein Sprites.yy",
@@ -77,7 +77,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 24,
+    "xorigin": 26,
     "yorigin": 18,
   },
   "swatchColours": null,
