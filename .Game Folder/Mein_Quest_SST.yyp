@@ -113,6 +113,7 @@
     {"id":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},},
     {"id":{"name":"oEldoon_Small","path":"objects/oEldoon_Small/oEldoon_Small.yy",},},
     {"id":{"name":"spawnHealFizzles","path":"scripts/spawnHealFizzles/spawnHealFizzles.yy",},},
+    {"id":{"name":"Sounds","path":"scripts/Sounds/Sounds.yy",},},
     {"id":{"name":"sTuffull_charge","path":"sprites/sTuffull_charge/sTuffull_charge.yy",},},
     {"id":{"name":"W1_1","path":"tilesets/W1_1/W1_1.yy",},},
     {"id":{"name":"Mein_LogRide_strip5","path":"sprites/Mein_LogRide_strip5/Mein_LogRide_strip5.yy",},},

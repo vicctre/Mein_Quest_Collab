@@ -81,6 +81,7 @@
     {"name":"Tree_outside","order":8,"path":"sprites/Tree_outside/Tree_outside.yy",},
     {"name":"oEldoon_Small","order":2,"path":"objects/oEldoon_Small/oEldoon_Small.yy",},
     {"name":"spawnHealFizzles","order":18,"path":"scripts/spawnHealFizzles/spawnHealFizzles.yy",},
+    {"name":"Sounds","order":19,"path":"scripts/Sounds/Sounds.yy",},
     {"name":"sTuffull_charge","order":5,"path":"sprites/sTuffull_charge/sTuffull_charge.yy",},
     {"name":"W1_1","order":1,"path":"tilesets/W1_1/W1_1.yy",},
     {"name":"Mein_LogRide_strip5","order":2,"path":"sprites/Mein_LogRide_strip5/Mein_LogRide_strip5.yy",},
