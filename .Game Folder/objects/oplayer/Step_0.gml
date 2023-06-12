@@ -164,9 +164,23 @@ switch state {
 		}
 		break
 	}
+	case PLAYERSTATE.PRE_DEAD: {
+		state = PLAYERSTATE.DEAD
+		break	
+	}
 	case PLAYERSTATE.DEAD: {
 		hsp = 0
 		vsp = 0
+		// transition
+		if alarm[1] == -1 {
+			alarm[1] = 60
+			//audio_play_sound(SFX_Death, 7, false);
+			var inst = instance_create_layer(x, y, layer, deadEnemy)
+			inst.sprite_index = sPlayerDead
+			inst.vsp = global.player_dead_vsp
+			inst.hsp = global.player_dead_hsp * -image_xscale
+			inst.image_xscale = image_xscale
+		}
 		break
 	}
 	case PLAYERSTATE.HIT: {

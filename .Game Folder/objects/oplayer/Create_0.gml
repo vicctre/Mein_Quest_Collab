@@ -6,6 +6,7 @@ enum PLAYERSTATE {
 	ATTACK_SLASH,
 	ATTACK_COMBO,
 	ATTACK_AERAL,
+	PRE_DEAD,
 	DEAD,
 	HIT,
 	ENTER_DOOR,
@@ -273,20 +274,12 @@ function Animate() {
 function Kill() {
 	global.player_hp = 0;
 	sprite_index = sPlayerDead
-	state = PLAYERSTATE.DEAD
+	state = PLAYERSTATE.PRE_DEAD
 	has_control = false
 	hsp = 0
 	//y -= 30
-	//audio_play_sound(SFX_Death, 7, false);
-	game_set_speed(30, gamespeed_fps)
-	var inst = instance_create_layer(x, y, layer, deadEnemy)
-	inst.sprite_index = sPlayerDead
-	inst.vsp = global.player_dead_vsp
-	inst.hsp = global.player_dead_hsp * -image_xscale
-	inst.image_xscale = image_xscale
 	visible = false
-	// transition
-	alarm[1] = 60
+	oPause.PauseWithTimer(global.death_pause_time)
 	oUI.shake_hp()
 }
 
