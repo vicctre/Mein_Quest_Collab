@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 0.081134,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Need to be Added SFX",
+    "path": "folders/Sounds/Need to be Added SFX.yy",
   },
   "preload": false,
   "sampleRate": 44100,
