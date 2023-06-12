@@ -113,14 +113,16 @@ function animate_crouch_transition(sprite_to, img_sp) {
 function check_perform_jump() {
 	if key_jump
 		jump_pressed = jump_press_delay
-
+		
 	if jump_pressed {
 		jump_pressed--
+		//audio_play_sound(SFX_Jump_V2, 7, false);
 		if jumps {
 			jumps -= down_free and !on_ground
 			vsp = jumps ? jump_sp : double_jump_sp
 			jump_pressed = 0
             state = PLAYERSTATE.FREE
+			//audio_play_sound(SFX_DoubleJump_V2, 7, false);
             return true
 		}
 	}
@@ -154,6 +156,7 @@ function check_perform_crouch() {
 		state = PLAYERSTATE.CROUCH
 		mask_index = sCrouch
 		start_crouch_transition()
+		//audio_play_sound(SFX_Crouch, 5, false);
         return true
 	}
     return false
@@ -274,6 +277,7 @@ function Kill() {
 	has_control = false
 	hsp = 0
 	//y -= 30
+	//audio_play_sound(SFX_Death, 7, false);
 	game_set_speed(30, gamespeed_fps)
 	var inst = instance_create_layer(x, y, layer, deadEnemy)
 	inst.sprite_index = sPlayerDead
@@ -292,6 +296,9 @@ function Hit() {
 	}
 	global.player_hp -= PLAYER_INVINCIBLE == false
 	show_debug_message("Hit")
+	audio_play_sound(SFX_Damage, 8, false);
+	//audio_play_sound(SFX_Damage_pt2, 7, false); 
+	//this is for when we have both a voice AND SFX for taking damage 
 	if !global.player_hp {
 		Kill()
 		return;

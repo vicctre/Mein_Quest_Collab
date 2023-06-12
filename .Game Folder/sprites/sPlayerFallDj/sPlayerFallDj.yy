@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Mein NU",
-    "path": "folders/Sprites/Mein Sprites/Mein NU.yy",
+    "name": "Mein Sprites",
+    "path": "folders/Sprites/Mein Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

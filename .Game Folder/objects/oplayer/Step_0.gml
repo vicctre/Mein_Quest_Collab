@@ -7,7 +7,7 @@ if keyboard_check_pressed(ord("Q")) {
 if has_control {
 	key_left_pressed = keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"))
 	key_right_pressed = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"))
-	key_up_pressed = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"))
+	key_up_pressed = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W")) 
 	key_down_pressed = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"))
 	key_down = keyboard_check(vk_down) or keyboard_check(ord("S"))
 	key_left = keyboard_check(vk_left) or keyboard_check(ord("A"))
