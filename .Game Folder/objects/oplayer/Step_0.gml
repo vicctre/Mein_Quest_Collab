@@ -172,7 +172,7 @@ switch state {
 		hsp = 0
 		vsp = 0
 		// transition
-		if alarm[1] == -1 {
+		if !death_animation_started {
 			alarm[1] = global.death_transition_delay_time
 			//audio_play_sound(SFX_Death, 7, false);
 			var inst = instance_create_layer(x, y, layer, deadEnemy)
@@ -180,6 +180,7 @@ switch state {
 			inst.vsp = global.player_dead_vsp
 			inst.hsp = global.player_dead_hsp * -image_xscale
 			inst.image_xscale = image_xscale
+			death_animation_started = true
 		}
 		break
 	}

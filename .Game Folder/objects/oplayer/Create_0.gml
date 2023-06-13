@@ -79,6 +79,8 @@ invincibility_time = global.player_invincibilty_time
 invincibility_timer = 0
 invincibility_blinking_gain = 14
 
+death_animation_started = false
+
 // hit state
 hit = {
 	vsp: -4,

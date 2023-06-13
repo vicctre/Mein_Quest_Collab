@@ -6,6 +6,7 @@ Read more in manual.
 #macro Default:PLAYER_INVINCIBLE false
 #macro Dev:PLAYER_INVINCIBLE true
 
+death_transition_delay_time = 140
 death_pause_time = 60
 
 heal_amount_large = 3

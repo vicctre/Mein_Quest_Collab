@@ -32,7 +32,7 @@ if (mode != TRANS_MODE.OFF)
 				room_goto(target); 
 				break; 
 			}
-			case TRANS_MODE.RESTART: 
+			case TRANS_MODE.RESTART:
 			{
 				mode = TRANS_MODE.OFF; 
 				Restart()
