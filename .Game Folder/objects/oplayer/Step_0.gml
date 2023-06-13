@@ -173,7 +173,7 @@ switch state {
 		vsp = 0
 		// transition
 		if alarm[1] == -1 {
-			alarm[1] = 60
+			alarm[1] = global.death_transition_delay_time
 			//audio_play_sound(SFX_Death, 7, false);
 			var inst = instance_create_layer(x, y, layer, deadEnemy)
 			inst.sprite_index = sPlayerDead
