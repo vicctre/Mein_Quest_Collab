@@ -15,5 +15,3 @@
 
 
 scr_debug_scripts_update()
-
-draw_text(1300, 100, "coins: " + string(global.coins));

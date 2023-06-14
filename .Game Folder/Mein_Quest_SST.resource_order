@@ -83,6 +83,7 @@
     {"name":"spawnHealFizzles","order":18,"path":"scripts/spawnHealFizzles/spawnHealFizzles.yy",},
     {"name":"Sounds","order":19,"path":"scripts/Sounds/Sounds.yy",},
     {"name":"sTuffull_charge","order":5,"path":"sprites/sTuffull_charge/sTuffull_charge.yy",},
+    {"name":"draw_text_outlined","order":20,"path":"scripts/draw_text_outlined/draw_text_outlined.yy",},
     {"name":"W1_1","order":1,"path":"tilesets/W1_1/W1_1.yy",},
     {"name":"Mein_LogRide_strip5","order":2,"path":"sprites/Mein_LogRide_strip5/Mein_LogRide_strip5.yy",},
     {"name":"sPlayerDamage","order":8,"path":"sprites/sPlayerDamage/sPlayerDamage.yy",},
