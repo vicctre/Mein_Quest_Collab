@@ -13,8 +13,8 @@ ResizeCamera();
 xTo = x
 yTo = y
 
-shake_length = 60
-shake_magnitude = 0
+shake_length = 40
+shake_magnitude = 1
 shake_remain= 0
 buff = 32
 

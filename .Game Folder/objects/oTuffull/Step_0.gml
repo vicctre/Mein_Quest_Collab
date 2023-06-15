@@ -18,6 +18,8 @@ switch(boss_state) {
 	case "Charge":
 		hsp = lerp(hsp, hsp_target, 0.14);
 		if (place_meeting(x+hsp, y, oWall)) {
+			audio_play_sound(global.sfx_bonk, 5, false);
+			oCamera.shake_remain = 1;
 			changeState("Stunned");
 		}
 	break;
