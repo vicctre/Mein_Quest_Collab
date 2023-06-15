@@ -26,12 +26,16 @@ x = clamp(x,view_w_half+buff,room_width-view_w_half-buff);
 y = clamp(y,view_h_half+buff,room_height-view_h_half-buff); 
 
 //screen shake stuff
-x += random_range(-shake_remain,shake_remain); 
-y += random_range(-shake_remain,shake_remain); 
+x_shake = random_range(-shake_remain,shake_remain); 
+y_shake = random_range(-shake_remain,shake_remain); 
 shake_remain = max(0,shake_remain - ((1/shake_length)*shake_magnitude)); 
+if (shake_remain == 0) {
+	x_shake = 0;
+	y_shake = 0;
+}
 
 //Update Camera View 
-camera_set_view_pos(cam,x-view_w_half,y-view_h_half); 
+camera_set_view_pos(cam,x-view_w_half + x_shake,y-view_h_half + y_shake); 
 
 
 // bgr parallax
