@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "DeadSpinOut",
+  "name": "BGM",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Music_n_Sounds",
+    "path": "folders/Scripts/Music_n_Sounds.yy",
   },
 }

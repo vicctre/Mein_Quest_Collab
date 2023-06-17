@@ -13,7 +13,7 @@
   "duration": 0.509274,
   "parent": {
     "name": "Need to be Added SFX",
-    "path": "folders/Sounds/Need to be Added SFX.yy",
+    "path": "folders/Sounds/SFX/Need to be Added SFX.yy",
   },
   "preload": false,
   "sampleRate": 44100,
