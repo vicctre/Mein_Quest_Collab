@@ -4,10 +4,13 @@ activated = true;
 activation_delay = 30;
 flashing = object_index != oCoin;
 flash_timer = 0;
-flash_loop_duration = 120;
+flash_loop_duration = 100;
 
-uniform = shader_get_uniform(WhiteShader, "white_alpha");
-shader_set_uniform_f(uniform, 2*abs(0.5-flash_timer/flash_loop_duration));
+function updateWhiteShader() {
+	uniform = shader_get_uniform(WhiteShader, "white_alpha");
+	shader_set_uniform_f(uniform, 1.8*power(abs(0.5-flash_timer/flash_loop_duration),2));
+}
+updateWhiteShader();
 
 collected = function() {
 	spawnHealFizzles();
