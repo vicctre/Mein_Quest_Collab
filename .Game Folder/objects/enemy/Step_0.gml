@@ -2,7 +2,8 @@ var dir = sign(oPlayer.x-x);
 if (!attacking && walksp == 0)
 	image_xscale = dir;
 
-vsp = vsp + grv;
+if (!flying)
+	vsp = vsp + grv;
 
 //dont walk off edges 
 if (grounded) && (afraidofheights) && (!collision_point(x + abs(bbox_right-x) * image_xscale, bbox_bottom+1, oWall, false, true) && !flying) 
@@ -10,7 +11,7 @@ if (grounded) && (afraidofheights) && (!collision_point(x + abs(bbox_right-x) * 
 	hsp = -hsp; 
 }
 if (flying && abs(baseX-x) > leashRange) {
-	hsp = abs(hsp)*sign(baseX-x);
+	hsp_goal = abs(hsp_goal)*sign(baseX-x);
 }
 //Collision (horizontal) 
 if (place_meeting(x+hsp,y,oWall))
@@ -19,25 +20,34 @@ if (place_meeting(x+hsp,y,oWall))
 	{
 		x = x + sign(hsp); 
 	}
-	hsp = -hsp; 
+	if (flying)
+		hsp = 0;
+	else
+		hsp = -hsp;
+	hsp_goal = -hsp_goal;
 }
+if (flying)
+	hsp = lerp(hsp, hsp_goal, 0.04);
 x = x + hsp; 
 
-if (abs(baseY-y) > leashRange) {
-	vsp = abs(vsp)*sign(baseY-y);
+if (flying && abs(baseY-y) > leashRange) {
+	vsp_goal = abs(vsp_goal)*sign(baseY-y);
 }
 //Collision (vertical) 
 if (place_meeting(x,y+vsp,oWall))
 {
 	while (!place_meeting(x,y+sign(vsp),oWall))
 	{
-		y = y + sign(vsp); 
+		y = y + sign(vsp);
 	}
-	if (flying)
+	if (flying) {
 		vsp = -vsp;
-	else
+		vsp_goal = -vsp_goal;
+	} else
 		vsp = 0;
 }
+if (flying)
+	vsp = lerp(vsp, vsp_goal, 0.04);
 y = y + vsp; 
 
 //Animations 
@@ -54,5 +64,3 @@ else
 
 if (hsp != 0) image_xscale = sign(hsp) * size; 
 image_yscale = size; 
-
-
