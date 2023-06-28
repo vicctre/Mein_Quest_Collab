@@ -21,5 +21,5 @@ switch (FlyPattern) {
 		flysp = 0;
 	break;
 }
-if (id == instance_find(oFleater, 0))
-show_debug_message(y)
+//if (id == instance_find(oFleater, 0))
+//show_debug_message(y)
