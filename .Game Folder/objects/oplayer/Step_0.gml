@@ -8,14 +8,12 @@ if has_control {
 	key_left_pressed = keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"))
 	key_right_pressed = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"))
 	key_up_pressed = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W")) 
-	key_down_pressed = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"))
 	key_down = keyboard_check(vk_down) or keyboard_check(ord("S"))
 	key_left = keyboard_check(vk_left) or keyboard_check(ord("A"))
 	key_right = keyboard_check(vk_right) or keyboard_check(ord("D"))
 	key_jump = keyboard_check_pressed(vk_space) 
 			   or keyboard_check_pressed(ord("W"))
 			   or gamepad_button_check_pressed(0, gp_face1)
-	//key_down = keyboard_check_pressed(vk_down) or keyboard_check(ord("S"))
 	key_attack = keyboard_check_pressed(ord("X"))
 	
 	var gp_hinp = gamepad_axis_value(0, gp_axislh)
@@ -25,10 +23,13 @@ if has_control {
 	}
 
 } else {
+	key_left_pressed = false
+	key_right_pressed = false
+	key_up_pressed = false
 	key_left = false
 	key_right = false
+	key_down = false
 	key_jump = false
-	//key_down = false
 	key_attack = false
 }
 
