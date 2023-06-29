@@ -181,6 +181,7 @@ switch state {
 			inst.vsp = global.player_dead_vsp
 			inst.hsp = global.player_dead_hsp * -image_xscale
 			inst.image_xscale = image_xscale
+			visible = false
 			death_animation_started = true
 		}
 		break

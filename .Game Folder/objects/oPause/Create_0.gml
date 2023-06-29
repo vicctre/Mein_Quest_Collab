@@ -8,6 +8,7 @@ function ReplaceWithPauseGiglet(obj) {
 		var giglet = instance_create_layer(
 			x, y, layer, oPauseGiglet,
 			{sprite_index: sprite_index,
+			 visible: visible,
 			 image_index: image_index,
 			 image_speed: 0,
 			 image_angle: image_angle,
@@ -46,6 +47,7 @@ function MenuLayout() {
 function PauseStuff() {
 	ReplaceWithPauseGiglet(oPlayer)
 	ReplaceWithPauseGiglet(ENEMY)
+	ReplaceWithPauseGiglet(deadEnemy)
 	with oSequence {
 		pause()
 	}

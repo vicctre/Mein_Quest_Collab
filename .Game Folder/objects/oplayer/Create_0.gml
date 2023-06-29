@@ -281,7 +281,7 @@ function Kill() {
 	has_control = false
 	hsp = 0
 	//y -= 30
-	visible = false
+	//visible = false
 	oPause.PauseWithTimer(global.death_pause_time)
 	oUI.shake_hp()
 }

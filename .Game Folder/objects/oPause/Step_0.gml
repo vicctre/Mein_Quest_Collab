@@ -1,6 +1,10 @@
 
+if !oTransition.IsOff() or room == MenuTitleScreenV1 {
+	exit
+}
+
 if paused {
-	if !oTransition.IsOff() or !oMenu.menu_control {
+	if !oMenu.menu_control {
 		exit // already quitting
 	}
 	// freeze pause alarm
