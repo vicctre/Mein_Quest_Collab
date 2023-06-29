@@ -15,17 +15,40 @@ menu_itemheight = font_get_size(fMenu);
 menu_committed = -1; 
 menu_control = true; 
 
-menu[2] = "New Game"; 
-menu[1] = "Continue";
-menu[0] = "Quit"; 
+function StartNew() {
+	SlideTransition(TRANS_MODE.NEXT)
+	global.player_hp = global.player_hp_max
+}
+
+menu = [
+	{
+		title: "Quit",
+		action: game_end
+	},
+	{
+		title: "Continue",
+		action: function() {
+			if (!file_exists(SAVEFILE)) 
+			{
+				SlideTransition(TRANS_MODE.NEXT);
+			}
+			else 
+			{
+				var file = file_text_open_read(SAVEFILE); 
+				var target = file_text_read_real(file); 
+				file_text_close(file); 
+				SlideTransition(TRANS_MODE.GOTO,target); 
+			}
+		}
+	},
+	{
+		title: "New Game",
+		action: oMenu.StartNew
+	},
+]
 
 menu_items = array_length(menu); 
 menu_top = menu_y - ((menu_itemheight * 1.5) * menu_items); 
 menu_cursor = 2; 
 
 global.coins = 0;
-
-function StartNew() {
-	SlideTransition(TRANS_MODE.NEXT)
-	global.player_hp = global.player_hp_max
-}

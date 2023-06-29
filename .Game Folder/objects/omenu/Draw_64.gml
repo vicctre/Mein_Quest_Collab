@@ -5,10 +5,10 @@ draw_set_font(fMenu);
 draw_set_halign(fa_right); 
 draw_set_valign(fa_bottom); 
 //its important to set them BEFORE you draw any text 
-for (var i = 0; i < menu_items; i++) //or "i = i + 1" we are just increasing it by 1 
+for (var i = 0; i < array_length(menu); i++) //or "i = i + 1" we are just increasing it by 1 
 {
 	var offset = 2; 
-	var txt = menu[i]; 
+	var txt = menu[i].title;
 	if (menu_cursor == i) 
 	{
 		txt = string_insert("> ", txt,0); 
