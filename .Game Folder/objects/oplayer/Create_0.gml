@@ -274,6 +274,7 @@ function Animate() {
 }
 
 function Kill() {
+	show_debug_message("Kill")
 	global.player_hp = 0;
 	sprite_index = sPlayerDead
 	state = PLAYERSTATE.PRE_DEAD
