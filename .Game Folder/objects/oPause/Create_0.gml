@@ -9,7 +9,9 @@ function ReplaceWithPauseGiglet(obj) {
 			 image_index: image_index,
 			 image_angle: image_angle,
 			 image_xscale: image_xscale,
-			 image_yscale: image_yscale}
+			 image_yscale: image_yscale,
+			 image_blend: image_blend,
+			 image_alpha: image_alpha}
 		)
 		giglet.source_instance = id
 		instance_deactivate_object(id)
