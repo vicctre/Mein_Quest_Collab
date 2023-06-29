@@ -28,6 +28,21 @@ function ReturnActualInstances() {
 	}
 }
 
+function MenuLayout() {
+	return [
+		{
+			title: "Quit",
+			action: function() {
+				SlideTransition(TRANS_MODE.RESTART)	
+			}
+		},
+		{
+			title: "Continue",
+			action: oPause.PauseWithMenuContinue
+		}
+	]
+}
+
 function PauseWithTimer(time) {
 	if paused {
 		throw "PauseWithTimer called while pause is active"
@@ -40,5 +55,16 @@ function PauseWithTimer(time) {
 function PauseWithMenu() {
 	ReplaceWithPauseGiglet(oPlayer)
 	ReplaceWithPauseGiglet(ENEMY)
+	with instance_create_layer(0, 0, "ui", oMenu) {
+		menu = other.MenuLayout()	
+		menu_items = array_length(menu) 
+		menu_top = menu_y - ((menu_itemheight * 1.5) * menu_items) 
+		menu_cursor = menu_items - 1
+	}
 	paused = true
+}
+
+function PauseWithMenuContinue() {
+	ReturnActualInstances()
+	paused = false
 }
