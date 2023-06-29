@@ -20,8 +20,8 @@ Environments:
 //	player fall to their death at full rate (no 30fps slow down anymore)
 //* Have the “onto stage” sequence play before starting every stage
 * Implement Special UI for all Hud elements (discuss fonts and ideas)
-* Implement a pause menu, allowing you to “resume” or “quit”
-* Make HP bar Draw GUI for easier manipulation 
+//* Implement a pause menu, allowing you to “resume” or “quit”
+//* Make HP bar Draw GUI for easier manipulation 
 * Mess around with lighting (shadows) and “fog” to give the backgrounds more depth 
 	(See Tre for details and ideas)
 

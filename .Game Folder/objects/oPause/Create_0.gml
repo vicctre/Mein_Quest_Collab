@@ -43,18 +43,31 @@ function MenuLayout() {
 	]
 }
 
+function PauseStuff() {
+	ReplaceWithPauseGiglet(oPlayer)
+	ReplaceWithPauseGiglet(ENEMY)
+	with oSequence {
+		pause()
+	}
+}
+
+function UnpauseStuff() {
+	ReturnActualInstances()
+	with oSequence {
+		unpause()
+	}
+}
+
 function PauseWithTimer(time) {
 	if paused {
 		throw "PauseWithTimer called while pause is active"
 	}
-	ReplaceWithPauseGiglet(oPlayer)
-	ReplaceWithPauseGiglet(ENEMY)
+	PauseStuff()
 	alarm[0] = time
 }
 
 function PauseWithMenu() {
-	ReplaceWithPauseGiglet(oPlayer)
-	ReplaceWithPauseGiglet(ENEMY)
+	PauseStuff()
 	with instance_create_layer(0, 0, "ui", oMenu) {
 		menu = other.MenuLayout()	
 		menu_items = array_length(menu) 
@@ -65,6 +78,6 @@ function PauseWithMenu() {
 }
 
 function PauseWithMenuContinue() {
-	ReturnActualInstances()
+	UnpauseStuff()
 	paused = false
 }

@@ -7,3 +7,11 @@ function is_transition_finished() {
 	return layer_sequence_get_headpos(sequence_inst)
 		   == (layer_sequence_get_length(sequence_inst) - 1)
 }
+
+function pause() {
+	layer_sequence_speedscale(sequence_inst, 0)
+}
+
+function unpause() {
+	layer_sequence_speedscale(sequence_inst, 1)
+}

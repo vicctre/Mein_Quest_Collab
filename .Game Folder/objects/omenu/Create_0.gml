@@ -13,7 +13,13 @@ menu_speed = 20; //lower is faster
 //menu_font = fMenu; 
 menu_itemheight = font_get_size(fMenu); 
 menu_committed = -1; 
-menu_control = true; 
+menu_control = true;
+
+function PerformButton(index) {
+	menu_committed = index
+	menu_x_target = gui_width+200; 
+	menu_control = false 
+}
 
 function StartNew() {
 	SlideTransition(TRANS_MODE.NEXT)

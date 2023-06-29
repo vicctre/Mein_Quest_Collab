@@ -51,4 +51,5 @@ if (menu_control)
 if (menu_x > gui_width+150) and (menu_committed != -1) 
 {
 	menu[menu_committed].action()
+	instance_destroy()
 }
