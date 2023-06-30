@@ -24,8 +24,8 @@
     "Keyframes": [],
   },
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "Older stuff (reference_NOT_FINAL)",
+    "path": "folders/Sequences/Older stuff (reference_NOT_FINAL).yy",
   },
   "playback": 0,
   "playbackSpeed": 60.0,
