@@ -1,75 +1,14 @@
 import json
 import os
 import re
-from copy import deepcopy
 from argparse import ArgumentParser
+
+from common import *
+from config import OPERATIONS, ROOM_PATTERNS
 
 BASE_ROOM_FNAME = 'RoomBase.yy'
 DEPTH_STEP = 100
-ROOT_PATH = 'rooms'
-ADDED_CHILD_ROOMS = {
-  # 'W1_1_part1',
-  # 'W1_1_part2',
-  # 'W1_1_part3',
-  # 'W1_1_part4',
-  # 'W1_2_.+',
-  '^W1_1_part2$'
-}
-
-kDepth = 'depth'
-kType = 'resourceType'
-kTypeRoom = 'GMRoom'
-kParentRoom = 'parentRoom'
-kName = 'name'
-kTypeBackground = 'GMRBackgroundLayer'
-kColor = 'colour'
-
-class Layer:
-  def __init__(self, raw_json):
-    self.source_json = raw_json
-    self.name = raw_json[kName]
-    self.type = raw_json[kType]
-    self.depth = raw_json[kDepth]
-    self.color = raw_json[kColor] if self.type == kTypeBackground else None
-
-  def serialize(self):
-    result = deepcopy(self.source_json)
-    result[kName] = self.name
-    result[kType] = self.type
-    result[kDepth] = self.depth
-    if self.type == kTypeBackground:
-      result[kColor] = self.color
-    return result
-  
-  def __repr__(self):
-    return f'Layer({self.type}, {self.name})'
-
-
-class Room:
-  def __init__(self, raw_json, file_path):
-    self.source_json = raw_json
-    self.layers = make_layers(raw_json)
-    self.name = raw_json[kName]
-    self.file_path = file_path
-    assert_gmtype(self.source_json, 'Room')
-
-  def serialize(self):
-    result = deepcopy(self.source_json)
-    result['layers'] = serialize_layers(self.layers)
-    return result
-
-
-def assert_gmtype(raw_json, expected):
-  raw_json[kType] == kTypeRoom, f'Wrong gm resource type for {expected}: {raw_json[kType]}'
-
-
-def serialize_layers(layers):
-  return [layer.serialize() for layer in layers]
-
-
-def make_layers(raw_json):  
-  return [Layer(lr) for lr in raw_json['layers']]
-
+ROOT_PATH = os.path.join('rooms')
 
 def find_files(regexp):
   def matches(fname, regexp):
@@ -107,14 +46,14 @@ def get_base_room():
   return Room(load_json(path), path)
 
 
-def get_child_rooms(base_room:Room):
-  def is_child(dest, src):
-    parent_info = dest[kParentRoom]
-    return parent_info != None and parent_info[kName] == src.name
+def get_edited_rooms():
+  # def is_child(dest, src):
+  #   parent_info = dest[kParentRoom]
+  #   return parent_info != None and parent_info[kName] == src.name
   def is_hand_added(raw_json):
     name = raw_json[kName]
     print(f'Checking {name}')
-    for pattern in ADDED_CHILD_ROOMS:
+    for pattern in ROOM_PATTERNS:
       if re.search(pattern, name) != None:
         return True
     return False
@@ -171,6 +110,18 @@ def update_child_rooms(child_rooms, base_room:Room):
       print(f'Failed to update room {chld.name}: {str(e)}')
   return result
 
+def update_with_operations(room, operations):
+  for op in OPERATIONS:
+    op.run(room)
+
+
+def update_rooms(rooms):
+  result = []
+  for rm in rooms:
+    update_with_operations(rm, OPERATIONS)
+    result.append(rm)
+  return result
+
 
 def save_child_rooms(rooms):
   for rm in rooms:
@@ -200,12 +151,11 @@ def main():
 
   args = get_args()
   print(args.prioritize_custom)
-  base_room = get_base_room()
-  child_rooms = get_child_rooms(base_room)
-  print(f'Child rooms found: {len(child_rooms)}')  
-  child_rooms = update_child_rooms(child_rooms, base_room)
-  print(f'Child rooms updated: {len(child_rooms)}')  
-  save_child_rooms(child_rooms)
+  edited_rooms = get_edited_rooms()
+  print(f'Child rooms found: {len(edited_rooms)}')  
+  edited_rooms = update_rooms(edited_rooms)
+  print(f'Child rooms updated: {len(edited_rooms)}')  
+  save_child_rooms(edited_rooms)
   print('Done')
 
 
