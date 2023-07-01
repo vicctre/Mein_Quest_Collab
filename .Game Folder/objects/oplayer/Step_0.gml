@@ -68,7 +68,7 @@ if has_control {
 
 	// enter door
 	var door = instance_place(x, y, oDoor)
-	if !down_free and key_up_pressed and door {
+	if state != PLAYERSTATE.ENTER_DOOR and !down_free and key_up_pressed and door {
 		state = PLAYERSTATE.ENTER_DOOR
 		enter_room = door.room_to_go
 		sprite_index = sPlayerEnterDoor

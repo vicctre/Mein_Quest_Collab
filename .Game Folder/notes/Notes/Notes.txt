@@ -27,3 +27,6 @@ Environments:
 
 Items: 
 //* Make sure both healing items heal their own amount of HP
+
+Fixes:
+* Resolution-related picture disruption
