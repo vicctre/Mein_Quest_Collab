@@ -17,8 +17,8 @@ menu_control = true;
 
 function PerformButton(index) {
 	menu_committed = index
-	menu_x_target = gui_width+200; 
-	menu_control = false 
+	menu_x_target = gui_width+200;
+	menu_control = false
 }
 
 function StartNew() {
