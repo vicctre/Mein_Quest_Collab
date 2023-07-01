@@ -144,7 +144,6 @@
     {"name":"ENEMYATTACK","order":2,"path":"objects/ENEMYATTACK/ENEMYATTACK.yy",},
     {"name":"BGM_MiniBoss","order":5,"path":"sounds/BGM_MiniBoss/BGM_MiniBoss.yy",},
     {"name":"sAL_Icon","order":1,"path":"sprites/sAL_Icon/sAL_Icon.yy",},
-    {"name":"RoomBase","order":4,"path":"rooms/RoomBase/RoomBase.yy",},
     {"name":"RoomTemplate","order":6,"path":"rooms/RoomTemplate/RoomTemplate.yy",},
     {"name":"SFX_AttackWiff","order":2,"path":"sounds/SFX_AttackWiff/SFX_AttackWiff.yy",},
     {"name":"SFX_Door","order":7,"path":"sounds/SFX_Door/SFX_Door.yy",},
