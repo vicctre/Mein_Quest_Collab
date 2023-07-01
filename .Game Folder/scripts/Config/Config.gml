@@ -1,4 +1,6 @@
 
+tufful_hp = 1
+
 configFog = {
 	alpha1: 0.1,
 	alpha2: 0.15,

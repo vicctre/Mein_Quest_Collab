@@ -1,6 +1,6 @@
 event_inherited();
 deadSprite = sTuffull_HitWall_dead;
-hp = 20; //set this back to 20 when ur done testing
+hp = global.tufful_hp; //set this back to 20 when ur done testing
 spd_walk = 3;
 spd_charge = 5.6;
 spd_jump = 3;
