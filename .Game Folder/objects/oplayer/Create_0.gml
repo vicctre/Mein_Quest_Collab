@@ -360,14 +360,19 @@ function sprint_effect() {
 	oEffects.emit_sprint_dust(x, bbox_bottom + _dust_yoffset, -input_move_h)
 }
 
+function should_play_onto_stage_sequence() {
+	return array_contains(global.rooms_with_onto_stage_seq, room)
+}
+
 function play_onto_stage_sequence() {
 	visible = false
 	has_control = false
 	instance_create_layer(x, y, layer, oSequenceOntoLevel)
 }
 
-
-
 instance_create_layer(x, y, layer, oCamera)
 check_reset_hp()
-play_onto_stage_sequence()
+
+if should_play_onto_stage_sequence() {
+	play_onto_stage_sequence()
+}
