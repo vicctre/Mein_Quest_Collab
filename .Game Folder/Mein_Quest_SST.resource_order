@@ -213,6 +213,7 @@
     {"name":"Testing1","order":3,"path":"sprites/Testing1/Testing1.yy",},
     {"name":"SFX_CutCube","order":3,"path":"sounds/SFX_CutCube/SFX_CutCube.yy",},
     {"name":"SFX_Death","order":6,"path":"sounds/SFX_Death/SFX_Death.yy",},
+    {"name":"oMenuPause","order":9,"path":"objects/oMenuPause/oMenuPause.yy",},
     {"name":"sPlayerFallDj","order":19,"path":"sprites/sPlayerFallDj/sPlayerFallDj.yy",},
     {"name":"EnemyState_Dead","order":4,"path":"scripts/EnemyState_Dead/EnemyState_Dead.yy",},
     {"name":"sTuffull_Idle","order":2,"path":"sprites/sTuffull_Idle/sTuffull_Idle.yy",},

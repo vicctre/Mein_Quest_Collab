@@ -274,6 +274,7 @@
     {"id":{"name":"seqOntoStage","path":"sequences/seqOntoStage/seqOntoStage.yy",},},
     {"id":{"name":"SFX_CutCube","path":"sounds/SFX_CutCube/SFX_CutCube.yy",},},
     {"id":{"name":"SFX_Death","path":"sounds/SFX_Death/SFX_Death.yy",},},
+    {"id":{"name":"oMenuPause","path":"objects/oMenuPause/oMenuPause.yy",},},
     {"id":{"name":"sPlayerFallDj","path":"sprites/sPlayerFallDj/sPlayerFallDj.yy",},},
     {"id":{"name":"EnemyState_Dead","path":"scripts/EnemyState_Dead/EnemyState_Dead.yy",},},
     {"id":{"name":"sMeinHP","path":"sprites/sMeinHP/sMeinHP.yy",},},

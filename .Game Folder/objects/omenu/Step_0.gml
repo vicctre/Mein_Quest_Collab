@@ -1,7 +1,6 @@
 /// @desc Control Menu 
 
-//Item Ease in 
-menu_x += (menu_x_target - menu_x) * menu_speed; 
+AnimateEaseIn()
 
 //keyboard Controls 
 if (menu_control) 
@@ -26,9 +25,7 @@ if (menu_control)
 	
 	if (keyboard_check_pressed(vk_enter)) 
 	{
-		menu_x_target = gui_width+200; 
-		menu_committed = menu_cursor; 
-		menu_control = false 
+		PerformButton(menu_cursor)
 		audio_play_sound(SFX_Menu_select,7,false);
 	}
 	var mouse_y_gui = device_mouse_y_to_gui(0); 
@@ -38,9 +35,7 @@ if (menu_control)
 		
 		if (mouse_check_button_pressed(mb_left))
 		{
-			menu_x_target = gui_width+200; 
-			menu_committed = menu_cursor; 
-			menu_control = false 
+			PerformButton(menu_cursor)
 			audio_play_sound(SFX_Menu_select,7,false);
 		}
 		
@@ -48,7 +43,7 @@ if (menu_control)
 
 }
 
-if (menu_x > gui_width+150) and (menu_committed != -1) 
+if AnimationFinished() and (menu_committed != -1) 
 {
 	menu[menu_committed].action()
 	instance_destroy()

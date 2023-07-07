@@ -6,7 +6,9 @@ gui_width = display_get_gui_width();
 gui_height = display_get_gui_height();
 gui_margin = 32; 
 
-menu_x = gui_width + 200; 
+menu_x_target_start = gui_width + 200;
+menu_x_target_finish = menu_x_target_start - 50
+menu_x = menu_x_target_start
 menu_y = gui_height - gui_margin; 
 menu_x_target = gui_width - gui_margin; 
 menu_speed = 0.05;
@@ -15,15 +17,36 @@ menu_itemheight = font_get_size(fMenu);
 menu_committed = -1; 
 menu_control = true;
 
+x_ancor = fa_right
+y_ancor = fa_bottom
+
 function PerformButton(index) {
 	menu_committed = index
-	menu_x_target = gui_width+200;
+	menu_x_target = menu_x_target_start
 	menu_control = false
 }
 
 function StartNew() {
 	SlideTransition(TRANS_MODE.NEXT)
 	global.player_hp = global.player_hp_max
+}
+
+function AnimateEaseIn() {
+	menu_x += (menu_x_target - menu_x) * menu_speed; 
+}
+
+function AnimationFinished() {
+	return menu_x > menu_x_target_finish
+}
+
+function Highlight(txt) {
+	return string_insert("> ", txt,0);
+}
+
+function Init() {
+	menu_items = array_length(menu); 
+	menu_top = menu_y - ((menu_itemheight * 1.5) * menu_items); 
+	menu_cursor = menu_items - 1;
 }
 
 menu = [
@@ -53,8 +76,4 @@ menu = [
 	},
 ]
 
-menu_items = array_length(menu); 
-menu_top = menu_y - ((menu_itemheight * 1.5) * menu_items); 
-menu_cursor = menu_items - 1;
-
-global.coins = 0;
+Init()

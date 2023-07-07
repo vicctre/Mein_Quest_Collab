@@ -6,6 +6,8 @@ Read more in manual.
 #macro Default:PLAYER_INVINCIBLE false
 #macro Dev:PLAYER_INVINCIBLE true
 
+coins = 0
+
 rooms_with_onto_stage_seq = [
 	W1_1_part1,
 	W1_2_part1,
