@@ -1,7 +1,7 @@
 /// @desc Control Menu 
 
 //Item Ease in 
-menu_x += (menu_x_target - menu_x) / menu_speed; 
+menu_x += (menu_x_target - menu_x) * menu_speed; 
 
 //keyboard Controls 
 if (menu_control) 
