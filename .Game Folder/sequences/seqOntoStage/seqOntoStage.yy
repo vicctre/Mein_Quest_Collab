@@ -45,6 +45,7 @@
               {"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":-0.48754883,},"1":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":-0.3227234,},},"Disabled":false,"id":"0ad9b4b4-5dc1-4a98-a13d-a21f08d069dc","IsCreationKey":false,"Key":76.0,"Length":1.0,"Stretch":false,},
               {"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":-0.48754883,},"1":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":-0.3227234,},},"Disabled":false,"id":"c2d0e9d0-a63b-45ed-8d2c-0e793d334d3e","IsCreationKey":false,"Key":77.0,"Length":1.0,"Stretch":false,},
               {"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":-0.48754883,},"1":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":-0.3227234,},},"Disabled":false,"id":"696741ec-f168-4816-9dff-2a39410c7b47","IsCreationKey":false,"Key":88.0,"Length":1.0,"Stretch":false,},
+              {"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,},"1":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,},},"Disabled":false,"id":"ff6d2971-64a2-4867-8fb7-cc3d1705a0b6","IsCreationKey":false,"Key":115.9999,"Length":1.0,"Stretch":false,},
             ],},"modifiers":[],"trackColour":4282950130,"tracks":[],"traits":0,},
         {"resourceType":"GMRealTrack","resourceVersion":"1.0","name":"rotation","builtinName":8,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"1.0","Keyframes":[
               {"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":0.0,},},"Disabled":false,"id":"40e4cf89-6bf6-458d-b92d-51484334bc65","IsCreationKey":true,"Key":75.0,"Length":1.0,"Stretch":false,},
@@ -144,9 +145,9 @@
   ],
   "visibleRange": {
     "x": 0.0,
-    "y": 115.0,
+    "y": 116.0,
   },
   "volume": 1.0,
-  "xorigin": -1,
-  "yorigin": 0,
+  "xorigin": 0,
+  "yorigin": -1,
 }
