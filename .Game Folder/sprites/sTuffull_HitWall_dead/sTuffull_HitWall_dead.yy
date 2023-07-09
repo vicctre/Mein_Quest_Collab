@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bb10bbb6-94ee-4e78-b5ed-602432e4488d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Tuffull",
     "path": "folders/Sprites/Enemy Sprites/Mini Bosses/Tuffull.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 62,
-    "yorigin": 46,
+    "yorigin": 42,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

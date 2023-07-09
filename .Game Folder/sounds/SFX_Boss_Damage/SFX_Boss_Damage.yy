@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "SFX_Damage_pt2",
+  "name": "SFX_Boss_Damage",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -17,7 +17,7 @@
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "SFX_Damage_pt2.wav",
+  "soundFile": "SFX_Boss_Damage.wav",
   "type": 0,
   "volume": 0.4,
 }
