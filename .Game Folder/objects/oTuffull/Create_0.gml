@@ -1,5 +1,5 @@
 event_inherited();
-deadSprite = sTuffull_HitWall_dead;
+deadSprite = sTuffull_HitWall;
 hp = global.tufful_hp; //set this back to 20 when ur done testing
 spd_walk = 3;
 spd_charge = 5.6;
@@ -45,7 +45,7 @@ changeState = function(newState) {
 			hsp = 0;
 			hsp_target = 0;
 			timer = stun_time;
-			sprite_index = sTuffull_HitWall_dead;
+			sprite_index = sTuffull_HitWall;
 		break;
 		case "Walk":
 			timer = walk_time;
@@ -67,7 +67,7 @@ changeState = function(newState) {
 			sprite_index = sTuffull_jump_fall;
 		break;
 		case "Defeated":
-			sprite_index = sTuffull_HitWall_dead;
+			sprite_index = sTuffull_HitWall;
 			image_xscale = -hitDirection; 
 			hsp = hitDirection*2;
 			vsp = -5;

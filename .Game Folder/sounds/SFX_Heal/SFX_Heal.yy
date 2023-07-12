@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 0.41415,
   "parent": {
-    "name": "SFX",
-    "path": "folders/Sounds/SFX.yy",
+    "name": "Already In Use",
+    "path": "folders/Sounds/SFX/Already In Use.yy",
   },
   "preload": false,
   "sampleRate": 44100,

@@ -12,12 +12,12 @@
   "conversionMode": 0,
   "duration": 0.495465,
   "parent": {
-    "name": "SFX",
-    "path": "folders/Sounds/SFX.yy",
+    "name": "Already In Use",
+    "path": "folders/Sounds/SFX/Already In Use.yy",
   },
   "preload": false,
   "sampleRate": 44100,
   "soundFile": "SFX_HitWall.wav",
   "type": 0,
-  "volume": 0.4,
+  "volume": 0.35,
 }
