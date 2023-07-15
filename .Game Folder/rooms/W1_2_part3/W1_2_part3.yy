@@ -64,6 +64,7 @@
     {"name":"inst_8F90DC_1","path":"rooms/W1_2_part3/W1_2_part3.yy",},
     {"name":"inst_552A07FD","path":"rooms/W1_2_part3/W1_2_part3.yy",},
     {"name":"inst_35BFB9A7","path":"rooms/W1_2_part3/W1_2_part3.yy",},
+    {"name":"inst_DA1C13A","path":"rooms/W1_2_part3/W1_2_part3.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -109,7 +110,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_BE30791_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oEnemy01","path":"objects/oEnemy01/oEnemy01.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":632.0,"y":403.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_39CFD843_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oFleater","path":"objects/oFleater/oFleater.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":191.0,"y":332.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"objects","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"objects","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_DA1C13A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oEldoon_Large","path":"objects/oEldoon_Large/oEldoon_Large.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":338.0,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_489F031F","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"Label_3","path":"sprites/Label_3/Label_3.yy",},"x":912.0,"y":338.0,},
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_48128A3C","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"Label_3","path":"sprites/Label_3/Label_3.yy",},"x":912.0,"y":246.0,},

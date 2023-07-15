@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.624127,
+  "duration": 0.287959,
   "parent": {
     "name": "Need to be Added SFX",
     "path": "folders/Sounds/SFX/Need to be Added SFX.yy",

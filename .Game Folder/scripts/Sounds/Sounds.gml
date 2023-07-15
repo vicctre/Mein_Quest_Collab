@@ -15,11 +15,23 @@ sfx_land = SFX_Land
 sfx_dead = SFX_Death
 sfx_heal = SFX_Heal
 sfx_player_damage = SFX_Damage
+sfx_HP = SFX_Additional_HP
+
+
+//Object sounds 
+sfx_AL = SFX_AdvLog
+sfx_coin = SFX_Coin1
+sfx_chest = SFX_Chest_open
+
 
 //Enemy sounds 
 sfx_shantee = SFX_Whip
 sfx_rush = SFX_Boss_Dash
 sfx_bonk = SFX_HitWall
+sfx_hit = SFX_Boss_Damage
+sfx_BOOM = SFX_Boss_Defeat
+sfx_land = SFX_Boss_Land
+sfx_GoUP = SFX_Boss_jump
 
 
 
