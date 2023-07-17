@@ -37,6 +37,7 @@ changeState = function(newState) {
 			sprite_index = sTuffull_charge_prep;
 		break;
 		case "Charge":
+			audio_play_sound(SFX_Boss_Dash, 5, false);
 			hsp_target = image_xscale*spd_charge;
 			sprite_index = sTuffull_charge;
 		break;
@@ -58,6 +59,7 @@ changeState = function(newState) {
 			sprite_index = sTuffull_jump_prep;
 		break;
 		case "Jump":
+			audio_play_sound(SFX_Boss_jump, 5, false);
 			hsp = spd_jump;
 			vsp = -jump_height;
 			sprite_index = sTuffull_jump;

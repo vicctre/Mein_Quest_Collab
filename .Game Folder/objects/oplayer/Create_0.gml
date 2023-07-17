@@ -119,13 +119,15 @@ function check_perform_jump() {
 		
 	if jump_pressed {
 		jump_pressed--
-		//audio_play_sound(SFX_Jump_V2, 7, false);
 		if jumps {
 			jumps -= down_free and !on_ground
 			vsp = jumps ? jump_sp : double_jump_sp
+			if jumps 
+				audio_play_sound(SFX_Jump_V2, 7, false)
+			else
+				audio_play_sound(SFX_DoubleJump_V2, 7, false)
 			jump_pressed = 0
             state = PLAYERSTATE.FREE
-			//audio_play_sound(SFX_DoubleJump_V2, 7, false);
             return true
 		}
 	}
@@ -159,7 +161,7 @@ function check_perform_crouch() {
 		state = PLAYERSTATE.CROUCH
 		mask_index = sCrouch
 		start_crouch_transition()
-		//audio_play_sound(SFX_Crouch, 5, false);
+		audio_play_sound(SFX_Crouch, 5, false);
         return true
 	}
     return false

@@ -103,6 +103,7 @@ switch state {
 		check_perform_jump()
 		check_spikes()
 		if check_just_landed() {
+			audio_play_sound(SFX_Land, 5, false);
 			dust_effect()
 		}
 		if check_sprint_started() {

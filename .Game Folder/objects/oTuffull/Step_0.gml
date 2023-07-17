@@ -46,6 +46,7 @@ switch(boss_state) {
 	break;
 	case "Fall":
 		if (place_meeting(x,y+1,oWall)) {
+			audio_play_sound(SFX_Boss_Land, 5, false);
 			changeState("Idle");
 		}
 	break;
