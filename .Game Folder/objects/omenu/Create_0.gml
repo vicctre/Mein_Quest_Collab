@@ -27,6 +27,9 @@ function PerformButton(index) {
 }
 
 function StartNew() {
+	if room == MenuTitleScreenV1 {
+		oMusic.switch_music(noone)	
+	}
 	SlideTransition(TRANS_MODE.NEXT)
 	global.player_hp = global.player_hp_max
 }

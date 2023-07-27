@@ -2,6 +2,9 @@
   "resourceType": "GMOperaGXOptions",
   "resourceVersion": "1.0",
   "name": "operagx",
+  "ConfigValues": {
+    "Dev": {"option_operagx_game_name":"Mein_Quest_SST",},
+  },
   "option_operagx_display_cursor": true,
   "option_operagx_editUrl": "",
   "option_operagx_game_name": "Mein_Quest_SST",

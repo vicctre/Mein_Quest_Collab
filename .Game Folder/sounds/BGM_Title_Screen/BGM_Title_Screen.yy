@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "BGM_Title_Screen.wav",
   "type": 0,
-  "volume": 0.85,
+  "volume": 0.65,
 }
