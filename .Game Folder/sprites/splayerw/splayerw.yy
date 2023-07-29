@@ -55,8 +55,8 @@
   },
   "origin": 4,
   "parent": {
-    "name": "Mein Sprites",
-    "path": "folders/Sprites/Mein Sprites.yy",
+    "name": "In Use",
+    "path": "folders/Sprites/Mein Sprites/In Use.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

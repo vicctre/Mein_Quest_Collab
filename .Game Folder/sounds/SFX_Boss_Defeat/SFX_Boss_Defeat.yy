@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "SFX_Boss_Defeat.wav",
   "type": 0,
-  "volume": 0.65,
+  "volume": 0.6,
 }
