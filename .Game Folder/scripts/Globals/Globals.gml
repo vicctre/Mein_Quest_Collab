@@ -12,3 +12,5 @@ rooms_with_onto_stage_seq = [
 	W1_1_part1,
 	W1_2_part1,
 ]
+
+music_gain_array = []
