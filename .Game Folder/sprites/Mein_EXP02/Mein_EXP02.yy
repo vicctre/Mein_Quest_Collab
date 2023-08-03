@@ -39,8 +39,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Mein NU",
-    "path": "folders/Sprites/Mein Sprites/Mein NU.yy",
+    "name": "Not Currently Used",
+    "path": "folders/Sprites/Mein Sprites/Not Currently Used.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
