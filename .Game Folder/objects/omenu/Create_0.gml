@@ -28,7 +28,7 @@ function PerformButton(index) {
 
 function StartNew() {
 	if room == MenuTitleScreenV1 {
-		oMusic.switch_music(noone)	
+		oMusic.switch_music(global.msc_stage_1_1)
 	}
 	SlideTransition(TRANS_MODE.NEXT)
 	global.player_hp = global.player_hp_max
@@ -71,6 +71,7 @@ menu = [
 				file_text_close(file); 
 				SlideTransition(TRANS_MODE.GOTO,target); 
 			}
+			oMusic.switch_music(global.msc_stage_1_1)
 		}
 	},
 	{

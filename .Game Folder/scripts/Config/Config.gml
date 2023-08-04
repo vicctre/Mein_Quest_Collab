@@ -7,7 +7,7 @@ heal_amount_small = 1
 
 player_dead_vsp = -5
 player_dead_hsp = 0
-player_hp_max = 4
+player_hp_max = 1
 player_hp = player_hp_max
 player_invincibilty_time = 90
 player_door_enter_anim_sp = 0.65
@@ -15,7 +15,7 @@ player_damage_blinking_color = c_white
 player_accel = 0.2
 player_decel = 0.5
 
-tufful_hp = 20
+tufful_hp = 2
 
 configFog = {
 	alpha1: 0.1,
