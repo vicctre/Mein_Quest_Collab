@@ -5,7 +5,6 @@ spd_walk = 3;
 spd_charge = 5.6;
 spd_jump = 3;
 jump_height = 8;
-boss_state = "Idle";
 timer = 80;
 image_xscale = -size;
 hsp_target = 0; //speed to accelerate hsp towards
@@ -20,6 +19,11 @@ charge_count = 3;
 flash_timer = 0;
 flash_loop_duration = 40 //how many steps a full loop takes
 flash_percent_max = 0.35; //0 = no flash, 1 = fully red
+
+// play sequence first
+boss_state = "__wait_sequence__";
+visible = false
+instance_create_layer(x, y, layer, oSequenceTuffulAppear)
 
 changeState = function(newState) {
 	if (boss_state == newState)

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSequence",
   "resourceVersion": "1.4",
-  "name": "Tuffull_Intro_T",
+  "name": "seqTuffullIntro_T",
   "autoRecord": true,
   "backdropHeight": 768,
   "backdropImageOpacity": 0.5,
