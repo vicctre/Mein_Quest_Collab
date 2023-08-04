@@ -7,9 +7,11 @@ if instance_number(object_index) > 1 {
 show_debug_message("Create: " + string(id))
 
 current_music = noone
+current_music_instance = noone
 next_music = noone
-music_transition_time = 60
 music_transition_time_ms = 1000
+next_music_transition_time_ms = music_transition_time_ms
+next_music_loops = undefined
 
 function get_gain(msc) {
 	var not_in_array = array_length(global.music_gain_array) < msc+1
@@ -21,11 +23,13 @@ function get_gain(msc) {
 	return global.music_gain_array[msc]
 }
 
-function switch_music(msc) {
-	alarm[0] = 1
+function switch_music(msc, loops=true, transition_time=music_transition_time_ms) {
+	next_music_transition_time_ms = transition_time
+	next_music_loops = loops
 	if current_music != noone {
-		alarm[0] = music_transition_time
-		audio_sound_gain(current_music, 0, music_transition_time_ms)
+		alarm[0] = next_music_transition_time_ms / 1000 * 60
+		audio_sound_gain(current_music, 0, next_music_transition_time_ms)
 	}
+	alarm[0] = max(1, alarm[0])
 	next_music = msc
 }

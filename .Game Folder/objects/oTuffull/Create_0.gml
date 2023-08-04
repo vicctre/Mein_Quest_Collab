@@ -23,6 +23,7 @@ flash_percent_max = 0.35; //0 = no flash, 1 = fully red
 // play sequence first
 boss_state = "__wait_sequence__";
 visible = false
+hsp = 0
 instance_create_layer(x, y, layer, oSequenceTuffulAppear)
 
 changeState = function(newState) {

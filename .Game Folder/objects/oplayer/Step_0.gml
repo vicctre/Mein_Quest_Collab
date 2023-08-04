@@ -184,6 +184,7 @@ switch state {
 			inst.image_xscale = image_xscale
 			visible = false
 			death_animation_started = true
+			oMusic.switch_music(global.msc_player_dead, false, 0)
 		}
 		break
 	}

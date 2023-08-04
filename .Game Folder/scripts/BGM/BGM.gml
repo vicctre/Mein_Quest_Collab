@@ -1,7 +1,7 @@
 /// assign Music resources here
 
 //Player Specific 
-msc_dead = BGM_Dead 
+msc_player_dead = BGM_Dead 
 msc_stage_clear = BGM_CLEAR
 //BGM_PickUp = 
 
