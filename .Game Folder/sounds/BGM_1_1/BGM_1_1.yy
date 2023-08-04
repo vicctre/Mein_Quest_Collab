@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "BGM_1_1.wav",
   "type": 0,
-  "volume": 0.85,
+  "volume": 0.42,
 }
