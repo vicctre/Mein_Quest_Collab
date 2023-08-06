@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.130635,
+  "duration": 0.121429,
   "parent": {
     "name": "Already In Use",
     "path": "folders/Sounds/SFX/Already In Use.yy",
