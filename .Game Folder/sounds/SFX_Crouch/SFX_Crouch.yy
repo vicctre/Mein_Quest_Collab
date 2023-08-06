@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.078594,
+  "duration": 0.130635,
   "parent": {
     "name": "Already In Use",
     "path": "folders/Sounds/SFX/Already In Use.yy",
@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "SFX_Crouch.wav",
   "type": 0,
-  "volume": 0.4,
+  "volume": 0.3,
 }

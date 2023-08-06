@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "sfx_damage.wav",
   "type": 0,
-  "volume": 0.75,
+  "volume": 0.7,
 }
