@@ -1,4 +1,4 @@
-if (hp <= 5) {
+if (hp > 0 && hp <= 5) {
 	flash_timer = (flash_timer + 1) % flash_loop_duration;
 	shader_set(RedShader);
 	uniform = shader_get_uniform(RedShader, "red_alpha");

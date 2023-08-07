@@ -1,18 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oWall",
+  "name": "WALLPARENT",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "INGAME_Objects",
-    "path": "folders/Objects/INGAME_Objects.yy",
+    "name": ".ParentsClub",
+    "path": "folders/Objects/.ParentsClub.yy",
   },
-  "parentObjectId": {
-    "name": "WALLPARENT",
-    "path": "objects/WALLPARENT/WALLPARENT.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,10 +25,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sWall",
-    "path": "sprites/sWall/sWall.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

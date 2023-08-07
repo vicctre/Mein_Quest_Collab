@@ -1,6 +1,6 @@
 event_inherited();
 deadSprite = sTuffull_HitWall;
-hp = global.tufful_hp; //set this back to 20 when ur done testing
+hp = 1 //global.tufful_hp;
 spd_walk = 3;
 spd_charge = 5.6;
 spd_jump = 3;
@@ -76,6 +76,7 @@ changeState = function(newState) {
 		case "Defeated":
 			sprite_index = sTuffull_HitWall;
 			image_xscale = -hitDirection; 
+			y -= 1;
 			hsp = hitDirection*2;
 			vsp = -5;
 			StartTuffulDefeatedTransition()

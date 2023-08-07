@@ -1,2 +1,1 @@
-
 enter_room = noone
