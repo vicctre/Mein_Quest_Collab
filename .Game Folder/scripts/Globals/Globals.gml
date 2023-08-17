@@ -7,6 +7,7 @@ Read more in manual.
 #macro Dev:PLAYER_INVINCIBLE true
 
 global.coins = 0
+global.coins_timer = 0 //for when coins flash yellow on collection
 global.pages_placeholder = 0;
 
 rooms_with_onto_stage_seq = [

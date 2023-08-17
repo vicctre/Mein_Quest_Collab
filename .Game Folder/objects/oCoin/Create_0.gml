@@ -5,5 +5,5 @@ collected = function() {
 		inst.direction = i*45;
 		inst.speed = 0.5;
 	}
-	global.coins++;
+	add_coins(1);
 }

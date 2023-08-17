@@ -94,7 +94,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"sShanteeWindUp","path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},},
@@ -164,6 +164,7 @@
     {"id":{"name":"sThinBG","path":"sprites/sThinBG/sThinBG.yy",},},
     {"id":{"name":"W1_2","path":"tilesets/W1_2/W1_2.yy",},},
     {"id":{"name":"seqTuffullIntro_T","path":"sequences/seqTuffullIntro_T/seqTuffullIntro_T.yy",},},
+    {"id":{"name":"YellowShader","path":"shaders/YellowShader/YellowShader.yy",},},
     {"id":{"name":"WALLPARENT","path":"objects/WALLPARENT/WALLPARENT.yy",},},
     {"id":{"name":"sCoinCounter","path":"sprites/sCoinCounter/sCoinCounter.yy",},},
     {"id":{"name":"Tree_Tower_test","path":"rooms/Tree_Tower_test/Tree_Tower_test.yy",},},
@@ -187,6 +188,7 @@
     {"id":{"name":"EnemyState_Attacking","path":"scripts/EnemyState_Attacking/EnemyState_Attacking.yy",},},
     {"id":{"name":"W1_2_part4_AutoScroller1","path":"rooms/W1_2_part4_AutoScroller1/W1_2_part4_AutoScroller1.yy",},},
     {"id":{"name":"SFX_Boss_Dash","path":"sounds/SFX_Boss_Dash/SFX_Boss_Dash.yy",},},
+    {"id":{"name":"add_coins","path":"scripts/add_coins/add_coins.yy",},},
     {"id":{"name":"oPauseGiglet","path":"objects/oPauseGiglet/oPauseGiglet.yy",},},
     {"id":{"name":"oChest","path":"objects/oChest/oChest.yy",},},
     {"id":{"name":"sShantee","path":"sprites/sShantee/sShantee.yy",},},

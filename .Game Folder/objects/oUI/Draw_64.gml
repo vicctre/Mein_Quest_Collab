@@ -2,6 +2,10 @@
 draw_hp_bar()
 
 var scale = 2;
+var color = c_white;
+var color2 = c_black;
+
+
 draw_sprite_ext(sCoinCounter, 0, 1230, 70, scale, scale, 0, c_white, 1);
 
 var page_count = 1;
@@ -10,8 +14,18 @@ for(var i = 0; i < page_count; i++) {
 	if (i < global.pages_placeholder)
 		draw_sprite_ext(sAL_Icon, 0, 1260-65*page_count/2 + 65*i, 140, scale, scale, 0, c_white, 1);
 }
-draw_text_outlined(1220, 45, global.coins, c_white, c_black);
 
+
+if (global.coins_timer > 0) {
+	global.coins_timer--;
+	shader_set(YellowShader);
+	uniform = shader_get_uniform(YellowShader, "yellow_alpha");
+	shader_set_uniform_f(uniform, 0.5-abs(0.5-global.coins_timer/global.coins_timer_max));
+	draw_text_outlined(1220, 45, global.coins, color, color2);
+	shader_reset();
+} else {
+	draw_text_outlined(1220, 45, global.coins, color, color2);
+}
 /*
 if (instance_exists(oTransitionTuffulDefeated)) {
 	draw_text_outlined(1320, 50, global.coins, c_white, c_black);	
