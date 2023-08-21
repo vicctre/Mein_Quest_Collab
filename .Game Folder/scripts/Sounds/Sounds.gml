@@ -7,10 +7,10 @@ sfx_nav = SFX_Menu_Nav
 sfx_select = SFX_Menu_select
 
 //Mein Specifc 
-sfx_jump = SFX_Jump_V2 
-sfx_djump = SFX_DoubleJump_V2 
+sfx_jump = SFX_Jump_V2
+sfx_djump = SFX_DoubleJump_V2
 sfx_crouch = SFX_Crouch
-sfx_door = SFX_Doors
+sfx_door = SFX_Door
 sfx_land = SFX_Land 
 sfx_dead = SFX_Death
 sfx_heal = SFX_Heal

@@ -9,7 +9,7 @@ if (menu_control)
 	{
 		menu_cursor ++; 
 		if (menu_cursor >= menu_items) menu_cursor = 0; 
-		audio_play_sound(SFX_Menu_Nav,6,false);
+		audio_play_sound(global.sfx_nav,6,false);
 	}
 
 }
