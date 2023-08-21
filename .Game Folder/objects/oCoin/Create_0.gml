@@ -6,6 +6,6 @@ collected = function() {
 		inst.direction = i*45;
 		inst.speed = 0.5;
 	}
-	global.coins++;
+	add_coins(1);
 	audio_play_sound(sound_effect, 0, false);
 }

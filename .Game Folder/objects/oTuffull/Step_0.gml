@@ -52,6 +52,7 @@ switch(boss_state) {
 	break;
 	case "Defeated":
 		if (place_meeting(x,y+1,oWall)) {
+			sprite_index = sTuffull_KOed;
 			hsp *= 0.5;
 		}
 	break;

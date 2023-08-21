@@ -4,7 +4,7 @@
 
 gui_width = display_get_gui_width();
 gui_height = display_get_gui_height();
-gui_margin = 32; 
+gui_margin = 36; 
 
 menu_x_target_start = gui_width + 200;
 menu_x_target_finish = menu_x_target_start - 50

@@ -92,6 +92,7 @@ hit = {
 // room transition
 enter_room = noone
 
+
 // create player-related ui
 instance_create_layer(0, 0, "ui", oUI)
 

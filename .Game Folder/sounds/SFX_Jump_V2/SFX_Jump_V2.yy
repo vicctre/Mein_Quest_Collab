@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "SFX_Jump_V2.wav",
   "type": 0,
-  "volume": 0.65,
+  "volume": 0.6,
 }

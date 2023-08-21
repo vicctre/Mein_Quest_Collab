@@ -9,7 +9,10 @@
     "name": "INGAME_Objects",
     "path": "folders/Objects/INGAME_Objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "WALLPARENT",
+    "path": "objects/WALLPARENT/WALLPARENT.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

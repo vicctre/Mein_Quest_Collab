@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "SFX_Coin1.wav",
   "type": 0,
-  "volume": 0.9,
+  "volume": 0.1,
 }
