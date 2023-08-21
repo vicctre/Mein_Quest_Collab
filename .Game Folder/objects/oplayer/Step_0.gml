@@ -72,7 +72,7 @@ if has_control {
 		state = PLAYERSTATE.ENTER_DOOR
 		enter_room = door.room_to_go
 		sprite_index = sPlayerEnterDoor
-		audio_play_sound(SFX_Door, 6, false)
+		audio_play_sound(global.sfx_door, 6, false)
 	}
 }
 
@@ -176,7 +176,6 @@ switch state {
 		// transition
 		if !death_animation_started {
 			alarm[1] = global.death_transition_delay_time
-			//audio_play_sound(SFX_Death, 7, false);
 			var inst = instance_create_layer(x, y, layer, deadEnemy)
 			inst.sprite_index = sPlayerDead
 			inst.vsp = global.player_dead_vsp

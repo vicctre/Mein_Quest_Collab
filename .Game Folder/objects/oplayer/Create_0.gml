@@ -123,9 +123,9 @@ function check_perform_jump() {
 			jumps -= down_free and !on_ground
 			vsp = jumps ? jump_sp : double_jump_sp
 			if jumps 
-				audio_play_sound(SFX_Jump_V2, 7, false)
+				audio_play_sound(global.sfx_jump, 7, false)
 			else
-				audio_play_sound(SFX_DoubleJump_V2, 7, false)
+				audio_play_sound(global.sfx_djump, 7, false)
 			jump_pressed = 0
             state = PLAYERSTATE.FREE
             return true
@@ -161,7 +161,7 @@ function check_perform_crouch() {
 		state = PLAYERSTATE.CROUCH
 		mask_index = sCrouch
 		start_crouch_transition()
-		audio_play_sound(SFX_Crouch, 5, false);
+		audio_play_sound(sfx_crouch, 5, false);
         return true
 	}
     return false
@@ -295,8 +295,7 @@ function Hit() {
 	}
 	global.player_hp -= PLAYER_INVINCIBLE == false
 	show_debug_message("Hit")
-	audio_play_sound(SFX_Damage, 8, false);
-	//audio_play_sound(SFX_Damage_pt2, 7, false); 
+	audio_play_sound(sfx_player_damage, 8, false);
 	//this is for when we have both a voice AND SFX for taking damage 
 	if !global.player_hp {
 		Kill()

@@ -4,29 +4,22 @@ Player sprite collsion mask bounds relative to center:
 -5 12
 
 Alex ToDo:
-Mein:
-//* Whenever Mein takes damage, the HP bar should do a little shake POLISH 
-//* When Mein is landing from a jump, and dashing, small dust effects should appear
-//  around and behind him respectively POLISH
-//* Fix double jump where Mein seems to be pushed back by a pixel 
-//	during the double jump fall animation - can't reproduce
-//* adjust crouch hurtbox to have the same width as standing,	
-//	but still half the height
-
-Environments: 
-//* finish adding backgrounds with P. scrolling to both W1-1 and 1-2 and adjust accordingly 
-//* Spikes deal 1 damage now, and launch Mein upwards/downwards to avoid multiple hits from them 
-//* when player dies, pause the game for 1 second (60 frames) and then proceed to have the  
-//	player fall to their death at full rate (no 30fps slow down anymore)
-//* Have the “onto stage” sequence play before starting every stage
-* Implement Special UI for all Hud elements (discuss fonts and ideas)
-//* Implement a pause menu, allowing you to “resume” or “quit”
-//* Make HP bar Draw GUI for easier manipulation 
-* Mess around with lighting (shadows) and “fog” to give the backgrounds more depth 
-	(See Tre for details and ideas)
-
-Items: 
-//* Make sure both healing items heal their own amount of HP
+- add the following SFX: Adventure log, Tuffull Roar, @ me for specific details
+- When Mein Dies, music should abruptly cut off rather than fading
+- When falling into a pit, Mein should still make damage SFX upon death
+- All “thin walls” should cast shadows (1-1 room 3) and later rooms
+- Make it so shadows are the same as thin wall sprites (more specific @ Tre for this)
+- After Tuffull roars, she should idle for a second before starting her attacks, leading 
+to the cutscene to last a little longer, with the player unable to act (maybe I should 
+lengthen the sequence? Not sure how to go about it)
+- During the Tuffull intro sequence, add Boss landing SFX and a slight shake the screen a
+ little
+- When tuffull is defeated, the game should pause for a second, before she goes flying ba
+ck. To further sell the impact, use the “SFX_boss_defeated” SFX after the pause. Also, when 
+she lands on the floor, give her the “SFX_Boss_Land” (@ Tre for example video again if you need help)
+- ALSO when Tuffull is defeated, make her drop the “Spirit Byte”, landing in the center o
+f the screen, floating for the player to collect. Once collected, Mein will drop down and do his
+“Victory” sequence
 
 Fixes:
 * Resolution-related picture disruption

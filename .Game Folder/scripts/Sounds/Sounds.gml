@@ -8,7 +8,7 @@ sfx_select = SFX_Menu_select
 
 //Mein Specifc 
 sfx_jump = SFX_Jump_V2 
-sfx_Djump = SFX_DoubleJump_V2 
+sfx_djump = SFX_DoubleJump_V2 
 sfx_crouch = SFX_Crouch
 sfx_door = SFX_Door
 sfx_land = SFX_Land 

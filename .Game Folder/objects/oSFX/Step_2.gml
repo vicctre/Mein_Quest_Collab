@@ -25,7 +25,7 @@ if EnemyKOSound == true
 if HealSFX == true 
 {
 	//play sound 
-	var _snd = audio_play_sound(SFX_Heal, 5, false);
+	var _snd = audio_play_sound(global.sfx_heal, 5, false);
 	audio_sound_gain(_snd, _sfxVol, 0); 
 	
 	//reset variable 
