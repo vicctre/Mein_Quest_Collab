@@ -5,6 +5,7 @@ activation_delay = 30;
 flashing = object_index != oCoin;
 flash_timer = 0;
 flash_loop_duration = 100;
+sound_effect = noone;
 
 function updateWhiteShader() {
 	uniform = shader_get_uniform(WhiteShader, "white_alpha");
@@ -14,4 +15,7 @@ updateWhiteShader();
 
 collected = function() {
 	spawnHealFizzles();
+	if sound_effect != noone {
+		audio_play_sound(sound_effect, 0, false)	
+	}
 }

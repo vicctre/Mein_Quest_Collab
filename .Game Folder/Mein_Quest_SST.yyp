@@ -217,7 +217,7 @@
     {"id":{"name":"SFX_Menu_Nav","path":"sounds/SFX_Menu_Nav/SFX_Menu_Nav.yy",},},
     {"id":{"name":"sPinnik","path":"sprites/sPinnik/sPinnik.yy",},},
     {"id":{"name":"sCoin","path":"sprites/sCoin/sCoin.yy",},},
-    {"id":{"name":"oAL_Page","path":"objects/oAL_Page/oAL_Page.yy",},},
+    {"id":{"name":"oAdventureLog","path":"objects/oAdventureLog/oAdventureLog.yy",},},
     {"id":{"name":"sEldoon_Small","path":"sprites/sEldoon_Small/sEldoon_Small.yy",},},
     {"id":{"name":"oLanding","path":"objects/oLanding/oLanding.yy",},},
     {"id":{"name":"oPause","path":"objects/oPause/oPause.yy",},},

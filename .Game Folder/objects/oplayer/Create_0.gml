@@ -295,7 +295,7 @@ function Hit() {
 	}
 	global.player_hp -= PLAYER_INVINCIBLE == false
 	show_debug_message("Hit")
-	audio_play_sound(sfx_player_damage, 8, false);
+	audio_play_sound(global.sfx_player_damage, 8, false);
 	//this is for when we have both a voice AND SFX for taking damage 
 	if !global.player_hp {
 		Kill()

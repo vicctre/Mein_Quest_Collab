@@ -19,7 +19,7 @@ sfx_HP = SFX_Additional_HP
 
 
 //Object sounds 
-sfx_AL = SFX_AdvLog
+sfx_adventure_log = SFX_AdvLog
 sfx_coin = SFX_Coin1
 sfx_chest = SFX_Chest_open
 
