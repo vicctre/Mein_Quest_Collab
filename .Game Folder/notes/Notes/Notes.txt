@@ -5,7 +5,7 @@ Player sprite collsion mask bounds relative to center:
 
 Alex ToDo:
 //- add the following SFX: Adventure log, Tuffull Roar, @ me for specific details
-- When Mein Dies, music should abruptly cut off rather than fading
+//- When Mein Dies, music should abruptly cut off rather than fading
 - When falling into a pit, Mein should still make damage SFX upon death
 - All “thin walls” should cast shadows (1-1 room 3) and later rooms
 - Make it so shadows are the same as thin wall sprites (more specific @ Tre for this)

@@ -217,7 +217,9 @@ if abs(hsp) or abs(vsp)
 
 Animate()
 
-//fall out of world
+// fall out of world
 if (global.player_hp > 0 && bbox_bottom > room_height) {
-	Kill();
+	// imitate regular death to trigger all needed stuff
+	global.player_hp = 1
+	Hit()
 }
