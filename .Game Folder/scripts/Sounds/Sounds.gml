@@ -30,7 +30,7 @@ sfx_rush = SFX_Boss_Dash
 sfx_bonk = SFX_HitWall
 sfx_hit = SFX_Boss_Damage
 sfx_BOOM = SFX_Boss_Defeat
-sfx_land = SFX_Boss_Land
+sfx_boss_land = SFX_Boss_Land
 sfx_GoUP = SFX_Boss_jump
 
 

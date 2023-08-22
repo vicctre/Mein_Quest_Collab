@@ -6,14 +6,14 @@ Player sprite collsion mask bounds relative to center:
 Alex ToDo:
 //- add the following SFX: Adventure log, Tuffull Roar, @ me for specific details
 //- When Mein Dies, music should abruptly cut off rather than fading
-- When falling into a pit, Mein should still make damage SFX upon death
-- All “thin walls” should cast shadows (1-1 room 3) and later rooms
-- Make it so shadows are the same as thin wall sprites (more specific @ Tre for this)
-- After Tuffull roars, she should idle for a second before starting her attacks, leading 
-to the cutscene to last a little longer, with the player unable to act (maybe I should 
-lengthen the sequence? Not sure how to go about it)
-- During the Tuffull intro sequence, add Boss landing SFX and a slight shake the screen a
- little
+//- When falling into a pit, Mein should still make damage SFX upon death
+//- All “thin walls” should cast shadows (1-1 room 3) and later rooms
+//- Make it so shadows are the same as thin wall sprites (more specific @ Tre for this)
+//- After Tuffull roars, she should idle for a second before starting her attacks, leading 
+//to the cutscene to last a little longer, with the player unable to act (maybe I should 
+//lengthen the sequence? Not sure how to go about it)
+//- During the Tuffull intro sequence, add Boss landing SFX and a slight shake the screen a
+// little
 - When tuffull is defeated, the game should pause for a second, before she goes flying ba
 ck. To further sell the impact, use the “SFX_boss_defeated” SFX after the pause. Also, when 
 she lands on the floor, give her the “SFX_Boss_Land” (@ Tre for example video again if you need help)
