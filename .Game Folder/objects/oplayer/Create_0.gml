@@ -285,7 +285,7 @@ function Kill() {
 	hsp = 0
 	//y -= 30
 	//visible = false
-	oMusic.switch_music(noone)
+	oMusic.switch_music(noone, false, 0)
 	oPause.PauseWithTimer(global.death_pause_time)
 	oUI.shake_hp()
 }
