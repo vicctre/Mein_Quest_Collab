@@ -1,9 +1,9 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sShadowSlope2124",
+  "name": "sShadowSlopeGradiant",
   "bbox_bottom": 31,
-  "bbox_left": 13,
+  "bbox_left": 1,
   "bbox_right": 31,
   "bbox_top": 0,
   "bboxMode": 0,
@@ -20,19 +20,23 @@
   "height": 32,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"970909d5-3bf2-4374-8a31-10df5d1020e4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageFolderLayer","resourceVersion":"1.0","name":"b7d7791a-aac5-4b85-a3f9-76fdbcf08520","blendMode":0,"displayName":"Layer Group 1","isLocked":false,"layers":[
+        {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9b77bc44-9605-46dd-83b5-0f78141cfa37","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":15.0,"visible":false,},
+      ],"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e5c5bc3a-eb2f-43d1-89da-6bfdab57ba91","blendMode":0,"displayName":"default (2)","isLocked":false,"opacity":80.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"970909d5-3bf2-4374-8a31-10df5d1020e4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":false,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Base assets",
-    "path": "folders/Sprites/WIP NOT IN USE/Tre Shadows WIPS/Base assets.yy",
+    "name": "IDK lol",
+    "path": "folders/Sprites/WIP NOT IN USE/Tre Shadows WIPS/IDK lol.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sShadowSlope2",
+    "name": "sShadowSlopeGradiant",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +58,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2a000641-9797-45f2-b198-37a7007c5fee","path":"sprites/sShadowSlope2124/sShadowSlope2124.yy",},},},"Disabled":false,"id":"69a28a00-707a-4bec-bb19-4b450337c6aa","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2a000641-9797-45f2-b198-37a7007c5fee","path":"sprites/sShadowSlopeGradiant/sShadowSlopeGradiant.yy",},},},"Disabled":false,"id":"4a76a1c9-6379-489e-9851-90de0b3483e9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

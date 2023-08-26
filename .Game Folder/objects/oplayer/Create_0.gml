@@ -162,7 +162,7 @@ function check_perform_crouch() {
 		state = PLAYERSTATE.CROUCH
 		mask_index = sCrouch
 		start_crouch_transition()
-		audio_play_sound(sfx_crouch, 5, false);
+		audio_play_sound(global.sfx_crouch, 5, false);
         return true
 	}
     return false

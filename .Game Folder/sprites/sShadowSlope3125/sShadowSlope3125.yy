@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Tre Shadows WIPS",
-    "path": "folders/Sprites/Environment/Tre Shadows WIPS.yy",
+    "name": "Base assets",
+    "path": "folders/Sprites/WIP NOT IN USE/Tre Shadows WIPS/Base assets.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
