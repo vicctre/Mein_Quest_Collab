@@ -9,11 +9,13 @@ if has_control {
 	key_right_pressed = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"))
 	key_up_pressed = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"))
 	key_down = keyboard_check(vk_down) or keyboard_check(ord("S"))
-	key_left = keyboard_check(vk_left) or keyboard_check(ord("A")) or (gamepad_axis_value(0, gp_axislh) < 0)
-	key_right = keyboard_check(vk_right) or keyboard_check(ord("D")) or (gamepad_axis_value(0, gp_axislh) > 0)
-	key_jump = keyboard_check_pressed(vk_space) or (gamepad_button_check_pressed(0, gp_face2))
+	key_left = keyboard_check(vk_left) or keyboard_check(ord("A")) or (gamepad_axis_value(0, gp_axislh) < -0.25)
+	key_right = keyboard_check(vk_right) or keyboard_check(ord("D")) or (gamepad_axis_value(0, gp_axislh) > 0.25)
+	key_jump = keyboard_check_pressed(vk_space) or (gamepad_button_check_pressed(0, gp_face1))
 			   or keyboard_check_pressed(ord("W"))
-	key_attack = keyboard_check_pressed(ord("X")) or (gamepad_button_check_pressed(0, gp_face1))
+	key_attack = keyboard_check_pressed(ord("X")) or (gamepad_button_check_pressed(0, gp_face3))
+	if keyboard_check_pressed(vk_space) show_message("space is pressed for some reason")
+    if keyboard_check_pressed(ord("W")) show_message("W is pressed for some reason")
 	
 	var gp_hinp = gamepad_axis_value(0, gp_axislh)
 	if abs(gp_hinp) > gp_hinp_treshold {
