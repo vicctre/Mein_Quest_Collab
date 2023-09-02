@@ -14,8 +14,6 @@ if has_control {
 	key_jump = keyboard_check_pressed(vk_space) or (gamepad_button_check_pressed(0, gp_face1))
 			   or keyboard_check_pressed(ord("W"))
 	key_attack = keyboard_check_pressed(ord("X")) or (gamepad_button_check_pressed(0, gp_face3))
-	if keyboard_check_pressed(vk_space) show_message("space is pressed for some reason")
-    if keyboard_check_pressed(ord("W")) show_message("W is pressed for some reason")
 	
 	var gp_hinp = gamepad_axis_value(0, gp_axislh)
 	if abs(gp_hinp) > gp_hinp_treshold {
