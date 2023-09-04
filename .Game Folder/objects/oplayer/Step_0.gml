@@ -114,7 +114,7 @@ switch state {
 		hsp = 0
 		vsp = 0
 		if abs(input_move_h) != 0 {
-			image_xscale = input_move_h	
+			image_xscale = sign(input_move_h)	
 		}
 		if !key_down or down_free {
 			state = ENEMYSTATE.FREE
