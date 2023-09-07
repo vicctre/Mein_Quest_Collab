@@ -67,7 +67,10 @@ if (place_meeting(x+hsp,y,oWall))
 	{
 		x = x + sign(hsp); 
 	}
-	hsp = -hsp; 
+	if (boss_state == "Defeated")
+		hsp = 0;
+	else
+		hsp = -hsp; 
 }
 x = x + hsp; 
 

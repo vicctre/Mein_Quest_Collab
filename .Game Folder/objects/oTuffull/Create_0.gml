@@ -1,6 +1,6 @@
 event_inherited();
 deadSprite = sTuffull_HitWall;
-hp = 16 //global.tufful_hp;
+hp = 1 //global.tufful_hp;
 spd_walk = 3;
 spd_charge = 5.6;
 spd_jump = 3;
