@@ -63,3 +63,7 @@ function PauseWithMenuContinue() {
 	UnpauseStuff()
 	paused = false
 }
+
+function game_paused() {
+	return paused or alarm[0] > 0
+}

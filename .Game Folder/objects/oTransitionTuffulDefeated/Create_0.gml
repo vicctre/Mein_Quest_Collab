@@ -8,6 +8,9 @@ sequence = seqPlayerVictory
 oMusic.switch_music(global.msc_stage_clear, false)
 transition_timer = 7 * 60
 
+phase = 0
+oPause.PauseWithTimer(60)
+
 function is_transition_finished() {
 	return !transition_timer
 }
