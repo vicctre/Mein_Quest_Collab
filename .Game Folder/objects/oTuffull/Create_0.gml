@@ -26,6 +26,11 @@ visible = false
 hsp = 0
 instance_create_layer(x, y, layer, oSequenceTuffulAppear)
 
+// drop spirit byte on defeat
+spirit_byte_drop_time = 120
+spirit_byte_drop_timer = 0
+spirit_byte_dropped = false
+
 changeState = function(newState) {
 	if (boss_state == newState)
 		return false;

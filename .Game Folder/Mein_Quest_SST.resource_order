@@ -255,6 +255,7 @@
     {"name":"oGoal","order":7,"path":"objects/oGoal/oGoal.yy",},
     {"name":"W1_2_Tileset","order":3,"path":"sprites/W1_2_Tileset/W1_2_Tileset.yy",},
     {"name":"Testing2","order":4,"path":"sprites/Testing2/Testing2.yy",},
+    {"name":"oTransitionSpiritByteCollected","order":1,"path":"objects/oTransitionSpiritByteCollected/oTransitionSpiritByteCollected.yy",},
     {"name":"W1_1_Tileset","order":2,"path":"sprites/W1_1_Tileset/W1_1_Tileset.yy",},
     {"name":"Label_1","order":1,"path":"sprites/Label_1/Label_1.yy",},
     {"name":"TreeTower_Outside","order":2,"path":"tilesets/TreeTower_Outside/TreeTower_Outside.yy",},

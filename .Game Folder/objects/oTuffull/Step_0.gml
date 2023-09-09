@@ -57,6 +57,10 @@ switch(boss_state) {
 				audio_play_sound(SFX_Boss_Land, 0, false)
 			}
 			hsp *= 0.5;
+			if !--spirit_byte_drop_timer and !spirit_byte_dropped {
+				instance_create_layer(x, y, layer, oSpiritByte)	
+				spirit_byte_dropped = true
+			}
 		}
 	break;
 }

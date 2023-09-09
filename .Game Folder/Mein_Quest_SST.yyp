@@ -325,6 +325,7 @@
     {"id":{"name":"W1_2_Tileset","path":"sprites/W1_2_Tileset/W1_2_Tileset.yy",},},
     {"id":{"name":"Testing2","path":"sprites/Testing2/Testing2.yy",},},
     {"id":{"name":"sWoods","path":"sprites/sWoods/sWoods.yy",},},
+    {"id":{"name":"oTransitionSpiritByteCollected","path":"objects/oTransitionSpiritByteCollected/oTransitionSpiritByteCollected.yy",},},
     {"id":{"name":"W1_1_Tileset","path":"sprites/W1_1_Tileset/W1_1_Tileset.yy",},},
     {"id":{"name":"Tree_Outside","path":"tilesets/Tree_Outside/Tree_Outside.yy",},},
     {"id":{"name":"Label_1","path":"sprites/Label_1/Label_1.yy",},},

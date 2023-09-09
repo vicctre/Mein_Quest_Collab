@@ -1,7 +1,7 @@
 
 sequence = noone
 sequence_inst = noone
-destroy_delay = 60
+destroy_delay = 10
 
 function is_sequence_finished() {
 	return layer_sequence_get_headpos(sequence_inst)
