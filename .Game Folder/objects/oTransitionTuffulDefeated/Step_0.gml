@@ -7,6 +7,8 @@ switch phase {
 		if !oPause.game_paused() {
 			phase++
 			oPlayer.has_control = false
+			audio_play_sound(global.sfx_BOOM, 0, false)
+			Screen_Shake(4, 30)
 		}
 		break
 	case 1:

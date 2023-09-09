@@ -52,7 +52,10 @@ switch(boss_state) {
 	break;
 	case "Defeated":
 		if (place_meeting(x,y+1,oWall)) {
-			sprite_index = sTuffull_KOed;
+			if sprite_index != sTuffull_KOed {
+				sprite_index = sTuffull_KOed;
+				audio_play_sound(SFX_Boss_Land, 0, false)
+			}
 			hsp *= 0.5;
 		}
 	break;
