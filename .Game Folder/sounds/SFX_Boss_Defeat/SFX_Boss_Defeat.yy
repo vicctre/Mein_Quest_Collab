@@ -12,12 +12,12 @@
   "conversionMode": 0,
   "duration": 1.238821,
   "parent": {
-    "name": "Need to be Added SFX",
-    "path": "folders/Sounds/SFX/Need to be Added SFX.yy",
+    "name": "Already In Use",
+    "path": "folders/Sounds/SFX/Already In Use.yy",
   },
   "preload": false,
   "sampleRate": 44100,
   "soundFile": "SFX_Boss_Defeat.wav",
   "type": 0,
-  "volume": 0.6,
+  "volume": 0.3,
 }
