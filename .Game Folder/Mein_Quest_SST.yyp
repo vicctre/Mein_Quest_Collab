@@ -98,7 +98,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"sShanteeWindUp","path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},},
@@ -148,6 +148,7 @@
     {"id":{"name":"sEnemy01Ded","path":"sprites/sEnemy01Ded/sEnemy01Ded.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"sShanteeD","path":"sprites/sShanteeD/sShanteeD.yy",},},
+    {"id":{"name":"pthSpiritByte","path":"paths/pthSpiritByte/pthSpiritByte.yy",},},
     {"id":{"name":"Sprite132","path":"sprites/Sprite132/Sprite132.yy",},},
     {"id":{"name":"MenuTitleScreenV1","path":"rooms/MenuTitleScreenV1/MenuTitleScreenV1.yy",},},
     {"id":{"name":"sWater_tile2","path":"sprites/sWater_tile2/sWater_tile2.yy",},},

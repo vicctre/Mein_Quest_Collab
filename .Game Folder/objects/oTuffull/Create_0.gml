@@ -84,7 +84,11 @@ changeState = function(newState) {
 			y -= 1;
 			hsp = hitDirection*2;
 			vsp = -5;
+			mask_index = noone
 			StartTuffulDefeatedTransition()
 		break;
 	}
 }
+
+
+
