@@ -227,6 +227,7 @@
     {"name":"seqPlayerVictory","order":1,"path":"sequences/seqPlayerVictory/seqPlayerVictory.yy",},
     {"name":"SFX_Crouch","order":12,"path":"sounds/SFX_Crouch/SFX_Crouch.yy",},
     {"name":"sFleater_D","order":1,"path":"sprites/sFleater_D/sFleater_D.yy",},
+    {"name":"oDebug","order":10,"path":"objects/oDebug/oDebug.yy",},
     {"name":"Config","order":23,"path":"scripts/Config/Config.yy",},
     {"name":"shaker","order":7,"path":"scripts/shaker/shaker.yy",},
     {"name":"sTuffull_walking","order":3,"path":"sprites/sTuffull_walking/sTuffull_walking.yy",},
