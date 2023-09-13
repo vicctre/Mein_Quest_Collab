@@ -373,6 +373,15 @@ function play_onto_stage_sequence() {
 	instance_create_layer(x, y, layer, oSequenceOntoLevel)
 }
 
+function colliding_enemy() {
+	var enemy = instance_place(x, y, ENEMY)
+	if enemy {
+		if enemy.object_index == oTuffull and enemy.boss_state == "Defeated"
+			return noone
+	}
+	return enemy
+}
+
 instance_create_layer(x, y, layer, oCamera)
 check_reset_hp()
 

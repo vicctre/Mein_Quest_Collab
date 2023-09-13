@@ -55,7 +55,7 @@ if has_control {
 		on_ground = on_ground_delay
 
 	// enemies
-	var enemy = instance_place(x, y, ENEMY)
+	var enemy = colliding_enemy()
 	var attack = instance_place(x, y, ENEMYATTACK)
 	if enemy != noone or attack != noone {
 		Hit()
