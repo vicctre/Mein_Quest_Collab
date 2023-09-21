@@ -1,23 +1,23 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "SFX_Boss_Damage",
+  "name": "SFX_Tuffull_Roar",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
   "bitDepth": 1,
   "bitRate": 128,
-  "compression": 0,
+  "compression": 2,
   "conversionMode": 0,
-  "duration": 0.191451,
+  "duration": 2.122132,
   "parent": {
     "name": "Need to be Added SFX",
     "path": "folders/Sounds/SFX/Need to be Added SFX.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "SFX_Boss_Damage.wav",
+  "soundFile": "SFX_Tuffull_Roar.wav",
   "type": 0,
-  "volume": 0.3,
+  "volume": 0.5,
 }

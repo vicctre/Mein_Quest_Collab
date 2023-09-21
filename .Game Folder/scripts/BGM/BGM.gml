@@ -3,13 +3,13 @@
 //Player Specific 
 msc_player_dead = BGM_Dead 
 msc_stage_clear = BGM_CLEAR
-//BGM_PickUp = 
+msc_pickup = BGM_GET
 
 //Menu themes
 msc_title_screen = BGM_Title_Screen
 //BGM_Menu = 
 //BGM_intro = 
-//BGM
+
 
 //Stage music 
 msc_stage_1_1 = BGM_1_1

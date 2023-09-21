@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Environment",
-    "path": "folders/Sprites/Environment.yy",
+    "name": "Log stuff",
+    "path": "folders/Sprites/Environment/Log stuff.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
