@@ -54,6 +54,7 @@
     {"name":"Genull","order":2,"path":"folders/Sprites/Enemy Sprites/NME Basic/Genull.yy",},
     {"name":"Shantee","order":3,"path":"folders/Sprites/Enemy Sprites/NME Basic/Shantee.yy",},
     {"name":"Environment","order":10,"path":"folders/Sprites/Environment.yy",},
+    {"name":"Log stuff","order":14,"path":"folders/Sprites/Environment/Log stuff.yy",},
     {"name":"Hazards","order":11,"path":"folders/Sprites/Hazards.yy",},
     {"name":"Items","order":9,"path":"folders/Sprites/Items.yy",},
     {"name":"Lables","order":5,"path":"folders/Sprites/Lables.yy",},
@@ -71,7 +72,6 @@
     {"name":"1_2","order":1,"path":"folders/Tile Sets/1_2.yy",},
     {"name":"1_3","order":2,"path":"folders/Tile Sets/1_3.yy",},
     {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
-    {"name":"Log stuff","order":14,"path":"folders/Sprites/Environment/Log stuff.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sShanteeWindUp","order":4,"path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},
@@ -236,6 +236,7 @@
     {"name":"oDebug","order":10,"path":"objects/oDebug/oDebug.yy",},
     {"name":"Config","order":23,"path":"scripts/Config/Config.yy",},
     {"name":"shaker","order":7,"path":"scripts/shaker/shaker.yy",},
+    {"name":"sSpiritByte_FX","order":10,"path":"sprites/sSpiritByte_FX/sSpiritByte_FX.yy",},
     {"name":"sTuffull_walking","order":3,"path":"sprites/sTuffull_walking/sTuffull_walking.yy",},
     {"name":"sWater_Tile","order":1,"path":"sprites/sWater_Tile/sWater_Tile.yy",},
     {"name":"sMeinHP_Extra","order":3,"path":"sprites/sMeinHP_Extra/sMeinHP_Extra.yy",},
