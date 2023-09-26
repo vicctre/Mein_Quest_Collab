@@ -314,6 +314,7 @@
     {"name":"Mein_Jump","order":24,"path":"sprites/Mein_Jump/Mein_Jump.yy",},
     {"name":"Mein_EXP02","order":16,"path":"sprites/Mein_EXP02/Mein_EXP02.yy",},
     {"name":"W1_2_part5_AutoScroller2","order":7,"path":"rooms/W1_2_part5_AutoScroller2/W1_2_part5_AutoScroller2.yy",},
+    {"name":"sAL_Icon_animation","order":6,"path":"sprites/sAL_Icon_animation/sAL_Icon_animation.yy",},
     {"name":"seqTuffullIntro_T7","order":2,"path":"sequences/seqTuffullIntro_T7/seqTuffullIntro_T7.yy",},
     {"name":"sEldoon_Large","order":3,"path":"sprites/sEldoon_Large/sEldoon_Large.yy",},
     {"name":"TestingGround","order":1,"path":"rooms/TestingGround/TestingGround.yy",},
