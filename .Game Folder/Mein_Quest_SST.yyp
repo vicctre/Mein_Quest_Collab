@@ -99,7 +99,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"sShanteeWindUp","path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},},
@@ -310,6 +310,7 @@
     {"id":{"name":"Testing1","path":"sprites/Testing1/Testing1.yy",},},
     {"id":{"name":"seqOntoStage","path":"sequences/seqOntoStage/seqOntoStage.yy",},},
     {"id":{"name":"SFX_CutCube","path":"sounds/SFX_CutCube/SFX_CutCube.yy",},},
+    {"id":{"name":"oCameraZoomArea","path":"objects/oCameraZoomArea/oCameraZoomArea.yy",},},
     {"id":{"name":"SFX_Death","path":"sounds/SFX_Death/SFX_Death.yy",},},
     {"id":{"name":"oMenuPause","path":"objects/oMenuPause/oMenuPause.yy",},},
     {"id":{"name":"sShadowSlope2124","path":"sprites/sShadowSlope2124/sShadowSlope2124.yy",},},

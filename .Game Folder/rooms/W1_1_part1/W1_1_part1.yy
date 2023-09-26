@@ -157,10 +157,13 @@
     {"name":"inst_3DB2960E","path":"rooms/W1_1_part1/W1_1_part1.yy",},
     {"name":"inst_23A10C99","path":"rooms/W1_1_part1/W1_1_part1.yy",},
     {"name":"inst_685EAE96","path":"rooms/W1_1_part1/W1_1_part1.yy",},
+    {"name":"inst_1BD921","path":"rooms/W1_1_part1/W1_1_part1.yy",},
   ],
   "isDnd": false,
   "layers": [
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"ui","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"ui","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1BD921","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCameraZoomArea","path":"objects/oCameraZoomArea/oCameraZoomArea.yy",},"properties":[],"rotation":0.0,"scaleX":13.0,"scaleY":7.0,"x":1504.0,"y":192.0,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":15,"SerialiseWidth":57,"TileCompressedData":[
 -8,15,-49,-2147483648,-8,15,-49,-2147483648,-8,15,-49,-2147483648,-8,15,-49,-2147483648,-8,15,-49,-2147483648,-8,15,-49,-2147483648,-8,15,-49,-2147483648,-8,15,-49,-2147483648,-8,15,-49,-2147483648,-8,15,-49,-2147483648,-8,15,-2,-2147483648,1,5,-51,-2147483648,-4,15,3,6,15,5,-216,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"TileSet_TBG_ShadowTest","path":"tilesets/TileSet_TBG_ShadowTest/TileSet_TBG_ShadowTest.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets","assets":[

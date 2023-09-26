@@ -9,6 +9,9 @@ cam_width = 512;
 cam_width_base = cam_width;
 cam_zoom_current = 1;
 cam_zoom_target = cam_zoom_current;
+
+cam_zoom_area = noone;
+
 ResizeCamera();
 xTo = x
 yTo = y

@@ -1,4 +1,19 @@
 /// Update Camera
+
+//zoom areas
+var area = noone;
+with(oPlayer) {
+	area = instance_place(x, y, oCameraZoomArea);
+}
+if (area != noone) {
+	cam_zoom_area = area;
+}
+if (cam_zoom_area != noone) {
+	if (area == noone)
+		cam_zoom_target = 1;
+	else
+		cam_zoom_target = area.zoom_level;
+}
 //update zoom
 if (cam_zoom_current != cam_zoom_target) {
 	cam_zoom_current = lerp(cam_zoom_current, cam_zoom_target, 0.01);
