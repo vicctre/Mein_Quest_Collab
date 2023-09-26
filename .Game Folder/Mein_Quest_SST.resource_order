@@ -243,6 +243,7 @@
     {"name":"sPlayerFalling","order":14,"path":"sprites/sPlayerFalling/sPlayerFalling.yy",},
     {"name":"Testing1","order":3,"path":"sprites/Testing1/Testing1.yy",},
     {"name":"SFX_CutCube","order":1,"path":"sounds/SFX_CutCube/SFX_CutCube.yy",},
+    {"name":"oCameraZoomArea","order":11,"path":"objects/oCameraZoomArea/oCameraZoomArea.yy",},
     {"name":"SFX_Death","order":1,"path":"sounds/SFX_Death/SFX_Death.yy",},
     {"name":"oMenuPause","order":9,"path":"objects/oMenuPause/oMenuPause.yy",},
     {"name":"sShadowSlope2124","order":3,"path":"sprites/sShadowSlope2124/sShadowSlope2124.yy",},
