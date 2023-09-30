@@ -11,8 +11,10 @@ draw_sprite_ext(sCoinCounter, 0, 1230, 70, scale, scale, 0, c_white, 1);
 var page_count = 1;
 for(var i = 0; i < page_count; i++) {
 	draw_sprite_ext(sAL_HUD, 0, 1260-65*page_count/2 + 65*i, 140, scale, scale, 0, c_white, 1);
-	if (i < global.pages_placeholder)
-		draw_sprite_ext(sAL_Icon, 0, 1260-65*page_count/2 + 65*i, 140, scale, scale, 0, c_white, 1);
+	if (global.pages_placeholder > 0) {
+		draw_sprite_ext(sAL_Icon_animation, global.pages_placeholder, 1260-65*page_count/2 + 65*i, 140, scale, scale, 0, c_white, 1);
+		global.pages_placeholder = min(29, global.pages_placeholder+0.5);
+	}
 }
 
 
