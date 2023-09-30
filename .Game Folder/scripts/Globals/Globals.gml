@@ -5,22 +5,24 @@ Read more in manual.
 */
 #macro Default:DEV false
 #macro Dev:DEV true
+function globals() {
+	global.coins = 0
+	global.coins_timer = 0 //for when coins flash yellow on collection
+	global.pages_placeholder = 0;
+	global.player_invincible = false
 
-coins = 0
-coins_timer = 0 //for when coins flash yellow on collection
-pages_placeholder = 0;
-player_invincible = false
+	global.rooms_with_onto_stage_seq = [
+		W1_1_part1,
+		W1_2_part1,
+	]
 
-rooms_with_onto_stage_seq = [
-	W1_1_part1,
-	W1_2_part1,
-]
-
-music_gain_array = []
+	global.music_gain_array = []
 
 
-dev_level_goto = noone
-if DEV {
-	player_invincible = true
-	dev_level_goto = W1_1_part4
+	global.dev_level_goto = noone
+	if DEV {
+		global.player_invincible = true
+		global.dev_level_goto = W1_1_part4
+	}
 }
+globals();
