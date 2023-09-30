@@ -404,6 +404,8 @@ function sprite_frames_per_step(spr) {
 
 function ensure_singleton() {
 	if instance_number(object_index) > 1 {
-		instance_destroy()	
+		instance_destroy()
+		return false
 	}
+	return true
 }

@@ -7,9 +7,11 @@ Read more in manual.
 #macro Dev:DEV true
 
 
-global.music_gain_array = []
+gui_adjusted = false
+music_gain_array = []
 
-function globals() {
+
+function resetable_globals() {
 	global.coins = 0
 	global.coins_timer = 0 //for when coins flash yellow on collection
 	global.pages_placeholder = 0;
@@ -27,4 +29,4 @@ function globals() {
 		global.dev_level_goto = W1_1_part4
 	}
 }
-globals();
+resetable_globals();
