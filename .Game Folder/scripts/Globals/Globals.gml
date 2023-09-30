@@ -5,6 +5,10 @@ Read more in manual.
 */
 #macro Default:DEV false
 #macro Dev:DEV true
+
+
+global.music_gain_array = []
+
 function globals() {
 	global.coins = 0
 	global.coins_timer = 0 //for when coins flash yellow on collection
@@ -15,8 +19,6 @@ function globals() {
 		W1_1_part1,
 		W1_2_part1,
 	]
-
-	global.music_gain_array = []
 
 
 	global.dev_level_goto = noone
