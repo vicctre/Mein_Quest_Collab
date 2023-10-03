@@ -341,7 +341,7 @@ function aeral_attack_finish() {
 
 function check_reset_hp() {
 	if room == W1_1_part1 {
-		global.player_hp = global.player_hp_max	
+		global.player_hp = global.player_hp_start
 	}
 }
 

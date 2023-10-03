@@ -12,7 +12,8 @@ music_gain_array = []
 
 
 function resetable_globals() {
-	global.coins = 0
+	global.coins = 9
+	global.coins_heal_amount = 10
 	global.coins_timer = 0 //for when coins flash yellow on collection
 	global.pages_placeholder = 0;
 	global.player_invincible = false
