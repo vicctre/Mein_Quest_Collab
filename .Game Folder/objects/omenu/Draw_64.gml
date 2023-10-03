@@ -9,14 +9,14 @@ for (var i = 0; i < array_length(menu); i++) //or "i = i + 1" we are just increa
 {
 	var offset = 2; 
 	var txt = menu[i].title;
-	if (menu_cursor == i) 
+	if (menu_cursor == i)
 	{
 		txt = Highlight(txt)
 		var col = c_white;
 	}
 	else
 	{
-		var col = c_grey; 
+		var col = c_grey;
 	}
 	var xx = menu_x; 
 	var yy = menu_y - (menu_itemheight * (i * 1.5)); 

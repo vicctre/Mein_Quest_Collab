@@ -20,6 +20,9 @@ menu_control = true;
 x_ancor = fa_right
 y_ancor = fa_bottom
 
+mouse_x_prev = mouse_x
+mouse_y_prev = mouse_y
+
 function PerformButton(index) {
 	menu_committed = index
 	menu_x_target = menu_x_target_start
