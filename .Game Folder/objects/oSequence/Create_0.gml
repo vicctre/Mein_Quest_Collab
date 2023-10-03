@@ -8,6 +8,10 @@ function is_sequence_finished() {
 		   == (layer_sequence_get_length(sequence_inst) - 1)
 }
 
+function is_sequence_on_frame(frame) {
+	return layer_sequence_get_headpos(sequence_inst) == frame
+}
+
 function pause() {
 	layer_sequence_speedscale(sequence_inst, 0)
 }
