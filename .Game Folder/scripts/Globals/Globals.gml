@@ -26,7 +26,7 @@ function resetable_globals() {
 	global.dev_level_goto = noone
 	if DEV {
 		global.player_invincible = true
-		global.dev_level_goto = W1_1_part4
+		global.dev_level_goto = W1_1_part0
 	}
 }
 resetable_globals();

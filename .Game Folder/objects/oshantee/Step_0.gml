@@ -6,6 +6,7 @@ if (attacking) {
 	if (image_index == 6) {
 		var inst = instance_create_layer(x, y, layer, oShante_Attack);
 		inst.image_xscale = image_xscale;
+		audio_play_sound(global.sfx_whip, 0, false)
 	}
 	if (image_index == image_number) {
 		attacking = false;

@@ -3,6 +3,6 @@ if (hp <= 0) {
 	var inst = instance_create_depth(x,y,depth-1,contained_item);
 	inst.activated = false;
 	instance_destroy(); 
-	//audio_play_sound(SFX_CutCube,3,false);
+	audio_play_sound(global.sfx_chest, 0, false);
 }
 
