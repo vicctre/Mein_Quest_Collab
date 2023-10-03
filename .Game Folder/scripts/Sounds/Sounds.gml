@@ -22,6 +22,7 @@ sfx_HP = SFX_Additional_HP
 sfx_adventure_log = SFX_AdvLog
 sfx_coin = SFX_Coin1
 sfx_chest = SFX_Chest_open
+//sfx_post_battle = 
 
 
 //Enemy sounds 
