@@ -7,8 +7,8 @@
     "path": "audiogroups/audiogroup_default",
   },
   "bitDepth": 1,
-  "bitRate": 128,
-  "compression": 0,
+  "bitRate": 16,
+  "compression": 1,
   "conversionMode": 0,
   "duration": 0.081134,
   "parent": {
@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "sfx_whip.wav",
   "type": 0,
-  "volume": 0.35,
+  "volume": 0.24,
 }

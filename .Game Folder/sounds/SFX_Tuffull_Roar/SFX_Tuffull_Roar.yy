@@ -8,7 +8,7 @@
   },
   "bitDepth": 1,
   "bitRate": 128,
-  "compression": 2,
+  "compression": 3,
   "conversionMode": 0,
   "duration": 2.122132,
   "parent": {
@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "SFX_Tuffull_Roar.wav",
   "type": 0,
-  "volume": 0.5,
+  "volume": 0.4,
 }

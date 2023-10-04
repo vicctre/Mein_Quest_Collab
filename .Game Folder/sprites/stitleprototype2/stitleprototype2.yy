@@ -34,7 +34,7 @@
   "origin": 5,
   "parent": {
     "name": "Random stuff",
-    "path": "folders/Sprites/Misc./Random stuff.yy",
+    "path": "folders/Sprites/WIP NOT IN USE/Random stuff.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

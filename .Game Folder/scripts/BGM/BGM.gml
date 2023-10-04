@@ -7,13 +7,15 @@ msc_pickup = BGM_GET
 
 //Menu themes
 msc_title_screen = BGM_Title_Screen
+msc_THX = BGM_Thanks_for_playing
 //BGM_Menu = 
 //BGM_intro = 
 
 
+
 //Stage music 
 msc_stage_1_1 = BGM_1_1
-//Stage1_2 = 
+msc_stage1_2 = BGM_1_2_pt1
 //Stage1_2_2 = 
 //Stage2_1 = 
 //Stage2_2 = 
