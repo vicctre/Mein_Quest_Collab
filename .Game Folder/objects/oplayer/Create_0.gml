@@ -368,6 +368,8 @@ function should_play_onto_stage_sequence() {
 }
 
 function play_onto_stage_sequence() {
+	oCamera.cam_zoom_current = 0.76;
+	oCamera.cam_zoom_target = 0.76;
 	visible = false
 	has_control = false
 	instance_create_layer(x, y, layer, oSequenceOntoLevel)

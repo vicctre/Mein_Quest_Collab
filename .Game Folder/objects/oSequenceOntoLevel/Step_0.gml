@@ -1,4 +1,3 @@
-
 if is_sequence_finished() {
 	oPlayer.visible = true
 	oPlayer.has_control = true
