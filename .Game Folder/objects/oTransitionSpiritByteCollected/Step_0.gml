@@ -1,5 +1,5 @@
 
-transition_timer--
+transition_timer -= transition_timer_on
 
 switch phase {
 	case 0:
@@ -7,6 +7,7 @@ switch phase {
 			phase++
 			oPlayer.visible = false
 			oPlayer.has_control = false
+			oMusic.switch_music(global.msc_stage_clear, false, 0)
 			sequence_inst = layer_sequence_create(
 					layer, oPlayer.x, oPlayer.y, sequence)
 		}
