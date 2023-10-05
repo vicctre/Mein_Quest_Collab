@@ -99,7 +99,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.92",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"sShanteeWindUp","path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},},
@@ -230,6 +230,7 @@
     {"id":{"name":"Animation_end","path":"scripts/Animation_end/Animation_end.yy",},},
     {"id":{"name":"W1_2_CHOP","path":"sequences/W1_2_CHOP/W1_2_CHOP.yy",},},
     {"id":{"name":"W1_2_part6_END","path":"rooms/W1_2_part6_END/W1_2_part6_END.yy",},},
+    {"id":{"name":"BGM_Post_Battle","path":"sounds/BGM_Post_Battle/BGM_Post_Battle.yy",},},
     {"id":{"name":"oUI","path":"objects/oUI/oUI.yy",},},
     {"id":{"name":"sTitleV1","path":"sprites/sTitleV1/sTitleV1.yy",},},
     {"id":{"name":"SFX_Additional_HP","path":"sounds/SFX_Additional_HP/SFX_Additional_HP.yy",},},

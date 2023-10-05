@@ -178,6 +178,7 @@
     {"name":"sCoin_FX","order":5,"path":"sprites/sCoin_FX/sCoin_FX.yy",},
     {"name":"Animation_end","order":3,"path":"scripts/Animation_end/Animation_end.yy",},
     {"name":"W1_2_part6_END","order":6,"path":"rooms/W1_2_part6_END/W1_2_part6_END.yy",},
+    {"name":"BGM_Post_Battle","order":9,"path":"sounds/BGM_Post_Battle/BGM_Post_Battle.yy",},
     {"name":"oUI","order":4,"path":"objects/oUI/oUI.yy",},
     {"name":"sTitleV1","order":2,"path":"sprites/sTitleV1/sTitleV1.yy",},
     {"name":"SFX_Additional_HP","order":2,"path":"sounds/SFX_Additional_HP/SFX_Additional_HP.yy",},
