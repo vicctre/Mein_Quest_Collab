@@ -32,6 +32,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"INGAME_Objects","folderPath":"folders/Objects/INGAME_Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Items","folderPath":"folders/Objects/Items.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"LevelTransition","folderPath":"folders/Objects/LevelTransition.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"LevelWise","folderPath":"folders/Objects/LevelWise.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Mein Objects","folderPath":"folders/Objects/Mein Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"OutsideGameObjs","folderPath":"folders/Objects/OutsideGameObjs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player","folderPath":"folders/Objects/Player.yy",},
@@ -94,13 +95,12 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"1_2","folderPath":"folders/Tile Sets/1_2.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"1_3","folderPath":"folders/Tile Sets/1_3.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"LevelWise","folderPath":"folders/Objects/LevelWise.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"sShanteeWindUp","path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},},

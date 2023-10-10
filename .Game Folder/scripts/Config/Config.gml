@@ -16,6 +16,8 @@ player_damage_blinking_color = c_white
 player_accel = 0.2
 player_decel = 0.5
 
+spirit_byte_flickering_image_speed = 0.5
+
 tufful_hp = 16
 tufful_intro_landing_time = 117
 tuffull_intro_roar_time = 178

@@ -17,6 +17,7 @@
     {"name":"INGAME_Objects","order":2,"path":"folders/Objects/INGAME_Objects.yy",},
     {"name":"Items","order":8,"path":"folders/Objects/Items.yy",},
     {"name":"LevelTransition","order":7,"path":"folders/Objects/LevelTransition.yy",},
+    {"name":"LevelWise","order":11,"path":"folders/Objects/LevelWise.yy",},
     {"name":"Mein Objects","order":5,"path":"folders/Objects/Mein Objects.yy",},
     {"name":"OutsideGameObjs","order":6,"path":"folders/Objects/OutsideGameObjs.yy",},
     {"name":"Player","order":4,"path":"folders/Objects/Player.yy",},
@@ -71,7 +72,6 @@
     {"name":"1_2","order":1,"path":"folders/Tile Sets/1_2.yy",},
     {"name":"1_3","order":2,"path":"folders/Tile Sets/1_3.yy",},
     {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
-    {"name":"LevelWise","order":11,"path":"folders/Objects/LevelWise.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sShanteeWindUp","order":4,"path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},

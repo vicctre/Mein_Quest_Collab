@@ -12,3 +12,5 @@ path = path_duplicate(pthSpiritByte)
 var scale = (x - pathxend) / (pathx - pathxend)
 path_rescale(path, scale, 1)
 path_start(path, sp, path_action_stop, false)
+
+flickering_image_index = 0
