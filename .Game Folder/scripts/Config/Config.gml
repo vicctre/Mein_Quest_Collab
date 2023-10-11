@@ -8,7 +8,8 @@ heal_amount_small = 1
 player_dead_vsp = -5
 player_dead_hsp = 0
 player_hp_max = 4
-player_hp_start = player_hp_max - 1
+player_invincible = false
+player_hp_start = player_hp_max
 player_hp = player_hp_start
 player_invincibilty_time = 90
 player_door_enter_anim_sp = 0.65
@@ -28,4 +29,10 @@ configFog = {
 	alpha2: 0.15,
 	alpha3: 0.15,
 	color: #94C8F2,
+}
+
+if DEV {
+	player_invincible = true
+	player_hp_start = player_hp_max
+	layer_hp = player_hp_start
 }

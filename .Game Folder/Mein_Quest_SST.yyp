@@ -79,6 +79,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Hazards","folderPath":"folders/Sprites/Hazards.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Items","folderPath":"folders/Sprites/Items.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Labels","folderPath":"folders/Sprites/Labels.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tutorial Bubbles","folderPath":"folders/Sprites/Labels/Tutorial Bubbles.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Mein Sprites","folderPath":"folders/Sprites/Mein Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"In Use","folderPath":"folders/Sprites/Mein Sprites/In Use.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Not Currently Used","folderPath":"folders/Sprites/Mein Sprites/Not Currently Used.yy",},
@@ -95,13 +96,12 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"1_2","folderPath":"folders/Tile Sets/1_2.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"1_3","folderPath":"folders/Tile Sets/1_3.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tutorial Bubbles","folderPath":"folders/Sprites/Labels/Tutorial Bubbles.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"sShanteeWindUp","path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},},

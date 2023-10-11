@@ -60,6 +60,7 @@
     {"name":"Hazards","order":9,"path":"folders/Sprites/Hazards.yy",},
     {"name":"Items","order":7,"path":"folders/Sprites/Items.yy",},
     {"name":"Labels","order":5,"path":"folders/Sprites/Labels.yy",},
+    {"name":"Tutorial Bubbles","order":6,"path":"folders/Sprites/Labels/Tutorial Bubbles.yy",},
     {"name":"In Use","order":1,"path":"folders/Sprites/Mein Sprites/In Use.yy",},
     {"name":"Obj.","order":11,"path":"folders/Sprites/Obj..yy",},
     {"name":"Tile_Tests","order":1,"path":"folders/Sprites/Tile_Tests.yy",},
@@ -72,7 +73,6 @@
     {"name":"1_2","order":1,"path":"folders/Tile Sets/1_2.yy",},
     {"name":"1_3","order":2,"path":"folders/Tile Sets/1_3.yy",},
     {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
-    {"name":"Tutorial Bubbles","order":6,"path":"folders/Sprites/Labels/Tutorial Bubbles.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sShanteeWindUp","order":4,"path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},

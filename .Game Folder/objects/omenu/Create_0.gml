@@ -33,7 +33,7 @@ function StartNew() {
 	if room == MenuTitleScreenV1 {
 		oMusic.switch_music(global.msc_stage_1_1)
 	}
-	SlideTransition(TRANS_MODE.NEXT)
+	SlideTransition(TRANS_MODE.GOTO, W1_1_part0)
 	global.player_hp = global.player_hp_max
 }
 

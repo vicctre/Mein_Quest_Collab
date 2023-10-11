@@ -15,8 +15,7 @@ function resetable_globals() {
 	global.coins = 0
 	global.coins_heal_amount = 100
 	global.coins_timer = 0 //for when coins flash yellow on collection
-	global.pages_placeholder = 0;
-	global.player_invincible = false
+	global.pages_placeholder = 0
 
 	global.rooms_with_onto_stage_seq = [
 		W1_1_part1,
