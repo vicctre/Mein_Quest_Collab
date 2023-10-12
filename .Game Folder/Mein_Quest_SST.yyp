@@ -101,7 +101,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.92",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"sShanteeWindUp","path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},},
@@ -227,6 +227,8 @@
     {"id":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},},
     {"id":{"name":"Thin_Tiles","path":"tilesets/Thin_Tiles/Thin_Tiles.yy",},},
     {"id":{"name":"ApploonSpawner","path":"objects/ApploonSpawner/ApploonSpawner.yy",},},
+    {"id":{"name":"Mein_Victory02","path":"sprites/Mein_Victory02/Mein_Victory02.yy",},},
+    {"id":{"name":"seqPlayerVictory02","path":"sequences/seqPlayerVictory02/seqPlayerVictory02.yy",},},
     {"id":{"name":"RoomTemplate","path":"rooms/RoomTemplate/RoomTemplate.yy",},},
     {"id":{"name":"SFX_AttackWiff","path":"sounds/SFX_AttackWiff/SFX_AttackWiff.yy",},},
     {"id":{"name":"SFX_Door","path":"sounds/SFX_Door/SFX_Door.yy",},},
@@ -250,6 +252,7 @@
     {"id":{"name":"oLanding","path":"objects/oLanding/oLanding.yy",},},
     {"id":{"name":"oPause","path":"objects/oPause/oPause.yy",},},
     {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},},
+    {"id":{"name":"sTTB06","path":"sprites/sTTB06/sTTB06.yy",},},
     {"id":{"name":"SFX_Heal","path":"sounds/SFX_Heal/SFX_Heal.yy",},},
     {"id":{"name":"sShadowSlope2","path":"sprites/sShadowSlope2/sShadowSlope2.yy",},},
     {"id":{"name":"common","path":"scripts/common/common.yy",},},
