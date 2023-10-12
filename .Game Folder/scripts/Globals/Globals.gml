@@ -18,7 +18,7 @@ function resetable_globals() {
 	global.pages_placeholder = 0
 
 	global.rooms_with_onto_stage_seq = [
-		W1_1_part1,
+		W1_1_part0,
 		W1_2_part1,
 	]
 
