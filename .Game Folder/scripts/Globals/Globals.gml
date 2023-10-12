@@ -18,7 +18,7 @@ function resetable_globals() {
 	global.pages_placeholder = 0
 
 	global.rooms_with_onto_stage_seq = [
-		W1_1_part0,
+		W1_1_part1,
 		W1_2_part1,
 	]
 
@@ -26,7 +26,7 @@ function resetable_globals() {
 	global.dev_level_goto = noone
 	if DEV {
 		global.player_invincible = true
-		global.dev_level_goto = W1_1_part4
+		global.dev_level_goto = W1_1_part5
 	}
 }
 resetable_globals();
