@@ -19,10 +19,9 @@ player_decel = 0.5
 
 spirit_byte_flickering_image_speed = 0.5
 
-tufful_hp = 16
+tufful_hp = 14
 tufful_intro_landing_time = 117
 tuffull_intro_roar_time = 178
-
 
 configFog = {
 	alpha1: 0.1,
