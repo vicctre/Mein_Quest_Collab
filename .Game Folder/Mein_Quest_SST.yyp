@@ -274,6 +274,7 @@
     {"id":{"name":"Idle02","path":"sprites/Idle02/Idle02.yy",},},
     {"id":{"name":"TileSet_TBG_ShadowTest","path":"tilesets/TileSet_TBG_ShadowTest/TileSet_TBG_ShadowTest.yy",},},
     {"id":{"name":"sPlayerAttack","path":"sprites/sPlayerAttack/sPlayerAttack.yy",},},
+    {"id":{"name":"oGuiFixWorkaround","path":"objects/oGuiFixWorkaround/oGuiFixWorkaround.yy",},},
     {"id":{"name":"sChest","path":"sprites/sChest/sChest.yy",},},
     {"id":{"name":"oCrate","path":"objects/oCrate/oCrate.yy",},},
     {"id":{"name":"sBackground1","path":"sprites/sBackground1/sBackground1.yy",},},

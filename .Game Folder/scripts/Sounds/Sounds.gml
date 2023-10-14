@@ -36,3 +36,4 @@ sfx_GoUP = SFX_Boss_jump
 sfx_roar01 = SFX_Tuffull_Roar
 sfx_whip = SFX_Whip
 
+sfx_post_battle = BGM_Post_Battle

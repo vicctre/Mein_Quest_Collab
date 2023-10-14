@@ -214,6 +214,7 @@
     {"name":"Idle02","order":26,"path":"sprites/Idle02/Idle02.yy",},
     {"name":"TileSet_TBG_ShadowTest","order":7,"path":"tilesets/TileSet_TBG_ShadowTest/TileSet_TBG_ShadowTest.yy",},
     {"name":"sPlayerAttack","order":7,"path":"sprites/sPlayerAttack/sPlayerAttack.yy",},
+    {"name":"oGuiFixWorkaround","order":12,"path":"objects/oGuiFixWorkaround/oGuiFixWorkaround.yy",},
     {"name":"oCrate","order":2,"path":"objects/oCrate/oCrate.yy",},
     {"name":"sLog_Ride_Segments","order":1,"path":"sprites/sLog_Ride_Segments/sLog_Ride_Segments.yy",},
     {"name":"sCrouch","order":3,"path":"sprites/sCrouch/sCrouch.yy",},
