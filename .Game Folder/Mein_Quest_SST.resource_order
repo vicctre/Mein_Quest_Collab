@@ -126,6 +126,7 @@
     {"name":"sShanteeIdle","order":6,"path":"sprites/sShanteeIdle/sShanteeIdle.yy",},
     {"name":"S_T_T_Inside","order":6,"path":"sprites/S_T_T_Inside/S_T_T_Inside.yy",},
     {"name":"sPlayerEnterDoor","order":12,"path":"sprites/sPlayerEnterDoor/sPlayerEnterDoor.yy",},
+    {"name":"sTTB07","order":6,"path":"sprites/sTTB07/sTTB07.yy",},
     {"name":"sTuffull_jump","order":7,"path":"sprites/sTuffull_jump/sTuffull_jump.yy",},
     {"name":"Mein_GemPose_strip7","order":20,"path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},
     {"name":"oMenu","order":1,"path":"objects/oMenu/oMenu.yy",},

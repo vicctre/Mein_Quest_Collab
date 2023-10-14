@@ -168,6 +168,7 @@
     {"id":{"name":"S_T_T_Inside","path":"sprites/S_T_T_Inside/S_T_T_Inside.yy",},},
     {"id":{"name":"Notes","path":"notes/Notes/Notes.yy",},},
     {"id":{"name":"sPlayerEnterDoor","path":"sprites/sPlayerEnterDoor/sPlayerEnterDoor.yy",},},
+    {"id":{"name":"sTTB07","path":"sprites/sTTB07/sTTB07.yy",},},
     {"id":{"name":"sTuffull_jump","path":"sprites/sTuffull_jump/sTuffull_jump.yy",},},
     {"id":{"name":"Mein_GemPose_strip7","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},},
