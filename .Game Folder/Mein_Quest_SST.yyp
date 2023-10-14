@@ -8,6 +8,7 @@
   "configs": {
     "children": [
       {"children":[],"name":"Dev",},
+      {"children":[],"name":"Demo",},
     ],
     "name": "Default",
   },
