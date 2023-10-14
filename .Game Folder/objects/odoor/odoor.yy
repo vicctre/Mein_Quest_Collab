@@ -25,6 +25,7 @@
   "physicsStartAwake": true,
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"room_to_go","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"W1_1_part2","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"for_development","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"False","varType":3,},
   ],
   "solid": false,
   "spriteId": {

@@ -138,6 +138,7 @@
     {"name":"sThinBGV2","order":15,"path":"sprites/sThinBGV2/sThinBGV2.yy",},
     {"name":"sShadowSlopeGradiant","order":1,"path":"sprites/sShadowSlopeGradiant/sShadowSlopeGradiant.yy",},
     {"name":"sCoinBig","order":8,"path":"sprites/sCoinBig/sCoinBig.yy",},
+    {"name":"rmGuiWorkaround","order":4,"path":"rooms/rmGuiWorkaround/rmGuiWorkaround.yy",},
     {"name":"sTuffull_jump_prep","order":6,"path":"sprites/sTuffull_jump_prep/sTuffull_jump_prep.yy",},
     {"name":"sThinBG","order":13,"path":"sprites/sThinBG/sThinBG.yy",},
     {"name":"W1_2","order":3,"path":"tilesets/W1_2/W1_2.yy",},

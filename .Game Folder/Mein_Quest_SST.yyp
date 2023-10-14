@@ -180,6 +180,7 @@
     {"id":{"name":"sThinBGV2","path":"sprites/sThinBGV2/sThinBGV2.yy",},},
     {"id":{"name":"sShadowSlopeGradiant","path":"sprites/sShadowSlopeGradiant/sShadowSlopeGradiant.yy",},},
     {"id":{"name":"sCoinBig","path":"sprites/sCoinBig/sCoinBig.yy",},},
+    {"id":{"name":"rmGuiWorkaround","path":"rooms/rmGuiWorkaround/rmGuiWorkaround.yy",},},
     {"id":{"name":"sTuffull_jump_prep","path":"sprites/sTuffull_jump_prep/sTuffull_jump_prep.yy",},},
     {"id":{"name":"oEnemy01","path":"objects/oEnemy01/oEnemy01.yy",},},
     {"id":{"name":"sThinBG","path":"sprites/sThinBG/sThinBG.yy",},},
@@ -420,6 +421,7 @@
     {"id":{"name":"TestingGround","path":"rooms/TestingGround/TestingGround.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"rmGuiWorkaround","path":"rooms/rmGuiWorkaround/rmGuiWorkaround.yy",},},
     {"roomId":{"name":"MenuTitleScreenV1","path":"rooms/MenuTitleScreenV1/MenuTitleScreenV1.yy",},},
     {"roomId":{"name":"W1_1_part2","path":"rooms/W1_1_part2/W1_1_part2.yy",},},
     {"roomId":{"name":"W1_1_part3","path":"rooms/W1_1_part3/W1_1_part3.yy",},},
