@@ -1,4 +1,9 @@
 
+#macro DEV false
+#macro DEMO false
+#macro Dev:DEV true
+#macro Demo:DEMO true
+
 death_transition_delay_time = 140
 death_pause_time = 60
 

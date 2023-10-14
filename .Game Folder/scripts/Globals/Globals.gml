@@ -3,9 +3,6 @@ These are configs. There are different config value sets like Default and Dev.
 You can change config in upper right corner of GM IDE.
 Read more in manual.
 */
-#macro Default:DEV false
-#macro Dev:DEV true
-
 
 gui_adjusted = false
 music_gain_array = []
