@@ -18,15 +18,17 @@ for(var i = 0; i < page_count; i++) {
 }
 
 
+var xx = 1246
+var yy = 48
 if (global.coins_timer > 0) {
 	global.coins_timer--;
 	shader_set(YellowShader);
 	uniform = shader_get_uniform(YellowShader, "yellow_alpha");
 	shader_set_uniform_f(uniform, 0.5-abs(0.5-global.coins_timer/global.coins_timer_max));
-	draw_text_outlined(1220, 45, global.coins, color, color2);
+	draw_text_outlined(xx, yy, global.coins, color, color2);
 	shader_reset();
 } else {
-	draw_text_outlined(1220, 45, global.coins, color, color2);
+	draw_text_outlined(xx, yy, global.coins, color, color2);
 }
 /*
 if (instance_exists(oTransitionTuffulDefeated)) {

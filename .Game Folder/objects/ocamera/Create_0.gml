@@ -1,5 +1,12 @@
 /// Set Up Camera
 
+function SetRoomStartCamera() {
+	if room == W1_1_part1 or room == W1_1_part2 {
+		oCamera.cam_zoom_current = 0.76;
+		oCamera.cam_zoom_target = 0.76;
+	}
+}
+
 view_enabled = true
 view_visible[0] = true
 cam = view_camera[0]

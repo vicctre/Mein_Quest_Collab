@@ -1,9 +1,11 @@
 ///remember, its locked to the screen not the camera 
 /// @desc Draw menu 
 
+var halign = draw_get_halign(), valign = draw_get_valign()
+
 draw_set_font(fMenu); 
-draw_set_halign(x_ancor); 
-draw_set_valign(y_ancor); 
+draw_set_halign(x_ancor);
+draw_set_valign(y_ancor);
 //its important to set them BEFORE you draw any text 
 for (var i = 0; i < array_length(menu); i++) //or "i = i + 1" we are just increasing it by 1 
 {
@@ -29,4 +31,5 @@ for (var i = 0; i < array_length(menu); i++) //or "i = i + 1" we are just increa
 	draw_text(xx,yy,txt); 
 }
 
-
+draw_set_halign(halign);
+draw_set_valign(valign);

@@ -8,6 +8,7 @@ if (room == W1_1_part5) {
 	follow = id;
 	cam_width = 480;
 } else {
+	SetRoomStartCamera()
 	ResizeCamera()
 	follow = oPlayer
 	cam_width = cam_width_base;
