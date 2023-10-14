@@ -258,6 +258,7 @@
     {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},},
     {"id":{"name":"sTTB06","path":"sprites/sTTB06/sTTB06.yy",},},
     {"id":{"name":"SFX_Heal","path":"sounds/SFX_Heal/SFX_Heal.yy",},},
+    {"id":{"name":"oAdventureLogsScreen","path":"objects/oAdventureLogsScreen/oAdventureLogsScreen.yy",},},
     {"id":{"name":"sShadowSlope2","path":"sprites/sShadowSlope2/sShadowSlope2.yy",},},
     {"id":{"name":"common","path":"scripts/common/common.yy",},},
     {"id":{"name":"oSequenceTuffulAppear","path":"objects/oSequenceTuffulAppear/oSequenceTuffulAppear.yy",},},
@@ -418,6 +419,7 @@
     {"id":{"name":"sShanteeCycle","path":"sprites/sShanteeCycle/sShanteeCycle.yy",},},
     {"id":{"name":"sAL_Icon_animation","path":"sprites/sAL_Icon_animation/sAL_Icon_animation.yy",},},
     {"id":{"name":"seqTuffullIntro_T7","path":"sequences/seqTuffullIntro_T7/seqTuffullIntro_T7.yy",},},
+    {"id":{"name":"rmAdventureLogsScreen","path":"rooms/rmAdventureLogsScreen/rmAdventureLogsScreen.yy",},},
     {"id":{"name":"sEldoon_Large","path":"sprites/sEldoon_Large/sEldoon_Large.yy",},},
     {"id":{"name":"TestingGround","path":"rooms/TestingGround/TestingGround.yy",},},
   ],
@@ -444,6 +446,7 @@
     {"roomId":{"name":"W1_3BOSS","path":"rooms/W1_3BOSS/W1_3BOSS.yy",},},
     {"roomId":{"name":"W1_3_part1","path":"rooms/W1_3_part1/W1_3_part1.yy",},},
     {"roomId":{"name":"W1_1_part1","path":"rooms/W1_1_part1/W1_1_part1.yy",},},
+    {"roomId":{"name":"rmAdventureLogsScreen","path":"rooms/rmAdventureLogsScreen/rmAdventureLogsScreen.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

@@ -1,7 +1,7 @@
 
 event_inherited()
 
-next_room = W1_2_part1
+next_room = rmAdventureLogsScreen
 destroy_delay = 60
 sequence = seqPlayerVictory
 

@@ -39,4 +39,5 @@ if DEV {
 	player_invincible = true
 	player_hp_start = player_hp_max
 	layer_hp = player_hp_start
+	tufful_hp = 1
 }
