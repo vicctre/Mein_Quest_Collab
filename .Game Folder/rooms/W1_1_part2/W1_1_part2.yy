@@ -156,6 +156,7 @@
     {"name":"inst_1D7CEAD6","path":"rooms/W1_1_part2/W1_1_part2.yy",},
     {"name":"inst_3DB2960E","path":"rooms/W1_1_part2/W1_1_part2.yy",},
     {"name":"inst_23A10C99","path":"rooms/W1_1_part2/W1_1_part2.yy",},
+    {"name":"inst_420F71A0","path":"rooms/W1_1_part2/W1_1_part2.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -255,6 +256,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_23A10C99","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"propertyId":{"name":"for_development","path":"objects/oDoor/oDoor.yy",},"value":"True",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":63.0,"y":328.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_420F71A0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCameraZoomArea","path":"objects/oCameraZoomArea/oCameraZoomArea.yy",},"properties":[],"rotation":0.0,"scaleX":8.75,"scaleY":10.0,"x":124.0,"y":240.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"oWall","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_704B6B17","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":112.0,"y":368.0,},

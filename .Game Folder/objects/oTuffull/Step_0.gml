@@ -61,7 +61,7 @@ switch(boss_state) {
 				instance_create_layer(x, y, layer, oSpiritByte)
 				// audio_play_sound(global.sfx_post_battle)
 				spirit_byte_dropped = true
-				oMusic.switch_music(global.sfx_post_battle, false, 0)
+				oMusic.switch_music(global.sfx_post_battle, true, 0)
 			}
 		}
 	break;

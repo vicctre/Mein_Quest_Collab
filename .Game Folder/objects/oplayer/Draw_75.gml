@@ -11,7 +11,7 @@
 //scr_debug_show_var("sprite_yoffset", sprite_yoffset)
 //scr_debug_show_var("image_xscale", image_xscale)
 //scr_debug_show_var("image_speed", image_speed)
-//scr_debug_show_var("state", state)
+//scr_debug_show_var("visible", visible)
 
 
 scr_debug_scripts_update()

@@ -103,7 +103,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"sShanteeWindUp","path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},},
@@ -271,6 +271,7 @@
     {"id":{"name":"Mein_JumpUp_strip5","path":"sprites/Mein_JumpUp_strip5/Mein_JumpUp_strip5.yy",},},
     {"id":{"name":"sCrouchTransition","path":"sprites/sCrouchTransition/sCrouchTransition.yy",},},
     {"id":{"name":"sBGPlayground","path":"sprites/sBGPlayground/sBGPlayground.yy",},},
+    {"id":{"name":"oThanksForPlayingScreen","path":"objects/oThanksForPlayingScreen/oThanksForPlayingScreen.yy",},},
     {"id":{"name":"sPlayerW","path":"sprites/sPlayerW/sPlayerW.yy",},},
     {"id":{"name":"BGM_CLEAR","path":"sounds/BGM_CLEAR/BGM_CLEAR.yy",},},
     {"id":{"name":"Idle02","path":"sprites/Idle02/Idle02.yy",},},
@@ -291,6 +292,7 @@
     {"id":{"name":"tt","path":"rooms/tt/tt.yy",},},
     {"id":{"name":"Idle03","path":"sprites/Idle03/Idle03.yy",},},
     {"id":{"name":"SFX_EnemyDead","path":"sounds/SFX_EnemyDead/SFX_EnemyDead.yy",},},
+    {"id":{"name":"rmThanksForPlayingScreen","path":"rooms/rmThanksForPlayingScreen/rmThanksForPlayingScreen.yy",},},
     {"id":{"name":"ThinWallSprite","path":"sprites/ThinWallSprite/ThinWallSprite.yy",},},
     {"id":{"name":"sOTreeOpacityExample","path":"sprites/sOTreeOpacityExample/sOTreeOpacityExample.yy",},},
     {"id":{"name":"BGM_Thanks_for_playing","path":"sounds/BGM_Thanks_for_playing/BGM_Thanks_for_playing.yy",},},
@@ -448,6 +450,7 @@
     {"roomId":{"name":"W1_3_part1","path":"rooms/W1_3_part1/W1_3_part1.yy",},},
     {"roomId":{"name":"W1_1_part1","path":"rooms/W1_1_part1/W1_1_part1.yy",},},
     {"roomId":{"name":"rmAdventureLogsScreen","path":"rooms/rmAdventureLogsScreen/rmAdventureLogsScreen.yy",},},
+    {"roomId":{"name":"rmThanksForPlayingScreen","path":"rooms/rmThanksForPlayingScreen/rmThanksForPlayingScreen.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
