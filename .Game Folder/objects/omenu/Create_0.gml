@@ -78,7 +78,8 @@ menu = [
 		}
 	},
 	{
-		title: "New Game",
+		//title: "New Game",
+		title: "Start",
 		action: oMenu.StartNew
 	},
 ]

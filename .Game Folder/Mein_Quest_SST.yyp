@@ -103,7 +103,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.92",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"sShanteeWindUp","path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},},
@@ -276,6 +276,7 @@
     {"id":{"name":"BGM_CLEAR","path":"sounds/BGM_CLEAR/BGM_CLEAR.yy",},},
     {"id":{"name":"Idle02","path":"sprites/Idle02/Idle02.yy",},},
     {"id":{"name":"TileSet_TBG_ShadowTest","path":"tilesets/TileSet_TBG_ShadowTest/TileSet_TBG_ShadowTest.yy",},},
+    {"id":{"name":"sVT_Logo","path":"sprites/sVT_Logo/sVT_Logo.yy",},},
     {"id":{"name":"sPlayerAttack","path":"sprites/sPlayerAttack/sPlayerAttack.yy",},},
     {"id":{"name":"oGuiFixWorkaround","path":"objects/oGuiFixWorkaround/oGuiFixWorkaround.yy",},},
     {"id":{"name":"sChest","path":"sprites/sChest/sChest.yy",},},
@@ -351,6 +352,7 @@
     {"id":{"name":"sCutCubeBreak","path":"sprites/sCutCubeBreak/sCutCubeBreak.yy",},},
     {"id":{"name":"BGM_Dead","path":"sounds/BGM_Dead/BGM_Dead.yy",},},
     {"id":{"name":"oTransitionTuffulDefeated","path":"objects/oTransitionTuffulDefeated/oTransitionTuffulDefeated.yy",},},
+    {"id":{"name":"sDNS_Logo","path":"sprites/sDNS_Logo/sDNS_Logo.yy",},},
     {"id":{"name":"LevelTransition","path":"scripts/LevelTransition/LevelTransition.yy",},},
     {"id":{"name":"SFX_Menu_select","path":"sounds/SFX_Menu_select/SFX_Menu_select.yy",},},
     {"id":{"name":"BGM_1_1","path":"sounds/BGM_1_1/BGM_1_1.yy",},},
