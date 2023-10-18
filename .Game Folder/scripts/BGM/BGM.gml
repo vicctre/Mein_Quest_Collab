@@ -9,6 +9,7 @@ msc_pickup = BGM_GET
 msc_title_screen = BGM_Title_Screen
 msc_THX = BGM_Thanks_for_playing
 msc_Post = BGM_Post_Battle
+msc_AdvLog = BGM_AdvLogReview
 //BGM_Menu = 
 //BGM_intro = 
 
