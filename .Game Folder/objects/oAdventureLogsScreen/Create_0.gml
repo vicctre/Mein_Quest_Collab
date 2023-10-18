@@ -1,6 +1,6 @@
 
 alarm[0] = 60
-log_sprite = AdvLog_Temp
+log_sprite = AdvLog_V1
 log_scale = 3
 goto_next_room_on = false
 next_room = rmThanksForPlayingScreen
