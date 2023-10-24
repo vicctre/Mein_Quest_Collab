@@ -1,7 +1,11 @@
 
 event_inherited()
 
-next_room = rmAdventureLogsScreen
+var next_level_room = DEMO ? rmThanksForPlayingScreen : W1_2_part1
+
+next_room = global.pages_placeholder 
+			? rmAdventureLogsScreen : next_level_room
+
 destroy_delay = 60
 sequence = seqPlayerVictory
 
