@@ -22,7 +22,7 @@ sfx_HP = SFX_Additional_HP
 sfx_adventure_log = SFX_AdvLog
 sfx_coin = SFX_Coin1
 sfx_chest = SFX_Chest_open
-//sfx_post_battle = 
+//msc_post_battle = 
 
 
 //Enemy sounds 
@@ -36,4 +36,6 @@ sfx_GoUP = SFX_Boss_jump
 sfx_roar01 = SFX_Tuffull_Roar
 sfx_whip = SFX_Whip
 
-sfx_post_battle = BGM_Post_Battle
+// Music
+msc_post_battle = BGM_Post_Battle
+msc_adv_log_screen = BGM_AdvLogReview

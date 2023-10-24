@@ -59,9 +59,9 @@ switch(boss_state) {
 			hsp *= 0.5;
 			if !--spirit_byte_drop_timer and !spirit_byte_dropped {
 				instance_create_layer(x, y, layer, oSpiritByte)
-				// audio_play_sound(global.sfx_post_battle)
+				// audio_play_sound(global.msc_post_battle)
 				spirit_byte_dropped = true
-				oMusic.switch_music(global.sfx_post_battle, true, 0)
+				oMusic.switch_music(global.msc_post_battle, true, 0)
 			}
 		}
 	break;
