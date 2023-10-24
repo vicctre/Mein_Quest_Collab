@@ -3,7 +3,7 @@ alarm[0] = 60
 log_sprite = AdvLog_V1
 log_scale = 3
 goto_next_room_on = false
-next_room = rmThanksForPlayingScreen
+next_room = DEMO ? rmThanksForPlayingScreen : W1_2_part1
 
 prev_halign = draw_get_halign()
 draw_set_halign(fa_middle)
