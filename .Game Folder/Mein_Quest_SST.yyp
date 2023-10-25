@@ -103,7 +103,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.92",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"sShanteeWindUp","path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},},
@@ -156,6 +156,7 @@
     {"id":{"name":"sPlayerAttackAeral","path":"sprites/sPlayerAttackAeral/sPlayerAttackAeral.yy",},},
     {"id":{"name":"sEnemy01Ded","path":"sprites/sEnemy01Ded/sEnemy01Ded.yy",},},
     {"id":{"name":"SFX_Tuffull_Roar","path":"sounds/SFX_Tuffull_Roar/SFX_Tuffull_Roar.yy",},},
+    {"id":{"name":"DNS_Logo","path":"rooms/DNS_Logo/DNS_Logo.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"sShanteeD","path":"sprites/sShanteeD/sShanteeD.yy",},},
     {"id":{"name":"pthSpiritByte","path":"paths/pthSpiritByte/pthSpiritByte.yy",},},
@@ -318,6 +319,7 @@
     {"id":{"name":"seqPlayerVictory","path":"sequences/seqPlayerVictory/seqPlayerVictory.yy",},},
     {"id":{"name":"SFX_Crouch","path":"sounds/SFX_Crouch/SFX_Crouch.yy",},},
     {"id":{"name":"sFleater_D","path":"sprites/sFleater_D/sFleater_D.yy",},},
+    {"id":{"name":"sDemo_Logo","path":"sprites/sDemo_Logo/sDemo_Logo.yy",},},
     {"id":{"name":"W1_3","path":"tilesets/W1_3/W1_3.yy",},},
     {"id":{"name":"oDebug","path":"objects/oDebug/oDebug.yy",},},
     {"id":{"name":"W1_1_part4","path":"rooms/W1_1_part4/W1_1_part4.yy",},},
@@ -420,6 +422,7 @@
     {"id":{"name":"Thin_TilesV2","path":"tilesets/Thin_TilesV2/Thin_TilesV2.yy",},},
     {"id":{"name":"sFood","path":"sprites/sFood/sFood.yy",},},
     {"id":{"name":"SHWhite","path":"shaders/SHWhite/SHWhite.yy",},},
+    {"id":{"name":"fDNS","path":"fonts/fDNS/fDNS.yy",},},
     {"id":{"name":"oThinPlatform","path":"objects/oThinPlatform/oThinPlatform.yy",},},
     {"id":{"name":"Mein_Jump","path":"sprites/Mein_Jump/Mein_Jump.yy",},},
     {"id":{"name":"Mein_EXP02","path":"sprites/Mein_EXP02/Mein_EXP02.yy",},},
@@ -456,6 +459,7 @@
     {"roomId":{"name":"W1_1_part1","path":"rooms/W1_1_part1/W1_1_part1.yy",},},
     {"roomId":{"name":"rmAdventureLogsScreen","path":"rooms/rmAdventureLogsScreen/rmAdventureLogsScreen.yy",},},
     {"roomId":{"name":"rmThanksForPlayingScreen","path":"rooms/rmThanksForPlayingScreen/rmThanksForPlayingScreen.yy",},},
+    {"roomId":{"name":"DNS_Logo","path":"rooms/DNS_Logo/DNS_Logo.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

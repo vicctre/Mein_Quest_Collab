@@ -2,7 +2,7 @@
 var x_ = scr_camx_cent(0);
 var y_ = scr_camy_cent(0);
 
-draw_sprite_ext(sAdvLog_BG, 0, x_, y_, 2, 2, 0, c_white, 1);
+//draw_sprite_ext(sAdvLog_BG, 0, x_, y_, 2, 2, 0, c_white, 1);
 
 draw_sprite_ext(log_sprite, 0, x_, y_, log_scale, log_scale, 0, c_white, 1)
 
