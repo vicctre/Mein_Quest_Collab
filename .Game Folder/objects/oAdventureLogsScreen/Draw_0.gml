@@ -8,7 +8,7 @@ draw_sprite_ext(log_sprite, 0, x_, y_, log_scale, log_scale, 0, c_white, 1)
 
 var description = "This 1'8\" tall creature has the unique ability to use his ears for practically anything, turning as strong as steel on command. Calling Eldoon his home, Mein travels to the Sister Temple to figure out what is going on with the peaceful planet";
 
-draw_text_transformed(x_, y_-240, "Mein", 1, 1, 0);
+draw_text_outlined(x_, y_ - 240, "Mein", c_white, c_black)
 //outline
 var scale = 0.7
 var dy = 30

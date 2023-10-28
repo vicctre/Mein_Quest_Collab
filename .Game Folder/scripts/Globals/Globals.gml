@@ -7,7 +7,7 @@ Read more in manual.
 gui_adjusted = false
 music_gain_array = []
 gui_workaround_restart_happened = false
-
+logo_sequence_speed_scale = 1
 
 function resetable_globals() {
 	global.coins = 0
@@ -24,7 +24,7 @@ function resetable_globals() {
 	global.dev_level_goto = noone
 	if DEV {
 		global.player_invincible = true
-		//global.dev_level_goto = 
+		global.dev_level_goto = MenuTitleScreenV1
 		global.pages_placeholder = 1
 	}
 }

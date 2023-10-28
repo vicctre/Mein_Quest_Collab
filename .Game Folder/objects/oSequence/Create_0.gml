@@ -4,8 +4,9 @@ sequence_inst = noone
 destroy_delay = 10
 
 function is_sequence_finished() {
+	var sp = layer_sequence_get_speedscale(sequence_inst)
 	return layer_sequence_get_headpos(sequence_inst)
-		   == (layer_sequence_get_length(sequence_inst) - 1)
+		   >= (layer_sequence_get_length(sequence_inst) - sp)
 }
 
 function is_sequence_on_frame(frame) {
