@@ -1,5 +1,10 @@
 if (room == MenuTitleScreenV1)
 	exit;
+	
+if (room = rmAdventureLogsScreen) {
+	x = 1376
+	y = 768 
+}
 if (room == W1_1_part5) {
 	x = 240
 	y = 200
