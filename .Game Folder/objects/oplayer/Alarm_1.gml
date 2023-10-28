@@ -1,3 +1,3 @@
 /// @desc restart
 
-SlideTransition(TRANS_MODE.RESTART)
+SlideTransition(TRANS_MODE.GOTO, MenuTitleScreenV1)
