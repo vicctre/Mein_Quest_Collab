@@ -14,8 +14,12 @@ if paused {
 		oMenuPause.PerformButton(1)
 	}
 } else if keyboard_check_pressed(vk_escape) {
-	if room == rmThanksForPlayingScreen {
-		SlideTransition(TRANS_MODE.GOTO, MenuTitleScreenV1)
+	if array_contains([
+			rmThanksForPlayingScreen,
+			rmAdventureLogsScreen,
+			rmDNS_Logo
+		], room) {
+		SlideTransition(TRANS_MODE.NEXT)
 		exit
 	}
 	PauseWithMenu()
