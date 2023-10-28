@@ -14,5 +14,9 @@ if paused {
 		oMenuPause.PerformButton(1)
 	}
 } else if keyboard_check_pressed(vk_escape) {
+	if room == rmThanksForPlayingScreen {
+		SlideTransition(TRANS_MODE.GOTO, MenuTitleScreenV1)
+		exit
+	}
 	PauseWithMenu()
 }
