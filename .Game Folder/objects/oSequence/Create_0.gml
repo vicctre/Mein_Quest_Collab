@@ -20,3 +20,7 @@ function pause() {
 function unpause() {
 	layer_sequence_speedscale(sequence_inst, 1)
 }
+
+function on_destroy() {
+	
+}
