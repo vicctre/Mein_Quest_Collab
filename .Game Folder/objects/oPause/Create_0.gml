@@ -3,6 +3,10 @@ ensure_singleton()
 
 paused = false
 
+dim_alpha_max = 0.5
+dim_alpha = 0
+dim_ratio = 0.01
+
 function ReplaceWithPauseGiglet(obj) {
 	with obj {
 		var giglet = instance_create_layer(

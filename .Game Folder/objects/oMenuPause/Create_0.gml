@@ -22,6 +22,7 @@ function Highlight(txt) {
 }
 
 function PerformButton(index) {
+	index = clamp(index, 0, array_length(menu))
 	menu_committed = index
 	menu_y_target = menu_y_target_start
 	menu_control = false

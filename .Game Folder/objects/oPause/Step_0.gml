@@ -3,6 +3,9 @@ if !oTransition.IsOff() or room == MenuTitleScreenV1 {
 	exit
 }
 
+dim_alpha += dim_ratio * sign(paused - 0.5)
+dim_alpha = clamp(dim_alpha, 0, dim_alpha_max)
+
 if paused {
 	if !oMenuPause.menu_control {
 		exit // already quitting
@@ -14,13 +17,5 @@ if paused {
 		oMenuPause.PerformButton(1)
 	}
 } else if keyboard_check_pressed(vk_escape) {
-	if array_contains([
-			rmThanksForPlayingScreen,
-			rmAdventureLogsScreen,
-			rmDNS_Logo
-		], room) {
-		SlideTransition(TRANS_MODE.NEXT)
-		exit
-	}
 	PauseWithMenu()
 }

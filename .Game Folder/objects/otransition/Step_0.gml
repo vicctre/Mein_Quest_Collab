@@ -11,8 +11,12 @@ if (mode != TRANS_MODE.OFF)
 		percent = min(Transition_overlap,percent + max(((Transition_overlap - percent)/10),0.005)); 
 	}
 	
-	if (percent == Transition_overlap) || (percent == 0) 
+	if (percent == Transition_overlap) || (percent == 0)
 	{
+		if transition_delay {
+			transition_delay--
+			exit
+		}
 		switch (mode) 
 		{
 			case TRANS_MODE.INTRO: 

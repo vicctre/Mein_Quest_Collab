@@ -35,7 +35,7 @@ configFog = {
 	color: #94C8F2,
 }
 
-if DEV {
+if DEV or DEMO {
 	player_invincible = true
 	player_hp_start = player_hp_max
 	layer_hp = player_hp_start

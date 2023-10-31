@@ -35,12 +35,15 @@ if (menu_control)
 	var mouse_y_gui = device_mouse_y_to_gui(0); 
 	if (mouse_y_gui < menu_y) && (mouse_y_gui > menu_top) //&& (mouse_x_gui > menu_x) //this only effects the buttons and doesnt make the mouse cover the full screen when selecting
 	{
-		if mouse_moved
+		if mouse_moved {
 			menu_cursor = (menu_y - mouse_y_gui) div (menu_itemheight * 1.5);
+			menu_cursor = clamp(menu_cursor, 0, array_length(menu))
+		}
 		
 		if (mouse_check_button_pressed(mb_left))
 		{
 			menu_cursor = (menu_y - mouse_y_gui) div (menu_itemheight * 1.5);
+			menu_cursor = clamp(menu_cursor, 0, array_length(menu))
 			PerformButton(menu_cursor)
 			audio_play_sound(global.sfx_select,7,false);
 		}
