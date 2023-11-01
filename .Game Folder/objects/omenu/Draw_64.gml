@@ -28,7 +28,7 @@ for (var i = 0; i < array_length(menu); i++) //or "i = i + 1" we are just increa
 	draw_text(xx,yy-offset,txt); 
 	draw_text(xx,yy+offset,txt); 
 	draw_set_color(col); 
-	draw_text(xx,yy,txt); 
+	draw_text(xx,yy,txt);
 }
 
 draw_set_halign(halign);

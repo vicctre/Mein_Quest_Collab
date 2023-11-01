@@ -8,6 +8,7 @@ menu_y_target = gui_height * 0.5
 menu_x = gui_width * 0.5
 
 x_ancor = fa_middle
+menu_speed = 0.2
 
 function AnimateEaseIn() {
 	menu_y += (menu_y_target - menu_y) * menu_speed

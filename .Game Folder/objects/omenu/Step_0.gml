@@ -37,13 +37,11 @@ if (menu_control)
 	{
 		if mouse_moved {
 			menu_cursor = (menu_y - mouse_y_gui) div (menu_itemheight * 1.5);
-			menu_cursor = clamp(menu_cursor, 0, array_length(menu))
 		}
 		
 		if (mouse_check_button_pressed(mb_left))
 		{
 			menu_cursor = (menu_y - mouse_y_gui) div (menu_itemheight * 1.5);
-			menu_cursor = clamp(menu_cursor, 0, array_length(menu))
 			PerformButton(menu_cursor)
 			audio_play_sound(global.sfx_select,7,false);
 		}
