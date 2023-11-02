@@ -208,6 +208,7 @@
     {"name":"SFX_Additional_HP","order":2,"path":"sounds/SFX_Additional_HP/SFX_Additional_HP.yy",},
     {"name":"SFX_Boss_jump","order":10,"path":"sounds/SFX_Boss_jump/SFX_Boss_jump.yy",},
     {"name":"SFX_Menu_Nav","order":7,"path":"sounds/SFX_Menu_Nav/SFX_Menu_Nav.yy",},
+    {"name":"Intro_Sequence","order":9,"path":"rooms/Intro_Sequence/Intro_Sequence.yy",},
     {"name":"sCoin","order":4,"path":"sprites/sCoin/sCoin.yy",},
     {"name":"OPC_04","order":3,"path":"sprites/OPC_04/OPC_04.yy",},
     {"name":"seqVicLogo","order":4,"path":"sequences/seqVicLogo/seqVicLogo.yy",},

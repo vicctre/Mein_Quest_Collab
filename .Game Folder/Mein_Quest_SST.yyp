@@ -266,6 +266,7 @@
     {"id":{"name":"SFX_Boss_jump","path":"sounds/SFX_Boss_jump/SFX_Boss_jump.yy",},},
     {"id":{"name":"SFX_Menu_Nav","path":"sounds/SFX_Menu_Nav/SFX_Menu_Nav.yy",},},
     {"id":{"name":"sPinnik","path":"sprites/sPinnik/sPinnik.yy",},},
+    {"id":{"name":"Intro_Sequence","path":"rooms/Intro_Sequence/Intro_Sequence.yy",},},
     {"id":{"name":"sCoin","path":"sprites/sCoin/sCoin.yy",},},
     {"id":{"name":"OPC_04","path":"sprites/OPC_04/OPC_04.yy",},},
     {"id":{"name":"seqVicLogo","path":"sequences/seqVicLogo/seqVicLogo.yy",},},
@@ -486,6 +487,7 @@
     {"roomId":{"name":"W1_1_part1","path":"rooms/W1_1_part1/W1_1_part1.yy",},},
     {"roomId":{"name":"rmAdventureLogsScreen","path":"rooms/rmAdventureLogsScreen/rmAdventureLogsScreen.yy",},},
     {"roomId":{"name":"rmThanksForPlayingScreen","path":"rooms/rmThanksForPlayingScreen/rmThanksForPlayingScreen.yy",},},
+    {"roomId":{"name":"Intro_Sequence","path":"rooms/Intro_Sequence/Intro_Sequence.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
