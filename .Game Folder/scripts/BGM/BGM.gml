@@ -11,7 +11,7 @@ msc_THX = BGM_Thanks_for_playing
 msc_Post = BGM_Post_Battle
 msc_AdvLog = BGM_AdvLogReview
 //BGM_Menu = 
-//BGM_intro = 
+msc_intro = BGM_Intro_Cutscene
 
 
 

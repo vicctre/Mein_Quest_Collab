@@ -271,6 +271,7 @@
     {"name":"SFX_Crouch","order":12,"path":"sounds/SFX_Crouch/SFX_Crouch.yy",},
     {"name":"sFleater_D","order":1,"path":"sprites/sFleater_D/sFleater_D.yy",},
     {"name":"sDemo_Logo","order":4,"path":"sprites/sDemo_Logo/sDemo_Logo.yy",},
+    {"name":"BGM_Intro_Cutscene","order":11,"path":"sounds/BGM_Intro_Cutscene/BGM_Intro_Cutscene.yy",},
     {"name":"OPC_06","order":5,"path":"sprites/OPC_06/OPC_06.yy",},
     {"name":"oDebug","order":10,"path":"objects/oDebug/oDebug.yy",},
     {"name":"Config","order":23,"path":"scripts/Config/Config.yy",},

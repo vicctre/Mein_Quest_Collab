@@ -15,11 +15,11 @@ sfx_land = SFX_Land
 sfx_dead = SFX_Death
 sfx_heal = SFX_Heal
 sfx_player_damage = SFX_Damage
-sfx_HP = SFX_Additional_HP
+//sfx_HP = SFX_Additional_HP
 
 
 //Object sounds 
-sfx_adventure_log = SFX_AdvLog
+sfx_adventure_log = SFX_Additional_HP //SFX_AdvLog (changed for now)
 sfx_coin = SFX_Coin1
 sfx_chest = SFX_Chest_open
 //msc_post_battle = 

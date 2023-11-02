@@ -104,7 +104,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.92",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"sShanteeWindUp","path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},},
@@ -337,6 +337,7 @@
     {"id":{"name":"SFX_Crouch","path":"sounds/SFX_Crouch/SFX_Crouch.yy",},},
     {"id":{"name":"sFleater_D","path":"sprites/sFleater_D/sFleater_D.yy",},},
     {"id":{"name":"sDemo_Logo","path":"sprites/sDemo_Logo/sDemo_Logo.yy",},},
+    {"id":{"name":"BGM_Intro_Cutscene","path":"sounds/BGM_Intro_Cutscene/BGM_Intro_Cutscene.yy",},},
     {"id":{"name":"OPC_06","path":"sprites/OPC_06/OPC_06.yy",},},
     {"id":{"name":"W1_3","path":"tilesets/W1_3/W1_3.yy",},},
     {"id":{"name":"oDebug","path":"objects/oDebug/oDebug.yy",},},

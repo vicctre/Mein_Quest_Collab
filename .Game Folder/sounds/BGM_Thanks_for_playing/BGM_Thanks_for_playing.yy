@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "BGM_Thanks_for_playing.wav",
   "type": 0,
-  "volume": 0.4,
+  "volume": 0.15,
 }
