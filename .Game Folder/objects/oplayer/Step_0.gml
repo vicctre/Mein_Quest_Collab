@@ -16,7 +16,7 @@ if has_control {
 	key_jump = keyboard_check_pressed(vk_space) or (gamepad_button_check_pressed(0, gp_face1))
 			   or keyboard_check_pressed(ord("W"))
 	key_attack = keyboard_check_pressed(ord("X"))
-				 or keyboard_check_pressed(ord("N"))
+				 or keyboard_check_pressed(ord("K"))
 				 or (gamepad_button_check_pressed(0, gp_face3))
 
 	var gp_hinp = gamepad_axis_value(0, gp_axislh)

@@ -71,3 +71,7 @@ function PauseWithMenuContinue() {
 function game_paused() {
 	return paused or alarm[0] > 0
 }
+
+function SetPaused(value) {
+	paused = value
+}
