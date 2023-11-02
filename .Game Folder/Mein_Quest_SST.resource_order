@@ -42,6 +42,7 @@
     {"name":"Already In Use","order":13,"path":"folders/Sounds/SFX/Already In Use.yy",},
     {"name":"Use Later","order":1,"path":"folders/Sounds/SFX/Use Later.yy",},
     {"name":"Sprites","order":15,"path":"folders/Sprites.yy",},
+    {"name":"1Cutscenes","order":14,"path":"folders/Sprites/1Cutscenes.yy",},
     {"name":"AdventureLogs","order":13,"path":"folders/Sprites/AdventureLogs.yy",},
     {"name":"Backgrounds","order":2,"path":"folders/Sprites/Backgrounds.yy",},
     {"name":"W1-1","order":1,"path":"folders/Sprites/Backgrounds/W1-1.yy",},
@@ -74,7 +75,6 @@
     {"name":"1_2","order":1,"path":"folders/Tile Sets/1_2.yy",},
     {"name":"1_3","order":2,"path":"folders/Tile Sets/1_3.yy",},
     {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
-    {"name":"1Cutscenes","order":14,"path":"folders/Sprites/1Cutscenes.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sShanteeWindUp","order":4,"path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},

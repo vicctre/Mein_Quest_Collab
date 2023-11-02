@@ -33,7 +33,8 @@ menu = [
 	{
 		title: "Quit",
 		action: function() {
-			SlideTransition(TRANS_MODE.RESTART)	
+			SlideTransition(TRANS_MODE.GOTO, MenuTitleScreenV1)
+			oPause.SetPaused(false)
 		}
 	},
 	{

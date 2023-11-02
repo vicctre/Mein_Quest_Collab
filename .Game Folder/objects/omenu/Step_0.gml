@@ -9,25 +9,24 @@ AnimateEaseIn()
 //keyboard Controls 
 if (menu_control) 
 {
-	if (keyboard_check_pressed(vk_up)) 
+	if (keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W")) or keyboard_check_pressed(ord("Z"))) 
 	{
 		menu_cursor ++; 
 		if (menu_cursor >= menu_items) menu_cursor = 0; 
 		audio_play_sound(global.sfx_nav,6,false);
 	}
-
 }
 
 if (menu_control) 
 {
-	if (keyboard_check_pressed(vk_down)) 
+	if (keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"))) 
 	{
 		menu_cursor --; 
 		if (menu_cursor < 0) menu_cursor = menu_items-1; 
 		audio_play_sound(SFX_Menu_Nav,6,false);
 	}
 	
-	if (keyboard_check_pressed(vk_enter)) 
+	if (keyboard_check_pressed(vk_enter) or keyboard_check_pressed(ord("X")))
 	{
 		PerformButton(menu_cursor)
 		audio_play_sound(global.sfx_select,7,false);

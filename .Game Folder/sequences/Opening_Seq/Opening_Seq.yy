@@ -27,7 +27,7 @@
     "name": "Cutscenes",
     "path": "folders/Sequences/Cutscenes.yy",
   },
-  "playback": 0,
+  "playback": 2,
   "playbackSpeed": 60.0,
   "playbackSpeedType": 0,
   "showBackdrop": true,
