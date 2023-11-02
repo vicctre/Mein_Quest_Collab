@@ -61,6 +61,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Need to be Added SFX","folderPath":"folders/Sounds/SFX/Need to be Added SFX.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Use Later","folderPath":"folders/Sounds/SFX/Use Later.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"1Cutscenes","folderPath":"folders/Sprites/1Cutscenes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"AdventureLogs","folderPath":"folders/Sprites/AdventureLogs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Backgrounds","folderPath":"folders/Sprites/Backgrounds.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"W1-1","folderPath":"folders/Sprites/Backgrounds/W1-1.yy",},
@@ -98,13 +99,12 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"1_2","folderPath":"folders/Tile Sets/1_2.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"1_3","folderPath":"folders/Tile Sets/1_3.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"1Cutscenes","folderPath":"folders/Sprites/1Cutscenes.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"sShanteeWindUp","path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},},

@@ -1,20 +1,24 @@
 
-//// Debug
-if keyboard_check_pressed(ord("Q")) {
-	room_speed = room_speed == 60 ? 5 : 60
-}
-
 if has_control {
-	key_left_pressed = keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("A"))
+	key_left_pressed = keyboard_check_pressed(vk_left)
+                     or keyboard_check_pressed(ord("A"))
+                     or keyboard_check_pressed(ord("Q"))
 	key_right_pressed = keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("D"))
-	key_up_pressed = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"))
+	key_up_pressed = keyboard_check_pressed(vk_up)
+					 or keyboard_check_pressed(ord("W"))
+					 or keyboard_check(ord("Z"))
 	key_down = keyboard_check(vk_down) or keyboard_check(ord("S"))
-	key_left = keyboard_check(vk_left) or keyboard_check(ord("A")) or (gamepad_axis_value(0, gp_axislh) < -0.25)
+	key_left = keyboard_check(vk_left)
+			   or keyboard_check(ord("A"))
+			   or (gamepad_axis_value(0, gp_axislh) < -0.25)
+			   or keyboard_check(ord("Q"))
 	key_right = keyboard_check(vk_right) or keyboard_check(ord("D")) or (gamepad_axis_value(0, gp_axislh) > 0.25)
 	key_jump = keyboard_check_pressed(vk_space) or (gamepad_button_check_pressed(0, gp_face1))
 			   or keyboard_check_pressed(ord("W"))
-	key_attack = keyboard_check_pressed(ord("X")) or (gamepad_button_check_pressed(0, gp_face3))
-	
+	key_attack = keyboard_check_pressed(ord("X"))
+				 or keyboard_check_pressed(ord("N"))
+				 or (gamepad_button_check_pressed(0, gp_face3))
+
 	var gp_hinp = gamepad_axis_value(0, gp_axislh)
 	if abs(gp_hinp) > gp_hinp_treshold {
 		key_left = abs(min(gp_hinp, 0))
