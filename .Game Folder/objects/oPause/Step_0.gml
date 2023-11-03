@@ -12,10 +12,6 @@ if !oTransition.IsOff() or array_contains([
 	exit
 }
 
-if  {
-	
-}
-
 if paused {
 	if !oMenuPause.menu_control {
 		exit // already quitting
