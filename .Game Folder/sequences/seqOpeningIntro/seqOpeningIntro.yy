@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSequence",
   "resourceVersion": "1.4",
-  "name": "Opening_Seq",
+  "name": "seqOpeningIntro",
   "autoRecord": true,
   "backdropHeight": 768,
   "backdropImageOpacity": 0.5,

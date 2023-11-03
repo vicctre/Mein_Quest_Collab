@@ -31,9 +31,9 @@ function PerformButton(index) {
 
 function StartNew() {
 	if room == MenuTitleScreenV1 {
-		oMusic.switch_music(global.msc_stage_1_1)
+		oMusic.switch_music(noone)
 	}
-	SlideTransition(TRANS_MODE.GOTO, Intro_Sequence);
+	SlideTransition(TRANS_MODE.GOTO, rmIntroSequence);
 	global.player_hp = global.player_hp_max
 }
 
@@ -76,9 +76,9 @@ menu = [
 				var file = file_text_open_read(SAVEFILE); 
 				var target = file_text_read_real(file); 
 				file_text_close(file); 
-				SlideTransition(TRANS_MODE.GOTO,target); 
+				SlideTransition(TRANS_MODE.GOTO,target);
+				oMusic.switch_music(global.msc_stage_1_1)
 			}
-			oMusic.switch_music(global.msc_stage_1_1)
 		}
 	},
 	{

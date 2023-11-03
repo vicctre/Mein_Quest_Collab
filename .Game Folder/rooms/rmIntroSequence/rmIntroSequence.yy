@@ -1,13 +1,13 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "Intro_Sequence",
+  "name": "rmIntroSequence",
   "creationCodeFile": "",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_74DD2B98","path":"rooms/Intro_Sequence/Intro_Sequence.yy",},
+    {"name":"inst_74DD2B98","path":"rooms/rmIntroSequence/rmIntroSequence.yy",},
   ],
   "isDnd": false,
   "layers": [

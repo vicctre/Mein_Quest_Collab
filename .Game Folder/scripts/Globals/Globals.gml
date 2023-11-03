@@ -24,7 +24,7 @@ function resetable_globals() {
 	global.dev_level_goto = noone
 	if DEV {
 		global.player_invincible = true
-		global.dev_level_goto = rmAdventureLogsScreen
+		//global.dev_level_goto = rmAdventureLogsScreen
 		global.pages_placeholder = 1
 	}
 }
