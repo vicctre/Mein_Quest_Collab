@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "BGM_Intro_Cutscene.wav",
   "type": 0,
-  "volume": 0.6,
+  "volume": 0.7,
 }
