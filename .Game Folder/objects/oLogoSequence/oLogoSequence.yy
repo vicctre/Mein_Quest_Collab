@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "OutsideGameObjs",
-    "path": "folders/Objects/OutsideGameObjs.yy",
+    "name": "Sequences",
+    "path": "folders/Objects/Sequences.yy",
   },
   "parentObjectId": {
     "name": "oSequence",

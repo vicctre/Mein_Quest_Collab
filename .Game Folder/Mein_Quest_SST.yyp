@@ -104,7 +104,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.8.2.106",
   },
   "resources": [
     {"id":{"name":"sShanteeWindUp","path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},},
@@ -180,6 +180,7 @@
     {"id":{"name":"sTTB07","path":"sprites/sTTB07/sTTB07.yy",},},
     {"id":{"name":"sTuffull_jump","path":"sprites/sTuffull_jump/sTuffull_jump.yy",},},
     {"id":{"name":"Mein_GemPose_strip7","path":"sprites/Mein_GemPose_strip7/Mein_GemPose_strip7.yy",},},
+    {"id":{"name":"oIntroSequence","path":"objects/oIntroSequence/oIntroSequence.yy",},},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},},
     {"id":{"name":"W1_2_part3","path":"rooms/W1_2_part3/W1_2_part3.yy",},},
     {"id":{"name":"oSequenceOntoLevel","path":"objects/oSequenceOntoLevel/oSequenceOntoLevel.yy",},},
@@ -466,6 +467,8 @@
     {"roomId":{"name":"rmVicLogo","path":"rooms/rmVicLogo/rmVicLogo.yy",},},
     {"roomId":{"name":"rmDNS_Logo","path":"rooms/rmDNS_Logo/rmDNS_Logo.yy",},},
     {"roomId":{"name":"MenuTitleScreenV1","path":"rooms/MenuTitleScreenV1/MenuTitleScreenV1.yy",},},
+    {"roomId":{"name":"Intro_Sequence","path":"rooms/Intro_Sequence/Intro_Sequence.yy",},},
+    {"roomId":{"name":"W1_1_part1","path":"rooms/W1_1_part1/W1_1_part1.yy",},},
     {"roomId":{"name":"W1_1_part2","path":"rooms/W1_1_part2/W1_1_part2.yy",},},
     {"roomId":{"name":"W1_1_part3","path":"rooms/W1_1_part3/W1_1_part3.yy",},},
     {"roomId":{"name":"W1_1_part4","path":"rooms/W1_1_part4/W1_1_part4.yy",},},
@@ -485,11 +488,10 @@
     {"roomId":{"name":"W1_2_part5_AutoScroller2","path":"rooms/W1_2_part5_AutoScroller2/W1_2_part5_AutoScroller2.yy",},},
     {"roomId":{"name":"W1_3BOSS","path":"rooms/W1_3BOSS/W1_3BOSS.yy",},},
     {"roomId":{"name":"W1_3_part1","path":"rooms/W1_3_part1/W1_3_part1.yy",},},
-    {"roomId":{"name":"W1_1_part1","path":"rooms/W1_1_part1/W1_1_part1.yy",},},
     {"roomId":{"name":"rmAdventureLogsScreen","path":"rooms/rmAdventureLogsScreen/rmAdventureLogsScreen.yy",},},
     {"roomId":{"name":"rmThanksForPlayingScreen","path":"rooms/rmThanksForPlayingScreen/rmThanksForPlayingScreen.yy",},},
-    {"roomId":{"name":"Intro_Sequence","path":"rooms/Intro_Sequence/Intro_Sequence.yy",},},
   ],
+  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],
