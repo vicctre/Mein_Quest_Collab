@@ -88,4 +88,8 @@ menu = [
 	},
 ]
 
+if DEMO {
+	array_delete(menu, 1, 1)
+}
+
 Init()
