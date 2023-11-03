@@ -2,8 +2,18 @@
 dim_alpha += dim_ratio * sign(paused - 0.5)
 dim_alpha = clamp(dim_alpha, 0, dim_alpha_max)
 
-if !oTransition.IsOff() or room == MenuTitleScreenV1 || room == rmIntroSequence {
+if !oTransition.IsOff() or array_contains([
+			rmAdventureLogsScreen,
+			rmThanksForPlayingScreen,
+			rmDNS_Logo,
+			rmIntroSequence,
+			MenuTitleScreenV1
+		], room) {
 	exit
+}
+
+if  {
+	
 }
 
 if paused {
