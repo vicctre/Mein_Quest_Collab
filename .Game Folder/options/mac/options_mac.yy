@@ -2,6 +2,9 @@
   "resourceType": "GMMacOptions",
   "resourceVersion": "1.0",
   "name": "macOS",
+  "ConfigValues": {
+    "Dev": {"option_mac_allow_fullscreen":"false","option_mac_start_fullscreen":"true",},
+  },
   "option_mac_allow_fullscreen": true,
   "option_mac_allow_incoming_network": false,
   "option_mac_allow_outgoing_network": false,
