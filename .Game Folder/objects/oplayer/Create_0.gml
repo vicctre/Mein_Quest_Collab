@@ -42,6 +42,7 @@ on_ground = 0 // used to fake ground for smoother jumping
 wall_obj = oWall
 
 gp_hinp_threshold = 0.25
+controller_hinp_pressed = false;
 
 has_control = true
 state = PLAYERSTATE.FREE
