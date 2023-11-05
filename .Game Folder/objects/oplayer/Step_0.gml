@@ -3,12 +3,14 @@ if has_control {
 	key_left_pressed = keyboard_check_pressed(vk_left)
 					or keyboard_check_pressed(ord("A"))
 					or keyboard_check_pressed(ord("Q"))
-					or (gamepad_axis_value(0, gp_axislh) < -gp_hinp_threshold && !controller_hinp_pressed)
+					or (gamepad_axis_value(0, gp_axislh) < -gp_hinp_threshold && !gp_hinp_pressed)
+					or gamepad_button_check_pressed(0, gp_padl)
 					 
 					 
 	key_right_pressed = keyboard_check_pressed(vk_right)
 					or keyboard_check_pressed(ord("D"))
-					or (gamepad_axis_value(0, gp_axislh) > gp_hinp_threshold && !controller_hinp_pressed)
+					or (gamepad_axis_value(0, gp_axislh) > gp_hinp_threshold && !gp_hinp_pressed)
+					or gamepad_button_check_pressed(0, gp_padr)
 	
 	key_up_pressed = (keyboard_check_pressed(vk_up) * !DEV)
 					 or keyboard_check_pressed(ord("W"))
@@ -34,8 +36,8 @@ if has_control {
 				 or (gamepad_button_check_pressed(0, gp_face3))
 
 	var gp_hinp = gamepad_axis_value(0, gp_axislh)
-	controller_hinp_pressed = abs(gp_hinp) > gp_hinp_threshold;
-	if (controller_hinp_pressed) {
+	gp_hinp_pressed = abs(gp_hinp) > gp_hinp_threshold;
+	if (gp_hinp_pressed) {
 		key_left = abs(min(gp_hinp, 0))
 		key_right = max(gp_hinp, 0)
 	}
