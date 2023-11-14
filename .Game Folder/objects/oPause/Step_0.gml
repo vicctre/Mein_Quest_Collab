@@ -18,11 +18,11 @@ if paused {
 	}
 	// freeze pause alarm
 	alarm[0] += alarm[0] >= 0
-	if keyboard_check_pressed(vk_escape) {
+	if keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(0, gp_start) {
 		//PauseWithMenuContinue()
 		oMenuPause.PerformButton(1)
 	}
-} else if keyboard_check_pressed(vk_escape) 
+} else if (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(0, gp_start))
 			and not instance_exists(oSequence) {
 	PauseWithMenu()
 }

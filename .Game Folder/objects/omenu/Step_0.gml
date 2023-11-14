@@ -1,5 +1,17 @@
 /// @desc Control Menu 
 
+	
+key_up_pressed = (keyboard_check_pressed(vk_up) * !DEV)
+					or keyboard_check_pressed(ord("W"))
+					or keyboard_check_pressed(ord("Z"))
+					or (gamepad_axis_value(0, gp_axislv) < -gp_vinp_threshold && !gp_vinp_pressed)
+					or gamepad_button_check_pressed(0, gp_padu)
+				   
+key_down_pressed = (keyboard_check_pressed(vk_down) * !DEV)
+					or keyboard_check_pressed(ord("S"))
+					or (gamepad_axis_value(0, gp_axislv) > gp_vinp_threshold && !gp_vinp_pressed)
+					or gamepad_button_check_pressed(0, gp_padd)
+
 var mouse_moved = mouse_x != mouse_x_prev or mouse_y != mouse_y_prev
 mouse_x_prev = mouse_x
 mouse_y_prev = mouse_y
@@ -9,7 +21,7 @@ AnimateEaseIn()
 //keyboard Controls 
 if (menu_control) 
 {
-	if (keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W")) or keyboard_check_pressed(ord("Z"))) 
+	if (key_up_pressed) 
 	{
 		menu_cursor ++; 
 		if (menu_cursor >= menu_items) menu_cursor = 0; 
@@ -19,14 +31,13 @@ if (menu_control)
 
 if (menu_control) 
 {
-	if (keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"))) 
+	if (key_down_pressed) 
 	{
 		menu_cursor --; 
 		if (menu_cursor < 0) menu_cursor = menu_items-1; 
 		audio_play_sound(SFX_Menu_Nav,6,false);
 	}
-	
-	if (keyboard_check_pressed(vk_enter) or keyboard_check_pressed(ord("X")))
+	if (keyboard_check_pressed(vk_enter) or keyboard_check_pressed(ord("X")) || gamepad_button_check_pressed(0, gp_face1))
 	{
 		PerformButton(menu_cursor)
 		audio_play_sound(global.sfx_select,7,false);

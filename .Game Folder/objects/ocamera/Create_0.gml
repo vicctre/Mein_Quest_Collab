@@ -28,5 +28,5 @@ shake_magnitude = 1
 shake_remain= 0
 x_shake = 0;
 y_shake = 0;
-buff = 32
+buff = 32;
 

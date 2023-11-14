@@ -13,6 +13,7 @@ heal_amount_small = 1
 player_dead_vsp = -5
 player_dead_hsp = 0
 player_hp_max = 4
+player_hp_max_overheal = 6
 player_invincible = false
 player_hp_start = player_hp_max
 player_hp = player_hp_start

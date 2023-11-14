@@ -40,11 +40,17 @@ function PauseStuff() {
 	with oSequence {
 		pause()
 	}
+	with ApploonSpawner {
+		pause()
+	}
 }
 
 function UnpauseStuff() {
 	ReturnActualInstances()
 	with oSequence {
+		unpause()
+	}
+	with ApploonSpawner {
 		unpause()
 	}
 }

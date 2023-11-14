@@ -1,2 +1,11 @@
 spawn_delay = 180;
-alarm[0] = spawn_delay;
+counter = 0;
+paused = false;
+
+function pause() {
+	paused = true;
+}
+
+function unpause() {
+	paused = false;
+}

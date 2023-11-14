@@ -14,12 +14,18 @@ if has_control {
 	
 	key_up_pressed = (keyboard_check_pressed(vk_up) * !DEV)
 					 or keyboard_check_pressed(ord("W"))
-					 or keyboard_check(ord("Z"))
-					 or (gamepad_axis_value(0, gp_axislv) < -0.85)
-				   or gamepad_button_check(0, gp_padu)
+					 or keyboard_check_pressed(ord("Z"))
+					 or (gamepad_axis_value(0, gp_axislv) < -gp_vinp_threshold && !gp_vinp_pressed)
+				   or gamepad_button_check_pressed(0, gp_padu)
+				   
+	key_down_pressed = (keyboard_check_pressed(vk_down) * !DEV)
+					 or keyboard_check_pressed(ord("S"))
+					 or (gamepad_axis_value(0, gp_axislv) > gp_vinp_threshold && !gp_vinp_pressed)
+				   or gamepad_button_check_pressed(0, gp_padd)
+				   
 	key_down = (keyboard_check(vk_down) * !DEV)
 			   or keyboard_check(ord("S"))
-			   or (gamepad_axis_value(0, gp_axislv) > 0.85)
+			   or (gamepad_axis_value(0, gp_axislv) > gp_vinp_threshold)
 			   or gamepad_button_check(0, gp_padd)
 	key_left = keyboard_check(vk_left)
 			   or keyboard_check(ord("A"))
@@ -41,6 +47,7 @@ if has_control {
 		key_left = abs(min(gp_hinp, 0))
 		key_right = max(gp_hinp, 0)
 	}
+	gp_vinp_pressed = abs(gp_vinp) > gp_vinp_threshold;
 
 } else {
 	key_left_pressed = false
