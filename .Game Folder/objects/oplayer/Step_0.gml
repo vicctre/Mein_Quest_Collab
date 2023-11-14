@@ -47,6 +47,7 @@ if has_control {
 		key_left = abs(min(gp_hinp, 0))
 		key_right = max(gp_hinp, 0)
 	}
+	var gp_vinp = gamepad_axis_value(0, gp_axislv)
 	gp_vinp_pressed = abs(gp_vinp) > gp_vinp_threshold;
 
 } else {

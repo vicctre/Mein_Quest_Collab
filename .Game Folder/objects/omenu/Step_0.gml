@@ -11,6 +11,8 @@ key_down_pressed = (keyboard_check_pressed(vk_down) * !DEV)
 					or keyboard_check_pressed(ord("S"))
 					or (gamepad_axis_value(0, gp_axislv) > gp_vinp_threshold && !gp_vinp_pressed)
 					or gamepad_button_check_pressed(0, gp_padd)
+var gp_vinp = gamepad_axis_value(0, gp_axislv)
+gp_vinp_pressed = abs(gp_vinp) > gp_vinp_threshold;
 
 var mouse_moved = mouse_x != mouse_x_prev or mouse_y != mouse_y_prev
 mouse_x_prev = mouse_x
