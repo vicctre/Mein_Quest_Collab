@@ -64,6 +64,13 @@ if has_control {
 prev_is_sprinting = is_sprinting
 prev_down_free = down_free
 
+//timer for idle animations
+if (sprite_index == sPlayer || sprite_index == currentIdleAnimation) {
+	idle_time++;
+} else {
+	idle_time = 0;
+}
+
 // contact walls
 down_free = place_empty(x, y + 1, wall_obj) && !thin_platform_check(0, 1);
 up_free = place_empty(x, y - 1, wall_obj)

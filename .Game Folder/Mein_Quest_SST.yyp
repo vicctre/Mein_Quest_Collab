@@ -392,7 +392,6 @@
     {"id":{"name":"Tree_Outside","path":"tilesets/Tree_Outside/Tree_Outside.yy",},},
     {"id":{"name":"Label_1","path":"sprites/Label_1/Label_1.yy",},},
     {"id":{"name":"W1_3BOSS","path":"rooms/W1_3BOSS/W1_3BOSS.yy",},},
-    {"id":{"name":"Basic_Attack","path":"objects/Basic_Attack/Basic_Attack.yy",},},
     {"id":{"name":"TreeTower_Outside","path":"tilesets/TreeTower_Outside/TreeTower_Outside.yy",},},
     {"id":{"name":"OPC_03","path":"sprites/OPC_03/OPC_03.yy",},},
     {"id":{"name":"W1_2_part2","path":"rooms/W1_2_part2/W1_2_part2.yy",},},

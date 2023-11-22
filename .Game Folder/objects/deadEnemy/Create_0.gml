@@ -6,3 +6,4 @@ done = 0;
 
 image_speed = 0; 
 rotation_speed = 25;
+flash = 6;
