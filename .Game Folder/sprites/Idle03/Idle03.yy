@@ -50,8 +50,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Not Currently Used",
-    "path": "folders/Sprites/Mein Sprites/Not Currently Used.yy",
+    "name": "In Use",
+    "path": "folders/Sprites/Mein Sprites/In Use.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -32,7 +32,7 @@ move_h = 0
 idle_time = 0;
 idle_delay = 80; //time before idle animation plays
 function choose_idle_animation() {
-	currentIdleAnimation = choose(Idle02, Idle03);
+	currentIdleAnimation = choose(Idle02, Idle03, Idle04, Idle05);
 }
 choose_idle_animation();
 
