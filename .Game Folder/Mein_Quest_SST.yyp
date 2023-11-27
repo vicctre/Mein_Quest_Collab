@@ -367,6 +367,7 @@
     {"id":{"name":"EnemyState_Dead","path":"scripts/EnemyState_Dead/EnemyState_Dead.yy",},},
     {"id":{"name":"oSpiritByte","path":"objects/oSpiritByte/oSpiritByte.yy",},},
     {"id":{"name":"sMeinHP","path":"sprites/sMeinHP/sMeinHP.yy",},},
+    {"id":{"name":"oCamera2","path":"objects/oCamera2/oCamera2.yy",},},
     {"id":{"name":"sTuffull_Idle","path":"sprites/sTuffull_Idle/sTuffull_Idle.yy",},},
     {"id":{"name":"oPlayerDead","path":"objects/oPlayerDead/oPlayerDead.yy",},},
     {"id":{"name":"BGM_Title_Screen","path":"sounds/BGM_Title_Screen/BGM_Title_Screen.yy",},},

@@ -294,6 +294,7 @@
     {"name":"sPlayerFallDj","order":13,"path":"sprites/sPlayerFallDj/sPlayerFallDj.yy",},
     {"name":"EnemyState_Dead","order":4,"path":"scripts/EnemyState_Dead/EnemyState_Dead.yy",},
     {"name":"oSpiritByte","order":8,"path":"objects/oSpiritByte/oSpiritByte.yy",},
+    {"name":"oCamera2","order":15,"path":"objects/oCamera2/oCamera2.yy",},
     {"name":"sTuffull_Idle","order":2,"path":"sprites/sTuffull_Idle/sTuffull_Idle.yy",},
     {"name":"oPlayerDead","order":2,"path":"objects/oPlayerDead/oPlayerDead.yy",},
     {"name":"BGM_Title_Screen","order":7,"path":"sounds/BGM_Title_Screen/BGM_Title_Screen.yy",},
