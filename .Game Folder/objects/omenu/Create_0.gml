@@ -38,6 +38,7 @@ function StartNew() {
 	}
 	SlideTransition(TRANS_MODE.GOTO, rmIntroSequence);
 	global.player_hp = global.player_hp_max
+	resetable_globals()
 }
 
 function AnimateEaseIn() {
