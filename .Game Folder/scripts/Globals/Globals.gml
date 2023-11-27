@@ -23,7 +23,7 @@ function resetable_globals() {
 
 	global.dev_level_goto = noone
 	if DEV {
-		global.player_invincible = true
+		global.player_invincible = false
 		global.dev_level_goto = W1_1_part5
 		global.pages_placeholder = 1
 	}

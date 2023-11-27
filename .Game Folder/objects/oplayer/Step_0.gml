@@ -1,65 +1,13 @@
 
-if has_control {
-	key_left_pressed = keyboard_check_pressed(vk_left)
-					or keyboard_check_pressed(ord("A"))
-					or keyboard_check_pressed(ord("Q"))
-					or (gamepad_axis_value(0, gp_axislh) < -gp_hinp_threshold && !gp_hinp_pressed)
-					or gamepad_button_check_pressed(0, gp_padl)
-					 
-					 
-	key_right_pressed = keyboard_check_pressed(vk_right)
-					or keyboard_check_pressed(ord("D"))
-					or (gamepad_axis_value(0, gp_axislh) > gp_hinp_threshold && !gp_hinp_pressed)
-					or gamepad_button_check_pressed(0, gp_padr)
-	
-	key_up_pressed = (keyboard_check_pressed(vk_up) * !DEV)
-					 or keyboard_check_pressed(ord("W"))
-					 or keyboard_check_pressed(ord("Z"))
-					 or (gamepad_axis_value(0, gp_axislv) < -gp_vinp_threshold && !gp_vinp_pressed)
-				   or gamepad_button_check_pressed(0, gp_padu)
-				   
-	key_down_pressed = (keyboard_check_pressed(vk_down) * !DEV)
-					 or keyboard_check_pressed(ord("S"))
-					 or (gamepad_axis_value(0, gp_axislv) > gp_vinp_threshold && !gp_vinp_pressed)
-				   or gamepad_button_check_pressed(0, gp_padd)
-				   
-	key_down = (keyboard_check(vk_down) * !DEV)
-			   or keyboard_check(ord("S"))
-			   or (gamepad_axis_value(0, gp_axislv) > gp_vinp_threshold)
-			   or gamepad_button_check(0, gp_padd)
-	key_left = keyboard_check(vk_left)
-			   or keyboard_check(ord("A"))
-			   or (gamepad_axis_value(0, gp_axislh) < -gp_hinp_threshold)
-			   or keyboard_check(ord("Q"))
-			   or gamepad_button_check(0, gp_padl)
-	key_right = keyboard_check(vk_right)
-				or keyboard_check(ord("D")) 
-				or (gamepad_axis_value(0, gp_axislh) > gp_hinp_threshold)
-			   or gamepad_button_check(0, gp_padr)
-	key_jump = keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(0, gp_face1)
-	key_attack = keyboard_check_pressed(ord("X"))
-				 or keyboard_check_pressed(ord("K"))
-				 or (gamepad_button_check_pressed(0, gp_face3))
+key_left_pressed = oInput.key_left_pressed * has_control
+key_right_pressed = oInput.key_right_pressed * has_control
+key_up_pressed = oInput.key_up_pressed * has_control
+key_left = oInput.key_left * has_control
+key_right = oInput.key_right * has_control
+key_down = oInput.key_down * has_control
+key_jump = oInput.key_jump * has_control
+key_attack = oInput.key_attack * has_control
 
-	var gp_hinp = gamepad_axis_value(0, gp_axislh)
-	gp_hinp_pressed = abs(gp_hinp) > gp_hinp_threshold;
-	if (gp_hinp_pressed) {
-		key_left = abs(min(gp_hinp, 0))
-		key_right = max(gp_hinp, 0)
-	}
-	var gp_vinp = gamepad_axis_value(0, gp_axislv)
-	gp_vinp_pressed = abs(gp_vinp) > gp_vinp_threshold;
-
-} else {
-	key_left_pressed = false
-	key_right_pressed = false
-	key_up_pressed = false
-	key_left = false
-	key_right = false
-	key_down = false
-	key_jump = false
-	key_attack = false
-}
 
 prev_is_sprinting = is_sprinting
 prev_down_free = down_free

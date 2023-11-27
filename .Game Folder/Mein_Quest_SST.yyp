@@ -104,7 +104,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"sShanteeWindUp","path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},},
@@ -310,6 +310,7 @@
     {"id":{"name":"Label_3","path":"sprites/Label_3/Label_3.yy",},},
     {"id":{"name":"sTHX","path":"sprites/sTHX/sTHX.yy",},},
     {"id":{"name":"oShantee","path":"objects/oShantee/oShantee.yy",},},
+    {"id":{"name":"oInput","path":"objects/oInput/oInput.yy",},},
     {"id":{"name":"tt","path":"rooms/tt/tt.yy",},},
     {"id":{"name":"Idle03","path":"sprites/Idle03/Idle03.yy",},},
     {"id":{"name":"SFX_EnemyDead","path":"sounds/SFX_EnemyDead/SFX_EnemyDead.yy",},},
