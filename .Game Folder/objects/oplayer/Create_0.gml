@@ -396,9 +396,25 @@ function colliding_enemy() {
 	return enemy
 }
 
+function on_death() {
+	if room == W1_1_part5 {
+		SlideTransition(TRANS_MODE.GOTO, W1_1_part4)
+	} else {
+		SlideTransition(TRANS_MODE.RESTART)
+	}
+	global.restart_level_on_death = true
+	global.coins = max(0, global.coins - 30)
+	oMusic.switch_music(global.msc_stage_1_1, false)
+}
+
 instance_create_layer(x, y, layer, oCamera)
 check_reset_hp()
 
 if should_play_onto_stage_sequence() {
 	play_onto_stage_sequence()
+}
+
+if global.restart_level_on_death {
+	global.restart_level_on_death = false
+	global.player_hp = global.player_hp_max
 }

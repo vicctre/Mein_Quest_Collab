@@ -38,9 +38,10 @@ if (mode != TRANS_MODE.OFF)
 			}
 			case TRANS_MODE.RESTART:
 			{
-				mode = TRANS_MODE.OFF; 
-				Restart()
-				break; 
+				mode = TRANS_MODE.INTRO; 
+				room_restart();
+				percent = 1;
+				break;
 			}
 		}
 	}

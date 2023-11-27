@@ -1,3 +1,2 @@
 /// @desc restart
-
-SlideTransition(TRANS_MODE.GOTO, MenuTitleScreenV1)
+on_death()

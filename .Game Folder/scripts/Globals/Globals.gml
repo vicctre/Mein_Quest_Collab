@@ -8,6 +8,7 @@ gui_adjusted = false
 music_gain_array = []
 gui_workaround_restart_happened = false
 logo_sequence_speed_scale = 1
+restart_level_on_death = true
 
 function resetable_globals() {
 	global.coins = 0
