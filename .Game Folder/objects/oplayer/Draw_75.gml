@@ -13,9 +13,4 @@
 //scr_debug_show_var("image_speed", image_speed)
 //scr_debug_show_var("visible", visible)
 
-scr_debug_show_var("", final_hsp_)
-scr_debug_show_var("", hsp)
-scr_debug_show_var("", standing_on_log_)
-
-
 scr_debug_scripts_update()
