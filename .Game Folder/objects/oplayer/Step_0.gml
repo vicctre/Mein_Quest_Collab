@@ -8,6 +8,9 @@ key_down = oInput.key_down * has_control
 key_jump = oInput.key_jump * has_control
 key_attack = oInput.key_attack * has_control
 
+if key_up_pressed or key_down {
+	show_debug_message("up/down")	
+}
 
 prev_is_sprinting = is_sprinting
 prev_down_free = down_free

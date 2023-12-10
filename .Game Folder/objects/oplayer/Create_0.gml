@@ -29,12 +29,15 @@ hsp = 0
 vsp = 0
 dir = 0
 move_h = 0
-idle_time = 0;
-idle_delay = 150; //time before idle animation plays
+idle_time = 0
+idle_delay = 400 //time before idle animation plays
 function choose_idle_animation() {
-	currentIdleAnimation = choose(Idle02, Idle03, Idle04, Idle05);
+	currentIdleAnimation = choose(Idle02, Idle03, Idle04, Idle05)
 }
-choose_idle_animation();
+function choose_idle_delay() {
+	return choose(250, 250, 300, 400)
+}
+choose_idle_animation()
 
 rm_sp_min = 5
 
@@ -171,7 +174,7 @@ function check_perform_crouch() {
 		state = PLAYERSTATE.CROUCH
 		mask_index = sCrouch
 		start_crouch_transition()
-		audio_play_sound(global.sfx_crouch, 5, false);
+		audio_play_sound(global.sfx_crouch, 5, false)
         return true
 	}
     return false
@@ -253,11 +256,12 @@ function Animate() {
 					sprite_index = sPlayerW
 				}
 			} else {
-				if (idle_time < 80)
+				if (idle_time < idle_delay)
 					sprite_index = sPlayer
 				if (idle_time >= idle_delay && sprite_index == sPlayer && image_index < 1) {
-					sprite_index = currentIdleAnimation;
-					image_index = 0;
+					sprite_index = currentIdleAnimation
+					image_index = 0
+					idle_delay = choose_idle_delay()
 				}
 			}
 			break
@@ -292,7 +296,7 @@ function Animate() {
 
 function Kill() {
 	show_debug_message("Kill")
-	global.player_hp = 0;
+	global.player_hp = 0
 	sprite_index = sPlayerDead
 	state = PLAYERSTATE.PRE_DEAD
 	has_control = false
@@ -306,15 +310,15 @@ function Kill() {
 
 function Hit() {
 	if invincibility_timer {
-		return;
+		return
 	}
 	global.player_hp -= global.player_invincible == false
 	show_debug_message("Hit")
-	audio_play_sound(global.sfx_player_damage, 8, false);
+	audio_play_sound(global.sfx_player_damage, 8, false)
 	//this is for when we have both a voice AND SFX for taking damage 
 	if !global.player_hp {
 		Kill()
-		return;
+		return
 	}
 	vsp = hit.vsp
 	hsp = hit.hsp * -image_xscale
