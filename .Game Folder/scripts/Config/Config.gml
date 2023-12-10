@@ -4,6 +4,8 @@
 #macro Dev:DEV true
 #macro Demo:DEMO true
 
+autoscroller_log_sp = 1.5
+
 death_transition_delay_time = 140
 death_pause_time = 60
 

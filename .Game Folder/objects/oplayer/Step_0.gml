@@ -195,11 +195,20 @@ switch state {
 if ((hsp > 0) and !right_free) or ((hsp < 0) and !left_free)
 	hsp = 0
 
-dir = point_direction(0, 0, hsp, vsp)
+var standing_on_log = false
+// floating on log
+if !down_free {
+	standing_on_log = instance_place(x, y + 1, oAutoscrollerLog) != noone
+}
+standing_on_log_ = standing_on_log
+
+var final_hsp = hsp + (standing_on_log * global.autoscroller_log_sp)
+final_hsp_ = final_hsp
+dir = point_direction(0, 0, final_hsp, vsp)
 
 // handle collisions
-if abs(hsp) or abs(vsp)
-	scr_move_coord_contact_obj(hsp, vsp, wall_obj)
+if abs(final_hsp) or abs(vsp)
+	scr_move_coord_contact_obj(final_hsp, vsp, wall_obj)
 
 Animate()
 

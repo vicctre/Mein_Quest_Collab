@@ -9,6 +9,7 @@ music_gain_array = []
 gui_workaround_restart_happened = false
 logo_sequence_speed_scale = 1
 restart_level_on_death = true
+skip_logos = false
 
 function resetable_globals() {
 	global.coins = 0
@@ -25,8 +26,9 @@ function resetable_globals() {
 	global.dev_level_goto = noone
 	if DEV {
 		global.player_invincible = false
-		global.dev_level_goto = W1_1_part5
+		global.dev_level_goto = W1_2_part4_AutoScroller1
 		global.pages_placeholder = 1
+		global.skip_logos = true
 	}
 }
 resetable_globals();

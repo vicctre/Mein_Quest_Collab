@@ -75,6 +75,7 @@
     {"name":"1_2","order":1,"path":"folders/Tile Sets/1_2.yy",},
     {"name":"1_3","order":2,"path":"folders/Tile Sets/1_3.yy",},
     {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
+    {"name":"Autoscroller","order":14,"path":"folders/Objects/Autoscroller.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sShanteeWindUp","order":4,"path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},
@@ -292,6 +293,7 @@
     {"name":"oMenuPause","order":9,"path":"objects/oMenuPause/oMenuPause.yy",},
     {"name":"sShadowSlope2124","order":3,"path":"sprites/sShadowSlope2124/sShadowSlope2124.yy",},
     {"name":"sPlayerFallDj","order":13,"path":"sprites/sPlayerFallDj/sPlayerFallDj.yy",},
+    {"name":"oAutoscrollerLog","order":1,"path":"objects/oAutoscrollerLog/oAutoscrollerLog.yy",},
     {"name":"EnemyState_Dead","order":4,"path":"scripts/EnemyState_Dead/EnemyState_Dead.yy",},
     {"name":"oSpiritByte","order":8,"path":"objects/oSpiritByte/oSpiritByte.yy",},
     {"name":"oCamera2","order":15,"path":"objects/oCamera2/oCamera2.yy",},
@@ -324,6 +326,7 @@
     {"name":"sTitlePrototype2","order":1,"path":"sprites/sTitlePrototype2/sTitlePrototype2.yy",},
     {"name":"oSpiritBytePosition","order":9,"path":"objects/oSpiritBytePosition/oSpiritBytePosition.yy",},
     {"name":"pCut","order":1,"path":"objects/pCut/pCut.yy",},
+    {"name":"oSequenceLogAutoscrollerStart","order":7,"path":"objects/oSequenceLogAutoscrollerStart/oSequenceLogAutoscrollerStart.yy",},
     {"name":"Player","order":8,"path":"scripts/Player/Player.yy",},
     {"name":"oApploon","order":1,"path":"objects/oApploon/oApploon.yy",},
     {"name":"OPC_08","order":7,"path":"sprites/OPC_08/OPC_08.yy",},

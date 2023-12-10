@@ -13,6 +13,10 @@ function is_sequence_on_frame(frame) {
 	return layer_sequence_get_headpos(sequence_inst) == frame
 }
 
+function is_playing() {
+	return layer_sequence_get_speedscale(sequence_inst) != 0
+}
+
 function pause() {
 	layer_sequence_speedscale(sequence_inst, 0)
 }
