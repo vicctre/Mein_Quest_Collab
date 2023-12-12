@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Tile_Tests",
-    "path": "folders/Sprites/Tile_Tests.yy",
+    "name": "Thin BGs",
+    "path": "folders/Sprites/Tile_Tests/Thin BGs.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
