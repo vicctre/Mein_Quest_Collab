@@ -33,9 +33,14 @@ if (instance_exists(follow))
 	}
 }
 
-//update object possiton 
-x += (xTo - x)/25; 
-y += (yTo - y)/25; 
+// update object position
+if smooth_movement_on {
+	x += (xTo - x)/25; 
+	y += (yTo - y)/25; 
+} else {
+	x = xTo;
+	y = yTo;
+}
 
 x = clamp(x,view_w_half+buff,room_width-view_w_half-buff); 
 y = clamp(y,view_h_half+buff,room_height-view_h_half-buff); 

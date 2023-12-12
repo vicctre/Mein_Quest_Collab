@@ -6,11 +6,12 @@ shorten_sprites = [sLogShort1, sLogShort2, sLogShort3]
 current_sprite_index = -1
 
 function TruncateByPinnik() {
-	if timer-- {
+	if timer {
 		return;	
 	}
 	current_sprite_index++
 	current_sprite_index = min(current_sprite_index, array_length(shorten_sprites))
 	sprite_index = shorten_sprites[current_sprite_index]
 	timer = delay_after_truncate
+	audio_play_sound(global.sfx_bonk, 0, false)
 }
