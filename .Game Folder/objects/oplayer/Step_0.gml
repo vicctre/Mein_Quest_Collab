@@ -191,20 +191,21 @@ switch state {
 	}
 }
 
-// block hor sp if wall contact
-if ((hsp > 0) and !right_free) or ((hsp < 0) and !left_free)
-	hsp = 0
-
-var standing_on_log = false
 // floating on log
+// additional hsp will keep untill land on common ground
 if !down_free {
-	standing_on_log = instance_place(x, y + 1, oAutoscrollerLog) != noone
+	var standing_on_log = instance_place(x, y + 1, oAutoscrollerLog) != noone
+	ground_hsp = standing_on_log * global.autoscroller_log_sp
 }
-standing_on_log_ = standing_on_log
 
-var final_hsp = hsp + (standing_on_log * global.autoscroller_log_sp)
-final_hsp_ = final_hsp
+var final_hsp = hsp + ground_hsp
 dir = point_direction(0, 0, final_hsp, vsp)
+
+// block hor sp if wall contact
+if ((final_hsp > 0) and !right_free) or ((final_hsp < 0) and !left_free) {
+	final_hsp = 0
+	hsp = 0
+}
 
 // handle collisions
 if abs(final_hsp) or abs(vsp)
