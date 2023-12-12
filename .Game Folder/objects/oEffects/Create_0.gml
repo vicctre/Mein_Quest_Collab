@@ -47,3 +47,17 @@ function emit_sprint_dust(xx, yy, dir) {
 	
 	part_type_speed(p_dust, p_dust_sp, p_dust_sp, p_dust_sp_incr, 0)
 }
+
+
+p_log_break = part_type_create()
+var size = 1, size_incr = 0
+var lifetime = 20
+p_dust_sp_incr = -0.1
+var sp = 2
+part_type_sprite(p_log_break, sLog_Ride_Break, true, true, false)
+part_type_speed(p_log_break, global.autoscroller_log_sp, global.autoscroller_log_sp, 0, 0)
+part_type_life(p_log_break, lifetime, lifetime)
+
+function emit_log_break(x, y) {
+	part_particles_create(psys, x, y, p_log_break, 1)
+}
