@@ -37,6 +37,7 @@ function PauseStuff() {
 	ReplaceWithPauseGiglet(oPlayer)
 	ReplaceWithPauseGiglet(ENEMY)
 	ReplaceWithPauseGiglet(deadEnemy)
+	ReplaceWithPauseGiglet(oAutoscrollerLog)
 	with oSequence {
 		pause()
 	}

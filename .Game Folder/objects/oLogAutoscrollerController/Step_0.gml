@@ -1,4 +1,7 @@
 
+if oPause.paused
+	exit
+
 if !intro_played {
 	oAutoscrollerLog.x += global.autoscroller_log_sp
 	if oAutoscrollerLog.x >= x {
