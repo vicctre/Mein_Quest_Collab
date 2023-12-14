@@ -9,8 +9,10 @@ if (!flying)
 	vsp = vsp + grv;
 
 //dont walk off edges 
-if (grounded) && (afraidofheights) && (!collision_point(x + abs(bbox_right-x) * image_xscale, bbox_bottom+1, WALLPARENT, false, true) && !flying) 
-{
+if (grounded) && (afraidofheights) 
+		&& (!collision_point(x + abs(bbox_right-x) * image_xscale,
+						     bbox_bottom+1, WALLPARENT, false, true) 
+		&& !flying) {
 	hsp = -hsp; 
 }
 if (flying && abs(baseX-x) > leashRange) {
@@ -58,7 +60,6 @@ y = y + vsp;
 if (!place_meeting(x,y+1,WALLPARENT)) 
 {
 	grounded = false; 
-
 }
 else 
 {

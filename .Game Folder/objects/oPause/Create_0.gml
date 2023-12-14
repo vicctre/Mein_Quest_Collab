@@ -3,6 +3,7 @@ ensure_singleton()
 
 paused = false
 
+pause_dim_on = false
 dim_alpha_max = 0.5
 dim_alpha = 0
 dim_ratio = 0.01
@@ -62,6 +63,7 @@ function PauseWithTimer(time) {
 	}
 	PauseStuff()
 	alarm[0] = time
+	paused = true
 }
 
 function PauseWithMenu() {
