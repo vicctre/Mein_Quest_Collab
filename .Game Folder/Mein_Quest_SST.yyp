@@ -397,7 +397,7 @@
     {"id":{"name":"W1_2_Tileset","path":"sprites/W1_2_Tileset/W1_2_Tileset.yy",},},
     {"id":{"name":"oW1_2_part1_HiddenArea","path":"objects/oW1_2_part1_HiddenArea/oW1_2_part1_HiddenArea.yy",},},
     {"id":{"name":"Testing2","path":"sprites/Testing2/Testing2.yy",},},
-    {"id":{"name":"oLogAutoscrollerController","path":"objects/oLogAutoscrollerController/oLogAutoscrollerController.yy",},},
+    {"id":{"name":"oAutoscrollerController","path":"objects/oAutoscrollerController/oAutoscrollerController.yy",},},
     {"id":{"name":"sWoods","path":"sprites/sWoods/sWoods.yy",},},
     {"id":{"name":"oTransitionSpiritByteCollected","path":"objects/oTransitionSpiritByteCollected/oTransitionSpiritByteCollected.yy",},},
     {"id":{"name":"W1_1_Tileset","path":"sprites/W1_1_Tileset/W1_1_Tileset.yy",},},

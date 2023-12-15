@@ -14,7 +14,7 @@ function AddDeactivatedEnemy(inst) {
 function InitEnemies() {
 	with ENEMY {
 		if autoscroller_activate_distance != undefined {
-			oLogAutoscrollerController.AddDeactivatedEnemy(id)
+			oAutoscrollerController.AddDeactivatedEnemy(id)
 			instance_deactivate_object(id)
 			show_debug_message("Enemy deactivated")
 		}

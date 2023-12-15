@@ -17,7 +17,7 @@ attacking = false;
 /* varialble definitions description
 autoscroller_activate_distance - if not undefined will start moving only
 								 when distance to right edge of camera = autoscroller_activate_distance
-								 see oLogAutoscrollerController
+								 see oAutoscrollerController
 */
 
 enum ENEMYSTATE 
