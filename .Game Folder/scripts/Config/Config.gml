@@ -31,6 +31,9 @@ tufful_hp = 14
 tufful_intro_landing_time = 117
 tuffull_intro_roar_time = 178
 
+// fog effect for parallax backgrounds
+// you can override this setting for each level
+// in oFogController RoomStart event
 configFog = {
 	alpha1: 0.1,
 	alpha2: 0.15,
