@@ -1,3 +1,6 @@
+event_inherited()
+
+hsp = global.autoscroller_log_sp
 
 image_speed = 0
 delay_after_truncate = 60
