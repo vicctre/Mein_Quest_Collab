@@ -95,12 +95,7 @@ invincibility_blinking_gain = 14
 death_animation_started = false
 
 // hit state
-hit = {
-	vsp: -4,
-	hsp: 4,
-	time: 20,
-	timer: 0
-}
+hit = global.player_hit_state
 
 // room transition
 enter_room = noone

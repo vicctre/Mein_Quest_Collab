@@ -24,6 +24,15 @@ player_door_enter_anim_sp = 0.65
 player_damage_blinking_color = c_white
 player_accel = 0.2
 player_decel = 0.5
+// knockback speed on being hit
+// and knockback state time
+player_hit_state = {
+	vsp: -4,
+	hsp: 4,
+	time: 20,
+	timer: 0
+}
+
 
 spirit_byte_flickering_image_speed = 0.5
 
