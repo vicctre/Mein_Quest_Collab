@@ -213,6 +213,15 @@ if ((final_hsp > 0) and !right_free) or ((final_hsp < 0) and !left_free) {
 if abs(final_hsp) or abs(vsp)
 	scr_move_coord_contact_obj(final_hsp, vsp, wall_obj)
 
+if global.camera_solid_bounds_on {
+	var xmax = scr_camx(0) + scr_camw(0) - (bbox_right- x)
+	var xmin = scr_camx(0) + (x - bbox_left)
+	//var ymax = scr_camy(0) + scr_camh(0) - (bbox_bottom - y)
+	//var ymin = scr_camy(0) + (y - bbox_top)
+	x = clamp(x, xmin, xmax)
+	//y = clamp(y, ymin, ymax)
+}
+
 Animate()
 
 // fall out of world

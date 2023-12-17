@@ -5,6 +5,8 @@ autoscroller_current_log_sprite = undefined
 autoscroller_last_pinnik_controller = undefined
 autoscroller_skip_log_intro = false
 
+// make camera bounds act as walls
+camera_solid_bounds_on = false
 checkpoint = undefined
 gui_adjusted = false
 gui_workaround_restart_happened = false
@@ -20,6 +22,7 @@ function resetable_globals() {
 	global.pages_placeholder = 0
 	global.autoscroller_last_pinnik_controller = undefined
 	global.autoscroller_current_log_sprite = undefined
+	global.camera_solid_bounds_on = false
 
 	global.rooms_with_onto_stage_seq = [
 		W1_1_part1,

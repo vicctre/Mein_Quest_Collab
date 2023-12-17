@@ -1,4 +1,6 @@
 
+global.camera_solid_bounds_on = true
+
 // start from the last falling pinnik point
 if global.autoscroller_last_pinnik_controller != undefined {
 	oAutoscrollerLog.x = global.autoscroller_last_pinnik_controller.x
