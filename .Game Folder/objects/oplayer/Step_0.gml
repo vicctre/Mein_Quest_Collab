@@ -195,10 +195,11 @@ switch state {
 
 // floating on log
 // additional hsp will keep untill land on common ground
-ground_hsp = 0
 if !down_free {
 	if instance_place(x, y + 1, oAutoscrollerLog) != noone {
 		ground_hsp = oAutoscrollerLog.hsp
+	} else {
+		ground_hsp = 0
 	}
 }
 var final_hsp = hsp + ground_hsp
