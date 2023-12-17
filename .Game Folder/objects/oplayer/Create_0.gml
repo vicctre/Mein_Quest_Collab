@@ -407,6 +407,11 @@ function on_death() {
 	oMusic.switch_music(global.msc_stage_1_1, false)
 }
 
+function is_dead() {
+	return state == PLAYERSTATE.DEAD
+		   or state == PLAYERSTATE.PRE_DEAD
+}
+
 instance_create_layer(x, y, layer, oCamera)
 check_reset_hp()
 

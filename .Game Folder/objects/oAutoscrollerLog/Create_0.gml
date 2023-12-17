@@ -15,6 +15,7 @@ function TruncateByPinnik() {
 	current_sprite_index++
 	current_sprite_index = min(current_sprite_index, array_length(shorten_sprites))
 	sprite_index = shorten_sprites[current_sprite_index]
+	global.autoscroller_current_log_sprite = sprite_index
 	timer = delay_after_truncate
 	audio_play_sound(global.sfx_bonk, 0, false)
 }

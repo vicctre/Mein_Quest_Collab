@@ -1,13 +1,14 @@
-/*
-These are configs. There are different config value sets like Default and Dev.
-You can change config in upper right corner of GM IDE.
-Read more in manual.
-*/
 
+
+// autoscroller checkpoint system
+autoscroller_current_log_sprite = undefined
+autoscroller_last_pinnik_controller = undefined
+
+checkpoint = undefined
 gui_adjusted = false
-music_gain_array = []
 gui_workaround_restart_happened = false
 logo_sequence_speed_scale = 1
+music_gain_array = []
 restart_level_on_death = true
 skip_logos = false
 
@@ -16,6 +17,8 @@ function resetable_globals() {
 	global.coins_heal_amount = 100
 	global.coins_timer = 0 //for when coins flash yellow on collection
 	global.pages_placeholder = 0
+	global.autoscroller_last_pinnik_controller = undefined
+	global.autoscroller_current_log_sprite = undefined
 
 	global.rooms_with_onto_stage_seq = [
 		W1_1_part1,

@@ -1,3 +1,8 @@
+/*
+These are configs. There are different config value sets like Default and Dev.
+You can change config in upper right corner of GM IDE.
+Read more in manual.
+*/
 
 #macro DEV false
 #macro DEMO false

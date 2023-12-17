@@ -13,7 +13,7 @@ if instance_exists(oAutoscrollerLog) {
 	} else {
 		x += global.autoscroller_log_sp
 		oAutoscrollerLog.x = x
-		if x > room_width {
+		if !oPlayer.is_dead() and x > room_width {
 			SlideTransition(TRANS_MODE.GOTO, W1_2_part5_AutoScroller2)
 		}
 	}
