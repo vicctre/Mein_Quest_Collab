@@ -197,7 +197,7 @@ switch state {
 // additional hsp will keep untill land on common ground
 if !down_free {
 	var standing_on_log = instance_place(x, y + 1, oAutoscrollerLog) != noone
-	ground_hsp = standing_on_log * global.autoscroller_log_sp
+	ground_hsp = standing_on_log * oAutoscrollerLog.hsp
 }
 var final_hsp = hsp + ground_hsp
 

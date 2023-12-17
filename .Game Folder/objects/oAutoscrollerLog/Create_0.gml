@@ -18,4 +18,8 @@ function TruncateByPinnik() {
 	global.autoscroller_current_log_sprite = sprite_index
 	timer = delay_after_truncate
 	audio_play_sound(global.sfx_bonk, 0, false)
+	// increase speed if it is tiniest size of Log
+	if current_sprite_index == array_length(shorten_sprites) {
+		hsp = global.autoscroller_log_sp_increased	
+	}
 }
