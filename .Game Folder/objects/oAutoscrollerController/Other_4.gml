@@ -5,3 +5,9 @@ if global.autoscroller_last_pinnik_controller != undefined {
 	oAutoscrollerLog.sprite_index = global.autoscroller_current_log_sprite
 	oPlayer.x  = global.autoscroller_last_pinnik_controller.x
 }
+
+// dev
+if global.autoscroller_skip_log_intro {
+	oAutoscrollerLog.x = x
+	oPlayer.x = x
+}

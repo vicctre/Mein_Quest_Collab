@@ -21,7 +21,7 @@ function scr_move_coord_contact_obj(hsp, vsp, obj) {
 		var contact
 		while true {
 			contact = instance_place(x + dx, y + dy, obj)
-			var contact_thin = thin_platform_check(dx, dy);
+			contact_thin = thin_platform_check(dx, dy);
 			if contact == noone && contact_thin == noone {
 		        x += dx
 		        y += dy
@@ -37,7 +37,10 @@ function scr_move_coord_contact_obj(hsp, vsp, obj) {
 
 function thin_platform_check(hsp, vsp) {
 	var contact_thin = instance_place(x + hsp, y + vsp, oThinPlatform);
-	if (contact_thin == noone || contact_thin.bbox_top < bbox_bottom || place_meeting(x, y, contact_thin) || key_down)
+	if (contact_thin == noone
+		|| contact_thin.bbox_top < bbox_bottom
+		|| place_meeting(x, y, contact_thin)
+		|| (contact_thin.object_index == oThinPlatform and key_down))
 		return noone;
 	return contact_thin;
 }

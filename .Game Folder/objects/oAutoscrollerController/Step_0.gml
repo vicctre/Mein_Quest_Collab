@@ -5,7 +5,7 @@ if oPause.paused
 if instance_exists(oAutoscrollerLog) {
 	if !intro_played {
 		oAutoscrollerLog.x += global.autoscroller_log_sp
-		if oAutoscrollerLog.x >= x {
+		if (oAutoscrollerLog.x >= x) {
 			x = oAutoscrollerLog.x
 			intro_played = true
 			oPlayer.has_control = true

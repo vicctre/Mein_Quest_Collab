@@ -8,10 +8,6 @@ key_down = oInput.key_down * has_control
 key_jump = oInput.key_jump * has_control
 key_attack = oInput.key_attack * has_control
 
-if key_up_pressed or key_down {
-	show_debug_message("up/down")	
-}
-
 prev_is_sprinting = is_sprinting
 prev_down_free = down_free
 
@@ -23,7 +19,13 @@ if (sprite_index == sPlayer || sprite_index == currentIdleAnimation) {
 }
 
 // contact walls
-down_free = place_empty(x, y + 1, wall_obj) && !thin_platform_check(0, 1);
+var thin_platform = thin_platform_check(0, 1);
+if thin_platform 
+		and thin_platform.object_index != oAutoscrollerLog
+		and key_down {
+	thin_platform = noone
+}
+down_free = place_empty(x, y + 1, wall_obj) and !thin_platform;
 up_free = place_empty(x, y - 1, wall_obj)
 left_free = place_empty(x - 1, y, wall_obj)
 right_free = place_empty(x + 1, y, wall_obj)

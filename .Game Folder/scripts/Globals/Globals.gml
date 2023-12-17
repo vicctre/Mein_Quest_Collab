@@ -3,6 +3,7 @@
 // autoscroller checkpoint system
 autoscroller_current_log_sprite = undefined
 autoscroller_last_pinnik_controller = undefined
+autoscroller_skip_log_intro = false
 
 checkpoint = undefined
 gui_adjusted = false
@@ -32,6 +33,7 @@ function resetable_globals() {
 		global.dev_level_goto = W1_2_part4_AutoScroller1
 		global.pages_placeholder = 1
 		global.skip_logos = true
+		global.autoscroller_skip_log_intro = true
 	}
 }
 resetable_globals();

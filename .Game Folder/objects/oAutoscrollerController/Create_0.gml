@@ -4,7 +4,7 @@ intro_played = false
 
 enemies_to_activate_by_distance = []
 function AddDeactivatedEnemy(inst) {
-	array_push(other.enemies_to_activate_by_distance, {
+	array_push(enemies_to_activate_by_distance, {
 		id: inst,
 		x: inst.x,
 		dist: inst.autoscroller_activate_distance
