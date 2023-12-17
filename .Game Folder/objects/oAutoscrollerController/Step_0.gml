@@ -19,4 +19,8 @@ if instance_exists(oAutoscrollerLog) {
 	}
 
 	CheckActivateEnemies()
+
+	if oAutoscrollerLog.x > room_width - 100 {
+		global.camera_solid_bounds_on = false	
+	}
 }
