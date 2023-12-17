@@ -193,11 +193,11 @@ switch state {
 
 // floating on log
 // additional hsp will keep untill land on common ground
-var final_hsp = hsp
 if !down_free {
-	var down_wall = instance_place(x, y + 1, oAutoscrollerLog)
-	final_hsp += down_wall.hsp
+	var standing_on_log = instance_place(x, y + 1, oAutoscrollerLog) != noone
+	ground_hsp = standing_on_log * global.autoscroller_log_sp
 }
+var final_hsp = hsp + ground_hsp
 
 dir = point_direction(0, 0, final_hsp, vsp)
 
