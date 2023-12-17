@@ -10,6 +10,6 @@ if global.autoscroller_last_pinnik_controller != undefined {
 
 // dev
 if global.autoscroller_skip_log_intro {
-	oAutoscrollerLog.x = x
-	oPlayer.x = x
+	oAutoscrollerLog.x = max(x, oAutoscrollerLog.x)
+	oPlayer.x = max(x, oPlayer.x)
 }

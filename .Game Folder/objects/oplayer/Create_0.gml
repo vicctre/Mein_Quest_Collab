@@ -423,3 +423,5 @@ if global.restart_level_on_death {
 	global.restart_level_on_death = false
 	global.player_hp = global.player_hp_max
 }
+
+autoscroller_workaround_delay = 3
