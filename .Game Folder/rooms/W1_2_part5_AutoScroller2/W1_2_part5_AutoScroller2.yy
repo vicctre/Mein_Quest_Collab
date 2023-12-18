@@ -91,7 +91,6 @@
     {"name":"inst_57577A61","path":"rooms/W1_2_part5_AutoScroller2/W1_2_part5_AutoScroller2.yy",},
     {"name":"inst_1055178","path":"rooms/W1_2_part5_AutoScroller2/W1_2_part5_AutoScroller2.yy",},
     {"name":"inst_B112B5A","path":"rooms/W1_2_part5_AutoScroller2/W1_2_part5_AutoScroller2.yy",},
-    {"name":"inst_76CFC2CE_1","path":"rooms/W1_2_part5_AutoScroller2/W1_2_part5_AutoScroller2.yy",},
     {"name":"inst_5C8A4D60","path":"rooms/W1_2_part5_AutoScroller2/W1_2_part5_AutoScroller2.yy",},
     {"name":"inst_7A63B709","path":"rooms/W1_2_part5_AutoScroller2/W1_2_part5_AutoScroller2.yy",},
     {"name":"inst_658ABBB4","path":"rooms/W1_2_part5_AutoScroller2/W1_2_part5_AutoScroller2.yy",},
@@ -140,7 +139,6 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"ui","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76CFC2CE_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":true,"isDnd":false,"objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":371.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76CFC2CE_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":true,"isDnd":false,"objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":371.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Enemies","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_77A3B354","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":true,"isDnd":false,"objectId":{"name":"oPinnik","path":"objects/oPinnik/oPinnik.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5327.0,"y":401.0,},
