@@ -8,10 +8,6 @@ key_down = oInput.key_down * has_control
 key_jump = oInput.key_jump * has_control
 key_attack = oInput.key_attack * has_control
 
-if key_up_pressed or key_down {
-	show_debug_message("up/down")	
-}
-
 prev_is_sprinting = is_sprinting
 prev_down_free = down_free
 
@@ -23,7 +19,13 @@ if (sprite_index == sPlayer || sprite_index == currentIdleAnimation) {
 }
 
 // contact walls
-down_free = place_empty(x, y + 1, wall_obj) && !thin_platform_check(0, 1);
+var thin_platform = thin_platform_check(0, 1);
+if thin_platform 
+		and thin_platform.object_index != oAutoscrollerLog
+		and key_down {
+	thin_platform = noone
+}
+down_free = place_empty(x, y + 1, wall_obj) and !thin_platform;
 up_free = place_empty(x, y - 1, wall_obj)
 left_free = place_empty(x - 1, y, wall_obj)
 right_free = place_empty(x + 1, y, wall_obj)
@@ -194,8 +196,11 @@ switch state {
 // floating on log
 // additional hsp will keep untill land on common ground
 if !down_free {
-	var standing_on_log = instance_place(x, y + 1, oAutoscrollerLog) != noone
-	ground_hsp = standing_on_log * global.autoscroller_log_sp
+	if instance_place(x, y + 1, oAutoscrollerLog) != noone {
+		ground_hsp = oAutoscrollerLog.hsp
+	} else {
+		ground_hsp = 0
+	}
 }
 var final_hsp = hsp + ground_hsp
 
@@ -210,6 +215,15 @@ if ((final_hsp > 0) and !right_free) or ((final_hsp < 0) and !left_free) {
 // handle collisions
 if abs(final_hsp) or abs(vsp)
 	scr_move_coord_contact_obj(final_hsp, vsp, wall_obj)
+
+if global.camera_solid_bounds_on and !autoscroller_workaround_delay-- {
+	var xmax = scr_camx(0) + scr_camw(0) - (bbox_right- x)
+	var xmin = scr_camx(0) + (x - bbox_left)
+	//var ymax = scr_camy(0) + scr_camh(0) - (bbox_bottom - y)
+	//var ymin = scr_camy(0) + (y - bbox_top)
+	x = clamp(x, xmin, xmax)
+	//y = clamp(y, ymin, ymax)
+}
 
 Animate()
 

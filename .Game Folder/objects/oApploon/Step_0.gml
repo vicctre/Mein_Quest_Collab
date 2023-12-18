@@ -1,7 +1,7 @@
 event_inherited();
 image_angle -= apploon_rotation_speed;
 
-if(place_meeting(x, y+1, oWall)) 
+if(place_meeting(x, y+1, WALLPARENT)) 
 {
 	if (deadSprite == -1)
 		show_message("Error: this enemy's death sprite is not set");

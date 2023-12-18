@@ -13,8 +13,8 @@
     "path": "folders/Objects/Autoscroller.yy",
   },
   "parentObjectId": {
-    "name": "oWall",
-    "path": "objects/oWall/oWall.yy",
+    "name": "oThinPlatform",
+    "path": "objects/oThinPlatform/oThinPlatform.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

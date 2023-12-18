@@ -407,6 +407,11 @@ function on_death() {
 	oMusic.switch_music(global.msc_stage_1_1, false)
 }
 
+function is_dead() {
+	return state == PLAYERSTATE.DEAD
+		   or state == PLAYERSTATE.PRE_DEAD
+}
+
 instance_create_layer(x, y, layer, oCamera)
 check_reset_hp()
 
@@ -418,3 +423,5 @@ if global.restart_level_on_death {
 	global.restart_level_on_death = false
 	global.player_hp = global.player_hp_max
 }
+
+autoscroller_workaround_delay = 3

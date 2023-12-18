@@ -1,3 +1,8 @@
+/*
+These are configs. There are different config value sets like Default and Dev.
+You can change config in upper right corner of GM IDE.
+Read more in manual.
+*/
 
 #macro DEV false
 #macro DEMO false
@@ -5,6 +10,7 @@
 #macro Demo:DEMO true
 
 autoscroller_log_sp = 1.5
+autoscroller_log_sp_increased = 2
 
 death_transition_delay_time = 140
 death_pause_time = 60
