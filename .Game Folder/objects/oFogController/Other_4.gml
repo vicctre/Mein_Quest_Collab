@@ -38,6 +38,6 @@ switch room {
 	*/
 }
 
-instance_create_layer(0, 0, "Fog1", oFogEffect, {alpha: conf.alpha1})
-instance_create_layer(0, 0, "Fog2", oFogEffect, {alpha: conf.alpha2})
-instance_create_layer(0, 0, "Fog3", oFogEffect, {alpha: conf.alpha3})
+instance_create_layer(0, 0, "Fog1", oFogEffect, {color: conf.color, alpha: conf.alpha1})
+instance_create_layer(0, 0, "Fog2", oFogEffect, {color: conf.color, alpha: conf.alpha2})
+instance_create_layer(0, 0, "Fog3", oFogEffect, {color: conf.color, alpha: conf.alpha3})
