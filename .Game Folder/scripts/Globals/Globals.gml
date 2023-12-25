@@ -1,7 +1,7 @@
 
 
 // autoscroller checkpoint system
-autoscroller_current_log_sprite = undefined
+autoscroller_current_log_sprite_index = -1
 autoscroller_last_pinnik_controller = undefined
 autoscroller_skip_log_intro = false
 
@@ -21,7 +21,7 @@ function resetable_globals() {
 	global.coins_timer = 0 //for when coins flash yellow on collection
 	global.pages_placeholder = 0
 	global.autoscroller_last_pinnik_controller = undefined
-	global.autoscroller_current_log_sprite = undefined
+	global.autoscroller_current_log_sprite_index = -1
 	global.camera_solid_bounds_on = false
 
 	global.rooms_with_onto_stage_seq = [
