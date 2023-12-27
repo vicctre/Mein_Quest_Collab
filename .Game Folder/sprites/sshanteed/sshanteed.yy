@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Shantee",
-    "path": "folders/Sprites/Enemy Sprites/NME Basic/Shantee.yy",
+    "path": "folders/Sprites/Enemy Sprites/Basic NME/Shantee.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Fleater",
-    "path": "folders/Sprites/Enemy Sprites/NME Basic/Fleater.yy",
+    "path": "folders/Sprites/Enemy Sprites/Basic NME/Fleater.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

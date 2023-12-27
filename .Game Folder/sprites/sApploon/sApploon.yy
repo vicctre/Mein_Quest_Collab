@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "Apploon",
-    "path": "folders/Sprites/Enemy Sprites/NME Basic/Apploon.yy",
+    "path": "folders/Sprites/Enemy Sprites/Basic NME/Apploon.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

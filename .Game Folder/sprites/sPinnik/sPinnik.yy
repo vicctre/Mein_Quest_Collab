@@ -29,7 +29,7 @@
   "origin": 4,
   "parent": {
     "name": "Pinnik",
-    "path": "folders/Sprites/Enemy Sprites/NME Basic/Pinnik.yy",
+    "path": "folders/Sprites/Enemy Sprites/Basic NME/Pinnik.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
