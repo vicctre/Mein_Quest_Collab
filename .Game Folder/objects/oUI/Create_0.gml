@@ -1,4 +1,3 @@
-
 var hp_spr = sMeinHP
 var hp_scale = 2
 

@@ -5,6 +5,6 @@ sound_effect = global.sfx_adventure_log;
 
 collected = function() {
 	spawnHealFizzles();
-	global.pages_placeholder = 1;
+	global.current_logs[id_number] = true;
 	audio_play_sound(sound_effect, 0, false);
 }

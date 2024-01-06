@@ -8,16 +8,15 @@ var color2 = c_black;
 
 draw_sprite_ext(sCoinCounter, 0, 1230, 70, scale, scale, 0, c_white, 1);
 
-var page_count = 1;
+var page_count = array_length(global.current_logs);
 for(var i = 0; i < page_count; i++) {
 	draw_sprite_ext(sAL_HUD, 0, 1260-65*page_count/2 + 65*i, 140, scale, scale, 0, c_white, 1);
-	if (global.pages_placeholder > 0) {
-		draw_sprite_ext(sAL_Icon_animation, global.pages_placeholder, 1260-65*page_count/2 + 65*i, 140, scale, scale, 0, c_white, 1);
-		global.pages_placeholder = min(29, global.pages_placeholder+0.5);
+	if (global.current_logs[i]) {
+		draw_sprite_ext(sAL_Icon_animation, 0, 1260-65*page_count/2 + 65*i, 140, scale, scale, 0, c_white, 1);
 	}
 }
 
-
+draw_set_halign(fa_middle)
 var xx = 1246
 var yy = 48
 if (global.coins_timer > 0) {
@@ -29,6 +28,10 @@ if (global.coins_timer > 0) {
 	shader_reset();
 } else {
 	draw_text_outlined(xx, yy, global.coins, color, color2);
+}
+if (global.lose_coins_counter > 0) {
+	global.lose_coins_counter--;
+	draw_text_outlined(xx, yy+min(120, 300*(global.lose_coins_time-global.lose_coins_counter)/global.lose_coins_time), "-30", #f93c59, color2);
 }
 /*
 if (instance_exists(oTransitionTuffulDefeated)) {

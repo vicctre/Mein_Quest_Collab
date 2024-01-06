@@ -19,7 +19,6 @@ function resetable_globals() {
 	global.coins = 0
 	global.coins_heal_amount = 100
 	global.coins_timer = 0 //for when coins flash yellow on collection
-	global.pages_placeholder = 0
 	global.autoscroller_last_pinnik_controller = undefined
 	global.autoscroller_current_log_sprite_index = -1
 	global.camera_solid_bounds_on = false
@@ -32,11 +31,20 @@ function resetable_globals() {
 
 	global.dev_level_goto = noone
 	if DEV {
+		global.coins = 50;
 		global.player_invincible = false
 		global.dev_level_goto = W1_2_part4_AutoScroller1
-		global.pages_placeholder = 1
 		global.skip_logos = true
 		global.autoscroller_skip_log_intro = true
 	}
 }
 resetable_globals();
+
+
+global.Logs_Collected = [];
+global.Logs_Collected[0] = array_create(1);
+global.Logs_Collected[1] = array_create(2);
+global.Logs_Collected[2] = array_create(2);
+
+global.lose_coins_counter = 0;
+global.lose_coins_time = 120;

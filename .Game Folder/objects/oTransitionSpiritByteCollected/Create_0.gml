@@ -3,11 +3,11 @@ event_inherited()
 
 var next_level_room = DEMO ? rmThanksForPlayingScreen : W1_2_part1
 
-next_room = global.pages_placeholder 
+next_room = current_log_count() 
 			? rmAdventureLogsScreen : next_level_room
 
 destroy_delay = 60
-sequence = seqPlayerVictory
+sequence = choose(seqPlayerVictory, seqPlayerVictory02);
 
 transition_timer = 7 * 60
 transition_timer_on = true
