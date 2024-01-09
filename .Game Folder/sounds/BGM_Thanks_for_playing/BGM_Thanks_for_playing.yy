@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 30.0,
   "parent": {
-    "name": "BMG",
-    "path": "folders/Sounds/BMG.yy",
+    "name": "Menus",
+    "path": "folders/Sounds/BMG/Menus.yy",
   },
   "preload": false,
   "sampleRate": 44100,

@@ -69,8 +69,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Not Currently Used",
-    "path": "folders/Sprites/Mein Sprites/Not Currently Used.yy",
+    "name": "Victory Animations",
+    "path": "folders/Sprites/Mein Sprites/Victory Animations.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

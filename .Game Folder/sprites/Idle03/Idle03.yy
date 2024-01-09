@@ -50,8 +50,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "In Use",
-    "path": "folders/Sprites/Mein Sprites/In Use.yy",
+    "name": "Idle Animations",
+    "path": "folders/Sprites/Mein Sprites/Idle Animations.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

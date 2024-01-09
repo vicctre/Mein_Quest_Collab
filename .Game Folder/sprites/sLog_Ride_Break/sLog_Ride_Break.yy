@@ -32,7 +32,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3bd282b1-92db-434d-9b4f-35866cf8ea38","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Log stuff",
     "path": "folders/Sprites/Environment/Log stuff.yy",
@@ -78,7 +78,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 36,
-    "yorigin": 36,
+    "yorigin": 46,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

@@ -32,8 +32,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "In Use",
-    "path": "folders/Sprites/Mein Sprites/In Use.yy",
+    "name": "Hitboxes",
+    "path": "folders/Sprites/Mein Sprites/Hitboxes.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "In Use",
-    "path": "folders/Sprites/Mein Sprites/In Use.yy",
+    "name": "Other Animations",
+    "path": "folders/Sprites/Mein Sprites/Other Animations.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

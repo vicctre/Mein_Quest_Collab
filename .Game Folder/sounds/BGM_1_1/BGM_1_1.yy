@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 65.853676,
   "parent": {
-    "name": "BMG",
-    "path": "folders/Sounds/BMG.yy",
+    "name": "Stage themes",
+    "path": "folders/Sounds/BMG/Stage themes.yy",
   },
   "preload": false,
   "sampleRate": 44100,

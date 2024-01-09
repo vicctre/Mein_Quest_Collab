@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "In Use",
-    "path": "folders/Sprites/Mein Sprites/In Use.yy",
+    "name": "Movement",
+    "path": "folders/Sprites/Mein Sprites/Movement.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

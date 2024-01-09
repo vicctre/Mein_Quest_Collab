@@ -12,12 +12,12 @@
   "conversionMode": 0,
   "duration": 58.5366,
   "parent": {
-    "name": "BMG",
-    "path": "folders/Sounds/BMG.yy",
+    "name": "Stage themes",
+    "path": "folders/Sounds/BMG/Stage themes.yy",
   },
   "preload": false,
   "sampleRate": 44100,
   "soundFile": "BGM_1_2_pt1.wav",
   "type": 0,
-  "volume": 0.33,
+  "volume": 0.38,
 }
