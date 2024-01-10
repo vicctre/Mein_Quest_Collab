@@ -2,7 +2,7 @@
 
 AnimateEaseIn()
 
-//keyboard Controls 
+// keyboard Controls 
 if (menu_control) {
 	if (oInput.key_up_pressed) {
 		menu_cursor++; 
@@ -26,7 +26,7 @@ if (menu_control) {
 		audio_play_sound(global.sfx_select,7,false)
 	}
 	var mouse_y_gui = device_mouse_y_to_gui(0); 
-  //this only effects the buttons and doesnt make the mouse cover the full screen when selecting
+	// this only effects the buttons and doesnt make the mouse cover the full screen when selecting
 	if (mouse_y_gui < menu_y) && (mouse_y_gui > menu_top) {
 		if oInput.mouse_moved {
 			menu_cursor = (menu_y - mouse_y_gui) div (menu_itemheight * 1.5)
@@ -41,6 +41,10 @@ if (menu_control) {
 }
 
 if AnimationFinished() and (menu_committed != -1) {
-	menu[menu_committed].action()
-	instance_destroy()
+	PerformAction()
+}
+
+if oInput.key_escape and menu != main_menu {
+	PerformGoBack()
+	audio_play_sound(global.sfx_select,7,false)
 }
