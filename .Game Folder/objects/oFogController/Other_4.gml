@@ -6,10 +6,12 @@ if !layer_exists("Fog1")
 var conf = global.configFog
 
 // override config by level
+
+		
 switch room {
 	// all  "case" rooms will be affected...
 	//case W1_2_part1:
-	//case W1_2_part2: these two rooms have the same BG as 1-1, so they should retain the fog color 
+	case W1_2_part2: 
 	case W1_2_part3:
 	case W1_2_part4_AutoScroller1:
 	case W1_2_part5_AutoScroller2:
@@ -19,7 +21,8 @@ switch room {
 			alpha1: 0.1,
 			alpha2: 0.15,
 			alpha3: 0.15,
-			color: #f2e094 //#f2ec94 //#bb5828 these are here just to test different colors 
+			color: #f2c672 //#e3b357//#f2e094 //#f2ec94 //#bb5828 
+			//these are here just to test different colors 
 		}
 		break
 	

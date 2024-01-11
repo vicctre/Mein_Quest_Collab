@@ -7,7 +7,9 @@ next_room = current_log_count()
 			? rmAdventureLogsScreen : next_level_room
 
 destroy_delay = 60
-sequence = choose(seqPlayerVictory, seqPlayerVictory02);
+//this is where you can add sequences you make at any time. It will choose from these options 
+sequence = choose(seqPlayerVictory, seqPlayerVictory02, seqPlayerVictory03);
+
 
 transition_timer = 7 * 60
 transition_timer_on = true

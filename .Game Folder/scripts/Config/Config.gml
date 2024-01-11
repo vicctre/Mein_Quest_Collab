@@ -33,8 +33,8 @@ player_decel = 0.5
 // knockback speed on being hit
 // and knockback state time
 player_hit_state = {
-	vsp: -4,
-	hsp: 4,
+	vsp: -5,
+	hsp:2.5,
 	time: 20,
 	timer: 0
 }
