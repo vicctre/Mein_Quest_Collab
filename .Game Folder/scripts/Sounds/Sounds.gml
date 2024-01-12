@@ -35,7 +35,3 @@ sfx_boss_land = SFX_Boss_Land
 sfx_GoUP = SFX_Boss_jump
 sfx_roar01 = SFX_Tuffull_Roar
 sfx_whip = SFX_Whip
-
-// Music
-msc_post_battle = BGM_Post_Battle
-msc_adv_log_screen = BGM_AdvLogReview

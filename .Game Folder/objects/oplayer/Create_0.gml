@@ -10,6 +10,7 @@ enum PLAYERSTATE {
 	DEAD,
 	HIT,
 	ENTER_DOOR,
+	PICKUP_ADVLOG,
 }
 
 scr_debug_ini()

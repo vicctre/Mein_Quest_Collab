@@ -1,6 +1,6 @@
 
 switch room {
-	case MenuTitleScreenV1:
+	case rmTitleScreen:
 		switch_music(global.msc_title_screen)
 		break
 	case W1_1_part5:

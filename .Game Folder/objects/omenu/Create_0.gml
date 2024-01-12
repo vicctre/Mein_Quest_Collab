@@ -60,21 +60,22 @@ function StageStarter(stage, title) constructor {
 	self.title = title
 	
 	function action() {
-		if room == MenuTitleScreenV1 {
-			oMusic.switch_music(noone)
-		}
+		//if room == rmTitleScreen {
+		//	oMusic.switch_music(noone)
+		//}
 		if stage == W1_1_part1 {
 			SlideTransition(TRANS_MODE.GOTO, rmIntroSequence)
 		} else {
 			SlideTransition(TRANS_MODE.GOTO, stage)
 		}
+		oMusic.switch_music(global.msc_stage_1_1)
 		global.player_hp = global.player_hp_max
 		resetable_globals()
 	}
 }
 
 function StartNew() {
-	if room == MenuTitleScreenV1 {
+	if room == rmTitleScreen {
 		oMusic.switch_music(noone)
 	}
 	SlideTransition(TRANS_MODE.GOTO, rmIntroSequence)

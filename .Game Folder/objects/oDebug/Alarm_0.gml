@@ -1,2 +1,2 @@
 
-room_goto(MenuTitleScreenV1)
+room_goto(rmTitleScreen)

@@ -1,4 +1,4 @@
-if (room == MenuTitleScreenV1)
+if (room == rmTitleScreen)
 	exit;
 	
 if (room = rmAdventureLogsScreen) {

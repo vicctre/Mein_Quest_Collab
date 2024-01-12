@@ -7,7 +7,7 @@ if !oTransition.IsOff() or array_contains([
 			rmThanksForPlayingScreen,
 			rmDNS_Logo,
 			rmIntroSequence,
-			MenuTitleScreenV1
+			rmTitleScreen
 		], room) {
 	exit
 }
