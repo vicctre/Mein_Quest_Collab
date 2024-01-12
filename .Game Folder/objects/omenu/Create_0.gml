@@ -6,10 +6,11 @@ gui_width = display_get_gui_width()
 gui_height = display_get_gui_height()
 gui_margin = 36
 
+menu_x_base = gui_width * 0.5
 menu_x_target_start = gui_width + 200
-menu_x_target_finish = gui_width - gui_margin
+menu_x_target_finish = menu_x_base
 menu_x = menu_x_target_start
-menu_y = gui_height - gui_margin
+menu_y = gui_height * 0.5
 menu_x_target = menu_x_target_finish
 menu_speed = 0.1
 menu_speed_min = 1
@@ -18,8 +19,14 @@ menu_itemheight = font_get_size(fMenu)
 menu_committed = -1
 menu_control = true
 
-x_ancor = fa_right
-y_ancor = fa_bottom
+menu_cursor_y = 0
+menu_cursor_x_target = menu_x_base
+menu_cursor_x = menu_x_base
+menu_cursor_y_target = 0
+menu_cursor_min_sp = 12
+menu_font_h = 60
+menu_cursor_frame = 0
+menu_cursor_animate_sp = 0.5
 
 mouse_x_prev = mouse_x
 mouse_y_prev = mouse_y
@@ -111,13 +118,34 @@ function Highlight(txt) {
 	return string_insert("> ", txt,0)
 }
 
+function AnimateCursor() {
+	var dir = point_direction(
+				menu_cursor_x, menu_cursor_y,
+				menu_cursor_x_target, menu_cursor_y_target)
+	var dist = point_distance(
+				menu_cursor_x, menu_cursor_y,
+				menu_cursor_x_target, menu_cursor_y_target)
+	var sp = max(menu_speed * dist, menu_cursor_min_sp)
+	var hsp = abs(lengthdir_x(sp, dir))
+	var vsp = abs(lengthdir_y(sp, dir))
+	menu_cursor_x = approach(menu_cursor_x, menu_cursor_x_target, hsp)
+	menu_cursor_y = approach(menu_cursor_y, menu_cursor_y_target, vsp)
+	menu_cursor_frame += menu_cursor_animate_sp
+}
+
 function UpdateTop() {
-	menu_top = menu_y - ((menu_itemheight * 1.5) * menu_items)
+	menu_top = GetCursorY(menu_items)
+}
+
+function GetCursorY(cursor) {
+	return menu_y - ((menu_itemheight * 1.5) * cursor)
 }
 
 function Init() {
 	menu_items = array_length(menu)
 	menu_cursor = menu_items - 1
+	menu_cursor_y_target = GetCursorY(menu_cursor)
+	menu_cursor_y = menu_cursor_y_target
 	UpdateTop()
 }
 

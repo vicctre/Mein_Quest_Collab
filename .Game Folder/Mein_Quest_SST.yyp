@@ -481,6 +481,7 @@
     {"id":{"name":"sShadowBASE","path":"sprites/sShadowBASE/sShadowBASE.yy",},},
     {"id":{"name":"oHealFizzle","path":"objects/oHealFizzle/oHealFizzle.yy",},},
     {"id":{"name":"sShanteeHitbox","path":"sprites/sShanteeHitbox/sShanteeHitbox.yy",},},
+    {"id":{"name":"sMenuStageIcon","path":"sprites/sMenuStageIcon/sMenuStageIcon.yy",},},
     {"id":{"name":"AdventureLogFunctions","path":"scripts/AdventureLogFunctions/AdventureLogFunctions.yy",},},
     {"id":{"name":"Idle05","path":"sprites/Idle05/Idle05.yy",},},
     {"id":{"name":"ResizeCamera","path":"scripts/ResizeCamera/ResizeCamera.yy",},},

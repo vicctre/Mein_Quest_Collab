@@ -385,6 +385,7 @@
     {"name":"utils","order":6,"path":"scripts/utils/utils.yy",},
     {"name":"oHealFizzle","order":6,"path":"objects/oHealFizzle/oHealFizzle.yy",},
     {"name":"sShanteeHitbox","order":3,"path":"sprites/sShanteeHitbox/sShanteeHitbox.yy",},
+    {"name":"sMenuStageIcon","order":11,"path":"sprites/sMenuStageIcon/sMenuStageIcon.yy",},
     {"name":"AdventureLogFunctions","order":26,"path":"scripts/AdventureLogFunctions/AdventureLogFunctions.yy",},
     {"name":"Idle05","order":3,"path":"sprites/Idle05/Idle05.yy",},
     {"name":"ResizeCamera","order":17,"path":"scripts/ResizeCamera/ResizeCamera.yy",},

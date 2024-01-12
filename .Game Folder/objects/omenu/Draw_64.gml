@@ -4,8 +4,8 @@
 var halign = draw_get_halign(), valign = draw_get_valign()
 
 draw_set_font(fMenu); 
-draw_set_halign(x_ancor);
-draw_set_valign(y_ancor);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
 //its important to set them BEFORE you draw any text 
 for (var i = 0; i < array_length(menu); i++) //or "i = i + 1" we are just increasing it by 1 
 {
@@ -13,11 +13,9 @@ for (var i = 0; i < array_length(menu); i++) //or "i = i + 1" we are just increa
 	var txt = menu[i].title;
 	if (menu_cursor == i)
 	{
-		txt = Highlight(txt)
+		//txt = Highlight(txt)
 		var col = c_white;
-	}
-	else
-	{
+	} else {
 		var col = c_grey;
 	}
 	var xx = menu_x; 
@@ -33,3 +31,5 @@ for (var i = 0; i < array_length(menu); i++) //or "i = i + 1" we are just increa
 
 draw_set_halign(halign);
 draw_set_valign(valign);
+
+draw_sprite(sCursor, menu_cursor_frame, menu_cursor_x, menu_cursor_y);

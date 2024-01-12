@@ -9,6 +9,9 @@
   "bold": false,
   "canGenerateBitmap": true,
   "charset": 0,
+  "ConfigValues": {
+    "Dev": {"textureGroupId":"{\"name\":\"Default\",\"path\":\"texturegroups/Default\"}",},
+  },
   "first": 0,
   "fontName": "Born2bSportyV2",
   "glyphOperations": 0,

@@ -40,6 +40,10 @@ if (menu_control) {
 	}
 }
 
+menu_cursor_y_target = GetCursorY(menu_cursor)
+menu_cursor_x_target = (gui_width - menu_x) - string_width(menu[menu_cursor].title) * 0.5 - 20
+AnimateCursor()
+
 if AnimationFinished() and (menu_committed != -1) {
 	PerformAction()
 }
