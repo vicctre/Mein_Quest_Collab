@@ -11,3 +11,7 @@ switch(string_copy(room_name, 1, 4)) {
 		global.current_logs = global.Logs_Collected[1];
 	break;
 }
+
+if room != W1_1_part1 {
+	checkpoint_indicator.start_animation()
+}

@@ -56,3 +56,6 @@ if (area_name_text_timer > 0) {
 	else
 		area_name_text_offset = area_name_text_offset - max(0.3, lerp(area_name_text_offset, 101, 0.05) - area_name_text_offset);
 }
+
+
+checkpoint_indicator.draw()
