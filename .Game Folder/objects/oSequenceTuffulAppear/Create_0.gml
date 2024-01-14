@@ -1,7 +1,7 @@
 
 event_inherited()
 
-oPlayer.has_control = false
+oMein.has_control = false
 sequence = seqTuffullIntro_T
 frame_roar = 179
 destroy_delay = -1

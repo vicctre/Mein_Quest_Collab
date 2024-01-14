@@ -9,5 +9,5 @@ if DEV and keyboard_check_pressed(ord("F")) and keyboard_check(vk_control) {
 }
 
 if keyboard_check_pressed(ord("U")) {
-	oPlayer.Kill()
+	oMein.Kill()
 }

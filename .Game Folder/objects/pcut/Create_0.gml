@@ -14,7 +14,7 @@ function set_hit(damage=0) {
 		}
 	
 		//
-		hitDirection = sign(x-oPlayer.x);
+		hitDirection = sign(x-oMein.x);
 	}
 }
 

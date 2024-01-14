@@ -5,10 +5,10 @@ camera_set_view_size(view,view_width,view_height);
 
 
 //center the view on the player 
-if (instance_exists(oPlayer)) 
+if (instance_exists(oMein)) 
 {
-	var _x = clamp(oPlayer.x-view_width/2,0,room_width-view_width); 
-	var _y = clamp(oPlayer.y-view_width/2,0,room_height-view_width);
+	var _x = clamp(oMein.x-view_width/2,0,room_width-view_width); 
+	var _y = clamp(oMein.y-view_width/2,0,room_height-view_width);
 	
  var _cur_x = camera_get_view_x(view); 
  var _cur_y = camera_get_view_y(view); 

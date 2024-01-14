@@ -18,6 +18,6 @@ if (room == W1_1_part5) {
 } else {
 	SetRoomStartCamera()
 	ResizeCamera()
-	follow = oPlayer
+	follow = oMein
 	cam_width = cam_width_base;
 }

@@ -3,13 +3,13 @@ transition_timer -= transition_timer_on
 
 switch phase {
 	case 0:
-		if !oPlayer.down_free {
+		if !oMein.down_free {
 			phase++
-			oPlayer.visible = false
-			oPlayer.has_control = false
+			oMein.visible = false
+			oMein.has_control = false
 			oMusic.switch_music(global.msc_stage_clear, false, 0)
 			sequence_inst = layer_sequence_create(
-					layer, oPlayer.x, oPlayer.y, sequence)
+					layer, oMein.x, oMein.y, sequence)
 		}
 		break
 	case 1:

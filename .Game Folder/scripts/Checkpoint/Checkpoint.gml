@@ -15,6 +15,6 @@ function is_checkpoint_set() {
 }
 
 function player_goto_checkpoint() {
-	oPlayer.x = global.checkpoint.x
-	oPlayer.y = global.checkpoint.y
+	oMein.x = global.checkpoint.x
+	oMein.y = global.checkpoint.y
 }

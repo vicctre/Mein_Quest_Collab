@@ -32,8 +32,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Not Currently Used",
-    "path": "folders/Sprites/Mein Sprites/Not Currently Used.yy",
+    "name": "Movement",
+    "path": "folders/Sprites/Mein Sprites/Movement.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

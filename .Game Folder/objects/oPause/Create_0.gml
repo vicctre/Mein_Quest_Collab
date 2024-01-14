@@ -35,7 +35,7 @@ function ReturnActualInstances() {
 }
 
 function PauseStuff() {
-	ReplaceWithPauseGiglet(oPlayer)
+	ReplaceWithPauseGiglet(oMein)
 	ReplaceWithPauseGiglet(ENEMY)
 	ReplaceWithPauseGiglet(deadEnemy)
 	ReplaceWithPauseGiglet(oAutoscrollerLog)
