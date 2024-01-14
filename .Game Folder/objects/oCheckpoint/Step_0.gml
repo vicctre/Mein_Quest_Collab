@@ -9,4 +9,5 @@ if place_meeting(x, y, oPlayer) {
 		yy = Y	
 	}
 	set_checkpoint(xx, yy)
+	oUI.show_checkpoint_indicator()
 }

@@ -5,4 +5,12 @@ if (done == 0)
 	y = y + vsp; 
 	image_angle += image_xscale*rotation_speed;
 }
-	
+
+if global.voleyball {
+	if place_meeting(x, y, oAttack) {
+		vsp = -5
+		if abs(oPlayer.x - x) > 0 {
+			hsp *= -sign(oPlayer.x - x)
+		}
+	}
+}

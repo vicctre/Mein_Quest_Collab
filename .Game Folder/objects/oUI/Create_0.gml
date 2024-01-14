@@ -25,7 +25,7 @@ checkpoint_indicator = {
 	pause_frame: 45,
 	pause_time: 30,
 	pause_timer: 0,
-	x: 100,
+	x: 30,
 	y: gui_h - 50,
 	scale: 4,
 
@@ -64,6 +64,10 @@ function draw_hp_bar() {
 
 function shake_hp() {
 	hp_shake.shake()
+}
+
+function show_checkpoint_indicator() {
+	checkpoint_indicator.start_animation()
 }
 
 function get_stage_name(room_) {

@@ -9,8 +9,7 @@ function set_hit(damage=0) {
 		if (hp > 0) {
 			state = ENEMYSTATE.HIT 
 			hitNow = true
-		}
-		else {
+		} else {
 			state = ENEMYSTATE.DEAD
 		}
 	
