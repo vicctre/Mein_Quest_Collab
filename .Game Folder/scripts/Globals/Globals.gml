@@ -12,6 +12,7 @@ gui_adjusted = false
 gui_workaround_restart_happened = false
 logo_sequence_speed_scale = 1
 music_gain_array = []
+player = oMein
 restart_level_on_death = true
 skip_logos = false
 available_stages = [
@@ -50,6 +51,22 @@ function resetable_globals() {
 		global.autoscroller_skip_log_intro = true
 	}
 }
+
+function dev_override() {
+	if !DEV
+		return;
+	switch object_index {
+		case oMein:
+			x = 8100
+			break
+		case oAutoscrollerLog:
+			x = 8100
+			sprite_index = sLogShort2
+			global.autoscroller_current_log_sprite_index = 1
+			break
+	}
+}
+
 resetable_globals();
 
 

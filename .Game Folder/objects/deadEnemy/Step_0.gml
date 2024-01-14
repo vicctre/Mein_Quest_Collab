@@ -9,8 +9,8 @@ if (done == 0)
 if global.voleyball {
 	if place_meeting(x, y, oAttack) {
 		vsp = -5
-		if abs(oPlayer.x - x) > 0 {
-			hsp *= -sign(oPlayer.x - x)
+		if abs(global.player.x - x) > 0 {
+			hsp *= -sign(global.player.x - x)
 		}
 	}
 }

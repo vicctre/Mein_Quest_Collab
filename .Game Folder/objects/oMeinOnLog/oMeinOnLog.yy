@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "oMeinOnLog",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -26,12 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Mein_LogRide",
-    "path": "sprites/Mein_LogRide/Mein_LogRide.yy",
+    "name": "sMeinLogRide",
+    "path": "sprites/sMeinLogRide/sMeinLogRide.yy",
   },
   "spriteMaskId": {
-    "name": "Mein_LogRide_Jump",
-    "path": "sprites/Mein_LogRide_Jump/Mein_LogRide_Jump.yy",
+    "name": "sMeinLogRideJump",
+    "path": "sprites/sMeinLogRideJump/sMeinLogRideJump.yy",
   },
   "visible": true,
 }

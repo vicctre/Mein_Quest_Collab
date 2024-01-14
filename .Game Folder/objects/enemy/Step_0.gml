@@ -1,6 +1,6 @@
 var dir = sign(image_xscale)
-if instance_exists(oPlayer) {
-	dir = sign(oPlayer.x-x)
+if instance_exists(global.player) {
+	dir = sign(global.player.x-x)
 }
 if (!attacking && walksp == 0)
 	image_xscale = dir;

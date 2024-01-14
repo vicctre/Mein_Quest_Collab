@@ -15,8 +15,8 @@ if (attacking) {
 	}
 }
 
-var xDiff = abs(oMein.x-x);
-var yDiff = abs(oMein.y-y);
+var xDiff = abs(global.player.x-x);
+var yDiff = abs(global.player.y-y);
 if (xDiff <= 80 && yDiff <= 30) {
 	if (!attacking && cooldown == 0) {
 		attacking = true;

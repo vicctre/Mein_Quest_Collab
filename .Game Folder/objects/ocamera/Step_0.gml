@@ -2,7 +2,7 @@
 
 //zoom areas
 var area = noone;
-with(oMein) {
+with(global.player) {
 	area = instance_place(x, y, oCameraZoomArea);
 }
 if (area != noone) {

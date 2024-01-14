@@ -1,7 +1,7 @@
 
-if place_meeting(x, y, oPlayer) {
-	var xx = oPlayer.x
-	var yy = oPlayer.y
+if place_meeting(x, y, global.player) {
+	var xx = global.player.x
+	var yy = global.player.y
 	if X != undefined {
 		xx = X	
 	}

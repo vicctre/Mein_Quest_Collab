@@ -1,6 +1,6 @@
 
 if !oPause.paused {
-	if place_meeting(x, y, oMein) {
+	if place_meeting(x, y, global.player) {
 		image_alpha = approach(image_alpha, 0.15, draw_alpha_ratio)
 	} else {
 		image_alpha = approach(image_alpha, 1, draw_alpha_ratio)

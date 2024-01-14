@@ -10,7 +10,7 @@ function SetRoomStartCamera() {
 view_enabled = true
 view_visible[0] = true
 cam = view_camera[0]
-follow = oMein
+follow = global.player
 cam_height = 288;
 cam_width = 512;
 cam_width_base = cam_width;

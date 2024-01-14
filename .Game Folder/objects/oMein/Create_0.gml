@@ -13,6 +13,7 @@ enum PLAYERSTATE {
 	PICKUP_ADVLOG,
 }
 
+global.player = id
 scr_debug_ini()
 global.VAR_BAR_ROW_DELTA = 30
 
@@ -414,6 +415,12 @@ function is_dead() {
 		   or state == PLAYERSTATE.PRE_DEAD
 }
 
+function start_log_ride() {
+	var yy = oAutoscrollerLog.y - 7
+	instance_create_layer(x, yy, layer, oMeinOnLog)
+	instance_destroy()
+}
+
 instance_create_layer(x, y, layer, oCamera)
 check_reset_hp()
 
@@ -427,3 +434,5 @@ if global.restart_level_on_death {
 }
 
 autoscroller_workaround_delay = 3
+
+dev_override()

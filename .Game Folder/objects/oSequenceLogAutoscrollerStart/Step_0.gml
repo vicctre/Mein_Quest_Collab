@@ -1,8 +1,8 @@
 
 event_inherited()
 
-if !is_playing() and place_meeting(x, y, oMein) {
+if !is_playing() and place_meeting(x, y, global.player) {
 	unpause()
-	oMein.visible = false
-	oMein.has_control = false
+	global.player.visible = false
+	global.player.has_control = false
 }
