@@ -1,6 +1,12 @@
 ///remember, its locked to the screen not the camera 
 /// @desc Draw menu 
 
+// scroll debugging
+//var yy = menu_cursor_y_min
+//draw_line(0, yy, 10000, yy)
+//var yy = menu_cursor_y_max
+//draw_line(0, yy, 10000, yy)
+
 var halign = draw_get_halign(), valign = draw_get_valign()
 
 draw_set_font(fMenu) 
