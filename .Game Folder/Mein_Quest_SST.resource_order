@@ -138,6 +138,7 @@
     {"name":"BGM_1_2_pt2","order":2,"path":"sounds/BGM_1_2_pt2/BGM_1_2_pt2.yy",},
     {"name":"sPlayerAttackAeral","order":2,"path":"sprites/sPlayerAttackAeral/sPlayerAttackAeral.yy",},
     {"name":"sEnemy01Ded","order":1,"path":"sprites/sEnemy01Ded/sEnemy01Ded.yy",},
+    {"name":"oMenuStageSelect","order":18,"path":"objects/oMenuStageSelect/oMenuStageSelect.yy",},
     {"name":"SFX_Tuffull_Roar","order":6,"path":"sounds/SFX_Tuffull_Roar/SFX_Tuffull_Roar.yy",},
     {"name":"rmDNS_Logo","order":7,"path":"rooms/rmDNS_Logo/rmDNS_Logo.yy",},
     {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},

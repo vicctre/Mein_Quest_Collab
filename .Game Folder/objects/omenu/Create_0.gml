@@ -56,20 +56,12 @@ function PerformButton(index) {
 	menu_control = false
 }
 
-function PerformGoBack() {
-	menu_committed = 0
-	menu_x_target = menu_x_target_start
-	menu_control = false
-}
-
 function StageStarter(stage, title) constructor {
 	self.stage = stage
 	self.title = title
-	
+	self.sprite = sMenuStageIcon
+
 	function action() {
-		//if room == rmTitleScreen {
-		//	oMusic.switch_music(noone)
-		//}
 		if stage == W1_1_part1 {
 			SlideTransition(TRANS_MODE.GOTO, rmIntroSequence)
 		} else {
@@ -132,7 +124,7 @@ function AnimateCursor() {
 	menu_cursor_y = approach(menu_cursor_y, menu_cursor_y_target, vsp)
 	menu_cursor_frame += menu_cursor_animate_sp
 }
-
+ 
 function UpdateTop() {
 	menu_top = GetCursorY(menu_items)
 }
@@ -174,18 +166,12 @@ main_menu = [
 	{
 		//title: "New Game",
 		title: "Stage select",
-		action: undefined,
-		submenu: oMenu.StageSelectSubmenu
+		action: function() {
+			instance_destroy(oMenu)
+			instance_create_layer(0, 0, "Instances", oMenuStageSelect)
+		}
 	},
 ]
-
-goback_button = {
-	title: "Back",
-	action: undefined,
-	submenu: function() {
-		return oMenu.main_menu
-	}
-}
 
 menu = main_menu
 
