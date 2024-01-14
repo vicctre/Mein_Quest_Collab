@@ -15,6 +15,12 @@ hp = {
 }
 hp_shake = new Shaker()
 
+checkpoint = {
+	time: 180,
+	timer: 0,
+	sprite: sCheckpoint
+}
+
 function hp_bar_get_index() {
 	return global.player_hp
 }
