@@ -33,6 +33,9 @@
     "name": "Label_3",
     "path": "sprites/Label_3/Label_3.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "Label_3",
+    "path": "sprites/Label_3/Label_3.yy",
+  },
   "visible": true,
 }

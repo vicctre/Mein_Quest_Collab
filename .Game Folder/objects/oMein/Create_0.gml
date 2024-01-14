@@ -50,6 +50,7 @@ jump_press_delay = 15
 jump_pressed = 0
 on_ground_delay = 10
 on_ground = 0 // used to fake ground for smoother jumping
+is_on_log = false
 
 wall_obj = oWall
 

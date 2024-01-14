@@ -2,7 +2,7 @@
 
 // autoscroller checkpoint system
 autoscroller_current_log_sprite_index = -1
-autoscroller_last_pinnik_controller = undefined
+autoscroller_reached_pinnik_controllers = []
 autoscroller_skip_log_intro = false
 
 // make camera bounds act as walls
@@ -32,7 +32,7 @@ function resetable_globals() {
 	global.coins = 0
 	global.coins_heal_amount = 100
 	global.coins_timer = 0 //for when coins flash yellow on collection
-	global.autoscroller_last_pinnik_controller = undefined
+	global.autoscroller_reached_pinnik_controllers = []
 	global.autoscroller_current_log_sprite_index = -1
 	global.camera_solid_bounds_on = false
 
@@ -57,12 +57,12 @@ function dev_override() {
 		return;
 	switch object_index {
 		case oMein:
-			x = 8100
+			x = 2600
 			break
 		case oAutoscrollerLog:
-			x = 8100
-			sprite_index = sLogShort2
-			global.autoscroller_current_log_sprite_index = 1
+			x = 2600
+			//sprite_index = sLogShort2
+			//global.autoscroller_current_log_sprite_index = 1
 			break
 	}
 }

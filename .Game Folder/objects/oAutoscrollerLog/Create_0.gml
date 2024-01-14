@@ -6,6 +6,7 @@ image_speed = 0
 delay_after_truncate = 60
 timer = 0
 shorten_sprites = [sLogShort1, sLogShort2, sLogShort3]
+switch_to_log_ride_when_mein_on_log = false
 
 function TruncateByPinnik() {
 	if timer {
@@ -19,8 +20,7 @@ function TruncateByPinnik() {
 	audio_play_sound(global.sfx_bonk, 0, false)
 	// increase speed if it is tiniest size of Log
 	if global.autoscroller_current_log_sprite_index == (array_length(shorten_sprites) - 1) {
-		global.player.start_log_ride()
-		instance_destroy()
+		switch_to_log_ride_when_mein_on_log = true
 	}
 }
 

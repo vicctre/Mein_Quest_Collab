@@ -3,10 +3,12 @@ global.player = id
 
 hsp = global.autoscroller_log_sp_increased
 vsp = 0
+min_float_up_vsp = -1
 jump_sp = -7
 bottom_bound_y = y
 has_control = true
 grav = 0.3
+jump_timer = 0
 
 wall_obj = oWall
 

@@ -1,4 +1,14 @@
 
+//if instance_exists(oAutoscrollerLog) {
+//	var test = true;
+//	show_debug_message("oAutoscrollerLog")
+//}
+//if x - oAutoscrollerLog.bbox_right < warning_sign_trigger_distance {
+//	var test = true
+//	show_debug_message("in range")
+//}
+
+
 if !already_triggered
 		and instance_exists(oAutoscrollerLog)
 		and x - oAutoscrollerLog.bbox_right < warning_sign_trigger_distance {

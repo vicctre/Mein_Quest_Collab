@@ -2,10 +2,12 @@
 global.camera_solid_bounds_on = true
 
 // start from the last falling pinnik point
-if global.autoscroller_last_pinnik_controller != undefined {
-	oAutoscrollerLog.x = global.autoscroller_last_pinnik_controller.x
+var len = array_length(global.autoscroller_reached_pinnik_controllers)
+if len {
+	var last = global.autoscroller_reached_pinnik_controllers[len - 1]
+	oAutoscrollerLog.x = last.x
 	oAutoscrollerLog.set_sprite_index(global.autoscroller_current_log_sprite_index)
-	global.player.x  = global.autoscroller_last_pinnik_controller.x
+	global.player.x  = last.x
 }
 
 // dev

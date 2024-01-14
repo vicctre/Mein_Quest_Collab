@@ -16,18 +16,35 @@ up_free = place_empty(x, y - 1, wall_obj)
 left_free = place_empty(x - 1, y, wall_obj)
 right_free = place_empty(x + 1, y, wall_obj)
 
-vsp += grav * down_free
+jump_timer--
+
+if y < bottom_bound_y {
+	vsp += grav * down_free
+} else if y > bottom_bound_y
+		// water doesn't affect vsp shortly after jump
+		and !jump_timer {
+	var diff = abs(y - bottom_bound_y)
+	if vsp > 0 {
+		vsp -= diff * 0.06
+	} else {
+		vsp = -diff * 0.1
+		// negate vsp if near the floating 
+		if abs(vsp) < 0.1 {
+			vsp = 0
+			y = bottom_bound_y
+		}
+	}
+}
 
 if !down_free {
 	sprite_index = sMeinLogRideJump
 	if key_jump {
 		vsp = jump_sp
+		jump_timer = 5
 	}
 } else {
 	sprite_index = sMeinLogRide
 }
-
-y = min(y, bottom_bound_y)
 
 scr_move_coord_contact_obj(hsp, vsp, wall_obj)
 
