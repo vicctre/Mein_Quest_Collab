@@ -1,6 +1,6 @@
 
-x += hsp
-y += vsp
+x += hsp * is_falling
+y += vsp * is_falling
 
 if !has_hit_log and place_meeting(x, y, oAutoscrollerLog) {
 	oAutoscrollerLog.TruncateByPinnik()
