@@ -8,7 +8,6 @@ draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
 
 for (var i = 0; i < array_length(menu); i++) {
-	var offset = 2 
 	var txt = menu[i].title
 	if (menu_cursor == i) {
 		//txt = Highlight(txt)
@@ -18,14 +17,8 @@ for (var i = 0; i < array_length(menu); i++) {
 	}
 	var xx = menu_x 
 	var yy = menu_y - (menu_itemheight * (i * 1.5))
+	DrawTextOutlined(txt, xx, yy, col)
 	draw_sprite(sMenuStageIcon, 0, xx, yy)
-	draw_set_color(c_black)
-	draw_text(xx-offset,yy,txt)
-	draw_text(xx+offset,yy,txt) 
-	draw_text(xx,yy-offset,txt) 
-	draw_text(xx,yy+offset,txt) 
-	draw_set_color(col) 
-	draw_text(xx, yy, txt)
 }
 
 draw_set_halign(halign)

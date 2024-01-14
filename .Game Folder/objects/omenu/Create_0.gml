@@ -34,6 +34,16 @@ mouse_y_prev = mouse_y
 gp_vinp_threshold = 0.85
 gp_vinp_pressed = false
 
+function DrawTextOutlined(text, xx, yy, color, offset=2, outline_color=c_black) {
+	draw_set_color(outline_color)
+	draw_text(xx - offset, yy, text)
+	draw_text(xx + offset, yy, text) 
+	draw_text(xx, yy - offset, text) 
+	draw_text(xx, yy + offset, text) 
+	draw_set_color(color)
+	draw_text(xx, yy, text)
+}
+
 function PerformAction() {
 	var menu_item = menu[menu_committed]
 	if menu_item.action != undefined {
