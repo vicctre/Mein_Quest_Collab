@@ -22,6 +22,7 @@ cam_zoom_area = noone;
 ResizeCamera();
 xTo = x
 yTo = y
+x_shift = 0
 
 shake_length = 40
 shake_magnitude = 1

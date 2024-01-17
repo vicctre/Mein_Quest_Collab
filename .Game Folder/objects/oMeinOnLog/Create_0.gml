@@ -54,4 +54,5 @@ function is_dead() {
 	return _is_dead
 }
 
-instance_create_layer(x, y, layer, oCamera)
+var cam = instance_create_layer(x, y, layer, oCamera)
+cam.x_shift = 150

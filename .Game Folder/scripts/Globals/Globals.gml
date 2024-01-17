@@ -5,6 +5,14 @@ autoscroller_current_log_sprite_index = -1
 autoscroller_reached_pinnik_controllers = []
 autoscroller_skip_log_intro = false
 
+// parallax background settings
+bgr1_xoffset = 0
+bgr2_xoffset = 0
+bgr3_xoffset = 0
+bgr1_parallax = 0.5
+bgr2_parallax = 0.7
+bgr3_parallax = 0.9
+
 // make camera bounds act as walls
 camera_solid_bounds_on = false
 checkpoint = undefined

@@ -23,8 +23,8 @@ if (cam_zoom_current != cam_zoom_target) {
 //update destination aka where ever the player is 
 if (instance_exists(follow)) 
 {
-	xTo = follow.x; 
-	yTo = follow.y; 
+	xTo = follow.x + x_shift;
+	yTo = follow.y;
 	
 	if ((follow).object_index == oPlayerDead)
 	{
@@ -60,21 +60,16 @@ camera_set_view_pos(cam,x-view_w_half + x_shake,y-view_h_half + y_shake);
 
 // bgr parallax
 if layer_exists("BG1") {
-	var parallax = 0.5
-	layer_x("BG1", (x + global.bgr1_xoffset) * parallax)
-	layer_y("BG1", (y + global.bgr1_yoffset) * parallax)
+	layer_x("BG1", (x + global.bgr1_xoffset) * global.bgr1_parallax)
+	layer_y("BG1", (y + global.bgr1_yoffset) * global.bgr1_parallax)
 }
 
-if (layer_exists("BG2")) 
-{
-	var parallax = 0.7
-	layer_x("BG2", (x + global.bgr2_xoffset) * parallax)
-	layer_y("BG2", (y + global.bgr2_yoffset) * parallax)
+if (layer_exists("BG2")) {
+	layer_x("BG2", (x + global.bgr2_xoffset) * global.bgr2_parallax)
+	layer_y("BG2", (y + global.bgr2_yoffset) * global.bgr2_parallax)
 }
 
-if (layer_exists("BG3")) 
-{
-	var parallax = 0.9
-	layer_x("BG3", (x + global.bgr3_xoffset) * parallax)
-	layer_y("BG3", (y + global.bgr3_yoffset) * parallax)
+if (layer_exists("BG3")) {
+	layer_x("BG3", (x + global.bgr3_xoffset) * global.bgr3_parallax)
+	layer_y("BG3", (y + global.bgr3_yoffset) * global.bgr3_parallax)
 }
