@@ -14,7 +14,7 @@ key_attack = oInput.key_attack * has_control
 down_free = place_empty(x, y + 1, wall_obj)
 up_free = place_empty(x, y - 1, wall_obj)
 //left_free = place_empty(x - 1, y, wall_obj)
-//right_free = place_empty(x + 1, y, wall_obj)
+right_free = place_empty(x + 1, y, wall_obj)
 is_floating = (y >= bottom_bound_y)
 
 if has_control {
@@ -70,6 +70,7 @@ if has_control {
 		Hit()
 	}
 
+	x += hsp
 	if vsp != 0 {
 		scr_move_coord_contact_obj(0, vsp, wall_obj)
 	}
