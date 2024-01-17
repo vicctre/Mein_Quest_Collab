@@ -54,7 +54,7 @@ function resetable_globals() {
 	if DEV {
 		global.coins = 50;
 		global.player_invincible = false
-		global.dev_level_goto = W1_2_part5_AutoScroller2
+		global.dev_level_goto = W1_2_part4_AutoScroller1
 		global.skip_logos = true
 		global.autoscroller_skip_log_intro = true
 	}
@@ -63,14 +63,18 @@ function resetable_globals() {
 function dev_override() {
 	if !DEV
 		return;
-	switch object_index {
-		case oMein:
-			//x = 2600
-			break
-		case oAutoscrollerLog:
-			//x = 2600
-			//sprite_index = sLogShort2
-			//global.autoscroller_current_log_sprite_index = 1
+	switch room {
+		case W1_2_part4_AutoScroller1:
+			switch object_index {
+				case oMein:
+					x = 8100
+					break
+				case oAutoscrollerLog:
+					x = 8100
+					sprite_index = sLogShort2
+					global.autoscroller_current_log_sprite_index = 1
+					break
+			}
 			break
 	}
 }
