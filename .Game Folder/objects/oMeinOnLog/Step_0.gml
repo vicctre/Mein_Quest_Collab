@@ -37,13 +37,13 @@ if y < bottom_bound_y {
 }
 
 if !down_free {
-	sprite_index = sMeinLogRideJump
+	sprite_index = sMeinLogRide
 	if key_jump {
 		vsp = jump_sp
 		jump_timer = 5
 	}
 } else {
-	sprite_index = sMeinLogRide
+	sprite_index = sMeinLogRideJump
 }
 
 scr_move_coord_contact_obj(hsp, vsp, wall_obj)
