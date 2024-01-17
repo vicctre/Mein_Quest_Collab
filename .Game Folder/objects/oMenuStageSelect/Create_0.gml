@@ -2,8 +2,6 @@
 
 event_inherited()
 
-button_max_size = 0
-
 function PerformGoBack() {
 	menu_committed = 0
 	menu_x_target = menu_x_target_start

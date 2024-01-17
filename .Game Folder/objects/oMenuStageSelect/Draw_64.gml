@@ -9,9 +9,9 @@
 
 var halign = draw_get_halign(), valign = draw_get_valign()
 
-draw_set_font(fMenu) 
+draw_set_font(fMenu)
 draw_set_halign(fa_center)
-draw_set_valign(fa_middle)
+draw_set_valign(fa_bottom)
 
 for (var i = 0; i < array_length(menu); i++) {
 	var txt = menu[i].title
@@ -24,7 +24,7 @@ for (var i = 0; i < array_length(menu); i++) {
 	var xx = menu_x 
 	var yy = menu_y - (menu_itemheight * (i * 1.5))
 	DrawTextOutlined(txt, xx, yy, col)
-	draw_sprite(sMenuStageIcon, 0, xx, yy)
+	draw_sprite(sMenuStageIcon, 0, xx, yy + menu_cursor_y_shift)
 }
 
 draw_set_halign(halign)

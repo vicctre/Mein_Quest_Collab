@@ -7,8 +7,8 @@ if (menu_control) {
 	if (oInput.key_up_pressed) {
 		menu_cursor++; 
 		if (menu_cursor >= menu_items) {
-      menu_cursor = 0
-    }
+	      menu_cursor = 0
+	    }
 		audio_play_sound(global.sfx_nav,6,false)
 	}
 }
@@ -31,7 +31,7 @@ if (menu_control) {
 		if oInput.mouse_moved {
 			menu_cursor = (menu_y - mouse_y_gui) div (menu_itemheight * 1.5)
 		}
-		
+
 		if (mouse_check_button_pressed(mb_left)) {
 			menu_cursor = (menu_y - mouse_y_gui) div (menu_itemheight * 1.5)
 			PerformButton(menu_cursor)
@@ -39,6 +39,8 @@ if (menu_control) {
 		}
 	}
 }
+
+menu_cursor = clamp(menu_cursor, 0, array_length(menu) - 1)
 
 menu_cursor_y_target = GetCursorY(menu_cursor)
 menu_cursor_x_target = (gui_width - menu_x) - string_width(menu[menu_cursor].title) * 0.5 - 20
