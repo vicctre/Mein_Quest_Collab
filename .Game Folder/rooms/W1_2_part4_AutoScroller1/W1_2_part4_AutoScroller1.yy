@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "W1_2_part4_AutoScroller1",
-  "creationCodeFile": "${project_dir}/rooms/W1_2_part4_AutoScroller1/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/W1_2_part4_AutoScroller1/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
