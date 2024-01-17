@@ -125,6 +125,14 @@ function animate_crouch_transition(sprite_to, img_sp) {
 	return false
 }
 
+function create_death_animation() {
+	var inst = instance_create_layer(x, y, layer, deadEnemy)
+	inst.sprite_index = sPlayerDead
+	inst.vsp = global.player_dead_vsp
+	inst.hsp = global.player_dead_hsp * -image_xscale
+	inst.image_xscale = image_xscale
+}
+
 function check_perform_jump() {
 	if key_jump
 		jump_pressed = jump_press_delay
