@@ -164,11 +164,7 @@ switch state {
 		// transition
 		if !death_animation_started {
 			alarm[1] = global.death_transition_delay_time
-			var inst = instance_create_layer(x, y, layer, deadEnemy)
-			inst.sprite_index = sPlayerDead
-			inst.vsp = global.player_dead_vsp
-			inst.hsp = global.player_dead_hsp * -image_xscale
-			inst.image_xscale = image_xscale
+			create_death_animation()
 			visible = false
 			death_animation_started = true
 			oMusic.switch_music(global.msc_player_dead, false, 0)

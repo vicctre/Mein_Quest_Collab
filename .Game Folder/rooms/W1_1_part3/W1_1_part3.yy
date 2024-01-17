@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "W1_1_part3",
   "creationCodeFile": "${project_dir}/rooms/W1_1_part2/RoomCreationCode.gml",
-  "inheritCode": true,
+  "inheritCode": false,
   "inheritCreationOrder": true,
   "inheritLayers": false,
   "instanceCreationOrder": [

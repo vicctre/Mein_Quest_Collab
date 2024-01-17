@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "RoomTemplate",
-  "creationCodeFile": "${project_dir}/rooms/W1_1_part1/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/RoomTemplate/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
