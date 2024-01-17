@@ -14,7 +14,6 @@ enum PLAYERSTATE {
 }
 
 global.player = id
-scr_debug_ini()
 global.VAR_BAR_ROW_DELTA = 30
 
 /// main parameters

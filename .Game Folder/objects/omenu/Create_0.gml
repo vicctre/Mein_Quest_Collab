@@ -192,3 +192,9 @@ main_menu = [
 menu = main_menu
 
 Init()
+
+if object_index == oMenu {
+	surface_resize(application_surface, scr_camw(0), scr_camh(0))
+	alarm[0] = 10
+}
+

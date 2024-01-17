@@ -1,2 +1,2 @@
 
-//scr_debug_show_var("fog effect", "")
+//debug_draw_var("fog effect", "")

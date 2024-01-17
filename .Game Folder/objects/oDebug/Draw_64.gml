@@ -1,2 +1,1 @@
-
-scr_debug_scripts_update()	
+debug_draw_update()

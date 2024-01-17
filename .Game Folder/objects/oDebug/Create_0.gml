@@ -13,8 +13,9 @@ if global.dev_level_goto != noone {
 }
 
 
-scr_debug_ini()
-global.VAR_BAR_Y = 200
+debug_draw_ini()
+global.VAR_BAR_Y_BASE = 200
+global.VAR_BAR_ROW_DELTA = 80
 
 //if !global.gui_adjusted {
 //	display_set_gui_size(window_get_width(), window_get_height())

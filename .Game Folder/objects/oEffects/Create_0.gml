@@ -1,8 +1,6 @@
 
 ensure_singleton()
 
-scr_debug_ini()
-
 psys = part_system_create()
 
 p_dust = part_type_create()

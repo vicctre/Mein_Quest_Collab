@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "libs",
-    "path": "folders/Scripts/libs.yy",
+    "name": "Scripts",
+    "path": "folders/AlexLibs/Scripts.yy",
   },
 }

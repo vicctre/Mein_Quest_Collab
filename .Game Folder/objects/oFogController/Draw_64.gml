@@ -1,10 +1,10 @@
 
 //scr_debug_scripts_update()
-//scr_debug_show_var("", "")
-//scr_debug_show_var("", "")
-//scr_debug_show_var("", "")
-//scr_debug_show_var("", "")
-//scr_debug_show_var("", "")
+//debug_draw_var("", "")
+//debug_draw_var("", "")
+//debug_draw_var("", "")
+//debug_draw_var("", "")
+//debug_draw_var("", "")
 
 
-//scr_debug_show_var("fog", "")
+//debug_draw_var("fog", "")

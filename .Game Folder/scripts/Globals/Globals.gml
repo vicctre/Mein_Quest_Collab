@@ -54,7 +54,7 @@ function resetable_globals() {
 	if DEV {
 		global.coins = 50;
 		global.player_invincible = false
-		global.dev_level_goto = W1_2_part4_AutoScroller1
+		global.dev_level_goto = W1_1_part3
 		global.skip_logos = true
 		global.autoscroller_skip_log_intro = true
 	}
