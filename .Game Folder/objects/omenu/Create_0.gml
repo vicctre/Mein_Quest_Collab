@@ -23,6 +23,7 @@ menu_committed = -1
 menu_control = true
 
 menu_cursor_y = 0
+menu_cursor_y_shift = -32
 menu_cursor_y_min = 100
 menu_cursor_y_max = gui_height - 100
 menu_cursor_x_target = menu_x_base
@@ -145,7 +146,7 @@ function UpdateTop() {
 }
 
 function GetCursorY(cursor) {
-	return menu_y - ((menu_itemheight * 1.5) * cursor)
+	return menu_y - ((menu_itemheight * 1.5) * cursor) + menu_cursor_y_shift
 }
 
 function Init() {
