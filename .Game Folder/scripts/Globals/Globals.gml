@@ -16,6 +16,8 @@ bgr3_parallax = 0.9
 // make camera bounds act as walls
 camera_solid_bounds_on = false
 checkpoint = undefined
+coins = 0
+coins_timer = 0
 gui_adjusted = false
 gui_workaround_restart_happened = false
 logo_sequence_speed_scale = 1
@@ -36,14 +38,17 @@ available_stages = [
 	W1_2_part5_AutoScroller2,
 ]
 
-function resetable_globals() {
+function level_reset_globals() {
 	global.coins = 0
-	global.coins_heal_amount = 100
-	global.coins_timer = 0 //for when coins flash yellow on collection
-	global.autoscroller_reached_pinnik_controllers = []
-	global.autoscroller_current_log_sprite_index = -1
+	global.coins_timer = 0 // for when coins flash yellow on collection
 	global.camera_solid_bounds_on = false
+	global.player_hp = global.player_hp_max
+}
 
+function game_reset_globals() {
+	level_reset_globals()
+	global.autoscroller_current_log_sprite_index = -1
+	global.autoscroller_reached_pinnik_controllers = []
 	global.rooms_with_onto_stage_seq = [
 		W1_1_part1,
 		W1_2_part1,
@@ -65,21 +70,21 @@ function dev_override() {
 		return;
 	switch room {
 		case W1_2_part4_AutoScroller1:
-			//switch object_index {
-			//	case oMein:
-			//		x = 8100
-			//		break
-			//	case oAutoscrollerLog:
-			//		x = 8100
-			//		sprite_index = sLogShort2
-			//		global.autoscroller_current_log_sprite_index = 1
-			//		break
-			//}
+			switch object_index {
+				case oMein:
+					x = 8100
+					break
+				case oAutoscrollerLog:
+					x = 8100
+					sprite_index = sLogShort2
+					global.autoscroller_current_log_sprite_index = 1
+					break
+			}
 			break
 	}
 }
 
-resetable_globals();
+game_reset_globals();
 
 
 global.Logs_Collected = [];

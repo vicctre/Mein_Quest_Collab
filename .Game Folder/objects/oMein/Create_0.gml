@@ -436,9 +436,6 @@ if should_play_onto_stage_sequence() {
 	play_onto_stage_sequence()
 }
 
-if global.restart_level_on_death {
-	global.restart_level_on_death = false
-	global.player_hp = global.player_hp_max
-}
+dev_autoscroller_camera_solid_walls_workaround_timer = 3
 
 dev_override()

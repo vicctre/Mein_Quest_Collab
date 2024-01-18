@@ -392,7 +392,6 @@
     {"name":"AdventureLogFunctions","order":26,"path":"scripts/AdventureLogFunctions/AdventureLogFunctions.yy",},
     {"name":"Idle05","order":3,"path":"sprites/Idle05/Idle05.yy",},
     {"name":"ResizeCamera","order":17,"path":"scripts/ResizeCamera/ResizeCamera.yy",},
-    {"name":"Restart","order":14,"path":"scripts/Restart/Restart.yy",},
     {"name":"sFakeWall","order":8,"path":"sprites/sFakeWall/sFakeWall.yy",},
     {"name":"Mein_EXP01_strip8","order":15,"path":"sprites/Mein_EXP01_strip8/Mein_EXP01_strip8.yy",},
     {"name":"sWaterFall","order":2,"path":"sprites/sWaterFall/sWaterFall.yy",},

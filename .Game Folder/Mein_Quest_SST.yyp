@@ -497,7 +497,6 @@
     {"id":{"name":"AdventureLogFunctions","path":"scripts/AdventureLogFunctions/AdventureLogFunctions.yy",},},
     {"id":{"name":"Idle05","path":"sprites/Idle05/Idle05.yy",},},
     {"id":{"name":"ResizeCamera","path":"scripts/ResizeCamera/ResizeCamera.yy",},},
-    {"id":{"name":"Restart","path":"scripts/Restart/Restart.yy",},},
     {"id":{"name":"sFakeWall","path":"sprites/sFakeWall/sFakeWall.yy",},},
     {"id":{"name":"Mein_EXP01_strip8","path":"sprites/Mein_EXP01_strip8/Mein_EXP01_strip8.yy",},},
     {"id":{"name":"sWaterFall","path":"sprites/sWaterFall/sWaterFall.yy",},},

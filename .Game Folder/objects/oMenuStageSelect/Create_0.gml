@@ -21,7 +21,7 @@ function StageStarter(stage, title) constructor {
 		}
 		oMusic.switch_music(global.msc_stage_1_1)
 		global.player_hp = global.player_hp_max
-		resetable_globals()
+		game_reset_globals()
 	}
 }
 
