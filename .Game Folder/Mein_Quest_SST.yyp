@@ -14,6 +14,8 @@
   },
   "defaultScriptType": 1,
   "Folders": [
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"AlexLibs","folderPath":"folders/AlexLibs.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Scripts","folderPath":"folders/AlexLibs/Scripts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Extensions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Fonts.yy",},
@@ -113,8 +115,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"1_2","folderPath":"folders/Tile Sets/1_2.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"1_3","folderPath":"folders/Tile Sets/1_3.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"AlexLibs","folderPath":"folders/AlexLibs.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Scripts","folderPath":"folders/AlexLibs/Scripts.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,

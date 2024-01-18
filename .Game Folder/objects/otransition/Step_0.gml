@@ -40,6 +40,7 @@ if (mode != TRANS_MODE.OFF)
 			{
 				mode = TRANS_MODE.INTRO; 
 				room_restart();
+				resetable_globals()
 				percent = 1;
 				break;
 			}

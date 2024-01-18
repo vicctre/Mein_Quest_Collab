@@ -3,12 +3,12 @@ if oPause.paused
 	exit
 
 if instance_exists(oAutoscrollerLog) {
-	if !intro_played {
-		oAutoscrollerLog.x += global.autoscroller_log_sp
+	if !intro_played { 
 		if (oAutoscrollerLog.x >= x) {
 			x = oAutoscrollerLog.x
 			intro_played = true
 			global.player.has_control = true
+			global.camera_solid_bounds_on = true
 		}
 	} else {
 		x += global.autoscroller_log_sp

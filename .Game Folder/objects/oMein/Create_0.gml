@@ -441,6 +441,4 @@ if global.restart_level_on_death {
 	global.player_hp = global.player_hp_max
 }
 
-autoscroller_workaround_delay = 3
-
 dev_override()

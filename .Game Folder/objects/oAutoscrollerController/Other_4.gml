@@ -1,6 +1,4 @@
 
-global.camera_solid_bounds_on = true
-
 // start from the last falling pinnik point
 var len = array_length(global.autoscroller_reached_pinnik_controllers)
 if len {
@@ -14,4 +12,5 @@ if len {
 if global.autoscroller_skip_log_intro {
 	oAutoscrollerLog.x = max(x, oAutoscrollerLog.x)
 	global.player.x = max(x, global.player.x)
+	global.camera_solid_bounds_on = true
 }

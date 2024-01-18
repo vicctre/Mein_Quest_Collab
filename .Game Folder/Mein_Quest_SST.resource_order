@@ -1,5 +1,7 @@
 {
   "FolderOrderSettings": [
+    {"name":"AlexLibs","order":17,"path":"folders/AlexLibs.yy",},
+    {"name":"Scripts","order":1,"path":"folders/AlexLibs/Scripts.yy",},
     {"name":"Animation Curves","order":8,"path":"folders/Animation Curves.yy",},
     {"name":"Extensions","order":10,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":2,"path":"folders/Fonts.yy",},
@@ -86,8 +88,6 @@
     {"name":"1_2","order":1,"path":"folders/Tile Sets/1_2.yy",},
     {"name":"1_3","order":2,"path":"folders/Tile Sets/1_3.yy",},
     {"name":"Timelines","order":3,"path":"folders/Timelines.yy",},
-    {"name":"AlexLibs","order":17,"path":"folders/AlexLibs.yy",},
-    {"name":"Scripts","order":1,"path":"folders/AlexLibs/Scripts.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sShanteeWindUp","order":4,"path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},
