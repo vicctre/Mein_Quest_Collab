@@ -1,4 +1,6 @@
 
+draw_set_font(fMenu)
+
 draw_hp_bar()
 
 var scale = 2;
