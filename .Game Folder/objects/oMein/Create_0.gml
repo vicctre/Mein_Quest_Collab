@@ -415,7 +415,7 @@ function on_death() {
 	global.restart_level_on_death = true
 	global.lose_coins_counter = global.lose_coins_time;
 	global.coins = max(0, global.coins - 30)
-	oMusic.switch_music(global.msc_stage_1_1, false)
+	oMusic.switch_music(global.msc_stage_1_1, true)
 }
 
 function is_dead() {
