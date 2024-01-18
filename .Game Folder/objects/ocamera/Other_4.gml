@@ -21,5 +21,3 @@ if (room == W1_1_part5) {
 	follow = global.player
 	cam_width = cam_width_base;
 }
-
-alarm[0] = 1

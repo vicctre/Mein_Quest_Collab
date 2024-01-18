@@ -17,15 +17,6 @@ cam_width_base = cam_width
 cam_zoom_current = 1
 cam_zoom_target = cam_zoom_current
 
-/*
-1. Figure out how to scale evrth up
-2. Figure out how to properly GUI
-*/
-var mult = 8
-surface_resize(application_surface, cam_width*mult, cam_height*mult)
-application_surface_draw_enable(false)
-alarm[0] = 1
-
 cam_zoom_area = noone
 
 ResizeCamera()
