@@ -31,8 +31,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "UI stuff",
-    "path": "folders/Sprites/UI stuff.yy",
+    "name": "In Game HUD",
+    "path": "folders/Sprites/UI stuff/In Game HUD.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

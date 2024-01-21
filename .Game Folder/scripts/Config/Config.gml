@@ -10,7 +10,8 @@ Read more in manual.
 #macro Demo:DEMO true
 
 autoscroller_log_sp = 1.5
-autoscroller_log_sp_increased = 3
+autoscroller_log_sp_increased = 4.15
+///used to change autocroller log speed
 
 coins_heal_amount = 100
 

@@ -5,7 +5,7 @@ global.player = id
 
 hsp = global.autoscroller_log_sp_increased
 vsp = 0
-min_float_up_vsp = -1
+min_float_up_vsp = -0.1 //used to adjust float when landing in water?
 jump_sp = -7
 bottom_bound_y = y
 has_control = true

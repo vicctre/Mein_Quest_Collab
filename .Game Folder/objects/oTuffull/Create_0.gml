@@ -1,8 +1,8 @@
 event_inherited();
 deadSprite = sTuffull_HitWall;
 hp = global.tufful_hp;
-spd_walk = 3;
-spd_charge = 5.6;
+spd_walk = 2.6;
+spd_charge = 5;
 spd_jump = 3;
 jump_height = 8;
 timer = 80;
@@ -10,8 +10,8 @@ image_xscale = -size;
 hsp_target = 0; //speed to accelerate hsp towards
 
 idle_time = 30;
-charge_prep_time = 50;
-stun_time = 50;
+charge_prep_time = 60;
+stun_time = 60;
 walk_time = 40;
 jump_prep_time = 20;
 charge_count = 3;
