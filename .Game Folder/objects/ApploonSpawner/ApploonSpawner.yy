@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sCutCube",
-    "path": "sprites/sCutCube/sCutCube.yy",
+    "name": "sApploonSpawner",
+    "path": "sprites/sApploonSpawner/sApploonSpawner.yy",
   },
   "spriteMaskId": null,
   "visible": false,
