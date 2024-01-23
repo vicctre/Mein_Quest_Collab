@@ -1,4 +1,5 @@
 event_inherited();
+name = "Tufful";
 deadSprite = sTuffull_HitWall;
 spd_walk = 2.6;
 spd_charge = 5;
