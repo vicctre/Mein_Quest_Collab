@@ -10,15 +10,15 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pCut","path":"objects/pCut/pCut.yy",},"propertyId":{"name":"hp","path":"objects/pCut/pCut.yy",},"value":"1",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pCut","path":"objects/pCut/pCut.yy",},"propertyId":{"name":"hp","path":"objects/pCut/pCut.yy",},"value":"global.tufful_hp;",},
   ],
   "parent": {
     "name": "Bosses",
     "path": "folders/Objects/Enemies/Bosses.yy",
   },
   "parentObjectId": {
-    "name": "ENEMY",
-    "path": "objects/ENEMY/ENEMY.yy",
+    "name": "ENEMYBOSS",
+    "path": "objects/ENEMYBOSS/ENEMYBOSS.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

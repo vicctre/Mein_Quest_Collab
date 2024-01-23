@@ -1,6 +1,7 @@
 
 event_inherited()
 
+hp_max = hp;
 //for flying units
 hsp_goal = hsp;
 vsp_goal = vsp;

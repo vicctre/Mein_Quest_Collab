@@ -1,14 +1,17 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sBossHP",
-  "bbox_bottom": 24,
-  "bbox_left": 6,
-  "bbox_right": 238,
-  "bbox_top": 10,
+  "name": "sBossHP_health",
+  "bbox_bottom": 6,
+  "bbox_left": 0,
+  "bbox_right": 182,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
+  "ConfigValues": {
+    "Dev": {"textureGroupId":"{\"name\":\"Default\",\"path\":\"texturegroups/Default\"}",},
+  },
   "DynamicTexturePage": false,
   "edgeFiltering": false,
   "For3D": false,
@@ -17,7 +20,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 36,
+  "height": 7,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d50cfa4c-83c8-480e-9c25-b22b8743b2ee","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -55,7 +58,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sBossHP",
+    "name": "sBossHP_health",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -77,7 +80,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"34686e45-fea0-41ce-9647-7116f06e37a8","path":"sprites/sBossHP/sBossHP.yy",},},},"Disabled":false,"id":"20e451cb-f65c-41de-ad05-6a7d220cac98","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"34686e45-fea0-41ce-9647-7116f06e37a8","path":"sprites/sBossHP_health/sBossHP_health.yy",},},},"Disabled":false,"id":"e564d117-c0ce-426b-a095-0394eb64348d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -93,5 +96,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 244,
+  "width": 183,
 }

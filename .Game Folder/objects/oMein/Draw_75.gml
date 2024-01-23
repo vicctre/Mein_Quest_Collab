@@ -1,5 +1,3 @@
-
-draw_sprite_stretched()
 //debug_draw_var("key_left", key_left)
 //debug_draw_var("key_right", key_right)
 //debug_draw_var("left_free", left_free)
