@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sBossHP",
-  "bbox_bottom": 46,
-  "bbox_left": 0,
-  "bbox_right": 63,
-  "bbox_top": 20,
+  "bbox_bottom": 24,
+  "bbox_left": 6,
+  "bbox_right": 238,
+  "bbox_top": 10,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"146bba9b-91e2-4759-b2be-4051a7117a0b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"34686e45-fea0-41ce-9647-7116f06e37a8",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 64,
+  "height": 36,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7f1a0322-7004-4075-ba62-14d8443f6925","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d50cfa4c-83c8-480e-9c25-b22b8743b2ee","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": {
     "resourceType": "GMNineSliceData",
@@ -77,7 +77,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"146bba9b-91e2-4759-b2be-4051a7117a0b","path":"sprites/sBossHP/sBossHP.yy",},},},"Disabled":false,"id":"42315639-aa3a-4167-91de-d07f1cfd3e4e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"34686e45-fea0-41ce-9647-7116f06e37a8","path":"sprites/sBossHP/sBossHP.yy",},},},"Disabled":false,"id":"20e451cb-f65c-41de-ad05-6a7d220cac98","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -93,5 +93,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 64,
+  "width": 244,
 }
