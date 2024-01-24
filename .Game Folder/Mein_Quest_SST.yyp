@@ -23,7 +23,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":".ParentsClub","folderPath":"folders/Objects/.ParentsClub.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Autoscroller","folderPath":"folders/Objects/Autoscroller.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Decor","folderPath":"folders/Objects/Decor.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemies","folderPath":"folders/Objects/Enemies.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bosses","folderPath":"folders/Objects/Enemies/Bosses.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"NMEs needing code","folderPath":"folders/Objects/Enemies/NMEs needing code.yy",},
@@ -37,8 +36,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Items","folderPath":"folders/Objects/Items.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"LevelTransition","folderPath":"folders/Objects/LevelTransition.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"LevelWise","folderPath":"folders/Objects/LevelWise.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Mein Objects","folderPath":"folders/Objects/Mein Objects.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"OutsideGameObjs","folderPath":"folders/Objects/OutsideGameObjs.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SystemObjects","folderPath":"folders/Objects/SystemObjects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player","folderPath":"folders/Objects/Player.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sequences","folderPath":"folders/Objects/Sequences.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Paths","folderPath":"folders/Paths.yy",},
@@ -120,7 +118,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.1.129",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"sShanteeWindUp","path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},},

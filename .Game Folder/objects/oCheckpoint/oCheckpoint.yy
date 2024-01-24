@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "OutsideGameObjs",
-    "path": "folders/Objects/OutsideGameObjs.yy",
+    "name": "SystemObjects",
+    "path": "folders/Objects/SystemObjects.yy",
   },
   "parentObjectId": null,
   "persistent": false,
