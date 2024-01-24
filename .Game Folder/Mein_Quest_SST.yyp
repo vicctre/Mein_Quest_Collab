@@ -264,7 +264,7 @@
     {"id":{"name":"SFX_Boss_Dash","path":"sounds/SFX_Boss_Dash/SFX_Boss_Dash.yy",},},
     {"id":{"name":"sRula_jump_up","path":"sprites/sRula_jump_up/sRula_jump_up.yy",},},
     {"id":{"name":"add_coins","path":"scripts/add_coins/add_coins.yy",},},
-    {"id":{"name":"oPauseGiglet","path":"objects/oPauseGiglet/oPauseGiglet.yy",},},
+    {"id":{"name":"oPauseDummy","path":"objects/oPauseDummy/oPauseDummy.yy",},},
     {"id":{"name":"oChest","path":"objects/oChest/oChest.yy",},},
     {"id":{"name":"sShantee","path":"sprites/sShantee/sShantee.yy",},},
     {"id":{"name":"AdvLog_Tuffull","path":"sprites/AdvLog_Tuffull/AdvLog_Tuffull.yy",},},

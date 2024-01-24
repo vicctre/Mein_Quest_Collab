@@ -206,7 +206,7 @@
     {"name":"SFX_Boss_Dash","order":9,"path":"sounds/SFX_Boss_Dash/SFX_Boss_Dash.yy",},
     {"name":"sRula_jump_up","order":5,"path":"sprites/sRula_jump_up/sRula_jump_up.yy",},
     {"name":"add_coins","order":24,"path":"scripts/add_coins/add_coins.yy",},
-    {"name":"oPauseGiglet","order":6,"path":"objects/oPauseGiglet/oPauseGiglet.yy",},
+    {"name":"oPauseDummy","order":6,"path":"objects/oPauseDummy/oPauseDummy.yy",},
     {"name":"oChest","order":5,"path":"objects/oChest/oChest.yy",},
     {"name":"sShantee","order":1,"path":"sprites/sShantee/sShantee.yy",},
     {"name":"AdvLog_Tuffull","order":4,"path":"sprites/AdvLog_Tuffull/AdvLog_Tuffull.yy",},
