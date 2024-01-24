@@ -363,6 +363,7 @@
     {"id":{"name":"ENEMYBOSS","path":"objects/ENEMYBOSS/ENEMYBOSS.yy",},},
     {"id":{"name":"sCheckpointIndicator","path":"sprites/sCheckpointIndicator/sCheckpointIndicator.yy",},},
     {"id":{"name":"sStage1_2","path":"sprites/sStage1_2/sStage1_2.yy",},},
+    {"id":{"name":"oBossHpUI","path":"objects/oBossHpUI/oBossHpUI.yy",},},
     {"id":{"name":"SFX_EnemyDead","path":"sounds/SFX_EnemyDead/SFX_EnemyDead.yy",},},
     {"id":{"name":"rmThanksForPlayingScreen","path":"rooms/rmThanksForPlayingScreen/rmThanksForPlayingScreen.yy",},},
     {"id":{"name":"ThinWallSprite","path":"sprites/ThinWallSprite/ThinWallSprite.yy",},},
