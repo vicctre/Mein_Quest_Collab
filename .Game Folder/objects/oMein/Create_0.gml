@@ -363,12 +363,6 @@ function aeral_attack_finish() {
 	instance_destroy(aeral_attack_inst)
 }
 
-function check_reset_hp() {
-	if room == W1_1_part1 {
-		global.player_hp = global.player_hp_start
-	}
-}
-
 function check_just_landed() {
 	return !down_free and prev_down_free
 }
@@ -430,7 +424,6 @@ function start_log_ride() {
 }
 
 instance_create_layer(x, y, layer, oCamera)
-check_reset_hp()
 
 if should_play_onto_stage_sequence() {
 	play_onto_stage_sequence()
