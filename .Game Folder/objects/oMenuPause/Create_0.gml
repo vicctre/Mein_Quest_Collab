@@ -11,7 +11,7 @@ x_ancor = fa_middle
 menu_speed = 0.2
 
 function AnimateEaseIn() {
-	menu_y += (menu_y_target - menu_y) * menu_speed
+	menu_y = approach(menu_y, menu_y_target, menu_speed)
 }
 
 function AnimationFinished() {
@@ -31,15 +31,15 @@ function PerformButton(index) {
 
 menu = [
 	{
+		title: "Continue",
+		action: oPause.PauseWithMenuContinue
+	},
+	{
 		title: "Quit",
 		action: function() {
 			SlideTransition(TRANS_MODE.GOTO, rmMainMenu)
 			oPause.SetPaused(false)
 		}
-	},
-	{
-		title: "Continue",
-		action: oPause.PauseWithMenuContinue
 	}
 ]
 

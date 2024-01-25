@@ -6,8 +6,7 @@ var halign = draw_get_halign(), valign = draw_get_valign()
 draw_set_font(fMenu); 
 draw_set_halign(fa_center); 
 draw_set_valign(fa_bottom);
-//its important to set them BEFORE you draw any text 
-for (var i = 0; i < array_length(menu); i++) //or "i = i + 1" we are just increasing it by 1 
+for (var i = 0; i < array_length(menu); i++)
 {
 	var offset = 2; 
 	var txt = menu[i].title;
@@ -19,7 +18,7 @@ for (var i = 0; i < array_length(menu); i++) //or "i = i + 1" we are just increa
 		var col = c_grey;
 	}
 	var xx = menu_x; 
-	var yy = menu_y - (menu_itemheight * (i * 1.5));
+	var yy = menu_y + (menu_itemheight * (i * 1.5));
 	DrawTextOutlined(txt, xx, yy, col)
 }
 

@@ -11,6 +11,7 @@ menu_x_target_start = gui_width + 200
 menu_x_target_finish = menu_x_base
 menu_x = menu_x_target_start
 menu_y = gui_height * 0.5
+menu_y_base = menu_y
 menu_y_target = menu_y
 menu_x_target = menu_x_target_finish
 menu_speed = 0.1
@@ -21,6 +22,7 @@ menu_yspeed_min = 0.5
 menu_itemheight = font_get_size(fMenu)
 menu_committed = -1
 menu_control = true
+menu_y_scroll_offset = 3
 
 menu_cursor_y = 0
 menu_cursor_y_shift = -32
@@ -126,6 +128,11 @@ function Highlight(txt) {
 	return string_insert("> ", txt,0)
 }
 
+function UpdateCursorTargetPos() {
+	menu_cursor_y_target = GetCursorY(menu_cursor)
+	menu_cursor_x_target = (gui_width - menu_x) - string_width(menu[menu_cursor].title) * 0.5 - 20
+}
+
 function AnimateCursor() {
 	var dir = point_direction(
 				menu_cursor_x, menu_cursor_y,
@@ -146,12 +153,12 @@ function UpdateTop() {
 }
 
 function GetCursorY(cursor) {
-	return menu_y - ((menu_itemheight * 1.5) * cursor) + menu_cursor_y_shift
+	return menu_y + ((menu_itemheight * 1.5) * cursor) + menu_cursor_y_shift
 }
 
 function Init() {
 	menu_items = array_length(menu)
-	menu_cursor = menu_items - 1
+	menu_cursor = 0
 	menu_cursor_y_target = GetCursorY(menu_cursor)
 	menu_cursor_y = menu_cursor_y_target
 	UpdateTop()
@@ -159,8 +166,12 @@ function Init() {
 
 main_menu = [
 	{
-		title: "Quit",
-		action: game_end
+		//title: "New Game",
+		title: "Stage select",
+		action: function() {
+			instance_destroy(oMenu)
+			instance_create_layer(0, 0, "Instances", oMenuStageSelect)
+		}
 	},
 	{
 		title: "Continue",
@@ -180,13 +191,9 @@ main_menu = [
 		}
 	},
 	{
-		//title: "New Game",
-		title: "Stage select",
-		action: function() {
-			instance_destroy(oMenu)
-			instance_create_layer(0, 0, "Instances", oMenuStageSelect)
-		}
-	},
+		title: "Quit",
+		action: game_end
+	}
 ]
 
 menu = main_menu

@@ -4,7 +4,7 @@ AnimateEaseIn()
 
 // keyboard Controls 
 if (menu_control) {
-	if (oInput.key_up_pressed) {
+	if (oInput.key_down_pressed) {
 		menu_cursor++; 
 		if (menu_cursor >= menu_items) {
 	      menu_cursor = 0
@@ -14,7 +14,7 @@ if (menu_control) {
 }
 
 if (menu_control) {
-	if (oInput.key_down_pressed) {
+	if (oInput.key_up_pressed) {
 		menu_cursor--; 
 		if (menu_cursor < 0) {
       menu_cursor = menu_items-1
@@ -42,8 +42,7 @@ if (menu_control) {
 
 menu_cursor = clamp(menu_cursor, 0, array_length(menu) - 1)
 
-menu_cursor_y_target = GetCursorY(menu_cursor)
-menu_cursor_x_target = (gui_width - menu_x) - string_width(menu[menu_cursor].title) * 0.5 - 20
+UpdateCursorTargetPos()
 AnimateCursor()
 
 if AnimationFinished() and (menu_committed != -1) {
@@ -60,5 +59,6 @@ if AnimationFinished() and (menu_committed != -1) {
 //	dist = menu_cursor_y - menu_cursor_y_max
 //	menu_y_target -= dist
 //}
-//var menu_ysp = max(menu_yspeed_min, dist * menu_yspeed_gain)
-//menu_y = approach(menu_y, menu_y_target, menu_ysp)
+menu_y_target = menu_y_base - menu_itemheight * max(0, menu_cursor - menu_y_scroll_offset)
+var menu_ysp = max(menu_yspeed_min, abs(menu_y - menu_y_target) * menu_yspeed_gain)
+menu_y = approach(menu_y, menu_y_target, menu_ysp)

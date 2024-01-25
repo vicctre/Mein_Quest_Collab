@@ -8,10 +8,10 @@ function PerformGoBack() {
 	menu_control = false
 }
 
-function StageStarter(stage, title) constructor {
+function StageStarter(stage, title, spr=sMenuStageIcon) constructor {
 	self.stage = stage
 	self.title = title
-	self.sprite = sMenuStageIcon
+	self.sprite = spr
 
 	function action() {
 		if stage == W1_1_part1 {
@@ -25,19 +25,29 @@ function StageStarter(stage, title) constructor {
 	}
 }
 
+function UpdateCursorTargetPos() {
+	menu_cursor_y_target = GetCursorY(menu_cursor)
+	menu_cursor_x_target = menu_x - spr_half_width
+}
+
 function StageSelectSubmenu() {
-	var submenu = []
-	array_push(submenu, goback_button)
-	for(var i=0; i<array_length(global.available_stages); i++) {
-		var stage = global.available_stages[i]
-		var starter = new oMenu.StageStarter(stage, room_get_name(stage))
-		array_push(submenu, starter)
-	}
+	var submenu = [
+		new oMenu.StageStarter(W1_1_part1, "1-1", sStage1_1Icon),
+		new oMenu.StageStarter(W1_2_part1, "1-2", sStage1_2Icon),
+		new oMenu.StageStarter(W1_3_part1, "1-3", sStage1_3Icon),
+		goback_button,
+	]
+	//for(var i=0; i<array_length(global.available_stages); i++) {
+	//	var stage = global.available_stages[i]
+	//	var starter = new oMenu.StageStarter(stage, room_get_name(stage))
+	//	array_push(submenu, starter)
+	//}
 	return submenu
 }
 
 goback_button = {
 	title: "Back",
+	sprite: undefined,
 	action: function() {
 		instance_destroy(oMenuStageSelect)
 		instance_create_layer(0, 0, "Instances", oMenu)
@@ -45,5 +55,8 @@ goback_button = {
 }
 
 menu = StageSelectSubmenu()
+icon_scale = 2
+menu_itemheight = font_get_size(fMenu) * icon_scale + 8
+spr_half_width = sprite_get_width(sStage1_1Icon) * icon_scale * 0.5
 
 Init()
