@@ -12,6 +12,6 @@ switch(string_copy(room_name, 1, 4)) {
 	break;
 }
 
-if room != W1_1_part1 {
+if checkpoint_indicator.need_to_show() {
 	checkpoint_indicator.start_animation()
 }

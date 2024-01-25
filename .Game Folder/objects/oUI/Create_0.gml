@@ -28,6 +28,7 @@ checkpoint_indicator = {
 	x: 30,
 	y: gui_h - 50,
 	scale: 4,
+	exclude_levels: [W1_1_part1, W1_2_part1, W1_3_part1],
 
 	start_animation: function() {
 		image_index = 0
@@ -51,6 +52,9 @@ checkpoint_indicator = {
 		draw_sprite_ext(sprite_index, image_index, x, y,
 						scale, scale, 0, c_white, 1)
 	},
+	need_to_show: function() {
+		return !array_contains(exclude_levels, room)
+	}
 }
 
 function hp_bar_get_index() {
