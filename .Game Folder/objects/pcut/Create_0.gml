@@ -18,3 +18,5 @@ function set_hit(damage=0) {
 	}
 }
 
+hp_max = 1
+hp = hp_max

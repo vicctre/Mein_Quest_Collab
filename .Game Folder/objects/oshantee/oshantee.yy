@@ -9,7 +9,6 @@
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"walksp","path":"objects/ENEMY/ENEMY.yy",},"value":"0",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pCut","path":"objects/pCut/pCut.yy",},"propertyId":{"name":"hp","path":"objects/pCut/pCut.yy",},"value":"1",},
   ],
   "parent": {
     "name": "Shante",

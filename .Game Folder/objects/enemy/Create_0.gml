@@ -2,7 +2,8 @@
 event_inherited()
 
 name = "name not set, OOPS"
-hp_max = hp;
+hp_max = 1;
+hp = hp_max;
 //for flying units
 hsp_goal = hsp;
 vsp_goal = vsp;
