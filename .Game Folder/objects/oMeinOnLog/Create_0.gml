@@ -34,7 +34,7 @@ function Kill() {
 }
 
 function Hit() {
-	if invincibility_timer {
+	if invincibility_timer or invincibility_timer_no_flashing {
 		return
 	}
 	global.player_hp -= global.player_invincible == false

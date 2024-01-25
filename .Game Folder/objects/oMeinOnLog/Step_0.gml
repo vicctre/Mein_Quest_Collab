@@ -85,3 +85,5 @@ if death_delay_timer and !--death_delay_timer {
 	create_death_animation()
 	oMusic.switch_music(global.msc_player_dead, false, 0)
 }
+
+invincibility_timer_no_flashing--

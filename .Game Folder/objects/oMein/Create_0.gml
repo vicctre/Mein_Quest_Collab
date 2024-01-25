@@ -92,6 +92,7 @@ sprint_add_sp_gain = 0.5
 
 invincibility_time = global.player_invincibilty_time
 invincibility_timer = 0
+invincibility_timer_no_flashing = 0
 invincibility_blinking_gain = 14
 
 death_animation_started = false
@@ -315,7 +316,7 @@ function Kill() {
 }
 
 function Hit() {
-	if invincibility_timer {
+	if invincibility_timer or invincibility_timer_no_flashing {
 		return
 	}
 	global.player_hp -= global.player_invincible == false
@@ -419,8 +420,15 @@ function is_dead() {
 
 function start_log_ride() {
 	var yy = oAutoscrollerLog.y - 7
-	instance_create_layer(x, yy, layer, oMeinOnLog)
+	with instance_create_layer(x, yy, layer, oMeinOnLog) {
+		// prevent hitting a pinnik
+		go_invincible_without_flashing()
+	}
 	instance_destroy()
+}
+
+function go_invincible_without_flashing(time = invincibility_time) {
+	invincibility_timer_no_flashing = invincibility_time
 }
 
 instance_create_layer(x, y, layer, oCamera)

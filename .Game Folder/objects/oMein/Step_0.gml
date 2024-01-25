@@ -234,3 +234,5 @@ if (global.player_hp > 0 && bbox_bottom > room_height) {
 	global.player_hp = 1
 	Hit()
 }
+
+invincibility_timer_no_flashing--
