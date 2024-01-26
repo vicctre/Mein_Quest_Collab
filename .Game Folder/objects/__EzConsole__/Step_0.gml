@@ -49,7 +49,7 @@ if (keyboard_check_pressed(vk_anykey)) {
 			}
 			break;
 			
-		case vk_f1: // toggle console on/off
+		case console_key_toggle: // toggle console on/off
 			console_set_invisible();
 			break;
 			

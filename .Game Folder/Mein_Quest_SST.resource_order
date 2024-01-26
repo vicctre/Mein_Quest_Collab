@@ -293,6 +293,7 @@
     {"name":"sTHX","order":1,"path":"sprites/sTHX/sTHX.yy",},
     {"name":"fnt_ezConsole_Smooth","order":1,"path":"fonts/fnt_ezConsole_Smooth/fnt_ezConsole_Smooth.yy",},
     {"name":"tt","order":5,"path":"rooms/tt/tt.yy",},
+    {"name":"oEzConsole","order":1,"path":"objects/oEzConsole/oEzConsole.yy",},
     {"name":"Idle03","order":1,"path":"sprites/Idle03/Idle03.yy",},
     {"name":"sRula_Tongue_Stance","order":7,"path":"sprites/sRula_Tongue_Stance/sRula_Tongue_Stance.yy",},
     {"name":"ENEMYBOSS","order":4,"path":"objects/ENEMYBOSS/ENEMYBOSS.yy",},

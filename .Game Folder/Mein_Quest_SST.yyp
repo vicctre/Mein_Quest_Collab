@@ -379,6 +379,7 @@
     {"id":{"name":"fnt_ezConsole_Pixel","path":"fonts/fnt_ezConsole_Pixel/fnt_ezConsole_Pixel.yy",},},
     {"id":{"name":"oInput","path":"objects/oInput/oInput.yy",},},
     {"id":{"name":"tt","path":"rooms/tt/tt.yy",},},
+    {"id":{"name":"oEzConsole","path":"objects/oEzConsole/oEzConsole.yy",},},
     {"id":{"name":"Idle03","path":"sprites/Idle03/Idle03.yy",},},
     {"id":{"name":"sRula_Tongue_Stance","path":"sprites/sRula_Tongue_Stance/sRula_Tongue_Stance.yy",},},
     {"id":{"name":"ENEMYBOSS","path":"objects/ENEMYBOSS/ENEMYBOSS.yy",},},

@@ -16,6 +16,8 @@ try {
 	instance_destroy();
 }
 
+ensure_singleton()
+
 console_anchor	= ezConsole_skin[$ "anchor"];
 console_position_set_by_anchor(console_anchor);
 
@@ -88,7 +90,7 @@ console_typeahead_selected		= -1;
 console_typeahead_elements_max	= ezConsole_skin[$ "typeahead_max_elements"];
 
 depth = -1000;
-display_set_gui_maximize();
+//display_set_gui_maximize();
 surface_depth_disable(true);
 
 /* Initial message */
