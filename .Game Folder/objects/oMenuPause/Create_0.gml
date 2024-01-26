@@ -4,7 +4,8 @@ event_inherited()
 menu_y_target_start = -100
 menu_y_target_finish = menu_y_target_start + 50
 menu_y = menu_y_target_start
-menu_y_target = gui_height * 0.5
+//menu_y_target = gui_height * 0.5
+menu_y_base = gui_height * 0.5
 menu_x = gui_width * 0.5
 
 x_ancor = fa_middle
@@ -15,18 +16,18 @@ function AnimateEaseIn() {
 }
 
 function AnimationFinished() {
-	return menu_y < menu_y_target_finish
-}
-
-function Highlight(txt) {
-	return string("> {0} <", txt)
+	return abs(menu_y - menu_y_target) < menu_speed
 }
 
 function PerformButton(index) {
 	index = clamp(index, 0, array_length(menu))
 	menu_committed = index
-	menu_y_target = menu_y_target_start
+	menu_y_base = menu_y_target_start
 	menu_control = false
+}
+
+function PerformButtonContinue() {
+	PerformButton(0)
 }
 
 menu = [

@@ -12,7 +12,6 @@ for (var i = 0; i < array_length(menu); i++)
 	var txt = menu[i].title;
 	if (menu_cursor == i)
 	{
-		//txt = Highlight(txt)
 		var col = c_white;
 	} else {
 		var col = c_grey;

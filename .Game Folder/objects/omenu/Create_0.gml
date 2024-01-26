@@ -36,6 +36,7 @@ menu_font_h = 60
 menu_cursor_frame = 0
 menu_cursor_animate_sp = 0.5
 
+menu_top = 0 // used for mouse control
 mouse_x_prev = mouse_x
 mouse_y_prev = mouse_y
 
@@ -122,10 +123,6 @@ function AnimateEaseIn() {
 
 function AnimationFinished() {
 	return abs(menu_x - menu_x_target_start) < menu_speed_min
-}
-
-function Highlight(txt) {
-	return string_insert("> ", txt,0)
 }
 
 function UpdateCursorTargetPos() {

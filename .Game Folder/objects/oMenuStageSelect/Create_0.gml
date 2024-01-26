@@ -3,7 +3,7 @@
 event_inherited()
 
 function PerformGoBack() {
-	menu_committed = 0
+	menu_committed = array_length(menu) - 1
 	menu_x_target = menu_x_target_start
 	menu_control = false
 }

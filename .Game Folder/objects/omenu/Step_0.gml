@@ -45,20 +45,11 @@ menu_cursor = clamp(menu_cursor, 0, array_length(menu) - 1)
 UpdateCursorTargetPos()
 AnimateCursor()
 
-if AnimationFinished() and (menu_committed != -1) {
-	PerformAction()
-}
-
-// scroll menu
-//var dist = 0
-//if menu_cursor_y < menu_cursor_y_min {
-//	dist = menu_cursor_y_min - menu_cursor_y
-//	menu_y_target += dist
-//}
-//if menu_cursor_y > menu_cursor_y_max {
-//	dist = menu_cursor_y - menu_cursor_y_max
-//	menu_y_target -= dist
-//}
+/// scroll menu
 menu_y_target = menu_y_base - menu_itemheight * max(0, menu_cursor - menu_y_scroll_offset)
 var menu_ysp = max(menu_yspeed_min, abs(menu_y - menu_y_target) * menu_yspeed_gain)
 menu_y = approach(menu_y, menu_y_target, menu_ysp)
+
+if AnimationFinished() and (menu_committed != -1) {
+	PerformAction()
+}
