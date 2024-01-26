@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Scripts",
-    "path": "folders/AlexLibs/Scripts.yy",
+    "path": "folders/Libraries/AlexLibs/Scripts.yy",
   },
 }
