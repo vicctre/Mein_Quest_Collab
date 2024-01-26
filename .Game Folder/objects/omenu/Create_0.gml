@@ -22,7 +22,7 @@ menu_yspeed_min = 0.5
 menu_itemheight = font_get_size(fMenu)
 menu_committed = -1
 menu_control = true
-menu_y_scroll_offset = 3
+menu_y_scroll_offset = 2
 
 menu_cursor_y = 0
 menu_cursor_y_shift = -32
