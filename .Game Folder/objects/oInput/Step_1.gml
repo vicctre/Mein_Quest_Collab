@@ -13,17 +13,6 @@ gp_hinp_pressed = false
 gp_vinp_pressed = false
 mouse_moved = false
 
-if !active {
-    if keyboard_check_pressed(vk_f1) {
-      SetActive()
-    }
-    exit;
-}
-
-if keyboard_check_pressed(vk_f1) {
-  SetInactive()
-}
-
 var gp_hinp = gamepad_axis_value(0, gp_axislh)
 var gp_hinp_left = gp_hinp < -gp_hinp_threshold
 var gp_hinp_right = gp_hinp > gp_hinp_threshold
