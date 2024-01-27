@@ -1,11 +1,11 @@
 
-last_unlocked_stage = W1_1_part1
+last_unlocked_stage = real(W1_1_part1)
 
 function SaveFile() : SSave("save") constructor {
-	add_value("last_unlocked_stage", SSAVE_TYPE.REAL, real(last_unlocked_stage))
+	add_value("last_unlocked_stage", SSAVE_TYPE.REAL, real(W1_1_part1))
 }
 
-save = SaveFile()
+save = new SaveFile()
 
 if save.load("") {
 	last_unlocked_stage = save.get("last_unlocked_stage")
