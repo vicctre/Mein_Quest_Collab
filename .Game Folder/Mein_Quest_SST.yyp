@@ -20,6 +20,11 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Libraries","folderPath":"folders/Libraries.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"AlexLibs","folderPath":"folders/Libraries/AlexLibs.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Scripts","folderPath":"folders/Libraries/AlexLibs/Scripts.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GM-EzConsole","folderPath":"folders/Libraries/GM-EzConsole.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Libraries/GM-EzConsole/Fonts.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Libraries/GM-EzConsole/Objects.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Scripts","folderPath":"folders/Libraries/GM-EzConsole/Scripts.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/Libraries/GM-EzConsole/Shaders.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":".ParentsClub","folderPath":"folders/Objects/.ParentsClub.yy",},
@@ -115,11 +120,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"1_2","folderPath":"folders/Tile Sets/1_2.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"1_3","folderPath":"folders/Tile Sets/1_3.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GM-EzConsole","folderPath":"folders/Libraries/GM-EzConsole.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Libraries/GM-EzConsole/Fonts.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Libraries/GM-EzConsole/Objects.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Scripts","folderPath":"folders/Libraries/GM-EzConsole/Scripts.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/Libraries/GM-EzConsole/Shaders.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"default_commands.json","CopyToMask":-1,"filePath":"datafiles/GM-EzConsole",},
@@ -129,7 +129,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.1.129",
   },
   "resources": [
     {"id":{"name":"sShanteeWindUp","path":"sprites/sShanteeWindUp/sShanteeWindUp.yy",},},
