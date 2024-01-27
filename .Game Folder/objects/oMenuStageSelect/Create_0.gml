@@ -40,11 +40,11 @@ function StageSelectSubmenu() {
 		new oMenu.StageStarter(W1_3_part1, "1-3", sStage1_3Icon),
 		new oMenu.StageStarter(W1_3_part1, "2-1", sStageLockIcon, true),
 	]
-	for(var i=0; i<array_length(global.available_stages); i++) {
-		var stage = global.available_stages[i]
-		var starter = new oMenu.StageStarter(stage, room_get_name(stage))
-		array_push(submenu, starter)
-	}
+	//for(var i=0; i<array_length(global.available_stages); i++) {
+	//	var stage = global.available_stages[i]
+	//	var starter = new oMenu.StageStarter(stage, room_get_name(stage))
+	//	array_push(submenu, starter)
+	//}
 	array_push(submenu, goback_button)
 	return submenu
 }
