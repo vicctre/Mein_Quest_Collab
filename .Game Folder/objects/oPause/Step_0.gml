@@ -25,7 +25,7 @@ if paused and instance_exists(oMenuPause) {
 		pause_dim_on = false
 	}
 } else if oInput.key_escape
-			and IsInStage()
+			and IsStageRoom(room)
 			and not instance_exists(oSequence) {
 	PauseWithMenu()
 	pause_dim_on = true

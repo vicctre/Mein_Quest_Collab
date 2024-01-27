@@ -23,7 +23,6 @@ function StageStarter(stage, title, spr=sMenuStageIcon, stage_locked=false) cons
 		} else {
 			SlideTransition(TRANS_MODE.GOTO, stage)
 		}
-		oMusic.switch_music(global.msc_stage_1_1)
 		global.player_hp = global.player_hp_max
 		game_reset_globals()
 	}

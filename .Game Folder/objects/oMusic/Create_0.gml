@@ -33,3 +33,7 @@ function switch_music(msc, loops=true, transition_time=music_transition_time_ms)
 	alarm[0] = max(1, alarm[0])
 	next_music = msc
 }
+
+function CurrentMusic() {
+	return current_music
+}

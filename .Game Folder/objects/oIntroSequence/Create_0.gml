@@ -10,6 +10,4 @@ if DEV {
 
 function on_destroy() {
 	room_goto_next()
-	instance_destroy()
-	oMusic.switch_music(global.msc_stage_1_1)
 }

@@ -86,7 +86,6 @@ function StageStarter(stage, title) constructor {
 		} else {
 			SlideTransition(TRANS_MODE.GOTO, stage)
 		}
-		oMusic.switch_music(global.msc_stage_1_1)
 		global.player_hp = global.player_hp_max
 		game_reset_globals()
 	}
@@ -183,7 +182,6 @@ main_menu = [
 				var target = file_text_read_real(file) 
 				file_text_close(file) 
 				SlideTransition(TRANS_MODE.GOTO,target)
-				oMusic.switch_music(global.msc_stage_1_1)
 			}
 		}
 	},

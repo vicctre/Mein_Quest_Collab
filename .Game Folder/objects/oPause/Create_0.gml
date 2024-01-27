@@ -88,11 +88,3 @@ function game_paused() {
 function SetPaused(value) {
 	paused = value
 }
-
-function IsInStage() {
-	var room_name = room_get_name(room)
-	return string_starts_with(room_name, "W1_")
-		   or string_starts_with(room_name, "W2_")
-		   or string_starts_with(room_name, "W3_")
-
-}
