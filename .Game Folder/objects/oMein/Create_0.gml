@@ -402,11 +402,7 @@ function colliding_enemy() {
 }
 
 function on_death() {
-	if room == W1_1_part5 {
-		SlideTransition(TRANS_MODE.GOTO, W1_1_part4)
-	} else {
-		SlideTransition(TRANS_MODE.RESTART)
-	}
+	SlideTransition(TRANS_MODE.RESTART)
 	global.restart_level_on_death = true
 	global.lose_coins_counter = global.lose_coins_time;
 	global.coins = max(0, global.coins - 30)
