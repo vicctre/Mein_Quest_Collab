@@ -293,7 +293,6 @@
     {"name":"WhiteShader","order":2,"path":"shaders/WhiteShader/WhiteShader.yy",},
     {"name":"Label_3","order":2,"path":"sprites/Label_3/Label_3.yy",},
     {"name":"sTHX","order":1,"path":"sprites/sTHX/sTHX.yy",},
-    {"name":"tt","order":5,"path":"rooms/tt/tt.yy",},
     {"name":"Idle03","order":1,"path":"sprites/Idle03/Idle03.yy",},
     {"name":"sRula_Tongue_Stance","order":7,"path":"sprites/sRula_Tongue_Stance/sRula_Tongue_Stance.yy",},
     {"name":"ENEMYBOSS","order":4,"path":"objects/ENEMYBOSS/ENEMYBOSS.yy",},

@@ -11,7 +11,7 @@ key_attack = oInput.key_attack * has_control
 prev_is_sprinting = is_sprinting
 prev_down_free = down_free
 
-//timer for idle animations
+// timer for idle animations
 if (sprite_index == sPlayer || sprite_index == currentIdleAnimation) {
 	idle_time++;
 } else {
