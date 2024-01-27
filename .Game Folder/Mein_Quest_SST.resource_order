@@ -327,6 +327,7 @@
     {"name":"sMeinLogRideJump","order":14,"path":"sprites/sMeinLogRideJump/sMeinLogRideJump.yy",},
     {"name":"BGM_Intro_Cutscene","order":5,"path":"sounds/BGM_Intro_Cutscene/BGM_Intro_Cutscene.yy",},
     {"name":"OPC_06","order":5,"path":"sprites/OPC_06/OPC_06.yy",},
+    {"name":"EZConsole","order":28,"path":"scripts/EZConsole/EZConsole.yy",},
     {"name":"oFakeWall","order":15,"path":"objects/oFakeWall/oFakeWall.yy",},
     {"name":"oDebug","order":10,"path":"objects/oDebug/oDebug.yy",},
     {"name":"Config","order":23,"path":"scripts/Config/Config.yy",},

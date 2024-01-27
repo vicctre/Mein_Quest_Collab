@@ -413,6 +413,7 @@
     {"id":{"name":"sMeinLogRideJump","path":"sprites/sMeinLogRideJump/sMeinLogRideJump.yy",},},
     {"id":{"name":"BGM_Intro_Cutscene","path":"sounds/BGM_Intro_Cutscene/BGM_Intro_Cutscene.yy",},},
     {"id":{"name":"OPC_06","path":"sprites/OPC_06/OPC_06.yy",},},
+    {"id":{"name":"EZConsole","path":"scripts/EZConsole/EZConsole.yy",},},
     {"id":{"name":"W1_3","path":"tilesets/W1_3/W1_3.yy",},},
     {"id":{"name":"oFakeWall","path":"objects/oFakeWall/oFakeWall.yy",},},
     {"id":{"name":"oDebug","path":"objects/oDebug/oDebug.yy",},},
