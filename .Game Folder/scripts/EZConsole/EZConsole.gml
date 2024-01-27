@@ -1,6 +1,4 @@
 
-
-
 function ConsoleGoTo(params) {
 	var room_name = params[0]
 	var index = asset_get_index(room_name)
@@ -19,5 +17,12 @@ console_add_command({
 	args: ["room"],
 	args_req: [true],
 	args_desc: ["Boolean flag to enable or disable the fps counter."],
-	callback: ConsoleGoTo
+	callback: ConsoleGoTo,
+	args_suggestions: [
+		[
+			"W1_1_part1",
+			"W1_1_part2",
+			"W1_1_part3",
+		]
+	]
 })

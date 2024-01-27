@@ -9,6 +9,20 @@ function console_get_commands() {
 	return _commands;
 }
 
+/// @function console_get_command(name)
+/// @param	{string}		name
+function console_get_command(name) {
+	var _commands = console_get_commands();
+	for (var i = 0; i < array_length(_commands); i++) {
+		if (_commands[i].name == name 
+				|| (_commands[i].short == name 
+					&& _commands[i].short != "-")) {
+			return _commands[i];
+		}
+	}
+	return undefined;
+}
+
 /// @function console_get_message(message_type, command, params_count, min_params, max_params)
 /// @param	{real}		message_type
 /// @param	{string}	command
@@ -117,7 +131,9 @@ function console_get_suggestion(_msg) {
 /// @param	{str}	message
 function console_get_typeahead(_msg) {
 	var _msg_trimmed	= string_split(_msg, " ");
-	var _is_command		= array_length(_msg_trimmed) == 1;
+	var _len = array_length(_msg_trimmed);
+	var _is_command		= _len  == 1;
+	var _arg_position   = _len > 1 ? _len - 2 : -1
 	var _suggestions	= [];
 	var _commands		= console_get_commands();
 	var _commands_len	= array_length(_commands);
@@ -130,6 +146,12 @@ function console_get_typeahead(_msg) {
 			if (_msg_trimmed[0] == string_copy(_command, 1, _msg_len) && _msg_trimmed[0] != _command) {
 				array_push(_suggestions, _command);
 			}
+		}
+	} else if (_arg_position != -1) {
+		var _command_name = _msg_trimmed[0]
+		var _command = console_get_command(_command_name)
+		if variable_struct_exists(_command, "args_suggestions") {
+			return _command.args_suggestions[_arg_position]
 		}
 	}
 	

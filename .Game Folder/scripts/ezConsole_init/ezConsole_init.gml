@@ -7,7 +7,8 @@ global.__ezConsole_commands = [{
 	"args": ["ARGUMENT"],
 	"args_req": [true],
 	"args_desc": ["VALUE"],
-	"callback": "console_write_log"
+	"callback": "console_write_log",
+	"args_suggestions": [[]],
 }];
 
 #region // Load commands from file
