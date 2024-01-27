@@ -8,7 +8,7 @@ function PerformGoBack() {
 	menu_control = false
 }
 
-function StageStarter(stage, title, spr=sMenuStageIcon, stage_locked=false) constructor {
+function StageStarter(stage, title, spr, stage_locked=false) constructor {
 	self.stage = stage
 	self.title = title
 	self.sprite = spr
