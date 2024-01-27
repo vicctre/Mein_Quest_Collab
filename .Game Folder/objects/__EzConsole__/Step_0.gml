@@ -1,7 +1,9 @@
 /// @description Systems
 // Discard event if not visible
 if (!visible) {
-	console_set_visible();
+	if keyboard_check_pressed(console_key_toggle) {
+		console_set_visible()
+	}
 	exit;
 }
 
@@ -49,8 +51,8 @@ if (keyboard_check_pressed(vk_anykey)) {
 			}
 			break;
 			
-		case console_key_toggle: // toggle console on/off
-			console_set_invisible();
+		case console_key_toggle: // toggle console off
+			console_set_invisible()
 			break;
 			
 		case vk_backspace:

@@ -1,3 +1,6 @@
+
+debug_draw_ini()
+
 /// @description Setup
 try {
 	console_width	= console_skin_get_width(ezConsole_skin[$ "width"]);
@@ -15,8 +18,6 @@ try {
 	show_debug_message(e.longMessage);
 	instance_destroy();
 }
-
-ensure_singleton()
 
 console_anchor	= ezConsole_skin[$ "anchor"];
 console_position_set_by_anchor(console_anchor);
@@ -36,7 +37,7 @@ console_text_blink_rate		= ezConsole_skin[$ "text_blink_rate"];
 console_text_blink_char		= ezConsole_skin[$ "text_blink_char"];
 console_text_start_char		= ezConsole_skin[$ "text_start_char"];
 
-console_bar_height			= ezConsole_skin[$ "bar_height"];
+console_bar_height			= font_get_size(console_text_font) + 4; // ezConsole_skin[$ "bar_height"];
 console_bar_color			= __ezConsole_dep_hex_to_dec(ezConsole_skin[$ "bar_color"]);
 console_bar_color_highlight	= __ezConsole_dep_hex_to_dec(ezConsole_skin[$ "bar_color_highlight"]);
 

@@ -4,40 +4,54 @@ var _bar_y = console_y + console_height - console_bar_height;
 
 draw_set_alpha(1);
 
-// Draw screenfill
-if (console_screenfill_flag) {
-	draw_set_alpha(console_screenfill_alpha);
-	draw_set_colour(console_screenfill_color);
-	draw_rectangle(0, 0, window_get_width(), window_get_height(), false);
-}
+//// Draw screenfill
+//if (console_screenfill_flag) {
+//	draw_set_alpha(console_screenfill_alpha);
+//	draw_set_colour(console_screenfill_color);
+//	draw_rectangle(0, 0, window_get_width(), window_get_height(), false);
+//}
 
 // Draw blurred background
 if (console_blur_flag && surface_exists(application_surface)) {
-	draw_set_alpha(1);
-	if (!surface_exists(console_blur_surf)) {
-		console_blur_surf = surface_create(console_width, console_height);
-	}
-	surface_set_target(console_blur_surf);
-	draw_clear_alpha(console_bg_color, .0);
-	draw_surface_part_ext(
-		application_surface,
-		console_x,
-		console_y,
-		console_width,
-		console_height - 1,
-		0,
-		0,
-		window_get_fullscreen() ? display_get_width() / __original_window_w : 1,
-		window_get_fullscreen() ? display_get_height() / __original_window_h : 1,
-		-1,
-		1
-	);
-	surface_reset_target();
+	//draw_set_color(c_red)
+	//draw_rectangle(
+	//	console_x,
+	//	console_y,
+	//	console_width,
+	//	console_height - 1, true)
+	//draw_set_alpha(0.25)
+	//draw_rectangle(
+	//	console_x,
+	//	console_y,
+	//	console_width,
+	//	console_height - 1, false)
+	//draw_set_alpha(1)
+	//draw_set_color(c_white)
+	//draw_set_alpha(1);
+	//if (!surface_exists(console_blur_surf)) {
+	//	console_blur_surf = surface_create(console_width, console_height);
+	//}
+	//surface_set_target(console_blur_surf);
+	//draw_clear_alpha(console_bg_color, .0);
+	//draw_surface_part_ext(
+	//	application_surface,
+	//	console_x,
+	//	console_y,
+	//	console_width,
+	//	console_height - 1,
+	//	0,
+	//	0,
+	//	window_get_fullscreen() ? display_get_width() / __original_window_w : 1,
+	//	window_get_fullscreen() ? display_get_height() / __original_window_h : 1,
+	//	-1,
+	//	1
+	//);
+	//surface_reset_target();
 	
-	__ezConsole_dep_draw_surface_blur(console_blur_surf, console_blur_amount, console_x, console_y);
+	//__ezConsole_dep_draw_surface_blur(console_blur_surf, console_blur_amount, console_x, console_y);
 }
 
-// Draw console layout
+//// Draw console layout
 draw_set_alpha(console_bg_alpha);
 draw_set_colour(console_bg_color);
 draw_rectangle(console_x, console_y, console_x + console_width, _bar_y, false);
@@ -45,7 +59,7 @@ draw_rectangle(console_x, console_y, console_x + console_width, _bar_y, false);
 draw_set_colour(console_bar_color);
 draw_rectangle(console_x, _bar_y, console_x + console_width, _bar_y + console_bar_height, false);
 
-// Draw console bar text
+//// Draw console bar text
 draw_set_font(console_text_font);
 draw_set_alpha(console_text_alpha);
 draw_set_colour(console_text_actual_color);
@@ -70,7 +84,7 @@ if (_console_blink_char != "") {
 }
 
 
-// Draw console bar text suggestion
+//// Draw console bar text suggestion
 if (console_suggestions_flag && console_suggestion_text != "") {
 	var _console_text_w = string_width(console_text_start_char + console_text_actual);
 	draw_set_alpha(console_text_alpha * .50);
@@ -81,7 +95,7 @@ if (console_suggestions_flag && console_suggestion_text != "") {
 	draw_set_alpha(1);
 }
 
-// Draw text in console
+//// Draw text in console
 if !(surface_exists(console_surf)) {
 	event_user(0);
 }
@@ -150,17 +164,17 @@ if (console_typeahead_flag && console_typeahead_show) {
 	}
 }
 
-// Draw fps
-draw_set_alpha(1);
-if (console_fps_show) {
-	draw_set_halign(fa_right);
-	draw_set_valign(fa_top);
-	draw_set_colour(console_text_actual_color);
+//// Draw fps
+//draw_set_alpha(1);
+//if (console_fps_show) {
+//	draw_set_halign(fa_right);
+//	draw_set_valign(fa_top);
+//	draw_set_colour(console_text_actual_color);
 	
-	var _x = window_get_width() - 2;
-	var _y = 2;
+//	var _x = window_get_width() - 2;
+//	var _y = 2;
 	
-	draw_text(_x, _y, "FPS: "		+ console_fps + "\n" +
-					  "FPS REAL: "	+ console_fps_real + "\n" +
-					  "FPS AVG: "	+ console_fps_avg);
-}
+//	draw_text(_x, _y, "FPS: "		+ console_fps + "\n" +
+//					  "FPS REAL: "	+ console_fps_real + "\n" +
+//					  "FPS AVG: "	+ console_fps_avg);
+//}

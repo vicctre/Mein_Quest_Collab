@@ -191,20 +191,20 @@ function console_write_log(_msg, _type = EZ_CONSOLE_MSG_TYPE.COMMON) {
 
 /// @function console_set_visible()
 function console_set_visible() {
-	if (keyboard_check_pressed(console_key_toggle)) {
-		// Reset console text bar when visible again
-		keyboard_lastkey = noone;
-		keyboard_string = "";
-		console_text_actual = "";
-		visible = true;
-		if (console_callback_on_open) console_callback_on_open();
-	}
+	// Reset console text bar when visible again
+	keyboard_lastkey = noone;
+	keyboard_string = "";
+	console_text_actual = "";
+	visible = true;
+	if (console_callback_on_open) console_callback_on_open();
+	oInput.SetInactive();
 }
 
 /// @function console_set_invisible()
 function console_set_invisible() {
 	visible = false;
 	if (console_callback_on_close) console_callback_on_close();
+	oInput.SetActive()
 }
 
 /// @function console_check_command(message)
