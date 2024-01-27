@@ -88,7 +88,7 @@ console_typeahead_flag			= ezConsole_skin[$ "typeahead_flag"];
 console_typeahead_show			= false;
 console_typeahead_elements		= [];
 console_typeahead_selected		= -1;
-console_typeahead_elements_max	= ezConsole_skin[$ "typeahead_max_elements"];
+console_typeahead_elements_max	= 10; // ezConsole_skin[$ "typeahead_max_elements"];
 
 depth = -1000;
 //display_set_gui_maximize();
