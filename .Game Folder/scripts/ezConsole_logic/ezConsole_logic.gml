@@ -147,11 +147,31 @@ function console_get_typeahead(_msg) {
 				array_push(_suggestions, _command);
 			}
 		}
+	// args suggestions
 	} else if (_arg_position != -1) {
 		var _command_name = _msg_trimmed[0]
 		var _command = console_get_command(_command_name)
-		if variable_struct_exists(_command, "args_suggestions") {
-			return _command.args_suggestions[_arg_position]
+		if _command == undefined or !variable_struct_exists(_command, "args_suggestions") {
+			return [];
+		}
+		if _arg_position >= array_length(_command.args_suggestions) {
+			return []	
+		}
+		var _raw_suggs = _command.args_suggestions[_arg_position]
+		var arg_typed_part = array_back(_msg_trimmed)
+		if arg_typed_part != "" {
+			var _initial = _raw_suggs
+			_raw_suggs = []
+			for(var i = 0; i < array_length(_initial); ++i) {
+				if string_starts_with(_initial[i], arg_typed_part) {
+					array_push(_raw_suggs, _initial[i])
+				}
+			}
+		}
+		for(var i = 0; i < array_length(_raw_suggs); ++i) {
+			var _command_completed_part = string_join_ext(" ", _msg_trimmed, 0, _len - 1)
+			var _sugg = _command_completed_part + " " + _raw_suggs[i]
+			array_push(_suggestions, _sugg)
 		}
 	}
 	
