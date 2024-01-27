@@ -20,6 +20,7 @@ menu_yspeed_gain = 0.1
 menu_yspeed_min = 0.5
 //menu_font = fMenu
 menu_itemheight = font_get_size(fMenu)
+menu_item_distance_mult = 1.5
 menu_committed = -1
 menu_control = true
 menu_y_scroll_offset = 2

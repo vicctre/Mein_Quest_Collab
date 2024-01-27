@@ -20,7 +20,7 @@ for (var i = 0; i < array_length(menu); i++) {
 		var col = c_white
 	}
 	var xx = menu_x
-	var yy = menu_y + (menu_itemheight * (i * 1.5))
+	var yy = menu_y + (menu_itemheight * (i * menu_item_distance_mult))
 	if menu[i].sprite {
 		draw_sprite_ext(menu[i].sprite, 0, xx, yy + menu_cursor_y_shift,
 						icon_scale, icon_scale,

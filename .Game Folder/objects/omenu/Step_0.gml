@@ -46,7 +46,8 @@ UpdateCursorTargetPos()
 AnimateCursor()
 
 /// scroll menu
-menu_y_target = menu_y_base - menu_itemheight * max(0, menu_cursor - menu_y_scroll_offset)
+menu_y_target = menu_y_base 
+				- menu_itemheight * max(0, menu_cursor - menu_y_scroll_offset) * menu_item_distance_mult
 var menu_ysp = max(menu_yspeed_min, abs(menu_y - menu_y_target) * menu_yspeed_gain)
 menu_y = approach(menu_y, menu_y_target, menu_ysp)
 
