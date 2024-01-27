@@ -47,8 +47,8 @@ jumps_max = 1
 jumps = jumps_max
 jump_press_delay = 15
 jump_pressed = 0
-on_ground_delay = 10
-on_ground = 0 // used to fake ground for smoother jumping
+coyote_time = 10
+coyote_timer = 0 // used to fake ground for smoother jumping
 is_on_log = false
 
 wall_obj = oWall
@@ -134,13 +134,16 @@ function create_death_animation() {
 }
 
 function check_perform_jump() {
-	if key_jump
+	if key_jump {
 		jump_pressed = jump_press_delay
+		// cancel coyote jump if pressed jump
+		coyote_timer = 0
+	}
 		
 	if jump_pressed {
 		jump_pressed--
 		if jumps {
-			jumps -= down_free and !on_ground
+			jumps -= down_free and !coyote_timer
 			vsp = jumps ? jump_sp : double_jump_sp
 			if jumps 
 				audio_play_sound(global.sfx_jump, 7, false)

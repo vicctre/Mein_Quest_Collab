@@ -39,9 +39,9 @@ hsp_to = move_h * hsp_max
 
 if has_control {
 	// used to fake ground for smoother jumping
-	on_ground--
+	coyote_timer--
 	if !down_free
-		on_ground = on_ground_delay
+		coyote_timer = coyote_time
 
 	// enemies
 	var enemy = colliding_enemy()
