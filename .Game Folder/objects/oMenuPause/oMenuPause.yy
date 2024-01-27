@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "SystemObjects",
-    "path": "folders/Objects/SystemObjects.yy",
+    "name": "Menus",
+    "path": "folders/Objects/SystemObjects/Menus.yy",
   },
   "parentObjectId": {
     "name": "oMenu",

@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "LevelTransition",
-    "path": "folders/Objects/LevelTransition.yy",
+    "path": "folders/Objects/SystemObjects/LevelTransition.yy",
   },
   "parentObjectId": {
     "name": "oSequence",

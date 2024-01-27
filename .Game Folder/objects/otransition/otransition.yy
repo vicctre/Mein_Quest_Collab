@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "SystemObjects",
-    "path": "folders/Objects/SystemObjects.yy",
+    "name": "LevelTransition",
+    "path": "folders/Objects/SystemObjects/LevelTransition.yy",
   },
   "parentObjectId": null,
   "persistent": true,

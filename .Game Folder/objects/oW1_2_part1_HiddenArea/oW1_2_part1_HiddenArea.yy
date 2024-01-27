@@ -11,7 +11,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "LevelWise",
-    "path": "folders/Objects/LevelWise.yy",
+    "path": "folders/Objects/SystemObjects/LevelWise.yy",
   },
   "parentObjectId": null,
   "persistent": false,

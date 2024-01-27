@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "SystemObjects",
-    "path": "folders/Objects/SystemObjects.yy",
+    "name": "Screens",
+    "path": "folders/Objects/SystemObjects/Screens.yy",
   },
   "parentObjectId": null,
   "persistent": false,

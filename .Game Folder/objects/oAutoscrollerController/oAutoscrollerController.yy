@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Autoscroller",
-    "path": "folders/Objects/Autoscroller.yy",
+    "path": "folders/Objects/SystemObjects/Autoscroller.yy",
   },
   "parentObjectId": null,
   "persistent": false,
