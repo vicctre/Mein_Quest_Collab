@@ -24,7 +24,7 @@ function ConsoleCoins(params) {
 	var coins
 	try {
 		coins = int64(params[0])
-	} catch {
+	} catch(e) {
 		console_write_log("Should be integer value", EZ_CONSOLE_MSG_TYPE.ERROR)
 		return
 	}
