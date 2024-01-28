@@ -24,4 +24,12 @@ for (var i = 0; i < array_length(menu); i++)
 draw_set_halign(halign);
 draw_set_valign(valign);
 
-draw_sprite(sCursor, menu_cursor_frame, menu_cursor_x, menu_cursor_y);
+draw_sprite_ext(sCursor, menu_cursor_frame, menu_cursor_x, menu_cursor_y,
+				menu_text_scale, menu_text_scale, 0, c_white, 1);
+
+
+
+
+
+
+

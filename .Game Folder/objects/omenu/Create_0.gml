@@ -19,7 +19,8 @@ menu_speed_min = 1
 menu_yspeed_gain = 0.1
 menu_yspeed_min = 0.5
 //menu_font = fMenu
-menu_itemheight = font_get_size(fMenu)
+menu_text_scale = 2
+menu_itemheight = font_get_size(fMenu) * menu_text_scale
 menu_item_distance_mult = 1.5
 menu_committed = -1
 menu_control = true
@@ -41,17 +42,14 @@ menu_top = 0 // used for mouse control
 mouse_x_prev = mouse_x
 mouse_y_prev = mouse_y
 
-gp_vinp_threshold = 0.85
-gp_vinp_pressed = false
-
 function DrawTextOutlined(text, xx, yy, color, offset=2, outline_color=c_black) {
 	draw_set_color(outline_color)
-	draw_text(xx - offset, yy, text)
-	draw_text(xx + offset, yy, text) 
-	draw_text(xx, yy - offset, text) 
-	draw_text(xx, yy + offset, text) 
+	draw_text_transformed(xx - offset, yy, text, menu_text_scale, menu_text_scale, 0)
+	draw_text_transformed(xx + offset, yy, text, menu_text_scale, menu_text_scale, 0)
+	draw_text_transformed(xx, yy - offset, text, menu_text_scale, menu_text_scale, 0)
+	draw_text_transformed(xx, yy + offset, text, menu_text_scale, menu_text_scale, 0)
 	draw_set_color(color)
-	draw_text(xx, yy, text)
+	draw_text_transformed(xx, yy, text, menu_text_scale, menu_text_scale, 0)
 }
 
 function PerformAction() {
@@ -127,7 +125,8 @@ function AnimationFinished() {
 
 function UpdateCursorTargetPos() {
 	menu_cursor_y_target = GetCursorY(menu_cursor)
-	menu_cursor_x_target = (gui_width - menu_x) - string_width(menu[menu_cursor].title) * 0.5 - 20
+	var string_half_width = string_width(menu[menu_cursor].title) * menu_text_scale * 0.5
+	menu_cursor_x_target = (gui_width - menu_x) - string_half_width - 20
 }
 
 function AnimateCursor() {

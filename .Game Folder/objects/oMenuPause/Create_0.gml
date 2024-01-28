@@ -11,6 +11,10 @@ menu_x = gui_width * 0.5
 x_ancor = fa_middle
 menu_speed = 0.2
 
+
+menu_text_scale = 1
+menu_itemheight = font_get_size(fMenu) * menu_text_scale
+
 function AnimateEaseIn() {
 	menu_y = approach(menu_y, menu_y_target, menu_speed)
 }

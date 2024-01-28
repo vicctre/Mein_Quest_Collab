@@ -53,11 +53,6 @@ is_on_log = false
 
 wall_obj = oWall
 
-gp_hinp_threshold = 0.25
-gp_hinp_pressed = false
-gp_vinp_threshold = 0.85
-gp_vinp_pressed = false
-
 has_control = true
 state = PLAYERSTATE.FREE
 
