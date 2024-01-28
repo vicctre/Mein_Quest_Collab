@@ -1,7 +1,5 @@
-/// updates variables of debug scripts
-/// it's suggested to put this into some head object
-/// in which debug_draw_var() is called
 
+//// initialize needed vars for debug drawing
 function debug_draw_ini() {
 	global.VAR_BAR_LENGTH = 0
 	global.VAR_BAR_X = 0

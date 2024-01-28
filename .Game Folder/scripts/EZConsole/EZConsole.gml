@@ -1,4 +1,14 @@
 
+function __GetAllRoomNames() {
+	var ind = 0
+	var rooms = []
+	while room_exists(ind) {
+		array_push(rooms, room_get_name(ind))
+		ind++
+	}
+	return rooms
+}
+
 function ConsoleGoTo(params) {
 	var room_name = params[0]
 	var index = asset_get_index(room_name)
@@ -10,14 +20,9 @@ function ConsoleGoTo(params) {
 	SlideTransition(TRANS_MODE.GOTO, index)
 }
 
-function __GetAllRoomNames() {
-	var ind = 0
-	var rooms = []
-	while room_exists(ind) {
-		array_push(rooms, room_get_name(ind))
-		ind++
-	}
-	return rooms
+function ConsoleCoins(params) {
+	var coins = int64(params[0])
+	global.coins = coins
 }
 
 console_add_command({
@@ -32,3 +37,14 @@ console_add_command({
 		__GetAllRoomNames()
 	]
 })
+
+console_add_command({
+	name: "coins",
+	short: "coins",
+	desc: "Set coins count",
+	args: ["number"],
+	args_req: [true],
+	args_desc: ["Coins count"],
+	callback: ConsoleCoins
+})
+
