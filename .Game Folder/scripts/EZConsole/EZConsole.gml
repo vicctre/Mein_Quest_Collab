@@ -21,7 +21,13 @@ function ConsoleGoTo(params) {
 }
 
 function ConsoleCoins(params) {
-	var coins = int64(params[0])
+	var coins
+	try {
+		coins = int64(params[0])
+	} catch {
+		console_write_log("Should be integer value", EZ_CONSOLE_MSG_TYPE.ERROR)
+		return
+	}
 	global.coins = coins
 }
 
