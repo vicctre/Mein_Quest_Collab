@@ -31,6 +31,11 @@ function ConsoleCoins(params) {
 	global.coins = coins
 }
 
+function ConsoleRoomSpeed(params) {
+	var sp = max(1, params[0])
+	game_set_speed(sp, gamespeed_fps)
+}
+
 console_add_command({
 	name: "goto",
 	short: "goto",
@@ -52,5 +57,15 @@ console_add_command({
 	args_req: [true],
 	args_desc: ["Coins count"],
 	callback: ConsoleCoins
+})
+
+console_add_command({
+	name: "roomsp",
+	short: "rsp",
+	desc: "Set room speed",
+	args: ["number"],
+	args_req: [true],
+	args_desc: ["Room speed (fps)"],
+	callback: ConsoleRoomSpeed
 })
 
