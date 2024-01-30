@@ -21,14 +21,17 @@ function ConsoleGoTo(params) {
 }
 
 function ConsoleCoins(params) {
+	/* COMMENTED OUT SO IT STOPS CRASHING THE GAME SO VICCTRE CAN COMPILE THE GAME
+	//catch requires format of catch(exception)
 	var coins
 	try {
 		coins = int64(params[0])
 	} catch {
 		console_write_log("Should be integer value", EZ_CONSOLE_MSG_TYPE.ERROR)
-		return
+		return;
 	}
 	global.coins = coins
+	/**/
 }
 
 console_add_command({
