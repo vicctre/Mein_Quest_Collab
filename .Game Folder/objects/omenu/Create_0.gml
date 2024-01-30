@@ -1,17 +1,19 @@
 /// @desc GUI/vars/Menu Setup 
 
-gui_width = display_get_gui_width()
-gui_height = display_get_gui_height()
+var gui_width = display_get_gui_width()
+var gui_height = display_get_gui_height()
 
 //// Menu positioning
 menu_x_base = gui_width * 0.5
-menu_y_base = gui_height * 0.35
 menu_x_target_start = gui_width + 200
 menu_x_target_finish = menu_x_base
 menu_x = menu_x_target_start
+menu_x_target = menu_x_target_finish
+
+menu_y_base = gui_height * 0.35
 menu_y = menu_y_base
 menu_y_target = menu_y
-menu_x_target = menu_x_target_finish
+
 menu_speed = 0.1 // ease in/out speed
 menu_speed_min = 1
 menu_yspeed_min = 0.5 // scroll speed
