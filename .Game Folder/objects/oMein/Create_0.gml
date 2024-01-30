@@ -131,14 +131,12 @@ function create_death_animation() {
 function check_perform_jump() {
 	if key_jump {
 		jump_pressed = jump_press_delay
-		// cancel coyote jump if pressed jump
-		coyote_timer = 0
 	}
-		
+
 	if jump_pressed {
 		jump_pressed--
 		if jumps {
-			jumps -= down_free and !coyote_timer
+			jumps -= down_free and coyote_timer < 0
 			vsp = jumps ? jump_sp : double_jump_sp
 			if jumps 
 				audio_play_sound(global.sfx_jump, 7, false)
@@ -146,6 +144,8 @@ function check_perform_jump() {
 				audio_play_sound(global.sfx_djump, 7, false)
 			jump_pressed = 0
             state = PLAYERSTATE.FREE
+			// cancel coyote jump if pressed jump
+			coyote_timer = 0
             return true
 		}
 	}
