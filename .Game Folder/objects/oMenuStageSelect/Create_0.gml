@@ -4,6 +4,7 @@ event_inherited()
 
 menu_text_scale = 1
 menu_itemheight = font_get_size(fMenu) * menu_text_scale
+menu_cursor_scale = 2
 
 function PerformGoBack() {
 	menu_committed = array_length(menu) - 1

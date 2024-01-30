@@ -10,7 +10,7 @@ menu_x_base = gui_width * 0.5
 menu_x_target_start = gui_width + 200
 menu_x_target_finish = menu_x_base
 menu_x = menu_x_target_start
-menu_y = gui_height * 0.5
+menu_y = gui_height * 0.35
 menu_y_base = menu_y
 menu_y_target = menu_y
 menu_x_target = menu_x_target_finish
@@ -26,15 +26,16 @@ menu_committed = -1
 menu_control = true
 menu_y_scroll_offset = 2
 
+menu_cursor_scale = menu_text_scale
 menu_cursor_y = 0
-menu_cursor_y_shift = -32
+
+menu_cursor_y_shift = -32 * 0 * menu_text_scale // -32 was figured experimentally (smth like half of font height)
 menu_cursor_y_min = 100
 menu_cursor_y_max = gui_height - 100
 menu_cursor_x_target = menu_x_base
 menu_cursor_x = menu_x_base
 menu_cursor_y_target = 0
 menu_cursor_min_sp = 12
-menu_font_h = 60
 menu_cursor_frame = 0
 menu_cursor_animate_sp = 0.5
 
