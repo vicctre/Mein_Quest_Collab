@@ -1,7 +1,7 @@
 /// @desc GUI/vars/Menu Setup 
 
-var gui_width = display_get_gui_width()
-var gui_height = display_get_gui_height()
+gui_width = display_get_gui_width()
+gui_height = display_get_gui_height()
 
 //// Menu positioning
 menu_x_base = gui_width * 0.5
@@ -56,8 +56,13 @@ function PerformAction() {
 
 function PerformButton(index) {
 	menu_committed = index
-	menu_x_target = menu_x_target_start
-	menu_control = false
+	var menu_item = menu[menu_committed]
+	if menu_item.action != undefined {
+		menu_x_target = menu_x_target_start
+		menu_control = false
+		return
+	}
+    show_debug_message("Menu item has no action")
 }
 
 function DrawTextOutlined(text, xx, yy, color, offset=2, outline_color=c_black) {
@@ -124,12 +129,19 @@ function UpdateCursorTargetPos() {
 
 menu = [
 	{
-		//title: "New Game",
 		title: "Stage select",
 		action: function() {
 			instance_destroy(oMenu)
 			instance_create_layer(0, 0, "Instances", oMenuStageSelect)
 		}
+	},
+	{
+		title: "Adventure Logs",
+		action: undefined
+	},
+	{
+		title: "Options",
+		action: undefined
 	},
 	{
 		title: "Quit",
