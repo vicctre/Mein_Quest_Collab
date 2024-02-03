@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Random stuff",
-    "path": "folders/Sprites/WIP NOT IN USE/Random stuff.yy",
+    "name": "Effects",
+    "path": "folders/Sprites/Effects.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
