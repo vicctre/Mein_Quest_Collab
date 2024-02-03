@@ -5,16 +5,14 @@ var halign = draw_get_halign(), valign = draw_get_valign()
 
 draw_set_font(fMenu); 
 draw_set_halign(fa_center); 
-draw_set_valign(fa_bottom);
+draw_set_valign(fa_middle);
 for (var i = 0; i < array_length(menu); i++)
 {
 	var offset = 2; 
 	var txt = menu[i].title;
-	if (menu_cursor == i)
-	{
-		var col = c_white;
-	} else {
-		var col = c_grey;
+	var col = c_grey
+	if (menu_cursor == i) {
+		col = c_white;
 	}
 	var xx = menu_x; 
 	var yy = menu_y + (menu_itemheight * (i * 1.5));
@@ -24,4 +22,12 @@ for (var i = 0; i < array_length(menu); i++)
 draw_set_halign(halign);
 draw_set_valign(valign);
 
-draw_sprite(sCursor, menu_cursor_frame, menu_cursor_x, menu_cursor_y);
+draw_sprite_ext(sCursor, menu_cursor_frame, menu_cursor_x, menu_cursor_y,
+				menu_cursor_scale, menu_cursor_scale, 0, c_white, 1);
+
+
+
+
+
+
+

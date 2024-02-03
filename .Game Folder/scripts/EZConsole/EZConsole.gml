@@ -26,12 +26,17 @@ function ConsoleCoins(params) {
 	var coins
 	try {
 		coins = int64(params[0])
-	} catch {
+	} catch(e) {
 		console_write_log("Should be integer value", EZ_CONSOLE_MSG_TYPE.ERROR)
 		return;
 	}
 	global.coins = coins
 	/**/
+}
+
+function ConsoleRoomSpeed(params) {
+	var sp = max(1, params[0])
+	game_set_speed(sp, gamespeed_fps)
 }
 
 console_add_command({
@@ -55,5 +60,15 @@ console_add_command({
 	args_req: [true],
 	args_desc: ["Coins count"],
 	callback: ConsoleCoins
+})
+
+console_add_command({
+	name: "roomsp",
+	short: "rsp",
+	desc: "Set room speed",
+	args: ["number"],
+	args_req: [true],
+	args_desc: ["Room speed (fps)"],
+	callback: ConsoleRoomSpeed
 })
 

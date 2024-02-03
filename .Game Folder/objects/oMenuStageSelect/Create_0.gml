@@ -2,6 +2,14 @@
 
 event_inherited()
 
+menu_text_scale = 1
+menu_cursor_scale = 2
+icon_scale = 2
+
+menu_itemheight = font_get_size(fMenu) * icon_scale + 8
+icon_half_width = sprite_get_width(sStage1_1Icon) * icon_scale * 0.5
+
+
 function PerformGoBack() {
 	menu_committed = array_length(menu) - 1
 	menu_x_target = menu_x_target_start
@@ -30,31 +38,26 @@ function StageStarter(stage, title, spr, stage_locked=false) constructor {
 
 function UpdateCursorTargetPos() {
 	menu_cursor_y_target = GetCursorY(menu_cursor)
-	menu_cursor_x_target = menu_x - spr_half_width
+	menu_cursor_x_target = menu_x - icon_half_width
 }
 
-function StageSelectSubmenu() {
-	var submenu = [
+function StageSelectmenu() {
+	var menu = [
 		new oMenu.StageStarter(W1_1_part1, "1-1", sStage1_1Icon),
 		new oMenu.StageStarter(W1_2_part1, "1-2", sStage1_2Icon),
 		new oMenu.StageStarter(W1_3_part1, "1-3", sStage1_3Icon),
 		//new oMenu.StageStarter(W1_3_part1, "2-1", sStageLockIcon, true),
 	]
 	
-	for(var i=0; i<array_length(submenu); i++) {
-		var btn = submenu[i]
+	for(var i=0; i<array_length(menu); i++) {
+		var btn = menu[i]
 		if !oStageManager.IsStageUnlocked(btn.stage) {
 			btn.sprite = sStageLockIcon
 			btn.stage_locked = true
 		}
 	}
-	//for(var i=0; i<array_length(global.available_stages); i++) {
-	//	var stage = global.available_stages[i]
-	//	var starter = new oMenu.StageStarter(stage, room_get_name(stage))
-	//	array_push(submenu, starter)
-	//}
-	array_push(submenu, goback_button)
-	return submenu
+	array_push(menu, goback_button)
+	return menu
 }
 
 function IsStageLocked(index) {
@@ -80,9 +83,7 @@ goback_button = {
 	},
 }
 
-menu = StageSelectSubmenu()
-icon_scale = 2
-menu_itemheight = font_get_size(fMenu) * icon_scale + 8
-spr_half_width = sprite_get_width(sStage1_1Icon) * icon_scale * 0.5
+menu = StageSelectmenu()
+menu_size = array_length(menu)
 
-Init()
+UpdateMenuBounds()
