@@ -13,7 +13,7 @@
   "out_tilevborder": 2,
   "parent": {
     "name": "1_1",
-    "path": "folders/Tile Sets/1_1.yy",
+    "path": "folders/Tile Sets/World 1/1_1.yy",
   },
   "spriteId": {
     "name": "sThinBGV2",

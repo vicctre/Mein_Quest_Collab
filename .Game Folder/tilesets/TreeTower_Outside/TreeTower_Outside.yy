@@ -13,7 +13,7 @@
   "out_tilevborder": 2,
   "parent": {
     "name": "1_2",
-    "path": "folders/Tile Sets/1_2.yy",
+    "path": "folders/Tile Sets/World 1/1_2.yy",
   },
   "spriteId": {
     "name": "Tree_outside",

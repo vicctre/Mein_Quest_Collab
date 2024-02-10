@@ -63,7 +63,7 @@
   "out_tilevborder": 2,
   "parent": {
     "name": "1_3",
-    "path": "folders/Tile Sets/1_3.yy",
+    "path": "folders/Tile Sets/World 1/1_3.yy",
   },
   "spriteId": {
     "name": "W1_3_Tileset",
