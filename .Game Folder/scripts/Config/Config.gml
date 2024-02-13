@@ -13,7 +13,7 @@ autoscroller_log_sp = 1.5
 autoscroller_log_sp_increased = 4.15
 ///used to change autocroller log speed
 
-coins_heal_amount = 100
+heal_coins_number = 100
 
 death_transition_delay_time = 140
 death_pause_time = 60
