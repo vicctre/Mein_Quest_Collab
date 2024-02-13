@@ -201,6 +201,7 @@
     {"id":{"name":"sCheckpointIndicatorSingle","path":"sprites/sCheckpointIndicatorSingle/sCheckpointIndicatorSingle.yy",},},
     {"id":{"name":"oMusic","path":"objects/oMusic/oMusic.yy",},},
     {"id":{"name":"sPlayerDamage","path":"sprites/sPlayerDamage/sPlayerDamage.yy",},},
+    {"id":{"name":"SFX_Splash","path":"sounds/SFX_Splash/SFX_Splash.yy",},},
     {"id":{"name":"sLeaf","path":"sprites/sLeaf/sLeaf.yy",},},
     {"id":{"name":"sTreeInside","path":"sprites/sTreeInside/sTreeInside.yy",},},
     {"id":{"name":"sShadowSlope1","path":"sprites/sShadowSlope1/sShadowSlope1.yy",},},

@@ -152,6 +152,7 @@
     {"name":"sCheckpointIndicatorSingle","order":4,"path":"sprites/sCheckpointIndicatorSingle/sCheckpointIndicatorSingle.yy",},
     {"name":"oMusic","order":5,"path":"objects/oMusic/oMusic.yy",},
     {"name":"sPlayerDamage","order":1,"path":"sprites/sPlayerDamage/sPlayerDamage.yy",},
+    {"name":"SFX_Splash","order":8,"path":"sounds/SFX_Splash/SFX_Splash.yy",},
     {"name":"sTreeInside","order":5,"path":"sprites/sTreeInside/sTreeInside.yy",},
     {"name":"sShadowSlope1","order":9,"path":"sprites/sShadowSlope1/sShadowSlope1.yy",},
     {"name":"SomeEyes_lol","order":14,"path":"sprites/SomeEyes_lol/SomeEyes_lol.yy",},
