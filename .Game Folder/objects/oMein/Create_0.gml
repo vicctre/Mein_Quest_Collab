@@ -10,7 +10,6 @@ enum PLAYERSTATE {
 	DEAD,
 	HIT,
 	ENTER_DOOR,
-	PICKUP_ADVLOG,
 }
 
 global.player = id
