@@ -12,6 +12,7 @@ key_jump = oInput.key_jump * has_control
 key_attack = oInput.key_attack * has_control
 
 var inside_wall = place_meeting(x, y, oWall)
+was_down_free = down_free
 down_free = inside_wall or place_empty(x, y + 1, wall_obj)
 up_free = inside_wall or place_empty(x, y - 1, wall_obj)
 //left_free = place_empty(x - 1, y, wall_obj)
@@ -19,10 +20,18 @@ right_free = place_empty(x + 1, y, wall_obj)
 was_floating = is_floating
 is_floating = (y >= bottom_bound_y)
 
+var just_water_landed = (is_floating and !was_floating)
+var just_landed = (!down_free and was_down_free)
+
 if has_control {
 
-	if is_floating and !was_floating {
+	if just_water_landed {
 		audio_play_sound(global.sfx_log_ride_landing, 0, false)
+	}
+
+	if just_landed or just_water_landed {
+		sprite_index = sMeinLogRide
+		image_index = 0
 	}
 
 	check_spikes()
@@ -58,15 +67,13 @@ if has_control {
 	}
 
 	if !down_free or is_floating {
-		sprite_index = sMeinLogRide
-		image_index = 0
 		if key_jump {
 			vsp = jump_sp
 			jump_timer = 5
+			sprite_index = sMeinLogRideJump
+			image_index = 0
+			audio_play_sound(global.sfx_jump, 0, false)
 		}
-	} else {
-		sprite_index = sMeinLogRideJump
-		image_index = 0
 	}
 
 	if !right_free and !is_dead() {
