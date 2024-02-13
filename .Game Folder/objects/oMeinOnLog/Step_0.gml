@@ -54,12 +54,14 @@ if has_control {
 
 	if !down_free or is_floating {
 		sprite_index = sMeinLogRide
+		image_index = 0
 		if key_jump {
 			vsp = jump_sp
 			jump_timer = 5
 		}
 	} else {
 		sprite_index = sMeinLogRideJump
+		image_index = 0
 	}
 
 	if !right_free and !is_dead() {
