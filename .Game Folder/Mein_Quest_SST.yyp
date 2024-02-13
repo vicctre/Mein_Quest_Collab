@@ -594,6 +594,7 @@
     {"id":{"name":"Mein_EXP02","path":"sprites/Mein_EXP02/Mein_EXP02.yy",},},
     {"id":{"name":"W1_2_part5_AutoScroller2","path":"rooms/W1_2_part5_AutoScroller2/W1_2_part5_AutoScroller2.yy",},},
     {"id":{"name":"sShanteeCycle","path":"sprites/sShanteeCycle/sShanteeCycle.yy",},},
+    {"id":{"name":"ezConsole_additional_commands","path":"scripts/ezConsole_additional_commands/ezConsole_additional_commands.yy",},},
     {"id":{"name":"sAL_Icon_animation","path":"sprites/sAL_Icon_animation/sAL_Icon_animation.yy",},},
     {"id":{"name":"seqTuffullIntro_T7","path":"sequences/seqTuffullIntro_T7/seqTuffullIntro_T7.yy",},},
     {"id":{"name":"rmAdventureLogsScreen","path":"rooms/rmAdventureLogsScreen/rmAdventureLogsScreen.yy",},},
