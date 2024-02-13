@@ -44,6 +44,9 @@ menu_cursor_min_sp = 12
 menu_cursor_frame = 0           // animate cursor
 menu_cursor_animate_sp = 0.5    //
 
+//menu_font = font_add("ka1.ttf", 24, false, false, 0, 0)
+//font_add_enable_aa(false)
+
 function PerformAction() {
 	var menu_item = menu[menu_committed]
 	if menu_item.action != undefined {

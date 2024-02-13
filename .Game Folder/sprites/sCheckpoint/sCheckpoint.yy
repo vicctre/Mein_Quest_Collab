@@ -48,8 +48,8 @@
   },
   "origin": 0,
   "parent": {
-    "name": "Mein_Quest_SST",
-    "path": "Mein_Quest_SST.yyp",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -1,6 +1,5 @@
 
 function ConsoleCoins(params) {
-	/* COMMENTED OUT SO IT STOPS CRASHING THE GAME SO VICCTRE CAN COMPILE THE GAME
 	//catch requires format of catch(exception)
 	var coins
 	try {
@@ -10,14 +9,7 @@ function ConsoleCoins(params) {
 		return;
 	}
 	global.coins = coins
-	/**/
 }
-
-function ConsoleRoomSpeed(params) {
-	var sp = max(1, params[0])
-	game_set_speed(sp, gamespeed_fps)
-}
-
 
 console_add_command({
 	name: "coins",
