@@ -12,6 +12,7 @@ has_control = true
 grav = 0.3
 jump_timer = 0
 is_floating = true
+was_floating = true
 
 death_delay = 45
 death_delay_timer = -1

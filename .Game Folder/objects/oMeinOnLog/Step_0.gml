@@ -16,9 +16,14 @@ down_free = inside_wall or place_empty(x, y + 1, wall_obj)
 up_free = inside_wall or place_empty(x, y - 1, wall_obj)
 //left_free = place_empty(x - 1, y, wall_obj)
 right_free = place_empty(x + 1, y, wall_obj)
+was_floating = is_floating
 is_floating = (y >= bottom_bound_y)
 
 if has_control {
+
+	if is_floating and !was_floating {
+		audio_play_sound(global.sfx_log_ride_landing, 0, false)
+	}
 
 	check_spikes()
 

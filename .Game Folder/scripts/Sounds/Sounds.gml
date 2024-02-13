@@ -16,6 +16,7 @@ sfx_dead = SFX_Death
 sfx_heal = SFX_Heal
 sfx_player_damage = SFX_Damage
 sfx_HP = SFX_Additional_HP
+sfx_log_ride_landing = SFX_Splash
 
 //Object sounds 
 sfx_adventure_log = SFX_AdvLog 
