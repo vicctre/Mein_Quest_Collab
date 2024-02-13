@@ -11,8 +11,9 @@ key_down = oInput.key_down * has_control
 key_jump = oInput.key_jump * has_control
 key_attack = oInput.key_attack * has_control
 
-down_free = place_empty(x, y + 1, wall_obj)
-up_free = place_empty(x, y - 1, wall_obj)
+var inside_wall = place_meeting(x, y, oWall)
+down_free = inside_wall or place_empty(x, y + 1, wall_obj)
+up_free = inside_wall or place_empty(x, y - 1, wall_obj)
 //left_free = place_empty(x - 1, y, wall_obj)
 right_free = place_empty(x + 1, y, wall_obj)
 is_floating = (y >= bottom_bound_y)
@@ -70,9 +71,15 @@ if has_control {
 		Hit()
 	}
 
-	x += hsp
-	if vsp != 0 {
+	if !inside_wall and vsp != 0 {
 		scr_move_coord_contact_obj(0, vsp, wall_obj)
+	} else {
+		y += vsp
+	}
+
+	x += hsp
+	if inside_wall {
+		Hit()
 	}
 
 	if x > room_width {
