@@ -5,10 +5,6 @@ stages_data = {
 			Mein: {
 				order: 0,
 				unlocked: false
-			},
-			Mein: {
-				order: 0,
-				unlocked: false
 			}
 		}
 	},
@@ -19,12 +15,8 @@ stages_data = {
 				unlocked: false
 			},
 			Tuffull: {
-				order: 0,
-				unlocked: false
-			},
-			Tuffull: {
-				order: 0,
-				unlocked: false
+				order: 1,
+				unlocked: true
 			}
 		}
 	},
@@ -35,11 +27,11 @@ stages_data = {
 				unlocked: false
 			},
 			Tuffull: {
-				order: 0,
-				unlocked: false
+				order: 1,
+				unlocked: true
 			},
-			Tuffull: {
-				order: 0,
+			Mein: {
+				order: 2,
 				unlocked: false
 			}
 		}

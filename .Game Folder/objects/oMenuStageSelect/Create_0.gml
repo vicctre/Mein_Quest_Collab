@@ -87,12 +87,23 @@ function DrawAdvLogs(stage, icon_x, icon_y) {
 	}
 	logs = logs.adv_logs
 	var count = variable_struct_names_count(logs)
-	var names = variable_struct_get_names(logs)
 	var between_first_and_last = (adv_log_width + adv_log_gap) * (count - 1)
 	var xst = icon_x + adv_log_x_base - between_first_and_last * 0.5
-	for (var step = 0; step <= between_first_and_last; step += adv_log_step) {
-		draw_sprite_ext(sStageIconAdvLog, 0,
-			            xst + step,
+	
+	// form of ordered names to draw properly
+	var unordered_names = variable_struct_get_names(logs)
+	var ordered_names = []
+	for (var i = 0; i < count; ++i) {
+		var ind = logs[$ unordered_names[i]].order
+		ordered_names[ind] = unordered_names[i]
+	}
+	
+	// draw
+	for (var i = 0; i < count; ++i) {
+		// get sprite depending on if advlog is unlocked
+		var spr = logs[$ ordered_names[i]].unlocked ? sStageIconAdvLog : sStageIconAdvLogLocked
+		draw_sprite_ext(spr, 0,
+			            xst + adv_log_step * i,
 						icon_y + adv_log_y_base,
 						icon_scale, icon_scale,
 						0, c_white, 1)
