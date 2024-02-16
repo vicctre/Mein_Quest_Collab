@@ -12,6 +12,9 @@ icon_half_width = sprite_get_width(sStage1_1Icon) * icon_scale * 0.5
 // adventure logs
 adv_log_x_base = 58 * icon_scale
 adv_log_y_base = 0
+adv_log_width = sprite_get_width(sStageIconAdvLog) * icon_scale
+adv_log_gap = 3 * icon_scale
+adv_log_step = adv_log_width + adv_log_gap
 
 
 function PerformGoBack() {
@@ -75,6 +78,25 @@ function PerformButton(index) {
 	menu_committed = index
 	menu_x_target = menu_x_target_start
 	menu_control = false
+}
+
+function DrawAdvLogs(stage, icon_x, icon_y) {
+	var logs = oStageManager.GetStageData(stage)
+	if logs == undefined {
+		return;	
+	}
+	logs = logs.adv_logs
+	var count = variable_struct_names_count(logs)
+	var names = variable_struct_get_names(logs)
+	var between_first_and_last = (adv_log_width + adv_log_gap) * (count - 1)
+	var xst = icon_x + adv_log_x_base - between_first_and_last * 0.5
+	for (var step = 0; step <= between_first_and_last; step += adv_log_step) {
+		draw_sprite_ext(sStageIconAdvLog, 0,
+			            xst + step,
+						icon_y + adv_log_y_base,
+						icon_scale, icon_scale,
+						0, c_white, 1)
+	}
 }
 
 goback_button = {
