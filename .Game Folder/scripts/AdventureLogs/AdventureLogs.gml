@@ -16,7 +16,7 @@ adventure_logs = {
 		sprite: sAdvLogRularog,
 		description: "Vic, please"
 					 + " make a description for this guy. Or girl. Or it idk"
-	}
+	},
 	Tuffull: {
 		sprite: sAdvLogTuffull,
 		description: "Vic, please"

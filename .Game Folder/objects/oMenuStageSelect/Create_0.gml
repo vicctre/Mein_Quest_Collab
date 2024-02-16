@@ -6,8 +6,12 @@ menu_text_scale = 1
 menu_cursor_scale = 2
 icon_scale = 2
 
-menu_itemheight = font_get_size(fMenu) * icon_scale + 8
+menu_itemheight = font_get_size(fMenu) * icon_scale + 24
 icon_half_width = sprite_get_width(sStage1_1Icon) * icon_scale * 0.5
+
+// adventure logs
+adv_log_x_base = 58 * icon_scale
+adv_log_y_base = 0
 
 
 function PerformGoBack() {

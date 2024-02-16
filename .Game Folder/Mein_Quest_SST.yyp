@@ -134,7 +134,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
   ],
   "IncludedFiles": [
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"default_commands.json","CopyToMask":-1,"filePath":"datafiles/GM-EzConsole",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"default_commands.json","CopyToMask":3035426170322551022,"filePath":"datafiles/GM-EzConsole",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"default-dark.skin","CopyToMask":-1,"filePath":"datafiles/GM-EzConsole",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"default-light.skin","CopyToMask":-1,"filePath":"datafiles/GM-EzConsole",},
   ],
@@ -395,6 +395,7 @@
     {"id":{"name":"sPlayerAttack","path":"sprites/sPlayerAttack/sPlayerAttack.yy",},},
     {"id":{"name":"oGuiFixWorkaround","path":"objects/oGuiFixWorkaround/oGuiFixWorkaround.yy",},},
     {"id":{"name":"sChest","path":"sprites/sChest/sChest.yy",},},
+    {"id":{"name":"sStageIconAdvLog","path":"sprites/sStageIconAdvLog/sStageIconAdvLog.yy",},},
     {"id":{"name":"oCrate","path":"objects/oCrate/oCrate.yy",},},
     {"id":{"name":"sRula_falling","path":"sprites/sRula_falling/sRula_falling.yy",},},
     {"id":{"name":"sBackground1","path":"sprites/sBackground1/sBackground1.yy",},},

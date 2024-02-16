@@ -19,6 +19,10 @@ for (var i = 0; i < array_length(menu); i++) {
 		draw_sprite_ext(menu[i].sprite, 0, xx, yy,
 						icon_scale, icon_scale,
 						0, c_white, 1)
+		draw_sprite_ext(sStageIconAdvLog, 0,
+			            xx + adv_log_x_base, yy + adv_log_y_base,
+						icon_scale, icon_scale,
+						0, c_white, 1)
 	}
     // draw text in icon's left small window
 	xx -= icon_half_width * 0.9

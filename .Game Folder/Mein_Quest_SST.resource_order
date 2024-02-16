@@ -306,6 +306,7 @@
     {"name":"sVT_Logo","order":3,"path":"sprites/sVT_Logo/sVT_Logo.yy",},
     {"name":"sPlayerAttack","order":1,"path":"sprites/sPlayerAttack/sPlayerAttack.yy",},
     {"name":"oGuiFixWorkaround","order":12,"path":"objects/oGuiFixWorkaround/oGuiFixWorkaround.yy",},
+    {"name":"sStageIconAdvLog","order":7,"path":"sprites/sStageIconAdvLog/sStageIconAdvLog.yy",},
     {"name":"oCrate","order":2,"path":"objects/oCrate/oCrate.yy",},
     {"name":"sRula_falling","order":6,"path":"sprites/sRula_falling/sRula_falling.yy",},
     {"name":"sLogWhole","order":1,"path":"sprites/sLogWhole/sLogWhole.yy",},
