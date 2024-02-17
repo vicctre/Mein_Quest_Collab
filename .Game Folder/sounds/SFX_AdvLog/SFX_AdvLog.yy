@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "SFX_AdvLog.wav",
   "type": 0,
-  "volume": 0.32,
+  "volume": 0.26,
 }

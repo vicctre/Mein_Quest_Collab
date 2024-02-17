@@ -10,14 +10,14 @@
   "bitRate": 16,
   "compression": 1,
   "conversionMode": 0,
-  "duration": 0.839501,
+  "duration": 0.673764,
   "parent": {
-    "name": "Need to be Added SFX",
-    "path": "folders/Sounds/SFX/Need to be Added SFX.yy",
+    "name": "Already In Use",
+    "path": "folders/Sounds/SFX/Already In Use.yy",
   },
   "preload": false,
   "sampleRate": 44100,
   "soundFile": "SFX_Splash.wav",
   "type": 0,
-  "volume": 1.0,
+  "volume": 0.1,
 }
