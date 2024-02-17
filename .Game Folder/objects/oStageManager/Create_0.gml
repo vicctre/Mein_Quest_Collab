@@ -16,7 +16,7 @@ stages_data = {
 			},
 			Tuffull: {
 				order: 1,
-				unlocked: true
+				unlocked: false
 			}
 		}
 	},
@@ -28,7 +28,7 @@ stages_data = {
 			},
 			Tuffull: {
 				order: 1,
-				unlocked: true
+				unlocked: false
 			},
 			Mein: {
 				order: 2,
@@ -62,4 +62,21 @@ function GetStageData(stage) {
 		stage = room_get_name(stage)
 	}
 	return stages_data[$ stage]
+}
+
+function MapStageName(name) {
+	// W1_1_part4 --> W1_1_part1
+	return string_copy(name, 0, 5) + "part1"
+}
+
+function UnlockAdvLog(stage, name) {
+	stage = MapStageName(room_get_name(stage))
+	var stage_logs = stages_data[$ stage].adv_logs
+	for (var i = 0; i < array_length(stage_logs); ++i) {
+	    if stage_logs[i].name == name {
+			stage_logs[i].unlocked = true
+			return
+		}
+	}
+	show_debug_message("Failed to find adv log {} in stage {}", name, stage)
 }
