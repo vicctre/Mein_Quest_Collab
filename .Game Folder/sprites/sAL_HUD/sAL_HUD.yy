@@ -24,7 +24,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"74909d5e-5e3d-45a7-96c9-cd02af7630be","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "In Game HUD",
     "path": "folders/Sprites/UI stuff/In Game HUD.yy",
@@ -62,7 +62,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 50,
-    "yorigin": 32,
+    "yorigin": 29,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

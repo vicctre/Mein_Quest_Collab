@@ -12,7 +12,7 @@ draw_sprite_ext(sCoinCounter, 0, 1230, 70, scale, scale, 0, c_white, 1);
 
 var page_count = array_length(global.current_logs);
 for(var i = 0; i < page_count; i++) {
-	draw_sprite_ext(sAL_HUD, 0, 1260-65*page_count/2 + 65*i, 140, scale, scale, 0, c_white, 1);
+	draw_sprite_ext(sAL_HUD, 0, 1260-65*page_count/2 + 65*i, 142, scale, scale, 0, c_white, 1);
 	if (global.current_logs[i]) {
 		draw_sprite_ext(sAdvLogIconAnimation, 0, 1260-65*page_count/2 + 65*i, 140, scale, scale, 0, c_white, 1);
 	}

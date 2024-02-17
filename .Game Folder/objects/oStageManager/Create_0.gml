@@ -72,11 +72,9 @@ function MapStageName(name) {
 function UnlockAdvLog(stage, name) {
 	stage = MapStageName(room_get_name(stage))
 	var stage_logs = stages_data[$ stage].adv_logs
-	for (var i = 0; i < array_length(stage_logs); ++i) {
-	    if stage_logs[i].name == name {
-			stage_logs[i].unlocked = true
-			return
-		}
+	if variable_struct_exists(stage_logs, name) {
+		stage_logs[$ name].unlocked = true
+		return
 	}
 	show_debug_message("Failed to find adv log {} in stage {}", name, stage)
 }
