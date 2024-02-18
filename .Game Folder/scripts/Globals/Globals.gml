@@ -85,7 +85,8 @@ function dev_override() {
 
 game_reset_globals();
 
-
+//use this to change Adv Log count for stages
+//the number in array_create determines how many logs are in the area
 global.Logs_Collected = [];
 global.Logs_Collected[0] = array_create(1);
 global.Logs_Collected[1] = array_create(2);
