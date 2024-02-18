@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "1Cutscenes",
-    "path": "folders/Sprites/1Cutscenes.yy",
+    "name": "Intro",
+    "path": "folders/Sprites/1Cutscenes/Intro.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
