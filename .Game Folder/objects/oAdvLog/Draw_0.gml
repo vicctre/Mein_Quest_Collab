@@ -1,10 +1,11 @@
 
 draw_self()
 
-draw_text_outlined(x, y - 240, name, c_white, c_black)
+draw_text_outlined(x, y - 200, name, c_white, c_black)
 
 //outline
 draw_set_halign(fa_center)
+draw_set_valign(fa_top)
 var scale = 0.7
 var dy = 30
 draw_set_color(c_black)

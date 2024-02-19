@@ -5,6 +5,6 @@ if abs(x - xto) > spd {
 	x -= spd
 }
 
-if is_ease_out and x >= xto {
+if is_ease_out and x <= xto {
 	instance_destroy()
 }
