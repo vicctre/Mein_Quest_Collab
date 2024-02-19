@@ -1,10 +1,11 @@
 
 Alex ToDo:
 > adv logs
-	> save collected logs
 	> integrate with adv log screen
 		> show collected
 		> don't spawn AL twice in a level
+
+> remove debug doors
 
 Fixes:
 * Resolution-related picture disruption
