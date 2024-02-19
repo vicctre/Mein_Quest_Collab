@@ -39,7 +39,9 @@ stages_data = {
 }
 
 function SaveFile() : SSave("save") constructor {
+	// unlocking stages is saved in RoomStart
 	add_value("last_unlocked_stage", SSAVE_TYPE.REAL, real(W1_1_part1))
+	add_value("stages_data", SSAVE_TYPE.STRUCT, other.stages_data)
 }
 
 last_unlocked_stage = real(W1_1_part1)
@@ -48,8 +50,10 @@ save = new SaveFile()
 
 if save.load("") {
 	last_unlocked_stage = save.get("last_unlocked_stage")
+	stages_data = save.get("stages_data")
 } else {
 	save.set("last_unlocked_stage", 0)
+	save.set("stages_data", stages_data)
 }
 
 function IsStageUnlocked(index) {
@@ -76,8 +80,11 @@ function GetStageData(stage) {
 function UnlockAdvLog(stage, name) {
 	stage = MapStageName(room_get_name(stage))
 	var stage_logs = stages_data[$ stage].adv_logs
+	// update and save data
 	if variable_struct_exists(stage_logs, name) {
 		stage_logs[$ name].unlocked = true
+		save.set("stages_data", stages_data)
+		save.save()
 		return
 	}
 	show_debug_message("Failed to find adv log {} in stage {}", name, stage)
