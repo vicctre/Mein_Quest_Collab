@@ -1,8 +1,4 @@
 
-Player sprite collsion mask bounds relative to center:
--12 11
--5 12
-
 Alex ToDo:
 > adv logs
 	> save collected logs

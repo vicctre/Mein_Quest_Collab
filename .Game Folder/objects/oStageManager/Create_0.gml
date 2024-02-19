@@ -57,6 +57,10 @@ function IsStageUnlocked(index) {
 	return index <= last_unlocked_stage
 }
 
+function IsAdventureLogUnlocked(stage, name) {
+	return GetStageData(stage).adv_logs[$ name].unlocked
+}
+
 function MapStageName(name) {
 	// W1_1_part4 --> W1_1
 	return string_copy(name, 0, 4)
