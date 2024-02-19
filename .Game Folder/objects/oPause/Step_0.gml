@@ -24,7 +24,8 @@ if paused and instance_exists(oMenuPause) {
 		oMenuPause.PerformButtonContinue(1)
 		pause_dim_on = false
 	}
-} else if oInput.key_escape
+} else if !paused
+			and oInput.key_escape
 			and IsStageRoom(room)
 			and not instance_exists(oSequence) {
 	PauseWithMenu()
