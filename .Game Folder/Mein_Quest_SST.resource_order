@@ -421,6 +421,7 @@
     {"name":"sPlayer","order":4,"path":"sprites/sPlayer/sPlayer.yy",},
     {"name":"sTitlePrototype2","order":1,"path":"sprites/sTitlePrototype2/sTitlePrototype2.yy",},
     {"name":"oSpiritBytePosition","order":9,"path":"objects/oSpiritBytePosition/oSpiritBytePosition.yy",},
+    {"name":"oAdvLog","order":3,"path":"objects/oAdvLog/oAdvLog.yy",},
     {"name":"sRula_Tongue","order":9,"path":"sprites/sRula_Tongue/sRula_Tongue.yy",},
     {"name":"pCut","order":1,"path":"objects/pCut/pCut.yy",},
     {"name":"oSequenceLogAutoscrollerStart","order":7,"path":"objects/oSequenceLogAutoscrollerStart/oSequenceLogAutoscrollerStart.yy",},

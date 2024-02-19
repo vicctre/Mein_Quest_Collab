@@ -7,7 +7,8 @@ function DefaultStagesData() {
 			adv_logs: {
 				Mein: {
 					order: 0,
-					unlocked: false
+					unlocked: true,
+                    was_showed_in_adv_log_screen: false
 				}
 			}
 		},
@@ -15,11 +16,13 @@ function DefaultStagesData() {
 			adv_logs: {
 				Genull: {
 					order: 0,
-					unlocked: false
+					unlocked: false,
+                    was_showed_in_adv_log_screen: false
 				},
 				Tuffull: {
 					order: 1,
-					unlocked: false
+					unlocked: false,
+                    was_showed_in_adv_log_screen: false
 				}
 			}
 		},
@@ -27,15 +30,18 @@ function DefaultStagesData() {
 			adv_logs: {
 				Genull: {
 					order: 0,
-					unlocked: false
+					unlocked: false,
+                    was_showed_in_adv_log_screen: false
 				},
 				Tuffull: {
 					order: 1,
-					unlocked: false
+					unlocked: false,
+                    was_showed_in_adv_log_screen: false
 				},
 				Mein: {
 					order: 2,
-					unlocked: false
+					unlocked: false,
+                    was_showed_in_adv_log_screen: false
 				}
 			}
 		}
@@ -110,6 +116,23 @@ function UnlockedAdvLogsCount() {
 		var log_names = variable_struct_get_names(stage_logs)
 		for (var j = 0; j < array_length(stage_logs); ++j) {
 			res += stage_logs[$ log_names[j]].unlocked	
+		}
+	}
+	return res
+}
+
+function GetNotShowedAdventureLogs() {
+	var res = []
+	var stage_names = variable_struct_get_names(stages_data)
+	for (var i = 0; i < array_length(stage_names); ++i) {
+	    var stage_logs = stages_data[$ stage_names[i]].adv_logs
+		var log_names = variable_struct_get_names(stage_logs)
+		for (var j = 0; j < array_length(log_names); ++j) {
+			var log_data = stage_logs[$ log_names[j]]
+			if log_data.unlocked
+					and !log_data.was_showed_in_adv_log_screen {
+				array_push(res, log_names[j])
+			}
 		}
 	}
 	return res

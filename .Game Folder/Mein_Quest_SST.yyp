@@ -537,6 +537,7 @@
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"sTitlePrototype2","path":"sprites/sTitlePrototype2/sTitlePrototype2.yy",},},
     {"id":{"name":"oSpiritBytePosition","path":"objects/oSpiritBytePosition/oSpiritBytePosition.yy",},},
+    {"id":{"name":"oAdvLog","path":"objects/oAdvLog/oAdvLog.yy",},},
     {"id":{"name":"sRula_Tongue","path":"sprites/sRula_Tongue/sRula_Tongue.yy",},},
     {"id":{"name":"pCut","path":"objects/pCut/pCut.yy",},},
     {"id":{"name":"oSequenceLogAutoscrollerStart","path":"objects/oSequenceLogAutoscrollerStart/oSequenceLogAutoscrollerStart.yy",},},

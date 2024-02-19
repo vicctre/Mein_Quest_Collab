@@ -1,1 +1,1 @@
-goto_next_room_on = true
+goto_next = true
