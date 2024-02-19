@@ -11,6 +11,15 @@ function ConsoleCoins(params) {
 	global.coins = coins
 }
 
+function ConsoleResetProgress() {
+	if !instance_exists(oStageManager) {
+		console_write_log("oStageManager doesn't exist", EZ_CONSOLE_MSG_TYPE.ERROR)
+		return;
+	}
+	oStageManager.ResetProgress()
+	console_write_log("Game progress is reset", EZ_CONSOLE_MSG_TYPE.INFO)
+}
+
 console_add_command({
 	name: "coins",
 	short: "coins",
@@ -19,5 +28,15 @@ console_add_command({
 	args_req: [true],
 	args_desc: ["Coins count"],
 	callback: ConsoleCoins
+})
+
+console_add_command({
+	name: "reset_progress",
+	short: "resp",
+	desc: "Reset game progress",
+	args: [],
+	args_req: [],
+	args_desc: [],
+	callback: ConsoleResetProgress
 })
 
