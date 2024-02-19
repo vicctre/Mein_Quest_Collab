@@ -57,7 +57,7 @@ function game_reset_globals() {
 
 	global.dev_level_goto = noone
 	if DEV {
-		global.coins = 50;
+		global.coins = 50
 		global.player_invincible = false
 		global.skip_logos = true
 		//global.autoscroller_skip_log_intro = true
@@ -66,7 +66,7 @@ function game_reset_globals() {
 
 function dev_override() {
 	if !DEV
-		return;
+		return
 	switch room {
 		case W1_2_part4_AutoScroller1:
 			switch object_index {
@@ -83,14 +83,8 @@ function dev_override() {
 	}
 }
 
-game_reset_globals();
+game_reset_globals()
 
-//use this to change Adv Log count for stages
-//the number in array_create determines how many logs are in the area
-global.Logs_Collected = [];
-global.Logs_Collected[0] = array_create(1);
-global.Logs_Collected[1] = array_create(2);
-global.Logs_Collected[2] = array_create(2);
-
-global.lose_coins_counter = 0;
-global.lose_coins_time = 120;
+lose_coins_counter = 0
+lose_coins_time = 120
+lose_coins_punishment = 30

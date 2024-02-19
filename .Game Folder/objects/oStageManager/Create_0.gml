@@ -1,6 +1,6 @@
 
 stages_data = {
-	W1_1_part1: {
+	W1_1: {
 		adv_logs: {
 			Mein: {
 				order: 0,
@@ -8,7 +8,7 @@ stages_data = {
 			}
 		}
 	},
-	W1_2_part1: {
+	W1_2: {
 		adv_logs: {
 			Genull: {
 				order: 0,
@@ -20,7 +20,7 @@ stages_data = {
 			}
 		}
 	},
-	W1_3_part1: {
+	W1_3: {
 		adv_logs: {
 			Genull: {
 				order: 0,
@@ -57,16 +57,16 @@ function IsStageUnlocked(index) {
 	return index <= last_unlocked_stage
 }
 
+function MapStageName(name) {
+	// W1_1_part4 --> W1_1
+	return string_copy(name, 0, 4)
+}
+
 function GetStageData(stage) {
 	if !is_string(stage) {
 		stage = room_get_name(stage)
 	}
-	return stages_data[$ stage]
-}
-
-function MapStageName(name) {
-	// W1_1_part4 --> W1_1_part1
-	return string_copy(name, 0, 5) + "part1"
+	return stages_data[$ MapStageName(stage)]
 }
 
 function UnlockAdvLog(stage, name) {

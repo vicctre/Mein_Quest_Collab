@@ -1,5 +1,8 @@
-var hp_spr = sMeinHP
-var hp_scale = 2
+
+scale = 2
+text_color = c_white
+outline_color = c_black
+lose_coins_color = #f93c59
 
 area_name_text_timer = 0;
 area_name_text_offset = 0;
@@ -7,6 +10,8 @@ area_name_text_timer_max = 5*room_speed;
 area_name_text_background_opacity = 0.7;
 var gui_h = display_get_gui_height()
 
+var hp_spr = sMeinHP
+var hp_scale = 2
 hp = {
 	scale: hp_scale,
 	xoffset: 15 + sprite_get_xoffset(hp_spr) * hp_scale,
@@ -15,6 +20,9 @@ hp = {
 	max_ind: sprite_get_number(hp_spr)
 }
 hp_shake = new Shaker()
+
+stage_logs = []
+stage_logs_num = 0
 
 var spr = sCheckpointIndicator
 checkpoint_indicator = {
