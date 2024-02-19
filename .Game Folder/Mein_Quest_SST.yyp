@@ -225,6 +225,7 @@
     {"id":{"name":"pthSpiritByte","path":"paths/pthSpiritByte/pthSpiritByte.yy",},},
     {"id":{"name":"Sprite132","path":"sprites/Sprite132/Sprite132.yy",},},
     {"id":{"name":"rmTitleScreen","path":"rooms/rmTitleScreen/rmTitleScreen.yy",},},
+    {"id":{"name":"oAdvLog","path":"objects/oAdvLog/oAdvLog.yy",},},
     {"id":{"name":"sWater_tile2","path":"sprites/sWater_tile2/sWater_tile2.yy",},},
     {"id":{"name":"ThinBG2","path":"tilesets/ThinBG2/ThinBG2.yy",},},
     {"id":{"name":"sBG2","path":"sprites/sBG2/sBG2.yy",},},
