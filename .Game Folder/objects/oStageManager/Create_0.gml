@@ -16,7 +16,7 @@ function DefaultStagesData() {
 			adv_logs: {
 				Genull: {
 					order: 0,
-					unlocked: false,
+					unlocked: true,
                     was_showed_in_adv_log_screen: false
 				},
 				Tuffull: {
