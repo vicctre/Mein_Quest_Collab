@@ -1,12 +1,4 @@
 {
   "FolderOrderSettings": [],
-  "ResourceOrderSettings": [
-<<<<<<< Updated upstream
-    {"name":"Sequence15","order":1,"path":"sequences/Sequence15/Sequence15.yy",},
-    {"name":"oSpiritByte","order":1,"path":"objects/oSpiritByte/oSpiritByte.yy",},
-=======
-    {"name":"seqLogEnd","order":1,"path":"sequences/seqLogEnd/seqLogEnd.yy",},
-    {"name":"AnimationCurve4","order":2,"path":"animcurves/AnimationCurve4/AnimationCurve4.yy",},
->>>>>>> Stashed changes
-  ],
+  "ResourceOrderSettings": [],
 }
