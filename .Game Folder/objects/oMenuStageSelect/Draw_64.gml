@@ -8,18 +8,21 @@ draw_set_halign(fa_left)
 draw_set_valign(fa_middle)
 
 for (var i = 0; i < array_length(menu); i++) {
-	var txt = menu[i].title
+	var item = menu[i]
+	var txt = item.title
 	var col = c_grey
 	if (menu_cursor == i) {
 		col = c_white
 	}
 	var xx = menu_x
 	var yy = menu_y + (menu_itemheight * (i * menu_item_distance_mult))
-	if menu[i].sprite {
-		draw_sprite_ext(menu[i].sprite, 0, xx, yy,
+	if item.sprite {
+		draw_sprite_ext(item.sprite, 0, xx, yy,
 						icon_scale, icon_scale,
 						0, c_white, 1)
-		DrawAdvLogs(menu[i].stage, xx, yy)
+		if !item.stage_locked {
+			DrawAdvLogs(item.stage, xx, yy, adv_log_play_animation_index == i)
+		}
 	}
     // draw text in icon's left small window
 	xx -= icon_half_width * 0.9

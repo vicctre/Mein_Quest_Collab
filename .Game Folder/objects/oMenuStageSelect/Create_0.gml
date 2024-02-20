@@ -15,7 +15,11 @@ adv_log_y_base = 0
 adv_log_width = sprite_get_width(sStageIconAdvLog) * icon_scale
 adv_log_gap = 3 * icon_scale
 adv_log_step = adv_log_width + adv_log_gap
-
+// animation
+adv_log_play_animation_index = -1
+adv_log_play_animation_frames = 0
+adv_log_play_animation_sp = sprite_get_speed(sAdvLogIconAnimation) / game_get_speed(gamespeed_fps)
+menu_cursor_prev = -1
 
 function PerformGoBack() {
 	menu_committed = array_length(menu) - 1
@@ -80,29 +84,24 @@ function PerformButton(index) {
 	menu_control = false
 }
 
-function DrawAdvLogs(stage, icon_x, icon_y) {
+function DrawAdvLogs(stage, icon_x, icon_y, animate) {
 	var logs = oStageManager.GetStageData(stage)
 	if logs == undefined {
-		return;	
+		return;
 	}
 	logs = logs.adv_logs
 	var count = variable_struct_names_count(logs)
 	var between_first_and_last = (adv_log_width + adv_log_gap) * (count - 1)
 	var xst = icon_x + adv_log_x_base - between_first_and_last * 0.5
-	
+
 	// form of ordered names to draw properly
-	var unordered_names = variable_struct_get_names(logs)
-	var ordered_names = []
-	for (var i = 0; i < count; ++i) {
-		var ind = logs[$ unordered_names[i]].order
-		ordered_names[ind] = unordered_names[i]
-	}
-	
+	var ordered_names = oStageManager.GetStageAdvLogNames(stage)
+
 	// draw
 	for (var i = 0; i < count; ++i) {
 		// get sprite depending on if advlog is unlocked
-		var spr = logs[$ ordered_names[i]].unlocked ? sStageIconAdvLog : sStageIconAdvLogLocked
-		draw_sprite_ext(spr, 0,
+		var spr = logs[$ ordered_names[i]].unlocked ? sAdvLogIconAnimation : sStageIconAdvLogLocked
+		draw_sprite_ext(spr, animate ? adv_log_play_animation_frames : 0,
 			            xst + adv_log_step * i,
 						icon_y + adv_log_y_base,
 						icon_scale, icon_scale,
