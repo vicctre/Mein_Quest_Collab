@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings": [],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"Sequence15","order":1,"path":"sequences/Sequence15/Sequence15.yy",},
+  ],
 }

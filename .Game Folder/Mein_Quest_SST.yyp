@@ -416,6 +416,7 @@
     {"id":{"name":"oEffects","path":"objects/oEffects/oEffects.yy",},},
     {"id":{"name":"sDoor","path":"sprites/sDoor/sDoor.yy",},},
     {"id":{"name":"WhiteShader","path":"shaders/WhiteShader/WhiteShader.yy",},},
+    {"id":{"name":"Sequence15","path":"sequences/Sequence15/Sequence15.yy",},},
     {"id":{"name":"Label_3","path":"sprites/Label_3/Label_3.yy",},},
     {"id":{"name":"sTHX","path":"sprites/sTHX/sTHX.yy",},},
     {"id":{"name":"oShantee","path":"objects/oShantee/oShantee.yy",},},
