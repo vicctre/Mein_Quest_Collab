@@ -3,16 +3,22 @@ draw_set_font(fMenu)
 
 draw_hp_bar()
 
-draw_sprite_ext(sCoinCounter, 0, 1230, 70, scale, scale, 0, c_white, 1)
+draw_set_alpha(coin_counter_alpha)
 
-for(var i = 0; i < stage_logs_num; i++) {
+draw_sprite_ext(sCoinCounter, 0,
+				coin_counter_x, coin_counter_y,
+				scale, scale, 0, c_white, coin_counter_alpha)
+
+var gap = 70
+var y_shift = 137
+for(var i = 0; i < stage_logs_num; ++i) {
 	draw_sprite_ext(sAL_HUD, 0,
-					1260-65*stage_logs_num/2 + 65*i, 142,
-					scale, scale, 0, c_white, 1)
-	if (stage_logs[i].unlocked) {
+					1260-65*stage_logs_num/2 + gap*i, y_shift,
+					scale, scale, 0, c_white, coin_counter_alpha)
+	if (stage_logs[$ stage_log_names[i]].unlocked) {
 		draw_sprite_ext(sAdvLogIconAnimation, 0, 
-						1260-65*stage_logs_num/2 + 65*i, 140,
-						scale, scale, 0, c_white, 1)
+						1260-65*stage_logs_num/2 + gap*i, y_shift,
+						scale, scale, 0, c_white, coin_counter_alpha)
 	}
 }
 
@@ -35,6 +41,8 @@ if (global.lose_coins_counter > 0) {
 	var yy_shift = min(120, 300*(global.lose_coins_time-global.lose_coins_counter)/global.lose_coins_time)
 	draw_text_outlined(xx, yy + yy_shift, string(-global.lose_coins_punishment), lose_coins_color, outline_color)
 }
+draw_set_alpha(1)
+
 
 // draw area name shortly after entering
 if (area_name_text_timer > 0) {
@@ -53,7 +61,8 @@ if (area_name_text_timer > 0) {
 	if (area_name_text_timer > area_name_text_timer_max/2)
 		area_name_text_offset = lerp(area_name_text_offset, 100, 0.05)
 	else
-		area_name_text_offset = area_name_text_offset - max(0.3, lerp(area_name_text_offset, 101, 0.05) - area_name_text_offset)
+		area_name_text_offset = area_name_text_offset 
+								- max(0.3, lerp(area_name_text_offset, 101, 0.05) - area_name_text_offset)
 }
 
 

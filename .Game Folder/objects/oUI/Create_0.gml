@@ -3,6 +3,10 @@ scale = 2
 text_color = c_white
 outline_color = c_black
 lose_coins_color = #f93c59
+// become transparent if close to the player
+coin_counter_alpha = 1
+coin_counter_x = 1230
+coin_counter_y = 70
 
 area_name_text_timer = 0;
 area_name_text_offset = 0;
@@ -21,8 +25,10 @@ hp = {
 }
 hp_shake = new Shaker()
 
-stage_logs = []
-stage_logs_num = 0
+// draw adv logs
+stage_logs = oStageManager.GetStageData(room).adv_logs
+stage_log_names = oStageManager.GetStageAdvLogNames(room)
+stage_logs_num = array_length(stage_log_names)
 
 var spr = sCheckpointIndicator
 checkpoint_indicator = {

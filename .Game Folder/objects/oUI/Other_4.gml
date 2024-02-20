@@ -9,7 +9,3 @@ if (string_pos("part1", room_name) != 0) {
 if checkpoint_indicator.need_to_show() {
 	checkpoint_indicator.start_animation()
 }
-
-// get stage adv logs for drawing
-stage_logs = oStageManager.GetStageData(room).adv_logs
-stage_logs_num = array_length(stage_logs)
