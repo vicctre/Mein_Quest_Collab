@@ -283,6 +283,7 @@
     {"id":{"name":"sTuffull_jump_fall","path":"sprites/sTuffull_jump_fall/sTuffull_jump_fall.yy",},},
     {"id":{"name":"sLeafSINGLE","path":"sprites/sLeafSINGLE/sLeafSINGLE.yy",},},
     {"id":{"name":"Mein_FallTransition_14FPS_strip3","path":"sprites/Mein_FallTransition_14FPS_strip3/Mein_FallTransition_14FPS_strip3.yy",},},
+    {"id":{"name":"oSequenceLogEnd","path":"objects/oSequenceLogEnd/oSequenceLogEnd.yy",},},
     {"id":{"name":"Sprite163164","path":"sprites/Sprite163164/Sprite163164.yy",},},
     {"id":{"name":"OPC_07","path":"sprites/OPC_07/OPC_07.yy",},},
     {"id":{"name":"oTuffull","path":"objects/oTuffull/oTuffull.yy",},},
