@@ -2,5 +2,6 @@
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
     {"name":"Sequence15","order":1,"path":"sequences/Sequence15/Sequence15.yy",},
+    {"name":"oSpiritByte","order":1,"path":"objects/oSpiritByte/oSpiritByte.yy",},
   ],
 }

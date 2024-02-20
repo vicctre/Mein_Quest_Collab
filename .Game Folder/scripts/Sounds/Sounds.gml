@@ -5,6 +5,7 @@
 //Menu stuff
 sfx_nav = SFX_Menu_Nav
 sfx_select = SFX_Menu_select
+sfx_not_availabe = SFX_NA
 
 //Mein Specifc
 sfx_jump = SFX_Jump_V2

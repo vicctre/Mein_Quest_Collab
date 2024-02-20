@@ -23,7 +23,6 @@ if (menu_control) {
 	}
 	if oInput.key_action {
 		PerformButton(menu_cursor)
-		audio_play_sound(global.sfx_select,7,false)
 	}
 	var mouse_y_gui = device_mouse_y_to_gui(0); 
 	// this only effects the buttons and doesnt make the mouse cover the full screen when selecting
@@ -35,7 +34,6 @@ if (menu_control) {
 
 		if (mouse_check_button_pressed(mb_left)) {
 			PerformButton(menu_cursor)
-			audio_play_sound(global.sfx_select,7,false)
 		}
 	}
 }

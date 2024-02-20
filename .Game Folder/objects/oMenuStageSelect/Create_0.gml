@@ -77,11 +77,13 @@ function IsStageLocked(index) {
 
 function PerformButton(index) {
 	if IsStageLocked(index) {
+		audio_play_sound(global.sfx_not_available, 7, false)
 		return;
 	}
 	menu_committed = index
 	menu_x_target = menu_x_target_start
 	menu_control = false
+	audio_play_sound(global.sfx_select, 7, false)
 }
 
 function DrawAdvLogs(stage, icon_x, icon_y, animate) {
