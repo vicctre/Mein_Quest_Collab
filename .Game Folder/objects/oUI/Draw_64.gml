@@ -13,11 +13,14 @@ var gap = 70
 var y_shift = 137
 for(var i = 0; i < stage_logs_num; ++i) {
 	draw_sprite_ext(sAL_HUD, 0,
-					1260-65*stage_logs_num/2 + gap*i, y_shift,
-					scale, scale, 0, c_white, coin_counter_alpha)
+					1260-65*stage_logs_num/2 + gap*i,
+					y_shift,
+					scale, scale,
+					0, c_white, coin_counter_alpha)
 	if (stage_logs[$ stage_log_names[i]].unlocked) {
 		draw_sprite_ext(sAdvLogIconAnimation, 0, 
-						1260-65*stage_logs_num/2 + gap*i, y_shift,
+						1260-65*stage_logs_num/2 + gap*i,
+						y_shift,
 						scale, scale, 0, c_white, coin_counter_alpha)
 	}
 }

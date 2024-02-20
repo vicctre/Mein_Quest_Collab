@@ -2,12 +2,19 @@
 default_last_unlocked_stage = real(W1_1_part1)
 
 function DefaultStagesData() {
+	/*
+	This is adv log save default config.
+	It's updated as you collect adv logs.
+	order defines adv log displaying order in stage select menu,
+	and NOT the order they appear in game - that is set in room editor (see oChest)
+	*/
+
 	return {
 		W1_1: {
 			adv_logs: {
 				Mein: {
 					order: 0,
-					unlocked: true,
+					unlocked: false,
                     was_showed_in_adv_log_screen: false
 				}
 			}
@@ -16,14 +23,14 @@ function DefaultStagesData() {
 			adv_logs: {
 				Genull: {
 					order: 0,
-					unlocked: true,
+					unlocked: false,
                     was_showed_in_adv_log_screen: false
 				},
 				Tuffull: {
 					order: 1,
 					unlocked: false,
                     was_showed_in_adv_log_screen: false
-				}
+				},
 			}
 		},
 		W1_3: {
@@ -85,6 +92,24 @@ function GetStageData(stage) {
 		stage = room_get_name(stage)
 	}
 	return stages_data[$ MapStageName(stage)]
+}
+
+function GetAdvLog(stage, name) {
+	return GetStageData(stage).adv_logs[$ name]
+}
+
+function GetStageAdvLogNames(stage) {
+	/* 
+	in order defined in stage_data
+	*/
+	var logs = GetStageData(stage).adv_logs
+	var unordered_names = variable_struct_get_names(logs)
+	var ordered_names = []
+	for (var i = 0; i < array_length(unordered_names); ++i) {
+		var ind = logs[$ unordered_names[i]].order
+		ordered_names[ind] = unordered_names[i]
+	}
+	return ordered_names
 }
 
 function UnlockAdvLog(stage, name) {

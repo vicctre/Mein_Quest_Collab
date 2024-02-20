@@ -387,7 +387,6 @@ function mouse_collision(obj_or_inst) {
 
 function is_animation_end() {
 	static get_treshold = function() {
-		var tmp = sprite_frames_per_step(sprite_index)
 		return sprite_frames_per_step(sprite_index)
 	}
 	return abs(image_index - (image_number - 1)) < get_treshold()

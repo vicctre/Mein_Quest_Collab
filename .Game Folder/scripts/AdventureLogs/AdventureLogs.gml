@@ -1,4 +1,8 @@
 
+/*
+These are adv logs how they are displayed in adv log screen
+*/
+
 adventure_logs = {
 	Mein: {
 		sprite: sAdvLogMein,
