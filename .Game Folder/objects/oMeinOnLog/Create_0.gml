@@ -21,6 +21,9 @@ death_delay_timer = -1
 wall_obj = oWall
 
 function Kill() {
+	if _is_dead {
+		return;	
+	}
 	_is_dead = true
 	alarm[1] = global.death_transition_delay_time
 	global.player_hp = 0

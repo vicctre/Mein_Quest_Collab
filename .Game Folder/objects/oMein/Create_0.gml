@@ -299,6 +299,9 @@ function Animate() {
 }
 
 function Kill() {
+    if is_dead() {
+        return;
+    }
 	show_debug_message("Kill")
 	global.player_hp = 0
 	sprite_index = sPlayerDead

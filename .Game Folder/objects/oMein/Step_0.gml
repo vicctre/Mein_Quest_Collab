@@ -217,13 +217,17 @@ if abs(final_hsp) or abs(vsp)
 
 									 // without this player will teleport to the beginning
 									 // because camera is spawn there
-if global.camera_solid_bounds_on and !--dev_autoscroller_camera_solid_walls_workaround_timer {
+if global.camera_solid_bounds_on
+		and !--dev_autoscroller_camera_solid_walls_workaround_timer {
 	var xmax = scr_camx(0) + scr_camw(0) - (bbox_right- x)
 	var xmin = scr_camx(0) + (x - bbox_left)
+
+	// loose if stack between view and walls
+	if !right_free and x < xmin {
+		Kill()
+	}
+
 	x = clamp(x, xmin, xmax)
-	//var ymax = scr_camy(0) + scr_camh(0) - (bbox_bottom - y)
-	//var ymin = scr_camy(0) + (y - bbox_top)
-	//y = clamp(y, ymin, ymax)
 }
 
 Animate()
