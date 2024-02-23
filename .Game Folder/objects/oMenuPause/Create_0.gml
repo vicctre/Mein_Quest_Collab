@@ -42,6 +42,7 @@ menu = [
 		action: function() {
 			SlideTransition(TRANS_MODE.GOTO, rmMainMenu)
 			oPause.SetPaused(false)
+			oEventSystem.Notify(Events.stage_exit)
 		}
 	}
 ]

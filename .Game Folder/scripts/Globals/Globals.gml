@@ -47,8 +47,6 @@ function level_reset_globals() {
 
 function game_reset_globals() {
 	level_reset_globals()
-	global.autoscroller_current_log_sprite_index = -1
-	global.autoscroller_reached_pinnik_controllers = []
 	global.rooms_with_onto_stage_seq = [
 		W1_1_part1,
 		W1_2_part1,

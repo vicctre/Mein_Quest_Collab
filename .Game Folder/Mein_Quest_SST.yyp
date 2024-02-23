@@ -408,6 +408,7 @@
     {"id":{"name":"sPlayerAttack","path":"sprites/sPlayerAttack/sPlayerAttack.yy",},},
     {"id":{"name":"oGuiFixWorkaround","path":"objects/oGuiFixWorkaround/oGuiFixWorkaround.yy",},},
     {"id":{"name":"sChest","path":"sprites/sChest/sChest.yy",},},
+    {"id":{"name":"oEventSystem","path":"objects/oEventSystem/oEventSystem.yy",},},
     {"id":{"name":"sStageIconAdvLogLocked","path":"sprites/sStageIconAdvLogLocked/sStageIconAdvLogLocked.yy",},},
     {"id":{"name":"oCrate","path":"objects/oCrate/oCrate.yy",},},
     {"id":{"name":"sRula_falling","path":"sprites/sRula_falling/sRula_falling.yy",},},

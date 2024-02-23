@@ -36,3 +36,22 @@ function CheckActivateEnemies() {
 }
 
 make_late_init()
+
+oEventSystem.Subscribe(
+	Events.stage_exit,
+	function() {
+		global.autoscroller_current_log_sprite_index = -1
+		global.autoscroller_reached_pinnik_controllers = []	
+	}
+)
+
+
+
+
+
+
+
+
+
+
+
