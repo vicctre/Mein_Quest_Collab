@@ -1,7 +1,7 @@
 
 /*
 Simple event system. Add new events in Events enum.
-Use Subscribe method in event listeners
+Use Subscribe method in event listeners.
 */
 
 if !ensure_singleton() {
@@ -10,15 +10,16 @@ if !ensure_singleton() {
 
 enum Events {
 	stage_exit, // go back to menu
+	stage_restart,
 	__last,
 }
 
-// event name -> list of subscirbers
+// event name -> inst id -> array of callbacks
 events_registry = ds_map_create()
 
 // init events registry
 for (var i = 0; i < Events.__last; ++i) {
-    events_registry[? i] = []
+    events_registry[? i] = ds_map_create()
 }
 
 function CheckEventExists(event) {
@@ -27,18 +28,33 @@ function CheckEventExists(event) {
 	}
 }
 
-function Subscribe(event, callback) {
+function Subscribe(event, id, callback) {
 	CheckEventExists(event)
-	if !array_contains(events_registry[? event], callback) {
-		array_push(events_registry[? event], callback)
+	// use inst id as a second key
+	// as ds_map_exists fails to find pure callbacks
+	if !ds_map_exists(events_registry[? event], id) {
+		events_registry[? event][? id] = [callback]
+	} else if !array_contains(events_registry[? event][? id], callback) {
+		array_push(events_registry[? event][? id], callback)
+	}
+}
+
+function UnSubscribe(event, id) {
+	CheckEventExists(event)
+	if ds_map_exists(events_registry[? event], id) {
+		ds_map_delete(events_registry[? event], id)
 	}
 }
 
 function Notify(event) {
 	CheckEventExists(event)
-	var callbacks = events_registry[? event]
-	for (var i = 0; i < array_length(callbacks); ++i) {
-	    callbacks[i]()
+	var callbacks_map = events_registry[? event]
+	var keys = ds_map_keys_to_array(callbacks_map)
+	for (var i = 0; i < array_length(keys); ++i) {
+		var inst_callbacks = callbacks_map[? keys[i]]
+		for (var j = 0; j < array_length(inst_callbacks); ++j) {
+		    inst_callbacks[j]()
+		}
 	}
 }
 
