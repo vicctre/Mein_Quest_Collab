@@ -66,7 +66,7 @@ function game_reset_globals() {
 
 function dev_override() {
 	if !DEV
-		return
+		return;
 	switch room {
 		case W1_2_part4_AutoScroller1:
 			switch object_index {

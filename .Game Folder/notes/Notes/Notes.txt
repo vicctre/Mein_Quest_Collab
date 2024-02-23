@@ -7,5 +7,10 @@ Alex ToDo:
 
 > remove debug doors
 
+Bugs:
+	- collisions with screen and walls
+	- girls hit earlier than aattack frame animation shows
+	- wooden log doesn't reset after level restart
+
 Fixes:
 * Resolution-related picture disruption
