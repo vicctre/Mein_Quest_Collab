@@ -19,13 +19,17 @@
   ],
   "ResourceOrderSettings": [
     {"name":"oDNSLogo","order":8,"path":"objects/oDNSLogo/oDNSLogo.yy",},
+    {"name":"sAL_Arrow","order":1,"path":"sprites/sAL_Arrow/sAL_Arrow.yy",},
     {"name":"oIntroSequence","order":7,"path":"objects/oIntroSequence/oIntroSequence.yy",},
     {"name":"oSequenceOntoLevel","order":6,"path":"objects/oSequenceOntoLevel/oSequenceOntoLevel.yy",},
     {"name":"oSequenceLogEnd","order":9,"path":"objects/oSequenceLogEnd/oSequenceLogEnd.yy",},
     {"name":"oSequence","order":5,"path":"objects/oSequence/oSequence.yy",},
     {"name":"oVicLogo","order":4,"path":"objects/oVicLogo/oVicLogo.yy",},
     {"name":"oSequenceTuffulAppear","order":3,"path":"objects/oSequenceTuffulAppear/oSequenceTuffulAppear.yy",},
+    {"name":"sAdvLogApploon","order":1,"path":"sprites/sAdvLogApploon/sAdvLogApploon.yy",},
     {"name":"oLogoSequence","order":2,"path":"objects/oLogoSequence/oLogoSequence.yy",},
     {"name":"oSequencePickupLog","order":1,"path":"objects/oSequencePickupLog/oSequencePickupLog.yy",},
+    {"name":"sAL_Arrow_click","order":3,"path":"sprites/sAL_Arrow_click/sAL_Arrow_click.yy",},
+    {"name":"sAL_Arrow_am1","order":2,"path":"sprites/sAL_Arrow_am1/sAL_Arrow_am1.yy",},
   ],
 }
