@@ -29,6 +29,7 @@
     {"name":"sAL_Arrow","order":1,"path":"sprites/sAL_Arrow/sAL_Arrow.yy",},
     {"name":"oIntroSequence","order":7,"path":"objects/oIntroSequence/oIntroSequence.yy",},
     {"name":"oSequenceOntoLevel","order":6,"path":"objects/oSequenceOntoLevel/oSequenceOntoLevel.yy",},
+    {"name":"seqUpdate_trailer_V1","order":1,"path":"sequences/seqUpdate_trailer_V1/seqUpdate_trailer_V1.yy",},
     {"name":"oSequenceLogEnd","order":9,"path":"objects/oSequenceLogEnd/oSequenceLogEnd.yy",},
     {"name":"oCamera","order":10,"path":"objects/oCamera/oCamera.yy",},
     {"name":"oPauseDummy","order":9,"path":"objects/oPauseDummy/oPauseDummy.yy",},
