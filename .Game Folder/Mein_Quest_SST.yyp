@@ -31,6 +31,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":".ParentsClub","folderPath":"folders/Objects/.ParentsClub.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Cameras","folderPath":"folders/Objects/Cameras.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemies","folderPath":"folders/Objects/Enemies.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Bosses","folderPath":"folders/Objects/Enemies/Bosses.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"NMEs needing code","folderPath":"folders/Objects/Enemies/NMEs needing code.yy",},
