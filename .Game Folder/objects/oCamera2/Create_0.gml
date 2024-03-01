@@ -15,5 +15,4 @@ alarm[0]=1
 
 //application surface controls how many pixels we are using in our window 
 //the higher the number, the more res we have, making things scroll smoother
-surface_resize(application_surface,view_width*window_scale, view_height*window_scale); 
- 
+surface_resize(application_surface,view_width*window_scale, view_height*window_scale);
