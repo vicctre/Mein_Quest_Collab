@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "SystemObjects",
-    "path": "folders/Objects/SystemObjects.yy",
+    "name": "Cameras",
+    "path": "folders/Objects/Cameras.yy",
   },
   "parentObjectId": null,
   "persistent": true,
