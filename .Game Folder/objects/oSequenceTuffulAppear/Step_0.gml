@@ -6,6 +6,7 @@ if is_sequence_on_frame(global.tufful_intro_landing_time) {
 
 if is_sequence_on_frame(frame_roar) {
 	audio_play_sound(global.sfx_roar01, 0, false)
+	oBossHpUI.ease_in()
 }
 
 if is_sequence_finished() {
