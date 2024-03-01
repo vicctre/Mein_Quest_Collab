@@ -37,16 +37,13 @@ function CheckActivateEnemies() {
 
 make_late_init()
 
-oEventSystem.Subscribe(
-	Events.stage_exit,
-	function() {
-		global.autoscroller_current_log_sprite_index = -1
-		global.autoscroller_reached_pinnik_controllers = []	
-	}
-)
+function _StageExitCallback() {
+	global.autoscroller_current_log_sprite_index = -1
+	global.autoscroller_reached_pinnik_controllers = []
+	global.camera_solid_bounds_on = false
+}
 
-
-
+oEventSystem.Subscribe(Events.stage_exit, id, _StageExitCallback)
 
 
 
