@@ -1,6 +1,7 @@
 
 if !is_playing() and place_meeting(x, y, global.player) {
 	unpause()
+	notify_started()
 	global.player.visible = false
 	global.player.has_control = false
 }

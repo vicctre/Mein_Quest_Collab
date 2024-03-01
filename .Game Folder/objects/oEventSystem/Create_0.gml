@@ -11,6 +11,8 @@ if !ensure_singleton() {
 enum Events {
 	stage_exit, // go back to menu
 	stage_restart,
+	cutscene_start,
+	cutscene_end,
 	__last,
 }
 
@@ -51,7 +53,12 @@ function Notify(event) {
 	var callbacks_map = events_registry[? event]
 	var keys = ds_map_keys_to_array(callbacks_map)
 	for (var i = 0; i < array_length(keys); ++i) {
-		var inst_callbacks = callbacks_map[? keys[i]]
+		var inst_id = keys[i]
+		//if !instance_exists(inst_id) {
+		//	ds_map_delete(callbacks_map, inst_id)
+		//	return;
+		//}
+		var inst_callbacks = callbacks_map[? inst_id]
 		for (var j = 0; j < array_length(inst_callbacks); ++j) {
 		    inst_callbacks[j]()
 		}

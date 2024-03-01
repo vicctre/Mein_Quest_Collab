@@ -108,3 +108,14 @@ function get_stage_name(room_) {
 		break;
 	}
 }
+
+function ease_out() {
+	global.UI_Offscreen = true
+}
+
+function ease_in() {
+	global.UI_Offscreen = false
+}
+
+oEventSystem.Subscribe(Events.cutscene_start, id, ease_out)
+oEventSystem.Subscribe(Events.cutscene_end, id, ease_in)

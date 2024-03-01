@@ -13,3 +13,4 @@ global.player.visible = false
 global.player.has_control = false
 
 unpause()
+notify_started()

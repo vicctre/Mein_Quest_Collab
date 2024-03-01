@@ -28,3 +28,11 @@ function unpause() {
 function on_destroy() {
 	
 }
+
+function notify_started() {
+	oEventSystem.Notify(Events.cutscene_start)
+}
+
+function notify_ended() {
+	oEventSystem.Notify(Events.cutscene_end)
+}
