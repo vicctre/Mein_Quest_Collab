@@ -1,5 +1,4 @@
 /// Update Camera
-
 //zoom areas
 var area = noone;
 with(global.player) {

@@ -245,6 +245,7 @@
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},},
     {"id":{"name":"W1_2_part3","path":"rooms/W1_2_part3/W1_2_part3.yy",},},
     {"id":{"name":"oSequenceOntoLevel","path":"objects/oSequenceOntoLevel/oSequenceOntoLevel.yy",},},
+    {"id":{"name":"seqUpdate_trailer_V1","path":"sequences/seqUpdate_trailer_V1/seqUpdate_trailer_V1.yy",},},
     {"id":{"name":"SFX_Jump_V2","path":"sounds/SFX_Jump_V2/SFX_Jump_V2.yy",},},
     {"id":{"name":"oAttack","path":"objects/oAttack/oAttack.yy",},},
     {"id":{"name":"MEIN_HP_FINAL_strip5","path":"sprites/MEIN_HP_FINAL_strip5/MEIN_HP_FINAL_strip5.yy",},},
