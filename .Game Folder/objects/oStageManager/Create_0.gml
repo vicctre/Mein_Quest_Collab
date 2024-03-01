@@ -31,25 +31,15 @@ function DefaultStagesData() {
 					unlocked: false,
                     was_showed_in_adv_log_screen: false
 				},
+				Apploon: {
+					order: 2,
+					unlocked: false,
+                    was_showed_in_adv_log_screen: false
+				},
 			}
 		},
 		W1_3: {
 			adv_logs: {
-				Genull: {
-					order: 0,
-					unlocked: false,
-                    was_showed_in_adv_log_screen: false
-				},
-				Tuffull: {
-					order: 1,
-					unlocked: false,
-                    was_showed_in_adv_log_screen: false
-				},
-				Mein: {
-					order: 2,
-					unlocked: false,
-                    was_showed_in_adv_log_screen: false
-				}
 			}
 		}
 	}
@@ -118,11 +108,14 @@ function UnlockAdvLog(stage, name) {
 	// update and save data
 	if variable_struct_exists(stage_logs, name) {
 		stage_logs[$ name].unlocked = true
-		save.set("stages_data", stages_data)
-		save.save()
 		return
 	}
 	show_debug_message("Failed to find adv log {} in stage {}", name, stage)
+}
+
+function Save() {
+	save.set("stages_data", stages_data)
+	save.save()
 }
 
 function ResetProgress() {
@@ -162,3 +155,38 @@ function GetNotShowedAdventureLogs() {
 	}
 	return res
 }
+
+function SetAdvLogShown(log_name) {
+	var stage_names = variable_struct_get_names(stages_data)
+	for (var i = 0; i < array_length(stage_names); ++i) {
+	    var stage_logs = stages_data[$ stage_names[i]].adv_logs
+		var log_names = variable_struct_get_names(stage_logs)
+		for (var j = 0; j < array_length(log_names); ++j) {
+			if log_names[j] != log_name {
+				continue	
+			}
+			var log_data = stage_logs[$ log_names[j]]
+			log_data.was_showed_in_adv_log_screen = true
+		}
+	}
+	save.set("stages_data", stages_data)
+	save.save()
+}
+
+function ResetLastFoundAdvLogs() {
+	var stage_names = variable_struct_get_names(stages_data)
+	for (var i = 0; i < array_length(stage_names); ++i) {
+	    var stage_logs = stages_data[$ stage_names[i]].adv_logs
+		var log_names = variable_struct_get_names(stage_logs)
+		for (var j = 0; j < array_length(log_names); ++j) {
+			var log_data = stage_logs[$ log_names[j]]
+			if log_data.unlocked
+					and !log_data.was_showed_in_adv_log_screen {
+				log_data.unlocked = false
+			}
+		}
+	}
+	Save()
+}
+
+alarm[0] = 1

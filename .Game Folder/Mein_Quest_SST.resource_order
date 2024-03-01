@@ -1,7 +1,6 @@
 {
   "FolderOrderSettings": [
     {"name":"Animation Curves","order":1,"path":"folders/Animation Curves.yy",},
-    {"name":"Extensions","order":10,"path":"folders/Objects/Extensions.yy",},
     {"name":"Fonts","order":3,"path":"folders/Fonts.yy",},
     {"name":"Libraries","order":4,"path":"folders/Libraries.yy",},
     {"name":"Notes","order":5,"path":"folders/Notes.yy",},
@@ -9,6 +8,7 @@
     {"name":".ParentsClub","order":2,"path":"folders/Objects/.ParentsClub.yy",},
     {"name":"Cameras","order":10,"path":"folders/Objects/Cameras.yy",},
     {"name":"Enemies","order":3,"path":"folders/Objects/Enemies.yy",},
+    {"name":"Extensions","order":10,"path":"folders/Objects/Extensions.yy",},
     {"name":"INGAME_Objects","order":4,"path":"folders/Objects/INGAME_Objects.yy",},
     {"name":"Items","order":5,"path":"folders/Objects/Items.yy",},
     {"name":"Player","order":6,"path":"folders/Objects/Player.yy",},

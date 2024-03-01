@@ -25,5 +25,10 @@ adventure_logs = {
 		sprite: sAdvLogTuffull,
 		description: "Vic, please"
 					 + " make a description for this guy. Or girl. Or it idk"
+	},
+	Apploon: {
+		sprite: sAdvLogApploon,
+		description: "Vic, please"
+					 + " make a description for this guy. Or girl. Or it idk"
 	}
 }

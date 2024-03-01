@@ -15,7 +15,6 @@
   "defaultScriptType": 1,
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Objects/Extensions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Fonts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Libraries","folderPath":"folders/Libraries.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"AlexLibs","folderPath":"folders/Libraries/AlexLibs.yy",},
@@ -41,6 +40,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Genull","folderPath":"folders/Objects/Enemies/Small Enemies/Genull.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Pinnik","folderPath":"folders/Objects/Enemies/Small Enemies/Pinnik.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shante","folderPath":"folders/Objects/Enemies/Small Enemies/Shante.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Objects/Extensions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"INGAME_Objects","folderPath":"folders/Objects/INGAME_Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Items","folderPath":"folders/Objects/Items.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player","folderPath":"folders/Objects/Player.yy",},

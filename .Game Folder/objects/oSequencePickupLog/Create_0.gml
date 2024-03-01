@@ -1,5 +1,6 @@
 
-time = audio_sound_length(global.sfx_adventure_log) * 60 + 1
+//time = audio_sound_length(global.sfx_adventure_log) * 60 + 1
+time = 90
 
 x = oMein.x
 y = oMein.y
