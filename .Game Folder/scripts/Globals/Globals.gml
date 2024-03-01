@@ -25,18 +25,6 @@ music_gain_array = []
 player = oMein
 restart_level_on_death = true
 skip_logos = false
-available_stages = [
-	W1_1_part1,
-	W1_1_part2,
-	W1_1_part3,
-	W1_1_part4,
-	W1_1_part5,
-	W1_2_part1,
-	W1_2_part2,
-	W1_2_part3,
-	W1_2_part4_AutoScroller1,
-	W1_2_part5_AutoScroller2,
-]
 
 function level_reset_globals() {
 	global.coins = 0
