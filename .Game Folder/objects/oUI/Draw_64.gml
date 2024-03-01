@@ -1,5 +1,3 @@
-if (instance_exists(oSequence))
-	exit;
 
 draw_set_font(fMenu)
 
