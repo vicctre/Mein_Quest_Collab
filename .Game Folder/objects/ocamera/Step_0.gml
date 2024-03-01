@@ -1,5 +1,4 @@
 /// Update Camera
-show_debug_message(cam_zoom_target);
 //zoom areas
 var area = noone;
 with(global.player) {

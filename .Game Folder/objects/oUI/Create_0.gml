@@ -8,6 +8,12 @@ coin_counter_alpha = 1
 coin_counter_x = 1230
 coin_counter_y = 70
 
+//NOTE FROM MUFFIN: testing out making ui move offscreen during sequences
+//feel free to move these two variables to wherever you usually leave these variables
+global.UI_y_offset = 0;
+global.UI_Offscreen = false;
+//
+
 area_name_text_timer = 0;
 area_name_text_offset = 0;
 area_name_text_timer_max = 5*room_speed;
@@ -77,7 +83,7 @@ function hp_bar_get_index() {
 }
 
 function draw_hp_bar() {
-	draw_sprite_ext(hp.spr, hp_bar_get_index(), hp.xoffset, hp.yoffset,
+	draw_sprite_ext(hp.spr, hp_bar_get_index(), hp.xoffset, hp.yoffset + global.UI_y_offset,
 					hp.scale, hp.scale, hp_shake.angle, c_white, 1)
 }
 

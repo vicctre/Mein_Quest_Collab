@@ -2,6 +2,13 @@
 hp_shake.step()
 area_name_text_timer = max(0, area_name_text_timer - 1)
 
+//NOTE FROM MUFFIN: lerp the ui offset towards either -200 or 0, depending on whether UI_offscreen is toggled true or false
+if (global.UI_Offscreen) {
+	global.UI_y_offset = lerp(global.UI_y_offset, -200, 0.08);
+} else {
+	global.UI_y_offset = lerp(global.UI_y_offset, 0, 0.08);
+}
+
 if instance_exists(oMein) {
 	var player_gui_x = (oMein.x - scr_camx(0)) * display_get_gui_width() / scr_camw(0)
 	var player_gui_y = (oMein.y - scr_camy(0)) * display_get_gui_height() / scr_camh(0)

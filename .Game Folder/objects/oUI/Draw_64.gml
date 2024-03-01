@@ -1,3 +1,5 @@
+if (instance_exists(oSequence))
+	exit;
 
 draw_set_font(fMenu)
 
@@ -6,7 +8,7 @@ draw_hp_bar()
 draw_set_alpha(coin_counter_alpha)
 
 draw_sprite_ext(sCoinCounter, 0,
-				coin_counter_x, coin_counter_y,
+				coin_counter_x, coin_counter_y + global.UI_y_offset,
 				scale, scale, 0, c_white, coin_counter_alpha)
 
 var gap = 70
@@ -14,7 +16,7 @@ var y_shift = 137
 for(var i = 0; i < stage_logs_num; ++i) {
 	draw_sprite_ext(sAL_HUD, 0,
 					1260-65*stage_logs_num/2 + gap*i,
-					y_shift,
+					y_shift + global.UI_y_offset,
 					scale, scale,
 					0, c_white, coin_counter_alpha)
 	if (stage_logs[$ stage_log_names[i]].unlocked) {
@@ -34,15 +36,15 @@ if (global.coins_timer > 0) {
 	shader_set(YellowShader)
 	var uniform = shader_get_uniform(YellowShader, "yellow_alpha")
 	shader_set_uniform_f(uniform, 0.5-abs(0.5-global.coins_timer/global.coins_timer_max))
-	draw_text_outlined(xx, yy, global.coins, text_color, outline_color)
+	draw_text_outlined(xx, yy + global.UI_y_offset, global.coins, text_color, outline_color)
 	shader_reset()
 } else {
-	draw_text_outlined(xx, yy, global.coins, text_color, outline_color)
+	draw_text_outlined(xx, yy + global.UI_y_offset, global.coins, text_color, outline_color)
 }
 if (global.lose_coins_counter > 0) {
 	global.lose_coins_counter--
 	var yy_shift = min(120, 300*(global.lose_coins_time-global.lose_coins_counter)/global.lose_coins_time)
-	draw_text_outlined(xx, yy + yy_shift, string(-global.lose_coins_punishment), lose_coins_color, outline_color)
+	draw_text_outlined(xx, yy + yy_shift + global.UI_y_offset, string(-global.lose_coins_punishment), lose_coins_color, outline_color)
 }
 draw_set_alpha(1)
 

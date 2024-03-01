@@ -1,5 +1,4 @@
-speed = 1.8;
-direction = 270;
+spd = 1.8;
 alarm[0] = 60;
 image_index = random(image_number);
 fade = false;
