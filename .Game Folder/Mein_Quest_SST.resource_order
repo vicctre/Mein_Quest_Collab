@@ -33,8 +33,10 @@
     {"name":"Timelines","order":16,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"sUD_part3","order":1,"path":"sprites/sUD_part3/sUD_part3.yy",},
     {"name":"oDNSLogo","order":8,"path":"objects/oDNSLogo/oDNSLogo.yy",},
     {"name":"oMusic","order":11,"path":"objects/oMusic/oMusic.yy",},
+    {"name":"sRula_Dead","order":1,"path":"sprites/sRula_Dead/sRula_Dead.yy",},
     {"name":"sAL_Arrow","order":1,"path":"sprites/sAL_Arrow/sAL_Arrow.yy",},
     {"name":"oIntroSequence","order":7,"path":"objects/oIntroSequence/oIntroSequence.yy",},
     {"name":"oSequenceOntoLevel","order":6,"path":"objects/oSequenceOntoLevel/oSequenceOntoLevel.yy",},
@@ -47,6 +49,7 @@
     {"name":"oVicLogo","order":4,"path":"objects/oVicLogo/oVicLogo.yy",},
     {"name":"oSequenceTuffulAppear","order":3,"path":"objects/oSequenceTuffulAppear/oSequenceTuffulAppear.yy",},
     {"name":"oGuiFixWorkaround","order":1,"path":"objects/oGuiFixWorkaround/oGuiFixWorkaround.yy",},
+    {"name":"sDemo_Logo2","order":1,"path":"sprites/sDemo_Logo2/sDemo_Logo2.yy",},
     {"name":"sAdvLogApploon","order":1,"path":"sprites/sAdvLogApploon/sAdvLogApploon.yy",},
     {"name":"oInput","order":6,"path":"objects/oInput/oInput.yy",},
     {"name":"oSFX","order":5,"path":"objects/oSFX/oSFX.yy",},

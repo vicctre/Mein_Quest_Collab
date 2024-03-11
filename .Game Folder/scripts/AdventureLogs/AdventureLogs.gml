@@ -13,8 +13,10 @@ adventure_logs = {
 	},
 	Genull: {
 		sprite: sAdvLogGenull,
-		description: "Vic, please"
-					 + " make a description for this guy. Or girl. Or it idk"
+		description: "Out of all creatures acting strange on eldoon,"
+					 + "these gentle creatures seem indifferent." 
+					 + "They never look for trouble, but tend to find themselves always caught up"
+					 + "in something…makes you feel kinda bad"
 	},
 	Rularog: {
 		sprite: sAdvLogRularog,
@@ -23,12 +25,16 @@ adventure_logs = {
 	},
 	Tuffull: {
 		sprite: sAdvLogTuffull,
-		description: "Vic, please"
-					 + " make a description for this guy. Or girl. Or it idk"
+		description: "She is sort of a mother figure to the wandering Genulls"
+					 + " in Longroot Lane.Tuffull is very aggressive and territorial," 
+					 + " using her size to intimidate and rush down enemies. While not good at" 
+					 + " turning around, she’s doing her best!"
 	},
 	Apploon: {
 		sprite: sAdvLogApploon,
-		description: "Vic, please"
-					 + " make a description for this guy. Or girl. Or it idk"
+		description: "They don’t seem to mind bonking anyone who steps under their tree." 
+					 + " They fall without a care in the world. How do they climb trees?" 
+					 + " Determination I suppose. Wonder how they taste…" 
+					 + " are they even actually fruit?"
 	}
 }
