@@ -25,7 +25,6 @@ function Kill() {
 		return;	
 	}
 	_is_dead = true
-	alarm[1] = global.death_transition_delay_time
 	global.player_hp = 0
 	sprite_index = sPlayerDead
 	has_control = false
@@ -33,9 +32,15 @@ function Kill() {
 	//y -= 30
 	//visible = false
 	oMusic.switch_music(noone, false, 0)
-	oPause.PauseWithTimer(global.death_pause_time)
 	oUI.shake_hp()
-	death_delay_timer = death_delay
+	// death_delay_timer = death_delay
+	alarm[1] = global.death_transition_delay_time
+	create_death_animation()
+	visible = false
+	death_animation_started = true
+	// workaround: death music will player after unpause
+	alarm[2] = 1
+	oPause.PauseWithTimer(global.death_pause_time)
 }
 
 function Hit() {
