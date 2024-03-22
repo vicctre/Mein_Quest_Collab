@@ -1,5 +1,5 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Animation Curves","order":1,"path":"folders/Animation Curves.yy",},
     {"name":"Fonts","order":3,"path":"folders/Fonts.yy",},
     {"name":"Libraries","order":4,"path":"folders/Libraries.yy",},
@@ -29,13 +29,13 @@
     {"name":"Shaders","order":12,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":13,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":14,"path":"folders/Sprites.yy",},
-    {"name":"Tile Sets","order":15,"path":"folders/Tile Sets.yy",},
-    {"name":"Timelines","order":16,"path":"folders/Timelines.yy",},
     {"name":"Sister Spirits","order":1,"path":"folders/Sprites/Sister Spirits.yy",},
     {"name":"Gems","order":4,"path":"folders/Sprites/Sister Spirits/Gems.yy",},
     {"name":"Naturina","order":5,"path":"folders/Sprites/Sister Spirits/Naturina.yy",},
+    {"name":"Tile Sets","order":15,"path":"folders/Tile Sets.yy",},
+    {"name":"Timelines","order":16,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"sUD_part3","order":1,"path":"sprites/sUD_part3/sUD_part3.yy",},
     {"name":"sRula_KOed","order":2,"path":"sprites/sRula_KOed/sRula_KOed.yy",},
     {"name":"oDNSLogo","order":8,"path":"objects/oDNSLogo/oDNSLogo.yy",},

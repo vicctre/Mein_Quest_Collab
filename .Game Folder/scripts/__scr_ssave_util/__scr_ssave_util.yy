@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "__scr_ssave_util",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Internal",
-    "path": "folders/Libraries/SSave/Internal.yy",
+  "$GMScript":"",
+  "%Name":"__scr_ssave_util",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__scr_ssave_util",
+  "parent":{
+    "name":"Internal",
+    "path":"folders/Libraries/SSave/Internal.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

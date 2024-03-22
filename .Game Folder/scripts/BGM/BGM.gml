@@ -12,7 +12,7 @@ msc_main_menu = BGM_Menu
 msc_intro = BGM_Intro_Cutscene
 
 msc_post_battle = BGM_Post_Battle
-msc_pre = BGM_Pre_Battle
+msc_pre_rularog = BGM_Pre_Battle
 msc_adv_log_screen = BGM_AdvLogReview
 
 

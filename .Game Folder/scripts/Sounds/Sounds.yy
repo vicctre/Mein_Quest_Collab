@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Sounds",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Music_n_Sounds",
-    "path": "folders/Scripts/Music_n_Sounds.yy",
+  "$GMScript":"",
+  "%Name":"Sounds",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Sounds",
+  "parent":{
+    "name":"Music_n_Sounds",
+    "path":"folders/Scripts/Music_n_Sounds.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

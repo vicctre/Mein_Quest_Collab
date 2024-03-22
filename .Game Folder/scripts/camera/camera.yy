@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "camera",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "libs",
-    "path": "folders/Scripts/libs.yy",
+  "$GMScript":"",
+  "%Name":"camera",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"camera",
+  "parent":{
+    "name":"libs",
+    "path":"folders/Scripts/libs.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "movement",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "libs",
-    "path": "folders/Scripts/libs.yy",
+  "$GMScript":"",
+  "%Name":"movement",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"movement",
+  "parent":{
+    "name":"libs",
+    "path":"folders/Scripts/libs.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

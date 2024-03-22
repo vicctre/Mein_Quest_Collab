@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "debug",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Scripts",
-    "path": "folders/Libraries/AlexLibs/Scripts.yy",
+  "$GMScript":"",
+  "%Name":"debug",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"debug",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Libraries/AlexLibs/Scripts.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

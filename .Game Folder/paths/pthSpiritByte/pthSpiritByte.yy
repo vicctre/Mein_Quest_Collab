@@ -1,18 +1,20 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "pthSpiritByte",
-  "closed": false,
-  "kind": 1,
-  "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
+  "$GMPath":"",
+  "%Name":"pthSpiritByte",
+  "closed":false,
+  "kind":1,
+  "name":"pthSpiritByte",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
   },
-  "points": [
+  "points":[
     {"speed":100.0,"x":338.05463,"y":264.96817,},
     {"speed":70.0,"x":284.0,"y":170.0,},
     {"speed":70.0,"x":254.88562,"y":178.55743,},
     {"speed":70.0,"x":234.51038,"y":196.5757,},
   ],
-  "precision": 4,
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }
