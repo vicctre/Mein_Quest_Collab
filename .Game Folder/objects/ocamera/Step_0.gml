@@ -58,18 +58,17 @@ camera_set_view_pos(cam,x-view_w_half + x_shake,y-view_h_half + y_shake);
 
 
 // bgr parallax
-// we need to "round" put it wherever the calculation of movment is 
 if layer_exists("BG1") {
-	layer_x("BG1", round(x + global.bgr1_xoffset) * global.bgr1_parallax)
-	layer_y("BG1", round(y + global.bgr1_yoffset) * global.bgr1_parallax)
+	layer_x("BG1", (x + global.bgr1_xoffset) * global.bgr1_parallax)
+	layer_y("BG1", (y + global.bgr1_yoffset) * global.bgr1_parallax)
 }
 
 if (layer_exists("BG2")) {
-	layer_x("BG2", round(x + global.bgr2_xoffset) * global.bgr2_parallax)
-	layer_y("BG2", round(y + global.bgr2_yoffset) * global.bgr2_parallax)
+	layer_x("BG2", (x + global.bgr2_xoffset) * global.bgr2_parallax)
+	layer_y("BG2", (y + global.bgr2_yoffset) * global.bgr2_parallax)
 }
 
 if (layer_exists("BG3")) {
-	layer_x("BG3", round(x + global.bgr3_xoffset) * global.bgr3_parallax)
-	layer_y("BG3", round(y + global.bgr3_yoffset) * global.bgr3_parallax)
+	layer_x("BG3", (x + global.bgr3_xoffset) * global.bgr3_parallax)
+	layer_y("BG3", (y + global.bgr3_yoffset) * global.bgr3_parallax)
 }

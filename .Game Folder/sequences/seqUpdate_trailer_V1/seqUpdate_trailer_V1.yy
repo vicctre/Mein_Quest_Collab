@@ -111,7 +111,7 @@
             ],},"modifiers":[],"trackColour":4290179656,"tracks":[],"traits":0,},
       ],"traits":0,},
     {"resourceType":"GMGraphicTrack","resourceVersion":"1.0","name":"sUD_part3","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<AssetSpriteKeyframe>","resourceVersion":"1.0","Keyframes":[
-          {"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"AssetSpriteKeyframe","resourceVersion":"1.0","Id":{"name":"sUD_part2","path":"sprites/sUD_part2/sUD_part2.yy",},},},"Disabled":false,"id":"e2beea2d-4b72-4dd7-9ba0-84064c70ad4b","IsCreationKey":false,"Key":809.0,"Length":180.0,"Stretch":false,},
+          {"resourceType":"Keyframe<AssetSpriteKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"AssetSpriteKeyframe","resourceVersion":"1.0","Id":{"name":"sUD_part2","path":"sprites/sUD_part2/sUD_part2.yy",},},},"Disabled":false,"id":"e2beea2d-4b72-4dd7-9ba0-84064c70ad4b","IsCreationKey":false,"Key":809.0,"Length":182.0,"Stretch":false,},
         ],},"modifiers":[],"trackColour":4294068307,"tracks":[
         {"resourceType":"GMRealTrack","resourceVersion":"1.0","name":"image_index","builtinName":18,"events":[],"inheritsTrackColour":true,"interpolation":0,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"1.0","Keyframes":[
               {"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"RealKeyframe","resourceVersion":"1.0","AnimCurveId":null,"EmbeddedAnimCurve":null,"RealValue":12.0,},},"Disabled":false,"id":"3eff50e2-0f56-4ec0-835b-b077f0ca39cf","IsCreationKey":false,"Key":821.0,"Length":1.0,"Stretch":false,},
@@ -234,10 +234,7 @@
             ],},"modifiers":[],"trackColour":4285024498,"tracks":[],"traits":0,},
       ],"traits":0,},
   ],
-  "visibleRange": {
-    "x": 0.0,
-    "y": 1099.9999,
-  },
+  "visibleRange": null,
   "volume": 1.0,
   "xorigin": 0,
   "yorigin": 0,
