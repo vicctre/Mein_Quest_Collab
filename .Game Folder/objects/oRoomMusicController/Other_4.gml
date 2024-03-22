@@ -8,6 +8,15 @@ switch room {
 	case W1_1_part5:
 		music = global.msc_miniboss
 		break
+	case W1_2_part1:
+		music = global.msc_stage1_2
+		break
+	case W1_2_part5_AutoScroller2:
+		music = global.msc_stage1_2_2
+		break
+	case W1_3_part1:
+		music = global.msc_pre_rularog
+		break
 	case rmTitleScreen:
 		music = global.msc_title_screen
 		break
