@@ -54,6 +54,7 @@
     {"name":"inst_28ED4AB6","path":"rooms/W2_1_part1/W2_1_part1.yy",},
     {"name":"inst_47B39787","path":"rooms/W2_1_part1/W2_1_part1.yy",},
     {"name":"inst_F7193E9","path":"rooms/W2_1_part1/W2_1_part1.yy",},
+    {"name":"inst_302C79E9","path":"rooms/W2_1_part1/W2_1_part1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -161,10 +162,11 @@
       ],"layers":[],"name":"Player","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Enemies","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_47B39787","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_47B39787","objectId":{"name":"oFleater","path":"objects/oFleater/oFleater.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2062.0,"y":353.0,},
+        {"$GMRInstance":"","%Name":"inst_302C79E9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_302C79E9","objectId":{"name":"oFleater","path":"objects/oFleater/oFleater.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1492.0,"y":320.0,},
       ],"layers":[],"name":"Enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"objects","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_30684FDE_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_30684FDE_1","objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"properties":[
-            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"propertyId":{"name":"room_to_go","path":"objects/oDoor/oDoor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"W1_3BOSS",},
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"propertyId":{"name":"room_to_go","path":"objects/oDoor/oDoor.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"W2_1_part2",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2226.0,"y":424.0,},
         {"$GMRInstance":"","%Name":"inst_48C854F2_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_48C854F2_1","objectId":{"name":"oThinPlatform","path":"objects/oThinPlatform/oThinPlatform.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":592.0,"y":338.0,},
         {"$GMRInstance":"","%Name":"inst_19DA79DE_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_19DA79DE_1","objectId":{"name":"oThinPlatform","path":"objects/oThinPlatform/oThinPlatform.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":624.0,"y":338.0,},
