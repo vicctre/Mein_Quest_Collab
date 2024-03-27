@@ -1,6 +1,8 @@
 
 debug_draw_ini()
 
+ConsoleInitAdditionalCommands()
+
 /// @description Setup
 try {
 	console_width	= console_skin_get_width(ezConsole_skin[$ "width"]);

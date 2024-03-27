@@ -25,26 +25,30 @@ function ConsoleRoomSpeed(params) {
 	game_set_speed(sp, gamespeed_fps)
 }
 
-console_add_command({
-	name: "goto",
-	short: "goto",
-	desc: "Go to specified room",
-	args: ["room"],
-	args_req: [true],
-	args_desc: ["Boolean flag to enable or disable the fps counter."],
-	callback: ConsoleGoTo,
-	args_suggestions: [
-		__GetAllRoomNames()
-	]
-})
+// call from __EzConsole__ object to prevent
+// undefined global variable error
+function ConsoleInitAdditionalCommands() {
+	console_add_command({
+		name: "goto",
+		short: "goto",
+		desc: "Go to specified room",
+		args: ["room"],
+		args_req: [true],
+		args_desc: ["Boolean flag to enable or disable the fps counter."],
+		callback: ConsoleGoTo,
+		args_suggestions: [
+			__GetAllRoomNames()
+		]
+	})
 
-console_add_command({
-	name: "roomsp",
-	short: "rsp",
-	desc: "Set room speed",
-	args: ["number"],
-	args_req: [true],
-	args_desc: ["Room speed (fps)"],
-	callback: ConsoleRoomSpeed
-})
+	console_add_command({
+		name: "roomsp",
+		short: "rsp",
+		desc: "Set room speed",
+		args: ["number"],
+		args_req: [true],
+		args_desc: ["Room speed (fps)"],
+		callback: ConsoleRoomSpeed
+	})
 
+}
