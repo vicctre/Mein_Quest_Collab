@@ -7,3 +7,4 @@ EnemyKOSound = false;
 
 HealSFX = false; 
 
+CoinSFX = false; 

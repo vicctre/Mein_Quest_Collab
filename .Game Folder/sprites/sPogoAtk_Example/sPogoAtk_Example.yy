@@ -68,7 +68,7 @@
     },
     "name":"sPogoAtk_Example",
     "playback":1,
-    "playbackSpeed":22.0,
+    "playbackSpeed":12.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
