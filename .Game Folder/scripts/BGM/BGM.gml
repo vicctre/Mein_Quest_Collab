@@ -17,7 +17,7 @@ msc_adv_log_screen = BGM_AdvLogReview
 
 
 //Stage music 
-msc_stage_1_1 = BGM_1_1
+msc_stage1_1 = BGM_1_1
 msc_stage1_2 = BGM_1_2_pt1
 msc_stage1_2_2 = BGM_1_2_pt2
 msc_stage2_1 = BGM_2_1

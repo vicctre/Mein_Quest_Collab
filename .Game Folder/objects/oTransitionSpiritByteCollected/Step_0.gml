@@ -18,8 +18,6 @@ switch phase {
 		}
 		if is_transition_finished() {
 			SlideTransition(TRANS_MODE.GOTO, next_room)
-			// var msc = next_room == rmAdventureLogsScreen ? global.msc_adv_log_screen : global.msc_stage_1_1
-			// oMusic.switch_music(msc)
 		}
 		break
 }

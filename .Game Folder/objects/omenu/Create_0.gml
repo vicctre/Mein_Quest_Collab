@@ -63,6 +63,7 @@ function PerformButton(index) {
 	if menu_item.action != undefined {
 		menu_x_target = menu_x_target_start
 		menu_control = false
+		audio_play_sound(global.sfx_select, 0, false)
 		return
 	}
     show_debug_message("Menu item has no action")

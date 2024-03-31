@@ -1,6 +1,11 @@
 
 event_inherited()
 
+if creature_name != undefined and oStageManager.IsAdventureLogUnlocked(room, creature_name) {
+	instance_create_layer(x, y, "Instances", oEldoon_Large)
+	instance_destroy()
+}
+
 sound_effect = global.sfx_adventure_log
 
 collected = function() {
