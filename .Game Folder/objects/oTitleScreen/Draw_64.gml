@@ -1,4 +1,7 @@
 
+if !show_text
+	exit
+
 draw_set_font(fMenu)
 draw_set_halign(fa_center)
 var c = c_white
