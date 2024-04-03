@@ -22,7 +22,6 @@
     {"name":"Screens","order":17,"path":"folders/Objects/SystemObjects/Screens.yy",},
     {"name":"UI","order":9,"path":"folders/Objects/UI.yy",},
     {"name":"Paths","order":7,"path":"folders/Paths.yy",},
-    {"name":"References","order":8,"path":"folders/References.yy",},
     {"name":"Rooms","order":9,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":10,"path":"folders/Scripts.yy",},
     {"name":"Sequences","order":11,"path":"folders/Sequences.yy",},

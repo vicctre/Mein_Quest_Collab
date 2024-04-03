@@ -24,12 +24,6 @@ if (instance_exists(follow))
 {
 	xTo = follow.x + x_shift;
 	yTo = follow.y;
-	
-	if ((follow).object_index == oPlayerDead)
-	{
-		x = xTo; 
-		y = yTo;
-	}
 }
 
 // update object position
