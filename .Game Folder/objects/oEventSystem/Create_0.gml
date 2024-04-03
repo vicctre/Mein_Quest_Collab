@@ -9,8 +9,9 @@ if !ensure_singleton() {
 }
 
 enum Events {
-	stage_exit, // go back to menu
+	stage_exit, // triggered by manually going back to menu
 	stage_restart,
+	stage_win,
 	cutscene_start,
 	cutscene_end,
 	__last,

@@ -18,6 +18,7 @@ camera_solid_bounds_on = false
 checkpoint = undefined
 coins = 0
 coins_timer = 0
+goto_stage_select = false
 gui_adjusted = false
 gui_workaround_restart_happened = false
 logo_sequence_speed_scale = 1

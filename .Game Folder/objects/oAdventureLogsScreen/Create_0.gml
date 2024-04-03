@@ -1,11 +1,11 @@
 
 alarm[0] = 60
 goto_next = false
-next_room = DEMO ? rmThanksForPlayingScreen : W1_2_part1
+next_room = DEMO ? rmThanksForPlayingScreen : rmMainMenu
 
 adv_logs_to_show = oStageManager.GetNotShowedAdventureLogs()
 if array_length(adv_logs_to_show) == 0 {
-	room_goto(W1_2_part1)
+	GoToStageSelect()
 	exit
 }
 for(var i = 0; i < array_length(adv_logs_to_show); ++i) {

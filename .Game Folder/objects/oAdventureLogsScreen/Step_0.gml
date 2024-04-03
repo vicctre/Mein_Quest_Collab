@@ -7,6 +7,6 @@ if goto_next and oInput.key_action {
 		goto_next = false
 		alarm[0] = 60
     } else {
-        SlideTransition(TRANS_MODE.GOTO, next_room, 60)
+        GoToStageSelect()
     }
 }

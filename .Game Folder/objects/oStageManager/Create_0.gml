@@ -189,4 +189,28 @@ function ResetLastFoundAdvLogs() {
 	Save()
 }
 
+function UnlockStage(stage) {
+	if (real(room) <= last_unlocked_stage) {
+		return;	
+	}
+	last_unlocked_stage = real(room)
+	save.set("last_unlocked_stage", last_unlocked_stage)
+	save.save()
+}
+
+function CheckOpenNextStage() {
+	var unlock_stage = noone
+	switch room {
+		case W1_1_part5:
+			unlock_stage = W1_2_part1
+		break
+		case W1_2_part6_END:
+			unlock_stage = W1_3_part1
+		break
+	}
+	if unlock_stage != noone {
+		UnlockStage(unlock_stage)
+	}
+}
+
 alarm[0] = 1
