@@ -550,7 +550,7 @@
     {"id":{"name":"sRula_Tongue_Tip","path":"sprites/sRula_Tongue_Tip/sRula_Tongue_Tip.yy",},},
     {"id":{"name":"sRula_Tongue","path":"sprites/sRula_Tongue/sRula_Tongue.yy",},},
     {"id":{"name":"sRula_walk","path":"sprites/sRula_walk/sRula_walk.yy",},},
-    {"id":{"name":"sRularog_Idle","path":"sprites/sRularog_Idle/sRularog_Idle.yy",},},
+    {"id":{"name":"sRula_Idle","path":"sprites/sRula_Idle/sRula_Idle.yy",},},
     {"id":{"name":"sRun","path":"sprites/sRun/sRun.yy",},},
     {"id":{"name":"SS_01","path":"sprites/SS_01/SS_01.yy",},},
     {"id":{"name":"SS_02","path":"sprites/SS_02/SS_02.yy",},},
