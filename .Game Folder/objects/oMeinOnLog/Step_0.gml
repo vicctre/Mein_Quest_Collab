@@ -97,7 +97,7 @@ if has_control {
 	}
 
 	if x > room_width {
-		SlideTransition(TRANS_MODE.NEXT)
+		SlideTransition(TRANS_MODE.NEXT, noone, true)
 	}
 }
 

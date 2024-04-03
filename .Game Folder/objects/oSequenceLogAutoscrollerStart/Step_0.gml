@@ -14,7 +14,7 @@ if is_sequence_finished() {
 	// layer_sequence_headpos(sequence_inst, 0)
 	if destroy_delay > 0 {
 		alarm[0] = destroy_delay
-		SlideTransition(TRANS_MODE.NEXT)
+		SlideTransition(TRANS_MODE.NEXT, noone, true)
 	} else {
 		instance_destroy()
 	}

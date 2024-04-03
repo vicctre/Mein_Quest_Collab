@@ -190,10 +190,10 @@ function ResetLastFoundAdvLogs() {
 }
 
 function UnlockStage(stage) {
-	if (real(room) <= last_unlocked_stage) {
+	if (real(stage) <= last_unlocked_stage) {
 		return;	
 	}
-	last_unlocked_stage = real(room)
+	last_unlocked_stage = real(stage)
 	save.set("last_unlocked_stage", last_unlocked_stage)
 	save.save()
 }

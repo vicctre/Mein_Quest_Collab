@@ -8,6 +8,9 @@ function SlideTransition(mode, target=undefined, stage_win=false, transition_del
 	if target != undefined {
 		oTransition.target = target	
 	}
+	if stage_win {
+		oEventSystem.Notify(Events.stage_win)
+	}
 }
 
 function GoToStageSelect() {

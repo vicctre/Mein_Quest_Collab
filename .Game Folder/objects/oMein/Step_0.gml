@@ -182,7 +182,7 @@ switch state {
 	}
 	case PLAYERSTATE.ENTER_DOOR: {
 		if is_animation_end() {
-			SlideTransition(TRANS_MODE.GOTO, enter_room)
+			SlideTransition(TRANS_MODE.GOTO, enter_room, true)
 		}
 		hsp = 0
 		break

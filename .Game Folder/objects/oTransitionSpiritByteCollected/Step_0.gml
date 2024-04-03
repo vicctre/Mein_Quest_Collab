@@ -17,7 +17,8 @@ switch phase {
 			layer_sequence_speedscale(sequence_inst, 0)
 		}
 		if is_transition_finished() {
-			SlideTransition(TRANS_MODE.GOTO, next_room)
+			SlideTransition(TRANS_MODE.GOTO, next_room, true)
+			phase++
 		}
 		break
 }
