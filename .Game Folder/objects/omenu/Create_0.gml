@@ -155,3 +155,9 @@ menu = [
 menu_size = array_length(menu)
 
 UpdateMenuBounds()
+
+//// go to stage select if just beated a stage
+if global.goto_stage_select {
+	global.goto_stage_select = false
+	menu[0].action()
+}
