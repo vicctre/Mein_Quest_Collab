@@ -5,6 +5,7 @@ function add_coins(amount) {
 	if (global.coins >= global.heal_coins_number && global.player_hp < global.player_hp_max_overheal) {
 		global.player_hp++;
 		global.coins -= global.heal_coins_number;
+		audio_play_sound(global.sfx_additional_hp, 0, false);
 	}
 	// cap at 99 coins if max max health
 	global.coins = min(global.heal_coins_number - 1, global.coins);

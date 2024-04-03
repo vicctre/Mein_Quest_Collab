@@ -184,6 +184,7 @@
     {"id":{"name":"oChest","path":"objects/oChest/oChest.yy",},},
     {"id":{"name":"oChestOpen","path":"objects/oChestOpen/oChestOpen.yy",},},
     {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},},
+    {"id":{"name":"oCoinBig","path":"objects/oCoinBig/oCoinBig.yy",},},
     {"id":{"name":"oCoinFizzle","path":"objects/oCoinFizzle/oCoinFizzle.yy",},},
     {"id":{"name":"oCollectible_Parent","path":"objects/oCollectible_Parent/oCollectible_Parent.yy",},},
     {"id":{"name":"oContact","path":"objects/oContact/oContact.yy",},},

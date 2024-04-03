@@ -39,6 +39,7 @@
     {"name":"oCamera2","order":1,"path":"objects/oCamera2/oCamera2.yy",},
     {"name":"oCameraZoomArea","order":2,"path":"objects/oCameraZoomArea/oCameraZoomArea.yy",},
     {"name":"oCheckpoint","order":1,"path":"objects/oCheckpoint/oCheckpoint.yy",},
+    {"name":"oCoinBig","order":1,"path":"objects/oCoinBig/oCoinBig.yy",},
     {"name":"oDNSLogo","order":8,"path":"objects/oDNSLogo/oDNSLogo.yy",},
     {"name":"oGuiFixWorkaround","order":1,"path":"objects/oGuiFixWorkaround/oGuiFixWorkaround.yy",},
     {"name":"oInput","order":6,"path":"objects/oInput/oInput.yy",},
