@@ -7,7 +7,6 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_76CFC2CE_1_2_1","path":"rooms/W1_3BOSS/W1_3BOSS.yy",},
-    {"name":"inst_68A757A5_1","path":"rooms/W1_3BOSS/W1_3BOSS.yy",},
     {"name":"inst_6BA6A3B7_1","path":"rooms/W1_3BOSS/W1_3BOSS.yy",},
     {"name":"inst_1DD1A57D_1","path":"rooms/W1_3BOSS/W1_3BOSS.yy",},
     {"name":"inst_6A5D6B7E_1","path":"rooms/W1_3BOSS/W1_3BOSS.yy",},
@@ -52,6 +51,7 @@
     {"name":"inst_4A582DFE_1","path":"rooms/W1_3BOSS/W1_3BOSS.yy",},
     {"name":"inst_501951B2","path":"rooms/W1_3BOSS/W1_3BOSS.yy",},
     {"name":"inst_6B1FB1F8","path":"rooms/W1_3BOSS/W1_3BOSS.yy",},
+    {"name":"inst_71576B4E","path":"rooms/W1_3BOSS/W1_3BOSS.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -69,7 +69,7 @@
         {"$GMRInstance":"","%Name":"inst_76CFC2CE_1_2_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_76CFC2CE_1_2_1","objectId":{"name":"oMein","path":"objects/oMein/oMein.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":85.0,"y":275.0,},
       ],"layers":[],"name":"Player","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Enemies","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"","%Name":"inst_68A757A5_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_68A757A5_1","objectId":{"name":"oTuffull","path":"objects/oTuffull/oTuffull.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":366.0,"y":271.0,},
+        {"$GMRInstance":"","%Name":"inst_71576B4E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_71576B4E","objectId":{"name":"oRularog","path":"objects/oRularog/oRularog.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":354.0,"y":243.0,},
       ],"layers":[],"name":"Enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"objects","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"objects","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"oWall","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

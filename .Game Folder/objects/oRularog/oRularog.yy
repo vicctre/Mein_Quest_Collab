@@ -39,6 +39,9 @@
     "name":"sRularogIdle",
     "path":"sprites/sRularogIdle/sRularogIdle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sRularogIdle",
+    "path":"sprites/sRularogIdle/sRularogIdle.yy",
+  },
   "visible":true,
 }
