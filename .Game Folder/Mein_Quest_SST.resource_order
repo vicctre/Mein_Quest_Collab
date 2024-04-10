@@ -98,7 +98,6 @@
     {"name":"sRulaJumpPrep","order":8,"path":"sprites/sRulaJumpPrep/sRulaJumpPrep.yy",},
     {"name":"sRulaJumpUp","order":3,"path":"sprites/sRulaJumpUp/sRulaJumpUp.yy",},
     {"name":"sRulaKOed","order":12,"path":"sprites/sRulaKOed/sRulaKOed.yy",},
-    {"name":"sRulaKOed242","order":13,"path":"sprites/sRulaKOed242/sRulaKOed242.yy",},
     {"name":"sRularogIdle","order":10,"path":"sprites/sRularogIdle/sRularogIdle.yy",},
     {"name":"sRulaRoll","order":6,"path":"sprites/sRulaRoll/sRulaRoll.yy",},
     {"name":"sRulaTongue","order":9,"path":"sprites/sRulaTongue/sRulaTongue.yy",},
@@ -106,6 +105,7 @@
     {"name":"sRulaTongueStance2","order":5,"path":"sprites/sRulaTongueStance2/sRulaTongueStance2.yy",},
     {"name":"sRulaTongueTip","order":1,"path":"sprites/sRulaTongueTip/sRulaTongueTip.yy",},
     {"name":"sRulaWalk","order":2,"path":"sprites/sRulaWalk/sRulaWalk.yy",},
+    {"name":"sRulaROAR","order":13,"path":"sprites/sRulaROAR/sRulaROAR.yy",},
     {"name":"sUD_part3","order":1,"path":"sprites/sUD_part3/sUD_part3.yy",},
   ],
 }
