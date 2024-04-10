@@ -544,7 +544,7 @@
     {"id":{"name":"sRulaJumpPrep","path":"sprites/sRulaJumpPrep/sRulaJumpPrep.yy",},},
     {"id":{"name":"sRulaJumpUp","path":"sprites/sRulaJumpUp/sRulaJumpUp.yy",},},
     {"id":{"name":"sRulaKOed","path":"sprites/sRulaKOed/sRulaKOed.yy",},},
-    {"id":{"name":"sRularogIdle","path":"sprites/sRularogIdle/sRularogIdle.yy",},},
+    {"id":{"name":"sRulaIdle","path":"sprites/sRulaIdle/sRulaIdle.yy",},},
     {"id":{"name":"sRulaRoll","path":"sprites/sRulaRoll/sRulaRoll.yy",},},
     {"id":{"name":"sRulaTongue","path":"sprites/sRulaTongue/sRulaTongue.yy",},},
     {"id":{"name":"sRulaTongueStance","path":"sprites/sRulaTongueStance/sRulaTongueStance.yy",},},

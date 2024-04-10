@@ -32,6 +32,7 @@ dir = 0
 move_h = 0
 idle_time = 0
 idle_delay = 400 //time before idle animation plays
+
 function choose_idle_animation() {
 	currentIdleAnimation = choose(Idle02, Idle03, Idle04, Idle05)
 }

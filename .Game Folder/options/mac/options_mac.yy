@@ -8,7 +8,7 @@
     },
   },
   "name":"macOS",
-  "option_mac_allow_fullscreen":true,
+  "option_mac_allow_fullscreen":false,
   "option_mac_allow_incoming_network":false,
   "option_mac_allow_outgoing_network":false,
   "option_mac_apple_sign_in":false,

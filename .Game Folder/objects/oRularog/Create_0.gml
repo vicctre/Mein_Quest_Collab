@@ -1,6 +1,8 @@
 
 event_inherited()
 
+hp = 22
+
 idleState = {
     id: id,
 	step: function() {
@@ -17,24 +19,81 @@ idleState = {
     },
 }
 
-jumpChargeState = {
+jumpState = {
     id: id,
-	charge_timer: make_timer(60),
-	
-	step: function() {
+	prepare_timer: make_timer(15),
+	is_jumping: false,
+	hsp: 0,
+	vsp: 0,
+	vsp_max: 10,
+	jump_sp: -7,
+	grav: 0.2,
+	jumps_total: 3,
+	jumps_left: 3,
+	jump_delay: make_timer(30),
 
-    },
+	step: function() {
+		if !is_jumping {
+			if !prepare_timer.update() {
+				is_jumping = true
+				vsp = jump_sp
+				jumps_left--
+				id.sprite_index = sRulaJumpUp
+			}
+		} else {
+			vsp = approach(vsp, vsp_max, grav)
+			with id {
+				if other.vsp > 0 {
+					sprite_index = sRulaFalling	
+				}
+				scr_move_coord_contact_obj(0, other.vsp, oWall)
+				if place_meeting(x, y + 1, oWall) {
+					other.vsp = 0
+					other.is_jumping = false
+					other.prepare_timer.reset()
+					sprite_index = sRulaJumpPrep
+					oCamera.start_shaking()
+				}
+			}
+		}
+	},
 	
 	onExit: function() {
-
+		change_state = false
     },
 	
 	onEnter: function() {
-
+		id.sprite_index = sRulaJumpPrep
+		jumps_left = jumps_total
     },
 	
 	checkChange: function() {
-        return id.walkState
+        if !jumps_left and !is_jumping {
+			return id.idleState
+		}
+		return undefined
+    },
+}
+
+jumpChargeState = {
+    id: id,
+	charge_timer: make_timer(135),
+	
+	step: function() {},
+	
+	onExit: function() {
+		charge_timer.reset()
+    },
+	
+	onEnter: function() {
+		id.sprite_index = sRulaCharge
+    },
+	
+	checkChange: function() {
+        if !charge_timer.update() {
+			return id.jumpState		
+		}
+		return undefined
     },
 }
 
@@ -50,6 +109,7 @@ walkState = {
             if place_meeting(x + other.dir, y, oWall) {
                 other.dir = -other.dir
 				image_xscale = other.dir
+				other.change_state = true
             }
 			var sp = other.sp * other.dir
 			scr_move_coord_contact_obj(sp, 0, oWall)
@@ -66,7 +126,7 @@ walkState = {
 	
 	checkChange: function() {
         if change_state {
-			return id.jumpChargeState	
+			return id.jumpChargeState
 		}
 		return undefined
     },

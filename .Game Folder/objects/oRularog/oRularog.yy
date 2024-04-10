@@ -36,12 +36,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sRularogIdle",
-    "path":"sprites/sRularogIdle/sRularogIdle.yy",
+    "name":"sRulaIdle",
+    "path":"sprites/sRulaIdle/sRulaIdle.yy",
   },
   "spriteMaskId":{
-    "name":"sRularogIdle",
-    "path":"sprites/sRularogIdle/sRularogIdle.yy",
+    "name":"sRulaIdle",
+    "path":"sprites/sRulaIdle/sRulaIdle.yy",
   },
   "visible":true,
 }

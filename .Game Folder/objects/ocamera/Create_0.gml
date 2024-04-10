@@ -26,7 +26,7 @@ x_shift = 0
 
 shake_length = 40
 shake_magnitude = 1
-shake_remain= 0
+shake_remain = 0
 x_shake = 0
 y_shake = 0
 buff = 32
@@ -35,4 +35,8 @@ smooth_movement_on = true
 
 function set_smooth_movement(turn_on) {
 	smooth_movement_on = turn_on
+}
+
+function start_shaking() {
+	shake_remain = 1
 }
