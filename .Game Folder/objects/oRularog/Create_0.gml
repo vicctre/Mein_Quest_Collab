@@ -17,11 +17,33 @@ idleState = {
     },
 }
 
+jumpChargeState = {
+    id: id,
+	charge_timer: make_timer(60),
+	
+	step: function() {
+
+    },
+	
+	onExit: function() {
+
+    },
+	
+	onEnter: function() {
+
+    },
+	
+	checkChange: function() {
+        return id.walkState
+    },
+}
+
 walkState = {
     id: id,
     sp: 2,
     room_center_x: room_width * 0.5,
     dir: 1,
+	change_state: false,
 	
 	step: function() {
         with id {
@@ -35,7 +57,7 @@ walkState = {
     },
 	
 	onExit: function() {
-        
+		change_state = false
     },
 	
 	onEnter: function() {
@@ -43,7 +65,10 @@ walkState = {
     },
 	
 	checkChange: function() {
-        
+        if change_state {
+			return id.jumpChargeState	
+		}
+		return undefined
     },
 }
 

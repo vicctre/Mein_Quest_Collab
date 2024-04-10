@@ -153,7 +153,9 @@ function array_remove(arr, val) {
 	var i = array_find(arr, val)
 	if i == -1
 		throw " :array_remove: no value in array: " + string(val)
+	var res = arr[i]
 	array_delete(arr, i, 1)
+	return res
 }
 
 function array_choose(arr) {
@@ -165,6 +167,10 @@ function array_expand(arr, from) {
 	for (var i = 0; i < array_length(from); ++i) {
 	    array_push(arr, from[i])
 	}
+}
+
+function array_empty(arr) {
+	return array_length(arr) == 0
 }
 
 function cycle_increase(val, min_, max_) {
@@ -206,23 +212,25 @@ function chance(p) {
 	return random(1) < p
 }
 
-function draw_text_custom(xx, yy, text, font, halign, valign) {
+function draw_text_custom(xx, yy, text, font=-1, col=c_white, alpha=1, halign=fa_top, valign=fa_left) {
 	var prev_valign = draw_get_valign()	
 	var prev_halign = draw_get_halign()
 	var prev_font = draw_get_font()
-	if !font
-		font = prev_font
-	if !halign
-		halign = prev_halign
-	if !valign
-		valign = prev_valign
+	var prev_col = draw_get_color()
+	var prev_alpha = draw_get_alpha()
 	draw_set_font(font)
 	draw_set_halign(halign)
 	draw_set_valign(valign)
+	draw_set_color(col)
+	draw_set_alpha(alpha)
+
 	draw_text(xx, yy, text)
+
 	draw_set_font(prev_font)
 	draw_set_halign(prev_halign)
 	draw_set_valign(prev_valign)
+	draw_set_color(prev_col)
+	draw_set_alpha(prev_alpha)
 }
 
 function inst_mouse_dir(inst) {
@@ -272,20 +280,14 @@ function struct_sum(struct) {
 	return res
 }
 
-global.creation_arguments_struct = {}
-function assign_creation_arguments() {
-	var argnames = variable_struct_get_names(global.creation_arguments_struct)
+function instance_create_args(xx, yy, layer, obj, args) {
+	var inst = instance_create_layer(xx, yy, layer, obj)
+	var argnames = variable_struct_get_names(args)
 	for (var i = 0; i < array_length(argnames); ++i) {
 	    var name = argnames[i]
-		var val = global.creation_arguments_struct[$ name]
-		variable_instance_set(id, name, val)
+		var val = args[$ name]
+		variable_instance_set(inst, name, val)
 	}
-}
-
-function instance_create_args(xx, yy, layer, obj, args) {
-	global.creation_arguments_struct = args
-	var inst = instance_create_layer(xx, yy, layer, obj)
-	global.creation_arguments_struct = noone
 	return inst
 }
 
@@ -302,31 +304,6 @@ function foreach(arr, fun, args=[], kwargs={}) {
 			return true
 	}
 	return false
-}
-
-function foreach_instance(obj, fun) {
-	for (var i = 0; i < instance_number(obj); ++i) {
-	    var inst = instance_find(obj, i)
-		if fun(inst)
-			return true
-	}
-	return false
-}
-
-function assert_eq(a, b) {
-	if a == b {
-		return
-	}
-	throw "\nassert_eq failed\n"
-}
-
-function assert_eq_arr(arr, arr1) {
-	if array_length(arr) != array_length(arr1)
-		throw "\nassert_eq_arr failed: arrays have different sizes"
-	for (var i = 0; i < array_length(arr); ++i) {
-	    if arr[i] != arr1[i]
-			throw "\nassert_eq_arr failed: arrays elements differs at index " + string(i)
-	}
 }
 
 function collision_line_width(x0, y0, x1, y1, obj, w) {
@@ -374,6 +351,14 @@ function get_instances(obj) {
     return arr
 }
 
+function get_random_instance(obj) {
+	var res = instance_find(obj, irandom(instance_number(obj) - 1))
+	if res == noone {
+		show_debug_message("instance_find() returned -4")
+	}
+	return res
+}
+
 function object_name(inst) {
 	return object_get_name(inst.object_index)
 }
@@ -382,11 +367,26 @@ function object_name(inst) {
 function scr_stub() {}
 
 function mouse_collision(obj_or_inst) {
-	return collision_point(mouse_x, mouse_y, obj_or_inst, false, true)
+	return collision_point(mouse_x, mouse_y, obj_or_inst, false, false)
+}
+
+function Timer(time) constructor {
+	self.time = time
+	self.timer = 0
+	
+	function update() {
+		self.timer -= timer > 0
+		return self.timer
+	}
+
+	function start() {
+		self.timer = self.time	
+	}
 }
 
 function is_animation_end() {
 	static get_treshold = function() {
+		var tmp = sprite_frames_per_step(sprite_index)
 		return sprite_frames_per_step(sprite_index)
 	}
 	return abs(image_index - (image_number - 1)) < get_treshold()
@@ -407,4 +407,38 @@ function ensure_singleton() {
 		return false
 	}
 	return true
+}
+
+//// Shortcuts
+function Randomer(first, second=undefined) constructor {
+    self.from = first
+    self.to = second
+    if second == undefined {
+        self.from = 0
+        self.to = first
+    }
+    function __get() {
+        return random_range(self.from, self.to)
+    }
+}
+function IRandomer(first, second=undefined) constructor {
+    self.from = first
+    self.to = second
+    if second == undefined {
+        self.from = 0
+        self.to = first
+    }
+    function __get() {
+        return irandom_range(self.from, self.to)
+    }
+}
+
+function make_timer(time) {
+    return new Timer(time)
+}
+function randomer(first, second=undefined) {
+    return new Randomer(first, second).__get
+}
+function irandomer(first, second=undefined) {
+    return new IRandomer(first, second).__get
 }
