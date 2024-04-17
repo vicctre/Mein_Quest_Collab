@@ -133,3 +133,42 @@ walkState = {
 }
 
 state = idleState
+
+//// Leafs
+leaf_timer = make_timer(45)
+leaf_delay = 2
+leaf_number = 7
+// leaf_number - 1 will provide leafs to change spawning pattern
+leaf_hoffset_divider = leaf_number - 1
+leaf_fall_time = leaf_timer.time - leaf_number * leaf_delay
+
+leaf_counter = 0
+leaf_distance = 15
+function spawn_leaf() {
+	// this basically runs leaf_counter in cycles
+	leaf_counter = (leaf_counter + 2) % leaf_hoffset_divider
+	var h_offset = leaf_distance * (1 - leaf_counter / 2)
+	instance_create_layer(x + h_offset, 50, "Enemies", oFallingLeaf)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

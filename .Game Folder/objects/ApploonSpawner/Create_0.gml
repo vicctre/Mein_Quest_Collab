@@ -16,10 +16,8 @@ function unpause() {
 
 leaf_counter = 0;
 function spawn_leaf() {
-	
-	leaf_counter = (leaf_counter+2) % 5;
-	var h_offset = 15 * (1 - 2 * leaf_counter/4)
-	
-	var inst = instance_create_layer(x + h_offset, y, "Enemies", oFallingLeaf);
+	leaf_counter = (leaf_counter + 2) % 5
+	var h_offset = 15 * (1 - leaf_counter / 2)
+	instance_create_layer(x + h_offset, y, "Enemies", oFallingLeaf)
 	
 }
