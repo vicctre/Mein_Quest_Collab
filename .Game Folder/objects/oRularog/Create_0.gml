@@ -3,6 +3,16 @@ event_inherited()
 
 hp = 22
 
+function hit() {
+	
+}
+
+// distance from room edge when spawned
+spawn_dist = room_width - x
+// left and right points, where Rula will jump to after jump state
+right_side_x = x
+left_side_x = spawn_dist
+
 idleState = {
     id: id,
 	step: function() {
@@ -19,56 +29,112 @@ idleState = {
     },
 }
 
+enum RulaJump {
+	prepare,
+	jump,
+	dash_fall,
+	finish,
+}
 jumpState = {
     id: id,
 	prepare_timer: make_timer(15),
-	is_jumping: false,
+	state: RulaJump.prepare,
 	hsp: 0,
 	vsp: 0,
 	vsp_max: 10,
-	jump_sp: -7,
+	dash_fall_sp: 8,
+	dash_x: 0,
+	jump_sp: -8,
 	grav: 0.2,
 	jumps_total: 3,
 	jumps_left: 3,
 	jump_delay: make_timer(30),
+	reach_player_time: 60,
+	change_state: false,
+
+	switch_to_prepare: function() {
+		state = RulaJump.prepare
+		vsp = 0
+		is_jumping = false
+		prepare_timer.reset()
+		id.sprite_index = sRulaJumpPrep
+		oCamera.start_shaking()
+	},
+	
+	set_finish_vsp: function() {
+		var dist_to_left = id.left_side_x - id.x
+		var dist_to_right = id.right_side_x - id.x
+		var dist = min(abs(dist_to_left), abs(dist_to_right))
+		var dir = dist == dist_to_right ? 1 : -1
+		// 
+		vsp = -sqrt(0.5 * dist * grav)
+		hsp = abs(vsp) * dir
+	},
 
 	step: function() {
-		if !is_jumping {
-			if !prepare_timer.update() {
-				is_jumping = true
-				vsp = jump_sp
-				jumps_left--
-				id.sprite_index = sRulaJumpUp
-			}
-		} else {
-			vsp = approach(vsp, vsp_max, grav)
-			with id {
-				if other.vsp > 0 {
-					sprite_index = sRulaFalling	
+		switch state {
+		    case RulaJump.prepare:
+				if !prepare_timer.update() {
+					if jumps_left {
+						state = RulaJump.jump
+						jumps_left--
+						vsp = jump_sp
+						dash_x = median(id.left_side_x, oMein.x, id.right_side_x)
+						hsp = (oMein.x - id.x) / reach_player_time * 2
+					} else {
+						state = RulaJump.finish
+						set_finish_vsp()
+					}
+					id.sprite_index = sRulaJumpUp
+					
 				}
-				scr_move_coord_contact_obj(0, other.vsp, oWall)
-				if place_meeting(x, y + 1, oWall) {
-					other.vsp = 0
-					other.is_jumping = false
-					other.prepare_timer.reset()
-					sprite_index = sRulaJumpPrep
-					oCamera.start_shaking()
+		    break
+			case RulaJump.jump:
+				vsp = approach(vsp, vsp_max, grav)
+				with id {
+					if other.vsp > 0 {
+						sprite_index = sRulaFalling	
+					}
+					scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
+					if abs(other.dash_x - x) < abs(other.hsp)
+							or place_meeting(x + sign(other.hsp), y, oWall) {
+						other.state = RulaJump.dash_fall
+						other.vsp = other.dash_fall_sp
+						other.hsp = 0
+					}
 				}
-			}
+		    break
+			case RulaJump.dash_fall:
+				with id {
+					scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
+					if place_meeting(x, y + 1, oWall) {
+						other.switch_to_prepare()
+					}
+				}
+		    break
+			case RulaJump.finish:
+				vsp = approach(vsp, vsp_max, grav)
+				with id {
+					scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
+					if place_meeting(x, y + 1, oWall) {
+						other.change_state = true
+					}
+				}
+		    break
 		}
 	},
 	
-	onExit: function() {
-		change_state = false
-    },
+	onExit: function() {},
 	
 	onEnter: function() {
+		change_state = false
 		id.sprite_index = sRulaJumpPrep
 		jumps_left = jumps_total
+		state = RulaJump.prepare
     },
 	
 	checkChange: function() {
-        if !jumps_left and !is_jumping {
+        if change_state {
 			return id.idleState
 		}
 		return undefined
@@ -101,7 +167,7 @@ walkState = {
     id: id,
     sp: 2,
     room_center_x: room_width * 0.5,
-    dir: 1,
+    dir: image_xscale,
 	change_state: false,
 	
 	step: function() {
