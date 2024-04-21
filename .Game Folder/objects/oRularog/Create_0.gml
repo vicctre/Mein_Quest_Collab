@@ -37,19 +37,19 @@ enum RulaJump {
 }
 jumpState = {
     id: id,
-	prepare_timer: make_timer(15),
+	prepare_timer: make_timer(40), //15
 	state: RulaJump.prepare,
 	hsp: 0,
 	vsp: 0,
 	vsp_max: 10,
-	dash_fall_sp: 8,
+	dash_fall_sp: 6, //8
 	dash_x: 0,
-	jump_sp: -8,
-	grav: 0.2,
+	jump_sp: -9, //-8
+	grav: 0.25,
 	jumps_total: 3,
 	jumps_left: 3,
-	jump_delay: make_timer(30),
-	reach_player_time: 60,
+	jump_delay: make_timer(80), //30
+	reach_player_time: 70, //60
 	change_state: false,
 
 	switch_to_prepare: function() {
