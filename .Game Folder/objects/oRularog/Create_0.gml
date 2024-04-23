@@ -37,12 +37,12 @@ enum RulaJump {
 }
 jumpState = {
     id: id,
-	prepare_timer: make_timer(30),
+	prepare_timer: make_timer(40),
 	state: RulaJump.prepare,
 	hsp: 0,
 	vsp: 0,
 	vsp_max: 10,
-	dash_fall_sp: 8,
+	dash_fall_sp: 6, //8
 	dash_x: 0,
 	jump_sp: -13,
 	grav: 0.6,
