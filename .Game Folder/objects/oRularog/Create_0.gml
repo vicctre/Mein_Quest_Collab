@@ -37,38 +37,51 @@ enum RulaJump {
 }
 jumpState = {
     id: id,
-	prepare_timer: make_timer(15),
+	prepare_timer: make_timer(30),
 	state: RulaJump.prepare,
 	hsp: 0,
 	vsp: 0,
 	vsp_max: 10,
 	dash_fall_sp: 8,
 	dash_x: 0,
-	jump_sp: -8,
-	grav: 0.2,
+	jump_sp: -13,
+	grav: 0.6,
 	jumps_total: 3,
 	jumps_left: 3,
-	jump_delay: make_timer(30),
+	dash_delay: make_timer(5),
 	reach_player_time: 60,
 	change_state: false,
+	finish_vsp_hsp_ratio: 3, // finish_vsp_hsp_ratio = vsp / hsp
+	finish_edge_dist_treshold: 100, // if room edge is closer than finish_edge_dist_treshold
+									// don't make the finishing jump
+	finish_gr: 0.2,
 
 	switch_to_prepare: function() {
 		state = RulaJump.prepare
 		vsp = 0
-		is_jumping = false
 		prepare_timer.reset()
+		dash_delay.reset()
 		id.sprite_index = sRulaJumpPrep
+		var dir = sign(id.x - oMein.x)
+		if dir != 0 {
+			id.image_xscale = sign(id.x - oMein.x)
+		}
 		oCamera.start_shaking()
 	},
 	
-	set_finish_vsp: function() {
+	maybe_switch_to_finish: function() {
 		var dist_to_left = id.left_side_x - id.x
 		var dist_to_right = id.right_side_x - id.x
 		var dist = min(abs(dist_to_left), abs(dist_to_right))
+		
+		if dist < finish_edge_dist_treshold {
+			change_state = true
+			return;
+		}
+		state = RulaJump.finish
 		var dir = dist == dist_to_right ? 1 : -1
-		// 
-		vsp = -sqrt(0.5 * dist * grav)
-		hsp = abs(vsp) * dir
+		vsp = -sqrt(0.5 * dist * finish_gr * finish_vsp_hsp_ratio)
+		hsp = abs(vsp) * dir / finish_vsp_hsp_ratio
 	},
 
 	step: function() {
@@ -82,8 +95,7 @@ jumpState = {
 						dash_x = median(id.left_side_x, oMein.x, id.right_side_x)
 						hsp = (oMein.x - id.x) / reach_player_time * 2
 					} else {
-						state = RulaJump.finish
-						set_finish_vsp()
+						maybe_switch_to_finish()
 					}
 					id.sprite_index = sRulaJumpUp
 					
@@ -99,12 +111,14 @@ jumpState = {
 					if abs(other.dash_x - x) < abs(other.hsp)
 							or place_meeting(x + sign(other.hsp), y, oWall) {
 						other.state = RulaJump.dash_fall
-						other.vsp = other.dash_fall_sp
 						other.hsp = 0
 					}
 				}
 		    break
 			case RulaJump.dash_fall:
+				if !dash_delay.update() {
+					vsp = dash_fall_sp
+				}
 				with id {
 					scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
 					if place_meeting(x, y + 1, oWall) {
@@ -113,7 +127,7 @@ jumpState = {
 				}
 		    break
 			case RulaJump.finish:
-				vsp = approach(vsp, vsp_max, grav)
+				vsp = approach(vsp, vsp_max, finish_gr)
 				with id {
 					scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
 					if place_meeting(x, y + 1, oWall) {
