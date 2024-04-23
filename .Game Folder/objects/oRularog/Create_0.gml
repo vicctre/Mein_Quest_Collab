@@ -1,9 +1,9 @@
-
+  
 event_inherited()
 
 hp = 22
 
-function hit() {
+function set_hit() {
 	
 }
 
@@ -35,6 +35,7 @@ enum RulaJump {
 	dash_fall,
 	finish,
 }
+
 jumpState = {
     id: id,
 	prepare_timer: make_timer(40),
@@ -49,10 +50,11 @@ jumpState = {
 	jumps_total: 3,
 	jumps_left: 3,
 	dash_delay: make_timer(5),
+	last_dash_delay_timer: make_timer(60), // after last dash just hang out for some time
 	reach_player_time: 60,
 	change_state: false,
 	finish_vsp_hsp_ratio: 3, // finish_vsp_hsp_ratio = vsp / hsp
-	finish_edge_dist_treshold: 100, // if room edge is closer than finish_edge_dist_treshold
+	finish_edge_dist_treshold: 50, // if room edge is closer than finish_edge_dist_treshold
 									// don't make the finishing jump
 	finish_gr: 0.2,
 
@@ -62,9 +64,9 @@ jumpState = {
 		prepare_timer.reset()
 		dash_delay.reset()
 		id.sprite_index = sRulaJumpPrep
-		var dir = sign(id.x - oMein.x)
+		var dir = sign(oMein.x - id.x)
 		if dir != 0 {
-			id.image_xscale = sign(id.x - oMein.x)
+			id.image_xscale = dir
 		}
 		oCamera.start_shaking()
 	},
@@ -94,10 +96,10 @@ jumpState = {
 						vsp = jump_sp
 						dash_x = median(id.left_side_x, oMein.x, id.right_side_x)
 						hsp = (oMein.x - id.x) / reach_player_time * 2
+						id.sprite_index = sRulaJumpUp
 					} else {
 						maybe_switch_to_finish()
 					}
-					id.sprite_index = sRulaJumpUp
 					
 				}
 		    break
@@ -127,6 +129,10 @@ jumpState = {
 				}
 		    break
 			case RulaJump.finish:
+				if last_dash_delay_timer.update() {
+					break	
+				}
+				id.sprite_index = sRulaJumpUp
 				vsp = approach(vsp, vsp_max, finish_gr)
 				with id {
 					scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
@@ -142,6 +148,7 @@ jumpState = {
 	
 	onEnter: function() {
 		change_state = false
+		last_dash_delay_timer.reset()
 		id.sprite_index = sRulaJumpPrep
 		jumps_left = jumps_total
 		state = RulaJump.prepare
@@ -208,6 +215,24 @@ walkState = {
         if change_state {
 			return id.jumpChargeState
 		}
+		return undefined
+    },
+}
+
+tongueAttackState = {
+    id: id,
+	change_state: false,
+	
+	step: function() {
+    },
+	
+	onExit: function() {
+    },
+	
+	onEnter: function() {
+    },
+	
+	checkChange: function() {
 		return undefined
     },
 }
