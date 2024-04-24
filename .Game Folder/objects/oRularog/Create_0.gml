@@ -168,20 +168,20 @@ jumpState = {
 		change_state = false
 		last_dash_delay_timer.reset()
 		prepare_timer.reset()
-		id.sprite_index = sRulaJumpPrep
 		jumps_left = jumps_total
 		state = RulaJump.prepare
+		id.sprite_index = sRulaJumpPrep
     },
 	
 	checkChange: function() {
         if change_state {
-			return id.idleState
+			return id.tongueChargeState
 		}
 		return undefined
     },
 }
 
-jumpChargeState = {
+tongueChargeState = {
     id: id,
 	charge_timer: make_timer(135),
 	
@@ -197,7 +197,7 @@ jumpChargeState = {
 	
 	checkChange: function() {
         if !charge_timer.update() {
-			return id.jumpState		
+			return id.tongueAttackState
 		}
 		return undefined
     },
@@ -241,7 +241,10 @@ walkState = {
 tongueAttackState = {
     id: id,
 	change_state: false,
-	
+	tongue: noone,
+	tongue_rel_x: 20,
+	tongue_rel_y: -10,
+
 	step: function() {
     },
 	
@@ -249,14 +252,22 @@ tongueAttackState = {
     },
 	
 	onEnter: function() {
+		id.sprite_index = sRulaTongueStance
+		tongue = instance_create_layer(x + tongue_rel_x, y + tongue_rel_y, "Enemies", oRulaTongue)
+		tongue_tip = instance_create_layer(x + tongue_rel_x, y + tongue_rel_y, "Enemies", oRulaTongueTip)
+		tongue_tip.image_xscale = id.image_xscale
+		tongue.tongue_tip = tongue_tip
     },
 	
 	checkChange: function() {
+		if !instance_exists(tongue) {
+			return id.idleState
+		}
 		return undefined
     },
 }
 
-state = idleState
+state = tongueChargeState
 
 //// Leafs
 leaf_timer = make_timer(45)

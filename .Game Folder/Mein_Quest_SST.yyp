@@ -222,6 +222,8 @@
     {"id":{"name":"oPinnikAutoscroller","path":"objects/oPinnikAutoscroller/oPinnikAutoscroller.yy",},},
     {"id":{"name":"oRoomMusicController","path":"objects/oRoomMusicController/oRoomMusicController.yy",},},
     {"id":{"name":"oRularog","path":"objects/oRularog/oRularog.yy",},},
+    {"id":{"name":"oRulaTongue","path":"objects/oRulaTongue/oRulaTongue.yy",},},
+    {"id":{"name":"oRulaTongueTip","path":"objects/oRulaTongueTip/oRulaTongueTip.yy",},},
     {"id":{"name":"oSequence","path":"objects/oSequence/oSequence.yy",},},
     {"id":{"name":"oSequenceLogAutoscrollerStart","path":"objects/oSequenceLogAutoscrollerStart/oSequenceLogAutoscrollerStart.yy",},},
     {"id":{"name":"oSequenceLogEnd","path":"objects/oSequenceLogEnd/oSequenceLogEnd.yy",},},

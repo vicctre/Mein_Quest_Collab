@@ -65,6 +65,8 @@
     {"name":"oPauseDummy","order":9,"path":"objects/oPauseDummy/oPauseDummy.yy",},
     {"name":"oRoomMusicController","order":4,"path":"objects/oRoomMusicController/oRoomMusicController.yy",},
     {"name":"oRularog","order":1,"path":"objects/oRularog/oRularog.yy",},
+    {"name":"oRulaTongue","order":2,"path":"objects/oRulaTongue/oRulaTongue.yy",},
+    {"name":"oRulaTongueTip","order":3,"path":"objects/oRulaTongueTip/oRulaTongueTip.yy",},
     {"name":"oSequence","order":5,"path":"objects/oSequence/oSequence.yy",},
     {"name":"oSequenceLogEnd","order":9,"path":"objects/oSequenceLogEnd/oSequenceLogEnd.yy",},
     {"name":"oSequenceOntoLevel","order":6,"path":"objects/oSequenceOntoLevel/oSequenceOntoLevel.yy",},
