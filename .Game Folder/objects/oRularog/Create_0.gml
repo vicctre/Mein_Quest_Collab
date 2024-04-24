@@ -242,8 +242,8 @@ tongueAttackState = {
     id: id,
 	change_state: false,
 	tongue: noone,
-	tongue_rel_x: 20,
-	tongue_rel_y: -10,
+	tongue_rel_x: 22,
+	tongue_rel_y: 14,
 
 	step: function() {
     },
@@ -252,9 +252,14 @@ tongueAttackState = {
     },
 	
 	onEnter: function() {
+		id.image_xscale = id.is_on_left_side() ? 1 : -1
 		id.sprite_index = sRulaTongueStance
-		tongue = instance_create_layer(x + tongue_rel_x, y + tongue_rel_y, "Enemies", oRulaTongue)
-		tongue_tip = instance_create_layer(x + tongue_rel_x, y + tongue_rel_y, "Enemies", oRulaTongueTip)
+		tongue = instance_create_layer(id.x + tongue_rel_x * id.image_xscale,
+									   id.y + tongue_rel_y,
+									   "RulaTongue", oRulaTongue)
+		var tongue_tip = instance_create_layer(id.x + tongue_rel_x * id.image_xscale,
+											   id.y + tongue_rel_y,
+											   "RulaTongue", oRulaTongueTip)
 		tongue_tip.image_xscale = id.image_xscale
 		tongue.tongue_tip = tongue_tip
     },
@@ -287,7 +292,9 @@ function spawn_leaf() {
 }
 
 
-
+function is_on_left_side() {
+	return abs(x - left_side_x) < abs(x - right_side_x)
+}
 
 
 
