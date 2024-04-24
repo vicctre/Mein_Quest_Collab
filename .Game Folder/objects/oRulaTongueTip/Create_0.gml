@@ -1,4 +1,6 @@
 
+event_inherited()
+
 throwing_phase = true
 sp_max = 10
 sp = sp_max

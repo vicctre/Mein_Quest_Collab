@@ -13,7 +13,10 @@
     "name":"Bosses",
     "path":"folders/Objects/Enemies/Bosses.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oThinPlatform",
+    "path":"objects/oThinPlatform/oThinPlatform.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
