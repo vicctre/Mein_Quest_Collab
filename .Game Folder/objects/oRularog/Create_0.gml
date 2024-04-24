@@ -167,6 +167,7 @@ jumpState = {
 	onEnter: function() {
 		change_state = false
 		last_dash_delay_timer.reset()
+		prepare_timer.reset()
 		id.sprite_index = sRulaJumpPrep
 		jumps_left = jumps_total
 		state = RulaJump.prepare
