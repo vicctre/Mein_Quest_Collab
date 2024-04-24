@@ -41,17 +41,23 @@ jumpState = {
 	prepare_timer: make_timer(40),
 	state: RulaJump.prepare,
 	hsp: 0,
+	hsp_max: 9, // how fast Rula moves during jump
+				// also affects jump curve if Mein is far away
+	reach_player_time: 30, // how fast Rula reaches the player during jump
+						   // will be increased if Mein is far away
+	jump_sp: -13,
+	jump_height: 140, // that's it, jump height
+	grav_base: 0.6,	  // jump state gravity
+	grav: 0.6,
+
 	vsp: 0,
 	vsp_max: 10,
-	dash_fall_sp: 6, //8
+	dash_fall_sp: 6, // how fast Rula falls on Mein
 	dash_x: 0,
-	jump_sp: -13,
-	grav: 0.6,
 	jumps_total: 3,
 	jumps_left: 3,
 	dash_delay: make_timer(5),
 	last_dash_delay_timer: make_timer(60), // after last dash just hang out for some time
-	reach_player_time: 60,
 	change_state: false,
 	finish_vsp_hsp_ratio: 3, // finish_vsp_hsp_ratio = vsp / hsp
 	finish_edge_dist_treshold: 50, // if room edge is closer than finish_edge_dist_treshold
@@ -91,16 +97,27 @@ jumpState = {
 		    case RulaJump.prepare:
 				if !prepare_timer.update() {
 					if jumps_left {
+						grav = grav_base
 						state = RulaJump.jump
 						jumps_left--
 						vsp = jump_sp
 						dash_x = median(id.left_side_x, oMein.x, id.right_side_x)
-						hsp = (oMein.x - id.x) / reach_player_time * 2
+						var dist = (oMein.x - id.x)
+						hsp = dist / reach_player_time
+
+						// decrease movement vars so Rula moves a bit smoother
+						if abs(hsp) > hsp_max {
+							hsp = hsp_max * sign(hsp)
+							var actual_reach_player_time = dist / hsp
+							// g = 2h / t^2
+							grav = 2 * jump_height / power(actual_reach_player_time, 2)
+							// v = -g * t
+							vsp = -grav * actual_reach_player_time
+						}
 						id.sprite_index = sRulaJumpUp
 					} else {
 						maybe_switch_to_finish()
 					}
-					
 				}
 		    break
 			case RulaJump.jump:
@@ -114,6 +131,7 @@ jumpState = {
 							or place_meeting(x + sign(other.hsp), y, oWall) {
 						other.state = RulaJump.dash_fall
 						other.hsp = 0
+						sprite_index = sRulaFalling	
 					}
 				}
 		    break
@@ -213,7 +231,7 @@ walkState = {
 	
 	checkChange: function() {
         if change_state {
-			return id.jumpChargeState
+			return id.jumpState
 		}
 		return undefined
     },
