@@ -36,6 +36,41 @@ enum RulaJump {
 	finish,
 }
 
+walkState = {
+    id: id,
+    sp: 2,
+    room_center_x: room_width * 0.5,
+    dir: image_xscale,
+	change_state: false,
+	
+	step: function() {
+        with id {
+            if place_meeting(x + other.dir, y, oWall) {
+                other.dir = -other.dir
+				image_xscale = other.dir
+				other.change_state = true
+            }
+			var sp = other.sp * other.dir
+			scr_move_coord_contact_obj(sp, 0, oWall)
+        }
+    },
+	
+	onExit: function() {
+		change_state = false
+    },
+	
+	onEnter: function() {
+        id.sprite_index = sRulaWalk
+    },
+	
+	checkChange: function() {
+        if change_state {
+			return id.jumpState
+		}
+		return undefined
+    },
+}
+
 jumpState = {
     id: id,
 	prepare_timer: make_timer(40),
@@ -203,41 +238,6 @@ tongueChargeState = {
     },
 }
 
-walkState = {
-    id: id,
-    sp: 2,
-    room_center_x: room_width * 0.5,
-    dir: image_xscale,
-	change_state: false,
-	
-	step: function() {
-        with id {
-            if place_meeting(x + other.dir, y, oWall) {
-                other.dir = -other.dir
-				image_xscale = other.dir
-				other.change_state = true
-            }
-			var sp = other.sp * other.dir
-			scr_move_coord_contact_obj(sp, 0, oWall)
-        }
-    },
-	
-	onExit: function() {
-		change_state = false
-    },
-	
-	onEnter: function() {
-        id.sprite_index = sRulaWalk
-    },
-	
-	checkChange: function() {
-        if change_state {
-			return id.jumpState
-		}
-		return undefined
-    },
-}
-
 tongueAttackState = {
     id: id,
 	change_state: false,
@@ -272,7 +272,7 @@ tongueAttackState = {
     },
 }
 
-state = tongueChargeState
+state = idleState
 
 //// Leafs
 leaf_timer = make_timer(45)
