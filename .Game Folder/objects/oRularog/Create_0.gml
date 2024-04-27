@@ -4,7 +4,7 @@ event_inherited()
 name = "Rularog"
 
 hp_max = 22
-hp = 1
+hp = 22
 hp_phase2_amount = 11
 done_phase2_roar = false
 
