@@ -22,7 +22,8 @@ switch room {
 	break
 	case W1_3BOSS:
         x = room_width * 0.5
-        //cam_zoom_target = 0.8
+		// fit into space between trees
+        cam_zoom_target = (room_width - 64) / cam_width
         SnapCamera()
         follow = id
         //cam_width = 480
