@@ -5,12 +5,12 @@ hp = 10
 hp_phase2_amount = 11
 done_phase2_roar = false
 
-//function set_hit() {
-	
-//}
+// used to animate rotation
+rotation = 0
 
 // distance from room edge when spawned
 spawn_dist = room_width - x
+room_center_x = room_width * 0.5
 // left and right points, where Rula will jump to after jump state
 right_side_x = x
 left_side_x = spawn_dist
@@ -40,7 +40,6 @@ idleState = {
 walkState = {
     id: id,
     sp: 2,
-    room_center_x: room_width * 0.5,
     dir: image_xscale,
 	change_state: false,
 	
@@ -56,16 +55,12 @@ walkState = {
         }
     },
 	
-	setWalkDir: function() {
-		dir = id.x > room_center_x ? -1 : 1	
-	},
-	
 	onExit: function() {
 		change_state = false
     },
 	
 	onEnter: function() {
-		setWalkDir()
+		dir = id.setDir()
         id.sprite_index = sRulaWalk
     },
 	
@@ -294,6 +289,7 @@ roarState = {
 		with id {
 			if is_animation_at_frame(other.roar_image_index) {
 				audio_play_sound(other.roar_sfx, 3, false)	
+				oCamera.start_shaking()
 			}
 		}
     },
@@ -304,32 +300,124 @@ roarState = {
 		id.sprite_index = sRulaROAR
     },
 	checkChange: function() {
-		if id.image_index == (id.image_number - 1) {
-			return id.rollState
+		with id {
+			if is_animation_end() {
+				return rollState
+			}
 		}
     },
 }
 
 rollState = {
     id: id,
-	step: function() {
+	dir: 0,
+	change_state: false,
+	hsp: 0,
+	vsp: 0,
+	vsp_max: 5,
+	accel: 0.2,
+	roll_sp: 3,
+	rotation_gain: 4,
+	ultra_roll_sp: 4,
+	grav: 0.1,
+	bounce_jump_sp: -2,
+	roll_state: undefined, // roll
+	roll_hits: 0,
+	ultra_roll_hits_treshold: 2,
+	ultra_roll_sfx: SFX_Tuffull_Roar,
 
-    },
+	step: function() {
+		hsp = approach(hsp, roll_sp * dir, accel)
+		vsp = approach(vsp, vsp_max, grav)
+		with id {
+			rotation -= other.hsp * other.rotation_gain
+			scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
+			if place_meeting(x, y + 1, oWall) {
+				other.vsp = other.bounce_jump_sp
+			}
+			if place_meeting(x + other.dir, y, oWall) {
+				other.hsp = 0
+				image_xscale *= -1
+				other.dir = image_xscale
+				other.roll_hits++
+				oCamera.start_shaking()
+				if other.roll_hits == other.ultra_roll_hits_treshold {
+					audio_play_sound(other.ultra_roll_sfx, 3, false)
+					change_state = true
+				}
+			}
+		}
+	},
+
 	onExit: function() {
 
     },
 	onEnter: function() {
-
+		change_state = false
+		vsp = bounce_jump_sp
+		dir = id.setDir()
+		id.sprite_index = sRulaRoll
     },
 	checkChange: function() {
-        //return id.jumpState
+		if change_state {
+			return id.ultraRollState
+		}
     },
 }
 
+ultraRollState = {
+    id: id,
+	hdir: 0,
+	vdir: 0,
+	change_state: false,
+	hsp: 0,
+	vsp: 0,
+	accel: 0.2,
+	roll_sp: 4,
+
+	step: function() {
+		hsp = approach(hsp, roll_sp * dir, accel)
+		vsp = approach(vsp, vsp_max, grav)
+		with id {
+			scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
+			if place_meeting(x, y + 1, oWall) {
+				other.vsp = other.bounce_jump_sp
+			}
+			if place_meeting(x + dir, y, oWall) {
+				image_xscale *= -1
+				other.dir = image_xscale
+				other.roll_hits++
+				if other.roll_hits == other.ultra_roll_hits_treshold {
+					audio_play_sound(other.ultra_roll_sfx, 3, false)
+				}
+			}
+		}
+	},
+
+	onExit: function() {
+
+    },
+	onEnter: function() {
+		change_state = false
+		dir = id.setDir()
+		id.sprite_index = sRulaRoll
+    },
+	checkChange: function() {
+		if change_state {
+			return id.walkState
+		}
+    },
+}
 
 function isPhase2() {
 	return hp <= hp_phase2_amount
 }
+
+function setDir() {
+	image_xscale = x > room_center_x ? -1 : 1
+	return image_xscale
+}
+
 
 state = idleState
 
@@ -355,7 +443,20 @@ function is_on_left_side() {
 	return abs(x - left_side_x) < abs(x - right_side_x)
 }
 
-
+function draw_hit_flashing() {
+	if (flash > 0) {
+		flash--
+		shader_set(SHWhite)
+		draw_sprite_ext(sprite_index, image_index, x, y,
+					    image_xscale, image_yscale, rotation, c_white, 1)
+		shader_reset()
+	} else {
+		// for rotation animation don't rotate actuall sprite with its collision mask
+		// but simply animate rotation
+		draw_sprite_ext(sprite_index, image_index, x, y,
+					    image_xscale, image_yscale, rotation, c_white, 1)
+	}
+}
 
 
 

@@ -18,5 +18,16 @@ function set_hit(damage=0) {
 	}
 }
 
+function draw_hit_flashing() {
+	if (flash > 0) {
+		flash--; 
+		shader_set(SHWhite);
+		draw_self(); 
+		shader_reset(); 
+	} else {
+		draw_self();
+	}
+}
+
 hp_max = 1
 hp = hp_max
