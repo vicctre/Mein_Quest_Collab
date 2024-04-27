@@ -3,11 +3,11 @@ Alex ToDo:
 > add dead state
 > add spirit byte and room end
 > make a Rula appear sequence object
+> add sounds
 > switch to phase 2 from any state
 > fix tongue disappear after loosing
 > fix tongue attach point
 > fix Rula hp ui
-> add sounds
 > test Rula boss fight
 
 
