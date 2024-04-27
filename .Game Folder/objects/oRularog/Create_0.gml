@@ -1,7 +1,7 @@
   
 event_inherited()
 
-hp = 10
+hp = 22
 hp_phase2_amount = 11
 done_phase2_roar = false
 
@@ -322,28 +322,35 @@ rollState = {
 	grav: 0.1,
 	bounce_jump_sp: -2,
 	roll_state: undefined, // roll
-	roll_hits: 0,
-	ultra_roll_hits_treshold: 2,
-	ultra_roll_sfx: SFX_Tuffull_Roar,
+	wall_hits: 0,
+	ultra_wall_hits_treshold: 2,
 
 	step: function() {
 		hsp = approach(hsp, roll_sp * dir, accel)
 		vsp = approach(vsp, vsp_max, grav)
-		with id {
-			rotation -= other.hsp * other.rotation_gain
-			scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
-			if place_meeting(x, y + 1, oWall) {
-				other.vsp = other.bounce_jump_sp
+		if wall_hits < ultra_wall_hits_treshold {
+			with id {
+				rotation -= other.hsp * other.rotation_gain
+				scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
+				if place_meeting(x, y + 1, oWall) {
+					other.vsp = other.bounce_jump_sp
+				}
+				if place_meeting(x + other.dir, y, oWall) {
+					other.hsp = 0
+					image_xscale *= -1
+					other.dir = image_xscale
+					other.wall_hits++
+					oCamera.start_shaking()
+					if other.wall_hits >= other.ultra_wall_hits_treshold {
+					}
+				}
 			}
-			if place_meeting(x + other.dir, y, oWall) {
-				other.hsp = 0
-				image_xscale *= -1
-				other.dir = image_xscale
-				other.roll_hits++
-				oCamera.start_shaking()
-				if other.roll_hits == other.ultra_roll_hits_treshold {
-					audio_play_sound(other.ultra_roll_sfx, 3, false)
-					change_state = true
+		} else {
+			with id {
+				rotation -= other.hsp * other.rotation_gain
+				scr_move_coord_contact_obj(0, other.vsp, oWall)
+				if place_meeting(x, y + 1, oWall) {
+					other.change_state = true
 				}
 			}
 		}
@@ -354,6 +361,7 @@ rollState = {
     },
 	onEnter: function() {
 		change_state = false
+		wall_hits = 0
 		vsp = bounce_jump_sp
 		dir = id.setDir()
 		id.sprite_index = sRulaRoll
@@ -365,48 +373,124 @@ rollState = {
     },
 }
 
+// predefine leaf vars to be used in struct
+var leaf_delay = 2
+var leaf_number = 7
+var leaf_timer = 20
 ultraRollState = {
     id: id,
 	hdir: 0,
+	hdirprev: 0,
 	vdir: 0,
+	vdirprev: 0,
 	change_state: false,
 	hsp: 0,
 	vsp: 0,
 	accel: 0.2,
 	roll_sp: 4,
+	ultra_roll_sfx: SFX_Tuffull_Roar,
+	wall_hits: 0,
+	ultra_roll_done: false,
+	after_roll_timer: make_timer(120),
+	rotation_sp: 20,
+	rotation_dir: 0,
+
+    make_ultra_roll: function() {
+        id.move(hsp, vsp)
+		id.rotation += rotation_sp * rotation_dir
+        if id.colliding_wall(id.x + hdir, id.y + vdir) {
+            hsp = 0
+            vsp = 0
+            // change directions
+            // if at start hdir = -1 and vdir = 0
+            // they will change clockwise-like
+            if hdir != 0 {
+                hdirprev = hdir
+                hdir = 0
+            } else {
+                hdir = -hdirprev
+				id.image_xscale = hdir
+            }
+            if vdir != 0 {
+                vdirprev = vdir
+                vdir = 0
+            } else {
+                vdir = -vdirprev	
+            }
+            wall_hits++
+            oCamera.start_shaking()
+            if wall_hits == 4 {
+                ultra_roll_done = true
+                id.sprite_index = sRulaIdle
+                id.rotation = 0
+            }
+        }
+    },
+
+    wait_after_roll: function() {
+        if !after_roll_timer.update() {
+            change_state = true	
+        }
+    },
 
 	step: function() {
-		hsp = approach(hsp, roll_sp * dir, accel)
-		vsp = approach(vsp, vsp_max, grav)
-		with id {
-			scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
-			if place_meeting(x, y + 1, oWall) {
-				other.vsp = other.bounce_jump_sp
-			}
-			if place_meeting(x + dir, y, oWall) {
-				image_xscale *= -1
-				other.dir = image_xscale
-				other.roll_hits++
-				if other.roll_hits == other.ultra_roll_hits_treshold {
-					audio_play_sound(other.ultra_roll_sfx, 3, false)
-				}
-			}
+		hsp = approach(hsp, roll_sp * hdir, accel)
+		vsp = approach(vsp, roll_sp * vdir, accel)
+		if !ultra_roll_done {
+            make_ultra_roll()
+		} else {
+            wait_after_roll()
 		}
+        // spawn leafs if rolling under the ceiling
+        if wall_hits == 2 {
+            check_spawn_leaf()
+        }
 	},
 
-	onExit: function() {
+	onExit: function() {},
 
-    },
 	onEnter: function() {
+		ultra_roll_done = false
+		after_roll_timer.reset()
+		wall_hits = 0
 		change_state = false
-		dir = id.setDir()
+		hdir = id.setDir()
+		vdirprev = 1 // next vdir will be -1 -> up
+		rotation_dir = -hdir
 		id.sprite_index = sRulaRoll
+		audio_play_sound(ultra_roll_sfx, 3, false)
     },
+
 	checkChange: function() {
 		if change_state {
-			return id.walkState
+			return id.jumpState
 		}
     },
+
+
+    //// Leafs
+    leaf_timer: make_timer(leaf_timer),
+	leaf_delay: leaf_delay,
+    // leaf_number - 1 will provide leafs to change spawning pattern
+    leaf_hoffset_divider: leaf_number - 1,
+    leaf_fall_time: leaf_timer - leaf_number * leaf_delay,
+    leaf_counter: 0,
+    leaf_distance: 15,
+    spawn_leaf: function() {
+        // this basically runs leaf_counter in cycles
+        leaf_counter = (leaf_counter + 2) % leaf_hoffset_divider
+        var h_offset = leaf_distance * (1 - leaf_counter / 2)
+        instance_create_layer(id.x + h_offset, 50, "Enemies", oFallingLeaf)
+    },
+	check_spawn_leaf: function() {
+		if !leaf_timer.update() {
+		    leaf_timer.reset()
+		}
+		if (leaf_timer.timer >= leaf_fall_time
+		        && leaf_timer.timer % leaf_delay == 0) {
+		    spawn_leaf()
+		}
+	}
 }
 
 function isPhase2() {
@@ -420,24 +504,6 @@ function setDir() {
 
 
 state = idleState
-
-//// Leafs
-leaf_timer = make_timer(45)
-leaf_delay = 2
-leaf_number = 7
-// leaf_number - 1 will provide leafs to change spawning pattern
-leaf_hoffset_divider = leaf_number - 1
-leaf_fall_time = leaf_timer.time - leaf_number * leaf_delay
-
-leaf_counter = 0
-leaf_distance = 15
-function spawn_leaf() {
-	// this basically runs leaf_counter in cycles
-	leaf_counter = (leaf_counter + 2) % leaf_hoffset_divider
-	var h_offset = leaf_distance * (1 - leaf_counter / 2)
-	instance_create_layer(x + h_offset, 50, "Enemies", oFallingLeaf)
-}
-
 
 function is_on_left_side() {
 	return abs(x - left_side_x) < abs(x - right_side_x)
@@ -458,9 +524,13 @@ function draw_hit_flashing() {
 	}
 }
 
+function colliding_wall(xx, yy) {
+	return place_meeting(xx, yy, oWall)
+}
 
-
-
+function move(hsp, vsp) {
+	scr_move_coord_contact_obj(hsp, vsp, oWall)
+}
 
 
 
