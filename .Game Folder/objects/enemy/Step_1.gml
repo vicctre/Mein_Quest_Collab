@@ -7,8 +7,8 @@ if(hp <= 0)
 	oSFX.EnemyKOSound = true;
 	var inst = instance_create_layer(x, y, "Instances", deadEnemy);
 	inst.sprite_index = deadSprite;
-	inst.image_xscale = -hitDirection; 
-	inst.hsp = hitDirection*2;
+	inst.image_xscale = -hit_direction; 
+	inst.hsp = hit_direction*2;
 	inst.vsp = -5;
 	inst.image_yscale = size;
 	instance_destroy(); 

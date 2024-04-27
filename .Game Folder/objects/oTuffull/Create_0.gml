@@ -18,10 +18,6 @@ walk_time = 40;
 jump_prep_time = 20;
 charge_count = 3;
 
-flash_timer = 0;
-flash_loop_duration = 40 //how many steps a full loop takes
-flash_percent_max = 0.35; //0 = no flash, 1 = fully red
-
 // play sequence first
 boss_state = "__wait_sequence__";
 visible = false
@@ -82,9 +78,9 @@ changeState = function(newState) {
 		break;
 		case "Defeated":
 			sprite_index = sTuffull_HitWall;
-			image_xscale = -hitDirection; 
+			image_xscale = -hit_direction; 
 			y -= 1;
-			hsp = hitDirection*2;
+			hsp = hit_direction*2;
 			vsp = -5;
 			mask_index = noone
 			StartTuffulDefeatedTransition()

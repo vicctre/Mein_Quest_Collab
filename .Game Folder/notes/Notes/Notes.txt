@@ -1,16 +1,17 @@
 
 Alex ToDo:
-> adv logs
-	> integrate with adv log screen
-		> show collected
-		> don't spawn AL twice in a level
+> implement 2-phase structure
+>>> implement rolling attack
+> make a Rula appear sequence object
+> fix Rula hp ui
+> make Rula hitable
+> add sounds
+> test Rula boss fight
 
-> remove debug doors
 
 Bugs:
 	- collisions with screen and walls
 	- girls hit earlier than aattack frame animation shows
-	- wooden log doesn't reset after level restart
 
 Fixes:
 * Resolution-related picture disruption
