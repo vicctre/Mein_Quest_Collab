@@ -1,7 +1,7 @@
   
 event_inherited()
 
-hp = 22
+hp = 1
 hp_phase2_amount = 11
 done_phase2_roar = false
 
@@ -357,7 +357,7 @@ rollState = {
 	},
 
 	onExit: function() {
-
+		id.rotation = 0
     },
 	onEnter: function() {
 		change_state = false
@@ -492,6 +492,63 @@ ultraRollState = {
 		}
 	}
 }
+
+deadState = {
+    id: id,
+	pause_time: 80,
+	vsp: -4,
+	vsp_max: 10,
+	grav: 0.2,
+	hsp: 3,
+	dir: 0,
+	spirit_byte_timer: make_timer(60),
+	spirit_byte_dropped: false,
+	screen_shaked: false,
+
+	step: function() {
+		if !screen_shaked {
+			oCamera.start_shaking()
+			screen_shaked = true
+		}
+		vsp = approach(vsp, vsp_max, grav)
+		id.move(hsp * dir, vsp)
+		if id.colliding_wall(id.x + dir, id.y) {
+			hsp = 0	
+		}
+		if id.colliding_wall(id.x, id.y + 1) {
+			vsp = 0
+			id.sprite_index = sRulaDead
+			if !spirit_byte_dropped and !spirit_byte_timer.update() {
+				instance_create_layer(id.x, id.y, "objects", oSpiritByteBoss)
+				spirit_byte_dropped = true
+				oMusic.switch_music(global.msc_post_battle, true, 0)
+			}
+		}
+    },
+	onExit: function() {
+
+    },
+	onEnter: function() {
+		dir = sign(id.x - oMein.x)
+		dir = dir != 0 ? dir : 1
+		id.image_xscale = -dir
+		id.sprite_index = sRulaKOed
+		audio_play_sound(global.sfx_BOOM, 3, false)
+		oPause.PauseWithTimer(pause_time)
+    },
+	checkChange: function() {
+		// there is no coming back from the dead
+        return undefined
+    },
+}
+
+function checkStateChangeGlobal() {
+	if !hp and state != deadState {
+		return deadState
+	}
+	return undefined
+}
+
 
 function isPhase2() {
 	return hp <= hp_phase2_amount
