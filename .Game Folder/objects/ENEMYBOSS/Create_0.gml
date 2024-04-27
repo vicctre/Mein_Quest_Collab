@@ -7,6 +7,7 @@ hit_direction = 0
 flash_timer = 0;
 flash_loop_duration = 40 //how many steps a full loop takes
 flash_percent_max = 0.35; //0 = no flash, 1 = fully red
+flash_hp_amount = 5
 
 function set_hit(damage=0) {
 	hp -= damage
@@ -18,7 +19,7 @@ function set_hit(damage=0) {
 }
 
 function drawRedFlashingOnLowHp() {
-	if (hp > 0 && hp <= 5) {
+	if (hp > 0 && hp <= flash_hp_amount) {
 		flash_timer = (flash_timer + 1) % flash_loop_duration
 		shader_set(RedShader)
 		var alpha = flash_percent_max*abs(0.5-flash_timer/flash_loop_duration)

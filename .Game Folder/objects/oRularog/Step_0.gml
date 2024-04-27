@@ -8,10 +8,10 @@ if new_state != undefined {
 	new_state.onEnter()
 }
 
-if !leaf_timer.update() {
-    leaf_timer.reset()
-}
-if (leaf_timer.timer >= leaf_fall_time
-        && leaf_timer.timer % leaf_delay == 0) {
-    spawn_leaf()
-}
+//if !leaf_timer.update() {
+//    leaf_timer.reset()
+//}
+//if (leaf_timer.timer >= leaf_fall_time
+//        && leaf_timer.timer % leaf_delay == 0) {
+//    spawn_leaf()
+//}

@@ -1,7 +1,9 @@
   
 event_inherited()
 
-hp = 22
+hp = 10
+hp_phase2_amount = 11
+done_phase2_roar = false
 
 //function set_hit() {
 	
@@ -25,6 +27,12 @@ idleState = {
 
     },
 	checkChange: function() {
+		if id.isPhase2() {
+			if !id.done_phase2_roar {
+				return id.roarState	
+			}
+			return id.rollState
+		}
         return id.walkState
     },
 }
@@ -252,10 +260,10 @@ tongueAttackState = {
 
 	step: function() {
     },
-	
+
 	onExit: function() {
     },
-	
+
 	onEnter: function() {
 		id.image_xscale = id.is_on_left_side() ? 1 : -1
 		id.sprite_index = sRulaTongueStance
@@ -268,13 +276,59 @@ tongueAttackState = {
 		tongue_tip.image_xscale = id.image_xscale
 		tongue.tongue_tip = tongue_tip
     },
-	
+
 	checkChange: function() {
 		if !instance_exists(tongue) {
 			return id.idleState
 		}
 		return undefined
     },
+}
+
+roarState = {
+    id: id,
+	roar_sfx: SFX_Tuffull_Roar,
+	roar_image_index: 24,
+
+	step: function() {
+		with id {
+			if is_animation_at_frame(other.roar_image_index) {
+				audio_play_sound(other.roar_sfx, 3, false)	
+			}
+		}
+    },
+	onExit: function() {
+
+    },
+	onEnter: function() {
+		id.sprite_index = sRulaROAR
+    },
+	checkChange: function() {
+		if id.image_index == (id.image_number - 1) {
+			return id.rollState
+		}
+    },
+}
+
+rollState = {
+    id: id,
+	step: function() {
+
+    },
+	onExit: function() {
+
+    },
+	onEnter: function() {
+
+    },
+	checkChange: function() {
+        //return id.jumpState
+    },
+}
+
+
+function isPhase2() {
+	return hp <= hp_phase2_amount
 }
 
 state = idleState

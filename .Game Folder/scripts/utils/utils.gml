@@ -384,16 +384,20 @@ function Timer(time) constructor {
 	}
 }
 
+function _anim_get_treshold() {
+	return sprite_frames_per_step(sprite_index)
+}
+
 function is_animation_end() {
-	static get_treshold = function() {
-		var tmp = sprite_frames_per_step(sprite_index)
-		return sprite_frames_per_step(sprite_index)
-	}
-	return abs(image_index - (image_number - 1)) < get_treshold()
+	return abs(image_index - (image_number - 1)) < _anim_get_treshold()
+}
+
+function is_animation_at_frame(frame) {
+	var delta = image_index - frame
+	return delta >= 0 and delta <= _anim_get_treshold()
 }
 
 function sprite_frames_per_step(spr) {
-	var tmp = sprite_get_speed(spr)
 	if sprite_get_speed_type(spr) == spritespeed_framespersecond {
 		return sprite_get_speed(spr) / room_speed 
 	} else {
