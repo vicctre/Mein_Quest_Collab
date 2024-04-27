@@ -1,9 +1,16 @@
-  
+
 event_inherited()
 
+name = "Rularog"
+
+hp_max = 22
 hp = 1
 hp_phase2_amount = 11
 done_phase2_roar = false
+
+// hp ui
+hp_ui.draw_x = 700
+hp_ui.draw_y = 630
 
 // used to animate rotation
 rotation = 0
@@ -318,10 +325,8 @@ rollState = {
 	accel: 0.2,
 	roll_sp: 3,
 	rotation_gain: 4,
-	ultra_roll_sp: 4,
 	grav: 0.1,
 	bounce_jump_sp: -2,
-	roll_state: undefined, // roll
 	wall_hits: 0,
 	ultra_wall_hits_treshold: 2,
 
@@ -447,7 +452,9 @@ ultraRollState = {
         }
 	},
 
-	onExit: function() {},
+	onExit: function() {
+		id.rotation = 0
+	},
 
 	onEnter: function() {
 		ultra_roll_done = false
