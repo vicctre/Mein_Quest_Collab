@@ -3,9 +3,9 @@ event_inherited()
 
 hp = 22
 
-function set_hit() {
+//function set_hit() {
 	
-}
+//}
 
 // distance from room edge when spawned
 spawn_dist = room_width - x
@@ -29,13 +29,6 @@ idleState = {
     },
 }
 
-enum RulaJump {
-	prepare,
-	jump,
-	dash_fall,
-	finish,
-}
-
 walkState = {
     id: id,
     sp: 2,
@@ -55,11 +48,16 @@ walkState = {
         }
     },
 	
+	setWalkDir: function() {
+		dir = id.x > room_center_x ? -1 : 1	
+	},
+	
 	onExit: function() {
 		change_state = false
     },
 	
 	onEnter: function() {
+		setWalkDir()
         id.sprite_index = sRulaWalk
     },
 	
@@ -69,6 +67,13 @@ walkState = {
 		}
 		return undefined
     },
+}
+
+enum RulaJump {
+	prepare,
+	jump,
+	dash_fall,
+	finish,
 }
 
 jumpState = {
