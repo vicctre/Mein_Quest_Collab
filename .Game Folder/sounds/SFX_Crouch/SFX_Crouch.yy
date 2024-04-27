@@ -12,8 +12,8 @@
   "duration":0.121429,
   "name":"SFX_Crouch",
   "parent":{
-    "name":"Already In Use",
-    "path":"folders/Sounds/SFX/Already In Use.yy",
+    "name":"Mein SFX",
+    "path":"folders/Sounds/SFX/Mein SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -282,7 +282,7 @@ tongueAttackState = {
 
 roarState = {
     id: id,
-	roar_sfx: SFX_Tuffull_Roar,
+	roar_sfx: SFX_Rularog_Roar,
 	roar_image_index: 24,
 
 	step: function() {
@@ -388,7 +388,7 @@ ultraRollState = {
 	vsp: 0,
 	accel: 0.2,
 	roll_sp: 4,
-	ultra_roll_sfx: SFX_Tuffull_Roar,
+	ultra_roll_sfx: SFX_Rularog_Roar,
 	wall_hits: 0,
 	ultra_roll_done: false,
 	after_roll_timer: make_timer(120),

@@ -14,8 +14,8 @@
   "function":0,
   "name":"Opening_Seq_OPC_04_position1",
   "parent":{
-    "name":"Cutscenes",
-    "path":"folders/Sequences/Cutscenes.yy",
+    "name":"Other Cutscenes",
+    "path":"folders/Sequences/Other Cutscenes.yy",
   },
   "resourceType":"GMAnimCurve",
   "resourceVersion":"2.0",

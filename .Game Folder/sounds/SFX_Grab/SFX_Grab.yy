@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"SFX_Menu_Nav",
+  "%Name":"SFX_Grab",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.100635,
-  "name":"SFX_Menu_Nav",
+  "duration":0.213605,
+  "name":"SFX_Grab",
   "parent":{
-    "name":"Misc.",
-    "path":"folders/Sounds/SFX/Misc..yy",
+    "name":"Use Later",
+    "path":"folders/Sounds/SFX/Use Later.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sfx_menu_nav.wav",
+  "soundFile":"SFX_Grab.wav",
   "type":0,
-  "volume":0.3,
+  "volume":1.0,
 }

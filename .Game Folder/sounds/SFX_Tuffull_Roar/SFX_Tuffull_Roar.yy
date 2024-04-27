@@ -12,8 +12,8 @@
   "duration":2.122132,
   "name":"SFX_Tuffull_Roar",
   "parent":{
-    "name":"Need to be Added SFX",
-    "path":"folders/Sounds/SFX/Need to be Added SFX.yy",
+    "name":"Boss Specific",
+    "path":"folders/Sounds/SFX/Enemy/Boss Specific.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

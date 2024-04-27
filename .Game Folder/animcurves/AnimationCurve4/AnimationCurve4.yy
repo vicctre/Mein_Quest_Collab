@@ -14,8 +14,8 @@
   "function":2,
   "name":"AnimationCurve4",
   "parent":{
-    "name":"Cutscenes",
-    "path":"folders/Sequences/Cutscenes.yy",
+    "name":"Other Cutscenes",
+    "path":"folders/Sequences/Other Cutscenes.yy",
   },
   "resourceType":"GMAnimCurve",
   "resourceVersion":"2.0",

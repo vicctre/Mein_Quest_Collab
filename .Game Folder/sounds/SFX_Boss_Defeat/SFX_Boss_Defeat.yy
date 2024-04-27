@@ -12,8 +12,8 @@
   "duration":1.238821,
   "name":"SFX_Boss_Defeat",
   "parent":{
-    "name":"Already In Use",
-    "path":"folders/Sounds/SFX/Already In Use.yy",
+    "name":"Boss Specific",
+    "path":"folders/Sounds/SFX/Enemy/Boss Specific.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

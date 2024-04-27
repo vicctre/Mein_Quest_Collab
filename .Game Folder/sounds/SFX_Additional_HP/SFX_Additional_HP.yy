@@ -12,8 +12,8 @@
   "duration":0.624127,
   "name":"SFX_Additional_HP",
   "parent":{
-    "name":"Need to be Added SFX",
-    "path":"folders/Sounds/SFX/Need to be Added SFX.yy",
+    "name":"Mein SFX",
+    "path":"folders/Sounds/SFX/Mein SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

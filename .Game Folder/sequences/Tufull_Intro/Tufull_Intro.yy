@@ -26,8 +26,8 @@
   },
   "name":"Tufull_Intro",
   "parent":{
-    "name":"Older stuff (reference_NOT_FINAL)",
-    "path":"folders/Sequences/Older stuff (reference_NOT_FINAL).yy",
+    "name":"Ref stuff (DONT USE)",
+    "path":"folders/Sequences/Ref stuff (DONT USE).yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -26,8 +26,8 @@
   },
   "name":"seqLogAutoscrollerStart",
   "parent":{
-    "name":"Cutscenes",
-    "path":"folders/Sequences/Cutscenes.yy",
+    "name":"Other Cutscenes",
+    "path":"folders/Sequences/Other Cutscenes.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

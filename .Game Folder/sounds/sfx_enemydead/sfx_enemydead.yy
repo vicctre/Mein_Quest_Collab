@@ -12,8 +12,8 @@
   "duration":0.592472,
   "name":"SFX_EnemyDead",
   "parent":{
-    "name":"Already In Use",
-    "path":"folders/Sounds/SFX/Already In Use.yy",
+    "name":"Enemy",
+    "path":"folders/Sounds/SFX/Enemy.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -12,8 +12,8 @@
   "duration":0.839501,
   "name":"SFX_NA",
   "parent":{
-    "name":"Need to be Added SFX",
-    "path":"folders/Sounds/SFX/Need to be Added SFX.yy",
+    "name":"Need to be Added",
+    "path":"folders/Sounds/SFX/Need to be Added.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

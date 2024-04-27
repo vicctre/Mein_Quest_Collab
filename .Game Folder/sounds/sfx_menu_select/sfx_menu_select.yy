@@ -12,8 +12,8 @@
   "duration":0.432834,
   "name":"SFX_Menu_select",
   "parent":{
-    "name":"Already In Use",
-    "path":"folders/Sounds/SFX/Already In Use.yy",
+    "name":"Misc.",
+    "path":"folders/Sounds/SFX/Misc..yy",
   },
   "preload":false,
   "resourceType":"GMSound",

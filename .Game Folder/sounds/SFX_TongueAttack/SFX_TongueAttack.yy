@@ -12,8 +12,8 @@
   "duration":0.531043,
   "name":"SFX_TongueAttack",
   "parent":{
-    "name":"Use Later",
-    "path":"folders/Sounds/SFX/Use Later.yy",
+    "name":"Boss Specific",
+    "path":"folders/Sounds/SFX/Enemy/Boss Specific.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

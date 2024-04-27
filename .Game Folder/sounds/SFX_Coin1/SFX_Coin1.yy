@@ -12,8 +12,8 @@
   "duration":0.128571,
   "name":"SFX_Coin1",
   "parent":{
-    "name":"Already In Use",
-    "path":"folders/Sounds/SFX/Already In Use.yy",
+    "name":"Misc.",
+    "path":"folders/Sounds/SFX/Misc..yy",
   },
   "preload":false,
   "resourceType":"GMSound",

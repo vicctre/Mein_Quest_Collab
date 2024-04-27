@@ -12,8 +12,8 @@
   "duration":0.509274,
   "name":"SFX_Boss_Dash",
   "parent":{
-    "name":"Already In Use",
-    "path":"folders/Sounds/SFX/Already In Use.yy",
+    "name":"Boss Specific",
+    "path":"folders/Sounds/SFX/Enemy/Boss Specific.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

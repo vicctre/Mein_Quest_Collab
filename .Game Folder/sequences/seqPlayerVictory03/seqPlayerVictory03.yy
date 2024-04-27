@@ -26,8 +26,8 @@
   },
   "name":"seqPlayerVictory03",
   "parent":{
-    "name":"Current Use",
-    "path":"folders/Sequences/Current Use.yy",
+    "name":"Mein stuff",
+    "path":"folders/Sequences/Current Use/Mein stuff.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

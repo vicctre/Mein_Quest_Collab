@@ -12,8 +12,8 @@
   "duration":0.03288,
   "name":"SFX_Land",
   "parent":{
-    "name":"Already In Use",
-    "path":"folders/Sounds/SFX/Already In Use.yy",
+    "name":"Mein SFX",
+    "path":"folders/Sounds/SFX/Mein SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

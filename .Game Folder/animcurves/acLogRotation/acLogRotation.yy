@@ -18,8 +18,8 @@
   "function":0,
   "name":"acLogRotation",
   "parent":{
-    "name":"Cutscenes",
-    "path":"folders/Sequences/Cutscenes.yy",
+    "name":"Other Cutscenes",
+    "path":"folders/Sequences/Other Cutscenes.yy",
   },
   "resourceType":"GMAnimCurve",
   "resourceVersion":"2.0",

@@ -26,8 +26,8 @@
   },
   "name":"seqTuffullIntro_T",
   "parent":{
-    "name":"Current Use",
-    "path":"folders/Sequences/Current Use.yy",
+    "name":"Boss Intros",
+    "path":"folders/Sequences/Current Use/Boss Intros.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

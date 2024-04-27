@@ -12,8 +12,8 @@
   "duration":0.673764,
   "name":"SFX_Splash",
   "parent":{
-    "name":"Already In Use",
-    "path":"folders/Sounds/SFX/Already In Use.yy",
+    "name":"Misc.",
+    "path":"folders/Sounds/SFX/Misc..yy",
   },
   "preload":false,
   "resourceType":"GMSound",
