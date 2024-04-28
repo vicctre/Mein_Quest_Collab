@@ -37,3 +37,9 @@ sfx_GoUP = SFX_Boss_jump
 sfx_roar01 = SFX_Tuffull_Roar
 sfx_whip = SFX_Whip
 sfx_leaf = SFX_leaves 
+
+// Rula
+sfx_rula_hitwall = SFX_HitWall
+sfx_rula_land = SFX_Boss_Land
+sfx_rula_jump = SFX_Boss_jump
+

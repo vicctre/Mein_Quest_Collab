@@ -161,6 +161,7 @@ jumpState = {
 						dash_x = median(id.left_side_x, oMein.x, id.right_side_x)
 						var dist = (oMein.x - id.x)
 						hsp = dist / reach_player_time
+						audio_play_sound(global.sfx_rula_jump, 3, false)
 
 						// decrease movement vars so Rula moves a bit smoother
 						if abs(hsp) > hsp_max {
@@ -181,7 +182,7 @@ jumpState = {
 				vsp = approach(vsp, vsp_max, grav)
 				with id {
 					if other.vsp > 0 {
-						sprite_index = sRulaFalling	
+						sprite_index = sRulaFalling
 					}
 					scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
 					if abs(other.dash_x - x) < abs(other.hsp)
@@ -189,6 +190,7 @@ jumpState = {
 						other.state = RulaJump.dash_fall
 						other.hsp = 0
 						sprite_index = sRulaFalling	
+						audio_play_sound(global.sfx_rula_land, 3, false)
 					}
 				}
 		    break
@@ -274,6 +276,7 @@ tongueAttackState = {
     },
 
 	onEnter: function() {
+		audio_play_sound(SFX_TongueAttack, 3, false)
 		id.image_xscale = id.is_on_left_side() ? 1 : -1
 		id.sprite_index = sRulaTongueStance
 		tongue = instance_create_layer(id.x + tongue_rel_x * id.image_xscale,

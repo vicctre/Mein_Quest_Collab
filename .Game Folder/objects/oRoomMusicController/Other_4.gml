@@ -22,6 +22,9 @@ switch room {
 	case W1_3_part1:
 		music = global.msc_pre_rularog
 		break
+	case W1_3BOSS:
+		music = global.msc_bigboss
+		break
 	case rmTitleScreen:
 		music = global.msc_title_screen
 		break

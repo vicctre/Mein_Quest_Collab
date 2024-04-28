@@ -12,9 +12,7 @@ flash_hp_amount = 5
 function set_hit(damage=0) {
 	hp -= damage
 	flash = 6;
-	if (object_index == oTuffull)
-		audio_play_sound(SFX_Boss_Damage, 6, false);
-
+	audio_play_sound(SFX_Boss_Damage, 6, false);
 	hit_direction = sign(x-global.player.x);
 }
 
