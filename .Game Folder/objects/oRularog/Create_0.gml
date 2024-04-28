@@ -10,7 +10,7 @@ done_phase2_roar = false
 
 // hp ui
 hp_ui.draw_x = 700
-hp_ui.draw_y = 630
+hp_ui.draw_y = 730
 
 // used to animate rotation
 rotation = 0
