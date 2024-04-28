@@ -22,6 +22,13 @@ room_center_x = room_width * 0.5
 right_side_x = x
 left_side_x = spawn_dist
 
+inactiveState = {
+	step: function() {},
+	onExit: function() {},
+	onEnter: function() {},
+	checkChange: function() {},
+}
+
 idleState = {
     id: id,
 	step: function() {
