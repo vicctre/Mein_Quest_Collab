@@ -4,7 +4,7 @@ event_inherited()
 name = "Rularog"
 
 hp_max = 22
-hp = 5
+hp = 22
 hp_phase2_amount = 11
 done_phase2_roar = false
 
@@ -404,7 +404,7 @@ ultraRollState = {
 	vsp: 0,
 	accel: 0.2,
 	roll_sp: 4,
-	roll_delay_timer: make_timer(30),
+	roll_delay_timer: make_timer(60),
 	ultra_roll_sfx: SFX_Rularog_Roar,
 	wall_hits: 0,
 	ultra_roll_done: false,
