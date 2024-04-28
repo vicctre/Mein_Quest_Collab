@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":3,
   "conversionMode":0,
-  "duration":4.351247,
+  "duration":0.0,
   "name":"SFX_Rularog_Roar",
   "parent":{
     "name":"Boss Specific",
