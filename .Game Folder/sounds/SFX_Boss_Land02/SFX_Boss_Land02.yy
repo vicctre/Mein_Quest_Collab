@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"SFX_Boss_Land02",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":1,
+  "conversionMode":0,
+  "duration":0.201565,
+  "name":"SFX_Boss_Land02",
+  "parent":{
+    "name":"Boss Specific",
+    "path":"folders/Sounds/SFX/Enemy/Boss Specific.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"SFX_Boss_Land02.wav",
+  "type":0,
+  "volume":0.65,
+}
