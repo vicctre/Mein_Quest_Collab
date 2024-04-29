@@ -3,7 +3,7 @@
   "%Name":"sRulaIdle",
   "bboxMode":2,
   "bbox_bottom":105,
-  "bbox_left":56,
+  "bbox_left":57,
   "bbox_right":106,
   "bbox_top":44,
   "collisionKind":1,
