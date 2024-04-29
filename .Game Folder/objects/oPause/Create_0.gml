@@ -31,6 +31,7 @@ function PauseStuff() {
 	ReplaceWithPauseDummy(ENEMY)
 	ReplaceWithPauseDummy(deadEnemy)
 	ReplaceWithPauseDummy(oAutoscrollerLog)
+	ReplaceWithPauseDummy(oRulaTongue)
 	// Then tell other pausable objects to pause
 	with oSequence {
 		pause()

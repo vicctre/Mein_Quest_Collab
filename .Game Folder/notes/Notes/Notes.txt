@@ -1,8 +1,5 @@
 
 Alex ToDo:
-> fix tongue disappear after loosing
-> fix tongue attach point
-> fix Rula hp ui
 > test Rula boss fight
 
 
