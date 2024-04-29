@@ -32,7 +32,7 @@
   ],
   "name":"sRulaCharge",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Rularog",
     "path":"folders/Sprites/Enemy Sprites/World Bosses/Rularog.yy",
@@ -96,7 +96,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":72,
+    "xorigin":85,
     "yorigin":72,
   },
   "swatchColours":null,
