@@ -11,6 +11,7 @@ function scr_move_coord(hsp, vsp) {
 }
 
 function scr_move_coord_contact_obj(hsp, vsp, obj) {
+	// check if collision is going to happen
 	var contact_normal = place_meeting(x + hsp, y + vsp, obj);
 	var contact_thin = thin_platform_check(hsp, vsp);
 	if contact_normal || contact_thin {
@@ -19,6 +20,7 @@ function scr_move_coord_contact_obj(hsp, vsp, obj) {
 		var dx = lengthdir_x(1, dir)
 		var dy = lengthdir_y(1, dir)
 		var contact
+		// move in dir until bump contact
 		while true {
 			contact = instance_place(x + dx, y + dy, obj)
 			contact_thin = thin_platform_check(dx, dy);
