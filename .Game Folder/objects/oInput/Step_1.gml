@@ -13,6 +13,8 @@ gp_hinp_pressed = false
 gp_vinp_pressed = false
 mouse_moved = false
 
+key_restart = false
+
 if !active
 	exit
 
@@ -68,6 +70,8 @@ key_escape = keyboard_check_pressed(vk_escape)
              or gamepad_button_check_pressed(0, gp_start)
 
 key_any = keyboard_check_pressed(vk_anykey)
+
+key_restart = keyboard_check_pressed(ord("R"))
 
 gp_hinp_pressed_prev = abs(gp_hinp) > gp_hinp_threshold
 if (gp_hinp_pressed_prev) {

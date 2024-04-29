@@ -4,7 +4,7 @@ event_inherited()
 name = "Rularog"
 
 hp_max = 22
-hp = 22
+hp = 12
 hp_phase2_amount = 11
 done_phase2_roar = false
 
@@ -80,7 +80,7 @@ walkState = {
 	
 	checkChange: function() {
         if change_state {
-			return id.jumpState
+			return id.checkStateChangePhase2() ?? id.jumpState
 		}
 		return undefined
     },
@@ -234,7 +234,7 @@ jumpState = {
 	
 	checkChange: function() {
         if change_state {
-			return id.tongueChargeState
+			return id.checkStateChangePhase2() ?? id.tongueChargeState
 		}
 		return undefined
     },
@@ -249,16 +249,15 @@ tongueChargeState = {
 	onExit: function() {
 		charge_timer.reset()
     },
-	
+
 	onEnter: function() {
 		id.sprite_index = sRulaCharge
     },
-	
+
 	checkChange: function() {
         if !charge_timer.update() {
-			return id.tongueAttackState
+			return id.checkStateChangePhase2() ?? id.tongueAttackState
 		}
-		return undefined
     },
 }
 
@@ -291,7 +290,7 @@ tongueAttackState = {
 
 	checkChange: function() {
 		if !instance_exists(tongue) {
-			return id.idleState
+			return id.checkStateChangePhase2() ?? id.idleState
 		}
 		return undefined
     },
@@ -315,6 +314,7 @@ roarState = {
     },
 	onEnter: function() {
 		id.sprite_index = sRulaROAR
+		id.done_phase2_roar = true
     },
 	checkChange: function() {
 		with id {
@@ -485,8 +485,9 @@ ultraRollState = {
 
 	checkChange: function() {
 		if change_state {
-			return id.jumpState
+			return id.checkStateChangePhase2() ?? id.jumpState
 		}
+		return id.checkStateChangePhase2()
     },
 
 
@@ -571,6 +572,12 @@ function checkStateChangeGlobal() {
 	return undefined
 }
 
+function checkStateChangePhase2() {
+	if !done_phase2_roar and (hp < hp_phase2_amount) {
+		return roarState	
+	}
+	return undefined
+}
 
 function isPhase2() {
 	return hp <= hp_phase2_amount

@@ -11,6 +11,7 @@ key_right = false
 key_jump = false
 key_attack = false
 key_any = false
+key_restart = false
 gp_hinp_pressed = false
 gp_vinp_pressed = false
 
