@@ -346,6 +346,7 @@
     {"id":{"name":"seqPlayerVictory02","path":"sequences/seqPlayerVictory02/seqPlayerVictory02.yy",},},
     {"id":{"name":"seqPlayerVictory03","path":"sequences/seqPlayerVictory03/seqPlayerVictory03.yy",},},
     {"id":{"name":"seqRularog_Intro01","path":"sequences/seqRularog_Intro01/seqRularog_Intro01.yy",},},
+    {"id":{"name":"seqRularog_Intro0118","path":"sequences/seqRularog_Intro0118/seqRularog_Intro0118.yy",},},
     {"id":{"name":"seqTuffullIntro_T","path":"sequences/seqTuffullIntro_T/seqTuffullIntro_T.yy",},},
     {"id":{"name":"seqTuffullIntro_T7","path":"sequences/seqTuffullIntro_T7/seqTuffullIntro_T7.yy",},},
     {"id":{"name":"seqUpdate_trailer_V1","path":"sequences/seqUpdate_trailer_V1/seqUpdate_trailer_V1.yy",},},

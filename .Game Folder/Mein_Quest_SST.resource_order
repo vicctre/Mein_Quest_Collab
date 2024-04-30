@@ -89,6 +89,7 @@
     {"name":"seqPlayerVictory","order":1,"path":"sequences/seqPlayerVictory/seqPlayerVictory.yy",},
     {"name":"seqPlayerVictory02","order":2,"path":"sequences/seqPlayerVictory02/seqPlayerVictory02.yy",},
     {"name":"seqPlayerVictory03","order":3,"path":"sequences/seqPlayerVictory03/seqPlayerVictory03.yy",},
+    {"name":"seqRularog_Intro0118","order":2,"path":"sequences/seqRularog_Intro0118/seqRularog_Intro0118.yy",},
     {"name":"seqTuffullIntro_T","order":1,"path":"sequences/seqTuffullIntro_T/seqTuffullIntro_T.yy",},
     {"name":"seqUpdate_trailer_V1","order":1,"path":"sequences/seqUpdate_trailer_V1/seqUpdate_trailer_V1.yy",},
     {"name":"SFX_Additional_HP","order":8,"path":"sounds/SFX_Additional_HP/SFX_Additional_HP.yy",},
