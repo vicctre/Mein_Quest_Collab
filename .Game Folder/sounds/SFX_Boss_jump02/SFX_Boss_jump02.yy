@@ -1,16 +1,16 @@
 {
   "$GMSound":"",
-  "%Name":"SFX_Boss_Land02",
+  "%Name":"SFX_Boss_jump02",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
   "bitRate":128,
-  "compression":1,
+  "compression":0,
   "conversionMode":0,
-  "duration":0.356417,
-  "name":"SFX_Boss_Land02",
+  "duration":0.292653,
+  "name":"SFX_Boss_jump02",
   "parent":{
     "name":"Boss Specific",
     "path":"folders/Sounds/SFX/Enemy/Boss Specific.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"SFX_Boss_Land02.wav",
+  "soundFile":"SFX_Boss_jump02.wav",
   "type":0,
-  "volume":0.25,
+  "volume":0.65,
 }

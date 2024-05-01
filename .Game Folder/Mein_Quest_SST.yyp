@@ -380,6 +380,7 @@
     {"id":{"name":"SFX_Boss_Dash","path":"sounds/SFX_Boss_Dash/SFX_Boss_Dash.yy",},},
     {"id":{"name":"SFX_Boss_Defeat","path":"sounds/SFX_Boss_Defeat/SFX_Boss_Defeat.yy",},},
     {"id":{"name":"SFX_Boss_jump","path":"sounds/SFX_Boss_jump/SFX_Boss_jump.yy",},},
+    {"id":{"name":"SFX_Boss_jump02","path":"sounds/SFX_Boss_jump02/SFX_Boss_jump02.yy",},},
     {"id":{"name":"SFX_Boss_Land","path":"sounds/SFX_Boss_Land/SFX_Boss_Land.yy",},},
     {"id":{"name":"SFX_Boss_Land02","path":"sounds/SFX_Boss_Land02/SFX_Boss_Land02.yy",},},
     {"id":{"name":"SFX_Chest_open","path":"sounds/SFX_Chest_open/SFX_Chest_open.yy",},},

@@ -103,7 +103,7 @@ jumpState = {
 	reach_player_time: 30, // how fast Rula reaches the player during jump
 						   // will be increased if Mein is far away
 	jump_sp: -13,
-	jump_height: 140, // that's it, jump height
+	jump_height: 120, //140, // that's it, jump height
 	grav_base: 0.6,	  // jump state gravity
 	grav: 0.6,
 
