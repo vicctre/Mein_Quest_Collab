@@ -8,3 +8,5 @@ EnemyKOSound = false;
 HealSFX = false; 
 
 CoinSFX = false; 
+
+LeafSFX = false; 

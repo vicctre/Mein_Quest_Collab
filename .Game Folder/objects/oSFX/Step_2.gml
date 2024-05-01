@@ -35,7 +35,17 @@ if HealSFX == true
 if CoinSFX == true 
 {
 	//play sound 
-	var _snd = audio_play_sound(global.sfx_heal, 3, false);
+	var _snd = audio_play_sound(global.sfx_coin, 3, false);
+	audio_sound_gain(_snd, _sfxVol, 0); 
+	
+	//reset variable 
+	CoinSFX = false; 
+}
+
+if LeafSFX == true 
+{
+	//play sound 
+	var _snd = audio_play_sound(global.sfx_coin, 2, false);
 	audio_sound_gain(_snd, _sfxVol, 0); 
 	
 	//reset variable 
