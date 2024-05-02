@@ -89,43 +89,46 @@ walkState = {
 enum RulaJump {
 	prepare,
 	jump,
-	dash_fall,
+	fast_fall,
 	finish,
 }
 
 jumpState = {
     id: id,
-	prepare_timer: make_timer(40),
-	state: RulaJump.prepare,
-	hsp: 0,
-	hsp_max: 9, // how fast Rula moves during jump
-				// also affects jump curve if Mein is far away
-	reach_player_time: 30, // how fast Rula reaches the player during jump
-						   // will be increased if Mein is far away
+	fast_fall_delay: make_timer(30),
+	fast_fall_sp: 20, // how fast Rula falls on Mein
+	finish_vsp_hsp_ratio: 3, // finish_vsp_hsp_ratio = vsp / hsp
+	finish_edge_dist_treshold: 50, // if room edge is closer than finish_edge_dist_treshold
+    // don't make the finishing jump
+    finish_gr: 0.2,
+	grav_base: 0.6,	  // jump state gravity
 	jump_sp: -13,
 	jump_height: 120, //140, // that's it, jump height
-	grav_base: 0.6,	  // jump state gravity
+	hsp_max: 9, // how fast Rula moves during jump
+                // also affects jump curve if Mein is far away
+	last_fast_fall_delay_timer: make_timer(60), // after last dash just hang out for some time
+	prepare_timer: make_timer(60),
+	pre_fast_fall_lift_height: 25,	// slowly lift a bit before dashing
+	reach_player_time: 30, // how fast Rula reaches the player during jump
+                           // will be increased if Mein is far away
+	vsp_max: 10,
+	
+	state: RulaJump.prepare,
+	hsp: 0,
 	grav: 0.6,
 
 	vsp: 0,
-	vsp_max: 10,
-	dash_fall_sp: 6, // how fast Rula falls on Mein
-	dash_x: 0,
-	jumps_total: 3,
+	fast_fall_x: 0,
+	jumps_total: 3, // if you change jumps_total, change jumps_left too!
 	jumps_left: 3,
-	dash_delay: make_timer(5),
-	last_dash_delay_timer: make_timer(60), // after last dash just hang out for some time
 	change_state: false,
-	finish_vsp_hsp_ratio: 3, // finish_vsp_hsp_ratio = vsp / hsp
-	finish_edge_dist_treshold: 50, // if room edge is closer than finish_edge_dist_treshold
-									// don't make the finishing jump
-	finish_gr: 0.2,
+    pre_fast_fall_lift: 0,
 
 	switch_to_prepare: function() {
 		state = RulaJump.prepare
 		vsp = 0
 		prepare_timer.reset()
-		dash_delay.reset()
+		fast_fall_delay.reset()
 		id.sprite_index = sRulaJumpPrep
 		var dir = sign(oMein.x - id.x)
 		if dir != 0 {
@@ -158,8 +161,8 @@ jumpState = {
 						state = RulaJump.jump
 						jumps_left--
 						vsp = jump_sp
-						dash_x = median(id.left_side_x, oMein.x, id.right_side_x)
-						var dist = (oMein.x - id.x)
+						fast_fall_x = median(id.left_side_x, oMein.x, id.right_side_x)
+						var dist = (fast_fall_x - id.x)
 						hsp = dist / reach_player_time
 						audio_play_sound(global.sfx_rula_jump, 3, false)
 
@@ -183,21 +186,26 @@ jumpState = {
 				with id {
 					if other.vsp > 0 {
 						sprite_index = sRulaFalling
+						other.vsp = 0
 					}
 					scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
-					if abs(other.dash_x - x) < abs(other.hsp)
+					if abs(other.fast_fall_x - x) < abs(other.hsp)
 							or place_meeting(x + sign(other.hsp), y, oWall) {
-						other.state = RulaJump.dash_fall
+						other.state = RulaJump.fast_fall
 						other.hsp = 0
 						sprite_index = sRulaFalling	
 						audio_play_sound(global.sfx_rula_land, 3, false)
 					}
 				}
 		    break
-			case RulaJump.dash_fall:
-				if !dash_delay.update() {
-					vsp = dash_fall_sp
-				}
+			case RulaJump.fast_fall:
+				if fast_fall_delay.update() {
+                    // lift with decreasing sp
+                    vsp = -(pre_fast_fall_lift_height - pre_fast_fall_lift) / pre_fast_fall_lift_height * 0.25
+                    pre_fast_fall_lift += abs(vsp)
+                } else {
+					vsp = fast_fall_sp
+                }
 				with id {
 					scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
 					if place_meeting(x, y + 1, oWall) {
@@ -206,7 +214,7 @@ jumpState = {
 				}
 		    break
 			case RulaJump.finish:
-				if last_dash_delay_timer.update() {
+				if last_fast_fall_delay_timer.update() {
 					break	
 				}
 				id.sprite_index = sRulaJumpUp
@@ -225,11 +233,12 @@ jumpState = {
 	
 	onEnter: function() {
 		change_state = false
-		last_dash_delay_timer.reset()
+		last_fast_fall_delay_timer.reset()
 		prepare_timer.reset()
 		jumps_left = jumps_total
 		state = RulaJump.prepare
 		id.sprite_index = sRulaJumpPrep
+        pre_fast_fall_lift = 0
     },
 	
 	checkChange: function() {

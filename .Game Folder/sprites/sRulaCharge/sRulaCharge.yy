@@ -10,7 +10,7 @@
   "collisionTolerance":0,
   "ConfigValues":{
     "Dev":{
-      "textureGroupId":"{\"name\":\"Default\",\"path\":\"texturegroups/Default\"}",
+      "textureGroupId":"{\"isScaled\":true,\"compressFormat\":\"bz2\",\"customOptions\":\"\",\"loadType\":\"default\",\"directory\":\"\",\"autocrop\":true,\"border\":2,\"mipsToGenerate\":0,\"groupParent\":null,\"targets\":-1,\"resourceType\":\"GMTextureGroup\",\"resourceVersion\":\"2.0\",\"name\":\"Default\",\"%Name\":\"Default\"}",
     },
   },
   "DynamicTexturePage":false,
@@ -101,10 +101,7 @@
   },
   "swatchColours":null,
   "swfPrecision":2.525,
-  "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
-  },
+  "textureGroupId":null,
   "type":0,
   "VTile":false,
   "width":144,
