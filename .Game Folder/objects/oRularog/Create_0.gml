@@ -265,7 +265,7 @@ tongueAttackState = {
     id: id,
 	change_state: false,
 	tongue: noone,
-	tongue_rel_x: 11,
+	tongue_rel_x: 14,
 	tongue_rel_y: 14,
 
 	step: function() {
