@@ -210,6 +210,13 @@ jumpState = {
 					scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
 					if place_meeting(x, y + 1, oWall) {
 						other.switch_to_prepare()
+						var rand = randomer(-5, 5)
+						oEffects.emit_dust_ext(bbox_right, bbox_bottom, 1.6, rand())
+						oEffects.emit_dust_ext(bbox_left, bbox_bottom, 1.6, 180 + rand())
+						oEffects.emit_dust_ext(bbox_right, bbox_bottom, 1.4, rand())
+						oEffects.emit_dust_ext(bbox_left, bbox_bottom, 1.4, 180 + rand())
+						oEffects.emit_dust_ext(bbox_right, bbox_bottom, 1, rand())
+						oEffects.emit_dust_ext(bbox_left, bbox_bottom, 1, 180 + rand())
 					}
 				}
 		    break

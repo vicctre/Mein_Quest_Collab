@@ -46,6 +46,14 @@ function emit_sprint_dust(xx, yy, dir) {
 	part_type_speed(p_dust, p_dust_sp, p_dust_sp, p_dust_sp_incr, 0)
 }
 
+function emit_dust_ext(xx, yy, sp, dir=0) {
+	part_type_direction(p_dust, dir, dir, 0, 0)
+	part_type_speed(p_dust, sp, sp, 0, 0)
+	part_particles_create(psys, xx, yy, p_dust, 1)
+	part_type_gravity(p_dust, 0.025, 90)
+	part_type_size(p_dust, 1, 1, 0, 0)
+}
+
 
 p_log_break = part_type_create()
 var size = 1, size_incr = 0
