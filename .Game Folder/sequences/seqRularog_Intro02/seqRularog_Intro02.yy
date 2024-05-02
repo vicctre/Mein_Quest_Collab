@@ -1,6 +1,6 @@
 {
   "$GMSequence":"",
-  "%Name":"seqRularog_Intro0118",
+  "%Name":"seqRularog_Intro02",
   "autoRecord":true,
   "backdropHeight":768,
   "backdropImageOpacity":0.5,
@@ -24,7 +24,7 @@
     "resourceType":"KeyframeStore<MomentsEventKeyframe>",
     "resourceVersion":"2.0",
   },
-  "name":"seqRularog_Intro0118",
+  "name":"seqRularog_Intro02",
   "parent":{
     "name":"Boss Intros",
     "path":"folders/Sequences/Current Use/Boss Intros.yy",
