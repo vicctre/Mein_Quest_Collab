@@ -109,7 +109,7 @@ jumpState = {
 	last_fast_fall_delay_timer: make_timer(60), // after last dash just hang out for some time
 	prepare_timer: make_timer(60),
 	pre_fast_fall_lift_height: 25,	// slowly lift a bit before dashing
-	reach_player_time: 30, // how fast Rula reaches the player during jump
+	reach_player_time: 50, // how fast Rula reaches the player during jump
                            // will be increased if Mein is far away
 	vsp_max: 10,
 	
