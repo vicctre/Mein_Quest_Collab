@@ -11,5 +11,3 @@ sequence_inst = layer_sequence_create(
 			layer, x, y, sequence)
 
 pause()
-
-notify_started()
