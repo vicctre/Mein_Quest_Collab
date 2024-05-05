@@ -395,9 +395,9 @@ function play_onto_stage_sequence() {
 
 function colliding_enemy() {
 	var enemy = instance_place(x, y, ENEMY)
-	if enemy {
-		if enemy.object_index == oTuffull and enemy.boss_state == "Defeated"
-			return noone
+	if enemy and object_is_ancestor(enemy.object_index, ENEMYBOSS)
+			and enemy.isDead() {
+		return noone
 	}
 	return enemy
 }

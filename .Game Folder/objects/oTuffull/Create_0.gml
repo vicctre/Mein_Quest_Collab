@@ -88,5 +88,7 @@ changeState = function(newState) {
 	}
 }
 
-
+function isDead() {
+	return boss_state == "Defeated"
+}
 

@@ -28,3 +28,8 @@ function drawRedFlashingOnLowHp() {
 	} else
 		event_inherited()
 }
+
+// override this in child object
+function isDead() {
+	throw "Boss's isDead() function is not implemented!"
+}
