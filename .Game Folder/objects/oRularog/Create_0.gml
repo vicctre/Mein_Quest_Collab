@@ -3,9 +3,9 @@ event_inherited()
 
 name = "Rularog"
 
-hp_max = 22
+hp_max = 22 //26
 hp = 12
-hp_phase2_amount = 11
+hp_phase2_amount = 11 //14
 done_phase2_roar = false
 
 // hp ui
@@ -53,7 +53,7 @@ idleState = {
 
 walkState = {
     id: id,
-    sp: 2,
+    sp: 1.8, //2
     dir: image_xscale,
 	change_state: false,
 	
@@ -96,29 +96,29 @@ enum RulaJump {
 jumpState = {
     id: id,
 	fast_fall_delay: make_timer(30),
-	fast_fall_sp: 20, // how fast Rula falls on Mein
-	finish_vsp_hsp_ratio: 3, // finish_vsp_hsp_ratio = vsp / hsp
+	fast_fall_sp: 11,//20 // how fast Rula falls on Mein
+	finish_vsp_hsp_ratio: 4,//3 // finish_vsp_hsp_ratio = vsp / hsp//auto jump height? 
 	finish_edge_dist_treshold: 50, // if room edge is closer than finish_edge_dist_treshold
     // don't make the finishing jump
     finish_gr: 0.2,
 	grav_base: 0.6,	  // jump state gravity
-	jump_sp: -13,
+	jump_sp: -13,//-13
 	jump_height: 120, //140, // that's it, jump height
-	hsp_max: 9, // how fast Rula moves during jump
+	hsp_max: 6, //9 // how fast Rula moves during jump
                 // also affects jump curve if Mein is far away
-	last_fast_fall_delay_timer: make_timer(60), // after last dash just hang out for some time
-	prepare_timer: make_timer(60),
-	pre_fast_fall_lift_height: 25,	// slowly lift a bit before dashing
-	reach_player_time: 50, // how fast Rula reaches the player during jump
+	last_fast_fall_delay_timer: make_timer(110), // Final jumps endlag 
+	prepare_timer: make_timer(70), //startup for jumps 
+	pre_fast_fall_lift_height: 25, // slowly lift a bit before dashing
+	reach_player_time: 100, // how fast Rula reaches the player during jump
                            // will be increased if Mein is far away
-	vsp_max: 10,
+	vsp_max: 10, //idk what this changes...
 	
 	state: RulaJump.prepare,
 	hsp: 0,
 	grav: 0.6,
 
 	vsp: 0,
-	fast_fall_x: 0,
+	fast_fall_x: 0, //dont see what this changes either???
 	jumps_total: 3, // if you change jumps_total, change jumps_left too!
 	jumps_left: 3,
 	change_state: false,
