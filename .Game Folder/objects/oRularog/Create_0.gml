@@ -163,6 +163,10 @@ jumpState = {
 						vsp = jump_sp
 						fast_fall_x = median(id.left_side_x, oMein.x, id.right_side_x)
 						var dist = (fast_fall_x - id.x)
+						if abs(dist) < 0.001 {
+							dist = 0
+							fast_fall_x = x
+						}
 						hsp = dist / reach_player_time
 						audio_play_sound(global.sfx_rula_jump, 3, false)
 
@@ -189,7 +193,7 @@ jumpState = {
 						other.vsp = 0
 					}
 					scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
-					if abs(other.fast_fall_x - x) < abs(other.hsp)
+					if abs(other.fast_fall_x - x) <= abs(other.hsp)
 							or place_meeting(x + sign(other.hsp), y, oWall) {
 						other.state = RulaJump.fast_fall
 						other.hsp = 0
@@ -268,6 +272,7 @@ tongueChargeState = {
 
 	onEnter: function() {
 		id.sprite_index = sRulaCharge
+		id.setDir()
     },
 
 	checkChange: function() {
