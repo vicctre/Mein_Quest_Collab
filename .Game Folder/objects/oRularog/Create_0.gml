@@ -427,7 +427,7 @@ ultraRollState = {
 	hsp: 0,
 	vsp: 0,
 	accel: 0.2,
-	roll_sp: 4,
+	roll_sp: 7,
 	roll_delay_timer: make_timer(60),
 	ultra_roll_sfx: SFX_Rularog_Roar,
 	wall_hits: 0,
@@ -450,7 +450,6 @@ ultraRollState = {
                 hdir = 0
             } else {
                 hdir = -hdirprev
-				id.image_xscale = hdir
             }
             if vdir != 0 {
                 vdirprev = vdir
@@ -460,7 +459,7 @@ ultraRollState = {
             }
             wall_hits++
             oCamera.start_shaking()
-            if wall_hits == 4 {
+            if wall_hits == 5 {
                 ultra_roll_done = true
                 id.sprite_index = sRulaIdle
                 id.rotation = 0
@@ -639,8 +638,9 @@ function move(hsp, vsp) {
 	scr_move_coord_contact_obj(hsp, vsp, oWall)
 }
 
-
-
+function isDead() {
+	return state == deadState
+}
 
 
 
