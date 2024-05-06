@@ -149,7 +149,12 @@
     {"name":"sRulaTongueStance2","order":5,"path":"sprites/sRulaTongueStance2/sRulaTongueStance2.yy",},
     {"name":"sRulaTongueTip","order":1,"path":"sprites/sRulaTongueTip/sRulaTongueTip.yy",},
     {"name":"sRulaWalk","order":2,"path":"sprites/sRulaWalk/sRulaWalk.yy",},
+    {"name":"sThinBG","order":4,"path":"sprites/sThinBG/sThinBG.yy",},
+    {"name":"sThinBG2","order":1,"path":"sprites/sThinBG2/sThinBG2.yy",},
+    {"name":"sThinBG3","order":3,"path":"sprites/sThinBG3/sThinBG3.yy",},
+    {"name":"sThinBGV2","order":2,"path":"sprites/sThinBGV2/sThinBGV2.yy",},
     {"name":"sTongueSeq","order":14,"path":"sprites/sTongueSeq/sTongueSeq.yy",},
     {"name":"sUD_part3","order":1,"path":"sprites/sUD_part3/sUD_part3.yy",},
+    {"name":"TileSet_TBG_ShadowTest","order":5,"path":"tilesets/TileSet_TBG_ShadowTest/TileSet_TBG_ShadowTest.yy",},
   ],
 }

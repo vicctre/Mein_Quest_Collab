@@ -110,11 +110,12 @@
           -10,47,4,2,20,20,36,-15,0,1,32,-4,0,1,16,-13,47,1,2,-15,20,1,3,-4,20,1,1,-36,47,
         ],"TileDataFormat":1,},"tilesetId":{"name":"W1_3","path":"tilesets/W1_3/W1_3.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":15,"SerialiseWidth":35,"TileCompressedData":[
-          -33,0,-2,-2147483648,-33,0,-2,-2147483648,-33,0,-2,-2147483648,-33,0,-2,-2147483648,-33,0,-2,-2147483648,
-          -7,0,1,4,-25,0,-2,-2147483648,-7,0,5,4,25,0,0,25,-4,0,-6,25,-11,0,-2,-2147483648,-7,0,1,4,-26,25,1,-2147483648,
-          -7,0,1,4,-26,25,1,-2147483648,-7,0,1,4,-8,25,8,14,8,13,25,25,14,8,13,-10,25,1,-2147483648,-7,0,1,4,-8,
-          25,8,6,0,4,25,25,6,0,4,-10,25,1,-2147483648,-6,0,2,25,4,-8,25,8,11,7,12,25,25,11,7,12,-10,25,1,-2147483648,
-          -11,0,-23,25,1,-2147483648,-13,0,-7,25,-4,0,-10,25,1,-2147483648,-33,0,-2,-2147483648,
+          -33,0,-2,-2147483648,-33,0,-2,-2147483648,-33,0,-2,-2147483648,-33,0,-2,-2147483648,-7,0,1,25,-25,0,
+          -2,-2147483648,-7,0,2,4,25,-24,0,-2,-2147483648,-7,0,5,4,25,25,0,25,-4,0,-6,25,-11,0,-2,-2147483648,
+          -7,0,1,4,-26,25,1,-2147483648,-7,0,1,4,-26,25,1,-2147483648,-7,0,1,4,-8,25,8,14,8,13,25,25,14,8,13,-10,
+          25,1,-2147483648,-7,0,1,4,-8,25,8,6,0,4,25,25,6,0,4,-10,25,1,-2147483648,-6,0,2,25,4,-8,25,8,11,7,12,
+          25,25,11,7,12,-10,25,1,-2147483648,-11,0,-23,25,1,-2147483648,-13,0,-7,25,-4,0,-10,25,1,-2147483648,
+          -33,0,-2,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ThinBG2","path":"tilesets/ThinBG2/ThinBG2.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tree","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tree","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":15,"SerialiseWidth":35,"TileCompressedData":[
           -4,2,1,3,-30,-2147483648,-4,2,1,3,-30,-2147483648,-4,2,1,3,-30,-2147483648,-4,2,1,3,-30,-2147483648,

@@ -109,7 +109,7 @@ jumpState = {
 	last_fast_fall_delay_timer: make_timer(110), // Final jumps endlag 
 	prepare_timer: make_timer(70), //startup for jumps 
 	pre_fast_fall_lift_height: 25, // slowly lift a bit before dashing
-	reach_player_time: 100, // how fast Rula reaches the player during jump
+	reach_player_time: 30, // how fast Rula reaches the player during jump
                            // will be increased if Mein is far away
 	vsp_max: 10, //idk what this changes...
 	
@@ -134,7 +134,8 @@ jumpState = {
 		if dir != 0 {
 			id.image_xscale = dir
 		}
-		oCamera.start_shaking()
+		oCamera.shake_remain = 1; //how much the screen shakes when Rula jumps
+		//oCamera.start_shaking()
 	},
 	
 	maybe_switch_to_finish: function() {
@@ -355,7 +356,7 @@ rollState = {
 	vsp_max: 5,
 	accel: 0.2,
 	roll_delay_timer: make_timer(60),
-	roll_sp: 3,
+	roll_sp: 3, //roll speed on the ground
 	rotation_gain: 4,
 	grav: 0.1,
 	bounce_jump_sp: -2,
@@ -373,7 +374,7 @@ rollState = {
 			id.image_xscale *= -1
 			dir = id.image_xscale
 			wall_hits++
-			oCamera.start_shaking()
+			oCamera.start_shaking(2)
 		}
 	},
 
@@ -426,13 +427,13 @@ ultraRollState = {
 	change_state: false,
 	hsp: 0,
 	vsp: 0,
-	accel: 0.2,
-	roll_sp: 7,
-	roll_delay_timer: make_timer(60),
+	accel: 0.15,  //how fast the roll meets max speed and going around the walls 
+	roll_sp: 5,//Ultra roll speed 
+	roll_delay_timer: make_timer(70),//startup of 3rd roll
 	ultra_roll_sfx: SFX_Rularog_Roar,
 	wall_hits: 0,
 	ultra_roll_done: false,
-	after_roll_timer: make_timer(120),
+	after_roll_timer: make_timer(120),//should be how long hes stunned 
 	rotation_sp: 20,
 	rotation_dir: 0,
 

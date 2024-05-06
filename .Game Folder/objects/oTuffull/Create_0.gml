@@ -7,15 +7,15 @@ spd_walk = 2.6;
 spd_charge = 5;
 spd_jump = 3;
 jump_height = 8;
-timer = 80;
+timer = 100;
 image_xscale = -size;
 hsp_target = 0; //speed to accelerate hsp towards
 
-idle_time = 30;
-charge_prep_time = 60;
-stun_time = 60;
+idle_time = 64;
+charge_prep_time = 80;
+stun_time = 50;
 walk_time = 40;
-jump_prep_time = 20;
+jump_prep_time = 50;
 charge_count = 3;
 
 // play sequence first

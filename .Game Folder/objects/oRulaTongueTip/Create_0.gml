@@ -2,7 +2,7 @@
 event_inherited()
 
 throwing_phase = true
-sp_max = 10
+sp_max = 7.3
 sp = sp_max
 dist_moved = 0
 fast_move_dist = 240

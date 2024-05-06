@@ -12,8 +12,8 @@
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"IDK lol",
-    "path":"folders/Sprites/WIP NOT IN USE/Tre Shadows WIPS/IDK lol.yy",
+    "name":"Thin BGs",
+    "path":"folders/Sprites/Tile_Tests/Thin BGs.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
