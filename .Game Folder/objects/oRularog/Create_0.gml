@@ -374,7 +374,7 @@ rollState = {
 			id.image_xscale *= -1
 			dir = id.image_xscale
 			wall_hits++
-			oCamera.start_shaking(2)
+			oCamera.start_shaking()
 		}
 	},
 
@@ -428,7 +428,7 @@ ultraRollState = {
 	hsp: 0,
 	vsp: 0,
 	accel: 0.15,  //how fast the roll meets max speed and going around the walls 
-	roll_sp: 5,//Ultra roll speed 
+	roll_sp: 5.25,//Ultra roll speed 
 	roll_delay_timer: make_timer(70),//startup of 3rd roll
 	ultra_roll_sfx: SFX_Rularog_Roar,
 	wall_hits: 0,
@@ -459,7 +459,7 @@ ultraRollState = {
                 vdir = -vdirprev	
             }
             wall_hits++
-            oCamera.start_shaking()
+            oCamera.start_shaking(2)
             if wall_hits == 5 {
                 ultra_roll_done = true
                 id.sprite_index = sRulaIdle
