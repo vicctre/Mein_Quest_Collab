@@ -6,7 +6,7 @@ if(place_meeting(x, y+1, WALLPARENT))
 	if (deadSprite == -1)
 		show_message("Error: this enemy's death sprite is not set");
 	
-	var inst = instance_create_layer(x,y,layer, deadEnemy);
+	var inst = instance_create_layer(x,y,layer, oDeadEnemy);
 	inst.flash = 0;
 	inst.rotation_speed = apploon_rotation_speed*2;
 	inst.sprite_index = deadSprite;

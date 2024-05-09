@@ -29,7 +29,7 @@ function PauseStuff() {
 	// visual dummies
 	ReplaceWithPauseDummy(global.player)
 	ReplaceWithPauseDummy(ENEMY)
-	ReplaceWithPauseDummy(deadEnemy)
+	ReplaceWithPauseDummy(oDeadEnemy)
 	ReplaceWithPauseDummy(oAutoscrollerLog)
 	ReplaceWithPauseDummy(oRulaTongue)
 	// Then tell other pausable objects to pause

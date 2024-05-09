@@ -169,7 +169,7 @@
     {"id":{"name":"Notes","path":"notes/Notes/Notes.yy",},},
     {"id":{"name":"__EzConsole__","path":"objects/__EzConsole__/__EzConsole__.yy",},},
     {"id":{"name":"ApploonSpawner","path":"objects/ApploonSpawner/ApploonSpawner.yy",},},
-    {"id":{"name":"deadEnemy","path":"objects/deadEnemy/deadEnemy.yy",},},
+    {"id":{"name":"oDeadEnemy","path":"objects/oDeadEnemy/oDeadEnemy.yy",},},
     {"id":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},},
     {"id":{"name":"ENEMYATTACK","path":"objects/ENEMYATTACK/ENEMYATTACK.yy",},},
     {"id":{"name":"ENEMYBOSS","path":"objects/ENEMYBOSS/ENEMYBOSS.yy",},},
