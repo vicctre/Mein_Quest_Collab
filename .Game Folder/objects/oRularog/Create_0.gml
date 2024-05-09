@@ -249,6 +249,7 @@ jumpState = {
 		jumps_left = jumps_total
 		state = RulaJump.prepare
 		id.sprite_index = sRulaJumpPrep
+		id.setDir()
         pre_fast_fall_lift = 0
     },
 	
@@ -297,8 +298,8 @@ tongueAttackState = {
 
 	onEnter: function() {
 		audio_play_sound(SFX_TongueAttack, 3, false)
-		id.image_xscale = id.is_on_left_side() ? 1 : -1
 		id.sprite_index = sRulaTongueStance
+		id.setDir()
 		tongue = instance_create_layer(id.x + tongue_rel_x * id.image_xscale,
 									   id.y + tongue_rel_y,
 									   "RulaTongue", oRulaTongue)
@@ -336,6 +337,7 @@ roarState = {
 	onEnter: function() {
 		id.sprite_index = sRulaROAR
 		id.done_phase2_roar = true
+		id.setDir()
     },
 	checkChange: function() {
 		with id {
