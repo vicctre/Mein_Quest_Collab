@@ -11,20 +11,10 @@ key_attack = oInput.key_attack * has_control
 prev_is_sprinting = is_sprinting
 prev_down_free = down_free
 
-// timer for idle animations
-if (sprite_index == sPlayer || sprite_index == currentIdleAnimation) {
-	idle_time++;
-} else {
-	idle_time = 0;
-}
+updatePlayIdleAnimation()
 
 // contact walls
-var thin_platform = thin_platform_check(0, 1);
-if thin_platform 
-		and thin_platform.object_index != oAutoscrollerLog
-		and key_down {
-	thin_platform = noone
-}
+var thin_platform = checkThinPlatform()
 down_free = place_empty(x, y + 1, wall_obj) and !thin_platform;
 up_free = place_empty(x, y - 1, wall_obj)
 left_free = place_empty(x - 1, y, wall_obj)
@@ -38,37 +28,14 @@ input_move_h = key_right - key_left
 hsp_to = move_h * hsp_max
 
 if has_control {
-	// used to fake ground for smoother jumping
-	coyote_timer--
-	if !down_free
-		coyote_timer = coyote_time
-
-	// enemies
-	var enemy = colliding_enemy()
-	var attack = instance_place(x, y, ENEMYATTACK)
-	if enemy != noone or attack != noone {
-		Hit(enemy)
-		if state == PLAYERSTATE.ATTACK_AERAL and instance_exists(aeral_attack_inst) {
-			instance_destroy(aeral_attack_inst)
-			aeral_attack_finish()
-		}
-	}
-
-	// enter door
-	var door = instance_place(x, y, oDoor)
-	if state != PLAYERSTATE.ENTER_DOOR and !down_free and key_up_pressed and door {
-		state = PLAYERSTATE.ENTER_DOOR
-		enter_room = door.room_to_go
-		sprite_index = sPlayerEnterDoor
-		audio_play_sound(global.sfx_door, 6, false)
-	}
+	updateCoyoteTimer()
+	checkCollidingEnemy()
+	checkEnterDoor()
 }
 
-var is_accelerating = sign(hsp) == 0 or sign(hsp) == sign(hsp_to)
-if state != PLAYERSTATE.THROWED {
-	hsp = approach(hsp, hsp_to * (1 + is_sprinting*sprint_add_sp_gain), is_accelerating ? acc : decel)
-}
-vsp = approach(vsp, vsp_max, grav)
+
+updateHspControl()
+applyGravity()
 
 // handle vertical sp
 // hit ceil
@@ -201,40 +168,23 @@ switch state {
 				&& !(right_free && left_free && up_free && down_free) {
 			state = PLAYERSTATE.FREE
 			Hit()
+			setHspControl(true)
 		}
 		break
 	}
 }
 
-// floating on log
-// additional hsp will keep untill land on common ground
-is_on_log = false
-if !down_free {
-	if instance_place(x, y + 1, oAutoscrollerLog) != noone {
-		ground_hsp = oAutoscrollerLog.hsp
-		is_on_log = true
-	} else {
-		ground_hsp = 0
-	}
-}
-
-var final_hsp = hsp + ground_hsp
-
-dir = point_direction(0, 0, final_hsp, vsp)
-
-// block hor sp if wall contact
-if ((final_hsp > 0) and !right_free) or ((final_hsp < 0) and !left_free) {
-	final_hsp = 0
-	hsp = 0
-}
+checkFloatOnLog()
+var final_hsp = finalizeHsp()
 
 // handle collisions
 if abs(final_hsp) or abs(vsp)
 	scr_move_coord_contact_obj(final_hsp, vsp, wall_obj)
 
-									 // without this player will teleport to the beginning
-									 // because camera is spawn there
+
 if global.camera_solid_bounds_on
+		// without this player will teleport to the beginning
+		// because camera is spawn there
 		and !--dev_autoscroller_camera_solid_walls_workaround_timer {
 	var xmax = scr_camx(0) + scr_camw(0) - (bbox_right- x)
 	var xmin = scr_camx(0) + (x - bbox_left)

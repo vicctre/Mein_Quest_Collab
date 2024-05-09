@@ -17,6 +17,9 @@ enum PLAYERSTATE {
 global.player = id
 global.VAR_BAR_ROW_DELTA = 30
 
+is_hsp_control_on = true // whether common hsp control code should be run
+						 // see step event and updateHspControl()
+
 /// main parameters
 // hp - see global.player_hp
 hsp_max = 2.5
@@ -49,8 +52,7 @@ jumps_max = 1
 jumps = jumps_max
 jump_press_delay = 15
 jump_pressed = 0
-coyote_time = 10
-coyote_timer = 0 // used to fake ground for smoother jumping
+coyote_timer = make_timer(10)
 is_on_log = false
 
 wall_obj = oWall
@@ -145,7 +147,7 @@ function check_perform_jump() {
 	if jump_pressed {
 		jump_pressed--
 		if jumps {
-			jumps -= down_free and coyote_timer < 0
+			jumps -= down_free and coyote_timer.timer <= 0
 			vsp = jumps ? jump_sp : double_jump_sp
 			if jumps 
 				audio_play_sound(global.sfx_jump, 7, false)
@@ -154,7 +156,7 @@ function check_perform_jump() {
 			jump_pressed = 0
             state = PLAYERSTATE.FREE
 			// cancel coyote jump if pressed jump
-			coyote_timer = 0
+			coyote_timer.timer = 0
             return true
 		}
 	}
@@ -459,12 +461,101 @@ function is_grabbed() {
 }
 
 function become_throwed(throw_hsp, throw_vsp, delay=5) {
+	setHspControl(false)
 	hsp = throw_hsp
 	vsp = throw_vsp
 	state = PLAYERSTATE.THROWED
 	sprite_index = sPlayerDead
 	allow_exit_throw_delay.time = delay
 	allow_exit_throw_delay.reset()
+}
+
+function updatePlayIdleAnimation() {
+	if (sprite_index == sPlayer || sprite_index == currentIdleAnimation) {
+		idle_time++;
+	} else {
+		idle_time = 0;
+	}
+}
+
+function checkThinPlatform() {
+	var thin_platform = thin_platform_check(0, 1);
+	if thin_platform 
+			and thin_platform.object_index != oAutoscrollerLog
+			and key_down {
+		return noone
+	}
+	return thin_platform
+}
+
+function updateCoyoteTimer() {
+	// used to fake ground for smoother jumping
+	coyote_timer.update()
+	if !down_free
+		coyote_timer.reset()
+}
+
+function checkCollidingEnemy() {
+	var enemy = colliding_enemy()
+	var attack = instance_place(x, y, ENEMYATTACK)
+	if enemy != noone or attack != noone {
+		Hit(enemy)
+		// force finish airal attack
+		if state == PLAYERSTATE.ATTACK_AERAL and instance_exists(aeral_attack_inst) {
+			instance_destroy(aeral_attack_inst)
+			aeral_attack_finish()
+		}
+	}	
+}
+
+function checkEnterDoor() {
+	var door = instance_place(x, y, oDoor)
+	if state != PLAYERSTATE.ENTER_DOOR and !down_free and key_up_pressed and door {
+		state = PLAYERSTATE.ENTER_DOOR
+		enter_room = door.room_to_go
+		sprite_index = sPlayerEnterDoor
+		audio_play_sound(global.sfx_door, 6, false)
+	}
+}
+
+function setHspControl(value) {
+	is_hsp_control_on = value
+}
+
+function updateHspControl() {
+	if is_hsp_control_on {
+		var is_accelerating = sign(hsp) == 0 or sign(hsp) == sign(hsp_to)
+		hsp = approach(hsp, hsp_to * (1 + is_sprinting*sprint_add_sp_gain), is_accelerating ? acc : decel)
+	}
+}
+
+function applyGravity() {
+	vsp = approach(vsp, vsp_max, grav)
+}
+
+function checkFloatOnLog() {
+	// floating on log
+	// additional hsp will keep untill land on common ground
+	is_on_log = false
+	if !down_free {
+		if instance_place(x, y + 1, oAutoscrollerLog) != noone {
+			ground_hsp = oAutoscrollerLog.hsp
+			is_on_log = true
+		} else {
+			ground_hsp = 0
+		}
+	}
+}
+
+function finalizeHsp() {
+	var final_hsp = hsp + ground_hsp
+	dir = point_direction(0, 0, final_hsp, vsp)
+	// block hor sp if wall contact
+	if ((final_hsp > 0) and !right_free) or ((final_hsp < 0) and !left_free) {
+		final_hsp = 0
+		hsp = 0
+	}
+	return final_hsp
 }
 
 instance_create_layer(x, y, layer, oCamera)
