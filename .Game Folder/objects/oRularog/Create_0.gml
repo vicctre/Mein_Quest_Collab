@@ -134,7 +134,7 @@ jumpState = {
 		if dir != 0 {
 			id.image_xscale = dir
 		}
-		oCamera.start_shaking() //how much the screen shakes when Rula jumps
+		oCamera.start_shaking() // how much the screen shakes when Rula jumps
 	},
 	
 	maybe_switch_to_finish: function() {
@@ -492,11 +492,14 @@ ultraRollState = {
 	},
 
 	onEnter: function() {
+		hsp = 0
+		vsp = 0
 		ultra_roll_done = false
 		after_roll_timer.reset()
 		wall_hits = 0
 		change_state = false
 		hdir = id.setDir()
+		vdir = 0
 		vdirprev = 1 // next vdir will be -1 -> up
 		rotation_dir = -hdir
 		id.sprite_index = sRulaRoll
