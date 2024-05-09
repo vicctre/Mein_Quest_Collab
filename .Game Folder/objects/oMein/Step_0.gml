@@ -47,7 +47,7 @@ if has_control {
 	var enemy = colliding_enemy()
 	var attack = instance_place(x, y, ENEMYATTACK)
 	if enemy != noone or attack != noone {
-		Hit()
+		Hit(enemy)
 		if state == PLAYERSTATE.ATTACK_AERAL and instance_exists(aeral_attack_inst) {
 			instance_destroy(aeral_attack_inst)
 			aeral_attack_finish()
@@ -65,7 +65,9 @@ if has_control {
 }
 
 var is_accelerating = sign(hsp) == 0 or sign(hsp) == sign(hsp_to)
-hsp = approach(hsp, hsp_to * (1 + is_sprinting*sprint_add_sp_gain), is_accelerating ? acc : decel)
+if state != PLAYERSTATE.THROWED {
+	hsp = approach(hsp, hsp_to * (1 + is_sprinting*sprint_add_sp_gain), is_accelerating ? acc : decel)
+}
 vsp = approach(vsp, vsp_max, grav)
 
 // handle vertical sp
@@ -185,6 +187,21 @@ switch state {
 			SlideTransition(TRANS_MODE.GOTO, enter_room, true)
 		}
 		hsp = 0
+		break
+	}
+	case PLAYERSTATE.GRABBED: {
+		if is_ungrabb_allowed {
+			state = PLAYERSTATE.FREE
+		}
+		break
+	}
+	case PLAYERSTATE.THROWED: {
+		vsp = approach(vsp, vsp_max, throw_decel)
+		if !allow_exit_throw_delay.update()
+				&& !(right_free && left_free && up_free && down_free) {
+			state = PLAYERSTATE.FREE
+			Hit()
+		}
 		break
 	}
 }

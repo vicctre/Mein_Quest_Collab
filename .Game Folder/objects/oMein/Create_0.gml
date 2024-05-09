@@ -10,6 +10,8 @@ enum PLAYERSTATE {
 	DEAD,
 	HIT,
 	ENTER_DOOR,
+	GRABBED,
+	THROWED,
 }
 
 global.player = id
@@ -97,6 +99,13 @@ hit = global.player_hit_state
 
 // room transition
 enter_room = noone
+
+// grabbed state
+is_ungrabb_allowed = false
+
+// throwed state
+throw_decel = 0.03
+allow_exit_throw_delay = make_timer(5)
 
 
 // create player-related ui
@@ -316,8 +325,16 @@ function Kill() {
 	oUI.shake_hp()
 }
 
-function Hit() {
+function Hit(enemy) {
 	if invincibility_timer or invincibility_timer_no_flashing {
+		return
+	}
+	if state == PLAYERSTATE.GRABBED {
+		return;	
+	}
+	if enemy && enemy.object_index == oRulaTongueTip {
+		become_grabbed()
+		audio_play_sound(SFX_Grab, 3, false)
 		return
 	}
 	global.player_hp -= global.player_invincible == false
@@ -425,6 +442,29 @@ function start_log_ride() {
 
 function go_invincible_without_flashing(time = invincibility_time) {
 	invincibility_timer_no_flashing = invincibility_time
+}
+
+function become_grabbed() {
+	state = PLAYERSTATE.GRABBED
+	sprite_index = sPlayerDead
+	is_ungrabb_allowed = false
+}
+
+function allow_ungrabbing() {
+	is_ungrabb_allowed = true
+}
+
+function is_grabbed() {
+	return state == PLAYERSTATE.GRABBED
+}
+
+function become_throwed(throw_hsp, throw_vsp, delay=5) {
+	hsp = throw_hsp
+	vsp = throw_vsp
+	state = PLAYERSTATE.THROWED
+	sprite_index = sPlayerDead
+	allow_exit_throw_delay.time = delay
+	allow_exit_throw_delay.reset()
 }
 
 instance_create_layer(x, y, layer, oCamera)

@@ -4,6 +4,9 @@ if is_sequence_finished() {
 	oRularog.visible = true
 	oRularog.state = oRularog.idleState
 	oRularog.x = x
+	if global.rula_start_state != undefined {
+		oRularog.state = variable_instance_get(oRularog, global.rula_start_state)
+	}
 	layer_sequence_speedscale(sequence_inst, 0)
 	global.player.has_control = true
 	instance_destroy()

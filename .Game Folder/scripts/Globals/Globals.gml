@@ -29,6 +29,7 @@ gui_workaround_restart_happened = false
 logo_sequence_speed_scale = 1
 music_gain_array = []
 player = oMein
+rula_start_state = undefined
 restart_level_on_death = true
 skip_logos = false
 
@@ -53,6 +54,7 @@ function game_reset_globals() {
 		global.player_invincible = false
 		global.skip_logos = true
 		global.dev_level_goto = W1_3BOSS
+		global.rula_start_state = "tongueChargeState"
 		//global.autoscroller_skip_log_intro = true
 	}
 }

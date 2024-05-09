@@ -1,7 +1,11 @@
 
 event_inherited()
 
-throwing_phase = true
+enum TongueState {
+    toss,
+    pull,
+}
+
 sp_max = 7.3
 sp = sp_max
 dist_moved = 0

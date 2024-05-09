@@ -197,8 +197,7 @@ jumpState = {
 							or place_meeting(x + sign(other.hsp), y, oWall) {
 						other.state = RulaJump.fast_fall
 						other.hsp = 0
-						sprite_index = sRulaFalling	
-						audio_play_sound(global.sfx_rula_land, 3, false)
+						sprite_index = sRulaFalling
 					}
 				}
 		    break
@@ -213,6 +212,7 @@ jumpState = {
 				with id {
 					scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
 					if place_meeting(x, y + 1, oWall) {
+						audio_play_sound(global.sfx_rula_land, 3, false)
 						other.switch_to_prepare()
 						var rand = randomer(-5, 5)
 						oEffects.emit_dust_ext(bbox_right, bbox_bottom, 1.6, rand())
@@ -312,6 +312,62 @@ tongueAttackState = {
 
 	checkChange: function() {
 		if !instance_exists(tongue) {
+			if oMein.is_grabbed() {
+				return id.throwMeinChargeState
+			}
+			return id.checkStateChangePhase2() ?? id.idleState
+		}
+		return undefined
+    },
+}
+
+throwMeinChargeState = {
+    id: id,
+	charge_timer: make_timer(45),
+
+	step: function() {},
+	
+	onExit: function() {
+		charge_timer.reset()
+    },
+
+	onEnter: function() {
+		id.sprite_index = sRulaCharge
+		id.setDir()
+		oMein.visible = false
+    },
+
+	checkChange: function() {
+        if !charge_timer.update() {
+			return id.throwMeinState
+		}
+    },
+}
+
+throwMeinState = {
+    id: id,
+	change_state_timer: make_timer(90), // how long to stay in Stance pose
+	throw_hsp: 8,
+	throw_vsp: -8,
+
+	step: function() {
+    },
+
+	onExit: function() {
+    },
+
+	onEnter: function() {
+		change_state_timer.reset()
+		oMein.visible = true
+		oMein.become_throwed(throw_hsp * id.image_xscale, throw_vsp)
+		oMein.invincibility_timer_no_flashing = 5 // make Mein invincible to not be hit by Rula while throwed
+		audio_play_sound(SFX_TongueAttack, 3, false)
+		id.sprite_index = sRulaTongueStance
+		id.setDir()
+    },
+
+	checkChange: function() {
+		if !change_state_timer.update() {
 			return id.checkStateChangePhase2() ?? id.idleState
 		}
 		return undefined
@@ -614,7 +670,7 @@ function setDir() {
 }
 
 
-state = idleState
+state = tongueAttackState
 
 function is_on_left_side() {
 	return abs(x - left_side_x) < abs(x - right_side_x)
