@@ -37,6 +37,6 @@ function set_smooth_movement(turn_on) {
 	smooth_movement_on = turn_on
 }
 
-function start_shaking() {
-	shake_remain = 1
+function start_shaking(magnitude=1) {
+	shake_remain = magnitude
 }

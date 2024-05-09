@@ -134,8 +134,7 @@ jumpState = {
 		if dir != 0 {
 			id.image_xscale = dir
 		}
-		oCamera.shake_remain = 1; //how much the screen shakes when Rula jumps
-		//oCamera.start_shaking()
+		oCamera.start_shaking() //how much the screen shakes when Rula jumps
 	},
 	
 	maybe_switch_to_finish: function() {

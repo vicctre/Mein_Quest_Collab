@@ -65,5 +65,5 @@ if DEV {
 	//player_hp = player_hp_max
 	//player_invincible = true
 	//tufful_hp = 1
-	audio_set_master_gain(0, 0)
+	audio_set_master_gain(0, 0.1)
 }

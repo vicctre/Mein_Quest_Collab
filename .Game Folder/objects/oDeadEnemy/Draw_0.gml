@@ -8,5 +8,3 @@ if (flash > 0) {
 	draw_self();
 }
 
-draw_text(x, y - 40, layer_get_name(layer))
-
