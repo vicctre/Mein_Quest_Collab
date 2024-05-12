@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"SFX_SisterGemAppear",
+  "%Name":"SFX_SisterGemPulse",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.522381,
-  "name":"SFX_SisterGemAppear",
+  "duration":1.637982,
+  "name":"SFX_SisterGemPulse",
   "parent":{
     "name":"Misc.",
     "path":"folders/Sounds/SFX/Misc..yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"SFX_SisterGemAppear.wav",
+  "soundFile":"SFX_SisterGemPulse.wav",
   "type":0,
-  "volume":0.2,
+  "volume":0.36,
 }

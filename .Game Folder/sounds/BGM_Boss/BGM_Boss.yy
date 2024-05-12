@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"BGM_Boss.wav",
   "type":0,
-  "volume":0.33,
+  "volume":0.0,
 }

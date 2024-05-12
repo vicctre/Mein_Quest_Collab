@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"SFX_SisterGemGet",
+  "%Name":"SFX_SisterGemGot",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.637982,
-  "name":"SFX_SisterGemGet",
+  "duration":1.522381,
+  "name":"SFX_SisterGemGot",
   "parent":{
     "name":"Misc.",
     "path":"folders/Sounds/SFX/Misc..yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"SFX_SisterGemGet.wav",
+  "soundFile":"SFX_SisterGemGot.wav",
   "type":0,
-  "volume":0.36,
+  "volume":0.2,
 }
