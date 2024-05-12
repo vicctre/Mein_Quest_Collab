@@ -12,8 +12,8 @@
   "duration":0.213605,
   "name":"SFX_Grab",
   "parent":{
-    "name":"Use Later",
-    "path":"folders/Sounds/SFX/Use Later.yy",
+    "name":"Misc.",
+    "path":"folders/Sounds/SFX/Misc..yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -3,9 +3,9 @@ event_inherited()
 
 name = "Rularog"
 
-hp_max = 22 //26
-hp = 12
-hp_phase2_amount = 11 //14
+hp_max = 26 //26
+hp = 26
+hp_phase2_amount = 15 //11
 done_phase2_roar = false
 
 // hp ui
@@ -96,19 +96,19 @@ enum RulaJump {
 jumpState = {
     id: id,
 	fast_fall_delay: make_timer(30),
-	fast_fall_sp: 11,//20 // how fast Rula falls on Mein
+	fast_fall_sp: 12,//20 // how fast Rula falls on Mein
 	finish_vsp_hsp_ratio: 4,//3 // finish_vsp_hsp_ratio = vsp / hsp//auto jump height? 
 	finish_edge_dist_treshold: 50, // if room edge is closer than finish_edge_dist_treshold
     // don't make the finishing jump
     finish_gr: 0.2,
 	grav_base: 0.6,	  // jump state gravity
-	jump_sp: -13,//-13
+	jump_sp: -13,
 	jump_height: 120, //140, // that's it, jump height
 	hsp_max: 6, //9 // how fast Rula moves during jump
                 // also affects jump curve if Mein is far away
-	last_fast_fall_delay_timer: make_timer(110), // Final jumps endlag 
-	prepare_timer: make_timer(70), //startup for jumps 
-	pre_fast_fall_lift_height: 25, // slowly lift a bit before dashing
+	last_fast_fall_delay_timer: make_timer(60), // Final jumps endlag 
+	prepare_timer: make_timer(50), //startup for jumps 
+	pre_fast_fall_lift_height: 25, // slowly lift a bit before falling
 	reach_player_time: 30, // how fast Rula reaches the player during jump
                            // will be increased if Mein is far away
 	vsp_max: 10, //idk what this changes...
@@ -361,7 +361,7 @@ throwMeinState = {
 		oMein.visible = true
 		oMein.become_throwed(throw_hsp * id.image_xscale, throw_vsp)
 		oMein.invincibility_timer_no_flashing = 5 // make Mein invincible to not be hit by Rula while throwed
-		audio_play_sound(SFX_TongueAttack, 3, false)
+		audio_play_sound(SFX_pew, 3, false)
 		id.sprite_index = sRulaTongueStance
 		id.setDir()
     },

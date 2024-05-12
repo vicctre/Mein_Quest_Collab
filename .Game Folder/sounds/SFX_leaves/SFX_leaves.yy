@@ -12,8 +12,8 @@
   "duration":0.863129,
   "name":"SFX_leaves",
   "parent":{
-    "name":"Use Later",
-    "path":"folders/Sounds/SFX/Use Later.yy",
+    "name":"Misc.",
+    "path":"folders/Sounds/SFX/Misc..yy",
   },
   "preload":false,
   "resourceType":"GMSound",
