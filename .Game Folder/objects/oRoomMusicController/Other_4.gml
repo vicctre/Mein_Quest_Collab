@@ -1,5 +1,5 @@
 
-var music = noone
+var music = undefined
 var room_prefix = string_copy(room_get_name(room), 0, 4)
 
 switch room_prefix {
@@ -23,7 +23,7 @@ switch room {
 		music = global.msc_pre_rularog
 		break
 	case W1_3BOSS:
-		music = global.msc_bigboss
+		music = noone
 		break
 	case rmTitleScreen:
 		music = global.msc_title_screen
@@ -39,6 +39,6 @@ switch room {
 		break
 }
 
-if music != noone and music != oMusic.CurrentMusic() {
+if music != undefined and music != oMusic.CurrentMusic() {
 	oMusic.switch_music(music)
 }
