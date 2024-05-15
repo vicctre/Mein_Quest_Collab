@@ -4,8 +4,8 @@ event_inherited()
 name = "Rularog"
 
 hp_max = 26 //26
-hp = 1
-hp_phase2_amount = 0 //11
+hp = 26
+hp_phase2_amount =  12//11
 done_phase2_roar = false
 
 // hp ui
@@ -412,8 +412,8 @@ rollState = {
 	vsp: 0,
 	vsp_max: 5,
 	accel: 0.2,
-	roll_delay_timer: make_timer(60),
-	roll_sp: 3, //roll speed on the ground
+	roll_delay_timer: make_timer(80),
+	roll_sp: 3.5, //roll speed on the ground
 	rotation_gain: 4,
 	grav: 0.1,
 	bounce_jump_sp_start: -2,
@@ -499,7 +499,7 @@ ultraRollState = {
 	hsp: 0,
 	vsp: 0,
 	accel: 0.15,  //how fast the roll meets max speed and going around the walls 
-	roll_sp: 5.25,//Ultra roll speed 
+	roll_sp: 5.5,//Ultra roll speed 
 	roll_delay_timer: make_timer(70),//startup of 3rd roll
     stun_timer: make_timer(90),        // how long hes stunned 
 	after_roll_timer: make_timer(60),  // how long he stays idle after stun
