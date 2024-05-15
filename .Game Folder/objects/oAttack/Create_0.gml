@@ -12,11 +12,16 @@ function perform() {
 			ds_list_add(hit_instances_list, inst)
 		}
 	}
-	if one_frame {
+	if one_frame && !alarm[0] {
 		instance_destroy()
 		return;
 	}
 	ds_list_clear(new_instances_list)
 }
 
+if DEV {
+	alarm[0] = 10
+}
+
 perform()
+
