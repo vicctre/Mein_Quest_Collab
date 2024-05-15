@@ -171,6 +171,7 @@ switch state {
 			state = PLAYERSTATE.FREE
 			Hit()
 			setHspControl(true)
+			has_control = true
 		}
 		break
 	}
