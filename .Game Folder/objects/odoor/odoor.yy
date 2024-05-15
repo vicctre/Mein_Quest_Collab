@@ -24,8 +24,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"room_to_go","filters":[],"listItems":[],"multiselect":false,"name":"room_to_go","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"W1_1_part2","varType":5,},
-    {"$GMObjectProperty":"","%Name":"for_development","filters":[],"listItems":[],"multiselect":false,"name":"for_development","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"room_to_go","filters":[],"listItems":[],"multiselect":false,"name":"room_to_go","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"W1_1_part2","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"for_development","filters":[],"listItems":[],"multiselect":false,"name":"for_development","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -151,7 +151,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -340,13 +340,13 @@
     {"id":{"name":"seqLogAutoscrollerStart","path":"sequences/seqLogAutoscrollerStart/seqLogAutoscrollerStart.yy",},},
     {"id":{"name":"seqLogAutoscrollerStartOriginal","path":"sequences/seqLogAutoscrollerStartOriginal/seqLogAutoscrollerStartOriginal.yy",},},
     {"id":{"name":"seqLogEnd","path":"sequences/seqLogEnd/seqLogEnd.yy",},},
+    {"id":{"name":"seqMeinGemBossIntro","path":"sequences/seqMeinGemBossIntro/seqMeinGemBossIntro.yy",},},
     {"id":{"name":"seqOntoStage_T","path":"sequences/seqOntoStage_T/seqOntoStage_T.yy",},},
     {"id":{"name":"seqOntoStage","path":"sequences/seqOntoStage/seqOntoStage.yy",},},
     {"id":{"name":"seqOpeningIntro","path":"sequences/seqOpeningIntro/seqOpeningIntro.yy",},},
     {"id":{"name":"seqPlayerVictory","path":"sequences/seqPlayerVictory/seqPlayerVictory.yy",},},
     {"id":{"name":"seqPlayerVictory02","path":"sequences/seqPlayerVictory02/seqPlayerVictory02.yy",},},
     {"id":{"name":"seqPlayerVictory03","path":"sequences/seqPlayerVictory03/seqPlayerVictory03.yy",},},
-    {"id":{"name":"seqMeinGemBossIntro","path":"sequences/seqMeinGemBossIntro/seqMeinGemBossIntro.yy",},},
     {"id":{"name":"seqRularog_Intro01","path":"sequences/seqRularog_Intro01/seqRularog_Intro01.yy",},},
     {"id":{"name":"seqRularog_Intro02","path":"sequences/seqRularog_Intro02/seqRularog_Intro02.yy",},},
     {"id":{"name":"seqTuffullIntro_T","path":"sequences/seqTuffullIntro_T/seqTuffullIntro_T.yy",},},

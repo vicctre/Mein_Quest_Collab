@@ -8,7 +8,7 @@
   "managed":true,
   "name":"oShantee",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"walksp","path":"objects/ENEMY/ENEMY.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"walksp","path":"objects/ENEMY/ENEMY.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
   ],
   "parent":{
     "name":"Shante",

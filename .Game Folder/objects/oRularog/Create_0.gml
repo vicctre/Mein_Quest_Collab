@@ -4,8 +4,8 @@ event_inherited()
 name = "Rularog"
 
 hp_max = 26 //26
-hp = 26
-hp_phase2_amount = 15 //11
+hp = 1
+hp_phase2_amount = 0 //11
 done_phase2_roar = false
 
 // hp ui
@@ -56,7 +56,7 @@ walkState = {
     sp: 1.8, //2
     dir: image_xscale,
 	change_state: false,
-	
+
 	step: function() {
         with id {
             if place_meeting(x + other.dir, y, oWall) {
@@ -416,7 +416,9 @@ rollState = {
 	roll_sp: 3, //roll speed on the ground
 	rotation_gain: 4,
 	grav: 0.1,
-	bounce_jump_sp: -2,
+	bounce_jump_sp_start: -2,
+	bounce_jump_sp: 0,
+    bounce_dissipation: 0.6,
 	wall_hits: 0,
 	ultra_wall_hits_treshold: 2,
 
@@ -424,6 +426,7 @@ rollState = {
 		id.rotation -= hsp * rotation_gain
 		id.move(hsp * !roll_delay_timer.update(), vsp)
 		if id.colliding_wall(id.x, id.y + 1) {
+            bounce_jump_sp = approach(bounce_jump_sp, 0, bounce_dissipation)
 			vsp = bounce_jump_sp
 		}
 		if id.colliding_wall(id.x + dir, id.y) {
@@ -431,7 +434,10 @@ rollState = {
 			id.image_xscale *= -1
 			dir = id.image_xscale
 			wall_hits++
+            bounce_jump_sp = bounce_jump_sp_start
+			vsp = bounce_jump_sp
 			oCamera.start_shaking()
+            roll_delay_timer.reset()
 		}
 	},
 
@@ -439,13 +445,20 @@ rollState = {
         id.rotation -= hsp * rotation_gain
         id.move(0, vsp)
         if id.colliding_wall(id.x, id.y + 1) {
-            change_state = true
+            bounce_jump_sp = approach(bounce_jump_sp, 0, bounce_dissipation)
+            vsp = bounce_jump_sp
+            if bounce_jump_sp == 0 {
+                change_state = true
+            }
         }
     },
 
 	step: function() {
 		hsp = approach(hsp, roll_sp * dir, accel)
 		vsp = approach(vsp, vsp_max, grav)
+		if vsp > 0 and id.colliding_wall(id.x, id.y + 1) {
+			vsp = 0
+		}
 		if wall_hits < ultra_wall_hits_treshold {
 			roll()
 		} else {
@@ -460,6 +473,7 @@ rollState = {
 		roll_delay_timer.reset()
 		change_state = false
 		wall_hits = 0
+        bounce_jump_sp = bounce_jump_sp_start
 		vsp = bounce_jump_sp
 		dir = id.setDir()
 		id.sprite_index = sRulaRoll
@@ -487,10 +501,11 @@ ultraRollState = {
 	accel: 0.15,  //how fast the roll meets max speed and going around the walls 
 	roll_sp: 5.25,//Ultra roll speed 
 	roll_delay_timer: make_timer(70),//startup of 3rd roll
+    stun_timer: make_timer(90),        // how long hes stunned 
+	after_roll_timer: make_timer(60),  // how long he stays idle after stun
 	ultra_roll_sfx: SFX_Rularog_Roar,
 	wall_hits: 0,
 	ultra_roll_done: false,
-	after_roll_timer: make_timer(120),//should be how long hes stunned 
 	rotation_sp: 20,
 	rotation_dir: 0,
 
@@ -519,15 +534,19 @@ ultraRollState = {
             oCamera.start_shaking(2)
             if wall_hits == 5 {
                 ultra_roll_done = true
-                id.sprite_index = sRulaIdle
+                id.sprite_index = sRulaKOed
                 id.rotation = 0
             }
         }
     },
 
     wait_after_roll: function() {
-        if !after_roll_timer.update() {
-            change_state = true	
+        if stun_timer.update() {
+            return
+        }
+		sprite_index = sRulaIdle
+		if !after_roll_timer.update() {
+            change_state = true
         }
     },
 
@@ -553,6 +572,7 @@ ultraRollState = {
 		hsp = 0
 		vsp = 0
 		ultra_roll_done = false
+        stun_timer.reset()
 		after_roll_timer.reset()
 		wall_hits = 0
 		change_state = false
@@ -638,6 +658,9 @@ deadState = {
 		dir = dir != 0 ? dir : 1
 		id.image_xscale = -dir
 		id.sprite_index = sRulaKOed
+        // move him up a bit
+        // like being pushed
+        id.y -= 10
 		oPause.PauseWithTimer(pause_time)
     },
 	checkChange: function() {
