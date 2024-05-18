@@ -450,6 +450,7 @@ function become_grabbed() {
 	state = PLAYERSTATE.GRABBED
 	sprite_index = sPlayerDead
 	is_ungrabb_allowed = false
+	has_control = false
 }
 
 function allow_ungrabbing() {
@@ -466,6 +467,7 @@ function become_throwed(throw_hsp, throw_vsp, delay=5) {
 	vsp = throw_vsp
 	state = PLAYERSTATE.THROWED
 	sprite_index = sPlayerDead
+	has_control = false
 	allow_exit_throw_delay.time = delay
 	allow_exit_throw_delay.reset()
 }
@@ -557,6 +559,14 @@ function finalizeHsp() {
 	}
 	return final_hsp
 }
+
+function perform_attack(spr, xscale, dmg, one_frame=true) {
+	var inst = instance_create_layer(x, y, "Player", oAttack, 
+		{sprite_index: spr, image_xscale: xscale, damage: dmg, one_frame: one_frame})
+	attack_performed = true
+	return inst
+}
+
 
 instance_create_layer(x, y, layer, oCamera)
 
