@@ -4,7 +4,7 @@ event_inherited()
 name = "Rularog"
 
 hp_max = 26 //26
-hp = 26
+hp = 13
 hp_phase2_amount =  12//11
 done_phase2_roar = false
 
@@ -31,6 +31,8 @@ inactiveState = {
 
 idleState = {
     id: id,
+	idle_timer: make_timer(60), // how long to stay idle
+
 	step: function() {
 
     },
@@ -38,14 +40,19 @@ idleState = {
 
     },
 	onEnter: function() {
-
+		idle_timer.reset()
+		id.sprite_index = sRulaIdle
+		id.setDir()
     },
 	checkChange: function() {
-		if id.isPhase2() {
-			if !id.done_phase2_roar {
-				return id.roarState	
-			}
-			return id.rollState
+		if idle_timer.update() {
+			return undefined
+		}
+		if id.isPhase2() and !id.done_phase2_roar {
+			// if !id.done_phase2_roar {
+			// 	return id.roarState	
+			// }
+			return id.roarState
 		}
         return id.walkState
     },
@@ -330,10 +337,16 @@ tongueAttackState = {
 			if oMein.is_grabbed() {
 				return id.throwMeinChargeState
 			}
-			return id.checkStateChangePhase2() ?? id.idleState
+			return id.checkStateChangePhase2() ?? id.ifPhase2(id.rollState)
 		}
 		return undefined
     },
+}
+
+function ifPhase2(state) {
+	// if in phase 2 choose state
+	// otherwise choose default state - idleState
+	return isPhase2() ? state : id.idleState
 }
 
 throwMeinChargeState = {
@@ -383,7 +396,7 @@ throwMeinState = {
 
 	checkChange: function() {
 		if !change_state_timer.update() {
-			return id.checkStateChangePhase2() ?? id.idleState
+			return id.checkStateChangePhase2() ?? id.ifPhase2(id.rollState)
 		}
 		return undefined
     },
@@ -601,9 +614,8 @@ ultraRollState = {
 
 	checkChange: function() {
 		if change_state {
-			return id.checkStateChangePhase2() ?? id.jumpState
+			return id.idleState
 		}
-		return id.checkStateChangePhase2()
     },
 
 
@@ -693,8 +705,10 @@ function checkStateChangeGlobal() {
 }
 
 function checkStateChangePhase2() {
+	// check if must switch to phase 2
+	// Rula can switch from any state
 	if !done_phase2_roar and (hp < hp_phase2_amount) {
-		return roarState	
+		return roarState
 	}
 	return undefined
 }
