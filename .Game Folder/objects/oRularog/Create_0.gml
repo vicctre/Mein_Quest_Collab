@@ -152,6 +152,18 @@ jumpState = {
 		hsp = abs(vsp) * dir / finish_vsp_hsp_ratio
 	},
 
+	emit_fall_dust: function() {
+		with id {
+			var rand = randomer(-5, 5)
+			oEffects.emit_dust_ext(bbox_right, bbox_bottom, 1.6, rand())
+			oEffects.emit_dust_ext(bbox_left, bbox_bottom, 1.6, 180 + rand())
+			oEffects.emit_dust_ext(bbox_right, bbox_bottom, 1.4, rand())
+			oEffects.emit_dust_ext(bbox_left, bbox_bottom, 1.4, 180 + rand())
+			oEffects.emit_dust_ext(bbox_right, bbox_bottom, 1, rand())
+			oEffects.emit_dust_ext(bbox_left, bbox_bottom, 1, 180 + rand())
+		}
+	},
+
 	step: function() {
 		switch state {
 		    case RulaJump.prepare:
@@ -204,7 +216,8 @@ jumpState = {
 			case RulaJump.fast_fall:
 				if fast_fall_delay.update() {
                     // lift with decreasing sp
-                    vsp = -(pre_fast_fall_lift_height - pre_fast_fall_lift) / pre_fast_fall_lift_height * 0.25
+                    vsp = -(pre_fast_fall_lift_height - pre_fast_fall_lift)
+							/ pre_fast_fall_lift_height * 0.25
                     pre_fast_fall_lift += abs(vsp)
                 } else {
 					vsp = fast_fall_sp
@@ -214,13 +227,7 @@ jumpState = {
 					if place_meeting(x, y + 1, oWall) {
 						audio_play_sound(global.sfx_rula_land, 3, false)
 						other.switch_to_prepare()
-						var rand = randomer(-5, 5)
-						oEffects.emit_dust_ext(bbox_right, bbox_bottom, 1.6, rand())
-						oEffects.emit_dust_ext(bbox_left, bbox_bottom, 1.6, 180 + rand())
-						oEffects.emit_dust_ext(bbox_right, bbox_bottom, 1.4, rand())
-						oEffects.emit_dust_ext(bbox_left, bbox_bottom, 1.4, 180 + rand())
-						oEffects.emit_dust_ext(bbox_right, bbox_bottom, 1, rand())
-						oEffects.emit_dust_ext(bbox_left, bbox_bottom, 1, 180 + rand())
+						other.emit_fall_dust()
 					}
 				}
 		    break
