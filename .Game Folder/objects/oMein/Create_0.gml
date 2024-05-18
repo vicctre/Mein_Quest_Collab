@@ -334,6 +334,10 @@ function Hit(enemy) {
 	if state == PLAYERSTATE.GRABBED {
 		return;	
 	}
+	if state == PLAYERSTATE.ATTACK_AERAL and instance_exists(aeral_attack_inst) {
+		instance_destroy(aeral_attack_inst)
+		attack_performed = false
+	}
 	if enemy && enemy.object_index == oRulaTongueTip {
 		become_grabbed()
 		audio_play_sound(SFX_Grab, 3, false)
@@ -505,6 +509,7 @@ function checkCollidingEnemy() {
 		// force finish airal attack
 		if state == PLAYERSTATE.ATTACK_AERAL and instance_exists(aeral_attack_inst) {
 			instance_destroy(aeral_attack_inst)
+			perform_attack = false
 			aeral_attack_finish()
 		}
 	}	
