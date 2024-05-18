@@ -343,12 +343,6 @@ tongueAttackState = {
     },
 }
 
-function ifPhase2(state) {
-	// if in phase 2 choose state
-	// otherwise choose default state - idleState
-	return isPhase2() ? state : id.idleState
-}
-
 throwMeinChargeState = {
     id: id,
 	charge_timer: make_timer(45),
@@ -707,7 +701,7 @@ function checkStateChangeGlobal() {
 function checkStateChangePhase2() {
 	// check if must switch to phase 2
 	// Rula can switch from any state
-	if !done_phase2_roar and (hp < hp_phase2_amount) {
+	if !done_phase2_roar and isPhase2() {
 		return roarState
 	}
 	return undefined
@@ -715,6 +709,12 @@ function checkStateChangePhase2() {
 
 function isPhase2() {
 	return hp <= hp_phase2_amount
+}
+
+function ifPhase2(state) {
+	// if in phase 2 choose state
+	// otherwise choose default state - idleState
+	return isPhase2() ? state : id.idleState
 }
 
 function setDir() {
