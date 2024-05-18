@@ -90,6 +90,7 @@ enum RulaJump {
 	prepare,
 	jump,
 	fast_fall,
+	after_fall_delay,
 	finish,
 }
 
@@ -112,7 +113,8 @@ jumpState = {
 	reach_player_time: 30, // how fast Rula reaches the player during jump
                            // will be increased if Mein is far away
 	vsp_max: 10, //idk what this changes...
-	
+	after_fall_delay_timer: make_timer(60), // how long to stay headed jump direction
+
 	state: RulaJump.prepare,
 	hsp: 0,
 	grav: 0.6,
@@ -129,12 +131,10 @@ jumpState = {
 		vsp = 0
 		prepare_timer.reset()
 		fast_fall_delay.reset()
-		id.sprite_index = sRulaJumpPrep
 		var dir = sign(oMein.x - id.x)
 		if dir != 0 {
 			id.image_xscale = dir
 		}
-		oCamera.start_shaking() // how much the screen shakes when Rula jumps
 	},
 	
 	maybe_switch_to_finish: function() {
@@ -226,11 +226,19 @@ jumpState = {
 					scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
 					if place_meeting(x, y + 1, oWall) {
 						audio_play_sound(global.sfx_rula_land, 3, false)
-						other.switch_to_prepare()
+						other.state = RulaJump.after_fall_delay
+						id.sprite_index = sRulaJumpPrep
+						oCamera.start_shaking() // how much the screen shakes when Rula jumps
 						other.emit_fall_dust()
 					}
 				}
 		    break
+			case RulaJump.after_fall_delay:
+				if !after_fall_delay_timer.update() {
+					after_fall_delay_timer.reset()
+					switch_to_prepare()
+				}
+			break
 			case RulaJump.finish:
 				if last_fast_fall_delay_timer.update() {
 					break	
