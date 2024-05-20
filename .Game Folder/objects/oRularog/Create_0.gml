@@ -112,7 +112,7 @@ jumpState = {
 	grav_base: 0.6,	  // jump state gravity
 	jump_sp: -13,
 	jump_height: 120, //140, // that's it, jump height
-	hsp_max: 6, //9 // how fast Rula moves during jump
+	hsp_max: 6,  // how fast Rula moves during jump
                 // also affects jump curve if Mein is far away
 	last_fast_fall_delay_timer: make_timer(60), // Final jumps endlag 
 	prepare_timer: make_timer(50), //startup for jumps 

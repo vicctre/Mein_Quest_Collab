@@ -131,6 +131,8 @@
     {"name":"SFX_TongueAttack","order":2,"path":"sounds/SFX_TongueAttack/SFX_TongueAttack.yy",},
     {"name":"SFX_Tuffull_Roar","order":1,"path":"sounds/SFX_Tuffull_Roar/SFX_Tuffull_Roar.yy",},
     {"name":"SFX_Whip","order":2,"path":"sounds/SFX_Whip/SFX_Whip.yy",},
+    {"name":"Gem_01_glow","order":1,"path":"sprites/Gem_01_glow/Gem_01_glow.yy",},
+    {"name":"Mein_EXP02_EX","order":3,"path":"sprites/Mein_EXP02_EX/Mein_EXP02_EX.yy",},
     {"name":"sAdvLogApploon","order":1,"path":"sprites/sAdvLogApploon/sAdvLogApploon.yy",},
     {"name":"sAL_Arrow_am1","order":2,"path":"sprites/sAL_Arrow_am1/sAL_Arrow_am1.yy",},
     {"name":"sAL_Arrow_click","order":3,"path":"sprites/sAL_Arrow_click/sAL_Arrow_click.yy",},
