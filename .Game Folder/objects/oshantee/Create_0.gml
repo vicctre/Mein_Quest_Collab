@@ -1,4 +1,4 @@
 event_inherited();
-deadSprite = sShanteeD;
+deadSprite = sChantieD;
 cooldown = 0;
 cooldown_max = 90;

@@ -1,22 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"oShantee",
+  "%Name":"oChantie_Attack",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oShantee",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"walksp","path":"objects/ENEMY/ENEMY.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
-  ],
+  "name":"oChantie_Attack",
+  "overriddenProperties":[],
   "parent":{
     "name":"Shante",
     "path":"folders/Objects/Enemies/Small Enemies/Shante.yy",
   },
   "parentObjectId":{
-    "name":"ENEMY",
-    "path":"objects/ENEMY/ENEMY.yy",
+    "name":"ENEMYATTACK",
+    "path":"objects/ENEMYATTACK/ENEMYATTACK.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -36,9 +33,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sChantieIdle",
-    "path":"sprites/sChantieIdle/sChantieIdle.yy",
+    "name":"sChantieHitbox",
+    "path":"sprites/sChantieHitbox/sChantieHitbox.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
