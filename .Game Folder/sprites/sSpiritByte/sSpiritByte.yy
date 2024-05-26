@@ -32,8 +32,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Items",
-    "path":"folders/Sprites/Items.yy",
+    "name":"Bytes",
+    "path":"folders/Sprites/Sister Spirits/Bytes.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
