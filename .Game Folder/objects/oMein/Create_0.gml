@@ -510,7 +510,7 @@ function checkCollidingEnemy() {
 		if !invincibility_timer and state == PLAYERSTATE.ATTACK_AERAL
 				and instance_exists(aeral_attack_inst) {
 			instance_destroy(aeral_attack_inst)
-			perform_attack = false
+			attack_performed = false
 			aeral_attack_finish()
 		}
 	}	
