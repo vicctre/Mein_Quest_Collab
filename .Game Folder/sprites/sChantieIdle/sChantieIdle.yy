@@ -3,7 +3,7 @@
   "%Name":"sChantieIdle",
   "bboxMode":2,
   "bbox_bottom":48,
-  "bbox_left":37,
+  "bbox_left":38,
   "bbox_right":55,
   "bbox_top":24,
   "collisionKind":1,

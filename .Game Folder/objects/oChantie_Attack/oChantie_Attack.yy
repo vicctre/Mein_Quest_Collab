@@ -26,7 +26,12 @@
   "physicsRestitution":0.1,
   "physicsSensor":false,
   "physicsShape":1,
-  "physicsShapePoints":[],
+  "physicsShapePoints":[
+    {"x":0.0,"y":0.0,},
+    {"x":86.0,"y":0.0,},
+    {"x":86.0,"y":65.0,},
+    {"x":0.0,"y":65.0,},
+  ],
   "physicsStartAwake":true,
   "properties":[],
   "resourceType":"GMObject",
@@ -37,5 +42,5 @@
     "path":"sprites/sChantieHitbox/sChantieHitbox.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
