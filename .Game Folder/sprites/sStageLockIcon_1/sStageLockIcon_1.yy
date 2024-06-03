@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"sStageLockIcon",
+  "%Name":"sStageLockIcon_1",
   "bboxMode":0,
   "bbox_bottom":54,
   "bbox_left":0,
@@ -10,7 +10,7 @@
   "collisionTolerance":0,
   "ConfigValues":{
     "Dev":{
-      "textureGroupId":"{\"name\":\"Default\",\"path\":\"texturegroups/Default\"}",
+      "textureGroupId":"{ \"name\":\"Default\", \"path\":\"texturegroups/Default\" }",
     },
   },
   "DynamicTexturePage":false,
@@ -26,7 +26,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"c2735249-4baf-43c5-99a5-5883a732c127","blendMode":0,"displayName":"default","isLocked":false,"name":"c2735249-4baf-43c5-99a5-5883a732c127","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sStageLockIcon",
+  "name":"sStageLockIcon_1",
   "nineSlice":null,
   "origin":4,
   "parent":{
@@ -74,7 +74,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"57facb3d-6c39-42aa-b181-3ce692848b0f","path":"sprites/sStageLockIcon/sStageLockIcon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"57facb3d-6c39-42aa-b181-3ce692848b0f","path":"sprites/sStageLockIcon_1/sStageLockIcon_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"dfd45722-7936-4900-8e2b-7dd83b380739","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
