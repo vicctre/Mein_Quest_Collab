@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oShantee",
+  "%Name":"oChantie",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oShantee",
+  "name":"oChantie",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"walksp","path":"objects/ENEMY/ENEMY.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
   ],
   "parent":{
-    "name":"Shante",
-    "path":"folders/Objects/Enemies/Small Enemies/Shante.yy",
+    "name":"Chantie",
+    "path":"folders/Objects/Enemies/Small Enemies/Chantie.yy",
   },
   "parentObjectId":{
     "name":"ENEMY",
