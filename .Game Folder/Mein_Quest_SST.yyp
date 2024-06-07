@@ -243,6 +243,7 @@
     {"id":{"name":"oSequenceLogAutoscrollerStart","path":"objects/oSequenceLogAutoscrollerStart/oSequenceLogAutoscrollerStart.yy",},},
     {"id":{"name":"oSequenceLogEnd","path":"objects/oSequenceLogEnd/oSequenceLogEnd.yy",},},
     {"id":{"name":"oSequenceOntoLevel","path":"objects/oSequenceOntoLevel/oSequenceOntoLevel.yy",},},
+    {"id":{"name":"oSequencePickupLog_LogRide","path":"objects/oSequencePickupLog_LogRide/oSequencePickupLog_LogRide.yy",},},
     {"id":{"name":"oSequencePickupLog","path":"objects/oSequencePickupLog/oSequencePickupLog.yy",},},
     {"id":{"name":"oSequenceRulaAppear01","path":"objects/oSequenceRulaAppear01/oSequenceRulaAppear01.yy",},},
     {"id":{"name":"oSequenceRulaAppear02","path":"objects/oSequenceRulaAppear02/oSequenceRulaAppear02.yy",},},

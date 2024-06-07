@@ -103,6 +103,7 @@
     {"name":"oSequence","order":5,"path":"objects/oSequence/oSequence.yy",},
     {"name":"oSequenceLogEnd","order":9,"path":"objects/oSequenceLogEnd/oSequenceLogEnd.yy",},
     {"name":"oSequenceOntoLevel","order":6,"path":"objects/oSequenceOntoLevel/oSequenceOntoLevel.yy",},
+    {"name":"oSequencePickupLog_LogRide","order":12,"path":"objects/oSequencePickupLog_LogRide/oSequencePickupLog_LogRide.yy",},
     {"name":"oSequencePickupLog","order":1,"path":"objects/oSequencePickupLog/oSequencePickupLog.yy",},
     {"name":"oSequenceRulaAppear01","order":10,"path":"objects/oSequenceRulaAppear01/oSequenceRulaAppear01.yy",},
     {"name":"oSequenceRulaAppear02","order":11,"path":"objects/oSequenceRulaAppear02/oSequenceRulaAppear02.yy",},
