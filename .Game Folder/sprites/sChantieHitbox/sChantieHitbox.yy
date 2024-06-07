@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"sChantieHitbox",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":31,
   "bbox_left":52,
   "bbox_right":85,

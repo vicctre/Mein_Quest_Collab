@@ -8,7 +8,7 @@
   "managed":true,
   "name":"oFleater",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"grv","path":"objects/ENEMY/ENEMY.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"grv","path":"objects/ENEMY/ENEMY.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
   ],
   "parent":{
     "name":"Fleater",
@@ -32,7 +32,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"FlyPattern","filters":[],"listItems":[],"multiselect":false,"name":"FlyPattern","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"UpDown\"","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"FlyPattern","filters":[],"listItems":[],"multiselect":false,"name":"FlyPattern","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"UpDown\"","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

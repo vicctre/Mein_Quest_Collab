@@ -30,8 +30,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"contained_item","filters":[],"listItems":[],"multiselect":false,"name":"contained_item","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"oEldoon_Small","varType":5,},
-    {"$GMObjectProperty":"v1","%Name":"adv_log_creature_name","filters":[],"listItems":[],"multiselect":false,"name":"adv_log_creature_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Mein","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"contained_item","filters":[],"listItems":[],"multiselect":false,"name":"contained_item","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"oEldoon_Small","path":"objects/oEldoon_Small/oEldoon_Small.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"oEldoon_Small","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"adv_log_creature_name","filters":[],"listItems":[],"multiselect":false,"name":"adv_log_creature_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Mein","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

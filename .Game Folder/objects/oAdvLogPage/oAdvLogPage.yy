@@ -29,8 +29,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"id_number","filters":[],"listItems":[],"multiselect":false,"name":"id_number","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"creature_name","filters":[],"listItems":[],"multiselect":false,"name":"creature_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"undefined","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"id_number","filters":[],"listItems":[],"multiselect":false,"name":"id_number","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"creature_name","filters":[],"listItems":[],"multiselect":false,"name":"creature_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"undefined","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
