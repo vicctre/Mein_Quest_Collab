@@ -21,6 +21,7 @@ function perform() {
 
 if DEV {
 	alarm[0] = 10
+	visible = true
 }
 
 perform()
