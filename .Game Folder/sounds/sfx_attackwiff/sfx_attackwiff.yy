@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sfx_attackwiff.wav",
   "type":0,
-  "volume":0.15,
+  "volume":0.08,
 }

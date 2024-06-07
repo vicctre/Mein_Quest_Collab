@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"SFX_Land",
+  "%Name":"SFX_Sparkle",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.188435,
-  "name":"SFX_Land",
+  "duration":0.0,
+  "name":"SFX_Sparkle",
   "parent":{
-    "name":"Mein SFX",
-    "path":"folders/Sounds/SFX/Mein SFX.yy",
+    "name":"Misc.",
+    "path":"folders/Sounds/SFX/Misc..yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"SFX_Land.wav",
+  "soundFile":"SFX_Sparkle",
   "type":0,
-  "volume":0.85,
+  "volume":1.0,
 }
