@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"BGM_CLEAR.wav",
   "type":0,
-  "volume":0.36,
+  "volume":0.4,
 }
