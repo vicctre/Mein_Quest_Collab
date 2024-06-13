@@ -4,7 +4,7 @@ event_inherited()
 name = "Rularog"
 
 hp_max = 26 //26
-hp = 13
+hp = 12
 hp_phase2_amount =  12//11
 done_phase2_roar = false
 
@@ -536,7 +536,7 @@ ultraRollState = {
 	rotation_dir: 0,
 
     make_ultra_roll: function() {
-        id.move(hsp * !roll_delay_timer.update(), vsp)
+        id.move(hsp, vsp)
 		id.rotation += rotation_sp * rotation_dir
         if id.colliding_wall(id.x + hdir, id.y + vdir) {
             hsp = 0
@@ -577,7 +577,7 @@ ultraRollState = {
     },
 
 	step: function() {
-		hsp = approach(hsp, roll_sp * hdir, accel)
+		hsp = approach(hsp, roll_sp * hdir, accel * !roll_delay_timer.update())
 		vsp = approach(vsp, roll_sp * vdir, accel)
 		if !ultra_roll_done {
             make_ultra_roll()
@@ -612,6 +612,7 @@ ultraRollState = {
 
 	checkChange: function() {
 		if change_state {
+            return id.rollState
 			return id.idleState
 		}
     },
