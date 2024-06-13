@@ -576,6 +576,7 @@ function perform_attack(spr, xscale, dmg, one_frame=true) {
 
 function switch_to_sister_spirit() {
     state = PLAYERSTATE.SYSTER_SPIRIT
+	has_control = false
 }
 
 

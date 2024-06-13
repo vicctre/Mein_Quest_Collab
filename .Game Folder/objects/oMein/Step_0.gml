@@ -25,7 +25,9 @@ move_h = (key_right*right_free - key_left*left_free) * has_control
 // do we try to move?
 input_move_h = key_right - key_left
 // moving hor
-hsp_to = move_h * hsp_max
+if has_control {
+	hsp_to = move_h * hsp_max
+}
 
 if has_control {
 	updateCoyoteTimer()
@@ -180,7 +182,9 @@ switch state {
         hsp_to = hsp_max * sign(x_to - x)
         if abs(x_to - x) < hsp_max {
             x = x_to
-            hps = 0
+            hsp = 0
+            instance_create_layer(0, 0, layer, oSequenceSysterSpirit)
+			state = PLAYERSTATE.FREE
         }
 		break
 	}

@@ -107,6 +107,7 @@
     {"name":"oSequencePickupLog","order":1,"path":"objects/oSequencePickupLog/oSequencePickupLog.yy",},
     {"name":"oSequenceRulaAppear01","order":10,"path":"objects/oSequenceRulaAppear01/oSequenceRulaAppear01.yy",},
     {"name":"oSequenceRulaAppear02","order":11,"path":"objects/oSequenceRulaAppear02/oSequenceRulaAppear02.yy",},
+    {"name":"oSequenceSysterSpirit","order":13,"path":"objects/oSequenceSysterSpirit/oSequenceSysterSpirit.yy",},
     {"name":"oSequenceTuffulAppear","order":3,"path":"objects/oSequenceTuffulAppear/oSequenceTuffulAppear.yy",},
     {"name":"oSFX","order":5,"path":"objects/oSFX/oSFX.yy",},
     {"name":"oStageManager","order":8,"path":"objects/oStageManager/oStageManager.yy",},

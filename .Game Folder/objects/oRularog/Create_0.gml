@@ -651,7 +651,7 @@ deadState = {
 	hsp: 3,
 	dir: 0,
 	syster_spirit_timer: make_timer(160),
-	spirit_byte_dropped: false,
+	syster_spirit_triggered: false,
 	screen_shaked: false,
 
 	step: function() {
@@ -668,8 +668,9 @@ deadState = {
 		if id.colliding_wall(id.x, id.y + 1) {
 			vsp = 0
 			id.sprite_index = sRulaDead
-			if !syster_spirit_timer.update() {
+			if !syster_spirit_triggered and !syster_spirit_timer.update() {
                 oMein.switch_to_sister_spirit()
+				syster_spirit_triggered = true
 			}
 		}
     },

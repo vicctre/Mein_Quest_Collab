@@ -248,6 +248,7 @@
     {"id":{"name":"oSequencePickupLog","path":"objects/oSequencePickupLog/oSequencePickupLog.yy",},},
     {"id":{"name":"oSequenceRulaAppear01","path":"objects/oSequenceRulaAppear01/oSequenceRulaAppear01.yy",},},
     {"id":{"name":"oSequenceRulaAppear02","path":"objects/oSequenceRulaAppear02/oSequenceRulaAppear02.yy",},},
+    {"id":{"name":"oSequenceSysterSpirit","path":"objects/oSequenceSysterSpirit/oSequenceSysterSpirit.yy",},},
     {"id":{"name":"oSequenceTuffulAppear","path":"objects/oSequenceTuffulAppear/oSequenceTuffulAppear.yy",},},
     {"id":{"name":"oSFX","path":"objects/oSFX/oSFX.yy",},},
     {"id":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},},
