@@ -41,6 +41,18 @@ function DefaultStagesData() {
 		W1_3: {
 			adv_logs: {
 			}
+		},
+		W2_1: {
+			adv_logs: {
+			}
+		},
+		W2_2: {
+			adv_logs: {
+			}
+		},
+		W2_3: {
+			adv_logs: {
+			}
 		}
 	}
 }
