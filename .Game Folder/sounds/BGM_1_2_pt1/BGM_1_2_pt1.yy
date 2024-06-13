@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"BGM_1_2_pt1.wav",
   "type":0,
-  "volume":0.38,
+  "volume":0.4,
 }

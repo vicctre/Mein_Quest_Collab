@@ -8,8 +8,8 @@
   "name":"oChantie_Attack",
   "overriddenProperties":[],
   "parent":{
-    "name":"Shante",
-    "path":"folders/Objects/Enemies/Small Enemies/Shante.yy",
+    "name":"Chantie",
+    "path":"folders/Objects/Enemies/Small Enemies/Chantie.yy",
   },
   "parentObjectId":{
     "name":"ENEMYATTACK",

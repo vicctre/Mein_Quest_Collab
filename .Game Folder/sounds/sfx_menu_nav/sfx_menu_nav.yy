@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sfx_menu_nav.wav",
   "type":0,
-  "volume":0.3,
+  "volume":0.18,
 }
