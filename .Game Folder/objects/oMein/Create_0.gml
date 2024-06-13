@@ -12,6 +12,7 @@ enum PLAYERSTATE {
 	ENTER_DOOR,
 	GRABBED,
 	THROWED,
+    SYSTER_SPIRIT,
 }
 
 global.player = id
@@ -571,6 +572,10 @@ function perform_attack(spr, xscale, dmg, one_frame=true) {
 		{sprite_index: spr, image_xscale: xscale, damage: dmg, one_frame: one_frame})
 	attack_performed = true
 	return inst
+}
+
+function switch_to_sister_spirit() {
+    state = PLAYERSTATE.SYSTER_SPIRIT
 }
 
 

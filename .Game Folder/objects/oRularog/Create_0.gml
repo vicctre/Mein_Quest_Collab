@@ -4,7 +4,7 @@ event_inherited()
 name = "Rularog"
 
 hp_max = 26 //26
-hp = 12
+hp = 1
 hp_phase2_amount =  12//11
 done_phase2_roar = false
 
@@ -650,7 +650,7 @@ deadState = {
 	grav: 0.2,
 	hsp: 3,
 	dir: 0,
-	spirit_byte_timer: make_timer(60),
+	syster_spirit_timer: make_timer(160),
 	spirit_byte_dropped: false,
 	screen_shaked: false,
 
@@ -668,10 +668,8 @@ deadState = {
 		if id.colliding_wall(id.x, id.y + 1) {
 			vsp = 0
 			id.sprite_index = sRulaDead
-			if !spirit_byte_dropped and !spirit_byte_timer.update() {
-				instance_create_layer(id.x, id.y, "objects", oSpiritByteBoss)
-				spirit_byte_dropped = true
-				oMusic.switch_music(global.msc_post_battle, true, 0)
+			if !syster_spirit_timer.update() {
+                oMein.switch_to_sister_spirit()
 			}
 		}
     },

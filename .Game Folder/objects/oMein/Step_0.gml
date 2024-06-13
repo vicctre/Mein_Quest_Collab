@@ -175,6 +175,15 @@ switch state {
 		}
 		break
 	}
+	case PLAYERSTATE.SYSTER_SPIRIT: {
+        var x_to = room_width * 0.5
+        hsp_to = hsp_max * sign(x_to - x)
+        if abs(x_to - x) < hsp_max {
+            x = x_to
+            hps = 0
+        }
+		break
+	}
 }
 
 checkFloatOnLog()
