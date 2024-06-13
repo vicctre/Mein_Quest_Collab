@@ -103,6 +103,7 @@ enum RulaJump {
 
 jumpState = {
     id: id,
+    after_fall_delay_timer: make_timer(25), // how long to stay headed jump direction
 	fast_fall_delay: make_timer(30),
 	fast_fall_sp: 12,//20 // how fast Rula falls on Mein
 	finish_vsp_hsp_ratio: 4,//3 // finish_vsp_hsp_ratio = vsp / hsp//auto jump height? 
@@ -114,13 +115,14 @@ jumpState = {
 	jump_height: 120, //140, // that's it, jump height
 	hsp_max: 6,  // how fast Rula moves during jump
                 // also affects jump curve if Mein is far away
-	last_fast_fall_delay_timer: make_timer(60), // Final jumps endlag 
-	prepare_timer: make_timer(50), //startup for jumps 
+	last_fast_fall_delay_timer: make_timer(60), // Final jumps endlag
+    prepare_time: 25, // used for prepare_timer between jumps
+    first_jump_prepare_time: 50, 
+	prepare_timer: make_timer(25), //startup for jumps 
 	pre_fast_fall_lift_height: 25, // slowly lift a bit before falling
 	reach_player_time: 30, // how fast Rula reaches the player during jump
                            // will be increased if Mein is far away
 	vsp_max: 10, //idk what this changes...
-	after_fall_delay_timer: make_timer(60), // how long to stay headed jump direction
 
 	state: RulaJump.prepare,
 	hsp: 0,
@@ -136,6 +138,7 @@ jumpState = {
 	switch_to_prepare: function() {
 		state = RulaJump.prepare
 		vsp = 0
+        prepare_timer.time = prepare_time
 		prepare_timer.reset()
 		fast_fall_delay.reset()
 		var dir = sign(oMein.x - id.x)
@@ -267,6 +270,7 @@ jumpState = {
 	onEnter: function() {
 		change_state = false
 		last_fast_fall_delay_timer.reset()
+        prepare_timer.time = first_jump_prepare_time
 		prepare_timer.reset()
 		jumps_left = jumps_total
 		state = RulaJump.prepare
