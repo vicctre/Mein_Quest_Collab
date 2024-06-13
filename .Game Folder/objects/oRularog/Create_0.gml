@@ -682,8 +682,9 @@ deadState = {
         // move him up a bit
         // like being pushed
         id.y -= 10
-		oPause.PauseWithTimer(pause_time)
 		instance_destroy(oRulaTongueTip)
+		instance_destroy(oRulaTongue)
+		oPause.PauseWithTimer(pause_time)
     },
 	checkChange: function() {
 		// there is no coming back from the dead
