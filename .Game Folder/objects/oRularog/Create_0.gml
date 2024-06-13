@@ -612,7 +612,6 @@ ultraRollState = {
 
 	checkChange: function() {
 		if change_state {
-            return id.rollState
 			return id.idleState
 		}
     },
