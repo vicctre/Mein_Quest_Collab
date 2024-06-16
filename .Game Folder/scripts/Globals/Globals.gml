@@ -54,7 +54,7 @@ function game_reset_globals() {
 		global.coins = 50
 		global.player_invincible = false
 		global.skip_logos = true
-		global.dev_level_goto = W1_2_part2
+		global.dev_level_goto = W1_3BOSS
 		// global.rula_start_state = "jumpState"
 		//global.autoscroller_skip_log_intro = true
 	}

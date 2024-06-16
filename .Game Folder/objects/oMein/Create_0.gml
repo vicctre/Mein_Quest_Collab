@@ -242,6 +242,7 @@ function check_spikes() {
 function Animate() {
 	image_speed = 1
 	switch state {
+        case PLAYERSTATE.SYSTER_SPIRIT:
 		case PLAYERSTATE.FREE: {
 			if animate_crouch_transition(sPlayer, -1) {
 				break	

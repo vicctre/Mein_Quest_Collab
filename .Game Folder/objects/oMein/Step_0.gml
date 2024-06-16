@@ -183,7 +183,8 @@ switch state {
         if abs(x_to - x) < hsp_max {
             x = x_to
             hsp = 0
-            instance_create_layer(0, 0, layer, oSequenceSysterSpirit)
+			hsp_to = 0
+            instance_create_layer(x, bbox_bottom, layer, oSequenceSysterSpirit)
 			state = PLAYERSTATE.FREE
         }
 		break
