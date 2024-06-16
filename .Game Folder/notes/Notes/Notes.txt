@@ -9,3 +9,61 @@ Bugs:
 
 Fixes:
 * Resolution-related picture disruption
+
+
+Todo#2
+
+Menu 
+    After the player beats Rularog, watch’s the cutscenes, and views the Adv Logs, give them a “pop up” message on the “stage select” screen telling them that they get to play Stage 2-1
+    Add “sUnlock” to menu screen upon beating a stage
+
+Enemies 
+    when enemies are defeated, we want them to “glow” as opposed to changing color completely and turning yellow for a few frames
+    Make color of yellow slightly lighter
+
+Rularog 
+    When rolling into a wall, give him a little bounce off, similar to Tuffull hitting a wall
+    Add SFX_Hitwall when Rula makes contact with the wall
+    When Rula is defeated, give the player 160 frames, before taking control away, and have Mein automatically walk to the center of the arena. Then have “seqSS_Awaken01” play
+
+1-3 (Sequences) 
+    When Rularog is defeated, have Mein walk to the center of the room automatically. Then have “seqSS_Awaken01” play.
+    Have Mein and Sister Spirit do a victory spin together with new “BGM_BossCLEAR01” song playing. Mein will still play a random victory animation.
+
+Mein: 
+    When Mein picks up a food items or heals from Bytes, having him glow a light bluish green (#A9F8BC)
+    When Mein gains additional HP, have him glow a light green (#FCFFB6)
+    Increase Meins grounded attack size horizontally (adjust Chanties attack to  still be larger)
+
+2-1 
+    Add 2-1 stage select button to the stage select menu. It will only appear after the player has cleared the boss
+
+ToDo#3
+Game functionality 
+    finally figure out what is causing the screen tearing and stretching of pixels (the resolution stuff)
+    Add the “sUnlock” stage to the menus
+    When enemies take damage, have the “sHit” effect sprite show up
+
+Sequences 
+    Add SFX to play during sequences in the code
+
+Menus 
+    Add all the functionalities to the other options
+    adventure logs; should allow you to look at every log you’ve collected. Each log will be in columns of 4. Any logs not collected will be a black silhouette. You can hover over them, but selecting them will cause the “sfx_NA” to play.
+    Options; will have things such as will fill out later lol
+    Adjust cursor to work better with menus
+
+Mein 
+    Add pogo attack and mechanics for stage 2-1, and Mein will have access to this if he revisits older stages as well (check doc for details)
+
+2-1 
+    adding the wave attack to the stage (added in part 3 and part 4)
+
+Tre stuff 
+    Finish Sister Spirit Temple
+    write Adventure logs for Rularog and Naturina ☑️
+    Figure out the cutscene for the end of Demo 2
+    Create a “Thx for playing” card at the end of demo 2
+    Make SFX for SS decent, appearing, unlocking a stage
+    Begin play testing 2-1
+    Finish tiles for 2-2 and 2-3
