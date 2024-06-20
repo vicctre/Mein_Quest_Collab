@@ -22,9 +22,9 @@ Enemies
     Make color of yellow slightly lighter
 
 Rularog 
-    When rolling into a wall, give him a little bounce off, similar to Tuffull hitting a wall
+    // When rolling into a wall, give him a little bounce off, similar to Tuffull hitting a wall
     Add SFX_Hitwall when Rula makes contact with the wall
-    When Rula is defeated, give the player 160 frames, before taking control away, and have Mein automatically walk to the center of the arena. Then have “seqSS_Awaken01” play
+    // When Rula is defeated, give the player 160 frames, before taking control away, and have Mein automatically walk to the center of the arena. Then have “seqSS_Awaken01” play
 
 1-3 (Sequences) 
     When Rularog is defeated, have Mein walk to the center of the room automatically. Then have “seqSS_Awaken01” play.

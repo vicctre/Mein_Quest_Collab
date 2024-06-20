@@ -4,7 +4,7 @@ event_inherited()
 name = "Rularog"
 
 hp_max = 26 //26
-hp = 1
+hp = hp_max
 hp_phase2_amount =  12//11
 done_phase2_roar = false
 
@@ -63,17 +63,18 @@ walkState = {
     sp: 1.8, //2
     dir: image_xscale,
 	change_state: false,
+    prepare_to_tongue_attack: false,    // go to the closest wall instead of farest
+                                        // used by jump state to get close enough to wall
+                                        // before tongue attack
+                                        // not in use currently
 
 	step: function() {
-        with id {
-            if place_meeting(x + other.dir, y, oWall) {
-                other.dir = -other.dir
-				image_xscale = other.dir
-				other.change_state = true
-            }
-			var sp = other.sp * other.dir
-			scr_move_coord_contact_obj(sp, 0, oWall)
+        if id.colliding_wall(id.x + dir, id.y) {
+            dir = -dir
+            id.image_xscale = dir
+            change_state = true
         }
+        id.move(sp * dir, 0)
     },
 	
 	onExit: function() {
@@ -81,12 +82,19 @@ walkState = {
     },
 	
 	onEnter: function() {
-		dir = id.setDir()
+        dir = id.setDir()
+        if prepare_to_tongue_attack {
+            dir = id.setDir(-dir)
+        }
         id.sprite_index = sRulaWalk
     },
 	
 	checkChange: function() {
         if change_state {
+            if prepare_to_tongue_attack {
+                prepare_to_tongue_attack = false
+                return id.tongueChargeState
+            }
 			return id.checkStateChangePhase2() ?? id.jumpState
 		}
 		return undefined
@@ -122,8 +130,8 @@ jumpState = {
 	pre_fast_fall_lift_height: 25, // slowly lift a bit before falling
 	reach_player_time: 30, // how fast Rula reaches the player during jump
                            // will be increased if Mein is far away
-	vsp_max: 10, //idk what this changes...
-
+	vsp_max: 10, // idk what this changes... Well, Vic if you don't know, you can always ask Gav, right? I mean, we're a team, bro
+                 // this is literally maximum fall speed
 	state: RulaJump.prepare,
 	hsp: 0,
 	grav: 0.6,
@@ -134,6 +142,8 @@ jumpState = {
 	jumps_left: 3,
 	change_state: false,
     pre_fast_fall_lift: 0,
+
+    next_rula_state: undefined, // used to override next state
 
 	switch_to_prepare: function() {
 		state = RulaJump.prepare
@@ -153,9 +163,13 @@ jumpState = {
 		var dist = min(abs(dist_to_left), abs(dist_to_right))
 		
 		if dist < finish_edge_dist_treshold {
+            // switch to walk state to come closer to the wall
+            id.walkState.prepare_to_tongue_attack = true
+            next_rula_state = id.walkState
 			change_state = true
 			return;
 		}
+        // switch to finish substate
 		state = RulaJump.finish
 		var dir = dist == dist_to_right ? 1 : -1
 		vsp = -sqrt(0.5 * dist * finish_gr * finish_vsp_hsp_ratio)
@@ -255,12 +269,10 @@ jumpState = {
 				}
 				id.sprite_index = sRulaJumpUp
 				vsp = approach(vsp, vsp_max, finish_gr)
-				with id {
-					scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
-					if place_meeting(x, y + 1, oWall) {
-						other.change_state = true
-					}
-				}
+                id.move(hsp, vsp)
+                if id.colliding_wall(id.x, id.y + 1) {
+                    change_state = true
+                }
 		    break
 		}
 	},
@@ -280,8 +292,11 @@ jumpState = {
     },
 	
 	checkChange: function() {
+		var next_state = next_rula_state ?? id.tongueChargeState
+		// reset next state overriding
+		next_rula_state = undefined
         if change_state {
-			return id.checkStateChangePhase2() ?? id.tongueChargeState
+			return id.checkStateChangePhase2() ?? next_state
 		}
 		return undefined
     },
@@ -728,8 +743,8 @@ function ifPhase2(state) {
 	return isPhase2() ? state : id.idleState
 }
 
-function setDir() {
-	image_xscale = x > room_center_x ? -1 : 1
+function setDir(dir=undefined) {
+	image_xscale = dir ?? (x > room_center_x ? -1 : 1)
 	return image_xscale
 }
 
