@@ -31,7 +31,7 @@ Rularog
     Have Mein and Sister Spirit do a victory spin together with new “BGM_BossCLEAR01” song playing. Mein will still play a random victory animation.
 
 Mein: 
-    When Mein picks up a food items or heals from Bytes, having him glow a light bluish green (#A9F8BC)
+    When Mein picks up a food items or heals from Bytes, having him glow a light bluish green (#A9F8BC) (Gav: also look into making all glowing effects a universal system)
     When Mein gains additional HP, have him glow a light green (#FCFFB6)
     Increase Meins grounded attack size horizontally (adjust Chanties attack to  still be larger)
 
