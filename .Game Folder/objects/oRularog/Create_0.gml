@@ -525,10 +525,12 @@ ultraRollState = {
 	hsp: 0,
 	vsp: 0,
 	accel: 0.15,  //how fast the roll meets max speed and going around the walls 
-	roll_sp: 5.5,//Ultra roll speed 
+	roll_sp: 5.5, //Ultra roll speed
 	roll_delay_timer: make_timer(70),//startup of 3rd roll
     stun_timer: make_timer(90),        // how long hes stunned 
 	after_roll_timer: make_timer(60),  // how long he stays idle after stun
+    after_roll_bounce_sp: 5.5,
+    after_roll_bounce_decrease: 0.8, // the smaller this number the faster Rula stops
 	ultra_roll_sfx: SFX_Rularog_Roar,
 	wall_hits: 0,
 	ultra_roll_done: false,
@@ -562,12 +564,16 @@ ultraRollState = {
                 ultra_roll_done = true
                 id.sprite_index = sRulaKOed
                 id.rotation = 0
+                // bounce back a bit
+                hsp = after_roll_bounce_sp * -hdirprev
             }
         }
     },
 
     wait_after_roll: function() {
         if stun_timer.update() {
+            id.move(hsp, 0)
+            hsp *= after_roll_bounce_decrease
             return
         }
 		sprite_index = sRulaIdle
