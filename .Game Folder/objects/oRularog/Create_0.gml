@@ -3,7 +3,7 @@ event_inherited()
 
 name = "Rularog"
 
-hp_max = 26 //26
+hp_max = 13 //26
 hp = hp_max
 hp_phase2_amount =  12//11
 done_phase2_roar = false
@@ -246,16 +246,14 @@ jumpState = {
                 } else {
 					vsp = fast_fall_sp
                 }
-				with id {
-					scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
-					if place_meeting(x, y + 1, oWall) {
-						audio_play_sound(global.sfx_rula_land, 3, false)
-						other.state = RulaJump.after_fall_delay
-						id.sprite_index = sRulaJumpPrep
-						oCamera.start_shaking() // how much the screen shakes when Rula jumps
-						other.emit_fall_dust()
-					}
-				}
+                id.move(hsp, vsp)
+                if id.colliding_wall(id.x, id.y + 1) {
+                    audio_play_sound(global.sfx_rula_land, 3, false)
+                    state = RulaJump.after_fall_delay
+                    id.sprite_index = sRulaJumpPrep
+                    oCamera.start_shaking() // how much the screen shakes when Rula jumps
+                    emit_fall_dust()
+                }
 		    break
 			case RulaJump.after_fall_delay:
 				if !after_fall_delay_timer.update() {
@@ -271,6 +269,7 @@ jumpState = {
 				vsp = approach(vsp, vsp_max, finish_gr)
                 id.move(hsp, vsp)
                 if id.colliding_wall(id.x, id.y + 1) {
+                    audio_play_sound(global.sfx_rula_land, 3, false)
                     change_state = true
                 }
 		    break
@@ -463,12 +462,13 @@ rollState = {
 	wall_hits: 0,
 	ultra_wall_hits_treshold: 2,
 
-	roll: function() {
+    roll: function() {
 		id.rotation -= hsp * rotation_gain
 		id.move(hsp * !roll_delay_timer.update(), vsp)
 		if id.colliding_wall(id.x, id.y + 1) {
             bounce_jump_sp = approach(bounce_jump_sp, 0, bounce_dissipation)
 			vsp = bounce_jump_sp
+            // audio_play_sound(global.sfx_rula_hitwall, 3, false)
 		}
 		if id.colliding_wall(id.x + dir, id.y) {
 			hsp = 0
@@ -479,6 +479,7 @@ rollState = {
 			vsp = bounce_jump_sp
 			oCamera.start_shaking()
             roll_delay_timer.reset()
+            audio_play_sound(global.sfx_rula_hitwall, 3, false)
 		}
 	},
 
@@ -491,6 +492,7 @@ rollState = {
             if bounce_jump_sp == 0 {
                 change_state = true
             }
+            // audio_play_sound(global.sfx_rula_land, 3, false)
         }
     },
 
@@ -582,6 +584,7 @@ ultraRollState = {
                 // bounce back a bit
                 hsp = after_roll_bounce_sp * -hdirprev
             }
+            audio_play_sound(global.sfx_rula_hitwall, 3, false)
         }
     },
 
