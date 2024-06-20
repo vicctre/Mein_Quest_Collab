@@ -572,6 +572,7 @@ ultraRollState = {
 
     wait_after_roll: function() {
         if stun_timer.update() {
+			// bounce
             id.move(hsp, 0)
             hsp *= after_roll_bounce_decrease
             return
