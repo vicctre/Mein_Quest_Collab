@@ -158,7 +158,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -305,6 +305,7 @@
     {"id":{"name":"W2_2_part1","path":"rooms/W2_2_part1/W2_2_part1.yy",},},
     {"id":{"name":"W2_2_part2","path":"rooms/W2_2_part2/W2_2_part2.yy",},},
     {"id":{"name":"W2_2_part3","path":"rooms/W2_2_part3/W2_2_part3.yy",},},
+    {"id":{"name":"W2_2_part4","path":"rooms/W2_2_part4/W2_2_part4.yy",},},
     {"id":{"name":"W2_unused_area","path":"rooms/W2_unused_area/W2_unused_area.yy",},},
     {"id":{"name":"__scr_ssave_3rdparty_sphinx","path":"scripts/__scr_ssave_3rdparty_sphinx/__scr_ssave_3rdparty_sphinx.yy",},},
     {"id":{"name":"__scr_ssave_header","path":"scripts/__scr_ssave_header/__scr_ssave_header.yy",},},
@@ -364,6 +365,7 @@
     {"id":{"name":"seqRularog_Intro01","path":"sequences/seqRularog_Intro01/seqRularog_Intro01.yy",},},
     {"id":{"name":"seqRularog_Intro02","path":"sequences/seqRularog_Intro02/seqRularog_Intro02.yy",},},
     {"id":{"name":"seqSS_Awaken01","path":"sequences/seqSS_Awaken01/seqSS_Awaken01.yy",},},
+    {"id":{"name":"seqSS_Awaken01V1","path":"sequences/seqSS_Awaken01V1/seqSS_Awaken01V1.yy",},},
     {"id":{"name":"seqSS_Victory01","path":"sequences/seqSS_Victory01/seqSS_Victory01.yy",},},
     {"id":{"name":"seqTuffullIntro_T","path":"sequences/seqTuffullIntro_T/seqTuffullIntro_T.yy",},},
     {"id":{"name":"seqTuffullIntro_T7","path":"sequences/seqTuffullIntro_T7/seqTuffullIntro_T7.yy",},},
@@ -683,6 +685,7 @@
     {"id":{"name":"W1_2_Tileset","path":"sprites/W1_2_Tileset/W1_2_Tileset.yy",},},
     {"id":{"name":"W1_3_Tileset","path":"sprites/W1_3_Tileset/W1_3_Tileset.yy",},},
     {"id":{"name":"W2_1_Tileset","path":"sprites/W2_1_Tileset/W2_1_Tileset.yy",},},
+    {"id":{"name":"W2_2_Tileset_2","path":"sprites/W2_2_Tileset_2/W2_2_Tileset_2.yy",},},
     {"id":{"name":"W2_2_Tileset","path":"sprites/W2_2_Tileset/W2_2_Tileset.yy",},},
     {"id":{"name":"sTree_Tower_BG","path":"tilesets/sTree_Tower_BG/sTree_Tower_BG.yy",},},
     {"id":{"name":"sTree_Tower_Inside","path":"tilesets/sTree_Tower_Inside/sTree_Tower_Inside.yy",},},
@@ -699,6 +702,7 @@
     {"id":{"name":"W1_3","path":"tilesets/W1_3/W1_3.yy",},},
     {"id":{"name":"W2_1","path":"tilesets/W2_1/W2_1.yy",},},
     {"id":{"name":"W2_2","path":"tilesets/W2_2/W2_2.yy",},},
+    {"id":{"name":"W2_3","path":"tilesets/W2_3/W2_3.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
@@ -738,6 +742,7 @@
     {"roomId":{"name":"W2_2_part1","path":"rooms/W2_2_part1/W2_2_part1.yy",},},
     {"roomId":{"name":"W2_2_part2","path":"rooms/W2_2_part2/W2_2_part2.yy",},},
     {"roomId":{"name":"W2_2_part3","path":"rooms/W2_2_part3/W2_2_part3.yy",},},
+    {"roomId":{"name":"W2_2_part4","path":"rooms/W2_2_part4/W2_2_part4.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
