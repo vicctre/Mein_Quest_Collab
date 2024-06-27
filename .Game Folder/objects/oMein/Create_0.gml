@@ -38,6 +38,7 @@ dir = 0
 move_h = 0
 idle_time = 0
 idle_delay = 400 //time before idle animation plays
+rotation = 0
 
 function choose_idle_animation() {
 	currentIdleAnimation = choose(Idle02, Idle03, Idle04, Idle05)
@@ -91,9 +92,9 @@ sprint_last_pressed_dir = 0
 sprint_add_sp_gain = 0.5
 
 invincibility_time = global.player_invincibilty_time
-invincibility_timer = 0
 invincibility_timer_no_flashing = 0
-invincibility_blinking_gain = 14
+invincibility_timer = 0
+hit_blinking_gain = 14
 
 death_animation_started = false
 
@@ -367,19 +368,6 @@ function animate_update_xscale() {
 	if hsp != 0 {
 		image_xscale = sign(hsp)
 	}
-}
-
-function draw_invincibility_blinking() {
-	var alpha = 0.5 - lengthdir_x(
-		0.5, invincibility_blinking_gain * invincibility_timer)
-	gpu_set_fog(true, global.player_damage_blinking_color, 0, 0)
-	draw_sprite_ext(
-		sprite_index,
-		image_index,
-		x, y,
-		image_xscale, image_yscale,
-		0, c_white, alpha)
-	gpu_set_fog(false, global.player_damage_blinking_color, 0, 0)
 }
 
 function aeral_attack_finish() {

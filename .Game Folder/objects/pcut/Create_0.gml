@@ -1,9 +1,11 @@
-invincible = false;
+invincible = false
+hit_blinking_timer = make_timer(10, false)
+hit_blinking_gain = 180 / hit_blinking_timer.time
+rotation = 0
 
 function set_hit(damage=0) {
 	if (!invincible) {
 		hp -= damage
-		flash = 6;
 		if (object_index == oTuffull)
 			audio_play_sound(SFX_Boss_Damage, 6, false);
 		if (hp > 0) {
@@ -12,6 +14,8 @@ function set_hit(damage=0) {
 		} else {
 			state = ENEMYSTATE.DEAD
 		}
+
+        hit_blinking_timer.reset()
 	
 		//
 		hit_direction = sign(x-global.player.x);

@@ -11,7 +11,7 @@ flash_hp_amount = 5
 
 function set_hit(damage=0) {
 	hp -= damage
-	flash = 6;
+    hit_blinking_timer.reset()
 	audio_play_sound(SFX_Boss_Damage, 6, false);
 	hit_direction = sign(x-global.player.x);
 }

@@ -14,3 +14,6 @@ if global.voleyball {
 		}
 	}
 }
+
+// need for blinking function
+rotation = image_angle

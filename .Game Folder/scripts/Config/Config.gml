@@ -18,6 +18,8 @@ heal_coins_number = 100
 death_transition_delay_time = 140
 death_pause_time = 60
 
+enemy_hit_blinking_color = #FFFF65
+
 heal_amount_large = 3
 heal_amount_small = 1
 

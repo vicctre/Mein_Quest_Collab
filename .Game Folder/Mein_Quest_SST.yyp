@@ -158,7 +158,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.0.137",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -321,6 +321,7 @@
     {"id":{"name":"BGM","path":"scripts/BGM/BGM.yy",},},
     {"id":{"name":"camera","path":"scripts/camera/camera.yy",},},
     {"id":{"name":"Checkpoint","path":"scripts/Checkpoint/Checkpoint.yy",},},
+    {"id":{"name":"common","path":"scripts/common/common.yy",},},
     {"id":{"name":"Config","path":"scripts/Config/Config.yy",},},
     {"id":{"name":"debug","path":"scripts/debug/debug.yy",},},
     {"id":{"name":"draw_text_outlined","path":"scripts/draw_text_outlined/draw_text_outlined.yy",},},

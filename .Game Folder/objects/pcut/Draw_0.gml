@@ -1,2 +1,7 @@
+draw_sprite_ext(sprite_index, image_index, x, y,
+    image_xscale, image_yscale, rotation, c_white, 1)
 
-draw_hit_flashing()
+if hit_blinking_timer.update() {
+    draw_hit_blinking(hit_blinking_timer.timer * hit_blinking_gain,
+                      global.enemy_hit_blinking_color)
+}
