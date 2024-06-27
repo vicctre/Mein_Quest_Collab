@@ -214,7 +214,7 @@
     {"name":"sRulaTongueTip","order":1,"path":"sprites/sRulaTongueTip/sRulaTongueTip.yy",},
     {"name":"sRulaWalk","order":2,"path":"sprites/sRulaWalk/sRulaWalk.yy",},
     {"name":"sSpiritByte2","order":1,"path":"sprites/sSpiritByte2/sSpiritByte2.yy",},
-    {"name":"sStageLockIcon_1","order":5,"path":"sprites/sStageLockIcon_1/sStageLockIcon_1.yy",},
+    {"name":"sStageLockIcon","order":5,"path":"sprites/sStageLockIcon/sStageLockIcon.yy",},
     {"name":"sThinBG","order":4,"path":"sprites/sThinBG/sThinBG.yy",},
     {"name":"sThinBG2","order":1,"path":"sprites/sThinBG2/sThinBG2.yy",},
     {"name":"sThinBG3","order":3,"path":"sprites/sThinBG3/sThinBG3.yy",},

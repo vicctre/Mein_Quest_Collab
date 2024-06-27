@@ -32,6 +32,7 @@ player = oMein
 rula_start_state = undefined
 restart_level_on_death = true
 skip_logos = false
+stage_select_show_unlock_animation = false
 
 function level_reset_globals() {
 	global.coins = 0

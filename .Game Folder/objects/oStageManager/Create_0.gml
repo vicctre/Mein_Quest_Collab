@@ -205,6 +205,7 @@ function UnlockStage(stage) {
 	if (real(stage) <= last_unlocked_stage) {
 		return;	
 	}
+    global.stage_select_show_unlock_animation = true
 	last_unlocked_stage = real(stage)
 	save.set("last_unlocked_stage", last_unlocked_stage)
 	save.save()

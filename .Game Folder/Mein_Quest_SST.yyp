@@ -630,7 +630,7 @@
     {"id":{"name":"sStage2_1Icon","path":"sprites/sStage2_1Icon/sStage2_1Icon.yy",},},
     {"id":{"name":"sStageIconAdvLog","path":"sprites/sStageIconAdvLog/sStageIconAdvLog.yy",},},
     {"id":{"name":"sStageIconAdvLogLocked","path":"sprites/sStageIconAdvLogLocked/sStageIconAdvLogLocked.yy",},},
-    {"id":{"name":"sStageLockIcon_1","path":"sprites/sStageLockIcon_1/sStageLockIcon_1.yy",},},
+    {"id":{"name":"sStageLockIcon","path":"sprites/sStageLockIcon/sStageLockIcon.yy",},},
     {"id":{"name":"sStageUnlock","path":"sprites/sStageUnlock/sStageUnlock.yy",},},
     {"id":{"name":"sThinBG","path":"sprites/sThinBG/sThinBG.yy",},},
     {"id":{"name":"sThinBG2","path":"sprites/sThinBG2/sThinBG2.yy",},},

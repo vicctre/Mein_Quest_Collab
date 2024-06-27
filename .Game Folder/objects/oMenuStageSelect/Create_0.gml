@@ -27,7 +27,9 @@ function PerformGoBack() {
 	menu_control = false
 }
 
-function StageStarter(stage, title, spr, stage_locked=false) constructor {
+function StageButton(ind, stage, title, spr, stage_locked=false) constructor {
+    self.parent = oMenuStageSelect
+    self.ind = ind
 	self.stage = stage
 	self.title = title
 	self.sprite = spr
@@ -45,6 +47,34 @@ function StageStarter(stage, title, spr, stage_locked=false) constructor {
 		global.player_hp = global.player_hp_max
 		game_reset_globals()
 	}
+
+    function getx() {
+        return parent.menu_x
+    }
+
+    function gety() {
+        return parent.menu_y + (parent.menu_itemheight * (ind * parent.menu_item_distance_mult))
+    }
+
+    function get_text_x() {
+        return getx() - parent.icon_half_width * 0.9
+    }
+    
+    function draw() {
+        // draw icon
+        if sprite {
+            draw_sprite_ext(sprite, 0, getx(), gety(),
+                parent.icon_scale, parent.icon_scale,
+                0, c_white, 1)
+        }
+        // draw text in icon's left small window
+        var col = parent.menu_cursor == ind ? c_white : c_grey
+        parent.DrawTextOutlined(title, get_text_x(), gety(), col)
+    }
+
+    function play_unlock_animation() {
+
+    }
 }
 
 function UpdateCursorTargetPos() {
@@ -54,10 +84,10 @@ function UpdateCursorTargetPos() {
 
 function StageSelectmenu() {
 	var menu = [
-		new oMenu.StageStarter(W1_1_part1, "1-1", sStage1_1Icon),
-		new oMenu.StageStarter(W1_2_part1, "1-2", sStage1_2Icon),
-		new oMenu.StageStarter(W1_3_part1, "1-3", sStage1_3Icon),
-		//new oMenu.StageStarter(W1_3_part1, "2-1", sStageLockIcon, true),
+		new StageButton(0, W1_1_part1, "1-1", sStage1_1Icon),
+		new StageButton(1, W1_2_part1, "1-2", sStage1_2Icon),
+		new StageButton(2, W1_3_part1, "1-3", sStage1_3Icon),
+		// new StageButton(W1_3_part1, "2-1", sStageLockIcon, true),
 	]
 	
 	for(var i=0; i<array_length(menu); i++) {
@@ -65,8 +95,19 @@ function StageSelectmenu() {
 		if !oStageManager.IsStageUnlocked(btn.stage) {
 			btn.sprite = sStageLockIcon
 			btn.stage_locked = true
+            // trigger unlock animation for previous button
+            if global.stage_select_show_unlock_animation {
+                global.stage_select_show_unlock_animation = false
+                menu[i-1].play_unlock_animation()
+            }
 		}
 	}
+    
+    goback_button = new StageButton(3, noone, "Back")
+    goback_button.action = function() {
+        instance_destroy(oMenuStageSelect)
+        instance_create_layer(0, 0, "Instances", oMenu)
+    }
 	array_push(menu, goback_button)
 	return menu
 }
@@ -109,16 +150,6 @@ function DrawAdvLogs(stage, icon_x, icon_y, animate) {
 						icon_scale, icon_scale,
 						0, c_white, 1)
 	}
-}
-
-goback_button = {
-	title: "Back",
-	sprite: undefined,
-	stage: undefined,
-	action: function() {
-		instance_destroy(oMenuStageSelect)
-		instance_create_layer(0, 0, "Instances", oMenu)
-	},
 }
 
 menu = StageSelectmenu()
