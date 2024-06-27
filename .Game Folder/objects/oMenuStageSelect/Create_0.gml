@@ -73,7 +73,11 @@ function StageButton(ind, stage, title, spr, stage_locked=false) constructor {
     }
 
     function play_unlock_animation() {
-
+        with instance_create_layer(getx(), gety(), "UnlockAnimations", oUnlockStageAnimation) {
+            follow = other
+            image_xscale = other.parent.icon_scale
+            image_yscale = other.parent.icon_scale
+        }
     }
 }
 

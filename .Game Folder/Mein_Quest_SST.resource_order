@@ -111,6 +111,7 @@
     {"name":"oSequenceTuffulAppear","order":3,"path":"objects/oSequenceTuffulAppear/oSequenceTuffulAppear.yy",},
     {"name":"oSFX","order":5,"path":"objects/oSFX/oSFX.yy",},
     {"name":"oStageManager","order":8,"path":"objects/oStageManager/oStageManager.yy",},
+    {"name":"oUnlockStageAnimation","order":1,"path":"objects/oUnlockStageAnimation/oUnlockStageAnimation.yy",},
     {"name":"oVicLogo","order":4,"path":"objects/oVicLogo/oVicLogo.yy",},
     {"name":"rmAdventureLogsScreen","order":5,"path":"rooms/rmAdventureLogsScreen/rmAdventureLogsScreen.yy",},
     {"name":"rmDNS_Logo","order":1,"path":"rooms/rmDNS_Logo/rmDNS_Logo.yy",},
