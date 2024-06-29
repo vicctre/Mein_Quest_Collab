@@ -158,7 +158,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -307,6 +307,7 @@
     {"id":{"name":"W2_2_part2","path":"rooms/W2_2_part2/W2_2_part2.yy",},},
     {"id":{"name":"W2_2_part3","path":"rooms/W2_2_part3/W2_2_part3.yy",},},
     {"id":{"name":"W2_2_part4","path":"rooms/W2_2_part4/W2_2_part4.yy",},},
+    {"id":{"name":"W2_2_part5","path":"rooms/W2_2_part5/W2_2_part5.yy",},},
     {"id":{"name":"W2_unused_area","path":"rooms/W2_unused_area/W2_unused_area.yy",},},
     {"id":{"name":"__scr_ssave_3rdparty_sphinx","path":"scripts/__scr_ssave_3rdparty_sphinx/__scr_ssave_3rdparty_sphinx.yy",},},
     {"id":{"name":"__scr_ssave_header","path":"scripts/__scr_ssave_header/__scr_ssave_header.yy",},},
@@ -745,6 +746,7 @@
     {"roomId":{"name":"W2_2_part2","path":"rooms/W2_2_part2/W2_2_part2.yy",},},
     {"roomId":{"name":"W2_2_part3","path":"rooms/W2_2_part3/W2_2_part3.yy",},},
     {"roomId":{"name":"W2_2_part4","path":"rooms/W2_2_part4/W2_2_part4.yy",},},
+    {"roomId":{"name":"W2_2_part5","path":"rooms/W2_2_part5/W2_2_part5.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

@@ -129,6 +129,7 @@
     {"name":"W2_2_part2","order":2,"path":"rooms/W2_2_part2/W2_2_part2.yy",},
     {"name":"W2_2_part3","order":3,"path":"rooms/W2_2_part3/W2_2_part3.yy",},
     {"name":"W2_2_part4","order":4,"path":"rooms/W2_2_part4/W2_2_part4.yy",},
+    {"name":"W2_2_part5","order":5,"path":"rooms/W2_2_part5/W2_2_part5.yy",},
     {"name":"common","order":1,"path":"scripts/common/common.yy",},
     {"name":"utils","order":1,"path":"scripts/utils/utils.yy",},
     {"name":"seqDNSLogo","order":1,"path":"sequences/seqDNSLogo/seqDNSLogo.yy",},
