@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Movement",
-    "path":"folders/Sprites/Mein Sprites/Movement.yy",
+    "name":"Basic Functions",
+    "path":"folders/Sprites/Mein Sprites/Basic Functions.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

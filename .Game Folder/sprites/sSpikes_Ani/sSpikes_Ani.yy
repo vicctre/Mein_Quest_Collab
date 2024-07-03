@@ -68,8 +68,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Hazards",
-    "path":"folders/Sprites/Hazards.yy",
+    "name":"World 1",
+    "path":"folders/Sprites/Hazards/World 1.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

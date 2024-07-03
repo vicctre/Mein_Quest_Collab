@@ -33,8 +33,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Movement",
-    "path":"folders/Sprites/Mein Sprites/Movement.yy",
+    "name":"Log stuff",
+    "path":"folders/Sprites/Mein Sprites/Other Animations/Log stuff.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

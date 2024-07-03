@@ -38,8 +38,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Not Currently Used",
-    "path":"folders/Sprites/Mein Sprites/Not Currently Used.yy",
+    "name":"Other Animations",
+    "path":"folders/Sprites/Mein Sprites/Other Animations.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

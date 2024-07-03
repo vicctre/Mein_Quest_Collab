@@ -34,8 +34,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Not Currently Used",
-    "path":"folders/Sprites/Mein Sprites/Not Currently Used.yy",
+    "name":"Cutscenes-Exp",
+    "path":"folders/Sprites/Mein Sprites/Other Animations/Cutscenes-Exp.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
