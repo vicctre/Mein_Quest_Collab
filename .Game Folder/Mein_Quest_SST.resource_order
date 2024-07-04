@@ -203,6 +203,7 @@
     {"name":"sGeyser_Ground_Prep","order":2,"path":"sprites/sGeyser_Ground_Prep/sGeyser_Ground_Prep.yy",},
     {"name":"sGeyser_Ground","order":1,"path":"sprites/sGeyser_Ground/sGeyser_Ground.yy",},
     {"name":"sGeyser_Up","order":3,"path":"sprites/sGeyser_Up/sGeyser_Up.yy",},
+    {"name":"sHurtBox","order":17,"path":"sprites/sHurtBox/sHurtBox.yy",},
     {"name":"sMein_PickUp","order":5,"path":"sprites/sMein_PickUp/sMein_PickUp.yy",},
     {"name":"sMeinLogRide_2","order":3,"path":"sprites/sMeinLogRide_2/sMeinLogRide_2.yy",},
     {"name":"sMeinLogRide","order":1,"path":"sprites/sMeinLogRide/sMeinLogRide.yy",},

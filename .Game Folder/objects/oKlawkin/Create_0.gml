@@ -37,19 +37,30 @@ attackSidesState = {
     trigger_xdist: 50,
     trigger_ydist: 30,
     finished: false,
+	attack_relx: 26,
+	attack_width: 30,
+	attack_height: 40,
+    attack_frame: 6,
 
     checkTriggered: function() {
         var ydist = abs(id.y - global.player.y)
         var xdist = abs(id.x - global.player.x)
         return (ydist < trigger_ydist) and (xdist < trigger_xdist)
     },
+    attack: function() {
+        create_enemy_attack(id.x+attack_relx, id.y, attack_width, attack_height)
+        create_enemy_attack(id.x-attack_relx, id.y, attack_width, attack_height)
+    },
 	step: function() {
-        if id.isAnimationEnd() {
-            if id.sprite_index == sKlawkin_Attack {
-                // attack
-                finished = true
+        if id.sprite_index != sKlawkin_Attack {
+            if id.isAnimationEnd() {
+                id.sprite_index = sKlawkin_Attack
             }
-            id.sprite_index = sKlawkin_Attack
+        } else {
+            if id.isOnFrame(attack_frame) {
+                attack()
+            }
+            finished = id.isAnimationEnd()
         }
     },
 	onExit: function() {},
@@ -66,28 +77,38 @@ attackSidesState = {
 attackUpState = {
     id: id,
     trigger_xdist: 30,
-    trigger_ydist: 100,
+    trigger_ydist: 60,
     finished: false,
+	attack_rely: -20,
+	attack_width: 40,
+	attack_height: 30,
+    attack_frame: 6,
 
     checkTriggered: function() {
         var ydist = id.y - global.player.y
         var xdist = abs(id.x - global.player.x)
         return (ydist > 0 and ydist < trigger_ydist) and (xdist < trigger_xdist)
     },
+    attack: function() {
+        create_enemy_attack(id.x, id.y + attack_rely, attack_width, attack_height)
+    },
 	step: function() {
-        if id.isAnimationEnd() {
-            if id.sprite_index == sKlawkin_AttackUp {
-                // attack
-                finished = true
+        if id.sprite_index != sKlawkin_AttackUp {
+            if id.isAnimationEnd() {
+                id.sprite_index = sKlawkin_AttackUp
             }
-            id.sprite_index = sKlawkin_AttackUp
+        } else {
+            if id.isOnFrame(attack_frame) {
+                attack()
+            }
+            finished = id.isAnimationEnd()
         }
     },
 	onExit: function() {},
 	onEnter: function() {
         finished = false
-        id.sprite_index = sKlawkin_Charge
         id.image_index = 0
+        id.sprite_index = sKlawkin_Charge
     },
 	checkChange: function() {
         return finished ? id.wanderState : undefined
@@ -106,6 +127,10 @@ function move(hsp, vsp) {
 
 function isAnimationEnd() {
     return is_animation_end()
+}
+
+function isOnFrame(frame) {
+    return is_animation_at_frame(frame)
 }
 
 // force land him

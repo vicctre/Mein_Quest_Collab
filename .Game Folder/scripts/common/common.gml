@@ -10,3 +10,8 @@ function draw_hit_blinking(phase, color=global.player_damage_blinking_color) {
 		rotation, c_white, alpha)
 	gpu_set_fog(false, color, 0, 0)
 }
+
+function create_enemy_attack(x, y, w, h) {
+	return instance_create_layer(x, y, "Enemies", ENEMYATTACK,
+								 {width: w, height: h})
+}
