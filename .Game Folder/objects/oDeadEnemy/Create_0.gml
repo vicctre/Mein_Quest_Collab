@@ -7,5 +7,5 @@ done = 0
 image_speed = 0
 rotation_speed = 25
 rotation = 0
-hit_blinking_timer = undefined
-hit_blinking_gain = undefined
+hit_blinking_timer = new Timer(0)
+hit_blinking_gain = 0
