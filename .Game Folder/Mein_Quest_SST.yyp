@@ -551,7 +551,7 @@
     {"id":{"name":"sInchL","path":"sprites/sInchL/sInchL.yy",},},
     {"id":{"name":"sInchR","path":"sprites/sInchR/sInchR.yy",},},
     {"id":{"name":"sKlawkin_Attack","path":"sprites/sKlawkin_Attack/sKlawkin_Attack.yy",},},
-    {"id":{"name":"sKlawkin_AttackUP","path":"sprites/sKlawkin_AttackUP/sKlawkin_AttackUP.yy",},},
+    {"id":{"name":"sKlawkin_AttackUp","path":"sprites/sKlawkin_AttackUp/sKlawkin_AttackUp.yy",},},
     {"id":{"name":"sKlawkin_Charge","path":"sprites/sKlawkin_Charge/sKlawkin_Charge.yy",},},
     {"id":{"name":"sKlawkin_Dead","path":"sprites/sKlawkin_Dead/sKlawkin_Dead.yy",},},
     {"id":{"name":"sKlawkin","path":"sprites/sKlawkin/sKlawkin.yy",},},

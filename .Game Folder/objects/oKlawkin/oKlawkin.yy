@@ -3,6 +3,7 @@
   "%Name":"oKlawkin",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oKlawkin",
@@ -37,8 +38,8 @@
     "path":"sprites/sKlawkin/sKlawkin.yy",
   },
   "spriteMaskId":{
-    "name":"sEnemy01",
-    "path":"sprites/sEnemy01/sEnemy01.yy",
+    "name":"sKlawkin",
+    "path":"sprites/sKlawkin/sKlawkin.yy",
   },
   "visible":true,
 }
