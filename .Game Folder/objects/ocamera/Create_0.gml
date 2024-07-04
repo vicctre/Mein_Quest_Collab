@@ -40,3 +40,7 @@ function set_smooth_movement(turn_on) {
 function start_shaking(magnitude=1) {
 	shake_remain = magnitude
 }
+
+function set_point_target(xx, yy) {
+	follow = new Vec2(xx, yy)
+}

@@ -268,7 +268,7 @@ function point_dir(xx, yy) {
 function get_instance_center(inst) {
 	var w = sprite_get_width(inst.sprite_index)
 	var h = sprite_get_height(inst.sprite_index)
-	return new Vec2d(inst.x + w * 0.5, inst.y + h * 0.5)
+	return new Vec2(inst.x + w * 0.5, inst.y + h * 0.5)
 }
 
 function struct_sum(struct) {

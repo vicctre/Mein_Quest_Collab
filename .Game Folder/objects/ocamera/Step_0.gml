@@ -20,7 +20,8 @@ if (cam_zoom_current != cam_zoom_target) {
 }
 
 //update destination aka where ever the player is 
-if (instance_exists(follow)) 
+
+if is_struct(follow) or (instance_exists(follow))
 {
 	xTo = follow.x + x_shift;
 	yTo = follow.y;

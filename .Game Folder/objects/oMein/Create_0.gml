@@ -135,6 +135,7 @@ function animate_crouch_transition(sprite_to, img_sp) {
 
 function create_death_animation() {
 	var inst = instance_create_layer(x, y, layer, oDeadEnemy)
+	
 	inst.sprite_index = sPlayerDead
 	inst.vsp = global.player_dead_vsp
 	inst.hsp = global.player_dead_hsp * -image_xscale

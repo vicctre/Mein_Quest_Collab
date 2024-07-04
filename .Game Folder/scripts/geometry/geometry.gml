@@ -8,46 +8,46 @@ function Point(_x, _y) constructor {
 	}
 }
 
-function Vec2d(xx, yy, is_polar=false) constructor {
-	X = xx
-	Y = yy
+function Vec2(xx, yy, is_polar=false) constructor {
+	x = xx
+	y = yy
 
 	add_coords = function(xx, yy) {
-		self.X += xx
-		self.Y += yy
+		self.x += xx
+		self.y += yy
 		return self
 	}
 
 	add_coords_ = function(xx, yy) {
-		return new Vec2d(self.X + xx, self.Y + yy)
+		return new Vec2(self.x + xx, self.y + yy)
 	}
 
 	add = function(vec) {
-		self.X += vec.X
-		self.Y += vec.Y
+		self.x += vec.X
+		self.y += vec.Y
 		return self
 	}
 
 	add_ = function(vec) {
-		return new Vec2d(self.X + vec.X, self.Y + vec.Y)
+		return new Vec2(self.x + vec.X, self.y + vec.Y)
 	}
 
 	sub = function(vec) {
-		self.X -= vec.X
-		self.Y -= vec.Y
+		self.x -= vec.X
+		self.y -= vec.Y
 		return self
 	}
 
 	sub_ = function(vec) {
-		return new Vec2d(self.X - vec.X, self.Y - vec.Y)
+		return new Vec2(self.x - vec.X, self.y - vec.Y)
 	}
 
 	dir = function() {
-		return point_direction(0, 0, X, Y)
+		return point_direction(0, 0, x, y)
 	}
 
 	len = function() {
-		return point_distance(0, 0, X, Y)	
+		return point_distance(0, 0, x, y)	
 	}
 
 	normalize = function(len) {
@@ -56,35 +56,35 @@ function Vec2d(xx, yy, is_polar=false) constructor {
 		var l = self.len() 
 		if l == 0
 			return self
-		self.X *= len / l
-		self.Y *= len / l
+		self.x *= len / l
+		self.y *= len / l
 		return self
 	}
 	
 	set = function(xx, yy) {
-		self.X = xx
-		self.Y = yy
+		self.x = xx
+		self.y = yy
 		return self
 	}
 
 	set_polar = function(l, dir) {
-		self.X = lengthdir_x(l, dir)
-		self.Y = lengthdir_y(l, dir)	
+		self.x = lengthdir_x(l, dir)
+		self.y = lengthdir_y(l, dir)	
 		return self
 	}
 
 	add_polar = function(l, dir) {
-		self.X += lengthdir_x(l, dir)
-		self.Y += lengthdir_y(l, dir)
+		self.x += lengthdir_x(l, dir)
+		self.y += lengthdir_y(l, dir)
 		return self
 	}
 	
 	add_polar_ = function(l, dir) {
-		return new Vec2d(self.X, self.Y).add_polar(l, dir)
+		return new Vec2(self.x, self.y).add_polar(l, dir)
 	}
 
 	rotated = function(angle) {
-		return new Vec2d(self.len(), self.dir() + angle, true)
+		return new Vec2(self.len(), self.dir() + angle, true)
 	}
 	
 	rotate = function(angle) {
@@ -93,11 +93,11 @@ function Vec2d(xx, yy, is_polar=false) constructor {
 	}
 	
 	copy = function() {
-		return new Vec2d(self.X, self.Y)
+		return new Vec2(self.x, self.y)
 	}
 	
 	eq = function(vec) {
-		return (self.X == vec.X) and (self.Y == vec.Y)
+		return (self.x == vec.X) and (self.y == vec.Y)
 	}
 	
 	move_to_vec = function(vec, sp_mag) {
@@ -109,25 +109,25 @@ function Vec2d(xx, yy, is_polar=false) constructor {
 	}
 	
 	approach = function(to, sp) {
-		X = global.approach(X, to.X, sp.X)
-		Y = global.approach(Y, to.Y, sp.Y)
+		x = global.approach(x, to.X, sp.X)
+		y = global.approach(y, to.Y, sp.Y)
 		return self
 	}
 	
 	absolutize = function() {
-		X = abs(X)
-		Y = abs(Y)
+		x = abs(x)
+		y = abs(y)
 		return self
 	}
 	
 	mult = function(n) {
-		X *= n
-		Y *= n
+		x *= n
+		y *= n
 		return self
 	}
 	
 	mult_ = function(n) {
-		return new Vec2d(X*n, Y*n)	
+		return new Vec2(x*n, y*n)	
 	}
 
 	if is_polar == true
@@ -170,7 +170,7 @@ function Line(_xst, _yst, _xend, _yend) constructor {
 	static get_point_on = function(m) {
 		var xx = xst + (xend - xst) * m
 		var yy = yst + (yend - yst) * m
-		return new Vec2d(xx, yy)
+		return new Vec2(xx, yy)
 	}
 	
 	static len = function() {
@@ -209,13 +209,14 @@ function line_intersection(l1, l2, segment) {
         ua = (vx * wy - vy * wx) / ud
         if (segment) {
             ub = (ux * wy - uy * wx) / ud
-            if (ua <= 0 || ua >= 1 || ub <= 0 || ub >= 1) ua = 0
+            if (ua <= 0 || ua >= 1 || ub <= 0 || ub >= 1)
+				ua = 0
         }
     }
     return ua
 }
 
-zero2d = new Vec2d(0, 0)
+zero2d = new Vec2(0, 0)
 
 function instance_line_collision_point(x0, y0, x1, y1, inst) {
 
@@ -258,6 +259,20 @@ function geom_draw_multiline(points, w=1, c=c_white) {
 	    var p = points[i]
 		var pp = points[i + 1]
 		draw_line_width_color(p.X, p.Y, pp.X, pp.Y, w, c, c)
+	}
+}
+function geom_draw_multiline2(points, w=1, c=c_white) {
+	for (var i = 0; i < array_length(points) - 1; ++i) {
+	    var p = points[i]
+		var pp = points[i + 1]
+		draw_line_width_color(p[0], p[1], pp[0], pp[1], w, c, c)
+	}
+}
+function geom_draw_multiline3(points, c=c_white) {
+	for (var i = 0; i < array_length(points) - 1; ++i) {
+	    var p = points[i]
+		var pp = points[i + 1]
+		draw_line_width_color(p[0], p[1], pp[0], pp[1], pp[2], c, c)
 	}
 }
 

@@ -2,8 +2,13 @@
 if !is_playing() and place_meeting(x, y, global.player) {
 	unpause()
 	notify_started()
-	global.player.visible = false
+	//global.player.visible = false
 	global.player.has_control = false
+	global.player.hsp = 0
+}
+
+if is_sequence_on_frame(camera_start_move_frame) {
+	oCamera.set_point_target(x + camera_delta_x, oCamera.y)
 }
 
 // override parent's code
