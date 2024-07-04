@@ -21,6 +21,7 @@ function TruncateByPinnik() {
 	// increase speed if it is tiniest size of Log
 	if global.autoscroller_current_log_sprite_index == (array_length(shorten_sprites) - 1) {
 		switch_to_log_ride_when_mein_on_log = true
+		oMusic.switch_music(global.msc_stage1_2_2)
 	}
 }
 
