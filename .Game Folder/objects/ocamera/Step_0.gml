@@ -29,8 +29,8 @@ if is_struct(follow) or (instance_exists(follow))
 
 // update object position
 if smooth_movement_on {
-	x += (xTo - x)/25; 
-	y += (yTo - y)/25; 
+	x += (xTo - x) * smooth_factor
+	y += (yTo - y) * smooth_factor
 } else {
 	x = xTo;
 	y = yTo;
