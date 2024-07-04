@@ -23,6 +23,8 @@ is_floating = (y >= bottom_bound_y)
 var just_water_landed = (is_floating and !was_floating)
 var just_landed = (!down_free and was_down_free)
 
+hsp = approach(hsp, hsp_to, accel)
+
 if has_control {
 
 	if just_water_landed {

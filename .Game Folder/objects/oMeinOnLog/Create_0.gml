@@ -3,7 +3,12 @@ event_inherited()
 
 global.player = id
 
+hsp_to = global.autoscroller_log_sp_increased
 hsp = global.autoscroller_log_sp_increased
+if room == W1_2_part4_AutoScroller1 {
+	hsp = global.autoscroller_log_sp
+}
+accel = 0.05
 vsp = 0
 min_float_up_vsp = -0.1 //used to adjust float when landing in water?
 jump_sp = -7
