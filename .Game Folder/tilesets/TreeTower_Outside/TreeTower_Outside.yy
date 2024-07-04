@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"Tree_outside",
-    "path":"sprites/Tree_outside/Tree_outside.yy",
+    "name":"sTree_outside",
+    "path":"sprites/sTree_outside/sTree_outside.yy",
   },
   "spriteNoExport":true,
   "textureGroupId":{
