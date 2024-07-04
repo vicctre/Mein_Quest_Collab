@@ -1,5 +1,5 @@
 event_inherited();
-image_angle -= apploon_rotation_speed;
+rotation -= apploon_rotation_speed;
 
 if(place_meeting(x, y+1, WALLPARENT)) 
 {
@@ -7,7 +7,8 @@ if(place_meeting(x, y+1, WALLPARENT))
 		show_message("Error: this enemy's death sprite is not set");
 	
 	var inst = instance_create_layer(x,y,layer, oDeadEnemy);
-	inst.flash = 0;
+	inst.hit_blinking_gain = 0;
+	inst.hit_blinking_timer = hit_blinking_timer
 	inst.rotation_speed = apploon_rotation_speed*2;
 	inst.sprite_index = deadSprite;
 	inst.image_angle = image_angle;

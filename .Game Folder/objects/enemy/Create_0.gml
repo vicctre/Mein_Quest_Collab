@@ -29,3 +29,6 @@ enum ENEMYSTATE
 	DEAD, 
 	HIT, 	
 }
+
+hit_blinking_timer = make_timer(10, false)
+hit_blinking_gain = 180 / hit_blinking_timer.time
