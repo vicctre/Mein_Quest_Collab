@@ -134,6 +134,7 @@ switch state {
             y -= vsp    // prevent enemy collision on next step
             enemy.set_hit(1)
             pogo_bounce()
+            audio_play_sound(SFX_AttackWiff, 0, false)
             break
         }
         if place_meeting(x, y + vsp, oSpikes) {
@@ -144,11 +145,14 @@ switch state {
         var crate = instance_place(x, y+1, oCrate)
         if crate {
             crate.set_hit(1)
+            audio_play_sound(SFX_AttackWiff, 0, false)
             break
         }
         if !down_free {
             state = PLAYERSTATE.FREE
-            has_control = true
+            has_control = true            
+            vsp = pogo_vsp_bounce * 0.5
+            // audio_play_sound(sfx_clank, 0, false)
         }
 		break
 	}

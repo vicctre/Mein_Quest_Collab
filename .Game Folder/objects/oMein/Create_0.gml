@@ -595,6 +595,7 @@ function pogo_bounce() {
     can_pogo = true // reset pogo
     jumps = 1       // reset d-jump
     aeral_attack_used = false   // reset aeral attack
+    // audio_play_sound(sfx_clank, 0, false)
 }
 
 function switch_to_sister_spirit() {
