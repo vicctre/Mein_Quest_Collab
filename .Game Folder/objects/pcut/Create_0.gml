@@ -7,17 +7,10 @@ function set_hit(damage=0) {
 	if (!invincible) {
 		hp -= damage
 		if (object_index == oTuffull)
-			audio_play_sound(SFX_Boss_Damage, 6, false);
-		if (hp > 0) {
-			state = ENEMYSTATE.HIT 
-			hitNow = true
-		} else {
-			state = ENEMYSTATE.DEAD
-		}
-
+			audio_play_sound(SFX_Boss_Damage, 6, false)
         hit_blinking_timer.reset()
-	
-		//
+
+        //
 		hit_direction = sign(x-global.player.x);
 	}
 }

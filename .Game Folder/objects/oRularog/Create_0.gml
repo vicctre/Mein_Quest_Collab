@@ -228,7 +228,7 @@ jumpState = {
 						sprite_index = sRulaFalling
 						other.vsp = 0
 					}
-					scr_move_coord_contact_obj(other.hsp, other.vsp, oWall)
+					player_move_coord_contact_obj(other.hsp, other.vsp, oWall)
 					if abs(other.fast_fall_x - x) <= abs(other.hsp)
 							or place_meeting(x + sign(other.hsp), y, oWall) {
 						other.state = RulaJump.fast_fall
@@ -778,7 +778,7 @@ function colliding_wall(xx, yy) {
 }
 
 function move(hsp, vsp) {
-	scr_move_coord_contact_obj(hsp, vsp, oWall)
+	player_move_coord_contact_obj(hsp, vsp, oWall)
 }
 
 function isDead() {

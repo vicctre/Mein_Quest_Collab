@@ -22,12 +22,9 @@ autoscroller_activate_distance - if not undefined will start moving only
 								 see oAutoscrollerController
 */
 
-enum ENEMYSTATE 
-{
+enum ENEMYSTATE {
 	FREE,
 	ATTACKING,
-	DEAD, 
-	HIT,
 }
 
 hit_blinking_timer = make_timer(10, false)

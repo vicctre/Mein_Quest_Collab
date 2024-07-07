@@ -5,16 +5,16 @@ function scr_move(sp, dir) {
 	y += lengthdir_y(sp, dir)
 }
 
-function scr_move_coord(hsp, vsp) {
+function move_coord(hsp, vsp) {
 	x += hsp
 	y += vsp
 }
 
-function scr_move_coord_contact_obj(hsp, vsp, obj) {
+function player_move_coord_contact_obj(hsp, vsp, obj) {
 	// check if collision is going to happen
-	var contact_normal = place_meeting(x + hsp, y + vsp, obj);
+	var contact = place_meeting(x + hsp, y + vsp, obj);
 	var contact_thin = thin_platform_check(hsp, vsp);
-	if contact_normal || contact_thin {
+	if contact || contact_thin {
 		// move out of an object
 		var dir = point_direction(0, 0, hsp, vsp)
 		var dx = lengthdir_x(1, dir)
@@ -33,7 +33,33 @@ function scr_move_coord_contact_obj(hsp, vsp, obj) {
 		}
 		return contact
 	}
-	scr_move_coord(hsp, vsp)
+	move_coord(hsp, vsp)
+	return noone
+}
+
+
+
+function move_coord_contact_obj(hsp, vsp, obj) {
+	// check if collision is going to happen
+	var contact = place_meeting(x + hsp, y + vsp, obj);
+	if contact {
+		// move out of an object
+		var dir = point_direction(0, 0, hsp, vsp)
+		var dx = lengthdir_x(1, dir)
+		var dy = lengthdir_y(1, dir)
+		// move in dir until bump contact
+		while true {
+			contact = instance_place(x + dx, y + dy, obj)
+			if contact == noone {
+		        x += dx
+		        y += dy
+			} else {
+				break
+			}
+		}
+		return contact
+	}
+	move_coord(hsp, vsp)
 	return noone
 }
 

@@ -1,5 +1,5 @@
 event_inherited()
-deadSprite = sEnemy01Ded
+deadSprite = sKlawkin_Dead
 
 wanderState = {
     id: id,
@@ -11,7 +11,7 @@ wanderState = {
 		var check_ground_x = dir ? id.bbox_right : id.bbox_left
         if id.colliding_wall(id.x + dir, id.y)
                 or !collision_point(check_ground_x, id.bbox_bottom + 1,
-                                    oWall, false, false) {
+                                    WALLPARENT, false, false) {
             dir = -dir
         }
     },
@@ -125,7 +125,7 @@ function colliding_wall(xx, yy) {
 }
 
 function move(hsp, vsp) {
-	return scr_move_coord_contact_obj(hsp, vsp, oWall)
+	return move_coord_contact_obj(hsp, vsp, WALLPARENT)
 }
 
 function isAnimationEnd() {
@@ -134,6 +134,13 @@ function isAnimationEnd() {
 
 function isOnFrame(frame) {
     return is_animation_at_frame(frame)
+}
+
+
+function set_hit(damage=0) {
+	hp -= damage
+    hit_blinking_timer.reset()
+	hit_direction = sign(x-global.player.x)
 }
 
 // force land him

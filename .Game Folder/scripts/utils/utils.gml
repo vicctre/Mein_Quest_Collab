@@ -233,6 +233,10 @@ function draw_text_custom(xx, yy, text, font=-1, col=c_white, alpha=1, halign=fa
 	draw_set_alpha(prev_alpha)
 }
 
+function draw_collision_box() {
+	draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true)
+}
+
 function inst_mouse_dir(inst) {
 	return point_direction(inst.x, inst.y, mouse_x, mouse_y)
 }

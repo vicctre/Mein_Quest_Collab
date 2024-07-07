@@ -88,7 +88,7 @@ if has_control {
 	}
 
 	if !inside_wall and vsp != 0 {
-		scr_move_coord_contact_obj(0, vsp, wall_obj)
+		player_move_coord_contact_obj(0, vsp, wall_obj)
 	} else {
 		y += vsp
 	}

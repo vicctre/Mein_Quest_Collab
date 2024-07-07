@@ -196,7 +196,7 @@ var final_hsp = finalizeHsp()
 
 // handle collisions
 if abs(final_hsp) or abs(vsp)
-	scr_move_coord_contact_obj(final_hsp, vsp, wall_obj)
+	player_move_coord_contact_obj(final_hsp, vsp, wall_obj)
 
 
 if global.camera_solid_bounds_on
