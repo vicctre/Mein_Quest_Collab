@@ -214,7 +214,7 @@
     {"name":"sNaturina_descend","order":5,"path":"sprites/sNaturina_descend/sNaturina_descend.yy",},
     {"name":"sNaturina_victory_pose","order":1,"path":"sprites/sNaturina_victory_pose/sNaturina_victory_pose.yy",},
     {"name":"sNaturina_victory_spin","order":2,"path":"sprites/sNaturina_victory_spin/sNaturina_victory_spin.yy",},
-    {"name":"sPlayerAtk_Pogo","order":1,"path":"sprites/sPlayerAtk_Pogo/sPlayerAtk_Pogo.yy",},
+    {"name":"sPlayer_PogoAttack","order":1,"path":"sprites/sPlayer_PogoAttack/sPlayer_PogoAttack.yy",},
     {"name":"sPlayerAttack","order":2,"path":"sprites/sPlayerAttack/sPlayerAttack.yy",},
     {"name":"sPlayerDamage","order":1,"path":"sprites/sPlayerDamage/sPlayerDamage.yy",},
     {"name":"sPogoAtk_Example","order":3,"path":"sprites/sPogoAtk_Example/sPogoAtk_Example.yy",},
