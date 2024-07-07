@@ -588,6 +588,15 @@ function perform_attack(spr, xscale, dmg, one_frame=true) {
 	return inst
 }
 
+function pogo_bounce() {
+    state = PLAYERSTATE.FREE
+    has_control = true
+    vsp = pogo_vsp_bounce
+    can_pogo = true // reset pogo
+    jumps = 1       // reset d-jump
+    aeral_attack_used = false   // reset aeral attack
+}
+
 function switch_to_sister_spirit() {
     state = PLAYERSTATE.SYSTER_SPIRIT
 	has_control = false

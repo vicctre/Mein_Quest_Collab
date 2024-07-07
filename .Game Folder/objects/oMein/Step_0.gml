@@ -131,18 +131,19 @@ switch state {
         vsp = min(vsp, pogo_vsp_max)
         var enemy = colliding_enemy()
         if enemy {
+            y -= vsp    // prevent enemy collision on next step
             enemy.set_hit(1)
-            state = PLAYERSTATE.FREE
-            has_control = true
-            vsp = pogo_vsp_bounce
-            can_pogo = true
-            jumps = 0
-            aeral_attack_used = false
+            pogo_bounce()
             break
         }
-        var crate = instance_place(x, y, oCrate)
+        if place_meeting(x, y + vsp, oSpikes) {
+            // move_coord_contact_obj(0, 1, oSpikes) // prevent spikes collision in FREE state
+            pogo_bounce()
+            break
+        }
+        var crate = instance_place(x, y+1, oCrate)
         if crate {
-            crate.set_hit()
+            crate.set_hit(1)
             break
         }
         if !down_free {
