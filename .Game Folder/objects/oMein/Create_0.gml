@@ -96,7 +96,8 @@ pogo_on = true      // turns pogo ability on/off
 can_pogo = false    // can pogo after d-jump or aeral attack
 pogo_accel = 1
 pogo_vsp_max = 20
-pogo_vsp_bounce = -10
+var pogo_bounce_height = 32 * 4 // 4 blocks
+pogo_vsp_bounce = - sqrt(2 * grav * pogo_bounce_height)
 
 invincibility_time = global.player_invincibilty_time
 invincibility_timer_no_flashing = 0
@@ -227,6 +228,7 @@ function check_perform_attack() {
             vsp = 0
             can_pogo = false
             has_control = false
+            is_pogo_attack = true
             return true
         }
         if !down_free {
@@ -356,7 +358,8 @@ function Hit(enemy) {
 	if invincibility_timer or invincibility_timer_no_flashing {
 		return
 	}
-	if state == PLAYERSTATE.GRABBED {
+	if state == PLAYERSTATE.GRABBED
+            or state == PLAYERSTATE.ATTACK_POGO {
 		return;	
 	}
 	if state == PLAYERSTATE.ATTACK_AERAL and instance_exists(aeral_attack_inst) {

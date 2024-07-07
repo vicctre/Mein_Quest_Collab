@@ -129,13 +129,15 @@ switch state {
 	case PLAYERSTATE.ATTACK_POGO: {
         vsp = (image_index < 6) ? 0 : (vsp + pogo_accel)
         vsp = min(vsp, pogo_vsp_max)
-        // if is_animation_end() {
-        //     image_speed = 0
-        // }
-        if colliding_enemy() {
+        var enemy = colliding_enemy()
+        if enemy {
+            enemy.set_hit(1)
             state = PLAYERSTATE.FREE
             has_control = true
             vsp = pogo_vsp_bounce
+            can_pogo = true
+            jumps = 0
+            aeral_attack_used = false
             break
         }
         var crate = instance_place(x, y, oCrate)
