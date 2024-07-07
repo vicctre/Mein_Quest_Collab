@@ -91,6 +91,10 @@ sprint_double_press_timer = 0
 sprint_last_pressed_dir = 0
 sprint_add_sp_gain = 0.5
 
+pogo_on = true      // turns pogo ability on/off
+can_pogo = false    // can pogo after d-jump or aeral attack
+
+
 invincibility_time = global.player_invincibilty_time
 invincibility_timer_no_flashing = 0
 invincibility_timer = 0
@@ -152,10 +156,14 @@ function check_perform_jump() {
 		if jumps {
 			jumps -= down_free and coyote_timer.timer <= 0
 			vsp = jumps ? jump_sp : double_jump_sp
-			if jumps 
+			if jumps {
+                // first jump
 				audio_play_sound(global.sfx_jump, 7, false)
-			else
+            } else {
+                // second jump
 				audio_play_sound(global.sfx_djump, 7, false)
+                can_pogo = true
+            }
 			jump_pressed = 0
             state = PLAYERSTATE.FREE
 			// cancel coyote jump if pressed jump
@@ -228,6 +236,7 @@ function check_perform_attack() {
 			audio_play_sound(SFX_AttackWiff,5,false)
 			attack_pause_timer = attack_pause_time
 			aeral_attack_used = true
+            can_pogo = true
             return true
 		}
 	}

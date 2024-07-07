@@ -54,16 +54,13 @@ Menus
     Adjust cursor to work better with menus
 
 Mein 
-    Add pogo attack and mechanics for stage 2-1, and Mein will have access to this if he revisits older stages as well (check doc for details)
+    1. Pogo attack
+        - turn on after dj or air attack
+        - halt in air and then dash down
+        - hit of spikes and enemies, destroy boxes
+        - bounce 4 squares up
+    2. Make pogo ability persistent after reaching it
+    
 
 2-1 
     adding the wave attack to the stage (added in part 3 and part 4)
-
-Tre stuff 
-    Finish Sister Spirit Temple
-    write Adventure logs for Rularog and Naturina ☑️
-    Figure out the cutscene for the end of Demo 2
-    Create a “Thx for playing” card at the end of demo 2
-    Make SFX for SS decent, appearing, unlocking a stage
-    Begin play testing 2-1
-    Finish tiles for 2-2 and 2-3

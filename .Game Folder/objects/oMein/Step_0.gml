@@ -24,17 +24,14 @@ right_free = place_empty(x + 1, y, wall_obj)
 move_h = (key_right*right_free - key_left*left_free) * has_control
 // do we try to move?
 input_move_h = key_right - key_left
-// moving hor
-if has_control {
-	hsp_to = move_h * hsp_max
-}
+
 
 if has_control {
-	updateCoyoteTimer()
-	checkCollidingEnemy()
-	checkEnterDoor()
+	hsp_to = move_h * hsp_max // moving horizontally
+    updateCoyoteTimer()
+    checkCollidingEnemy()
+    checkEnterDoor()
 }
-
 
 updateHspControl()
 applyGravity()
@@ -51,6 +48,8 @@ else if !down_free {
 	// land on ground
 	if vsp > 0
 		vsp = 0
+    // reset pogo
+    can_pogo = false
 }
 
 switch state {
