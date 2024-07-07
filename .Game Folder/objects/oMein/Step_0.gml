@@ -126,6 +126,29 @@ switch state {
 		}
 		break
 	}
+	case PLAYERSTATE.ATTACK_POGO: {
+        vsp = (image_index < 6) ? 0 : (vsp + pogo_accel)
+        vsp = min(vsp, pogo_vsp_max)
+        // if is_animation_end() {
+        //     image_speed = 0
+        // }
+        if colliding_enemy() {
+            state = PLAYERSTATE.FREE
+            has_control = true
+            vsp = pogo_vsp_bounce
+            break
+        }
+        var crate = instance_place(x, y, oCrate)
+        if crate {
+            crate.set_hit()
+            break
+        }
+        if !down_free {
+            state = PLAYERSTATE.FREE
+            has_control = true
+        }
+		break
+	}
 	case PLAYERSTATE.PRE_DEAD: {
 		state = PLAYERSTATE.DEAD
 		break	

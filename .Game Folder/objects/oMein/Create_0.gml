@@ -6,6 +6,7 @@ enum PLAYERSTATE {
 	ATTACK_SLASH,
 	ATTACK_COMBO,
 	ATTACK_AERAL,
+    ATTACK_POGO,
 	PRE_DEAD,
 	DEAD,
 	HIT,
@@ -93,7 +94,9 @@ sprint_add_sp_gain = 0.5
 
 pogo_on = true      // turns pogo ability on/off
 can_pogo = false    // can pogo after d-jump or aeral attack
-
+pogo_accel = 1
+pogo_vsp_max = 20
+pogo_vsp_bounce = -10
 
 invincibility_time = global.player_invincibilty_time
 invincibility_timer_no_flashing = 0
@@ -123,7 +126,6 @@ function start_crouch_transition(reverse = false) {
 	sprite_index = sCrouchTransition
 	image_index = reverse ? (image_number - 1) : 0
 }
-
 function animate_crouch_transition(sprite_to, img_sp) {
 	if sprite_index == sCrouchTransition {
 		image_speed = img_sp
@@ -136,7 +138,6 @@ function animate_crouch_transition(sprite_to, img_sp) {
 	}
 	return false
 }
-
 function create_death_animation() {
 	var inst = instance_create_layer(x, y, layer, oDeadEnemy)
 	
@@ -145,7 +146,6 @@ function create_death_animation() {
 	inst.hsp = global.player_dead_hsp * -image_xscale
 	inst.image_xscale = image_xscale
 }
-
 function check_perform_jump() {
 	if key_jump {
 		jump_pressed = jump_press_delay
@@ -216,12 +216,20 @@ function check_perform_push() {
 	}
     return false
 }
-
 function check_perform_attack() {
 	attack_pause_timer--
 	if key_attack and !attack_pause_timer {
 		image_index = 0
-		if !down_free {
+        if can_pogo and down_free and key_down {
+            state = PLAYERSTATE.ATTACK_POGO
+            sprite_index = sPlayer_PogoAttack
+            hsp = 0
+            vsp = 0
+            can_pogo = false
+            has_control = false
+            return true
+        }
+        if !down_free {
 			state = PLAYERSTATE.ATTACK_SLASH
 			sprite_index = sPlayerAttack
 			audio_play_sound(SFX_AttackWiff,5,false)
@@ -242,7 +250,6 @@ function check_perform_attack() {
 	}
     return false
 }
-
 function check_spikes() {
 	var spike = instance_place(x, y, oSpikes)
 	if spike != noone {
@@ -320,6 +327,11 @@ function Animate() {
 			}
 			break
 		}
+        case PLAYERSTATE.ATTACK_POGO: {
+            if is_animation_end() {
+                image_speed = 0
+            }
+        }
 	}
 }
 
