@@ -49,14 +49,14 @@ function attack_step(state) {
 
 attackSidesState = {
     id: id,
-    trigger_xdist: 50,
-    trigger_ydist: 30,
+    trigger_xdist: 55,
+    trigger_ydist: 40,
     finished: false,
 	attack_relx: 26,
 	attack_width: 30,
 	attack_height: 40,
     attack_frame: 6,
-    charge_pause_timer: make_timer(12),
+    charge_pause_timer: make_timer(20),
     charge_pause_frame: 2,
 
     checkTriggered: function() {

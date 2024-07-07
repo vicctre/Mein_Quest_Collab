@@ -38,6 +38,7 @@
     {"$GMFolder":"","%Name":"Chantie","folderPath":"folders/Objects/Enemies/Small Enemies/Chantie.yy","name":"Chantie","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fleater","folderPath":"folders/Objects/Enemies/Small Enemies/Fleater.yy","name":"Fleater","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Genull","folderPath":"folders/Objects/Enemies/Small Enemies/Genull.yy","name":"Genull","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Klawkin","folderPath":"folders/Objects/Enemies/Small Enemies/Klawkin.yy","name":"Klawkin","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Pinnik","folderPath":"folders/Objects/Enemies/Small Enemies/Pinnik.yy","name":"Pinnik","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Objects/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"INGAME_Objects","folderPath":"folders/Objects/INGAME_Objects.yy","name":"INGAME_Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -164,7 +165,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"Mein_Quest_SST",
   "resources":[

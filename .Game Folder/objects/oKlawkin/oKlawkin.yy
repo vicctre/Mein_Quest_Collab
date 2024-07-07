@@ -10,8 +10,8 @@
   "name":"oKlawkin",
   "overriddenProperties":[],
   "parent":{
-    "name":"NMEs needing code",
-    "path":"folders/Objects/Enemies/NMEs needing code.yy",
+    "name":"Klawkin",
+    "path":"folders/Objects/Enemies/Small Enemies/Klawkin.yy",
   },
   "parentObjectId":{
     "name":"ENEMY",

@@ -73,6 +73,7 @@
     {"name":"inst_69746278","path":"rooms/W2_2_part1/W2_2_part1.yy",},
     {"name":"inst_54A0850B","path":"rooms/W2_2_part1/W2_2_part1.yy",},
     {"name":"inst_4514DBCF","path":"rooms/W2_2_part1/W2_2_part1.yy",},
+    {"name":"inst_58B7C46B","path":"rooms/W2_2_part1/W2_2_part1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -201,6 +202,7 @@
     {"$GMRInstanceLayer":"","%Name":"Enemies","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_25A9D4AE_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_25A9D4AE_3","objectId":{"name":"oEnemy01","path":"objects/oEnemy01/oEnemy01.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1242.0,"y":275.0,},
         {"$GMRInstance":"","%Name":"inst_54A0850B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_54A0850B","objectId":{"name":"oFleater","path":"objects/oFleater/oFleater.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1776.0,"y":128.0,},
+        {"$GMRInstance":"","%Name":"inst_58B7C46B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_58B7C46B","objectId":{"name":"oKlawkin","path":"objects/oKlawkin/oKlawkin.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":655.0,"y":279.0,},
       ],"layers":[],"name":"Enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_53C8881F_1_3","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_53C8881F_1_3","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sKlawkin","path":"sprites/sKlawkin/sKlawkin.yy",},"x":651.0,"y":279.0,},
