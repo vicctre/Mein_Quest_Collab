@@ -1,5 +1,6 @@
 
 default_last_unlocked_stage = real(W1_1_part1)
+mein_pogo_attack_on = false
 
 function DefaultStagesData() {
 	/*
@@ -61,6 +62,7 @@ function SaveFile() : SSave("save") constructor {
 	// unlocking stages is saved in RoomStart
 	add_value("last_unlocked_stage", SSAVE_TYPE.REAL, real(W1_1_part1))
 	add_value("stages_data", SSAVE_TYPE.STRUCT, other.DefaultStagesData)
+	add_value("mein_pogo_attack_on", SSAVE_TYPE.BOOLEAN, false)
 }
 
 save = new SaveFile()
@@ -68,11 +70,13 @@ save = new SaveFile()
 if save.load("") {
 	last_unlocked_stage = save.get("last_unlocked_stage")
 	stages_data = save.get("stages_data")
+    mein_pogo_attack_on = save.get("mein_pogo_attack_on")
 } else {
 	last_unlocked_stage = default_last_unlocked_stage
 	stages_data = DefaultStagesData()
 	save.set("last_unlocked_stage", 0)
 	save.set("stages_data", stages_data)
+    save.set("mein_pogo_attack_on", mein_pogo_attack_on)
 }
 
 function IsStageUnlocked(index) {
@@ -209,6 +213,12 @@ function UnlockStage(stage) {
 	last_unlocked_stage = real(stage)
 	save.set("last_unlocked_stage", last_unlocked_stage)
 	save.save()
+}
+
+function UnlockPogoAttack() {
+    mein_pogo_attack_on = true
+    save.set("mein_pogo_attack_on", mein_pogo_attack_on)
+    save.save()
 }
 
 function CheckOpenNextStage() {
