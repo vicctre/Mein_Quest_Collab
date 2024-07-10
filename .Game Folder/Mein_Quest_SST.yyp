@@ -165,7 +165,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -601,6 +601,7 @@
     {"id":{"name":"Sprite163164","path":"sprites/Sprite163164/Sprite163164.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
     {"id":{"name":"Sprite217","path":"sprites/Sprite217/Sprite217.yy",},},
+    {"id":{"name":"Sprite265","path":"sprites/Sprite265/Sprite265.yy",},},
     {"id":{"name":"sPush","path":"sprites/sPush/sPush.yy",},},
     {"id":{"name":"sRulaCharge","path":"sprites/sRulaCharge/sRulaCharge.yy",},},
     {"id":{"name":"sRulaDead","path":"sprites/sRulaDead/sRulaDead.yy",},},

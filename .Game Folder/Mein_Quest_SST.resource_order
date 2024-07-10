@@ -218,6 +218,7 @@
     {"name":"sPlayerAttack","order":2,"path":"sprites/sPlayerAttack/sPlayerAttack.yy",},
     {"name":"sPlayerDamage","order":1,"path":"sprites/sPlayerDamage/sPlayerDamage.yy",},
     {"name":"sPogoAtk_Example","order":3,"path":"sprites/sPogoAtk_Example/sPogoAtk_Example.yy",},
+    {"name":"Sprite265","order":6,"path":"sprites/Sprite265/Sprite265.yy",},
     {"name":"sRulaCharge","order":7,"path":"sprites/sRulaCharge/sRulaCharge.yy",},
     {"name":"sRulaDead","order":11,"path":"sprites/sRulaDead/sRulaDead.yy",},
     {"name":"sRulaIdle","order":10,"path":"sprites/sRulaIdle/sRulaIdle.yy",},
