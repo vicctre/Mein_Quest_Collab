@@ -135,25 +135,21 @@ switch state {
             }
         }
 
-        var enemy = colliding_enemy()
+        // scan for pcut child one pixel down
+        // to prevent being stopped by oCrate
+        var enemy = instance_place(x, y+1, pCut)
         if enemy {
             y -= vsp    // prevent enemy collision on next step
             enemy.set_hit(1)
-            pogo_bounce()
+            if object_is_ancestor(enemy.object_index, ENEMY) {
+                pogo_bounce()
+            }
             audio_play_sound(SFX_AttackWiff, 0, false)
             break
         }
 
         if place_meeting(x, y + vsp, oSpikes) {
-            // move_coord_contact_obj(0, 1, oSpikes) // prevent spikes collision in FREE state
             pogo_bounce()
-            break
-        }
-
-        var crate = instance_place(x, y+1, oCrate)
-        if crate {
-            crate.set_hit(1)
-            audio_play_sound(SFX_AttackWiff, 0, false)
             break
         }
 
