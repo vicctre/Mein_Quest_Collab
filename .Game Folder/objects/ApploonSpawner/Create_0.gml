@@ -5,6 +5,7 @@ paused = false;
 leaf_fall_time = 120;
 leaf_count = 6;
 leaf_delay = 2;
+leaf_sound_dist = 300
 
 function pause() {
 	paused = true;
