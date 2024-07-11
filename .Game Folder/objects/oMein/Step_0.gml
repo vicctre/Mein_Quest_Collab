@@ -125,8 +125,16 @@ switch state {
 		break
 	}
 	case PLAYERSTATE.ATTACK_POGO: {
-        vsp = (image_index < 6) ? 0 : (vsp + pogo_accel)
+        vsp += pogo_accel
         vsp = min(vsp, pogo_vsp_max)
+        // switch to pogo falling sprite
+        if sprite_index == sPlayer_PogoAttack {
+            vsp = (image_index < 6) ? 0 : vsp
+            if is_animation_end() {
+                sprite_index = sPlayer_Pogo_fall
+            }
+        }
+
         var enemy = colliding_enemy()
         if enemy {
             y -= vsp    // prevent enemy collision on next step
@@ -135,17 +143,20 @@ switch state {
             audio_play_sound(SFX_AttackWiff, 0, false)
             break
         }
+
         if place_meeting(x, y + vsp, oSpikes) {
             // move_coord_contact_obj(0, 1, oSpikes) // prevent spikes collision in FREE state
             pogo_bounce()
             break
         }
+
         var crate = instance_place(x, y+1, oCrate)
         if crate {
             crate.set_hit(1)
             audio_play_sound(SFX_AttackWiff, 0, false)
             break
         }
+
         if !down_free {
             state = PLAYERSTATE.FREE
             has_control = true            
