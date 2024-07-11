@@ -232,8 +232,8 @@ if global.camera_solid_bounds_on
 		// without this player will teleport to the beginning
 		// because camera is spawn there
 		and !--dev_autoscroller_camera_solid_walls_workaround_timer {
-	var xmax = scr_camx(0) + scr_camw(0) - (bbox_right- x)
-	var xmin = scr_camx(0) + (x - bbox_left)
+	var xmax = camx(0) + camw(0) - (bbox_right- x)
+	var xmin = camx(0) + (x - bbox_left)
 
 	// loose if stack between view and walls
 	if !right_free and x < xmin {

@@ -6,8 +6,8 @@ image_yscale = scale
 text = ""
 name = ""
 
-x = scr_camw(0) + sprite_width * 0.6
-y = scr_camh(0) * 0.5
+x = camw(0) + sprite_width * 0.6
+y = camh(0) * 0.5
 spd = 15
 is_ease_out = false
 

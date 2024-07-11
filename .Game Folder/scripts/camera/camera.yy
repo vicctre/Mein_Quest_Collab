@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"camera",
   "parent":{
-    "name":"libs",
-    "path":"folders/Scripts/libs.yy",
+    "name":"Scripts",
+    "path":"folders/Libraries/AlexLibs/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

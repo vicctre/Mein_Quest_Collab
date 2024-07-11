@@ -10,8 +10,8 @@ if (global.UI_Offscreen) {
 }
 
 if instance_exists(oMein) {
-	var player_gui_x = (oMein.x - scr_camx(0)) * display_get_gui_width() / scr_camw(0)
-	var player_gui_y = (oMein.y - scr_camy(0)) * display_get_gui_height() / scr_camh(0)
+	var player_gui_x = (oMein.x - camx(0)) * display_get_gui_width() / camw(0)
+	var player_gui_y = (oMein.y - camy(0)) * display_get_gui_height() / camh(0)
 	if point_distance(coin_counter_x, coin_counter_y, player_gui_x, player_gui_y) < 200 {
 		coin_counter_alpha = approach(coin_counter_alpha, 0.35, 0.03)
 	} else {

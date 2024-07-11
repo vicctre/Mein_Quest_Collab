@@ -22,7 +22,7 @@ function InitEnemies() {
 }
 
 function CheckActivateEnemies() {
-	var camera_bbox_right = scr_camx(0) + scr_camw(0)
+	var camera_bbox_right = camx(0) + camw(0)
 	for(var i = 0; i < array_length(enemies_to_activate_by_distance); i++) {
 		var data = 	enemies_to_activate_by_distance[i]
 		var dist = max(data.dist, 0)
