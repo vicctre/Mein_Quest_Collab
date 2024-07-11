@@ -166,7 +166,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -584,6 +584,7 @@
     {"id":{"name":"sOTreeOpacityExample","path":"sprites/sOTreeOpacityExample/sOTreeOpacityExample.yy",},},
     {"id":{"name":"sOverheadTree","path":"sprites/sOverheadTree/sOverheadTree.yy",},},
     {"id":{"name":"sPinnik","path":"sprites/sPinnik/sPinnik.yy",},},
+    {"id":{"name":"sPlayer_Pogo_fall","path":"sprites/sPlayer_Pogo_fall/sPlayer_Pogo_fall.yy",},},
     {"id":{"name":"sPlayer_PogoAttack","path":"sprites/sPlayer_PogoAttack/sPlayer_PogoAttack.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"sPlayerA","path":"sprites/sPlayerA/sPlayerA.yy",},},
