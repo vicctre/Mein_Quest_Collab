@@ -1,3 +1,2 @@
 
-show_debug_message("Kill")
-
+instance_destroy(pogo_attack_instance)

@@ -98,6 +98,8 @@ pogo_vsp_max = 20
 var pogo_bounce_height = 32 * 4 // 4 blocks
 pogo_vsp_bounce = - sqrt(2 * grav * pogo_bounce_height)
 pogo_cooldown_timer = make_timer(30, false)
+pogo_attack_instance = instance_create_layer(
+    x, y, layer, oAttackSimple, {one_frame: false, sprite_index: sHurtBoxPogo})
 
 invincibility_time = global.player_invincibilty_time
 invincibility_timer_no_flashing = 0

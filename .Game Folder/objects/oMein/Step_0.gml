@@ -136,9 +136,11 @@ switch state {
             }
         }
 
+        pogo_attack_instance.x = x
         // scan for pcut child one pixel down
         // to prevent being stopped by oCrate
-        var enemy = instance_place(x, y+1, pCut)
+        pogo_attack_instance.y = y + 1
+        var enemy = pogo_attack_instance.perform()
         if enemy {
             y -= vsp    // prevent enemy collision on next step
             enemy.set_hit(1)
