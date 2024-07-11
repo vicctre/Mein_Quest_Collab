@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"AdventureLogs",
   "isCompatibility":false,
   "isDnD":false,

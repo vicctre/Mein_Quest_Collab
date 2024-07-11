@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ResizeCamera",
   "isCompatibility":false,
   "isDnD":false,

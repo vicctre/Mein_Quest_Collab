@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"__scr_ssave_3rdparty_sphinx",
   "isCompatibility":false,
   "isDnD":false,

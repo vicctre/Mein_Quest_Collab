@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"__scr_ssave_manager",
   "isCompatibility":false,
   "isDnD":false,

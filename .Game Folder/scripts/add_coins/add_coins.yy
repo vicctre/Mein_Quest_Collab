@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"add_coins",
   "isCompatibility":false,
   "isDnD":false,

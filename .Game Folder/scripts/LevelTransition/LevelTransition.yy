@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"LevelTransition",
   "isCompatibility":false,
   "isDnD":false,
