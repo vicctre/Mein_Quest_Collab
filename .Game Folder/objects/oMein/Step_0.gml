@@ -48,8 +48,6 @@ else if !down_free {
 	// land on ground
 	if vsp > 0
 		vsp = 0
-    // reset pogo
-    can_pogo = false
 }
 
 switch state {

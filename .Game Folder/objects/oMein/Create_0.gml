@@ -93,7 +93,6 @@ sprint_last_pressed_dir = 0
 sprint_add_sp_gain = 0.5
 
 pogo_on = true      // turns pogo ability on/off
-can_pogo = false    // can pogo after d-jump or aeral attack
 pogo_accel = 1
 pogo_vsp_max = 20
 var pogo_bounce_height = 32 * 4 // 4 blocks
@@ -163,7 +162,6 @@ function check_perform_jump() {
             } else {
                 // second jump
 				audio_play_sound(global.sfx_djump, 7, false)
-                can_pogo = true
             }
 			jump_pressed = 0
             state = PLAYERSTATE.FREE
@@ -221,12 +219,11 @@ function check_perform_attack() {
 	attack_pause_timer--
 	if key_attack and !attack_pause_timer {
 		image_index = 0
-        if can_pogo and down_free and key_down {
+        if down_free and key_down {
             state = PLAYERSTATE.ATTACK_POGO
             sprite_index = sPlayer_PogoAttack
             hsp = 0
             vsp = 0
-            can_pogo = false
             has_control = false
             is_pogo_attack = true
             return true
@@ -246,7 +243,6 @@ function check_perform_attack() {
 			audio_play_sound(SFX_AttackWiff,5,false)
 			attack_pause_timer = attack_pause_time
 			aeral_attack_used = true
-            can_pogo = true
             return true
 		}
 	}
@@ -592,7 +588,6 @@ function pogo_bounce() {
     state = PLAYERSTATE.FREE
     has_control = true
     vsp = pogo_vsp_bounce
-    can_pogo = true // reset pogo
     jumps = 1       // reset d-jump
     aeral_attack_used = false   // reset aeral attack
     // audio_play_sound(sfx_clank, 0, false)
