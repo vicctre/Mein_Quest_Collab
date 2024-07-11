@@ -12,6 +12,7 @@ prev_is_sprinting = is_sprinting
 prev_down_free = down_free
 
 updatePlayIdleAnimation()
+pogo_cooldown_timer.update()
 
 // contact walls
 var thin_platform = checkThinPlatform()
