@@ -54,6 +54,7 @@
     {"$GMFolder":"","%Name":"Screens","folderPath":"folders/Objects/SystemObjects/Screens.yy","name":"Screens","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"UI","folderPath":"folders/Objects/UI.yy","name":"UI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"W1_2_part5","folderPath":"folders/Objects/W1_2_part5.yy","name":"W1_2_part5","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"W2_1","folderPath":"folders/Objects/W2_1.yy","name":"W2_1","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Testing Area","folderPath":"folders/Rooms/Testing Area.yy","name":"Testing Area","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -165,7 +166,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.0.137",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -275,6 +276,7 @@
     {"id":{"name":"oUnlockStageAnimation","path":"objects/oUnlockStageAnimation/oUnlockStageAnimation.yy",},},
     {"id":{"name":"oVicLogo","path":"objects/oVicLogo/oVicLogo.yy",},},
     {"id":{"name":"oW1_2_part1_HiddenArea","path":"objects/oW1_2_part1_HiddenArea/oW1_2_part1_HiddenArea.yy",},},
+    {"id":{"name":"oW2Wave","path":"objects/oW2Wave/oW2Wave.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"pCut","path":"objects/pCut/pCut.yy",},},
     {"id":{"name":"WALLPARENT","path":"objects/WALLPARENT/WALLPARENT.yy",},},
