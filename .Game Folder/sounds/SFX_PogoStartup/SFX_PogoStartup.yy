@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"SFX_PogoStartup",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.198503,
+  "name":"SFX_PogoStartup",
+  "parent":{
+    "name":"Mein SFX",
+    "path":"folders/Sounds/SFX/Mein SFX.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"SFX_PogoStartup.wav",
+  "type":0,
+  "volume":1.0,
+}

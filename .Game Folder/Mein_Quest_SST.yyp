@@ -166,7 +166,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -435,6 +435,9 @@
     {"id":{"name":"SFX_Menu_select","path":"sounds/SFX_Menu_select/SFX_Menu_select.yy",},},
     {"id":{"name":"SFX_NA","path":"sounds/SFX_NA/SFX_NA.yy",},},
     {"id":{"name":"SFX_pew","path":"sounds/SFX_pew/SFX_pew.yy",},},
+    {"id":{"name":"SFX_PogoBounce","path":"sounds/SFX_PogoBounce/SFX_PogoBounce.yy",},},
+    {"id":{"name":"SFX_PogoLand","path":"sounds/SFX_PogoLand/SFX_PogoLand.yy",},},
+    {"id":{"name":"SFX_PogoStartup","path":"sounds/SFX_PogoStartup/SFX_PogoStartup.yy",},},
     {"id":{"name":"SFX_Rularog_Roar","path":"sounds/SFX_Rularog_Roar/SFX_Rularog_Roar.yy",},},
     {"id":{"name":"SFX_SisterGemGot","path":"sounds/SFX_SisterGemGot/SFX_SisterGemGot.yy",},},
     {"id":{"name":"SFX_SisterGemPulse","path":"sounds/SFX_SisterGemPulse/SFX_SisterGemPulse.yy",},},
