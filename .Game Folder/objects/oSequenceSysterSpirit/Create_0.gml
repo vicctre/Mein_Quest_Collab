@@ -10,5 +10,6 @@ destroy_delay = -1
 sequence_layer = "Leafage"
 sequence_inst = layer_sequence_create(
 			sequence_layer, x, y, sequence)
+prev_sequence = noone
 
 notify_started()

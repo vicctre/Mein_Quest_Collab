@@ -3,7 +3,7 @@ event_inherited()
 
 name = "Rularog"
 
-hp_max = 13 //26
+hp_max = 1 //26
 hp = hp_max
 hp_phase2_amount =  12//11
 done_phase2_roar = false
@@ -680,16 +680,19 @@ deadState = {
 	screen_shaked: false,
 
 	step: function() {
+        // shake screen
 		if !screen_shaked {
 			oCamera.start_shaking()
 			screen_shaked = true
 			audio_play_sound(global.sfx_BOOM, 3, false)
 		}
+        // fall until hit the ground
 		vsp = approach(vsp, vsp_max, grav)
 		id.move(hsp * dir, vsp)
 		if id.colliding_wall(id.x + dir, id.y) {
 			hsp = 0	
 		}
+        // after falling and timer running off trigger syster spirit cutscene
 		if id.colliding_wall(id.x, id.y + 1) {
 			vsp = 0
 			id.sprite_index = sRulaDead

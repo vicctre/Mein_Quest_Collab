@@ -545,7 +545,7 @@ function setHspControl(value) {
 }
 
 function updateHspControl() {
-	if has_control and is_hsp_control_on {
+	if is_hsp_control_on {
 		var is_accelerating = sign(hsp) == 0 or sign(hsp) == sign(hsp_to)
 		hsp = approach(hsp, hsp_to * (1 + is_sprinting*sprint_add_sp_gain), is_accelerating ? acc : decel)
 	}
