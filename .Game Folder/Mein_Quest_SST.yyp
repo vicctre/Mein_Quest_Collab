@@ -166,7 +166,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.1.160",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -493,6 +493,7 @@
     {"id":{"name":"sAL_HUD","path":"sprites/sAL_HUD/sAL_HUD.yy",},},
     {"id":{"name":"sAL_Icon","path":"sprites/sAL_Icon/sAL_Icon.yy",},},
     {"id":{"name":"sAL_Page","path":"sprites/sAL_Page/sAL_Page.yy",},},
+    {"id":{"name":"sAntagZoom","path":"sprites/sAntagZoom/sAntagZoom.yy",},},
     {"id":{"name":"sApploon_D","path":"sprites/sApploon_D/sApploon_D.yy",},},
     {"id":{"name":"sApploon","path":"sprites/sApploon/sApploon.yy",},},
     {"id":{"name":"sApploonSpawner","path":"sprites/sApploonSpawner/sApploonSpawner.yy",},},

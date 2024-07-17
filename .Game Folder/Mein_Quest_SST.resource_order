@@ -201,6 +201,7 @@
     {"name":"sAL_Arrow_am1","order":2,"path":"sprites/sAL_Arrow_am1/sAL_Arrow_am1.yy",},
     {"name":"sAL_Arrow_click","order":3,"path":"sprites/sAL_Arrow_click/sAL_Arrow_click.yy",},
     {"name":"sAL_Arrow","order":1,"path":"sprites/sAL_Arrow/sAL_Arrow.yy",},
+    {"name":"sAntagZoom","order":1,"path":"sprites/sAntagZoom/sAntagZoom.yy",},
     {"name":"sAttack","order":1,"path":"sprites/sAttack/sAttack.yy",},
     {"name":"sAttackCirlce","order":2,"path":"sprites/sAttackCirlce/sAttackCirlce.yy",},
     {"name":"sBG7_1","order":1,"path":"sprites/sBG7_1/sBG7_1.yy",},
