@@ -13,6 +13,7 @@ function set_hit(damage=0) {
         //
 		hit_direction = sign(x-global.player.x);
 	}
+    oEffects.emit_attack_contact(x, y)
 }
 
 function draw_hit_flashing() {

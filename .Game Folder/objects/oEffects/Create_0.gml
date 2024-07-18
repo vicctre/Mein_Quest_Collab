@@ -46,6 +46,14 @@ function emit_sprint_dust(xx, yy, dir) {
 	part_type_speed(p_dust, p_dust_sp, p_dust_sp, p_dust_sp_incr, 0)
 }
 
+p_attack_contact = part_type_create()
+part_type_sprite(p_attack_contact, sContact, true, true, false)
+part_type_life(p_attack_contact, 18, 18)
+part_type_orientation(p_attack_contact, 0, 360, 0, 0, false)
+function emit_attack_contact(xx, yy) {
+	part_particles_create(psys, xx, yy, p_attack_contact, 1)
+}
+
 function emit_dust_ext(xx, yy, sp, dir=0) {
 	part_type_direction(p_dust, dir, dir, 0, 0)
 	part_type_speed(p_dust, sp, sp, 0, 0)

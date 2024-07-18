@@ -146,6 +146,7 @@ function set_hit(damage=0) {
 	hp -= damage
     hit_blinking_timer.reset()
 	hit_direction = sign(x-global.player.x)
+    oEffects.emit_attack_contact(x, y)
 }
 
 // force land him

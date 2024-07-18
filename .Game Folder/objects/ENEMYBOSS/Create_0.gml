@@ -14,6 +14,7 @@ function set_hit(damage=0) {
     hit_blinking_timer.reset()
 	audio_play_sound(SFX_Boss_Damage, 6, false);
 	hit_direction = sign(x-global.player.x);
+    oEffects.emit_attack_contact(x, y)
 }
 
 function drawRedFlashingOnLowHp() {

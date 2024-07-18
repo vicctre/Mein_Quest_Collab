@@ -152,6 +152,7 @@ switch state {
 
         if place_meeting(x, y + vsp, oSpikes) {
             pogo_bounce()
+            oEffects.emit_attack_contact(x, y + 16)
             break
         }
 
