@@ -229,6 +229,7 @@ function check_perform_attack() {
 			hsp_to = 0
             vsp = 0
             has_control = false
+            audio_play_sound(global.sfx_pogo_start, 0, false)
             return true
         }
         if !down_free {
@@ -594,7 +595,7 @@ function pogo_bounce() {
     vsp = pogo_vsp_bounce
     jumps = 1       // reset d-jump
     aeral_attack_used = false   // reset aeral attack
-    // audio_play_sound(sfx_clank, 0, false)
+    audio_play_sound(global.sfx_pogo_bounce, 0, false)
 }
 
 function switch_to_sister_spirit() {

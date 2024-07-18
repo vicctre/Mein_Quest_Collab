@@ -7,6 +7,9 @@
 sfx_nav = SFX_Menu_Nav
 sfx_select = SFX_Menu_select
 sfx_not_available = SFX_NA
+sfx_pogo_bounce = SFX_PogoBounce
+sfx_pogo_land = SFX_PogoLand
+sfx_pogo_start = SFX_PogoStartup
 
 //Mein Specifc
 sfx_jump = SFX_Jump_V2

@@ -147,7 +147,6 @@ switch state {
             if object_is_ancestor(enemy.object_index, ENEMY) {
                 pogo_bounce()
             }
-            audio_play_sound(SFX_AttackWiff, 0, false)
             break
         }
 
@@ -160,7 +159,7 @@ switch state {
             state = PLAYERSTATE.FREE
             has_control = true            
             vsp = pogo_vsp_bounce * 0.5
-            // audio_play_sound(sfx_clank, 0, false)
+            audio_play_sound(global.sfx_pogo_land, 0, false)
         }
 		break
 	}
