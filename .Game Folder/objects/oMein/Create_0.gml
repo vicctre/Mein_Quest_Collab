@@ -226,9 +226,9 @@ function check_perform_attack() {
             state = PLAYERSTATE.ATTACK_POGO
             sprite_index = sPlayer_PogoAttack
             hsp = 0
+			hsp_to = 0
             vsp = 0
             has_control = false
-            is_pogo_attack = true
             return true
         }
         if !down_free {
