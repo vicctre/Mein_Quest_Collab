@@ -1,4 +1,13 @@
 alarm[0] = 1
 visible = DEV
-image_xscale = width / sprite_width
-image_yscale = height / sprite_height
+if width != -1 {
+	image_xscale = width / sprite_width
+}
+if height != -1 {
+	image_yscale = height / sprite_height
+}
+
+if instance_exists(global.player)
+		and place_meeting(x, y, global.player) {
+	global.player.Hit()	
+}
