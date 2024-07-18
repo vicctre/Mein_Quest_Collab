@@ -5,6 +5,7 @@ wanderState = {
     id: id,
     sp: 0.5,
     dir: 1,
+    attack_cooldown_timer: make_timer(20),
 
 	step: function() {
         id.move(sp * dir, 0)
@@ -20,8 +21,12 @@ wanderState = {
     },
 	onEnter: function() {
         id.sprite_index = sKlawkin
+        attack_cooldown_timer.reset()
     },
 	checkChange: function() {
+        if attack_cooldown_timer.update() {
+            return undefined
+        }
         if id.attackUpState.checkTriggered() {
             return id.attackUpState
         }
