@@ -5,6 +5,9 @@ switch phase {
     case 0:
         if !wave_timer.update() {
             phase++
+            current_anim_params = wave_anim_params[2]
+            layer = layer_get_id(current_anim_params.layer)
+            image_speed = sprite_frames_per_step(current_anim_params.spr)
         }
     break
     case 1:
@@ -18,6 +21,7 @@ switch phase {
         if wave_y < 0 {
             wave_y = 0
 			wave_height_divider--
+            // pick next layer and start previous phase again
 			if wave_height_divider != 0 {
                 current_anim_params = wave_anim_params[wave_height_divider - 1]
                 layer = layer_get_id(current_anim_params.layer)
