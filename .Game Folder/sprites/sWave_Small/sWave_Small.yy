@@ -47,7 +47,7 @@
     ],
     "top":0,
   },
-  "origin":0,
+  "origin":6,
   "parent":{
     "name":"Waves",
     "path":"folders/Sprites/Hazards/World 2/Waves.yy",
@@ -115,7 +115,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":0,
-    "yorigin":0,
+    "yorigin":32,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

@@ -278,6 +278,7 @@
     {"id":{"name":"oVicLogo","path":"objects/oVicLogo/oVicLogo.yy",},},
     {"id":{"name":"oW1_2_part1_HiddenArea","path":"objects/oW1_2_part1_HiddenArea/oW1_2_part1_HiddenArea.yy",},},
     {"id":{"name":"oW2Wave","path":"objects/oW2Wave/oW2Wave.yy",},},
+    {"id":{"name":"oW2WaveFinalWave","path":"objects/oW2WaveFinalWave/oW2WaveFinalWave.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"pCut","path":"objects/pCut/pCut.yy",},},
     {"id":{"name":"WALLPARENT","path":"objects/WALLPARENT/WALLPARENT.yy",},},

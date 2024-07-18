@@ -33,7 +33,7 @@
   ],
   "name":"sWave_Big",
   "nineSlice":null,
-  "origin":0,
+  "origin":6,
   "parent":{
     "name":"Waves",
     "path":"folders/Sprites/Hazards/World 2/Waves.yy",
@@ -101,7 +101,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":0,
-    "yorigin":0,
+    "yorigin":128,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

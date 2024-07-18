@@ -121,6 +121,7 @@
     {"name":"oStageManager","order":8,"path":"objects/oStageManager/oStageManager.yy",},
     {"name":"oUnlockStageAnimation","order":1,"path":"objects/oUnlockStageAnimation/oUnlockStageAnimation.yy",},
     {"name":"oVicLogo","order":4,"path":"objects/oVicLogo/oVicLogo.yy",},
+    {"name":"oW2WaveFinalWave","order":1,"path":"objects/oW2WaveFinalWave/oW2WaveFinalWave.yy",},
     {"name":"rmAdventureLogsScreen","order":5,"path":"rooms/rmAdventureLogsScreen/rmAdventureLogsScreen.yy",},
     {"name":"rmDNS_Logo","order":1,"path":"rooms/rmDNS_Logo/rmDNS_Logo.yy",},
     {"name":"rmIntroSequence","order":7,"path":"rooms/rmIntroSequence/rmIntroSequence.yy",},
