@@ -5,7 +5,7 @@ wanderState = {
     id: id,
     sp: 0.5,
     dir: 1,
-    attack_cooldown_timer: make_timer(20),
+    attack_cooldown_timer: make_timer(90), 
 
 	step: function() {
         id.move(sp * dir, 0)
@@ -54,14 +54,14 @@ function attack_step(state) {
 
 attackSidesState = {
     id: id,
-    trigger_xdist: 70, //distance that activates horizontal attack
-    trigger_ydist: 45, //distance that activates upward attack
+    trigger_xdist: 60, //distance that activates horizontal attack
+    trigger_ydist: 40, //distance that activates upward attack
     finished: false,
 	attack_relx: 26,
 	attack_width: 30,
 	attack_height: 40,
     attack_frame: 6,
-    charge_pause_timer: make_timer(20),
+    charge_pause_timer: make_timer(12),
     charge_pause_frame: 2,
 
     checkTriggered: function() {
@@ -90,8 +90,8 @@ attackSidesState = {
 
 attackUpState = {
     id: id,
-    trigger_xdist: 30,
-    trigger_ydist: 60,
+    trigger_xdist: 40,
+    trigger_ydist: 65,
     finished: false,
 	attack_rely: -20,
 	attack_width: 40,
