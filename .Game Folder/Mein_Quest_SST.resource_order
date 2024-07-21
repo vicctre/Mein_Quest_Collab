@@ -147,7 +147,7 @@
     {"name":"seqLogAutoscrollerStartOriginal","order":7,"path":"sequences/seqLogAutoscrollerStartOriginal/seqLogAutoscrollerStartOriginal.yy",},
     {"name":"seqLogEnd","order":4,"path":"sequences/seqLogEnd/seqLogEnd.yy",},
     {"name":"seqMeinGemBossIntro","order":4,"path":"sequences/seqMeinGemBossIntro/seqMeinGemBossIntro.yy",},
-    {"name":"seqOpeningIntro","order":6,"path":"sequences/seqOpeningIntro/seqOpeningIntro.yy",},
+    {"name":"seqOpeningIntro","order":9,"path":"sequences/seqOpeningIntro/seqOpeningIntro.yy",},
     {"name":"seqPlayerVictory","order":1,"path":"sequences/seqPlayerVictory/seqPlayerVictory.yy",},
     {"name":"seqPlayerVictory02","order":2,"path":"sequences/seqPlayerVictory02/seqPlayerVictory02.yy",},
     {"name":"seqPlayerVictory03","order":3,"path":"sequences/seqPlayerVictory03/seqPlayerVictory03.yy",},

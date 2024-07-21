@@ -92,8 +92,9 @@ sprint_double_press_timer = 0
 sprint_last_pressed_dir = 0
 sprint_add_sp_gain = 0.5
 
+// Pogo attack 
 pogo_on = true      // turns pogo ability on/off
-pogo_accel = 1
+pogo_accel = 0.8 // 1 
 pogo_vsp_max = 20
 var pogo_bounce_height = 32 * 4 // 4 blocks
 pogo_vsp_bounce = - sqrt(2 * grav * pogo_bounce_height)

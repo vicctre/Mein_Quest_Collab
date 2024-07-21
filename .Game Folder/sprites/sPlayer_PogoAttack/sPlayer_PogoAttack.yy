@@ -19,11 +19,7 @@
     {"$GMSpriteFrame":"","%Name":"04cc46d7-3445-4395-a28c-eb36b60944ce","name":"04cc46d7-3445-4395-a28c-eb36b60944ce","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"906b1828-d4ce-4955-a22c-cb978dcaa042","name":"906b1828-d4ce-4955-a22c-cb978dcaa042","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"7fd152d3-0af0-4998-a0ad-e9d5845da238","name":"7fd152d3-0af0-4998-a0ad-e9d5845da238","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"2e753098-807b-4fe9-b23b-0aba0cd3e9fb","name":"2e753098-807b-4fe9-b23b-0aba0cd3e9fb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"a9a9fcec-06c1-4a04-9384-e0946f1b8a5e","name":"a9a9fcec-06c1-4a04-9384-e0946f1b8a5e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"08bbdb7b-9db2-4186-9ea9-c55995ba1c24","name":"08bbdb7b-9db2-4186-9ea9-c55995ba1c24","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"6fb4d405-ff19-44e0-808d-74d6e5e74154","name":"6fb4d405-ff19-44e0-808d-74d6e5e74154","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"505e12d9-6623-44ef-b3ef-3dfc41b0aaf3","name":"505e12d9-6623-44ef-b3ef-3dfc41b0aaf3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -60,7 +56,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":12.0,
+    "length":8.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -101,20 +97,8 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7fd152d3-0af0-4998-a0ad-e9d5845da238","path":"sprites/sPlayer_PogoAttack/sPlayer_PogoAttack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a37aee00-9044-4f72-9e4c-9d40e0e084a5","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2e753098-807b-4fe9-b23b-0aba0cd3e9fb","path":"sprites/sPlayer_PogoAttack/sPlayer_PogoAttack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fe35f824-e703-4cbc-8a25-005e88f7bf49","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a9a9fcec-06c1-4a04-9384-e0946f1b8a5e","path":"sprites/sPlayer_PogoAttack/sPlayer_PogoAttack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9c54305e-ba0f-47e4-9ab4-90f4209f3900","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"08bbdb7b-9db2-4186-9ea9-c55995ba1c24","path":"sprites/sPlayer_PogoAttack/sPlayer_PogoAttack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"acee5114-46cc-40bb-acda-a6335a4fa00b","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6fb4d405-ff19-44e0-808d-74d6e5e74154","path":"sprites/sPlayer_PogoAttack/sPlayer_PogoAttack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f26059bb-dc2d-472b-bb49-443aef2652a6","IsCreationKey":false,"Key":10.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"505e12d9-6623-44ef-b3ef-3dfc41b0aaf3","path":"sprites/sPlayer_PogoAttack/sPlayer_PogoAttack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1b8c94a1-a657-4054-82df-f1bdae520bc8","IsCreationKey":false,"Key":11.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"9c54305e-ba0f-47e4-9ab4-90f4209f3900","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
