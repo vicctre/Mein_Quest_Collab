@@ -6,7 +6,7 @@ switch phase {
         if !wave_timer.update() {
             phase++
             ////////////
-            if DEBUG {
+            if DEV {
                 phase = 2
                 wave_height_divider = 1
             }
