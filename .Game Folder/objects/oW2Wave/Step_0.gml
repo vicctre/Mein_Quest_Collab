@@ -10,10 +10,10 @@ switch phase {
         if !wave_timer.update() {
             phase++
             ////////////
-            if DEV {
+            //if DEV {
                 // phase = 2
                 // wave_height_divider = 1
-            }
+            //}
             ////////////
             current_anim_params = wave_anim_params[wave_height_divider-1]
             layer = current_anim_params.layer
