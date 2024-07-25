@@ -166,7 +166,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.0.137",
+    "IDEVersion":"2024.6.1.160",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -249,6 +249,7 @@
     {"id":{"name":"oRularog","path":"objects/oRularog/oRularog.yy",},},
     {"id":{"name":"oRulaTongue","path":"objects/oRulaTongue/oRulaTongue.yy",},},
     {"id":{"name":"oRulaTongueTip","path":"objects/oRulaTongueTip/oRulaTongueTip.yy",},},
+    {"id":{"name":"oSafeZone","path":"objects/oSafeZone/oSafeZone.yy",},},
     {"id":{"name":"oSequence","path":"objects/oSequence/oSequence.yy",},},
     {"id":{"name":"oSequenceLogAutoscrollerStart","path":"objects/oSequenceLogAutoscrollerStart/oSequenceLogAutoscrollerStart.yy",},},
     {"id":{"name":"oSequenceLogEnd","path":"objects/oSequenceLogEnd/oSequenceLogEnd.yy",},},
@@ -632,6 +633,7 @@
     {"id":{"name":"SS_02","path":"sprites/SS_02/SS_02.yy",},},
     {"id":{"name":"SS_03","path":"sprites/SS_03/SS_03.yy",},},
     {"id":{"name":"SS_04","path":"sprites/SS_04/SS_04.yy",},},
+    {"id":{"name":"sSafeZone","path":"sprites/sSafeZone/sSafeZone.yy",},},
     {"id":{"name":"sShadow","path":"sprites/sShadow/sShadow.yy",},},
     {"id":{"name":"sShadowBASE","path":"sprites/sShadowBASE/sShadowBASE.yy",},},
     {"id":{"name":"sShadowBASEdkr","path":"sprites/sShadowBASEdkr/sShadowBASEdkr.yy",},},
