@@ -5,8 +5,12 @@ switch phase {
     case 0:
         if !wave_timer.update() {
             phase++
-            phase = 2
-            wave_height_divider = 1
+            ////////////
+            if DEBUG {
+                phase = 2
+                wave_height_divider = 1
+            }
+            ////////////
             current_anim_params = wave_anim_params[wave_height_divider-1]
             layer = current_anim_params.layer
             image_speed = sprite_frames_per_step(current_anim_params.spr)

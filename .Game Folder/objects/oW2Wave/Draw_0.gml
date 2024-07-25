@@ -1,6 +1,5 @@
 
 var yy = room_height - wave_y
-// draw_line(camx(), yy, camx() + camw(), yy)
 
 if current_anim_params != undefined {
     var xst = camx(), w = camw(), h = room_height
