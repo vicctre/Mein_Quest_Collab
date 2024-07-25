@@ -5,7 +5,7 @@ switch phase {
     case 0:
         if !wave_timer.update() {
             phase++
-			phase = 2
+            phase = 2
             wave_height_divider = 1
             current_anim_params = wave_anim_params[wave_height_divider-1]
             layer = current_anim_params.layer
@@ -52,16 +52,18 @@ switch phase {
         if final_wave.y > final_wave.ymax {
             phase++
         }
+		washEveryoneOff()
     break
     case 4:
-            final_wave.endy += final_wave.speed
-            wave_y = room_height - final_wave.endy // third wave follows final wave
-            if final_wave.endy > final_wave.ymax {
-                phase = 0
-                wave_height_divider = 3
-                wave_timer.reset()
-                final_wave.active = false
-                current_anim_params = undefined // turn off background waves
+        final_wave.endy += final_wave.speed
+        wave_y = room_height - final_wave.endy // third wave follows final wave
+        if final_wave.endy > final_wave.ymax {
+            phase = 0
+            wave_height_divider = 3
+            wave_timer.reset()
+            final_wave.active = false
+            current_anim_params = undefined // turn off background waves
         }
+		washEveryoneOff()
     break
 }

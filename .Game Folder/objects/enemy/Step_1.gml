@@ -12,6 +12,8 @@ if(hp <= 0) {
 	inst.hit_blinking_timer = hit_blinking_timer
 	inst.hit_blinking_gain = hit_blinking_gain
 	inst.image_yscale = size;
+	inst.dead_animation_fly_forward = dead_animation_fly_forward
+    inst.dead_animation_fly_forward_speed = dead_animation_fly_forward_speed
 	instance_destroy(); 
 }
 

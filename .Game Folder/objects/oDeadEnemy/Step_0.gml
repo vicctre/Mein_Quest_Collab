@@ -3,7 +3,7 @@ if (done == 0)
 	vsp = vsp + grv; 
 	x = x + hsp; 
 	y = y + vsp; 
-	image_angle += image_xscale*rotation_speed;
+	image_angle += rotation_speed sign(image_xscale);
 }
 
 if global.voleyball {
@@ -17,3 +17,8 @@ if global.voleyball {
 
 // need for blinking function
 rotation = image_angle
+
+if dead_animation_fly_forward {
+	image_xscale += dead_animation_fly_forward_speed * sign(image_xscale)
+	image_yscale += dead_animation_fly_forward_speed
+}

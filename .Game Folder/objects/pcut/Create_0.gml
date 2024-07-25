@@ -2,6 +2,8 @@ invincible = false
 hit_blinking_timer = make_timer(10, false)
 hit_blinking_gain = 180 / hit_blinking_timer.time
 rotation = 0
+dead_animation_fly_forward = false
+dead_animation_fly_forward_speed = 0.025
 
 function set_hit(damage=0) {
 	if (!invincible) {

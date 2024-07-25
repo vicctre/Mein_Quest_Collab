@@ -9,3 +9,6 @@ rotation_speed = 25
 rotation = 0
 hit_blinking_timer = new Timer(0)
 hit_blinking_gain = 0
+
+dead_animation_fly_forward = false
+dead_animation_fly_forward_speed = 0.025

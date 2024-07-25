@@ -35,3 +35,14 @@ current_anim_params = wave_anim_params[wave_height_divider-1]
 layer = layer_get_id(current_anim_params.layer)
 
 instance_create_layer(0, 0, final_wave.layer, oW2WaveFinalWave)
+
+function washEveryoneOff() {
+    var x0 = camx(), x1 = x0 + camw(),
+        y0 = final_wave.endy, y1 = final_wave.y + 128
+	with pCut {
+        if collision_rectangle(x0, y0, x1, y1, id, false, false) {
+            dead_animation_fly_forward = true
+            set_hit(1)
+        }
+    }
+}
