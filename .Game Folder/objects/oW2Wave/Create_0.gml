@@ -57,3 +57,12 @@ function washEveryoneOff() {
         layer = layer_get_id("DeadObjects")
     }
 }
+
+is_paused = false
+function pause() {
+    is_paused = true
+}
+
+function unpause() {
+    is_paused = false
+}

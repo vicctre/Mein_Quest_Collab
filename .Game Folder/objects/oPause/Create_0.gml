@@ -8,6 +8,15 @@ dim_alpha_max = 0.5
 dim_alpha = 0
 dim_ratio = 0.01
 
+dummy_replaced_objects = [
+    ENEMY, oDeadEnemy, oAutoscrollerLog, oRulaTongue,
+    oMein, oMeinOnLog
+]
+
+explicitly_paused_objects = [
+    oSequence, ApploonSpawner, oW2Wave
+]
+
 function PauseWithTimer(time) {
 	if paused {
 		throw "PauseWithTimer called while pause is active"
@@ -27,18 +36,15 @@ function PauseStuff() {
 	//// Actually pause different game objects
 	// First replace game world objects with
 	// visual dummies
-	ReplaceWithPauseDummy(global.player)
-	ReplaceWithPauseDummy(ENEMY)
-	ReplaceWithPauseDummy(oDeadEnemy)
-	ReplaceWithPauseDummy(oAutoscrollerLog)
-	ReplaceWithPauseDummy(oRulaTongue)
+    for (var i = 0; i < array_length(dummy_replaced_objects); i += 1) {
+        var obj = dummy_replaced_objects[i]
+        ReplaceWithPauseDummy(obj)
+    }
 	// Then tell other pausable objects to pause
-	with oSequence {
-		pause()
-	}
-	with ApploonSpawner {
-		pause()
-	}
+    for (var i = 0; i < array_length(explicitly_paused_objects); i += 1) {
+        var obj = explicitly_paused_objects[i]
+        with obj { pause() }
+    }
 }
 
 function ReplaceWithPauseDummy(obj) {
@@ -69,12 +75,10 @@ function ReturnActualInstances() {
 
 function UnpauseStuff() {
 	ReturnActualInstances()
-	with oSequence {
-		unpause()
-	}
-	with ApploonSpawner {
-		unpause()
-	}
+    for (var i = 0; i < array_length(explicitly_paused_objects); i += 1) {
+        var obj = explicitly_paused_objects[i]
+        with obj { unpause() }
+    }
 }
 
 function PauseWithMenuContinue() {

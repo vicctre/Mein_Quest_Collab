@@ -1,4 +1,8 @@
 
+if is_paused {
+    exit
+}
+
 wave_frame_index += image_speed
 
 switch phase {
