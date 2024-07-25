@@ -7,8 +7,8 @@ switch phase {
             phase++
             ////////////
             if DEV {
-                phase = 2
-                wave_height_divider = 1
+                // phase = 2
+                // wave_height_divider = 1
             }
             ////////////
             current_anim_params = wave_anim_params[wave_height_divider-1]
