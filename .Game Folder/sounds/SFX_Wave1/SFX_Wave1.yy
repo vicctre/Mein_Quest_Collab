@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.52551,
+  "duration":3.130499,
   "name":"SFX_Wave1",
   "parent":{
     "name":"Waves",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"SFX_Wave1.wav",
   "type":0,
-  "volume":1.0,
+  "volume":0.14,
 }

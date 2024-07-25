@@ -20,6 +20,7 @@ switch phase {
             image_speed = sprite_frames_per_step(current_anim_params.spr)
             wave_angle_speed = current_anim_params.speed
             wave_angle_position = 0
+            audio_play_sound(current_anim_params.sfx, 0, false)
         }
     break
     case 1:
@@ -37,6 +38,9 @@ switch phase {
                 wave_angle_position = 0
                 if wave_height_divider == 1 {
                     phase++
+                    audio_play_sound(final_wave.sfx, 0, false)
+                } else {
+                    audio_play_sound(current_anim_params.sfx, 0, false)
                 }
 				break
 			}
@@ -53,6 +57,7 @@ switch phase {
             final_wave.active = true
             final_wave.endy = 0
             final_wave.y = final_wave.ystart
+            audio_play_sound(final_wave.sfx, 0, false)
         }
     break
     case 3:
