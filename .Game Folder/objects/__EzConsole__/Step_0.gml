@@ -18,9 +18,25 @@ var _delete_is_pressed		= false;
 // Blink thing after text in bar
 console_text_blink_t = ( console_text_blink_t > room_speed * console_text_blink_rate ? 0 : ++console_text_blink_t );
 
+//// MAC WORKAROUND
+// keyboard_key is broken in IDE+runtime 2024.6.1
+if keyboard_check_pressed(vk_up) {
+    keyboard_key = vk_up
+}
+if keyboard_check_pressed(vk_down) {
+    keyboard_key = vk_down
+}
+if keyboard_check_pressed(vk_left) {
+    keyboard_key = vk_left
+}
+if keyboard_check_pressed(vk_right) {
+    keyboard_key = vk_right
+}
+
 // Do actions
 if (keyboard_check_pressed(vk_anykey)) {
-	switch (keyboard_lastkey) {
+	show_debug_message("Press {0}", keyboard_key)
+	switch (keyboard_key) {
 		case vk_enter:
 			#region // Send command
 			if (console_text_actual != "") {
@@ -70,7 +86,9 @@ if (keyboard_check_pressed(vk_anykey)) {
 		case console_key_nav_down:
 		case console_key_nav_left:
 		case console_key_nav_right:
-			// Do nothing
+			//// MAC WORKAROUND
+            keyboard_string = string_copy(keyboard_string, 0,
+                                          string_length(keyboard_string)-1)
 			break;
 			
 		default:
