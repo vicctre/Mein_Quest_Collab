@@ -43,7 +43,7 @@ function washEveryoneOff() {
     var x0 = camx(), x1 = x0 + camw(),
         y0 = final_wave.endy, y1 = final_wave.y
 	with pCut {
-        if !place_meeting(x, y, oSafeZone)
+        if !place_meeting(x, y, oWaveSafeZone)
                 and collision_rectangle(x0, y0, x1, y1, id, false, false) {
             dead_animation_fly_forward = true
             set_hit(1)
@@ -51,7 +51,7 @@ function washEveryoneOff() {
         layer = layer_get_id("DeadObjects")
     }
     with oMein {
-        if !place_meeting(x, y, oSafeZone)
+        if !place_meeting(x, y, oWaveSafeZone)
                 and collision_rectangle(x0, y0, x1, y1, id, false, false) {
             Hit(id)
         }

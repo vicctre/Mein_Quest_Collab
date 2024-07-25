@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oSafeZone",
+  "%Name":"oWaveSafeZone",
   "eventList":[],
   "managed":true,
-  "name":"oSafeZone",
+  "name":"oWaveSafeZone",
   "overriddenProperties":[],
   "parent":{
     "name":"W2_1",
