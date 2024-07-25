@@ -5,7 +5,8 @@ switch phase {
     case 0:
         if !wave_timer.update() {
             phase++
-            wave_height_divider = 3
+			phase = 2
+            wave_height_divider = 1
             current_anim_params = wave_anim_params[wave_height_divider-1]
             layer = current_anim_params.layer
             image_speed = sprite_frames_per_step(current_anim_params.spr)
@@ -43,23 +44,24 @@ switch phase {
             phase++
             final_wave.active = true
             final_wave.endy = 0
-            final_wave.y = 0
+            final_wave.y = final_wave.ystart
         }
     break
     case 3:
         final_wave.y += final_wave.speed
         if final_wave.y > final_wave.ymax {
             phase++
-            current_anim_params = undefined // turn off background waves
         }
     break
     case 4:
-        final_wave.endy += final_wave.speed
-        if final_wave.endy > final_wave.ymax {
-            phase = 0
-            wave_height_divider = 3
-            wave_timer.reset()
-            final_wave.active = false
+            final_wave.endy += final_wave.speed
+            wave_y = room_height - final_wave.endy // third wave follows final wave
+            if final_wave.endy > final_wave.ymax {
+                phase = 0
+                wave_height_divider = 3
+                wave_timer.reset()
+                final_wave.active = false
+                current_anim_params = undefined // turn off background waves
         }
     break
 }

@@ -18,6 +18,7 @@ wave_anim_params = [
 // Final wave params
 final_wave = {
     speed: 4,   // how fast it falls
+    ystart: -200,
     ymax: room_height * 1.25,   // how far beyond screen it goes
                                 // basically defines a dealy before
                                 // the ending edge appears
