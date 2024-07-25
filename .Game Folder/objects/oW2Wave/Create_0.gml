@@ -8,6 +8,8 @@ wave_frame_index = 0
 wave_angle_position = 0 // used as arg for lengthdir
 wave_angle_speed = 0
 
+// Waves animation params
+// adjust speed to change, well... waves' speed
 wave_anim_params = [
     { spr: sWave_Big, layer: layer_get_id("Wave1"), scale: 1, speed: 1},
     { spr: sWave_Small, layer: layer_get_id("Wave2"), scale: 2, speed: 0.8},
