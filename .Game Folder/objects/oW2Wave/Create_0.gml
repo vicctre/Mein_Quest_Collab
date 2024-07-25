@@ -47,11 +47,13 @@ function washEveryoneOff() {
             dead_animation_fly_forward = true
             set_hit(1)
         }
+        layer = layer_get_id("DeadObjects")
     }
     with oMein {
         if !place_meeting(x, y, oSafeZone)
                 and collision_rectangle(x0, y0, x1, y1, id, false, false) {
             Hit(id)
         }
+        layer = layer_get_id("DeadObjects")
     }
 }
