@@ -42,6 +42,8 @@
     {"$GMFolder":"","%Name":"Pinnik","folderPath":"folders/Objects/Enemies/Small Enemies/Pinnik.yy","name":"Pinnik","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Objects/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"INGAME_Objects","folderPath":"folders/Objects/INGAME_Objects.yy","name":"INGAME_Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Universal","folderPath":"folders/Objects/INGAME_Objects/Universal.yy","name":"Universal","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"W2_1","folderPath":"folders/Objects/INGAME_Objects/W2_1.yy","name":"W2_1","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Items","folderPath":"folders/Objects/Items.yy","name":"Items","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Objects/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sequences","folderPath":"folders/Objects/Sequences.yy","name":"Sequences","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -54,7 +56,6 @@
     {"$GMFolder":"","%Name":"Screens","folderPath":"folders/Objects/SystemObjects/Screens.yy","name":"Screens","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"UI","folderPath":"folders/Objects/UI.yy","name":"UI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"W1_2_part5","folderPath":"folders/Objects/W1_2_part5.yy","name":"W1_2_part5","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"W2_1","folderPath":"folders/Objects/W2_1.yy","name":"W2_1","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Testing Area","folderPath":"folders/Rooms/Testing Area.yy","name":"Testing Area","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -91,6 +92,7 @@
     {"$GMFolder":"","%Name":"1Cutscenes","folderPath":"folders/Sprites/1Cutscenes.yy","name":"1Cutscenes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"DEMO2_Update_trailer","folderPath":"folders/Sprites/1Cutscenes/DEMO2_Update_trailer.yy","name":"DEMO2_Update_trailer","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Intro","folderPath":"folders/Sprites/1Cutscenes/Intro.yy","name":"Intro","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Demo 2 Cutscenes","folderPath":"folders/Sprites/1Cutscenes/Demo 2 Cutscenes.yy","name":"Demo 2 Cutscenes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"AdventureLogs","folderPath":"folders/Sprites/AdventureLogs.yy","name":"AdventureLogs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Backgrounds","folderPath":"folders/Sprites/Backgrounds.yy","name":"Backgrounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"W1-1","folderPath":"folders/Sprites/Backgrounds/W1-1.yy","name":"W1-1","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -167,7 +169,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.1.160",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"Mein_Quest_SST",
   "resources":[

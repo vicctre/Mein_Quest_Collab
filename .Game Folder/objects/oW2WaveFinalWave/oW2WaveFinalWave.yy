@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"W2_1",
-    "path":"folders/Objects/W2_1.yy",
+    "path":"folders/Objects/INGAME_Objects/W2_1.yy",
   },
   "parentObjectId":null,
   "persistent":false,

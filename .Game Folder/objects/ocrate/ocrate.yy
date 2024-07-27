@@ -10,8 +10,8 @@
   "name":"oCrate",
   "overriddenProperties":[],
   "parent":{
-    "name":"INGAME_Objects",
-    "path":"folders/Objects/INGAME_Objects.yy",
+    "name":"Universal",
+    "path":"folders/Objects/INGAME_Objects/Universal.yy",
   },
   "parentObjectId":{
     "name":"pCut",
