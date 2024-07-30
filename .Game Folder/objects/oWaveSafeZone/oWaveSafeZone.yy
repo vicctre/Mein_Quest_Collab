@@ -32,5 +32,5 @@
     "path":"sprites/sSafeZone/sSafeZone.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
