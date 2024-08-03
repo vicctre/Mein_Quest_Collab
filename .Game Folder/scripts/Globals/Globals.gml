@@ -57,7 +57,7 @@ function game_reset_globals() {
 		global.skip_logos = true
 		global.dev_level_goto = W1_2_part3
 		// global.rula_start_state = "jumpState"
-		//global.autoscroller_skip_log_intro = true
+		// global.autoscroller_skip_log_intro = true
 	}
 }
 

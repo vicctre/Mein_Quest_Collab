@@ -559,9 +559,13 @@ function applyGravity() {
 }
 
 function checkFloatOnLog() {
-	// floating on log
+    // floating on log
 	// additional hsp will keep untill land on common ground
 	is_on_log = false
+    if state == PLAYERSTATE.ATTACK_POGO {
+        ground_hsp = 0
+        return
+    }
 	if !down_free {
 		if instance_place(x, y + 1, oAutoscrollerLog) != noone {
 			ground_hsp = oAutoscrollerLog.hsp

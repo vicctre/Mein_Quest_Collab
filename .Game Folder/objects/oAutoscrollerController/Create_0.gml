@@ -22,7 +22,7 @@ function InitEnemies() {
 }
 
 function CheckActivateEnemies() {
-	var camera_bbox_right = camx(0) + camw(0)
+	var camera_bbox_right = camx() + camw()
 	for(var i = 0; i < array_length(enemies_to_activate_by_distance); i++) {
 		var data = 	enemies_to_activate_by_distance[i]
 		var dist = max(data.dist, 0)
@@ -30,7 +30,6 @@ function CheckActivateEnemies() {
 			instance_activate_object(data.id)
 			array_remove(enemies_to_activate_by_distance, data)
 			i--
-			show_debug_message("Enemy activated by distance")
 		}
 	}
 }
