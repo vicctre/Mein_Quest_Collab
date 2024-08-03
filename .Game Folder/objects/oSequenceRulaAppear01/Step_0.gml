@@ -1,7 +1,6 @@
 
-if global.rula_intro_cutscene_played or is_sequence_finished() {
+if is_sequence_finished() or global.rula_intro_cutscene_played {
     global.rula_intro_cutscene_played = true
-	oSequenceRulaAppear02.unpause()
 	instance_destroy()
 }
 

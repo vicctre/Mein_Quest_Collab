@@ -171,7 +171,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.6.1.160",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -440,9 +440,9 @@
     {"id":{"name":"SFX_Land","path":"sounds/SFX_Land/SFX_Land.yy",},},
     {"id":{"name":"SFX_leaves","path":"sounds/SFX_leaves/SFX_leaves.yy",},},
     {"id":{"name":"SFX_Magic","path":"sounds/SFX_Magic/SFX_Magic.yy",},},
+    {"id":{"name":"SFX_MENU_NA","path":"sounds/SFX_MENU_NA/SFX_MENU_NA.yy",},},
     {"id":{"name":"SFX_Menu_Nav","path":"sounds/SFX_Menu_Nav/SFX_Menu_Nav.yy",},},
     {"id":{"name":"SFX_Menu_select","path":"sounds/SFX_Menu_select/SFX_Menu_select.yy",},},
-    {"id":{"name":"SFX_NA","path":"sounds/SFX_NA/SFX_NA.yy",},},
     {"id":{"name":"SFX_pew","path":"sounds/SFX_pew/SFX_pew.yy",},},
     {"id":{"name":"SFX_PogoBounce","path":"sounds/SFX_PogoBounce/SFX_PogoBounce.yy",},},
     {"id":{"name":"SFX_PogoLand","path":"sounds/SFX_PogoLand/SFX_PogoLand.yy",},},
