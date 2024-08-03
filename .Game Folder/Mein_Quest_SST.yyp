@@ -118,11 +118,11 @@
     {"$GMFolder":"","%Name":"Environment","folderPath":"folders/Sprites/Environment.yy","name":"Environment","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Log stuff","folderPath":"folders/Sprites/Environment/Log stuff.yy","name":"Log stuff","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Hazards","folderPath":"folders/Sprites/Hazards.yy","name":"Hazards","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"World 3","folderPath":"folders/Sprites/Hazards/World 3.yy","name":"World 3","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"World 1","folderPath":"folders/Sprites/Hazards/World 1.yy","name":"World 1","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"World 2","folderPath":"folders/Sprites/Hazards/World 2.yy","name":"World 2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Geyser","folderPath":"folders/Sprites/Hazards/World 2/Geyser.yy","name":"Geyser","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Waves","folderPath":"folders/Sprites/Hazards/World 2/Waves.yy","name":"Waves","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"World 3","folderPath":"folders/Sprites/Hazards/World 3.yy","name":"World 3","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Items","folderPath":"folders/Sprites/Items.yy","name":"Items","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Labels","folderPath":"folders/Sprites/Labels.yy","name":"Labels","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tutorial Bubbles","folderPath":"folders/Sprites/Labels/Tutorial Bubbles.yy","name":"Tutorial Bubbles","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -171,7 +171,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.6.1.160",
   },
   "name":"Mein_Quest_SST",
   "resources":[

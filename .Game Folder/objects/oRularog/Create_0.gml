@@ -400,7 +400,7 @@ throwMeinState = {
 		change_state_timer.reset()
 		oMein.visible = true
 		oMein.become_throwed(throw_hsp * id.image_xscale, throw_vsp)
-		oMein.invincibility_timer_no_flashing = 5 // make Mein invincible to not be hit by Rula while throwed
+		oMein.invincibility_timer_no_flashing.reset(5) // make Mein invincible to not be hit by Rula while throwed
 		audio_play_sound(SFX_pew, 3, false)
 		id.sprite_index = sRulaTongueStance
 		id.setDir()

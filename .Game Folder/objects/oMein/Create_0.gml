@@ -102,10 +102,11 @@ pogo_cooldown_timer = make_timer(30, false)
 pogo_attack_instance = instance_create_layer(
     x, y, layer, oAttackSimple, {one_frame: false, sprite_index: sHurtBoxPogo})
 
-invincibility_time = global.player_invincibilty_time
-invincibility_timer_no_flashing = 0
-invincibility_timer = 0
+invincibility_timer_no_flashing = make_timer(global.player_invincibilty_time, 0)
+invincibility_timer = make_timer(global.player_invincibilty_time, 0)
 hit_blinking_gain = 14
+
+heal_glowing_timer = make_timer(60, 0)
 
 death_animation_started = false
 
@@ -356,7 +357,7 @@ function Kill() {
 }
 
 function Hit(enemy) {
-	if invincibility_timer or invincibility_timer_no_flashing {
+	if invincibility_timer.timer or invincibility_timer_no_flashing.timer {
 		return
 	}
 	if state == PLAYERSTATE.GRABBED
@@ -386,7 +387,7 @@ function Hit(enemy) {
 	hit.timer = hit.time
 	state = PLAYERSTATE.HIT
 	sprite_index = sPlayerDamage
-	invincibility_timer = invincibility_time
+	invincibility_timer.reset()
 	oUI.shake_hp()
 }
 
@@ -462,8 +463,8 @@ function start_log_ride() {
 	instance_destroy()
 }
 
-function go_invincible_without_flashing(time = invincibility_time) {
-	invincibility_timer_no_flashing = invincibility_time
+function go_invincible_without_flashing() {
+	invincibility_timer_no_flashing.reset()
 }
 
 function become_grabbed() {
@@ -581,6 +582,14 @@ function finalizeHsp() {
 	}
 	return final_hsp
 }
+
+function heal(amount) {
+	if global.player_hp < global.player_hp_max {
+		global.player_hp = min(global.player_hp_max, global.player_hp+amount)
+	}
+    heal_glowing_timer.reset()
+}
+
 
 function perform_attack(spr, xscale, dmg, one_frame=true) {
 	var inst = instance_create_layer(x, y, "Player", oAttack, 

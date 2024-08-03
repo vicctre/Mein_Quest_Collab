@@ -13,15 +13,16 @@ autoscroller_log_sp = 1.5
 autoscroller_log_sp_increased = 4.15
 ///used to change autocroller log speed
 
-heal_coins_number = 100
 
 death_transition_delay_time = 140
 death_pause_time = 60
 
 enemy_hit_blinking_color = #FFFF65
 
+heal_coins_number = 100
 heal_amount_large = 3
 heal_amount_small = 1
+heal_glowing_color = c_green // can set hex like #ff00ff
 
 player_dead_vsp = -5
 player_dead_hsp = 0

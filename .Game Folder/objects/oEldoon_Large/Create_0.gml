@@ -1,5 +1,6 @@
-event_inherited();
+event_inherited()
+
 collected = function() {
-	spawnHealFizzles();
-	HealPlayer(global.heal_amount_large)
+	spawnHealFizzles()
+	global.player.heal(global.heal_amount_large)
 }

@@ -49,7 +49,7 @@ function Kill() {
 }
 
 function Hit() {
-	if invincibility_timer or invincibility_timer_no_flashing {
+	if invincibility_timer.timer or invincibility_timer_no_flashing.timer {
 		return
 	}
 	global.player_hp -= global.player_invincible == false
@@ -60,7 +60,7 @@ function Hit() {
 		Kill()
 		return
 	}
-	invincibility_timer = invincibility_time
+	invincibility_timer.reset()
 	oUI.shake_hp()
 }
 

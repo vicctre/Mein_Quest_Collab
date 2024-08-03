@@ -103,4 +103,4 @@ if has_control {
 	}
 }
 
-invincibility_timer_no_flashing--
+invincibility_timer_no_flashing.update()
