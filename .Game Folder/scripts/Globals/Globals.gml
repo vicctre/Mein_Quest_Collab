@@ -65,21 +65,24 @@ function dev_override() {
 	if !DEV
 		return;
 	switch room {
-		case W1_2_part4_AutoScroller1:
-			switch object_index {
-				case oMein:
-					x = 8100
-					break
-				case oAutoscrollerLog:
-					x = 8100
-					sprite_index = sLogShort2
-					global.autoscroller_current_log_sprite_index = 1
-					break
-			}
-			break
-		case W1_2_part3:
-			oMein.x = 860
-		break
+        //// debug autoscroller log shortening
+		// case W1_2_part4_AutoScroller1:
+		// 	switch object_index {
+		// 		case oMein:
+		// 			x = 8100
+		// 			break
+		// 		case oAutoscrollerLog:
+		// 			x = 8100
+		// 			sprite_index = sLogShort2
+		// 			global.autoscroller_current_log_sprite_index = 1
+		// 			break
+		// 	}
+        // break
+
+        //// debug autoscroller start cutscene
+		// case W1_2_part3:
+		// 	oMein.x = 860
+        // break
 	}
 }
 
