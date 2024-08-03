@@ -30,6 +30,7 @@ logo_sequence_speed_scale = 1
 music_gain_array = []
 player = oMein
 rula_start_state = undefined
+rula_intro_cutscene_played = false
 restart_level_on_death = true
 skip_logos = false
 stage_select_show_unlock_animation = false
@@ -48,7 +49,7 @@ function game_reset_globals() {
 		W1_2_part1,
 		W2_1_part1, 
 	]
-
+    global.rula_intro_cutscene_played = false
 
 	global.dev_level_goto = noone
 	if DEV {
