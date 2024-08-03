@@ -549,7 +549,10 @@
           ],"traits":0,},
       ],"traits":0,},
   ],
-  "visibleRange":null,
+  "visibleRange":{
+    "x":0.0,
+    "y":1402.9999,
+  },
   "volume":1.0,
   "xorigin":16,
   "yorigin":24,
