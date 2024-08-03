@@ -4,7 +4,7 @@
   "ConfigValues":{
     "Dev":{
       "option_mac_allow_fullscreen":"false",
-      "option_mac_start_fullscreen":"true",
+      "option_mac_start_fullscreen":"false",
     },
   },
   "name":"macOS",

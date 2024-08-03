@@ -6,6 +6,10 @@ if is_sequence_finished() {
         sequence_inst = layer_sequence_create(
                 layer, x, y, sequence)
         instance_create_layer(x, y, layer, oTransitionSpiritByteCollected)
+		
+		//// workaround mein and syster blinking for a couple frames
+		layer_sequence_headpos(sequence_inst, 1)
+        oTransitionSpiritByteCollected.start_from_frame = 1
     } else {
         instance_destroy()
     }

@@ -12,6 +12,8 @@ destroy_delay = 60
 //this is where you can add sequences you make at any time. It will choose from these options 
 sequence = choose(seqPlayerVictory, seqPlayerVictory02, seqPlayerVictory03);
 
+// workaround transition becoming invisible for a couple frames
+start_from_frame = undefined
 
 transition_timer = 7 * 60
 transition_timer_on = true
@@ -30,4 +32,11 @@ function pause() {
 function unpause() {
 	layer_sequence_speedscale(sequence_inst, 1)
 	transition_timer_on = true
+}
+
+victory_music = global.msc_stage_clear
+switch room {
+    case W1_3BOSS:
+        victory_music = BGM_BossCLEAR01
+    break
 }

@@ -10,6 +10,9 @@ switch phase {
 			oMusic.switch_music(global.msc_stage_clear, false, 0)
 			sequence_inst = layer_sequence_create(
 					layer, global.player.x, global.player.y, sequence)
+			if start_from_frame != undefined {
+				layer_sequence_headpos(sequence_inst, start_from_frame)
+			}
 		}
 		break
 	case 1:
