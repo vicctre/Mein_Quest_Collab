@@ -3,7 +3,7 @@ event_inherited()
 
 name = "Rularog"
 
-hp_max = 1 //26 
+hp_max = 26 
 hp = hp_max
 hp_phase2_amount =  12//11
 done_phase2_roar = false
@@ -11,6 +11,7 @@ done_phase2_roar = false
 // hp ui
 hp_ui.draw_x = 700
 hp_ui.draw_y = 730
+
 
 // used to animate rotation
 rotation = 0

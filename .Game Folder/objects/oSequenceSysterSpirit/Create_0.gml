@@ -7,9 +7,7 @@ sequence = seqSS_Awaken01
 oMein.visible = false
 //frame_roar = 179
 destroy_delay = -1
-sequence_layer = "Leafage"
-sequence_inst = layer_sequence_create(
-			sequence_layer, x, y, sequence)
+sequence_inst = layer_sequence_create(layer, x, y, sequence)
 prev_sequence = noone
 
 notify_started()

@@ -4,7 +4,7 @@ if is_sequence_finished() {
         sequence = seqSS_Victory01
         prev_sequence = sequence_inst
         sequence_inst = layer_sequence_create(
-                sequence_layer, x, y, sequence)
+                layer, x, y, sequence)
     } else {
         instance_create_layer(x, y, layer, oTransitionSpiritByteCollected)
         instance_destroy()

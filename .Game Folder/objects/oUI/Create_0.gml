@@ -111,11 +111,14 @@ function get_stage_name(room_) {
 
 function ease_out() {
 	global.UI_Offscreen = true
+    if instance_exists(oBossHpUI) { oBossHpUI.ease_out() }
 }
 
 function ease_in() {
 	global.UI_Offscreen = false
+    if instance_exists(oBossHpUI) { oBossHpUI.ease_in() }
 }
+
 
 oEventSystem.Subscribe(Events.cutscene_start, id, ease_out)
 oEventSystem.Subscribe(Events.cutscene_end, id, ease_in)

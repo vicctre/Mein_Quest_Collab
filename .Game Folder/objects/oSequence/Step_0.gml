@@ -8,3 +8,7 @@ if is_sequence_finished() {
 		instance_destroy()
 	}
 }
+
+if DEV and oInput.key_attack {
+	layer_sequence_speedscale(sequence_inst, 10)
+}

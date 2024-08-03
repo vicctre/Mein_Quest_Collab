@@ -221,7 +221,7 @@ switch state {
             x = x_to
             hsp = 0
 			hsp_to = 0
-            instance_create_layer(x, bbox_bottom, layer, oSequenceSysterSpirit)
+            instance_create_layer(x, bbox_bottom, "SysterSpiritCutscene", oSequenceSysterSpirit)
 			state = PLAYERSTATE.FREE
         }
 		break
