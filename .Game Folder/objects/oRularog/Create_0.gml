@@ -682,7 +682,7 @@ deadState = {
 	step: function() {
         // shake screen
 		if !screen_shaked {
-			oCamera.start_shaking()
+			oCamera.start_shaking(2)
 			screen_shaked = true
 			audio_play_sound(global.sfx_BOOM, 3, false)
 		}
