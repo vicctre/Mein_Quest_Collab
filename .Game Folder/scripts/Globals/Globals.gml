@@ -64,7 +64,7 @@ function game_reset_globals() {
 function dev_override() {
 	if !DEV
 		return;
-	switch room {
+	//switch room {
         //// debug autoscroller log shortening
 		// case W1_2_part4_AutoScroller1:
 		// 	switch object_index {
@@ -83,7 +83,7 @@ function dev_override() {
 		// case W1_2_part3:
 		// 	oMein.x = 860
         // break
-	}
+	//}
 }
 
 game_reset_globals()
