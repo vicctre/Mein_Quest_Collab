@@ -360,9 +360,8 @@ function Hit(enemy) {
 	if invincibility_timer.timer or invincibility_timer_no_flashing.timer {
 		return
 	}
-	if state == PLAYERSTATE.GRABBED
-            or state == PLAYERSTATE.ATTACK_POGO {
-		return;	
+	if state == PLAYERSTATE.GRABBED {
+		return;
 	}
 	if state == PLAYERSTATE.ATTACK_AERAL and instance_exists(aeral_attack_inst) {
 		instance_destroy(aeral_attack_inst)
