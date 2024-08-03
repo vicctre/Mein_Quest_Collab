@@ -22,7 +22,7 @@ enemy_hit_blinking_color = #FFFF65
 heal_coins_number = 100
 heal_amount_large = 3
 heal_amount_small = 1
-heal_glowing_color = c_green // can set hex like #ff00ff
+heal_glowing_color = #A9F8BC // can set hex like #ff00ff
 
 player_dead_vsp = -5
 player_dead_hsp = 0
