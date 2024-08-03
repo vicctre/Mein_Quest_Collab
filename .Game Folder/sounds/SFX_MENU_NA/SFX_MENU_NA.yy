@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"SFX_NA",
+  "%Name":"SFX_MENU_NA",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":16,
   "compression":1,
   "conversionMode":0,
-  "duration":0.839501,
-  "name":"SFX_NA",
+  "duration":0.20254,
+  "name":"SFX_MENU_NA",
   "parent":{
     "name":"Need to be Added",
     "path":"folders/Sounds/SFX/Need to be Added.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"SFX_NA.wav",
+  "soundFile":"SFX_MENU_NA.wav",
   "type":0,
   "volume":1.0,
 }
