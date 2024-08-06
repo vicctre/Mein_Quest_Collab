@@ -31,7 +31,7 @@
   "origin":4,
   "parent":{
     "name":"Random stuff",
-    "path":"folders/Sprites/WIP NOT IN USE/Random stuff.yy",
+    "path":"folders/Sprites/WIP_Misc./Random stuff.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

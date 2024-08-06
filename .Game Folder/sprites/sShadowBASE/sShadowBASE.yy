@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Base assets",
-    "path":"folders/Sprites/WIP NOT IN USE/Tre Shadows WIPS/Base assets.yy",
+    "path":"folders/Sprites/WIP_Misc./Tre Shadows WIPS/Base assets.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

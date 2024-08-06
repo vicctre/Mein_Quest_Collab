@@ -35,8 +35,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"In Game HUD",
-    "path":"folders/Sprites/UI stuff/In Game HUD.yy",
+    "name":"Other",
+    "path":"folders/Sprites/UI stuff/Other.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

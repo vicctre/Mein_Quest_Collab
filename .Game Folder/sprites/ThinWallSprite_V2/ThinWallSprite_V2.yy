@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"IDK lol",
-    "path":"folders/Sprites/WIP NOT IN USE/Tre Shadows WIPS/IDK lol.yy",
+    "path":"folders/Sprites/WIP_Misc./Tre Shadows WIPS/IDK lol.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"AdventureLogs",
-    "path":"folders/Sprites/AdventureLogs.yy",
+    "name":"Full Pages",
+    "path":"folders/Sprites/AdventureLogs/Full Pages.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -54,8 +54,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"AdventureLogs",
-    "path":"folders/Sprites/AdventureLogs.yy",
+    "name":"In Game HUD",
+    "path":"folders/Sprites/UI stuff/In Game HUD.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

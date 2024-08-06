@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Hitboxes",
+    "path":"folders/Sprites/Mein Sprites/Hitboxes.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
