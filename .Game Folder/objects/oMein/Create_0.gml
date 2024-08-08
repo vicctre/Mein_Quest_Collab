@@ -442,7 +442,7 @@ function colliding_enemy() {
 }
 
 function on_death() {
-	SlideTransition(TRANS_MODE.RESTART)
+	RoomTransition(TRANS_MODE.RESTART)
 	global.restart_level_on_death = true
 	global.lose_coins_counter = global.lose_coins_time;
 	global.coins = max(0, global.coins - global.lose_coins_punishment)

@@ -17,7 +17,7 @@ function ConsoleGoTo(params) {
 		return
 	}
 	//show_debug_message("ConsoleGoTo {0} --> {1}", room_name, index)
-	SlideTransition(TRANS_MODE.GOTO, index)
+	RoomTransition(TRANS_MODE.GOTO, index)
 }
 
 function ConsoleRoomSpeed(params) {

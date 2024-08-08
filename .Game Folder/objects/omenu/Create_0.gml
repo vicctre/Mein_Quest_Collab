@@ -141,7 +141,10 @@ menu = [
 	},
 	{
 		title: "Adventure Logs",
-		action: undefined
+		action: function() {
+            RoomTransition(TRANS_MODE.GOTO, rmMenuAdventureLogsScreen,
+                           false, 0, TRANS_TYPE.FADE)
+        }
 	},
 	{
 		title: "Options",

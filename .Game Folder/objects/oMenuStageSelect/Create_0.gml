@@ -40,9 +40,9 @@ function StageButton(ind, stage, title, spr, stage_locked=false) constructor {
 			return;
 		}
 		if stage == W1_1_part1 {
-			SlideTransition(TRANS_MODE.GOTO, rmIntroSequence)
+			RoomTransition(TRANS_MODE.GOTO, rmIntroSequence)
 		} else {
-			SlideTransition(TRANS_MODE.GOTO, stage)
+			RoomTransition(TRANS_MODE.GOTO, stage)
 		}
 		global.player_hp = global.player_hp_max
 		game_reset_globals()

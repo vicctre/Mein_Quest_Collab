@@ -149,8 +149,8 @@
     {"$GMFolder":"","%Name":"unique tiles","folderPath":"folders/Sprites/Tile_Tests/unique tiles.yy","name":"unique tiles","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"UI stuff","folderPath":"folders/Sprites/UI stuff.yy","name":"UI stuff","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"In Game HUD","folderPath":"folders/Sprites/UI stuff/In Game HUD.yy","name":"In Game HUD","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Other","folderPath":"folders/Sprites/UI stuff/Other.yy","name":"Other","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Menus","folderPath":"folders/Sprites/UI stuff/Menus.yy","name":"Menus","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Other","folderPath":"folders/Sprites/UI stuff/Other.yy","name":"Other","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"WIP_Misc.","folderPath":"folders/Sprites/WIP_Misc..yy","name":"WIP_Misc.","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Random stuff","folderPath":"folders/Sprites/WIP_Misc./Random stuff.yy","name":"Random stuff","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tre Shadows WIPS","folderPath":"folders/Sprites/WIP_Misc./Tre Shadows WIPS.yy","name":"Tre Shadows WIPS","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -174,7 +174,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.6.1.160",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -296,6 +296,7 @@
     {"id":{"name":"rmDNS_Logo","path":"rooms/rmDNS_Logo/rmDNS_Logo.yy",},},
     {"id":{"name":"rmIntroSequence","path":"rooms/rmIntroSequence/rmIntroSequence.yy",},},
     {"id":{"name":"rmMainMenu","path":"rooms/rmMainMenu/rmMainMenu.yy",},},
+    {"id":{"name":"rmMenuAdventureLogsScreen","path":"rooms/rmMenuAdventureLogsScreen/rmMenuAdventureLogsScreen.yy",},},
     {"id":{"name":"rmStart","path":"rooms/rmStart/rmStart.yy",},},
     {"id":{"name":"rmThanksForPlayingScreen","path":"rooms/rmThanksForPlayingScreen/rmThanksForPlayingScreen.yy",},},
     {"id":{"name":"rmTitleScreen","path":"rooms/rmTitleScreen/rmTitleScreen.yy",},},
@@ -819,6 +820,7 @@
     {"roomId":{"name":"W2_2_part4","path":"rooms/W2_2_part4/W2_2_part4.yy",},},
     {"roomId":{"name":"W2_2_part5","path":"rooms/W2_2_part5/W2_2_part5.yy",},},
     {"roomId":{"name":"W2_1_part5","path":"rooms/W2_1_part5/W2_1_part5.yy",},},
+    {"roomId":{"name":"rmMenuAdventureLogsScreen","path":"rooms/rmMenuAdventureLogsScreen/rmMenuAdventureLogsScreen.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

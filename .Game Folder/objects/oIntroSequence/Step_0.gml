@@ -1,5 +1,5 @@
 event_inherited()
 
 if oInput.key_action {
-	SlideTransition(TRANS_MODE.NEXT);
+	RoomTransition(TRANS_MODE.NEXT);
 }

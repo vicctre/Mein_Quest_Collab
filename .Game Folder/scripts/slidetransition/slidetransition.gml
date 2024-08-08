@@ -2,12 +2,19 @@
 ///@arg Mode sets transition mode between next, restart and goto 
 ///@arg target sets target room when using the goto mode 
 
-function SlideTransition(mode, target=undefined, stage_win=false, transition_delay=0){
-	oTransition.mode = mode
-	oTransition.transition_delay = transition_delay
-	if target != undefined {
-		oTransition.target = target	
-	}
+function RoomTransition(
+        mode_, target=undefined, stage_win=false,
+        transition_delay=0, type=TRANS_TYPE.SLIDE) {
+    with oTransition {
+        mode = mode_
+        is_forward = true
+        is_on = true
+        transition_delay = transition_delay
+        trans_type = type
+        if target != undefined {
+            oTransition.target = target	
+        }
+    }
 	if stage_win {
 		oEventSystem.Notify(Events.stage_win)
 	}
@@ -15,5 +22,5 @@ function SlideTransition(mode, target=undefined, stage_win=false, transition_del
 
 function GoToStageSelect() {
 	global.goto_stage_select = true
-	SlideTransition(TRANS_MODE.GOTO, rmMainMenu)
+	RoomTransition(TRANS_MODE.GOTO, rmMainMenu)
 }
