@@ -115,6 +115,7 @@
     {"name":"oInput","order":6,"path":"objects/oInput/oInput.yy",},
     {"name":"oIntroSequence","order":7,"path":"objects/oIntroSequence/oIntroSequence.yy",},
     {"name":"oLogoSequence","order":2,"path":"objects/oLogoSequence/oLogoSequence.yy",},
+    {"name":"oMenuAdventureLogs","order":1,"path":"objects/oMenuAdventureLogs/oMenuAdventureLogs.yy",},
     {"name":"oMusic","order":11,"path":"objects/oMusic/oMusic.yy",},
     {"name":"oPause","order":7,"path":"objects/oPause/oPause.yy",},
     {"name":"oPauseDummy","order":9,"path":"objects/oPauseDummy/oPauseDummy.yy",},

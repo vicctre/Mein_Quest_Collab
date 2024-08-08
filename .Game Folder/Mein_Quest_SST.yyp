@@ -246,6 +246,7 @@
     {"id":{"name":"oMein","path":"objects/oMein/oMein.yy",},},
     {"id":{"name":"oMeinOnLog","path":"objects/oMeinOnLog/oMeinOnLog.yy",},},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},},
+    {"id":{"name":"oMenuAdventureLogs","path":"objects/oMenuAdventureLogs/oMenuAdventureLogs.yy",},},
     {"id":{"name":"oMenuPause","path":"objects/oMenuPause/oMenuPause.yy",},},
     {"id":{"name":"oMenuStageSelect","path":"objects/oMenuStageSelect/oMenuStageSelect.yy",},},
     {"id":{"name":"oMusic","path":"objects/oMusic/oMusic.yy",},},

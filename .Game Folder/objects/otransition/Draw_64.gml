@@ -14,5 +14,3 @@ if is_on {
         break
     }
 }
-
-debug_draw_var("percent", percent)
