@@ -326,6 +326,7 @@
     {"id":{"name":"W2_1_part3","path":"rooms/W2_1_part3/W2_1_part3.yy",},},
     {"id":{"name":"W2_1_part4","path":"rooms/W2_1_part4/W2_1_part4.yy",},},
     {"id":{"name":"W2_1_part5","path":"rooms/W2_1_part5/W2_1_part5.yy",},},
+    {"id":{"name":"W2_1_part6","path":"rooms/W2_1_part6/W2_1_part6.yy",},},
     {"id":{"name":"W2_2_part1","path":"rooms/W2_2_part1/W2_2_part1.yy",},},
     {"id":{"name":"W2_2_part2","path":"rooms/W2_2_part2/W2_2_part2.yy",},},
     {"id":{"name":"W2_2_part3","path":"rooms/W2_2_part3/W2_2_part3.yy",},},
@@ -822,6 +823,7 @@
     {"roomId":{"name":"W2_2_part5","path":"rooms/W2_2_part5/W2_2_part5.yy",},},
     {"roomId":{"name":"W2_1_part5","path":"rooms/W2_1_part5/W2_1_part5.yy",},},
     {"roomId":{"name":"rmMenuAdventureLogsScreen","path":"rooms/rmMenuAdventureLogsScreen/rmMenuAdventureLogsScreen.yy",},},
+    {"roomId":{"name":"W2_1_part6","path":"rooms/W2_1_part6/W2_1_part6.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
