@@ -45,3 +45,17 @@ adventure_logs = {
 					 + " are they even actually fruit?"
 	}
 }
+
+adventure_logs_array = []
+var names_order = [
+    "Mein",
+    "Genull",
+    "Tuffull",
+    "Apploon",
+    "Rularog",
+]
+
+for (var i = 0; i < array_length(names_order); ++i) {
+    var name = names_order[i]
+    array_push(adventure_logs_array, adventure_logs[$ name])
+}

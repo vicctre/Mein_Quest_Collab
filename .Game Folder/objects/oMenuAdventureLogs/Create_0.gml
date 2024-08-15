@@ -48,26 +48,25 @@ cursor = {
 	}
 }
 
-var iter = new IterStruct(global.adventure_logs)
-logs_count = 0
-var count = 0
+logs_count = array_length(global.adventure_logs_array)
 read_logs = []
-while iter.next() {
-    array_push(array_last(grid), iter.value())
+var count = 0
+for (var i = 0; i < array_length(global.adventure_logs_array); ++i) {
+    var log = global.adventure_logs_array[i]
+    array_push(array_last(grid), log)
 	count++
     if count == grid_cols {
         array_push(grid, [])
         count = 0
     }
-
-    var read_log = instance_create_layer(camx_cent() + camw() * logs_count, camy_cent(), layer, oMenuAdvLog)
-    read_log.Init(iter.value())
-    read_log.ind = logs_count
+    var read_log = instance_create_layer(
+        camx_cent() + camw() * logs_count,
+        camy_cent(), layer, oMenuAdvLog)
+    read_log.Init(log)
+    read_log.ind = i
 	read_log.xto = read_log.x
 	read_log.visible = false
     array_push(read_logs, read_log)
-
-    logs_count++
 }
 
 last_row_size = array_length(array_last(grid))
