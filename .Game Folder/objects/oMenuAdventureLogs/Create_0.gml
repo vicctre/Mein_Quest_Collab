@@ -3,7 +3,7 @@ mode = "grid" // "read"
 
 // set up grid
 grid = [[]]
-grid_cols = 3
+grid_cols = 4
 
 cursor = {
     id: id,
@@ -60,7 +60,7 @@ last_row_size = array_length(array_last(grid))
 
 
 // draw params
-draw_scale = 0.5
+draw_scale = 1
 draw_gap = 0
 var w = sprite_get_width(sAdvLog_Blank) * draw_scale
 half_logw = w * 0.5
@@ -69,7 +69,7 @@ draw_xstep = w + draw_gap
 draw_ystep = h + draw_gap
 
 draw_xst = camw() * 0.5 - (grid_cols - 1) * w * 0.5
-draw_yst = 100
+draw_yst = 250
 
 
 
