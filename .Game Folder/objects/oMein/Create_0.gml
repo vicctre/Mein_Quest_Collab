@@ -265,7 +265,7 @@ function Animate() {
 	image_speed = 1
 	switch state {
         case PLAYERSTATE.SYSTER_SPIRIT:
-		case PLAYERSTATE.FREE: {
+		case PLAYERSTATE.FREE:
 			if animate_crouch_transition(sPlayer, -1) {
 				break	
 			}
@@ -305,37 +305,21 @@ function Animate() {
 				}
 			}
 			break
-		}
-		case PLAYERSTATE.ATTACK_SLASH: {
-			break
-		}
-		case PLAYERSTATE.ATTACK_COMBO: {
-			break
-		}
-		case PLAYERSTATE.DEAD: {
-			break
-		}
-		case PLAYERSTATE.HIT: {
-			break
-		}
-		case PLAYERSTATE.ENTER_DOOR: {
+		case PLAYERSTATE.ENTER_DOOR:
 			image_speed = global.player_door_enter_anim_sp
 			if is_animation_end() {
 				image_speed = 0
 			}
 			break
-		}
-		case PLAYERSTATE.CROUCH: {
+		case PLAYERSTATE.CROUCH:
 			if !animate_crouch_transition(sCrouch, 1) {
 				sprite_index = sCrouch
 			}
 			break
-		}
-        case PLAYERSTATE.ATTACK_POGO: {
+        case PLAYERSTATE.ATTACK_POGO:
             if is_animation_end() {
                 image_speed = 0
             }
-        }
 	}
 }
 
