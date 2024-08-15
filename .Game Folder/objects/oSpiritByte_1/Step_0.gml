@@ -1,0 +1,2 @@
+
+flickering_image_index += global.spirit_byte_flickering_image_speed

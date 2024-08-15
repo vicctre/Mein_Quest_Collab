@@ -174,7 +174,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.1.160",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -270,6 +270,7 @@
     {"id":{"name":"oSequenceTuffulAppear","path":"objects/oSequenceTuffulAppear/oSequenceTuffulAppear.yy",},},
     {"id":{"name":"oSFX","path":"objects/oSFX/oSFX.yy",},},
     {"id":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},},
+    {"id":{"name":"oSpiritByte_1","path":"objects/oSpiritByte_1/oSpiritByte_1.yy",},},
     {"id":{"name":"oSpiritByte","path":"objects/oSpiritByte/oSpiritByte.yy",},},
     {"id":{"name":"oSpiritByteBoss","path":"objects/oSpiritByteBoss/oSpiritByteBoss.yy",},},
     {"id":{"name":"oSpiritBytePosition","path":"objects/oSpiritBytePosition/oSpiritBytePosition.yy",},},
@@ -326,6 +327,7 @@
     {"id":{"name":"W2_1_part3","path":"rooms/W2_1_part3/W2_1_part3.yy",},},
     {"id":{"name":"W2_1_part4","path":"rooms/W2_1_part4/W2_1_part4.yy",},},
     {"id":{"name":"W2_1_part5","path":"rooms/W2_1_part5/W2_1_part5.yy",},},
+    {"id":{"name":"W2_1_part6","path":"rooms/W2_1_part6/W2_1_part6.yy",},},
     {"id":{"name":"W2_2_part1","path":"rooms/W2_2_part1/W2_2_part1.yy",},},
     {"id":{"name":"W2_2_part2","path":"rooms/W2_2_part2/W2_2_part2.yy",},},
     {"id":{"name":"W2_2_part3","path":"rooms/W2_2_part3/W2_2_part3.yy",},},
@@ -822,6 +824,7 @@
     {"roomId":{"name":"W2_2_part5","path":"rooms/W2_2_part5/W2_2_part5.yy",},},
     {"roomId":{"name":"W2_1_part5","path":"rooms/W2_1_part5/W2_1_part5.yy",},},
     {"roomId":{"name":"rmMenuAdventureLogsScreen","path":"rooms/rmMenuAdventureLogsScreen/rmMenuAdventureLogsScreen.yy",},},
+    {"roomId":{"name":"W2_1_part6","path":"rooms/W2_1_part6/W2_1_part6.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

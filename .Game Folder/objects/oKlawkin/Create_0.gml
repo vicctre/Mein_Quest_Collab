@@ -54,12 +54,12 @@ function attack_step(state) {
 
 attackSidesState = {
     id: id,
-    trigger_xdist: 70, //distance that activates horizontal attack
-    trigger_ydist: 40, //distance that activates upward attack
+    trigger_xdist: 76, //distance that activates horizontal attack
+    trigger_ydist: 30, 
     finished: false,
 	attack_relx: 26,
-	attack_width: 30,
-	attack_height: 40,
+	attack_width: 30, //30
+	attack_height: 40,//40
     attack_frame: 6,
     charge_pause_timer: make_timer(12),
     charge_pause_frame: 2,
@@ -90,12 +90,12 @@ attackSidesState = {
 
 attackUpState = {
     id: id,
-    trigger_xdist: 40,
-    trigger_ydist: 65,
+    trigger_xdist: 42, //distance that activates upward attack
+    trigger_ydist: 72,
     finished: false,
 	attack_rely: -20,
-	attack_width: 40,
-	attack_height: 30,
+	attack_width: 42, //40
+	attack_height: 36,//30
     attack_frame: 6,
     charge_pause_timer: make_timer(12),
     charge_pause_frame: 2,
