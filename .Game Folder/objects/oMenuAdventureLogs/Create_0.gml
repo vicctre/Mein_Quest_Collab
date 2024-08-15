@@ -1,4 +1,5 @@
 
+frame = 0 // room frame, used for animation
 mode = "grid" // "read"
 
 // set up grid
@@ -14,8 +15,11 @@ cursor = {
 	yto: 0, //
 	x: 0,
 	y: 0,
-	speed: 20,
-	
+	speed_ratio: 0.2,
+	speed_min: 10,
+    speedv: new Vec2(0, 0),
+    image_speed: sprite_frames_per_step(sAdvlog_Select_UI),
+
 	move: function(hinp, vinp, do_clamp=false) {
 		ind += hinp + vinp * id.grid_cols
 		ind = do_clamp ? clamp(ind, 0, id.logs_count - 1) : ind
@@ -30,8 +34,17 @@ cursor = {
 		ind = ind mod id.logs_count
 		col = ind mod id.grid_cols
 		row = ind div id.grid_cols
-		x = approach(x, xto, speed)
-		y = approach(y, yto, speed)	
+        speedv.set(xto - x, yto - y)
+        if speedv.len() < speed_min {
+            x = xto
+            y = yto
+            return
+        }
+        if speedv.mult(speed_ratio).len() < speed_min {
+            speedv.normalize(speed_min)
+        }
+		x += speedv.x
+		y += speedv.y 
 	}
 }
 

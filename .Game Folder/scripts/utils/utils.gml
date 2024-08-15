@@ -112,6 +112,13 @@ function approach(val, to, amount) {
 	return val + sp
 }
 
+function approach2(val, to, ratio, treshold=0) {
+    var delta = to - val
+    if (abs(delta) < treshold)
+        return to
+    return val + ratio * delta
+}
+
 function array_back(arr) {
     return arr[array_length(arr) - 1]
 }

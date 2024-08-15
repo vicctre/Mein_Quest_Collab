@@ -3,7 +3,7 @@ draw_self()
 
 draw_text_outlined(x, y + name_rel_y, name, c_white, c_black)
 
-//outline
+// outline
 draw_set_halign(fa_center)
 draw_set_valign(fa_top)
 var scale = 0.7

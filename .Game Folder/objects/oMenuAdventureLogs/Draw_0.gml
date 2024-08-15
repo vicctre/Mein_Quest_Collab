@@ -9,10 +9,15 @@ if mode == "grid" {
 			if i == cursor.row and j == cursor.col {
 				cursor.xto = xx
 				cursor.yto = yy
-				draw_sprite_ext(sAdvlog_Select_UI, 0, cursor.x, cursor.y, draw_scale, draw_scale, 0, c_white, 1)	
+				draw_sprite_ext(
+                    sAdvlog_Select_UI,
+                    frame * cursor.image_speed,
+                    cursor.x, cursor.y,
+                    draw_scale, draw_scale, 0, c_white, 1)
 			}
 	    }
 	}
 }
 
-draw_line(camw() * 0.5, 0, camw() * 0.5, room_height)
+// middle of the screen
+// draw_line(camw() * 0.5, 0, camw() * 0.5, room_height)
