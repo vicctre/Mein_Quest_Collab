@@ -5,7 +5,7 @@ image_yscale = scale
 
 text = ""
 name = ""
-name_rel_y = -200
+name_rel_y = -275
 text_rel_y = 30
 
 x = camw() + sprite_width * 0.6
