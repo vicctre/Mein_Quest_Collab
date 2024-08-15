@@ -24,7 +24,9 @@ adventure_logs = {
 		name: "Rularog",
         sprite: sAdvLogRularog,
 		description: "Vic, please"
-					 + " make a description for this guy. Or girl. Or it idk"
+					 + " make a description for this guy. Or girl. Or it idk",
+        name_rel_y: -240,
+        text_rel_y: 80,
 	},
 	Tuffull: {
 		name: "Tuffull",
