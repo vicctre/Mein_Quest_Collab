@@ -1,5 +1,9 @@
 
+
 if mode == "grid" {
+    draw_set_halign(fa_center)
+    draw_set_valign(fa_bottom)
+    draw_text_transformed(camx_cent(), draw_yst - 100, "Adventure logs", 2, 2, 0)
 	for (var i = 0; i < array_length(grid); ++i) {
 	    var yy = draw_yst + i * draw_ystep
 	    for (var j = 0; j < array_length(grid[i]); ++j) {
