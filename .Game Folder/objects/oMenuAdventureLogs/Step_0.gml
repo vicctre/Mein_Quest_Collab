@@ -1,5 +1,5 @@
 
-if oInput.key_escape {
+if oInput.key_escape and mode == "grid" {
     RoomTransition(TRANS_MODE.GOTO, rmMainMenu,
                    false, 0, TRANS_TYPE.FADE)
 }
@@ -8,16 +8,25 @@ var hinp = oInput.key_right_pressed - oInput.key_left_pressed
 var vinp = oInput.key_down_pressed - oInput.key_up_pressed
 
 if mode == "grid" {
-	cursor.ind += hinp + vinp * grid_cols
-	if cursor.ind < 0 {
-		cursor.ind = logs_count - 1	
+	if oInput.key_action {
+		mode = "read"
+        with oMenuAdvLog {
+            visible = true
+        }
 	}
-	if (cursor.ind - logs_count) > 0 {
-		cursor.ind -= (grid_cols - last_row_size)
+	cursor.move(hinp, vinp)
+} else { // mode = "read"
+	if oInput.key_escape {
+		mode = "grid"
+        with oMenuAdvLog {
+            visible = false
+        }
 	}
-	cursor.ind = cursor.ind mod logs_count
-	cursor.col = cursor.ind mod grid_cols
-	cursor.row = cursor.ind div grid_cols
-	cursor.x = approach(cursor.x, cursor.xto, cursor.speed)
-	cursor.y = approach(cursor.y, cursor.yto, cursor.speed)
+
+	if hinp != 0 {
+        cursor.move(hinp, 0)
+        with oMenuAdvLog {
+            xto = camx_cent() + camw() * (ind - other.cursor.ind)
+        }
+	}
 }

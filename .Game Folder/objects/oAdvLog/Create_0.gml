@@ -11,9 +11,14 @@ y = camh() * 0.5
 spd = 15
 is_ease_out = false
 
-function Init(creature_name) {
-	var data = global.adventure_logs[$ creature_name]
-	name = creature_name
+function Init(creature) {
+    var data
+    if is_struct(creature) {
+        data = creature
+    } else { // string
+        data = global.adventure_logs[$ creature]
+    }
+	name = creature
 	text = data.description
 	sprite_index = data.sprite
 }
