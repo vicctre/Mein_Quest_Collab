@@ -12,6 +12,8 @@ if mode == "grid" {
 		mode = "read"
         with oMenuAdvLog {
             visible = true
+            xto = camx_cent() + camw() * (ind - other.cursor.ind)
+            x = xto
         }
 	}
 	cursor.move(hinp, vinp)
@@ -24,7 +26,7 @@ if mode == "grid" {
 	}
 
 	if hinp != 0 {
-        cursor.move(hinp, 0)
+        cursor.move(hinp, 0, true)
         with oMenuAdvLog {
             xto = camx_cent() + camw() * (ind - other.cursor.ind)
         }

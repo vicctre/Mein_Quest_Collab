@@ -16,8 +16,9 @@ cursor = {
 	y: 0,
 	speed: 20,
 	
-	move: function(hinp, vinp) {
+	move: function(hinp, vinp, do_clamp=false) {
 		ind += hinp + vinp * id.grid_cols
+		ind = do_clamp ? clamp(ind, 0, id.logs_count - 1) : ind
 		// backwards boundary jump
 		if ind < 0 {
 			ind = id.logs_count - 1	
@@ -40,19 +41,20 @@ var count = 0
 read_logs = []
 while iter.next() {
     array_push(array_last(grid), iter.value())
-    logs_count++
 	count++
     if count == grid_cols {
         array_push(grid, [])
         count = 0
     }
 
-    var read_log = instance_create_layer(camx_cent() + camw() * count, camy_cent(), layer, oMenuAdvLog)
+    var read_log = instance_create_layer(camx_cent() + camw() * logs_count, camy_cent(), layer, oMenuAdvLog)
     read_log.Init(iter.value())
-    read_log.ind = count
+    read_log.ind = logs_count
 	read_log.xto = read_log.x
 	read_log.visible = false
     array_push(read_logs, read_log)
+
+    logs_count++
 }
 
 last_row_size = array_length(array_last(grid))
