@@ -15,10 +15,11 @@ function Init(creature) {
     var data
     if is_struct(creature) {
         data = creature
+        name = data.name
     } else { // string
         data = global.adventure_logs[$ creature]
+        name = creature
     }
-	name = creature
 	text = data.description
 	sprite_index = data.sprite
 }
