@@ -19,7 +19,7 @@ if (menu_control) {
 		if (menu_cursor < 0) {
             menu_cursor = menu_size-1
         } 
-		audio_play_sound(SFX_Menu_Nav,6,false)
+		audio_play_sound(global.sfx_nav,6,false)
 	}
 	if oInput.key_action {
 		PerformButton(menu_cursor)

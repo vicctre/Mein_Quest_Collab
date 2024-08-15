@@ -37,6 +37,9 @@ switch room {
 	case rmAdventureLogsScreen:
 		music = global.msc_adv_log_screen
 		break
+    case rmMenuAdventureLogsScreen:
+        music = global.msc_intro
+        break
 }
 
 if music != undefined and music != oMusic.CurrentMusic() {

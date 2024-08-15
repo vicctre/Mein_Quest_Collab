@@ -5,6 +5,7 @@ mode = "grid" // "read"
 // set up grid
 grid = [[]]
 grid_cols = 4
+unlocked_array = []
 
 cursor = {
     id: id,
@@ -62,11 +63,16 @@ for (var i = 0; i < array_length(global.adventure_logs_array); ++i) {
     var read_log = instance_create_layer(
         camx_cent() + camw() * logs_count,
         camy_cent(), layer, oMenuAdvLog)
+
+	var is_unlocked = oStageManager.IsAdventureLogUnlocked(undefined, log.name)
+	read_log.is_unlocked = is_unlocked
     read_log.Init(log)
     read_log.ind = i
 	read_log.xto = read_log.x
 	read_log.visible = false
     array_push(read_logs, read_log)
+	
+	unlocked_array[i] = is_unlocked
 }
 
 last_row_size = array_length(array_last(grid))
@@ -88,7 +94,12 @@ draw_yst = 250
 
 
 
-
-
+//// Buttons
+left_button = collision_rectangle(
+    0, 0, room_width * 0.4, room_height, oMenuAdvLogButton, false, true)
+right_button = collision_rectangle(
+    room_width, 0, room_width * 0.6, room_height, oMenuAdvLogButton, false, true)
+left_button.visible = false
+right_button.visible = false
 
 

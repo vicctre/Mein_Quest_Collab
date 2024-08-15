@@ -5,11 +5,17 @@ if mode == "grid" {
 	    for (var j = 0; j < array_length(grid[i]); ++j) {
 	        var advlog = grid[i][j]
 	        var xx = draw_xst + j * draw_xstep
-	        draw_sprite_ext(advlog.sprite, 0, xx, yy, draw_scale, draw_scale, 0, c_white, 1)
+            // draw log icon
+            if unlocked_array[i * grid_cols + j] {
+                draw_sprite_ext(advlog.sprite, 0, xx, yy, draw_scale, draw_scale, 0, c_white, 1)
+            } else {
+                draw_sprite_ext(sAdvLog_Blank, 0, xx, yy, draw_scale, draw_scale, 0, c_white, 0.5)
+            }
+            // draw cursor
 			if i == cursor.row and j == cursor.col {
 				cursor.xto = xx
 				cursor.yto = yy
-				draw_sprite_ext(
+                draw_sprite_ext(
                     sAdvlog_Select_UI,
                     frame * cursor.image_speed,
                     cursor.x, cursor.y,

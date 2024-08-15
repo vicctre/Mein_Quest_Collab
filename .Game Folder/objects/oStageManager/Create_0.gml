@@ -41,6 +41,11 @@ function DefaultStagesData() {
 		},
 		W1_3: {
 			adv_logs: {
+				Rularog: {
+					order: 0,
+					unlocked: false,
+                    was_showed_in_adv_log_screen: false
+				},
 			}
 		},
 		W2_1: {
@@ -85,6 +90,21 @@ function IsStageUnlocked(index) {
 }
 
 function IsAdventureLogUnlocked(stage, name) {
+    // find stage if not provided
+	if name == "Rularog" {
+		var test = true	
+	}
+    if stage == undefined {
+        var iter = new IterStruct(stages_data)
+        while iter.next() {
+			var logs = iter.value().adv_logs
+			show_debug_message(struct_get_names(logs))
+            if variable_struct_exists(logs, name) {
+                stage = iter.key()
+                break
+            }
+        }
+    }
 	return GetStageData(stage).adv_logs[$ name].unlocked
 }
 
