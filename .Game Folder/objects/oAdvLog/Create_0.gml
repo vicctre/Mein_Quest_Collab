@@ -5,6 +5,8 @@ image_yscale = scale
 
 text = ""
 name = ""
+name_rel_y = -200
+text_rel_y = 30
 
 x = camw() + sprite_width * 0.6
 y = camh() * 0.5
@@ -22,6 +24,14 @@ function Init(creature) {
     }
 	text = data.description
 	sprite_index = data.sprite
+
+    // override text position
+    if variable_struct_exists(data, "name_rel_y") {
+        name_rel_y = variable_struct_get(data, "name_rel_y")
+    }
+    if variable_struct_exists(data, "text_rel_y") {
+        text_rel_y = variable_struct_get(data, "text_rel_y")
+    }
 }
 
 function EaseOut() {
