@@ -31,7 +31,7 @@
   "origin":4,
   "parent":{
     "name":"Log stuff",
-    "path":"folders/Sprites/Environment/Log stuff.yy",
+    "path":"folders/Sprites/Environment decor/1_2/Log stuff.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Environment",
-    "path":"folders/Sprites/Environment.yy",
+    "name":"Tre Shadows WIPS",
+    "path":"folders/Sprites/WIP_Misc./Tre Shadows WIPS.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
