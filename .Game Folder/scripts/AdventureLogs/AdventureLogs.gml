@@ -6,7 +6,7 @@ These are adv logs how they are displayed in adv log screen
 adventure_logs = {
 	Mein: {
 		name: "Mein",
-        sprite: sAdvLogMein,
+        sprite: sPage_Mein,
 		description: "This 1'8\" tall creature has the unique ability to use his"
 					 + " ears for practically anything, turning as strong as steel"
 					 + " on command. Calling Eldoon his home, Mein travels to the Sister"
@@ -14,7 +14,7 @@ adventure_logs = {
 	},
 	Genull: {
 		name: "Genull",
-        sprite: sAdvLogGenull,
+        sprite: sPage_Genull,
 		description: "Out of all creatures acting strange on eldoon,"
 					 + "these gentle creatures seem indifferent." 
 					 + "They never look for trouble, but tend to find themselves always caught up"
@@ -22,28 +22,57 @@ adventure_logs = {
 	},
 	Rularog: {
 		name: "Rularog",
-        sprite: sAdvLogRularog,
-		description: "Vic, please"
-					 + " make a description for this guy. Or girl. Or it idk",
+        sprite: sPage_Rularog,
+		description: "The long tongued loaf enjoys the swamps of Longroot Lane."  
+					+ "While usually lax, something has changed…After being tipped off by a"
+					+ "mysterious figure, he now hordes the power of the Sister Spirit Gem to"
+					+ "rule the forest and all the swamps. Quite rude!" 
         // name_rel_y: -240,
         // text_rel_y: 80,
 	},
 	Tuffull: {
 		name: "Tuffull",
-        sprite: sAdvLogTuffull,
+        sprite: sPage_Tuffull,
 		description: "She is sort of a mother figure to the wandering Genulls"
 					 + " in Longroot Lane.Tuffull is very aggressive and territorial," 
 					 + " using her size to intimidate and rush down enemies. While not good at" 
-					 + " turning around, she’s doing her best!"
+					 + " turning around, shes doing her best!"
 	},
 	Apploon: {
 		name: "Apploon",
-        sprite: sAdvLogApploon,
-		description: "They don’t seem to mind bonking anyone who steps under their tree." 
+        sprite: sPage_Apploon,
+		description: "They dont seem to mind bonking anyone who steps under their tree." 
 					 + " They fall without a care in the world. How do they climb trees?" 
 					 + " Determination I suppose. Wonder how they taste…" 
 					 + " are they even actually fruit?"
-	}
+	},
+	
+	///Natrina: {
+		//name: "Natrina" 
+		//sprite: sPage_Natrina, 
+		//description: "One of the Sister Spirits who brought new life to Eldoon during the Rebirth."
+					//+ "Natrina chooses to isolate herself in dense forests, nurturing the" 
+					//+ "environment and creatures in need. Shes a free spirit who is constantly"
+					//+ "looking for more to do with her life." 
+	//},
+	
+	//Fleater: {
+		//name: "Fleater" 
+		//sprite: sPage_Fleater, 
+		//description: "Fleaters can be seen flying around, minding its own business." 
+					//+ "Don’t really know what this guys deal is but hes always smiling." 
+					//+ "Not sure if I should be happy or freaked out…do they feel anything?" 
+					//+ "What are they thinking? Maybe they are just silly guys…" 
+	//},
+	
+	//Chantie: {
+		//name: "Chantie" 
+		//sprite: sPage_Chantie, 
+		//description: "this predominately female species is known for dancing wherever they find comfort." 
+					//+ "Get too close, and they will instinctually whip you with their hair! "  
+					//+ "You can find them in groups. The one with the silkiest hair is considered " 
+					//+ " the leader of a pack." 
+	//},
 }
 
 adventure_logs_array = []
@@ -53,6 +82,9 @@ var names_order = [
     "Tuffull",
     "Apploon",
     "Rularog",
+	//"Natrina" 
+	//"Fleater" 
+	//"Chantie" 
 ]
 
 for (var i = 0; i < array_length(names_order); ++i) {
