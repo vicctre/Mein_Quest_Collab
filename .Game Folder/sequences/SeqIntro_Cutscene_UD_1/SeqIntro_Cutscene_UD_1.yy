@@ -26,8 +26,8 @@
   },
   "name":"SeqIntro_Cutscene_UD_1",
   "parent":{
-    "name":"Current Use",
-    "path":"folders/Sequences/Current Use.yy",
+    "name":"Demo 2 Intro",
+    "path":"folders/Sequences/Current Use/Demo 2 Intro.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Demo 2 Cutscenes",
-    "path":"folders/Sprites/1Cutscenes/Demo 2 Cutscenes.yy",
+    "name":"Characters",
+    "path":"folders/Sprites/1Cutscenes/Demo 2 Intro/Characters.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
