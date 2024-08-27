@@ -12,8 +12,8 @@
   "duration":2.790703,
   "name":"BGM_Post_Battle",
   "parent":{
-    "name":"BMG",
-    "path":"folders/Sounds/BMG.yy",
+    "name":"Boss related",
+    "path":"folders/Sounds/BMG/Boss related.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

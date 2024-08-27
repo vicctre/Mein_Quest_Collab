@@ -12,8 +12,8 @@
   "duration":102.19356,
   "name":"BGM_Boss",
   "parent":{
-    "name":"BMG",
-    "path":"folders/Sounds/BMG.yy",
+    "name":"Boss related",
+    "path":"folders/Sounds/BMG/Boss related.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

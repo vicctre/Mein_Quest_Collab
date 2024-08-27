@@ -12,8 +12,8 @@
   "duration":9.76746,
   "name":"BGM_BossCLEAR01",
   "parent":{
-    "name":"BMG",
-    "path":"folders/Sounds/BMG.yy",
+    "name":"Jingles",
+    "path":"folders/Sounds/BMG/Jingles.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

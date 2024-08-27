@@ -12,8 +12,8 @@
   "duration":84.37499,
   "name":"BGM_Intro_Cutscene",
   "parent":{
-    "name":"BMG",
-    "path":"folders/Sounds/BMG.yy",
+    "name":"Cutscenes",
+    "path":"folders/Sounds/Cutscenes.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

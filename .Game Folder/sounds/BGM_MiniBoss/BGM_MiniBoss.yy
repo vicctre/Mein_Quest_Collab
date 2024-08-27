@@ -12,8 +12,8 @@
   "duration":37.97467,
   "name":"BGM_MiniBoss",
   "parent":{
-    "name":"BMG",
-    "path":"folders/Sounds/BMG.yy",
+    "name":"Boss related",
+    "path":"folders/Sounds/BMG/Boss related.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

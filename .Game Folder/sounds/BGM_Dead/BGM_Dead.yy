@@ -12,8 +12,8 @@
   "duration":2.703492,
   "name":"BGM_Dead",
   "parent":{
-    "name":"BMG",
-    "path":"folders/Sounds/BMG.yy",
+    "name":"Jingles",
+    "path":"folders/Sounds/BMG/Jingles.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
