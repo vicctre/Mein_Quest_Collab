@@ -183,7 +183,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.1.160",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -475,6 +475,8 @@
     {"id":{"name":"SFX_SisterGemPulse","path":"sounds/SFX_SisterGemPulse/SFX_SisterGemPulse.yy",},},
     {"id":{"name":"SFX_Sparkle","path":"sounds/SFX_Sparkle/SFX_Sparkle.yy",},},
     {"id":{"name":"SFX_Splash","path":"sounds/SFX_Splash/SFX_Splash.yy",},},
+    {"id":{"name":"SFX_Stage_openned","path":"sounds/SFX_Stage_openned/SFX_Stage_openned.yy",},},
+    {"id":{"name":"SFX_Stage_Unlock","path":"sounds/SFX_Stage_Unlock/SFX_Stage_Unlock.yy",},},
     {"id":{"name":"SFX_TongueAttack","path":"sounds/SFX_TongueAttack/SFX_TongueAttack.yy",},},
     {"id":{"name":"SFX_Tuffull_Roar","path":"sounds/SFX_Tuffull_Roar/SFX_Tuffull_Roar.yy",},},
     {"id":{"name":"SFX_Wave1","path":"sounds/SFX_Wave1/SFX_Wave1.yy",},},

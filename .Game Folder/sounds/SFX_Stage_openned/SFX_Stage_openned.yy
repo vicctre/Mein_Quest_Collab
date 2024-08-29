@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"SFX_Stage_openned",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":2.29517,
+  "name":"SFX_Stage_openned",
+  "parent":{
+    "name":"Need to be Added",
+    "path":"folders/Sounds/SFX/Need to be Added.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"SFX_Stage_openned.wav",
+  "type":0,
+  "volume":1.0,
+}

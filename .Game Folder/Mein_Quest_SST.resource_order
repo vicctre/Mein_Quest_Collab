@@ -237,6 +237,8 @@
     {"name":"SFX_SisterGemPulse","order":8,"path":"sounds/SFX_SisterGemPulse/SFX_SisterGemPulse.yy",},
     {"name":"SFX_Sparkle","order":10,"path":"sounds/SFX_Sparkle/SFX_Sparkle.yy",},
     {"name":"SFX_Splash","order":4,"path":"sounds/SFX_Splash/SFX_Splash.yy",},
+    {"name":"SFX_Stage_openned","order":1,"path":"sounds/SFX_Stage_openned/SFX_Stage_openned.yy",},
+    {"name":"SFX_Stage_Unlock","order":2,"path":"sounds/SFX_Stage_Unlock/SFX_Stage_Unlock.yy",},
     {"name":"SFX_TongueAttack","order":2,"path":"sounds/SFX_TongueAttack/SFX_TongueAttack.yy",},
     {"name":"SFX_Tuffull_Roar","order":1,"path":"sounds/SFX_Tuffull_Roar/SFX_Tuffull_Roar.yy",},
     {"name":"SFX_Wave1","order":3,"path":"sounds/SFX_Wave1/SFX_Wave1.yy",},
