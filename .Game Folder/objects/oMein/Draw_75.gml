@@ -9,4 +9,6 @@
 //debug_draw_var("sprite_xoffset", sprite_xoffset)
 //debug_draw_var("sprite_yoffset", sprite_yoffset)
 //debug_draw_var("image_xscale", image_xscale)
-//debug_draw_var("image_speed", image_speed)
+// debug_draw_var("image_speed", image_speed)
+// debug_draw_var("final_hsp", final_hsp)
+// debug_draw_var("x", x)

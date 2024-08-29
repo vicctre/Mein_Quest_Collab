@@ -231,7 +231,8 @@ switch state {
 }
 
 checkFloatOnLog()
-var final_hsp = finalizeHsp()
+final_hsp = finalizeHsp()
+
 
 // handle collisions
 if abs(final_hsp) or abs(vsp)

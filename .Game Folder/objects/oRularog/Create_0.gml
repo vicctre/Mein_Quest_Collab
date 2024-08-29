@@ -4,7 +4,7 @@ event_inherited()
 name = "Rularog"
 
 hp_max = 26 
-hp = hp_max - 25
+hp = hp_max
 hp_phase2_amount =  12//11
 done_phase2_roar = false
 
@@ -375,7 +375,7 @@ throwMeinChargeState = {
 	onEnter: function() {
 		id.sprite_index = sRulaCharge
 		id.setDir()
-		oMein.visible = false
+		// oMein.visible = false
     },
 
 	checkChange: function() {

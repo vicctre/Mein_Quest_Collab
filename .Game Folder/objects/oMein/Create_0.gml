@@ -462,6 +462,9 @@ function become_grabbed() {
 	sprite_index = sPlayerDead
 	is_ungrabb_allowed = false
 	has_control = false
+    hsp = 0
+	hsp_to = 0
+    vsp = 0
 }
 
 function allow_ungrabbing() {
