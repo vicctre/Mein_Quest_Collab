@@ -295,6 +295,7 @@
     {"id":{"name":"oTuffull","path":"objects/oTuffull/oTuffull.yy",},},
     {"id":{"name":"oTutorialBubbleLogRide","path":"objects/oTutorialBubbleLogRide/oTutorialBubbleLogRide.yy",},},
     {"id":{"name":"oUI","path":"objects/oUI/oUI.yy",},},
+    {"id":{"name":"oUIPopUpMessage","path":"objects/oUIPopUpMessage/oUIPopUpMessage.yy",},},
     {"id":{"name":"oUnlockStageAnimation","path":"objects/oUnlockStageAnimation/oUnlockStageAnimation.yy",},},
     {"id":{"name":"oVicLogo","path":"objects/oVicLogo/oVicLogo.yy",},},
     {"id":{"name":"oW1_2_part1_HiddenArea","path":"objects/oW1_2_part1_HiddenArea/oW1_2_part1_HiddenArea.yy",},},

@@ -152,6 +152,7 @@
     {"name":"oSpiritByte_1","order":2,"path":"objects/oSpiritByte_1/oSpiritByte_1.yy",},
     {"name":"oStageManager","order":8,"path":"objects/oStageManager/oStageManager.yy",},
     {"name":"oThinPlatform","order":7,"path":"objects/oThinPlatform/oThinPlatform.yy",},
+    {"name":"oUIPopUpMessage","order":1,"path":"objects/oUIPopUpMessage/oUIPopUpMessage.yy",},
     {"name":"oUnlockStageAnimation","order":1,"path":"objects/oUnlockStageAnimation/oUnlockStageAnimation.yy",},
     {"name":"oVicLogo","order":4,"path":"objects/oVicLogo/oVicLogo.yy",},
     {"name":"oW2WaveFinalWave","order":1,"path":"objects/oW2WaveFinalWave/oW2WaveFinalWave.yy",},

@@ -104,6 +104,13 @@ function StageSelectmenu() {
                 global.stage_select_show_unlock_animation = false
                 menu[i-1].play_unlock_animation()
             }
+
+            //// Unlock pogo afer beating Rula
+            // which means W2_1 just unlocked
+            if btn.stage == W2_1_part1 {
+                oStageManager.UnlockPogoAttack()
+                
+            }
 		}
 	}
     
