@@ -35,7 +35,6 @@ player_door_enter_anim_sp = 0.65
 player_damage_blinking_color = c_white
 player_accel = 0.2
 player_decel = 0.5
-player_pogo_just_unlocked = true // show pop up message
 // knockback speed on being hit
 // and knockback state time
 player_hit_state = {

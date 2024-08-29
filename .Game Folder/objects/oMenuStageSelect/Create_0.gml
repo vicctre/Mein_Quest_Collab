@@ -167,3 +167,11 @@ menu = StageSelectmenu()
 menu_size = array_length(menu)
 
 UpdateMenuBounds()
+
+//// Unlock pogo after defeating Rula
+if global.player_pogo_just_unlocked {
+    oStageManager.UnlockPogoAttack()
+    oUIPopUpMessage.PopUp("You've unlocked stage two!")
+    oUIPopUpMessage.PopUp("You've unlocked pogo attack!")
+    global.player_pogo_just_unlocked = false
+}

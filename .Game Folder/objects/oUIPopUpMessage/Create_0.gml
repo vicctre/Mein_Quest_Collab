@@ -29,8 +29,6 @@ function Message(text) constructor {
 	is_done = false
 
 	
-
-	
 	step = function() {
 		if !ease_out {
 			y = approach2(y, yto, speed_ratio, 0.5)
@@ -56,6 +54,6 @@ function Message(text) constructor {
 	}
 }
 
-function Add(text) {
+function PopUp(text) {
 	array_push(messages, new Message(text))
 }

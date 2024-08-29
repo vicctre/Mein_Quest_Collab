@@ -157,8 +157,10 @@ function Save() {
 function ResetProgress() {
 	last_unlocked_stage = W1_1_part1
 	stages_data = DefaultStagesData()
+    mein_pogo_attack_enabled = false
 	save.set("last_unlocked_stage", last_unlocked_stage)
 	save.set("stages_data", stages_data)
+    save.set("mein_pogo_attack_enabled", mein_pogo_attack_enabled)
 	save.save()
 }
 

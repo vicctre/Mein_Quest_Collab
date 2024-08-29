@@ -20,6 +20,8 @@ switch phase {
 			layer_sequence_speedscale(sequence_inst, 0)
 		}
 		if is_transition_finished() {
+			global.player_pogo_just_unlocked = true // trigger pogo unclocking
+													// on stage select
 			RoomTransition(TRANS_MODE.GOTO, next_room, true)
 			phase++
 		}

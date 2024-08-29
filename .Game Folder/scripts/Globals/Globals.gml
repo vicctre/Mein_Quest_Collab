@@ -29,6 +29,7 @@ gui_workaround_restart_happened = false
 logo_sequence_speed_scale = 1
 music_gain_array = []
 player = oMein
+player_pogo_just_unlocked = false // show pop up message
 rula_start_state = undefined
 rula_intro_cutscene_played = false
 restart_level_on_death = true
