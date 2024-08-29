@@ -5,7 +5,7 @@ gui_height = display_get_gui_height()
 
 //// Menu positioning
 menu_x_base = gui_width * 0.5
-menu_x_target_start = gui_width + 200
+menu_x_target_start = gui_width + 300
 menu_x_target_finish = menu_x_base
 menu_x = menu_x_target_start
 menu_x_target = menu_x_target_finish
@@ -36,10 +36,10 @@ menu_item_distance_mult = 1.5
 //// Cursor positioning and drawing
 menu_cursor = 0
 menu_cursor_scale = menu_text_scale
-menu_cursor_y = 0
-menu_cursor_x_target = menu_x_base
-menu_cursor_x = menu_x_base
-menu_cursor_y_target = 0
+menu_cursor_y = 0           // redefined below
+menu_cursor_y_target = 0    //
+menu_cursor_x = -10
+menu_cursor_x_target = menu_cursor_x
 menu_cursor_min_sp = 12
 menu_cursor_frame = 0           // animate cursor
 menu_cursor_animate_sp = 0.5    //
@@ -88,28 +88,9 @@ function AnimateEaseIn() {
 	}
 }
 
-function AnimateCursor() {
-	var dir = point_direction(
-				menu_cursor_x, menu_cursor_y,
-				menu_cursor_x_target, menu_cursor_y_target)
-	var dist = point_distance(
-				menu_cursor_x, menu_cursor_y,
-				menu_cursor_x_target, menu_cursor_y_target)
-	var sp = max(menu_speed * dist, menu_cursor_min_sp)
-	var hsp = abs(lengthdir_x(sp, dir))
-	var vsp = abs(lengthdir_y(sp, dir))
-	menu_cursor_x = approach(menu_cursor_x, menu_cursor_x_target, hsp)
-	menu_cursor_y = approach(menu_cursor_y, menu_cursor_y_target, vsp)
-	menu_cursor_frame += menu_cursor_animate_sp
-}
-
 // Ease in finished
 function AnimationFinished() {
 	return abs(menu_x - menu_x_target_start) < menu_speed_min
-}
-
-function GetCursorY(cursor) {
-	return menu_y + ((menu_itemheight * 1.5) * cursor)
 }
 
 function Scroll() {
@@ -125,10 +106,36 @@ function UpdateMenuBounds() {
     menu_bottom = GetCursorY(menu_size)
 }
 
+function GetCursorY(cursor) {
+	return menu_y + ((menu_itemheight * 1.5) * cursor)
+}
+
 function UpdateCursorTargetPos() {
 	menu_cursor_y_target = GetCursorY(menu_cursor)
 	var string_half_width = string_width(menu[menu_cursor].title) * menu_text_scale * 0.5
 	menu_cursor_x_target = (gui_width - menu_x) - string_half_width - 20
+}
+
+function AnimateCursor() {
+	var dir = point_direction(
+				menu_cursor_x, menu_cursor_y,
+				menu_cursor_x_target, menu_cursor_y_target)
+	var dist = point_distance(
+				menu_cursor_x, menu_cursor_y,
+				menu_cursor_x_target, menu_cursor_y_target)
+	var sp = max(menu_speed * dist, menu_cursor_min_sp)
+	var hsp = abs(lengthdir_x(sp, dir))
+	var vsp = abs(lengthdir_y(sp, dir))
+	menu_cursor_x = approach(menu_cursor_x, menu_cursor_x_target, hsp)
+	menu_cursor_y = approach(menu_cursor_y, menu_cursor_y_target, vsp)
+	menu_cursor_frame += menu_cursor_animate_sp
+
+    if object_index == oMenu {
+        var test = true
+    }
+    if object_index == oMenuStageSelect {
+        var test = true
+    }
 }
 
 menu = [
@@ -164,3 +171,8 @@ if global.goto_stage_select {
 	global.goto_stage_select = false
 	menu[0].action()
 }
+
+
+
+menu_cursor_y = GetCursorY(0)
+menu_cursor_y_target = menu_cursor_y

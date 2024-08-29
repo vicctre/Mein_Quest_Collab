@@ -81,9 +81,14 @@ function StageButton(ind, stage, title, spr, stage_locked=false) constructor {
     }
 }
 
+//function UpdateCursorTargetPos() {
+//	menu_cursor_y_target = GetCursorY(menu_cursor)
+//	menu_cursor_x_target = menu_x - icon_half_width
+//}
+
 function UpdateCursorTargetPos() {
 	menu_cursor_y_target = GetCursorY(menu_cursor)
-	menu_cursor_x_target = menu_x - icon_half_width
+	menu_cursor_x_target = (gui_width - menu_x) - icon_half_width - 20
 }
 
 function StageSelectmenu() {
