@@ -47,6 +47,9 @@ menu_cursor_animate_sp = 0.5    //
 //menu_font = font_add("ka1.ttf", 24, false, false, 0, 0)
 //font_add_enable_aa(false)
 
+// buttons unlock animation
+animation_is_playing = false
+
 function PerformAction() {
 	var menu_item = menu[menu_committed]
 	if menu_item.action != undefined {
