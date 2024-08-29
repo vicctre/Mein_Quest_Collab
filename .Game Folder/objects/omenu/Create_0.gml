@@ -164,5 +164,3 @@ if global.goto_stage_select {
 	global.goto_stage_select = false
 	menu[0].action()
 }
-
-oUIPopUpMessage.Add("Hello pop ups!")
