@@ -69,7 +69,7 @@ key_action = key_attack or keyboard_check_pressed(vk_enter)
 key_escape = keyboard_check_pressed(vk_escape)
              or gamepad_button_check_pressed(0, gp_start)
 
-key_any = keyboard_check_pressed(vk_anykey)
+key_any = keyboard_check_pressed(vk_anykey) or GamepadCheckAny()
 
 key_restart = keyboard_check_pressed(ord("R"))
 
