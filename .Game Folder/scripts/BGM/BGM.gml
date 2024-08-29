@@ -3,6 +3,7 @@
 //Player Specific 
 msc_player_dead = BGM_Dead 
 msc_stage_clear = BGM_CLEAR
+msc_boss_stage_clear = BGM_BossCLEAR01
 msc_pickup = BGM_GET
 
 //Menu themes

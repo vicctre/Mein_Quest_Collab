@@ -7,7 +7,7 @@ switch phase {
 			phase++
 			global.player.visible = false
 			global.player.has_control = false
-			oMusic.switch_music(global.msc_stage_clear, false, 0)
+			oMusic.switch_music(global.msc_boss_stage_clear, false, 0)
 			sequence_inst = layer_sequence_create(
 					layer, global.player.x, global.player.y, sequence)
 			if start_from_frame != undefined {
