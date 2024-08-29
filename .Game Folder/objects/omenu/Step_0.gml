@@ -24,18 +24,18 @@ if (menu_control) {
 	if oInput.key_action {
 		PerformButton(menu_cursor)
 	}
-	var mouse_y_gui = device_mouse_y_to_gui(0); 
+	// var mouse_y_gui = device_mouse_y_to_gui(0); 
 	// this only effects the buttons and doesnt make the mouse cover the full screen when selecting
-	if (mouse_y_gui < menu_bottom) && (mouse_y_gui > menu_top) {
-		if oInput.mouse_moved {
-            var h = menu_itemheight * menu_item_distance_mult
-			menu_cursor = (mouse_y_gui - menu_top + h*0.5) div h
-		}
+	// if (mouse_y_gui < menu_bottom) && (mouse_y_gui > menu_top) {
+	// 	if oInput.mouse_moved {
+    //         var h = menu_itemheight * menu_item_distance_mult
+	// 		menu_cursor = (mouse_y_gui - menu_top + h*0.5) div h
+	// 	}
 
-		if (mouse_check_button_pressed(mb_left)) {
-			PerformButton(menu_cursor)
-		}
-	}
+	// 	if (mouse_check_button_pressed(mb_left)) {
+	// 		PerformButton(menu_cursor)
+	// 	}
+	// }
 }
 
 menu_cursor = clamp(menu_cursor, 0, array_length(menu) - 1)
