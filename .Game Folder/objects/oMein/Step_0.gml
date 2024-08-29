@@ -161,6 +161,8 @@ switch state {
             has_control = true            
             vsp = pogo_vsp_bounce * 0.5
             audio_play_sound(global.sfx_pogo_land, 0, false)
+            // stay in pogo animation for one more sprite
+            animation_stop_update_timer.reset()
         }
 		break
 	}

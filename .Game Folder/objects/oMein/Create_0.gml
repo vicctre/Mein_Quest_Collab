@@ -123,6 +123,10 @@ is_ungrabb_allowed = false
 throw_decel = 0.03
 allow_exit_throw_delay = make_timer(5)
 
+// Used for keeping Mein in pogo animation for one frame after 
+// he hits smth. So after last hit to a boss he's still
+// in pogo animation during pause
+animation_stop_update_timer = make_timer(2)
 
 // create player-related ui
 instance_create_layer(0, 0, "ui", oUI)
@@ -262,6 +266,9 @@ function check_spikes() {
 }
 
 function Animate() {
+    if animation_stop_update_timer.update() {
+        return
+    }
 	image_speed = 1
 	switch state {
         case PLAYERSTATE.SYSTER_SPIRIT:
@@ -593,6 +600,7 @@ function pogo_bounce() {
     jumps = 1       // reset d-jump
     aeral_attack_used = false   // reset aeral attack
     audio_play_sound(global.sfx_pogo_bounce, 0, false)
+    animation_stop_update_timer.reset()
 }
 
 function switch_to_sister_spirit() {
