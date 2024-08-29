@@ -3,7 +3,7 @@ event_inherited()
 
 name = "Rularog"
 
-hp_max = 26 
+hp_max = 26
 hp = hp_max
 hp_phase2_amount =  12//11
 done_phase2_roar = false
@@ -717,6 +717,7 @@ deadState = {
 		instance_destroy(oRulaTongueTip)
 		instance_destroy(oRulaTongue)
 		oPause.PauseWithTimer(pause_time)
+        oMusic.stop(0)
     },
 	checkChange: function() {
 		// there is no coming back from the dead

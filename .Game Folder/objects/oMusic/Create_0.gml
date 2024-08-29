@@ -40,6 +40,10 @@ function switch_music(msc, loops=true, transition_time=music_transition_time_ms)
 	next_music = msc
 }
 
+function stop(time=music_transition_time_ms) {
+    switch_music(noone, false, time)
+}
+
 function CurrentMusic() {
 	return current_music
 }
