@@ -7,9 +7,7 @@
 sfx_nav = SFX_Menu_Nav
 sfx_select = SFX_Menu_select
 sfx_not_available = SFX_MENU_NA
-sfx_pogo_bounce = SFX_PogoBounce
-sfx_pogo_land = SFX_PogoLand
-sfx_pogo_start = SFX_PogoStartup
+sfx_stage_unlock_wiff = SFX_AttackWiff
 
 //Mein Specifc
 sfx_jump = SFX_Jump_V2
@@ -22,6 +20,9 @@ sfx_heal = SFX_Heal
 sfx_player_damage = SFX_Damage
 sfx_additional_hp = SFX_Additional_HP
 sfx_log_ride_landing = SFX_Splash
+sfx_pogo_bounce = SFX_PogoBounce
+sfx_pogo_land = SFX_PogoLand
+sfx_pogo_start = SFX_PogoStartup
 
 //Object sounds 
 sfx_adventure_log = SFX_AdvLog 

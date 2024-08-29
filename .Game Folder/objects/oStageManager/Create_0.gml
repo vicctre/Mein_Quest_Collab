@@ -69,7 +69,7 @@ function SaveFile() : SSave("save") constructor {
 	add_value("last_unlocked_stage", SSAVE_TYPE.REAL, other.default_last_unlocked_stage)
 	add_value("stages_data", SSAVE_TYPE.STRUCT, other.DefaultStagesData())
 	add_value("mein_pogo_attack_enabled", SSAVE_TYPE.BOOLEAN, false)
-	add_value("last_unlocked_stage_stage_select_animation_played", SSAVE_TYPE.BOOLEAN, other.default_last_unlocked_stage)
+	add_value("last_unlocked_stage_stage_select_animation_played", SSAVE_TYPE.REAL, other.default_last_unlocked_stage)
 }
 
 save = new SaveFile()
