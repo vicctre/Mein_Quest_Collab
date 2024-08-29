@@ -8,6 +8,8 @@ oMein.visible = false
 image_xscale = oMein.image_xscale
 oPause.PauseWithTimer(time)
 music_prev = oMusic.current_music
+music_prev_position = oMusic.CurrenMusicTrackPosition()
+
 oMusic.switch_music(global.sfx_adventure_log, false, 0)
 
 alarm[0] = time
