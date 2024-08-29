@@ -101,21 +101,15 @@ function StageSelectmenu() {
 	
 	for(var i=0; i<array_length(menu); i++) {
 		var btn = menu[i]
-		if !oStageManager.IsStageUnlocked(btn.stage) {
+		if oStageManager.IsStageUnlocked(btn.stage) {
+            if !oStageManager.StageUnlockAnimationPlayed(btn.stage) {
+                // btn.stage_locked = false
+                oStageManager.SetUnlockAnimationPlayed(btn.stage)
+                menu[i].play_unlock_animation()
+            }
+        } else {
 			btn.sprite = sStageLockIcon
 			btn.stage_locked = true
-            // trigger unlock animation for previous button
-            if global.stage_select_show_unlock_animation {
-                global.stage_select_show_unlock_animation = false
-                menu[i-1].play_unlock_animation()
-            }
-
-            //// Unlock pogo afer beating Rula
-            // which means W2_1 just unlocked
-            if btn.stage == W2_1_part1 {
-                oStageManager.UnlockPogoAttack()
-                
-            }
 		}
 	}
     

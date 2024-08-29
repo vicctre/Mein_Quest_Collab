@@ -7,7 +7,7 @@ switch phase {
 			phase++
 			global.player.visible = false
 			global.player.has_control = false
-			oMusic.switch_music(global.msc_boss_stage_clear, false, 0)
+			oMusic.switch_music(victory_music, false, 0)
 			sequence_inst = layer_sequence_create(
 					layer, global.player.x, global.player.y, sequence)
 			if start_from_frame != undefined {
@@ -20,8 +20,10 @@ switch phase {
 			layer_sequence_speedscale(sequence_inst, 0)
 		}
 		if is_transition_finished() {
-			global.player_pogo_just_unlocked = true // trigger pogo unclocking
-													// on stage select
+            if room == W1_3BOSS {
+                global.player_pogo_just_unlocked = true // trigger pogo unclocking
+                                                        // on stage select
+            }
 			RoomTransition(TRANS_MODE.GOTO, next_room, true)
 			phase++
 		}

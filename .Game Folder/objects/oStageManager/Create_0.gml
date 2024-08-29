@@ -2,6 +2,7 @@
 default_last_unlocked_stage = real(W1_1_part1)
 mein_pogo_attack_enabled = false
 
+
 function DefaultStagesData() {
 	/*
 	This is adv log save default config.
@@ -65,28 +66,54 @@ function DefaultStagesData() {
 
 function SaveFile() : SSave("save") constructor {
 	// unlocking stages is saved in RoomStart
-	add_value("last_unlocked_stage", SSAVE_TYPE.REAL, real(W1_1_part1))
-	add_value("stages_data", SSAVE_TYPE.STRUCT, other.DefaultStagesData)
+	add_value("last_unlocked_stage", SSAVE_TYPE.REAL, other.default_last_unlocked_stage)
+	add_value("stages_data", SSAVE_TYPE.STRUCT, other.DefaultStagesData())
 	add_value("mein_pogo_attack_enabled", SSAVE_TYPE.BOOLEAN, false)
+	add_value("last_unlocked_stage_stage_select_animation_played", SSAVE_TYPE.BOOLEAN, other.default_last_unlocked_stage)
 }
 
 save = new SaveFile()
 
-if save.load("") {
+
+function Load() {
+	save.load("")
 	last_unlocked_stage = save.get("last_unlocked_stage")
+	last_unlocked_stage_stage_select_animation_played = save.get("last_unlocked_stage_stage_select_animation_played")
 	stages_data = save.get("stages_data")
-    mein_pogo_attack_enabled = save.get("mein_pogo_attack_enabled")
-} else {
-	last_unlocked_stage = default_last_unlocked_stage
-	stages_data = DefaultStagesData()
-	save.set("last_unlocked_stage", 0)
-	save.set("stages_data", stages_data)
-    save.set("mein_pogo_attack_enabled", mein_pogo_attack_enabled)
+	mein_pogo_attack_enabled = save.get("mein_pogo_attack_enabled")
 }
+
+Load()
+
+// {
+// } else {
+// 	last_unlocked_stage = default_last_unlocked_stage
+// 	last_unlocked_stage_stage_select_animation_played = true
+// 	stages_data = DefaultStagesData()
+// 	//save.set("last_unlocked_stage", real(W1_1_part1))
+//     //save.set("last_unlocked_stage_stage_select_animation_played", true)
+// 	//save.set("stages_data", stages_data)
+//     //save.set("mein_pogo_attack_enabled", mein_pogo_attack_enabled)
+// }
 
 function IsStageUnlocked(index) {
 	index = real(index)
 	return index <= last_unlocked_stage
+}
+
+function StageUnlockAnimationPlayed(index) {
+	index = real(index)
+	return index <= last_unlocked_stage_stage_select_animation_played
+}
+
+function SetUnlockAnimationPlayed(index) {
+    index = real(index)
+    if index <= last_unlocked_stage_stage_select_animation_played {
+        return
+    }
+    last_unlocked_stage_stage_select_animation_played = index
+	save.set("last_unlocked_stage_stage_select_animation_played", index)
+	save.save()
 }
 
 function IsAdventureLogUnlocked(stage, name) {
@@ -155,13 +182,15 @@ function Save() {
 }
 
 function ResetProgress() {
-	last_unlocked_stage = W1_1_part1
-	stages_data = DefaultStagesData()
-    mein_pogo_attack_enabled = false
-	save.set("last_unlocked_stage", last_unlocked_stage)
-	save.set("stages_data", stages_data)
-    save.set("mein_pogo_attack_enabled", mein_pogo_attack_enabled)
-	save.save()
+	// delete file and reload
+	var f = save.__get_filename()
+	if file_exists(f) {
+		file_delete(f)
+	}
+	
+	save = new SaveFile()
+
+	Load()
 }
 
 function UnlockedAdvLogsCount() {

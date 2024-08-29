@@ -1,7 +1,9 @@
 
 event_inherited()
 
-if oInput.key_escape {
+if oInput.key_escape
+		and !instance_exists(oUnlockStageAnimation) // prevent exiting while animation is playing
+{
 	PerformGoBack()
 	audio_play_sound(global.sfx_select, 7, false)
 }
