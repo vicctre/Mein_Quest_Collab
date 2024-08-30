@@ -36,8 +36,8 @@
     "path":"sprites/sAttackCirlce/sAttackCirlce.yy",
   },
   "spriteMaskId":{
-    "name":"sEnemy01",
-    "path":"sprites/sEnemy01/sEnemy01.yy",
+    "name":"sGenull",
+    "path":"sprites/sGenull/sGenull.yy",
   },
   "visible":true,
 }

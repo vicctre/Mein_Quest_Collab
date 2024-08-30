@@ -1,2 +1,2 @@
 event_inherited();
-deadSprite = sEnemy01Ded;
+deadSprite = sGenullDead;

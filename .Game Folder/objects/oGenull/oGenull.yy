@@ -1,12 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"oEnemy01",
+  "%Name":"oGenull",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oEnemy01",
-  "overriddenProperties":[],
+  "name":"oGenull",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"walksp","path":"objects/ENEMY/ENEMY.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.25",},
+  ],
   "parent":{
     "name":"Genull",
     "path":"folders/Objects/Enemies/Small Enemies/Genull.yy",
@@ -33,12 +35,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sEnemy01",
-    "path":"sprites/sEnemy01/sEnemy01.yy",
+    "name":"sGenull",
+    "path":"sprites/sGenull/sGenull.yy",
   },
   "spriteMaskId":{
-    "name":"sEnemy01",
-    "path":"sprites/sEnemy01/sEnemy01.yy",
+    "name":"sGenull",
+    "path":"sprites/sGenull/sGenull.yy",
   },
   "visible":true,
 }

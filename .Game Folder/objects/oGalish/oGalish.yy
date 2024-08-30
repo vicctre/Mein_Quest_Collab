@@ -37,8 +37,8 @@
     "path":"sprites/sGalish/sGalish.yy",
   },
   "spriteMaskId":{
-    "name":"sEnemy01",
-    "path":"sprites/sEnemy01/sEnemy01.yy",
+    "name":"sGenull",
+    "path":"sprites/sGenull/sGenull.yy",
   },
   "visible":true,
 }
