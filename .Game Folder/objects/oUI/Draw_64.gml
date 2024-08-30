@@ -3,12 +3,14 @@ draw_set_font(fMenu)
 
 draw_hp_bar()
 
+//// Draw coins ui
 draw_set_alpha(coin_counter_alpha)
-
 draw_sprite_ext(sCoinCounter, 0,
 				coin_counter_x, coin_counter_y + global.UI_y_offset,
 				scale, scale, 0, c_white, coin_counter_alpha)
 
+
+//// Draw adv logs ui
 var gap = 70
 var y_shift = 137
 for(var i = 0; i < stage_logs_num; ++i) {
