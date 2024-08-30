@@ -1,6 +1,6 @@
 /// @desc GUI/vars/Menu Setup 
 
-control_hint_text = "X/Enter - select"
+control_hint_text = "X/Enter/A - select"
 
 gui_width = display_get_gui_width()
 gui_height = display_get_gui_height()
