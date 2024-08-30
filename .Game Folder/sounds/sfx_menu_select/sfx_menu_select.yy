@@ -12,8 +12,8 @@
   "duration":0.432834,
   "name":"SFX_Menu_select",
   "parent":{
-    "name":"Misc.",
-    "path":"folders/Sounds/SFX/Misc..yy",
+    "name":"Menu",
+    "path":"folders/Sounds/SFX/Menu.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
