@@ -2,14 +2,14 @@ event_inherited()
 cooldown = max(0, cooldown-1)
 
 if (attacking) {
-	image_index += 0.2
+	// image_index += 0.2
 	if (image_index == 7) {
         show_debug_message("attack")
 		var inst = instance_create_layer(x, y, layer, oChantie_Attack)
 		inst.image_xscale = image_xscale
 		audio_play_sound(global.sfx_whip, 0, false)
 	}
-	if (image_index == image_number) {
+	if (is_animation_end()) {
 		attacking = false
 		sprite_index = sChantieIdle
 		cooldown = cooldown_max
