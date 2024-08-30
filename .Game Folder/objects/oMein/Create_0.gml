@@ -348,6 +348,9 @@ function Kill() {
 }
 
 function Hit(enemy) {
+	if is_dead() {
+		return	
+	}
 	if invincibility_timer.timer or invincibility_timer_no_flashing.timer {
 		return
 	}
