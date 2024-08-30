@@ -9,7 +9,8 @@ if state == PLAYERSTATE.ATTACK_AERAL {
 	if invincibility_timer.update() {
 		draw_hit_blinking(hit_blinking_gain * invincibility_timer.timer)
 	} else if heal_glowing_timer.update() {
-		draw_hit_blinking(hit_blinking_gain * heal_glowing_timer.timer, global.heal_glowing_color)
+        var phase = hit_blinking_gain * (heal_glowing_timer.time - heal_glowing_timer.timer)
+		draw_hit_blinking(phase, global.heal_glowing_color)
     }
 }
 

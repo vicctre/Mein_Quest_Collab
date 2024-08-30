@@ -106,7 +106,12 @@ invincibility_timer_no_flashing = make_timer(global.player_invincibilty_time, 0)
 invincibility_timer = make_timer(global.player_invincibilty_time, 0)
 hit_blinking_gain = 14
 
-heal_glowing_timer = make_timer(60, 0)
+//// Healing glowing
+var glow_waves_count = 2
+// glow "phase" is computed as hit_blinking_gain * time
+// and alpha = f(phase); f(0) = 0, f(180) = 1, f(360) = 0
+var time = 360 * glow_waves_count / hit_blinking_gain
+heal_glowing_timer = make_timer(time, 0)
 
 death_animation_started = false
 
