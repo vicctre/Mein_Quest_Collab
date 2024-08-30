@@ -375,7 +375,7 @@ throwMeinChargeState = {
 	onEnter: function() {
 		id.sprite_index = sRulaCharge
 		id.setDir()
-		// oMein.visible = false
+		oMein.visible = false
     },
 
 	checkChange: function() {
