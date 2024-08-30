@@ -12,8 +12,8 @@
   "duration":2.29517,
   "name":"SFX_Stage_openned",
   "parent":{
-    "name":"Need to be Added",
-    "path":"folders/Sounds/SFX/Need to be Added.yy",
+    "name":"Menu",
+    "path":"folders/Sounds/SFX/Menu.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"SFX_Stage_openned.wav",
   "type":0,
-  "volume":1.0,
+  "volume":0.25,
 }

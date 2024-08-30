@@ -12,8 +12,8 @@
   "duration":0.287959,
   "name":"SFX_Chest_open",
   "parent":{
-    "name":"Need to be Added",
-    "path":"folders/Sounds/SFX/Need to be Added.yy",
+    "name":"Misc.",
+    "path":"folders/Sounds/SFX/Misc..yy",
   },
   "preload":false,
   "resourceType":"GMSound",

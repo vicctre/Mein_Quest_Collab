@@ -12,8 +12,8 @@
   "duration":0.20254,
   "name":"SFX_MENU_NA",
   "parent":{
-    "name":"Need to be Added",
-    "path":"folders/Sounds/SFX/Need to be Added.yy",
+    "name":"Menu",
+    "path":"folders/Sounds/SFX/Menu.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"SFX_MENU_NA.wav",
   "type":0,
-  "volume":0.2,
+  "volume":0.1,
 }

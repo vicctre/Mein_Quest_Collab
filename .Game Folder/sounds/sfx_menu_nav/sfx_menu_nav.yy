@@ -12,8 +12,8 @@
   "duration":0.100635,
   "name":"SFX_Menu_Nav",
   "parent":{
-    "name":"Misc.",
-    "path":"folders/Sounds/SFX/Misc..yy",
+    "name":"Menu",
+    "path":"folders/Sounds/SFX/Menu.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sfx_menu_nav.wav",
   "type":0,
-  "volume":0.18,
+  "volume":0.15,
 }
