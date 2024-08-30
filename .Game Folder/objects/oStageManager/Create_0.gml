@@ -118,9 +118,6 @@ function SetUnlockAnimationPlayed(index) {
 
 function IsAdventureLogUnlocked(stage, name) {
     // find stage if not provided
-	if name == "Rularog" {
-		var test = true	
-	}
     if stage == undefined {
         var iter = new IterStruct(stages_data)
         while iter.next() {

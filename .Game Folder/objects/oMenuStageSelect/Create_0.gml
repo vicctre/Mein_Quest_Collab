@@ -2,6 +2,8 @@
 
 event_inherited()
 
+control_hint_text = "X/Enter - select\nEsc - go back"
+
 menu_text_scale = 1
 menu_cursor_scale = 2
 icon_scale = 2

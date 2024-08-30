@@ -1,7 +1,11 @@
 /// @desc GUI/vars/Menu Setup 
 
+control_hint_text = "X/Enter - select"
+
 gui_width = display_get_gui_width()
 gui_height = display_get_gui_height()
+
+non_highlight_color = c_grey
 
 //// Menu positioning
 menu_x_base = gui_width * 0.5
@@ -139,6 +143,12 @@ function AnimateCursor() {
     if object_index == oMenuStageSelect {
         var test = true
     }
+}
+
+function DrawHintText() {
+    draw_set_color(non_highlight_color)
+    draw_text(gui_width * 0.2, gui_height * 0.8, control_hint_text)
+    draw_set_color(c_white)
 }
 
 menu = [
