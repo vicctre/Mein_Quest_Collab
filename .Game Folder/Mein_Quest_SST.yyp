@@ -184,7 +184,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.1.160",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -649,6 +649,7 @@
     {"id":{"name":"sNaturina_victory_pose","path":"sprites/sNaturina_victory_pose/sNaturina_victory_pose.yy",},},
     {"id":{"name":"sNaturina_victory_spin","path":"sprites/sNaturina_victory_spin/sNaturina_victory_spin.yy",},},
     {"id":{"name":"SomeEyes_lol","path":"sprites/SomeEyes_lol/SomeEyes_lol.yy",},},
+    {"id":{"name":"sOption_Slider","path":"sprites/sOption_Slider/sOption_Slider.yy",},},
     {"id":{"name":"sOTreeOpacityExample","path":"sprites/sOTreeOpacityExample/sOTreeOpacityExample.yy",},},
     {"id":{"name":"sOverheadTree","path":"sprites/sOverheadTree/sOverheadTree.yy",},},
     {"id":{"name":"sPage_Apploon","path":"sprites/sPage_Apploon/sPage_Apploon.yy",},},

@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"SFX_Wave1.wav",
   "type":0,
-  "volume":0.14,
+  "volume":0.03,
 }
