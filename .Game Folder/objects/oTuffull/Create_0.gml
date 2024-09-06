@@ -1,7 +1,7 @@
 event_inherited();
 name = "Tufful";
 hp_max = global.tufful_hp
-hp = 1 // hp_max
+hp = hp_max
 deadSprite = sTuffull_HitWall;
 spd_walk = 2.6;
 spd_charge = 5;

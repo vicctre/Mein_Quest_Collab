@@ -16,9 +16,9 @@ adventure_logs = {
 		name: "Genull",
         sprite: sPage_Genull,
 		description: "Out of all creatures acting strange on eldoon,"
-					 + "these gentle creatures seem indifferent." 
-					 + "They never look for trouble, but tend to find themselves always caught up"
-					 + "in something…makes you feel kinda bad"
+					 + "these gentle creatures seem indifferent. They never " 
+					 + "look for trouble, but tend to find themselves always caught "
+					 + "up in something  . . . makes you feel kinda bad"
 	},
 	Rularog: {
 		name: "Rularog",
@@ -43,7 +43,7 @@ adventure_logs = {
         sprite: sPage_Apploon,
 		description: "They dont seem to mind bonking anyone who steps under their tree." 
 					 + " They fall without a care in the world. How do they climb trees?" 
-					 + " Determination I suppose. Wonder how they taste…" 
+					 + " Determination I suppose. Wonder how they taste . . ." 
 					 + " are they even actually fruit?"
 	},
 	

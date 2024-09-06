@@ -172,7 +172,7 @@ UpdateMenuBounds()
 //// Unlock pogo after defeating Rula
 if global.player_pogo_just_unlocked {
     oStageManager.UnlockPogoAttack()
-    oUIPopUpMessage.PopUp("You've unlocked stage two!")
-    oUIPopUpMessage.PopUp("You've unlocked pogo attack!")
+    oUIPopUpMessage.PopUp("Hey there, since the wait for Demo 2 was quite some time, we wanted to give you one more thing to do! The first stage of World 2 has been unlocked, give it a go if you want to see more")
+    oUIPopUpMessage.PopUp("The Sister Spirit has granted you a new ability: The Pogo Attack! Press down and attack midair to bounce off enemies and objects. This can be used in previous stages too, have fun! ")
     global.player_pogo_just_unlocked = false
 }
