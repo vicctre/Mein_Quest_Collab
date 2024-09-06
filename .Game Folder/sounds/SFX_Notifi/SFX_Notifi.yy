@@ -12,8 +12,8 @@
   "duration":0.572834,
   "name":"SFX_Notifi",
   "parent":{
-    "name":"Menu",
-    "path":"folders/Sounds/SFX/Menu.yy",
+    "name":"Need to be Added",
+    "path":"folders/Sounds/SFX/Need to be Added.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

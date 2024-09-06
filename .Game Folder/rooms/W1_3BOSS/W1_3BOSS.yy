@@ -116,7 +116,7 @@
   "name":"W1_3BOSS",
   "parent":{
     "name":"W1-3",
-    "path":"folders/Rooms/W1-3.yy",
+    "path":"folders/Rooms/Stages/W1-3.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

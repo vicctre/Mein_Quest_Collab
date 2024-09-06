@@ -351,7 +351,7 @@
   "name":"W2_1_part3",
   "parent":{
     "name":"W2-1",
-    "path":"folders/Rooms/W2-1.yy",
+    "path":"folders/Rooms/Stages/W2-1.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

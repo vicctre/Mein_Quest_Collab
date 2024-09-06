@@ -476,7 +476,7 @@
   "name":"W1_1_part1",
   "parent":{
     "name":"W1-1",
-    "path":"folders/Rooms/W1-1.yy",
+    "path":"folders/Rooms/Stages/W1-1.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

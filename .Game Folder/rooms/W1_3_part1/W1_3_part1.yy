@@ -139,7 +139,7 @@
   "name":"W1_3_part1",
   "parent":{
     "name":"W1-3",
-    "path":"folders/Rooms/W1-3.yy",
+    "path":"folders/Rooms/Stages/W1-3.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

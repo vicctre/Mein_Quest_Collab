@@ -20,8 +20,8 @@
   ],
   "name":"rmDNS_Logo",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"BeforeTitle",
+    "path":"folders/Rooms/BeforeTitle.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -12,8 +12,8 @@
   "duration":1.438299,
   "name":"SFX_Boss_ChargeUp",
   "parent":{
-    "name":"Boss Specific",
-    "path":"folders/Sounds/SFX/Enemy/Boss Specific.yy",
+    "name":"Need to be Added",
+    "path":"folders/Sounds/SFX/Need to be Added.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
