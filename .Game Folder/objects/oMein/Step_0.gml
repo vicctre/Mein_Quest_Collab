@@ -219,7 +219,7 @@ switch state {
 	case PLAYERSTATE.BOSS_END_SEQUENCE: {
         var x_to = room_width * 0.5
         hsp_to = hsp_max * sign(x_to - x)
-        if abs(x_to - x) < hsp_max {
+        if (abs(x_to - x) < hsp_max) and !down_free {
             x = x_to
             hsp = 0
 			hsp_to = 0
