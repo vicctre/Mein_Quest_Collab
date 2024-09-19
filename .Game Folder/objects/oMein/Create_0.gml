@@ -45,7 +45,7 @@ function choose_idle_animation() {
 	currentIdleAnimation = choose(Idle02, Idle03, Idle04, Idle05)
 }
 function choose_idle_delay() {
-	return 120 // choose(250, 250, 300, 400)
+	return choose(250, 250, 300, 400)
 }
 choose_idle_animation()
 
