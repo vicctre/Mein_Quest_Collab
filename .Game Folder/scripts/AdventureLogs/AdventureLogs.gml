@@ -47,32 +47,32 @@ adventure_logs = {
 					 + " are they even actually fruit?"
 	},
 	
-	///Natrina: {
-		//name: "Natrina" 
-		//sprite: sPage_Natrina, 
-		//description: "One of the Sister Spirits who brought new life to Eldoon during the Rebirth."
-					//+ "Natrina chooses to isolate herself in dense forests, nurturing the" 
-					//+ "environment and creatures in need. Shes a free spirit who is constantly"
-					//+ "looking for more to do with her life." 
-	//},
+	Naturina: {
+		name: "Naturina",
+		sprite: sPage_Naturina, 
+		description: "One of the Sister Spirits who brought new life to Eldoon during the Rebirth."
+					+ "Naturina chooses to isolate herself in dense forests, nurturing the" 
+					+ "environment and creatures in need. Shes a free spirit who is constantly"
+					+ "looking for more to do with her life." 
+	},
 	
-	//Fleater: {
-		//name: "Fleater" 
-		//sprite: sPage_Fleater, 
-		//description: "Fleaters can be seen flying around, minding its own business." 
-					//+ "Don’t really know what this guys deal is but hes always smiling." 
-					//+ "Not sure if I should be happy or freaked out…do they feel anything?" 
-					//+ "What are they thinking? Maybe they are just silly guys…" 
-	//},
+	Fleater: {
+		name: "Fleater",
+		sprite: sPage_Fleater, 
+		description: "Fleaters can be seen flying around, minding its own business." 
+					+ "Don’t really know what this guys deal is but hes always smiling." 
+					+ "Not sure if I should be happy or freaked out…do they feel anything?" 
+					+ "What are they thinking? Maybe they are just silly guys…" 
+	},
 	
-	//Chantie: {
-		//name: "Chantie" 
-		//sprite: sPage_Chantie, 
-		//description: "this predominately female species is known for dancing wherever they find comfort." 
-					//+ "Get too close, and they will instinctually whip you with their hair! "  
-					//+ "You can find them in groups. The one with the silkiest hair is considered " 
-					//+ " the leader of a pack." 
-	//},
+	Chantie: {
+		name: "Chantie",
+		sprite: sPage_Chantie, 
+		description: "this predominately female species is known for dancing wherever they find comfort." 
+					+ "Get too close, and they will instinctually whip you with their hair! "  
+					+ "You can find them in groups. The one with the silkiest hair is considered " 
+					+ " the leader of a pack." 
+	},
 }
 
 adventure_logs_array = []
@@ -82,9 +82,9 @@ var names_order = [
     "Tuffull",
     "Apploon",
     "Rularog",
-	//"Natrina" 
-	//"Fleater" 
-	//"Chantie" 
+	"Naturina", 
+	"Fleater",
+	"Chantie",
 ]
 
 for (var i = 0; i < array_length(names_order); ++i) {

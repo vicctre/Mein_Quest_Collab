@@ -47,10 +47,25 @@ function DefaultStagesData() {
 					unlocked: false,
                     was_showed_in_adv_log_screen: false
 				},
+				Naturina: {
+					order: 1,
+					unlocked: false,
+                    was_showed_in_adv_log_screen: false
+				},
 			}
 		},
 		W2_1: {
 			adv_logs: {
+				Fleater: {
+					order: 0,
+					unlocked: false,
+                    was_showed_in_adv_log_screen: false
+				},
+				Chantie: {
+					order: 1,
+					unlocked: false,
+                    was_showed_in_adv_log_screen: false
+				},
 			}
 		},
 		W2_2: {
@@ -170,7 +185,7 @@ function UnlockAdvLog(stage, name) {
 		stage_logs[$ name].unlocked = true
 		return
 	}
-	show_debug_message("Failed to find adv log {} in stage {}", name, stage)
+	show_debug_message("Failed to find adv log {0} in stage {1}", name, stage)
 }
 
 function Save() {
