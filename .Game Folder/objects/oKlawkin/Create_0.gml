@@ -39,15 +39,16 @@ wanderState = {
 
 
 function attack_step(state) {
-    id.image_speed = 1
-    if id.isOnFrame(state.charge_pause_frame) and state.charge_pause_timer.update() {
-        id.image_index = state.charge_pause_frame
-        id.image_speed = 0
+    image_speed = 1
+    if isOnFrame(state.charge_pause_frame) and state.charge_pause_timer.update() {
+        image_index = state.charge_pause_frame
+        image_speed = 0
     }
-    if id.isOnFrame(state.attack_frame) {
+    if isOnFrame(state.attack_frame) {
         state.attack()
+        audio_play_sound(SFX_Pinch, 3, false)
     }
-    if id.isAnimationEnd() {
+    if isAnimationEnd() {
         state.finished = true
     }
 }

@@ -114,6 +114,7 @@ var time = 360 * glow_waves_count / hit_blinking_gain
 heal_glowing_timer = make_timer(time, 0)
 
 death_animation_started = false
+is_dead_from_pit = false
 
 // hit state
 hit = global.player_hit_state
@@ -154,9 +155,9 @@ function animate_crouch_transition(sprite_to, img_sp) {
 }
 function create_death_animation() {
 	var inst = instance_create_layer(x, y, layer, oDeadEnemy)
-	
 	inst.sprite_index = sPlayerDead
-	inst.vsp = global.player_dead_vsp
+    var vsp_gain = is_dead_from_pit ? 1.35 : 1
+	inst.vsp = global.player_dead_vsp * vsp_gain
 	inst.hsp = global.player_dead_hsp * -image_xscale
 	inst.image_xscale = image_xscale
 }
