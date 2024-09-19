@@ -1,0 +1,2 @@
+
+layer_sequence_destroy(prev_sequence_instance)

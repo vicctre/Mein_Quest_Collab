@@ -615,7 +615,17 @@ function pogo_bounce() {
     animation_stop_update_timer.reset()
 }
 
+function can_finish_boss_sequence() {
+    /// Check if in the room's center
+    return (abs(room_width * 0.5 - x) < hsp_max) and !down_free
+}
+
 function start_boss_end_sequence() {
+    /// Turn off controls and start moving to the room center
+    // used after boss fights
+    if can_finish_boss_sequence() {
+        return;
+    }
     state = PLAYERSTATE.BOSS_END_SEQUENCE
 	has_control = false
 }
