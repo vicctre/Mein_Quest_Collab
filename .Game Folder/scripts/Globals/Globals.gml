@@ -62,6 +62,7 @@ function game_reset_globals() {
 		//  global.dev_level_goto = W2_1_part3
 		// global.rula_start_state = "tongueChargeState"
 		// global.autoscroller_skip_log_intro = true
+        audio_set_master_gain(0, 0)
 	}
 }
 

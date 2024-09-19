@@ -1,6 +1,10 @@
 
 frame++
 
+if !has_control {
+    exit
+}
+
 if oInput.key_escape and mode == "grid" {
     RoomTransition(TRANS_MODE.GOTO, rmMainMenu,
                    false, 0, TRANS_TYPE.FADE)

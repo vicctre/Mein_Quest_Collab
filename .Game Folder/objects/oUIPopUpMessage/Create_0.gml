@@ -27,7 +27,6 @@ function Message(text) constructor {
 	time = 120
 	ease_out = false
 	is_done = false
-
 	
 	step = function() {
 		if !ease_out {
@@ -37,7 +36,7 @@ function Message(text) constructor {
 			}
 		} else {
 			y = approach2(y, yst, speed_ratio, 0.5)
-			if y == yst {
+			if y > room_height {
 				is_done = true
 			}
 		}
@@ -56,5 +55,12 @@ function Message(text) constructor {
 }
 
 function PopUp(text) {
+    with oMenu {
+        has_control = false
+    }
 	array_push(messages, new Message(text))
+}
+
+function CheckMessagesExist() {
+    return (array_length(messages) > 0) or (current_message != undefined)
 }

@@ -1,6 +1,10 @@
 
 event_inherited()
 
+if !has_control {
+    exit
+}
+
 if oInput.key_escape
 		and !animation_is_playing // prevent exiting while animation is playing
 {

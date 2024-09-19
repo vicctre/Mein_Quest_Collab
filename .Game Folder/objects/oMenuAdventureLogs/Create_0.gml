@@ -1,4 +1,6 @@
 
+has_control = true
+
 frame = 0 // room frame, used for animation
 mode = "grid" // "read"
 

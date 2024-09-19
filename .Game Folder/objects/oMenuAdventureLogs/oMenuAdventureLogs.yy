@@ -14,7 +14,10 @@
     "name":"Screens",
     "path":"folders/Objects/SystemObjects/Screens.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oMenu",
+    "path":"objects/oMenu/oMenu.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

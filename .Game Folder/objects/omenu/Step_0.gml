@@ -1,8 +1,13 @@
 /// @desc Control Menu 
 
+
 animation_is_playing = instance_exists(oUnlockStageAnimation)
 
 AnimateEaseIn()
+
+if !has_control {
+    exit
+}
 
 // keyboard Controls 
 if (menu_control and !animation_is_playing) {

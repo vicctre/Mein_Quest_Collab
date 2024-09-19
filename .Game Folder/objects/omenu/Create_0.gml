@@ -7,6 +7,8 @@ gui_height = display_get_gui_height()
 
 non_highlight_color = c_grey
 
+has_control = true
+
 //// Menu positioning
 menu_x_base = gui_width * 0.5
 menu_x_target_start = gui_width + 300

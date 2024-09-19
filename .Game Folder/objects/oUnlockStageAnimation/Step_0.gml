@@ -1,4 +1,13 @@
 
+if follow and phase != 3 {
+    x = follow.getx()
+    y = follow.gety()
+}
+
+if oUIPopUpMessage.CheckMessagesExist() {
+    exit
+}
+
 switch phase {
 	// delay before unlocking animtion
     case 0:
@@ -36,9 +45,4 @@ switch phase {
             instance_destroy()
         }
     break
-}
-
-if follow and phase != 3 {
-    x = follow.getx()
-    y = follow.gety()
 }
