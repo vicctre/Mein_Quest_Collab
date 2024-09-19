@@ -43,6 +43,9 @@ function washEveryoneOff() {
     var x0 = camx(), x1 = x0 + camw(),
         y0 = final_wave.endy, y1 = final_wave.y
 	with pCut {
+        if object_index == oPinnik {
+            continue
+        }
         if !place_meeting(x, y, oWaveSafeZone)
                 and collision_rectangle(x0, y0, x1, y1, id, false, false) {
             dead_animation_fly_forward = true

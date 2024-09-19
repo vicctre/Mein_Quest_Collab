@@ -1,3 +1,3 @@
-event_inherited();
-deadSprite = sCutCube;
-invincible = true;
+event_inherited()
+deadSprite = sCutCube
+invincible = true
