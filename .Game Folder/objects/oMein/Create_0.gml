@@ -45,7 +45,7 @@ function choose_idle_animation() {
 	currentIdleAnimation = choose(Idle02, Idle03, Idle04, Idle05)
 }
 function choose_idle_delay() {
-	return choose(250, 250, 300, 400)
+	return 120 // choose(250, 250, 300, 400)
 }
 choose_idle_animation()
 
@@ -311,7 +311,7 @@ function Animate() {
 			} else {
 				if (idle_time < idle_delay)
 					sprite_index = sPlayer
-				if (idle_time >= idle_delay && sprite_index == sPlayer && image_index < 1) {
+				if (idle_time >= idle_delay && sprite_index == sPlayer) {
 					sprite_index = currentIdleAnimation
 					image_index = 0
 					idle_delay = choose_idle_delay()
@@ -497,9 +497,9 @@ function become_throwed(throw_hsp, throw_vsp, delay=5) {
 
 function updatePlayIdleAnimation() {
 	if (sprite_index == sPlayer || sprite_index == currentIdleAnimation) {
-		idle_time++;
+		idle_time++
 	} else {
-		idle_time = 0;
+		idle_time = 0
 	}
 }
 
