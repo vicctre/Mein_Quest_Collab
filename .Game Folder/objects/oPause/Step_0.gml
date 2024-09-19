@@ -19,7 +19,7 @@ if paused and instance_exists(oMenuPause) {
 	}
 	// freeze pause alarm
 	alarm[0] += alarm[0] >= 0
-	if oInput.key_escape {
+	if oInput.key_back {
 		//PauseWithMenuContinue()
 		oMenuPause.PerformButtonContinue(1)
 		pause_dim_on = false

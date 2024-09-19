@@ -33,9 +33,11 @@ function SetInactive() {
     active = false
 }
 
+gp_last_button = noone
 function GamepadCheckAny() {
     for (var i = gp_face1; i < gp_axisrv; i++) {
         if gamepad_button_check( 0, i ) {
+		   gp_last_button = i
            return true
        }
     }

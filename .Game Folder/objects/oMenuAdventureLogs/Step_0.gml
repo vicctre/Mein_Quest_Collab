@@ -5,7 +5,7 @@ if !has_control {
     exit
 }
 
-if oInput.key_escape and mode == "grid" {
+if oInput.key_back and mode == "grid" {
     RoomTransition(TRANS_MODE.GOTO, rmMainMenu,
                    false, 0, TRANS_TYPE.FADE)
 }
@@ -30,7 +30,7 @@ if mode == "grid" {
 		audio_play_sound(global.sfx_nav, 6, false)
     }
 } else { // mode = "read"
-	if oInput.key_escape {
+	if oInput.key_back {
 		mode = "grid"
         with oMenuAdvLog {
             visible = false

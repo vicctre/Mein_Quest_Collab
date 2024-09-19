@@ -5,7 +5,7 @@ if !has_control {
     exit
 }
 
-if oInput.key_escape
+if oInput.key_back
 		and !animation_is_playing // prevent exiting while animation is playing
 {
 	PerformGoBack()
