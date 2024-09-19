@@ -11,6 +11,10 @@ timer = 100;
 image_xscale = -size;
 hsp_target = 0; //speed to accelerate hsp towards
 
+if DEV {
+    hp = 1
+}
+
 idle_time = 64;
 charge_prep_time = 80;
 stun_time = 50;

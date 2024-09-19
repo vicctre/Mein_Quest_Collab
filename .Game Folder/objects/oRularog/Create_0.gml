@@ -4,9 +4,13 @@ event_inherited()
 name = "Rularog"
 
 hp_max = 26
-hp = hp_max - 25
+hp = hp_max
 hp_phase2_amount =  12//11
 done_phase2_roar = false
+
+if DEV {
+    hp = hp_max - 25
+}
 
 // hp ui
 hp_ui.draw_x = 700
@@ -698,7 +702,7 @@ deadState = {
 			vsp = 0
 			id.sprite_index = sRulaDead
 			if !syster_spirit_triggered and !syster_spirit_timer.update() {
-                oMein.switch_to_sister_spirit()
+                oMein.start_boss_end_sequence()
 				syster_spirit_triggered = true
 			}
 		}

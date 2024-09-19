@@ -1,62 +1,62 @@
-timer = max(0, timer-1);
+timer = max(0, timer-1)
 
 switch(boss_state) {
 	case "Idle":
-		hsp = 0;
+		hsp = 0
 		if (timer == 0) {
 			if (charge_count > 0)
-				changeState("Charge Prep");
+				changeState("Charge Prep")
 			else
-				changeState("Walk");
+				changeState("Walk")
 		}
-	break;
+	break
 	case "Charge Prep":
 		if (timer == 0) {
-			changeState("Charge");
+			changeState("Charge")
 		}
-	break;
+	break
 	case "Charge":
-		hsp = lerp(hsp, hsp_target, 0.14);
+		hsp = lerp(hsp, hsp_target, 0.14)
 		if (place_meeting(x+hsp, y, oWall)) {
-			audio_play_sound(global.sfx_bonk, 5, false);
-			oCamera.shake_remain = 1;
-			changeState("Stunned");
+			audio_play_sound(global.sfx_bonk, 5, false)
+			oCamera.shake_remain = 1
+			changeState("Stunned")
 		}
-	break;
+	break
 	case "Stunned":
-		x = lerp(x, wallX-8*image_xscale, 0.08);
+		x = lerp(x, wallX-8*image_xscale, 0.08)
 		if (timer == 0) {
-			changeState("Idle");
+			changeState("Idle")
 		}
-	break;
+	break
 	case "Walk":
 		if (timer == 0) {
-			changeState("Jump Prep");
+			changeState("Jump Prep")
 		}
-	break;
+	break
 	case "Jump Prep":
 		if (timer == 0) {
-			changeState("Jump");
+			changeState("Jump")
 		}
-	break;
+	break
 	case "Jump":
 		if (vsp > 0) {
-			changeState("Fall");
+			changeState("Fall")
 		}
-	break;
+	break
 	case "Fall":
 		if (place_meeting(x,y+1,oWall)) {
-			audio_play_sound(SFX_Boss_Land, 5, false);
-			changeState("Idle");
+			audio_play_sound(SFX_Boss_Land, 5, false)
+			changeState("Idle")
 		}
-	break;
+	break
 	case "Defeated":
 		if (place_meeting(x,y+1,oWall)) {
 			if sprite_index != sTuffull_KOed {
-				sprite_index = sTuffull_KOed;
+				sprite_index = sTuffull_KOed
 				audio_play_sound(SFX_Boss_Land, 0, false)
 			}
-			hsp *= 0.5;
+			hsp *= 0.5
 			if !--spirit_byte_drop_timer and !spirit_byte_dropped {
 				instance_create_layer(x, y, layer, oSpiritByteBoss)
 				// audio_play_sound(global.msc_post_battle)
@@ -64,32 +64,32 @@ switch(boss_state) {
 				oMusic.switch_music(global.msc_post_battle, true, 0)
 			}
 		}
-	break;
+	break
 }
 
-vsp = vsp + grv; 
+vsp = vsp + grv
 
 //Collision (horizontal) 
 if (place_meeting(x+hsp,y,oWall))
 {
 	while (!place_meeting(x+sign(hsp),y,oWall))
 	{
-		x = x + sign(hsp); 
+		x = x + sign(hsp)
 	}
 	if (boss_state == "Defeated")
-		hsp = 0;
+		hsp = 0
 	else
-		hsp = -hsp; 
+		hsp = -hsp
 }
-x = x + hsp; 
+x = x + hsp
 
 //Collision (vertical) 
 if (place_meeting(x,y+vsp,oWall))
 {
 	while (!place_meeting(x,y+sign(vsp),oWall))
 	{
-		y = y + sign(vsp); 
+		y = y + sign(vsp)
 	}
-	vsp = 0; 
+	vsp = 0
 }
-y = y + vsp; 
+y = y + vsp

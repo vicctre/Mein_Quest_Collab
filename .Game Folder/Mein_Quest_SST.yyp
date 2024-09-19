@@ -189,7 +189,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.6.1.160",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -382,7 +382,6 @@
     {"id":{"name":"Globals","path":"scripts/Globals/Globals.yy",},},
     {"id":{"name":"LevelTransition","path":"scripts/LevelTransition/LevelTransition.yy",},},
     {"id":{"name":"movement","path":"scripts/movement/movement.yy",},},
-    {"id":{"name":"Player","path":"scripts/Player/Player.yy",},},
     {"id":{"name":"ResizeCamera","path":"scripts/ResizeCamera/ResizeCamera.yy",},},
     {"id":{"name":"scr_ssave_config","path":"scripts/scr_ssave_config/scr_ssave_config.yy",},},
     {"id":{"name":"scr_ssave_manager","path":"scripts/scr_ssave_manager/scr_ssave_manager.yy",},},

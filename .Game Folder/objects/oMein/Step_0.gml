@@ -216,14 +216,16 @@ switch state {
 		}
 		break
 	}
-	case PLAYERSTATE.SYSTER_SPIRIT: {
+	case PLAYERSTATE.BOSS_END_SEQUENCE: {
         var x_to = room_width * 0.5
         hsp_to = hsp_max * sign(x_to - x)
         if abs(x_to - x) < hsp_max {
             x = x_to
             hsp = 0
 			hsp_to = 0
-            instance_create_layer(x, bbox_bottom, "SysterSpiritCutscene", oSequenceSysterSpirit)
+            if room == W1_3BOSS {
+                instance_create_layer(x, bbox_bottom, "SysterSpiritCutscene", oSequenceSysterSpirit)
+            }
 			state = PLAYERSTATE.FREE
         }
 		break

@@ -13,7 +13,7 @@ enum PLAYERSTATE {
 	ENTER_DOOR,
 	GRABBED,
 	THROWED,
-    SYSTER_SPIRIT,
+    BOSS_END_SEQUENCE,
 }
 
 global.player = id
@@ -276,7 +276,7 @@ function Animate() {
     }
 	image_speed = 1
 	switch state {
-        case PLAYERSTATE.SYSTER_SPIRIT:
+        case PLAYERSTATE.BOSS_END_SEQUENCE:
 		case PLAYERSTATE.FREE:
 			if animate_crouch_transition(sPlayer, -1) {
 				break	
@@ -614,9 +614,13 @@ function pogo_bounce() {
     animation_stop_update_timer.reset()
 }
 
-function switch_to_sister_spirit() {
-    state = PLAYERSTATE.SYSTER_SPIRIT
+function start_boss_end_sequence() {
+    state = PLAYERSTATE.BOSS_END_SEQUENCE
 	has_control = false
+}
+
+function is_boss_sequence() {
+    return state == PLAYERSTATE.BOSS_END_SEQUENCE
 }
 
 

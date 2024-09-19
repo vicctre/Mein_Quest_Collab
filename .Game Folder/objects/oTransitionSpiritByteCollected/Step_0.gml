@@ -5,7 +5,12 @@ switch phase {
 	case 0:
 		if !global.player.down_free {
 			phase++
-			global.player.visible = false
+			global.player.start_boss_end_sequence()
+		}
+		break
+	case 1:
+		if !global.player.is_boss_sequence() {
+			phase++
 			global.player.has_control = false
 			oMusic.switch_music(victory_music, false, 0)
 			sequence_inst = layer_sequence_create(
@@ -15,7 +20,10 @@ switch phase {
 			}
 		}
 		break
-	case 1:
+	case 2:
+        // turn off player's visibility here
+        // to prevent one-frame blink caused by some sort of sequence start delay
+        global.player.visible = false
 		if is_sequence_finished() {
 			layer_sequence_speedscale(sequence_inst, 0)
 		}
