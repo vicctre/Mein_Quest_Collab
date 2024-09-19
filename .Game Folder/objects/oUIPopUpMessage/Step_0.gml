@@ -1,6 +1,7 @@
 // start showing messages if just added
 if !current_message and array_length(messages) {
     current_message = array_shift(messages)
+	audio_play_sound(SFX_Notification, 3, false)
 }
 
 // assign next_message from array if there are any

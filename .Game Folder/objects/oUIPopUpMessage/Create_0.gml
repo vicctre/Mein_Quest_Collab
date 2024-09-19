@@ -31,7 +31,7 @@ function Message(text) constructor {
 	step = function() {
 		if !ease_out {
 			y = approach2(y, yto, speed_ratio, 0.5)
-			if (y == yto) and oInput.key_attack {
+			if (y == yto) and oInput.key_action {
 				ease_out = true
 			}
 		} else {

@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"SFX_Notifi",
+  "%Name":"SFX_Notification",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":0.572834,
-  "name":"SFX_Notifi",
+  "name":"SFX_Notification",
   "parent":{
     "name":"Need to be Added",
     "path":"folders/Sounds/SFX/Need to be Added.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"SFX_Notifi.wav",
+  "soundFile":"SFX_Notification.wav",
   "type":0,
   "volume":1.0,
 }
