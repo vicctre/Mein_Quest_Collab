@@ -306,7 +306,7 @@ function Animate() {
 				if is_sprinting {
 					sprite_index = sRun
 				} else {
-					sprite_index = sPlayer
+					sprite_index = sPlayerW
 				}
 			} else {
 				if (idle_time < idle_delay)
