@@ -28,7 +28,8 @@ switch phase {
 			layer_sequence_speedscale(sequence_inst, 0)
 		}
 		if is_transition_finished() {
-            if room == W1_3BOSS {
+            if room == W1_3BOSS
+                    and !oStageManager.IsPogoUnlocked() {
                 global.player_pogo_just_unlocked = true // trigger pogo unclocking
                                                         // on stage select
             }

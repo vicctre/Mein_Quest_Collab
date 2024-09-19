@@ -234,7 +234,7 @@ function check_perform_attack() {
 	attack_pause_timer--
 	if key_attack and !attack_pause_timer {
 		image_index = 0
-        if oStageManager.mein_pogo_attack_enabled and down_free and key_down and !pogo_cooldown_timer.timer {
+        if oStageManager.IsPogoUnlocked() and down_free and key_down and !pogo_cooldown_timer.timer {
             state = PLAYERSTATE.ATTACK_POGO
             sprite_index = sPlayer_PogoAttack
             hsp = 0

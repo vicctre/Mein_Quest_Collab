@@ -53,6 +53,8 @@ function Message(text) constructor {
             c_white, c_black, 2,
             sep, text_max_width)
         draw_sprite(sPopUpArrow, 0, x + w - 10, y + h - 10)
+		// debug text box
+		//draw_rectangle(x, y, x + w, y + h, true)
 	}
 }
 

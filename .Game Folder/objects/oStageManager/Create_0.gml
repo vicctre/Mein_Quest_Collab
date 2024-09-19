@@ -284,6 +284,10 @@ function UnlockPogoAttack() {
     save.save()
 }
 
+function IsPogoUnlocked() {
+    return mein_pogo_attack_enabled
+}
+
 function CheckOpenNextStage() {
 	var unlock_stage = noone
 	switch room {
