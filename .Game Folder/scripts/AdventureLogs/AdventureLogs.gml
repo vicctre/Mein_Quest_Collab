@@ -75,6 +75,8 @@ adventure_logs = {
 	},
 }
 
+
+//// Used by oMenuAdventrueLogs
 adventure_logs_array = []
 var names_order = [
     "Mein",
