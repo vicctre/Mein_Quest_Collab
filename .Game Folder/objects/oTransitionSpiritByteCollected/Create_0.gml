@@ -10,7 +10,7 @@ next_room = rmAdventureLogsScreen
 
 destroy_delay = 60
 //this is where you can add sequences you make at any time. It will choose from these options 
-sequence = choose(seqPlayerVictory, seqPlayerVictory02, seqPlayerVictory03);
+sequence = choose(seqPlayerVictory, seqPlayerVictory02, seqPlayerVictory03, seqPlayerVictory04);
 
 // workaround transition becoming invisible for a couple frames
 start_from_frame = undefined

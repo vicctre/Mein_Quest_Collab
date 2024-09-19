@@ -12,8 +12,8 @@
   "duration":0.161655,
   "name":"SFX_Pinch",
   "parent":{
-    "name":"Need to be Added",
-    "path":"folders/Sounds/SFX/Need to be Added.yy",
+    "name":"Enemy",
+    "path":"folders/Sounds/SFX/Enemy.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"SFX_Pinch.wav",
   "type":0,
-  "volume":0.5,
+  "volume":0.1,
 }
