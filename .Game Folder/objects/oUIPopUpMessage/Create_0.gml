@@ -27,7 +27,7 @@ function Message(text) constructor {
 	time = 120
 	ease_out = false
 	is_done = false
-	
+
 	step = function() {
 		if !ease_out {
 			y = approach2(y, yto, speed_ratio, 0.5)
@@ -35,8 +35,10 @@ function Message(text) constructor {
 				ease_out = true
 			}
 		} else {
-			y = approach2(y, yst, speed_ratio, 0.5)
-			if y > room_height {
+			y = approach2(y,
+                yst + 200,              // increase yto to move faster
+                speed_ratio, 0.5)
+			if y > yst {
 				is_done = true
 			}
 		}
