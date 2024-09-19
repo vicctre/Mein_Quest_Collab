@@ -13,8 +13,8 @@ function Message(text) constructor {
     padding = 10
 	sep = 35
 	text_max_width = max_width - padding * 2
-    var w = string_width_ext(text, sep, text_max_width) + padding * 2
-	var h = string_height_ext(text, sep, text_max_width) + padding * 2
+    w = string_width_ext(text, sep, text_max_width) + padding * 2
+	h = string_height_ext(text, sep, text_max_width) + padding * 2
 	xscale = w / sprite_get_width(sPopUp)
 	yscale = h / sprite_get_height(sPopUp)
 
@@ -32,7 +32,7 @@ function Message(text) constructor {
 	step = function() {
 		if !ease_out {
 			y = approach2(y, yto, speed_ratio, 0.5)
-			if (y == yto) and !time-- {
+			if (y == yto) and oInput.key_attack {
 				ease_out = true
 			}
 		} else {
@@ -51,6 +51,7 @@ function Message(text) constructor {
             x + padding, y + padding, text,
             c_white, c_black, 2,
             sep, text_max_width)
+        draw_sprite(sPopUpArrow, 0, x + w - 10, y + h - 10)
 	}
 }
 

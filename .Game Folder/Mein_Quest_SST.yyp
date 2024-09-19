@@ -698,6 +698,7 @@
     {"id":{"name":"sPlayerW","path":"sprites/sPlayerW/sPlayerW.yy",},},
     {"id":{"name":"sPogoAtk_Example","path":"sprites/sPogoAtk_Example/sPogoAtk_Example.yy",},},
     {"id":{"name":"sPopUp","path":"sprites/sPopUp/sPopUp.yy",},},
+    {"id":{"name":"sPopUpArrow","path":"sprites/sPopUpArrow/sPopUpArrow.yy",},},
     {"id":{"name":"Sprite132","path":"sprites/Sprite132/Sprite132.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
     {"id":{"name":"Sprite217","path":"sprites/Sprite217/Sprite217.yy",},},
