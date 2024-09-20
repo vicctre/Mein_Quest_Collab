@@ -4,7 +4,8 @@ mein_pogo_attack_enabled = false
 default_game_options = {
     sfx: 0.5,
     music: 0.7,
-    tutorials: 1
+    tutorials: 1,
+    fullscreen: 1,
 }
 
 
@@ -317,6 +318,7 @@ function SaveOptions() {
 function UpdateGameFromOptions() {
 	oAudioManager.SetSfxGain(game_options.sfx)
 	oAudioManager.SetBgmGain(game_options.music)
+    window_set_fullscreen(game_options.fullscreen)
 }
 
 function OptionsUpdate(key, value) {

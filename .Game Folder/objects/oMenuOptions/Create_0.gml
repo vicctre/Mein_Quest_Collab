@@ -126,13 +126,10 @@ function UpdateCursorTargetPos() {
 }
 
 function OptionsMenu() {
-	var switch_fullscreen = function() {
-		window_set_fullscreen(!window_get_fullscreen())	
-	}
 	var menu = [
 		new OptionInput(0, OptionInputType.slider, "SFX", "sfx", oStageManager.game_options.sfx),
 		new OptionInput(1, OptionInputType.slider, "Music", "music", oStageManager.game_options.music),
-		new OptionInput(2, OptionInputType.checkbox, "Fullscreen", undefined, window_get_fullscreen(), switch_fullscreen),
+		new OptionInput(2, OptionInputType.checkbox, "Fullscreen", "fullscreen", oStageManager.game_options.fullscreen),
 		new OptionInput(3, OptionInputType.checkbox, "Tutorials", "tutorials", oStageManager.game_options.tutorials),
 
 	]
