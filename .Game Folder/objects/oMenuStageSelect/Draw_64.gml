@@ -25,7 +25,8 @@ for (var i = 0; i < array_length(menu); i++) {
 draw_set_halign(halign)
 draw_set_valign(valign)
 
+DrawHintText()
+
 draw_sprite_ext(sCursor, menu_cursor_frame, menu_cursor_x, menu_cursor_y,
 				menu_cursor_scale, menu_cursor_scale, 0, c_white, 1)
 
-DrawHintText()

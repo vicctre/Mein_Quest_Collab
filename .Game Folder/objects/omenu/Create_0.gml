@@ -153,9 +153,12 @@ function AnimateCursor() {
 
 function DrawHintText() {
     draw_set_color(non_highlight_color)
-    draw_set_font(fntMenuSmall)
-    draw_text(gui_width * 0.2, gui_height * 0.7, control_hint_text)
-    draw_set_font(fntMenu)
+    draw_set_halign(fa_left)
+    draw_text_transformed(
+                gui_width * 0.05,
+                gui_height * 0.8,
+                control_hint_text,
+                0.75, 0.75, 0)
     draw_set_color(c_white)
 }
 
