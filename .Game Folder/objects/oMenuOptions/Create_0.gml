@@ -2,11 +2,10 @@
 
 event_inherited()
 
-menu_x_base = gui_width * 0.3
-
 control_hint_text = "X/Enter/A - select\nEsc/Back - go back\Left/Right - adjust"
 
 menu_text_scale = 2
+menu_text_relx = -60
 menu_cursor_scale = 2
 icon_scale = 2
 
@@ -34,7 +33,7 @@ enum OptionInputType {
 }
 
 enum OptionInputAction {
-    click,
+    click = 1,
     decrease,
     increase,
 }
@@ -45,11 +44,12 @@ function PerformGoBack() {
 	menu_control = false
 }
 
-function OptionInput(ind, type, title, value) constructor {
+function OptionInput(ind, type, title, key, value) constructor {
     self.parent = oMenuOptions
     self.ind = ind
     self.type = type
 	self.title = title
+    self.key = key
     self.value = value
 
     function getx() {
@@ -61,12 +61,12 @@ function OptionInput(ind, type, title, value) constructor {
     }
 
     function get_text_x() {
-        return getx() - parent.icon_half_width * 0.9
+        return getx() + parent.menu_text_relx
     }
 
     self.draw = function() {
         var col = parent.menu_cursor == ind ? c_white : c_grey
-        draw_set_halign(fa_left)
+        draw_set_halign(fa_right)
         parent.DrawTextOutlined(title, get_text_x(), gety(), col)
         draw_input()
     }
@@ -75,7 +75,9 @@ function OptionInput(ind, type, title, value) constructor {
 
 	switch self.type {
         case OptionInputType.checkbox:
-            self.action = function() {}
+            self.action = function() {
+                self.value = !self.value
+            }
             self.draw_input = function () {
                 draw_set_halign(fa_left)
                 parent.DrawTextOutlined(
@@ -87,10 +89,11 @@ function OptionInput(ind, type, title, value) constructor {
         case OptionInputType.slider:
             var scale = oMenuOptions.icon_scale
             self.slider = new UiSlider(
-                sOption_Slider, 1, 0.5, 0, 1, scale, scale, false, 0)
+                sOption_Slider, 1, value, 0, 1, 9, scale, scale, false, 0)
             self.action = function(inp) {
                 self.value = clamp(self.value + inp * 0.1, 0, 1)
                 self.slider.set_value(self.value)
+                oStageManager.OptionsUpdate(key, value)
             }
             self.draw_input = function() {
                 var col = parent.menu_cursor == ind ? c_white : c_grey
@@ -99,32 +102,27 @@ function OptionInput(ind, type, title, value) constructor {
                 /// Draw slider
                 var scale = oMenuOptions.icon_scale
                 var yy = gety() - sprite_get_height(sOption_Slider) * scale * 0.5
-                self.slider.set_pos(getx() + oMenuOptions.inputs_padding, yy)
+                var xx = getx() + oMenuOptions.inputs_padding
+                self.slider.set_pos(xx, yy)
                 self.slider.draw()
             }
         break
-        default:
-            self.action = function() {
-                self.value = !self.value
-            }
+		default:
+			self.action = function() {}
     } 
 }
 
-//function UpdateCursorTargetPos() {
-//	menu_cursor_y_target = GetCursorY(menu_cursor)
-//	menu_cursor_x_target = menu_x - icon_half_width
-//}
-
 function UpdateCursorTargetPos() {
 	menu_cursor_y_target = GetCursorY(menu_cursor)
-	menu_cursor_x_target = (gui_width - menu_x) - icon_half_width - 20
+	var w = string_width(menu[menu_cursor].title) * menu_text_scale
+	menu_cursor_x_target = (gui_width - menu_x) - w - 60
 }
 
 function OptionsMenu() {
 	var menu = [
-		new OptionInput(0, OptionInputType.slider, "SFX", 0.5),
-		new OptionInput(1, OptionInputType.slider, "Music", 0.5),
-		new OptionInput(2, OptionInputType.checkbox, "Tutorials", 1),
+		new OptionInput(0, OptionInputType.slider, "SFX", "sfx", oStageManager.game_options.sfx),
+		new OptionInput(1, OptionInputType.slider, "Music", "music", oStageManager.game_options.music),
+		new OptionInput(2, OptionInputType.checkbox, "Tutorials", "tutorials", oStageManager.game_options.tutorials),
 	]
 
     goback_button = new OptionInput(3, undefined, "Back")
@@ -146,6 +144,7 @@ function GetActionInput() {
     if oInput.key_right_pressed {
         return OptionInputAction.increase
     }
+	return 0
 }
 
 function PerformButton(index, inp) {
@@ -163,9 +162,7 @@ function PerformButton(index, inp) {
         break
         default:
             // go back
-            menu_committed = index
-            menu_x_target = menu_x_target_start
-            menu_control = false
+            menu_input.action()
     }
 	audio_play_sound(global.sfx_select, 7, false)
 }

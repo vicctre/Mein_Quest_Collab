@@ -8,6 +8,11 @@
   "bitDepth":1,
   "bitRate":128,
   "compression":0,
+  "ConfigValues":{
+    "Dev":{
+      "audioGroupId":"{ \"name\":\"audiogroup_default\", \"path\":\"audiogroups/audiogroup_default\" }",
+    },
+  },
   "conversionMode":0,
   "duration":13.333333,
   "name":"BGM_Antag_Motif",
@@ -21,5 +26,5 @@
   "sampleRate":44100,
   "soundFile":"BGM_Antag_Motif.wav",
   "type":0,
-  "volume":0.5,
+  "volume":0.06,
 }

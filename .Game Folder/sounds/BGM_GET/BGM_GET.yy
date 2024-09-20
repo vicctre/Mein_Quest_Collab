@@ -8,6 +8,11 @@
   "bitDepth":0,
   "bitRate":128,
   "compression":1,
+  "ConfigValues":{
+    "Dev":{
+      "audioGroupId":"{ \"name\":\"audiogroup_default\", \"path\":\"audiogroups/audiogroup_default\" }",
+    },
+  },
   "conversionMode":0,
   "duration":2.790703,
   "name":"BGM_GET",

@@ -1,6 +1,11 @@
 
 default_last_unlocked_stage = real(W1_1_part1)
 mein_pogo_attack_enabled = false
+default_game_options = {
+    sfx: 0.5,
+    music: 0.7,
+    tutorials: 1
+}
 
 
 function DefaultStagesData() {
@@ -85,6 +90,7 @@ function SaveFile() : SSave("save") constructor {
 	add_value("stages_data", SSAVE_TYPE.STRUCT, other.DefaultStagesData())
 	add_value("mein_pogo_attack_enabled", SSAVE_TYPE.BOOLEAN, false)
 	add_value("last_unlocked_stage_stage_select_animation_played", SSAVE_TYPE.REAL, other.default_last_unlocked_stage)
+    add_value("options", SSAVE_TYPE.STRUCT, other.default_game_options)
 }
 
 save = new SaveFile()
@@ -96,6 +102,7 @@ function Load() {
 	last_unlocked_stage_stage_select_animation_played = save.get("last_unlocked_stage_stage_select_animation_played")
 	stages_data = save.get("stages_data")
 	mein_pogo_attack_enabled = save.get("mein_pogo_attack_enabled")
+    game_options = save.get("options")
 }
 
 Load()
@@ -301,6 +308,17 @@ function CheckOpenNextStage() {
 	if unlock_stage != noone {
 		UnlockStage(unlock_stage)
 	}
+}
+
+function SaveOptions() {
+    save.set("options", game_options)
+    save.save()
+}
+
+function OptionsUpdate(key, value) {
+    game_options[$ key] = value
+	//// Update game settings
+    SaveOptions()
 }
 
 alarm[0] = 1

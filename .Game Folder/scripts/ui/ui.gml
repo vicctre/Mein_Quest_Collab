@@ -28,7 +28,8 @@ function UiSlider(
 	}
 	
 	self.is_captured = false
-    self.value_draw_gain = sprw * xscale / (max_value - min_value)
+    self.slider_x_gain = (sprw - padding * 2 - slider_w) * xscale / (max_value - min_value)
+    self.slider_xmin = padding * xscale
 	self.filler_width_draw_gain = sprw / (max_value - min_value)
 	
 	function set_pos(xx, yy) {
@@ -37,11 +38,7 @@ function UiSlider(
 	}
 	
 	function slider_x() {
-        var xx = self.value_draw_gain * value
-        var gap = padding + slider_w * 0.5
-        var xmin = gap * xscale
-        var xmax = (sprw - gap) * xscale
-		return clamp(xx, xmin, xmax)
+        return self.slider_xmin + self.slider_x_gain * value
 	}
 
 	function filler_width() {

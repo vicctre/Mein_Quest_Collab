@@ -8,6 +8,11 @@
   "bitDepth":1,
   "bitRate":128,
   "compression":1,
+  "ConfigValues":{
+    "Dev":{
+      "audioGroupId":"{ \"name\":\"audiogroup_default\", \"path\":\"audiogroups/audiogroup_default\" }",
+    },
+  },
   "conversionMode":0,
   "duration":37.97467,
   "name":"BGM_MiniBoss",
