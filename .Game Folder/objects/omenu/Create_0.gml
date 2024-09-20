@@ -56,6 +56,10 @@ menu_cursor_animate_sp = 0.5    //
 // buttons unlock animation
 animation_is_playing = false
 
+function GetActionInput() {
+    return oInput.key_action
+}
+
 function PerformAction() {
 	var menu_item = menu[menu_committed]
 	if menu_item.action != undefined {
@@ -66,7 +70,7 @@ function PerformAction() {
     show_debug_message("Menu item has no action")
 }
 
-function PerformButton(index) {
+function PerformButton(index, inp) {
 	menu_committed = index
 	var menu_item = menu[menu_committed]
 	if menu_item.action != undefined {
@@ -149,7 +153,7 @@ function AnimateCursor() {
 
 function DrawHintText() {
     draw_set_color(non_highlight_color)
-    draw_text(gui_width * 0.2, gui_height * 0.8, control_hint_text)
+    draw_text(gui_width * 0.1, gui_height * 0.8, control_hint_text)
     draw_set_color(c_white)
 }
 
@@ -170,7 +174,10 @@ menu = [
 	},
 	{
 		title: "Options",
-		action: undefined
+		action: function() {
+			instance_destroy(oMenu)
+			instance_create_layer(0, 0, "Instances", oMenuOptions)
+		}
 	},
 	{
 		title: "Quit",

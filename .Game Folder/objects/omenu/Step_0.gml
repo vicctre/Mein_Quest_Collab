@@ -22,8 +22,9 @@ if (menu_control and !animation_is_playing) {
         } 
 		audio_play_sound(global.sfx_nav,6,false)
     }
-	if oInput.key_action {
-		PerformButton(menu_cursor)
+    var action_inp = GetActionInput()
+	if action_inp {
+		PerformButton(menu_cursor, action_inp)
 	}
 }
 
