@@ -12,6 +12,11 @@ if mode == "grid" {
             // draw log icon
             if unlocked_array[i * grid_cols + j] {
                 draw_sprite_ext(advlog.sprite, 0, xx, yy, draw_scale, draw_scale, 0, c_white, 1)
+                var rely = - sprite_get_yoffset(advlog.sprite) * draw_scale
+                draw_set_font(fntMenu)
+                draw_set_halign(fa_center)
+                draw_set_valign(fa_top)
+                draw_text_transformed(xx, yy + rely, advlog.name, 0.5, 0.5, 0)
             } else {
                 draw_sprite_ext(sAdvLog_Blank, 0, xx, yy, draw_scale, draw_scale, 0, c_white, 0.5)
             }
