@@ -9,7 +9,7 @@ hp_phase2_amount =  12//11
 done_phase2_roar = false
 
 if DEV {
-    hp = hp_max - 25
+    hp = hp_max //- 25
 }
 
 // hp ui
@@ -423,12 +423,15 @@ roarState = {
     id: id,
 	roar_sfx: SFX_Rularog_Roar,
 	roar_image_index: 24,
+	roar_sound_played: false,
 
 	step: function() {
 		with id {
-			if is_animation_at_frame(other.roar_image_index) {
+			if !roar_sound_played and is_animation_at_frame(other.roar_image_index) {
 				audio_play_sound(other.roar_sfx, 3, false)	
 				oCamera.start_shaking()
+                show_debug_message("Roar")
+				roar_sound_played = true
 			}
 		}
     },
@@ -438,6 +441,7 @@ roarState = {
 	onEnter: function() {
 		id.sprite_index = sRulaROAR
 		id.done_phase2_roar = true
+		roar_sound_played = false
 		id.setDir()
     },
 	checkChange: function() {
@@ -638,6 +642,7 @@ ultraRollState = {
 		rotation_dir = -hdir
 		id.sprite_index = sRulaRoll
 		audio_play_sound(ultra_roll_sfx, 3, false)
+        show_debug_message("Roar")
     },
 
 	checkChange: function() {
