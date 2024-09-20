@@ -3,7 +3,10 @@ switch phase {
 	case 0:
 		if !global.player.down_free {
 			phase++
-			global.player.start_boss_end_sequence()
+            //// Move Mein to the center only in boss rooms
+            if array_contains(global.boss_stages, room) {
+                global.player.start_boss_end_sequence()
+            }
 		}
 		break
 	case 1:

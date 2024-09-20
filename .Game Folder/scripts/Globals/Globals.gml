@@ -36,6 +36,9 @@ restart_level_on_death = true
 skip_logos = false
 stage_select_show_unlock_animation = false
 
+//// Used by various systems
+boss_stages = [W1_1_part5, W1_3BOSS]
+
 function level_reset_globals() {
 	global.coins = 0
 	global.coins_timer = 0 // for when coins flash yellow on collection
