@@ -10,7 +10,7 @@ menu_speed = 0.2
 
 menu_cursor_scale = 1
 menu_text_scale = 1
-menu_itemheight = font_get_size(fMenu) * menu_text_scale
+menu_itemheight = font_get_size(fntMenu) * menu_text_scale
 
 function AnimateEaseIn() {
 	menu_y = approach(menu_y, menu_y_target, menu_speed)

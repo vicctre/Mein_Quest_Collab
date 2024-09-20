@@ -1,5 +1,5 @@
 
-draw_set_font(fMenu)
+draw_set_font(fntMenu)
 
 draw_hp_bar()
 

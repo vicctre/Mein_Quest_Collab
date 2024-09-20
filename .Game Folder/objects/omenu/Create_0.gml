@@ -36,7 +36,7 @@ menu_bottom = 0
 
 //// Menu items size
 menu_text_scale = 2
-menu_itemheight = font_get_size(fMenu) * menu_text_scale
+menu_itemheight = font_get_size(fntMenu) * menu_text_scale
 menu_item_distance_mult = 1.5
 
 //// Cursor positioning and drawing
@@ -153,7 +153,9 @@ function AnimateCursor() {
 
 function DrawHintText() {
     draw_set_color(non_highlight_color)
-    draw_text(gui_width * 0.1, gui_height * 0.8, control_hint_text)
+    draw_set_font(fntMenuSmall)
+    draw_text(gui_width * 0.2, gui_height * 0.7, control_hint_text)
+    draw_set_font(fntMenu)
     draw_set_color(c_white)
 }
 
