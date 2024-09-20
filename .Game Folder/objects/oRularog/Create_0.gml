@@ -3,7 +3,7 @@ event_inherited()
 
 name = "Rularog"
 
-hp_max = 26
+hp_max = 26 - 25
 hp = hp_max
 hp_phase2_amount =  12//11
 done_phase2_roar = false
@@ -427,7 +427,7 @@ roarState = {
 
 	step: function() {
 		with id {
-			if !roar_sound_played and is_animation_at_frame(other.roar_image_index) {
+			if !other.roar_sound_played and is_animation_at_frame(other.roar_image_index) {
 				audio_play_sound(other.roar_sfx, 3, false)	
 				oCamera.start_shaking()
                 show_debug_message("Roar")

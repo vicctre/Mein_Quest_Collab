@@ -1,4 +1,5 @@
 
 event_inherited()
 
-next_room = rmTitleScreen
+goto_next_room_on = false
+alarm[1] = 60

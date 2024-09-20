@@ -1,7 +1,7 @@
 
 event_inherited()
 
-var next_level_room = DEMO ? rmThanksForPlayingScreen : W1_2_part1
+var next_level_room = W1_2_part1
 
 var is_new_adv_logs_collected 
 	= array_length(oStageManager.GetNotShowedAdventureLogs()) != 0

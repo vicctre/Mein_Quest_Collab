@@ -7,6 +7,10 @@ if goto_next and oInput.key_action {
 		goto_next = false
 		alarm[0] = 60
     } else {
-        GoToStageSelect()
+        if DEMO {
+            RoomTransition(TRANS_MODE.GOTO, rmThanksForPlayingScreen)
+        } else {
+            GoToStageSelect()
+        }
     }
 }
