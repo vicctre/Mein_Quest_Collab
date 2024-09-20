@@ -15,23 +15,16 @@ sequence = choose(seqPlayerVictory, seqPlayerVictory02, seqPlayerVictory03, seqP
 // workaround transition becoming invisible for a couple frames
 start_from_frame = undefined
 
-transition_timer = 7 * 60
-transition_timer_on = true
+transition_end_timer = make_timer(60)
 
 phase = 0
 
-function is_transition_finished() {
-	return !transition_timer
-}
-
 function pause() {
 	layer_sequence_speedscale(sequence_inst, 0)
-	transition_timer_on = false
 }
 
 function unpause() {
 	layer_sequence_speedscale(sequence_inst, 1)
-	transition_timer_on = true
 }
 
 victory_music = global.msc_stage_clear

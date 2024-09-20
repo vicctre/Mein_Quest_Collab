@@ -1,6 +1,4 @@
 
-transition_timer -= transition_timer_on
-
 switch phase {
 	case 0:
 		if !global.player.down_free {
@@ -26,8 +24,11 @@ switch phase {
         global.player.visible = false
 		if is_sequence_finished() {
 			layer_sequence_speedscale(sequence_inst, 0)
+            phase++
 		}
-		if is_transition_finished() {
+    break
+	case 3:
+		if !transition_end_timer.update() {
             if room == W1_3BOSS
                     and !oStageManager.IsPogoUnlocked() {
                 global.player_pogo_just_unlocked = true // trigger pogo unclocking
@@ -36,5 +37,5 @@ switch phase {
 			RoomTransition(TRANS_MODE.GOTO, next_room, true)
 			phase++
 		}
-		break
+    break
 }

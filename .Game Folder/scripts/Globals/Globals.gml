@@ -48,7 +48,7 @@ function game_reset_globals() {
 	global.rooms_with_onto_stage_seq = [
 		W1_1_part1,
 		W1_2_part1,
-		W2_1_part1, 
+		W2_1_part1,
 	]
     global.rula_intro_cutscene_played = false
 
