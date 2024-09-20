@@ -77,6 +77,7 @@ function OptionInput(ind, type, title, key, value) constructor {
         case OptionInputType.checkbox:
             self.action = function() {
                 self.value = !self.value
+                oStageManager.OptionsUpdate(key, value)
             }
             self.draw_input = function () {
                 draw_set_halign(fa_left)

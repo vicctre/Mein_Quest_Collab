@@ -103,9 +103,8 @@ function Load() {
 	stages_data = save.get("stages_data")
 	mein_pogo_attack_enabled = save.get("mein_pogo_attack_enabled")
     game_options = save.get("options")
+    UpdateGameFromOptions()
 }
-
-Load()
 
 // {
 // } else {
@@ -315,10 +314,17 @@ function SaveOptions() {
     save.save()
 }
 
+function UpdateGameFromOptions() {
+	oAudioManager.SetSfxGain(game_options.sfx)
+	oAudioManager.SetBgmGain(game_options.music)
+}
+
 function OptionsUpdate(key, value) {
     game_options[$ key] = value
-	//// Update game settings
+    UpdateGameFromOptions()
     SaveOptions()
 }
 
 alarm[0] = 1
+
+Load()

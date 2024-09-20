@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"Demo_2_Intro",
+  "%Name":"BGM_Demo_2_Intro",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -15,7 +15,7 @@
   },
   "conversionMode":0,
   "duration":13.333333,
-  "name":"Demo_2_Intro",
+  "name":"BGM_Demo_2_Intro",
   "parent":{
     "name":"Cutscenes",
     "path":"folders/Sounds/Cutscenes.yy",
@@ -24,7 +24,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"Demo_2_Intro.wav",
+  "soundFile":"BGM_Demo_2_Intro.wav",
   "type":0,
   "volume":0.7,
 }

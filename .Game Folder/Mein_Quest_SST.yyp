@@ -3,7 +3,6 @@
   "%Name":"Mein_Quest_SST",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
-    {"$GMAudioGroup":"","%Name":"audiogroup_music","name":"audiogroup_music","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[
@@ -217,6 +216,7 @@
     {"id":{"name":"oApploon","path":"objects/oApploon/oApploon.yy",},},
     {"id":{"name":"oAttack","path":"objects/oAttack/oAttack.yy",},},
     {"id":{"name":"oAttackSimple","path":"objects/oAttackSimple/oAttackSimple.yy",},},
+    {"id":{"name":"oAudioManager","path":"objects/oAudioManager/oAudioManager.yy",},},
     {"id":{"name":"oAutoscrollerController","path":"objects/oAutoscrollerController/oAutoscrollerController.yy",},},
     {"id":{"name":"oAutoscrollerLog","path":"objects/oAutoscrollerLog/oAutoscrollerLog.yy",},},
     {"id":{"name":"oAutoscrollerPinnikCotroller","path":"objects/oAutoscrollerPinnikCotroller/oAutoscrollerPinnikCotroller.yy",},},
@@ -444,6 +444,7 @@
     {"id":{"name":"BGM_BossCLEAR01","path":"sounds/BGM_BossCLEAR01/BGM_BossCLEAR01.yy",},},
     {"id":{"name":"BGM_CLEAR","path":"sounds/BGM_CLEAR/BGM_CLEAR.yy",},},
     {"id":{"name":"BGM_Dead","path":"sounds/BGM_Dead/BGM_Dead.yy",},},
+    {"id":{"name":"BGM_Demo_2_Intro","path":"sounds/BGM_Demo_2_Intro/BGM_Demo_2_Intro.yy",},},
     {"id":{"name":"BGM_GET","path":"sounds/BGM_GET/BGM_GET.yy",},},
     {"id":{"name":"BGM_Intro_Cutscene","path":"sounds/BGM_Intro_Cutscene/BGM_Intro_Cutscene.yy",},},
     {"id":{"name":"BGM_Menu","path":"sounds/BGM_Menu/BGM_Menu.yy",},},
@@ -452,7 +453,6 @@
     {"id":{"name":"BGM_Pre_Battle","path":"sounds/BGM_Pre_Battle/BGM_Pre_Battle.yy",},},
     {"id":{"name":"BGM_Thanks_for_playing","path":"sounds/BGM_Thanks_for_playing/BGM_Thanks_for_playing.yy",},},
     {"id":{"name":"BGM_Title_Screen","path":"sounds/BGM_Title_Screen/BGM_Title_Screen.yy",},},
-    {"id":{"name":"Demo_2_Intro","path":"sounds/Demo_2_Intro/Demo_2_Intro.yy",},},
     {"id":{"name":"SFX_Additional_HP","path":"sounds/SFX_Additional_HP/SFX_Additional_HP.yy",},},
     {"id":{"name":"SFX_AdvLog","path":"sounds/SFX_AdvLog/SFX_AdvLog.yy",},},
     {"id":{"name":"SFX_AttackWiff","path":"sounds/SFX_AttackWiff/SFX_AttackWiff.yy",},},

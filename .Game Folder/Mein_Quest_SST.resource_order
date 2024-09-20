@@ -116,6 +116,7 @@
     {"name":"acLogRotation","order":1,"path":"animcurves/acLogRotation/acLogRotation.yy",},
     {"name":"AnimationCurve4","order":2,"path":"animcurves/AnimationCurve4/AnimationCurve4.yy",},
     {"name":"oAttackSimple","order":1,"path":"objects/oAttackSimple/oAttackSimple.yy",},
+    {"name":"oAudioManager","order":13,"path":"objects/oAudioManager/oAudioManager.yy",},
     {"name":"oCamera2","order":1,"path":"objects/oCamera2/oCamera2.yy",},
     {"name":"oCameraZoomArea","order":2,"path":"objects/oCameraZoomArea/oCameraZoomArea.yy",},
     {"name":"oCheckpoint","order":1,"path":"objects/oCheckpoint/oCheckpoint.yy",},
