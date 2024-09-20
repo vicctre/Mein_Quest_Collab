@@ -9,7 +9,7 @@ menu_text_relx = -60
 menu_cursor_scale = 2
 icon_scale = 2
 
-menu_itemheight = font_get_size(fntMenu) * icon_scale + 24
+menu_itemheight = font_get_size(fntMenu) * icon_scale + 8
 icon_half_width = sprite_get_width(sStage1_1Icon) * icon_scale * 0.5
 
 // adventure logs
@@ -44,13 +44,14 @@ function PerformGoBack() {
 	menu_control = false
 }
 
-function OptionInput(ind, type, title, key, value) constructor {
+function OptionInput(ind, type, title, key, value, callback=undefined) constructor {
     self.parent = oMenuOptions
     self.ind = ind
     self.type = type
 	self.title = title
     self.key = key
     self.value = value
+	self.callback = callback
 
     function getx() {
         return parent.menu_x
@@ -77,7 +78,12 @@ function OptionInput(ind, type, title, key, value) constructor {
         case OptionInputType.checkbox:
             self.action = function() {
                 self.value = !self.value
-                oStageManager.OptionsUpdate(key, value)
+				if self.key != undefined {
+					oStageManager.OptionsUpdate(key, value)
+				}
+				if self.callback != undefined {
+					self.callback()	
+				}
             }
             self.draw_input = function () {
                 draw_set_halign(fa_left)
@@ -120,13 +126,18 @@ function UpdateCursorTargetPos() {
 }
 
 function OptionsMenu() {
+	var switch_fullscreen = function() {
+		window_set_fullscreen(!window_get_fullscreen())	
+	}
 	var menu = [
 		new OptionInput(0, OptionInputType.slider, "SFX", "sfx", oStageManager.game_options.sfx),
 		new OptionInput(1, OptionInputType.slider, "Music", "music", oStageManager.game_options.music),
-		new OptionInput(2, OptionInputType.checkbox, "Tutorials", "tutorials", oStageManager.game_options.tutorials),
+		new OptionInput(2, OptionInputType.checkbox, "Fullscreen", undefined, window_get_fullscreen(), switch_fullscreen),
+		new OptionInput(3, OptionInputType.checkbox, "Tutorials", "tutorials", oStageManager.game_options.tutorials),
+
 	]
 
-    goback_button = new OptionInput(3, undefined, "Back")
+    goback_button = new OptionInput(4, undefined, "Back")
     goback_button.action = function() {
         instance_destroy(oMenuOptions)
         instance_create_layer(0, 0, "Instances", oMenu)
@@ -154,18 +165,26 @@ function PerformButton(index, inp) {
         case OptionInputType.slider:
             inp = (inp == OptionInputAction.increase)
                     - (inp == OptionInputAction.decrease)
-            menu_input.action(inp)
+            if inp != 0 {
+                menu_input.action(inp)
+                audio_play_sound(global.sfx_select, 7, false)
+            }
         break
         case OptionInputType.checkbox:
             if inp == OptionInputAction.click {
                 menu_input.action()
+                audio_play_sound(global.sfx_select, 7, false)
             }
         break
-        default:
-            // go back
-            menu_input.action()
+        case undefined:     // go back
+            if inp == OptionInputAction.click {
+                menu_committed = index
+                menu_x_target = menu_x_target_start
+                menu_control = false
+                audio_play_sound(global.sfx_select, 7, false)
+            }
+        break
     }
-	audio_play_sound(global.sfx_select, 7, false)
 }
 
 function DrawAdvLogs(stage, icon_x, icon_y, animate) {

@@ -3,8 +3,9 @@
   "%Name":"macOS",
   "ConfigValues":{
     "Dev":{
-      "option_mac_allow_fullscreen":"false",
-      "option_mac_start_fullscreen":"true",
+      "option_mac_allow_fullscreen":"true",
+      "option_mac_start_fullscreen":"false",
+      "option_mac_resize_window":"true",
     },
   },
   "name":"macOS",
