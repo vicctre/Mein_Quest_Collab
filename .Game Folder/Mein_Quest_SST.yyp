@@ -302,6 +302,7 @@
     {"id":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},},
     {"id":{"name":"oTransitionSpiritByteCollected","path":"objects/oTransitionSpiritByteCollected/oTransitionSpiritByteCollected.yy",},},
     {"id":{"name":"oTransitionTuffulDefeated","path":"objects/oTransitionTuffulDefeated/oTransitionTuffulDefeated.yy",},},
+    {"id":{"name":"oTriggerLogAutoscrollerStart","path":"objects/oTriggerLogAutoscrollerStart/oTriggerLogAutoscrollerStart.yy",},},
     {"id":{"name":"oTuffull","path":"objects/oTuffull/oTuffull.yy",},},
     {"id":{"name":"oTutorialBubbleLogRide","path":"objects/oTutorialBubbleLogRide/oTutorialBubbleLogRide.yy",},},
     {"id":{"name":"oUI","path":"objects/oUI/oUI.yy",},},

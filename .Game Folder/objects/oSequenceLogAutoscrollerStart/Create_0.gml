@@ -9,6 +9,5 @@ visible = false
 camera_start_move_frame = 214
 camera_delta_x = 220
 
+notify_started()
 
-// will be unpaused by player closing in
-pause()
