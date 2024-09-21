@@ -16,12 +16,16 @@ Refactor:
         
 Misc. 
 > SFX in sequences are still weird and annoying, maybe we can work together to figure out an optimal way to handle them?
-> Add “THANKS FOR PLAYING screen after defeating the boss, similar to the previous demo (room is made and text is written out in creation code)
-> Add notification text boxes for Mein getting his new ability AND to notify the player after they defeat Rularog displayed in them☑️
-> add “SFX_Notifi” when a pop up appears
-> make the pop up appear on the middle of the screen, they will only go away when the player hits the A/enter button
 > add new “SFX_WindUp” to Tuffulls dash attack startup and Rularogs Tongue attack AND super roll
 > Add new Intro Cutscenes before the title screen and during the initial into cutscene that starts on the first stage
 
 Fix
 > pop up sound plays only for the first message
+> hide debug console
+> there is an old inifinite cycling in collision
+> mein death animation didn't appear after falling in water in log autoscroller just after pinnik fall
+> mein doesn't fail in w1_2_end
+> Genull description: creature + creature repeat
+> unknown symbols in advlogs
+> typos in advlogs (rula)
+> W2_1 won't unlock

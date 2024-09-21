@@ -25,7 +25,7 @@ sfx_pogo_land = SFX_PogoLand
 sfx_pogo_start = SFX_PogoStartup
 
 //Object sounds 
-sfx_adventure_log = SFX_AdvLog 
+sfx_adventure_log = BGM_AdvLog 
 sfx_coin = SFX_Coin1
 sfx_chest = SFX_Chest_open
  

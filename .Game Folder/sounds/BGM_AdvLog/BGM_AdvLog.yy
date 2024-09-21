@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"SFX_AdvLog",
+  "%Name":"BGM_AdvLog",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":1,
   "conversionMode":0,
   "duration":2.242993,
-  "name":"SFX_AdvLog",
+  "name":"BGM_AdvLog",
   "parent":{
     "name":"Mein SFX",
     "path":"folders/Sounds/SFX/Mein SFX.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"SFX_AdvLog.wav",
+  "soundFile":"BGM_AdvLog.wav",
   "type":0,
   "volume":0.26,
 }
