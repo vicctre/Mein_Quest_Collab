@@ -16,5 +16,5 @@ if is_sequence_finished() {
 }
 
 if oInput.key_action {
-	RoomTransition(TRANS_MODE.NEXT);
+	RoomTransition(TRANS_MODE.GOTO, rmTitleScreen)
 }

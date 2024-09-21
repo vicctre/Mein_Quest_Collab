@@ -29,3 +29,4 @@ Fix
 > unknown symbols in advlogs
 > typos in advlogs (rula)
 > W2_1 won't unlock
+> weid seq audio -> cutdown tree
