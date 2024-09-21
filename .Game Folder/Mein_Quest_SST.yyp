@@ -295,6 +295,7 @@
     {"id":{"name":"oSpiritByteBoss","path":"objects/oSpiritByteBoss/oSpiritByteBoss.yy",},},
     {"id":{"name":"oSpiritBytePosition","path":"objects/oSpiritBytePosition/oSpiritBytePosition.yy",},},
     {"id":{"name":"oStageManager","path":"objects/oStageManager/oStageManager.yy",},},
+    {"id":{"name":"oStartingCutscene","path":"objects/oStartingCutscene/oStartingCutscene.yy",},},
     {"id":{"name":"oThanksForPlayingScreen","path":"objects/oThanksForPlayingScreen/oThanksForPlayingScreen.yy",},},
     {"id":{"name":"oThinPlatform","path":"objects/oThinPlatform/oThinPlatform.yy",},},
     {"id":{"name":"oTitleScreen","path":"objects/oTitleScreen/oTitleScreen.yy",},},
@@ -321,6 +322,7 @@
     {"id":{"name":"rmMainMenu","path":"rooms/rmMainMenu/rmMainMenu.yy",},},
     {"id":{"name":"rmMenuAdventureLogsScreen","path":"rooms/rmMenuAdventureLogsScreen/rmMenuAdventureLogsScreen.yy",},},
     {"id":{"name":"rmStart","path":"rooms/rmStart/rmStart.yy",},},
+    {"id":{"name":"rmStartingCutscene","path":"rooms/rmStartingCutscene/rmStartingCutscene.yy",},},
     {"id":{"name":"rmThanksForPlayingScreen","path":"rooms/rmThanksForPlayingScreen/rmThanksForPlayingScreen.yy",},},
     {"id":{"name":"rmTitleScreen","path":"rooms/rmTitleScreen/rmTitleScreen.yy",},},
     {"id":{"name":"rmVicLogo","path":"rooms/rmVicLogo/rmVicLogo.yy",},},
@@ -885,6 +887,7 @@
     {"roomId":{"name":"W2_1_part5","path":"rooms/W2_1_part5/W2_1_part5.yy",},},
     {"roomId":{"name":"rmMenuAdventureLogsScreen","path":"rooms/rmMenuAdventureLogsScreen/rmMenuAdventureLogsScreen.yy",},},
     {"roomId":{"name":"W2_1_part6","path":"rooms/W2_1_part6/W2_1_part6.yy",},},
+    {"roomId":{"name":"rmStartingCutscene","path":"rooms/rmStartingCutscene/rmStartingCutscene.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
