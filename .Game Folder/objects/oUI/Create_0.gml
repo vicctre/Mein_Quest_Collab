@@ -10,14 +10,14 @@ coin_counter_y = 70
 
 //NOTE FROM MUFFIN: testing out making ui move offscreen during sequences
 //feel free to move these two variables to wherever you usually leave these variables
-global.UI_y_offset = 0;
-global.UI_Offscreen = false;
+global.UI_y_offset = 0
+global.UI_Offscreen = false
 //
 
-area_name_text_timer = 0;
-area_name_text_offset = 0;
-area_name_text_timer_max = 5*room_speed;
-area_name_text_background_opacity = 0.7;
+area_name_text_timer = 0
+area_name_text_offset = 0
+area_name_text_timer_max = 5*room_speed
+area_name_text_background_opacity = 0.7
 var gui_h = display_get_gui_height()
 
 var hp_spr = sMeinHP
@@ -56,7 +56,7 @@ checkpoint_indicator = {
 	},
 	draw: function() {
 		if image_index == -1 {
-			return;	
+			return	
 		}
 		// trigger pause
 		if !pause_timer and abs(image_index - pause_frame) <= image_speed {
@@ -66,7 +66,7 @@ checkpoint_indicator = {
 		// finish animation
 		if image_index >= (image_number - 1) {
 			image_index = -1
-			return;
+			return
 		}
 		pause_timer--
 		image_index += image_speed * (pause_timer <= 0)
@@ -98,14 +98,17 @@ function show_checkpoint_indicator() {
 function get_stage_name(room_) {
 	switch(room_) {
 		case W1_1_part1:
-			return "Longroot Lane 1-1";
-		break;
+			return "Longroot Lane 1-1"
+		break
 		case W1_2_part1:
-			return "Longroot Lane 1-2";
-		break;
+			return "Longroot Lane 1-2"
+		break
 		case W1_3_part1:
-			return "Longroot Lane 1-3";
-		break;
+			return "Longroot Lane 1-3"
+		break
+		case W2_1_part1:
+			return "Sifuud Shores"
+		break
 	}
 }
 
