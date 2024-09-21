@@ -5,7 +5,7 @@ if (activated) {
 
 vspd += grav;
 if (place_meeting(x, y+vspd, oWall)) {
-	while(!place_meeting(x, y+sign(vspd), oWall)) {
+	while(!place_meeting(x, y+sign(vspd), WALLPARENT)) {
 		y += sign(vspd);
 	}
 	if (vspd > 0) {
