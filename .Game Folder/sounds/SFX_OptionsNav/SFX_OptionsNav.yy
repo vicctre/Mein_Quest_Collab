@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"SFX_OptionsNav",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.039161,
+  "name":"SFX_OptionsNav",
+  "parent":{
+    "name":"Need to be Added",
+    "path":"folders/Sounds/SFX/Need to be Added.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"SFX_OptionsNav.wav",
+  "type":0,
+  "volume":0.1,
+}

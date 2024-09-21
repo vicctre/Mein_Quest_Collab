@@ -190,7 +190,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.1.160",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -485,6 +485,7 @@
     {"id":{"name":"SFX_Menu_Nav","path":"sounds/SFX_Menu_Nav/SFX_Menu_Nav.yy",},},
     {"id":{"name":"SFX_Menu_select","path":"sounds/SFX_Menu_select/SFX_Menu_select.yy",},},
     {"id":{"name":"SFX_Notification","path":"sounds/SFX_Notification/SFX_Notification.yy",},},
+    {"id":{"name":"SFX_OptionsNav","path":"sounds/SFX_OptionsNav/SFX_OptionsNav.yy",},},
     {"id":{"name":"SFX_pew","path":"sounds/SFX_pew/SFX_pew.yy",},},
     {"id":{"name":"SFX_Pinch","path":"sounds/SFX_Pinch/SFX_Pinch.yy",},},
     {"id":{"name":"SFX_PogoBounce","path":"sounds/SFX_PogoBounce/SFX_PogoBounce.yy",},},
