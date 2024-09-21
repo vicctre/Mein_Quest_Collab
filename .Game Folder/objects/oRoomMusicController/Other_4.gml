@@ -9,6 +9,9 @@ switch room_prefix {
 	case "W1_2":
 		music = global.msc_stage1_2
 	break
+	case "W2_1":
+		music = BGM_2_1
+	break
 }
 
 // special cases
