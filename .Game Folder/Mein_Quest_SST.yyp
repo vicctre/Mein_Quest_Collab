@@ -484,7 +484,7 @@
     {"id":{"name":"SFX_MENU_NA","path":"sounds/SFX_MENU_NA/SFX_MENU_NA.yy",},},
     {"id":{"name":"SFX_Menu_Nav","path":"sounds/SFX_Menu_Nav/SFX_Menu_Nav.yy",},},
     {"id":{"name":"SFX_Menu_select","path":"sounds/SFX_Menu_select/SFX_Menu_select.yy",},},
-    {"id":{"name":"SFX_Notification","path":"sounds/SFX_Notification/SFX_Notification.yy",},},
+    {"id":{"name":"SFX_Notifi","path":"sounds/SFX_Notifi/SFX_Notifi.yy",},},
     {"id":{"name":"SFX_OptionsNav","path":"sounds/SFX_OptionsNav/SFX_OptionsNav.yy",},},
     {"id":{"name":"SFX_pew","path":"sounds/SFX_pew/SFX_pew.yy",},},
     {"id":{"name":"SFX_Pinch","path":"sounds/SFX_Pinch/SFX_Pinch.yy",},},

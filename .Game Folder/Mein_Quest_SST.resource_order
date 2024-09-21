@@ -247,7 +247,7 @@
     {"name":"SFX_Magic","order":9,"path":"sounds/SFX_Magic/SFX_Magic.yy",},
     {"name":"SFX_MENU_NA","order":2,"path":"sounds/SFX_MENU_NA/SFX_MENU_NA.yy",},
     {"name":"SFX_Menu_select","order":1,"path":"sounds/SFX_Menu_select/SFX_Menu_select.yy",},
-    {"name":"SFX_Notification","order":1,"path":"sounds/SFX_Notification/SFX_Notification.yy",},
+    {"name":"SFX_Notifi","order":1,"path":"sounds/SFX_Notifi/SFX_Notifi.yy",},
     {"name":"SFX_OptionsNav","order":3,"path":"sounds/SFX_OptionsNav/SFX_OptionsNav.yy",},
     {"name":"SFX_pew","order":5,"path":"sounds/SFX_pew/SFX_pew.yy",},
     {"name":"SFX_Pinch","order":3,"path":"sounds/SFX_Pinch/SFX_Pinch.yy",},
