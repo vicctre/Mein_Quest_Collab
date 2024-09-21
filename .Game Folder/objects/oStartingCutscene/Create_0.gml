@@ -4,8 +4,6 @@ event_inherited()
 x = room_width * 0.5
 y = room_height * 0.5
 
-//camera_set_view_size(cam, room_width, room_height)
-
 sequences = [
     seqDemo2_pre_I1_XL,
     seqDemo2_pre_I2_XL,
