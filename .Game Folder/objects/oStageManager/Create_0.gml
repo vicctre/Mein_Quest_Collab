@@ -304,6 +304,9 @@ function CheckOpenNextStage() {
 		case W1_2_part6_END:
 			unlock_stage = W1_3_part1
 		break
+		case W1_3BOSS:
+			unlock_stage = W2_1_part1
+		break
 	}
 	if unlock_stage != noone {
 		UnlockStage(unlock_stage)

@@ -98,9 +98,11 @@ function StageSelectmenu() {
 		new StageButton(0, W1_1_part1, "1-1", sStage1_1Icon),
 		new StageButton(1, W1_2_part1, "1-2", sStage1_2Icon),
 		new StageButton(2, W1_3_part1, "1-3", sStage1_3Icon),
-		new StageButton(3, W2_1_part1, "2-1", sStage2_1Icon),
 	]
-	
+    if oStageManager.IsStageUnlocked(W2_1_part1) {
+        array_push(menu, new StageButton(3, W2_1_part1, "1-3", sStage2_1Icon))
+    }
+
 	for(var i=0; i<array_length(menu); i++) {
 		var btn = menu[i]
 		if oStageManager.IsStageUnlocked(btn.stage) {
@@ -115,7 +117,7 @@ function StageSelectmenu() {
 		}
 	}
     
-    goback_button = new StageButton(4, noone, "Back")
+    goback_button = new StageButton(array_length(menu), noone, "Back")
     goback_button.action = function() {
         instance_destroy(oMenuStageSelect)
         instance_create_layer(0, 0, "Instances", oMenu)
