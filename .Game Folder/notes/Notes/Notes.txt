@@ -16,8 +16,13 @@ Refactor:
         
 Misc. 
 > SFX in sequences are still weird and annoying, maybe we can work together to figure out an optimal way to handle them?
+
+Check:
+> Add pausing to 1-2 part 3 (idk what’s happening here)
+> Make sure food and other items land on “thin platforms”
+> Add “Sifuud Shores” to the “untitled” text box
+> Add 2-1 music to 2-1
 > add new “SFX_WindUp” to Tuffulls dash attack startup and Rularogs Tongue attack AND super roll
-> Add new Intro Cutscenes before the title screen and during the initial into cutscene that starts on the first stage
 
 Fix
 > pop up sound plays only for the first message
