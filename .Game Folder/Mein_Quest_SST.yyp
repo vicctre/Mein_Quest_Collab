@@ -182,6 +182,7 @@
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"Born2bSportyV2.ttf","CopyToMask":-1,"filePath":"datafiles","name":"Born2bSportyV2.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"default_commands.json","CopyToMask":3035426170322551022,"filePath":"datafiles/GM-EzConsole","name":"default_commands.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"default-dark.skin","CopyToMask":-1,"filePath":"datafiles/GM-EzConsole","name":"default-dark.skin","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"default-light.skin","CopyToMask":-1,"filePath":"datafiles/GM-EzConsole","name":"default-light.skin","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -189,7 +190,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.6.1.160",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -200,7 +201,7 @@
     {"id":{"name":"fDNS","path":"fonts/fDNS/fDNS.yy",},},
     {"id":{"name":"fnt_ezConsole_Pixel","path":"fonts/fnt_ezConsole_Pixel/fnt_ezConsole_Pixel.yy",},},
     {"id":{"name":"fnt_ezConsole_Smooth","path":"fonts/fnt_ezConsole_Smooth/fnt_ezConsole_Smooth.yy",},},
-    {"id":{"name":"fntMenu","path":"fonts/fntMenu/fntMenu.yy",},},
+    {"id":{"name":"fntMenu_","path":"fonts/fntMenu_/fntMenu_.yy",},},
     {"id":{"name":"Font01","path":"fonts/Font01/Font01.yy",},},
     {"id":{"name":"Font02","path":"fonts/Font02/Font02.yy",},},
     {"id":{"name":"Font03","path":"fonts/Font03/Font03.yy",},},

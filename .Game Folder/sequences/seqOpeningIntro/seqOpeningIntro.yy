@@ -53,7 +53,7 @@
             ],"resourceType":"KeyframeStore<RealKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"rotation","resourceType":"GMRealTrack","resourceVersion":"2.0","trackColour":4282970701,"tracks":[],"traits":0,},
         {"$GMTextTrack":"","%Name":"Text Track 1","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetTextKeyframe>":"","Keyframes":[
               {"$Keyframe<AssetTextKeyframe>":"","Channels":{
-                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu","path":"fonts/fntMenu/fntMenu.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"Many eons ago, in a distant galaxy ","Wrap":true,},
+                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu_","path":"fonts/fntMenu_/fntMenu_.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"Many eons ago, in a distant galaxy ","Wrap":true,},
                 },"Disabled":false,"id":"a400f49a-80f2-4143-9685-98544802f77b","IsCreationKey":false,"Key":151.0,"Length":183.0,"resourceType":"Keyframe<AssetTextKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<AssetTextKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"Text Track 1","resourceType":"GMTextTrack","resourceVersion":"2.0","trackColour":4282970701,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -102,7 +102,7 @@
           ],"traits":0,},
         {"$GMTextTrack":"","%Name":"Text Track 1","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetTextKeyframe>":"","Keyframes":[
               {"$Keyframe<AssetTextKeyframe>":"","Channels":{
-                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu","path":"fonts/fntMenu/fntMenu.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"There was a planet on the brink of extinction\r\n ","Wrap":true,},
+                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu_","path":"fonts/fntMenu_/fntMenu_.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"There was a planet on the brink of extinction\r\n ","Wrap":true,},
                 },"Disabled":false,"id":"4ffc7472-9a88-4f9d-aa80-7cec60283059","IsCreationKey":false,"Key":335.0,"Length":236.0,"resourceType":"Keyframe<AssetTextKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<AssetTextKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"Text Track 1","resourceType":"GMTextTrack","resourceVersion":"2.0","trackColour":4282970701,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -151,7 +151,7 @@
           ],"traits":0,},
         {"$GMTextTrack":"","%Name":"Text Track 1","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetTextKeyframe>":"","Keyframes":[
               {"$Keyframe<AssetTextKeyframe>":"","Channels":{
-                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu","path":"fonts/fntMenu/fntMenu.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"All hope seemed lost for the inhabitants","Wrap":true,},
+                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu_","path":"fonts/fntMenu_/fntMenu_.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"All hope seemed lost for the inhabitants","Wrap":true,},
                 },"Disabled":false,"id":"97ae7546-2058-4960-a691-1aea03422c0a","IsCreationKey":false,"Key":573.0,"Length":174.0,"resourceType":"Keyframe<AssetTextKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<AssetTextKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"Text Track 1","resourceType":"GMTextTrack","resourceVersion":"2.0","trackColour":4282970701,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -200,7 +200,7 @@
           ],"traits":0,},
         {"$GMTextTrack":"","%Name":"Text Track 1","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetTextKeyframe>":"","Keyframes":[
               {"$Keyframe<AssetTextKeyframe>":"","Channels":{
-                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu","path":"fonts/fntMenu/fntMenu.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"but their prayers were answered","Wrap":true,},
+                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu_","path":"fonts/fntMenu_/fntMenu_.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"but their prayers were answered","Wrap":true,},
                 },"Disabled":false,"id":"e11fe269-45e4-474d-b7b6-7dd54b770387","IsCreationKey":false,"Key":744.0,"Length":183.0,"resourceType":"Keyframe<AssetTextKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<AssetTextKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"Text Track 1","resourceType":"GMTextTrack","resourceVersion":"2.0","trackColour":4282970701,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -249,7 +249,7 @@
           ],"traits":0,},
         {"$GMTextTrack":"","%Name":"Text Track 1","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetTextKeyframe>":"","Keyframes":[
               {"$Keyframe<AssetTextKeyframe>":"","Channels":{
-                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu","path":"fonts/fntMenu/fntMenu.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"5 spirits gave their blessing to the dying world ","Wrap":true,},
+                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu_","path":"fonts/fntMenu_/fntMenu_.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"5 spirits gave their blessing to the dying world ","Wrap":true,},
                 },"Disabled":false,"id":"b9e50908-bd7a-4750-8f06-4fa3c9b74c89","IsCreationKey":false,"Key":920.0,"Length":365.0,"resourceType":"Keyframe<AssetTextKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<AssetTextKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"Text Track 1","resourceType":"GMTextTrack","resourceVersion":"2.0","trackColour":4282970701,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -298,7 +298,7 @@
           ],"traits":0,},
         {"$GMTextTrack":"","%Name":"Text Track 1","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetTextKeyframe>":"","Keyframes":[
               {"$Keyframe<AssetTextKeyframe>":"","Channels":{
-                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu","path":"fonts/fntMenu/fntMenu.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"and thus, Planet Eldoon was reborn  ","Wrap":true,},
+                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu_","path":"fonts/fntMenu_/fntMenu_.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"and thus, Planet Eldoon was reborn  ","Wrap":true,},
                 },"Disabled":false,"id":"7ee471df-910e-4f27-9082-a4f5674c38e0","IsCreationKey":false,"Key":1397.0,"Length":369.0,"resourceType":"Keyframe<AssetTextKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<AssetTextKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"Text Track 1","resourceType":"GMTextTrack","resourceVersion":"2.0","trackColour":4282970701,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -347,7 +347,7 @@
           ],"traits":0,},
         {"$GMTextTrack":"","%Name":"Text Track 1","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetTextKeyframe>":"","Keyframes":[
               {"$Keyframe<AssetTextKeyframe>":"","Channels":{
-                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu","path":"fonts/fntMenu/fntMenu.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"bringing new life to the planet, and finally, peace","Wrap":true,},
+                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu_","path":"fonts/fntMenu_/fntMenu_.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"bringing new life to the planet, and finally, peace","Wrap":true,},
                 },"Disabled":false,"id":"83645ed0-387e-436f-a96e-cca69e1e3c8b","IsCreationKey":false,"Key":1760.0,"Length":432.0,"resourceType":"Keyframe<AssetTextKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<AssetTextKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"Text Track 1","resourceType":"GMTextTrack","resourceVersion":"2.0","trackColour":4282970701,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -396,7 +396,7 @@
           ],"traits":0,},
         {"$GMTextTrack":"","%Name":"Text Track 1","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetTextKeyframe>":"","Keyframes":[
               {"$Keyframe<AssetTextKeyframe>":"","Channels":{
-                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu","path":"fonts/fntMenu/fntMenu.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"but nothing lasts forever...\r\n","Wrap":true,},
+                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu_","path":"fonts/fntMenu_/fntMenu_.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"but nothing lasts forever...\r\n","Wrap":true,},
                 },"Disabled":false,"id":"1f0135ec-d9f4-4bbe-9e9c-f3c32f7f12f9","IsCreationKey":false,"Key":2180.0,"Length":153.0,"resourceType":"Keyframe<AssetTextKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<AssetTextKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"Text Track 1","resourceType":"GMTextTrack","resourceVersion":"2.0","trackColour":4282970701,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -445,7 +445,7 @@
           ],"traits":0,},
         {"$GMTextTrack":"","%Name":"Text Track 1","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetTextKeyframe>":"","Keyframes":[
               {"$Keyframe<AssetTextKeyframe>":"","Channels":{
-                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu","path":"fonts/fntMenu/fntMenu.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"many years later, Special gems would appear, \r\nsaid to hold immense power \r\n\r\n","Wrap":true,},
+                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu_","path":"fonts/fntMenu_/fntMenu_.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"many years later, Special gems would appear, \r\nsaid to hold immense power \r\n\r\n","Wrap":true,},
                 },"Disabled":false,"id":"4451c297-ffda-4581-a44f-568084926a3d","IsCreationKey":false,"Key":2374.0,"Length":535.0,"resourceType":"Keyframe<AssetTextKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<AssetTextKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"Text Track 1","resourceType":"GMTextTrack","resourceVersion":"2.0","trackColour":4282970701,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -494,7 +494,7 @@
           ],"traits":0,},
         {"$GMTextTrack":"","%Name":"Text Track 1","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetTextKeyframe>":"","Keyframes":[
               {"$Keyframe<AssetTextKeyframe>":"","Channels":{
-                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu","path":"fonts/fntMenu/fntMenu.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"one individual would take these gems and send\r\nthe planet into a power struggle\r\n\r\n","Wrap":true,},
+                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu_","path":"fonts/fntMenu_/fntMenu_.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"one individual would take these gems and send\r\nthe planet into a power struggle\r\n\r\n","Wrap":true,},
                 },"Disabled":false,"id":"57fed3ca-d515-4363-b9ba-ea7b452f87ab","IsCreationKey":false,"Key":2912.0,"Length":418.0,"resourceType":"Keyframe<AssetTextKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<AssetTextKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"Text Track 1","resourceType":"GMTextTrack","resourceVersion":"2.0","trackColour":4282970701,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -543,7 +543,7 @@
           ],"traits":0,},
         {"$GMTextTrack":"","%Name":"Text Track 1","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetTextKeyframe>":"","Keyframes":[
               {"$Keyframe<AssetTextKeyframe>":"","Channels":{
-                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu","path":"fonts/fntMenu/fntMenu.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"With the world being thrown out of balance, \r\nwho will rise up to save Eldoon?\r\n\r\n\r\n","Wrap":true,},
+                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu_","path":"fonts/fntMenu_/fntMenu_.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"With the world being thrown out of balance, \r\nwho will rise up to save Eldoon?\r\n\r\n\r\n","Wrap":true,},
                 },"Disabled":false,"id":"939d783f-afdc-4bcc-872f-1131a5dc3217","IsCreationKey":false,"Key":3330.0,"Length":350.0,"resourceType":"Keyframe<AssetTextKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<AssetTextKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"Text Track 1","resourceType":"GMTextTrack","resourceVersion":"2.0","trackColour":4282970701,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[
@@ -592,7 +592,7 @@
           ],"traits":0,},
         {"$GMTextTrack":"","%Name":"Text Track 1","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetTextKeyframe>":"","Keyframes":[
               {"$Keyframe<AssetTextKeyframe>":"","Channels":{
-                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu","path":"fonts/fntMenu/fntMenu.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"The quest begins...\r\n\r\n\r\n","Wrap":true,},
+                  "0":{"$AssetTextKeyframe":"","Alignment":1,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fntMenu_","path":"fonts/fntMenu_/fntMenu_.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"The quest begins...\r\n\r\n\r\n","Wrap":true,},
                 },"Disabled":false,"id":"7363d201-7a7d-47ee-8c6c-82a3e305367e","IsCreationKey":false,"Key":4020.0,"Length":267.0,"resourceType":"Keyframe<AssetTextKeyframe>","resourceVersion":"2.0","Stretch":false,},
             ],"resourceType":"KeyframeStore<AssetTextKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"Text Track 1","resourceType":"GMTextTrack","resourceVersion":"2.0","trackColour":4282970701,"tracks":[
             {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[

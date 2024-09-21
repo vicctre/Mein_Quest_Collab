@@ -1,4 +1,6 @@
 
+#macro fntMenu global.fnt_menu
+global.fnt_menu = font_add("Born2bSportyV2.ttf", 36, false, false, 0, 255)
 
 // autoscroller checkpoint system
 autoscroller_current_log_sprite_index = -1
