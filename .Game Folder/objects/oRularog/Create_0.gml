@@ -319,6 +319,7 @@ tongueChargeState = {
 	onEnter: function() {
 		id.sprite_index = sRulaCharge
 		id.setDir()
+        audio_play_sound(global.sfx_boss_chargeup, 5, false)
     },
 
 	checkChange: function() {

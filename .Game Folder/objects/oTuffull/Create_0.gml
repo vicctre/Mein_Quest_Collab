@@ -44,6 +44,7 @@ changeState = function(newState) {
 			sprite_index = sTuffull_Idle;
 		break;
 		case "Charge Prep":
+			audio_play_sound(global.sfx_boss_chargeup, 5, false);
 			charge_count = max(0, charge_count-1);
 			timer = charge_prep_time;
 			sprite_index = sTuffull_charge_prep;
