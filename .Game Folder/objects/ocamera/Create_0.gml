@@ -2,8 +2,8 @@
 
 function SetRoomStartCamera() {
 	if room == W1_1_part1 or room == W1_1_part2 {
-		oCamera.cam_zoom_current = 0.76
-		oCamera.cam_zoom_target = 0.76
+		oCamera.cam_zoom_current = .76
+		oCamera.cam_zoom_target = .76
 	}
 }
 
@@ -11,8 +11,8 @@ view_enabled = true
 view_visible[0] = true
 cam = view_camera[0]
 follow = global.player
-cam_height = 288//360
-cam_width = 512//640
+cam_height =  288 //768 //360
+cam_width = 512 //1366 //640
 cam_width_base = cam_width
 cam_zoom_current = 1
 cam_zoom_target = cam_zoom_current
