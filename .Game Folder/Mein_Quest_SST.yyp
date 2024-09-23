@@ -581,6 +581,7 @@
     {"id":{"name":"sBossHP_barV2","path":"sprites/sBossHP_barV2/sBossHP_barV2.yy",},},
     {"id":{"name":"sBossHP_health","path":"sprites/sBossHP_health/sBossHP_health.yy",},},
     {"id":{"name":"sBossHP_healthV2","path":"sprites/sBossHP_healthV2/sBossHP_healthV2.yy",},},
+    {"id":{"name":"sBush_Demo2_Intro_1","path":"sprites/sBush_Demo2_Intro_1/sBush_Demo2_Intro_1.yy",},},
     {"id":{"name":"sBush_Demo2_Intro","path":"sprites/sBush_Demo2_Intro/sBush_Demo2_Intro.yy",},},
     {"id":{"name":"sChantieCycle","path":"sprites/sChantieCycle/sChantieCycle.yy",},},
     {"id":{"name":"sChantieD","path":"sprites/sChantieD/sChantieD.yy",},},

@@ -302,6 +302,7 @@
     {"name":"sBossHP_barV2","order":9,"path":"sprites/sBossHP_barV2/sBossHP_barV2.yy",},
     {"name":"sBossHP_health","order":2,"path":"sprites/sBossHP_health/sBossHP_health.yy",},
     {"name":"sBossHP_healthV2","order":8,"path":"sprites/sBossHP_healthV2/sBossHP_healthV2.yy",},
+    {"name":"sBush_Demo2_Intro_1","order":6,"path":"sprites/sBush_Demo2_Intro_1/sBush_Demo2_Intro_1.yy",},
     {"name":"sBush_Demo2_Intro","order":4,"path":"sprites/sBush_Demo2_Intro/sBush_Demo2_Intro.yy",},
     {"name":"sCheckpoint","order":6,"path":"sprites/sCheckpoint/sCheckpoint.yy",},
     {"name":"sCheckpointIndicatorSingle","order":4,"path":"sprites/sCheckpointIndicatorSingle/sCheckpointIndicatorSingle.yy",},
