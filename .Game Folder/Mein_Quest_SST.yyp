@@ -758,6 +758,7 @@
     {"id":{"name":"sShadowSlopeGradiant","path":"sprites/sShadowSlopeGradiant/sShadowSlopeGradiant.yy",},},
     {"id":{"name":"sShadowSmol","path":"sprites/sShadowSmol/sShadowSmol.yy",},},
     {"id":{"name":"sShadowSmol2","path":"sprites/sShadowSmol2/sShadowSmol2.yy",},},
+    {"id":{"name":"sSpaceBG","path":"sprites/sSpaceBG/sSpaceBG.yy",},},
     {"id":{"name":"sSpikes_Ani_1","path":"sprites/sSpikes_Ani_1/sSpikes_Ani_1.yy",},},
     {"id":{"name":"sSpikes_Ani","path":"sprites/sSpikes_Ani/sSpikes_Ani.yy",},},
     {"id":{"name":"sSpiritByte_FX","path":"sprites/sSpiritByte_FX/sSpiritByte_FX.yy",},},

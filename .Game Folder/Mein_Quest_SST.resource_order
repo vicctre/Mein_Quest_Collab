@@ -415,6 +415,7 @@
     {"name":"sShadowSlope1","order":4,"path":"sprites/sShadowSlope1/sShadowSlope1.yy",},
     {"name":"sShadowSlope2","order":3,"path":"sprites/sShadowSlope2/sShadowSlope2.yy",},
     {"name":"sShadowSlope3","order":2,"path":"sprites/sShadowSlope3/sShadowSlope3.yy",},
+    {"name":"sSpaceBG","order":8,"path":"sprites/sSpaceBG/sSpaceBG.yy",},
     {"name":"sSpikes_Ani_1","order":1,"path":"sprites/sSpikes_Ani_1/sSpikes_Ani_1.yy",},
     {"name":"sSpiritByte2","order":1,"path":"sprites/sSpiritByte2/sSpiritByte2.yy",},
     {"name":"sStage1_1Icon","order":1,"path":"sprites/sStage1_1Icon/sStage1_1Icon.yy",},
