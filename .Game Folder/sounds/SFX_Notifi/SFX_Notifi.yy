@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.572834,
+  "duration":3.673469,
   "name":"SFX_Notifi",
   "parent":{
     "name":"Menu",

@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sXOXO_sign_v2",
-    "path":"sprites/sXOXO_sign_v2/sXOXO_sign_v2.yy",
+    "name":"sVicc_sign_v2",
+    "path":"sprites/sVicc_sign_v2/sVicc_sign_v2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

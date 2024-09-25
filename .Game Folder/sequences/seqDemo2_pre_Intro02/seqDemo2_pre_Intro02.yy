@@ -26,8 +26,8 @@
   },
   "name":"seqDemo2_pre_Intro02",
   "parent":{
-    "name":"Demo 2 Intro",
-    "path":"folders/Sequences/Current Use/Demo 2 Intro.yy",
+    "name":"WIPS",
+    "path":"folders/Sequences/Current Use/Intro cutscenes/Demo 2 Intro/WIPS.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

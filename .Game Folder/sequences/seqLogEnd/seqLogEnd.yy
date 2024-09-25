@@ -26,8 +26,8 @@
   },
   "name":"seqLogEnd",
   "parent":{
-    "name":"Other Cutscenes",
-    "path":"folders/Sequences/Other Cutscenes.yy",
+    "name":"Stage specific",
+    "path":"folders/Sequences/Other Cutscenes/Stage specific.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

@@ -26,8 +26,8 @@
   },
   "name":"SeqIntro_Cutscene_UD_XL_1",
   "parent":{
-    "name":"Messing around",
-    "path":"folders/Sequences/Current Use/Demo 2 Intro/Messing around.yy",
+    "name":"Demo 2 Intro",
+    "path":"folders/Sequences/Current Use/Intro cutscenes/Demo 2 Intro.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

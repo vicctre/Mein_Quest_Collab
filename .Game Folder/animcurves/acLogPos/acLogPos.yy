@@ -26,8 +26,8 @@
   "function":0,
   "name":"acLogPos",
   "parent":{
-    "name":"Other Cutscenes",
-    "path":"folders/Sequences/Other Cutscenes.yy",
+    "name":"Animation curves",
+    "path":"folders/Sequences/Current Use/Animation curves.yy",
   },
   "resourceType":"GMAnimCurve",
   "resourceVersion":"2.0",
