@@ -421,6 +421,7 @@
     {"id":{"name":"seqLogAutoscrollerStart","path":"sequences/seqLogAutoscrollerStart/seqLogAutoscrollerStart.yy",},},
     {"id":{"name":"seqLogAutoscrollerStartOriginal","path":"sequences/seqLogAutoscrollerStartOriginal/seqLogAutoscrollerStartOriginal.yy",},},
     {"id":{"name":"seqLogEnd","path":"sequences/seqLogEnd/seqLogEnd.yy",},},
+    {"id":{"name":"seqMein_WaveIntro","path":"sequences/seqMein_WaveIntro/seqMein_WaveIntro.yy",},},
     {"id":{"name":"seqMeinGemBossIntro","path":"sequences/seqMeinGemBossIntro/seqMeinGemBossIntro.yy",},},
     {"id":{"name":"seqOntoStage_T","path":"sequences/seqOntoStage_T/seqOntoStage_T.yy",},},
     {"id":{"name":"seqOntoStage","path":"sequences/seqOntoStage/seqOntoStage.yy",},},

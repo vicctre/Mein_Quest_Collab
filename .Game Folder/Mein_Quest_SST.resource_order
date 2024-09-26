@@ -205,6 +205,7 @@
     {"name":"seqLogAutoscrollerStart_og","order":1,"path":"sequences/seqLogAutoscrollerStart_og/seqLogAutoscrollerStart_og.yy",},
     {"name":"seqLogAutoscrollerStartOriginal","order":2,"path":"sequences/seqLogAutoscrollerStartOriginal/seqLogAutoscrollerStartOriginal.yy",},
     {"name":"seqLogEnd","order":3,"path":"sequences/seqLogEnd/seqLogEnd.yy",},
+    {"name":"seqMein_WaveIntro","order":6,"path":"sequences/seqMein_WaveIntro/seqMein_WaveIntro.yy",},
     {"name":"seqMeinGemBossIntro","order":4,"path":"sequences/seqMeinGemBossIntro/seqMeinGemBossIntro.yy",},
     {"name":"seqOntoStage","order":3,"path":"sequences/seqOntoStage/seqOntoStage.yy",},
     {"name":"SeqOpening_UD_XL","order":6,"path":"sequences/SeqOpening_UD_XL/SeqOpening_UD_XL.yy",},
