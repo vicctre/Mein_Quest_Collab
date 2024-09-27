@@ -1,6 +1,6 @@
 
 event_inherited()
-sequence = seqOpeningIntro
+sequence = SeqOpening_UD_XL //seqOpeningIntro
 sequence_inst = layer_sequence_create(layer, x, y, sequence)
 destroy_delay = 0
 
