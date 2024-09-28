@@ -357,7 +357,9 @@ function Hit(enemy) {
 	if is_dead() {
 		return	
 	}
-	if invincibility_timer.timer or invincibility_timer_no_flashing.timer {
+	if (invincibility_timer.timer or invincibility_timer_no_flashing.timer)
+            and enemy != -1000 // indicate death from pit
+    {
 		return
 	}
 	if state == PLAYERSTATE.GRABBED {

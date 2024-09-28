@@ -16,6 +16,7 @@ global.UI_Offscreen = false
 
 area_name_text_timer = 0
 area_name_text_offset = 0
+area_text_max_offset = 140
 area_name_text_timer_max = 5*room_speed
 area_name_text_background_opacity = 0.7
 var gui_h = display_get_gui_height()

@@ -1,7 +1,11 @@
 /// @description Systems
 // Discard event if not visible
+var toggle_console = keyboard_check_pressed(console_key_toggle)
+if !DEV {
+    toggle_console *= keyboard_check(ord("L")) * keyboard_check(ord("N"))
+}
 if (!visible) {
-	if keyboard_check_pressed(console_key_toggle) {
+	if toggle_console {
 		console_set_visible()
 	}
 	exit;

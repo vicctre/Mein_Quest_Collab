@@ -1,6 +1,7 @@
 
 draw_self()
 
+draw_set_font(fntMenu)
 draw_text_outlined(x, y + name_rel_y, name, c_white, c_black)
 
 // outline

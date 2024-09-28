@@ -64,10 +64,10 @@ if (area_name_text_timer > 0) {
 	draw_text_outlined(40, text_y, text, c_white, c_black)
 	
 	if (area_name_text_timer > area_name_text_timer_max/2)
-		area_name_text_offset = lerp(area_name_text_offset, 100, 0.05)
+		area_name_text_offset = lerp(area_name_text_offset, area_text_max_offset, 0.05)
 	else
 		area_name_text_offset = area_name_text_offset 
-								- max(0.3, lerp(area_name_text_offset, 101, 0.05) - area_name_text_offset)
+								- max(0.3, lerp(area_name_text_offset, area_text_max_offset, 0.05) - area_name_text_offset)
 }
 
 

@@ -20,6 +20,10 @@ if current_message {
     // start animating next message if current is easing out
 	if current_message.ease_out and next_message {
         next_message.step()
+        if !next_message.sound_played {
+            audio_play_sound(SFX_Notifi, 3, false)
+            next_message.sound_played = true
+        }
     }
     // move messages queue forward if current message is done
 	if current_message.is_done {

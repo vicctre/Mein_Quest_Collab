@@ -27,6 +27,7 @@ function Message(text) constructor {
 	time = 120
 	ease_out = false
 	is_done = false
+    sound_played = false
 
 	step = function() {
 		if !ease_out {
@@ -54,7 +55,7 @@ function Message(text) constructor {
             sep, text_max_width)
         draw_sprite(sPopUpArrow, 0, x + w - 10, y + h - 10)
 		// debug text box
-		//draw_rectangle(x, y, x + w, y + h, true)
+		draw_rectangle(x, y, x + w, y + h, true)
 	}
 }
 

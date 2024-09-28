@@ -1,3 +1,4 @@
+draw_set_font(fntMenu)
 
 var c = c_white
 var yy = 120

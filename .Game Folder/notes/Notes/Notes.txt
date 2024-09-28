@@ -17,21 +17,13 @@ Refactor:
 Misc. 
 > SFX in sequences are still weird and annoying, maybe we can work together to figure out an optimal way to handle them?
 
-Check:
-> Add pausing to 1-2 part 3 (idk what’s happening here)
-> Make sure food and other items land on “thin platforms”
-> Add “Sifuud Shores” to the “untitled” text box
-> Add 2-1 music to 2-1
-> add new “SFX_WindUp” to Tuffulls dash attack startup and Rularogs Tongue attack AND super roll
+Check
 
 Fix
-> pop up sound plays only for the first message
-> hide debug console
 > there is an old inifinite cycling in collision
-> mein death animation didn't appear after falling in water in log autoscroller just after pinnik fall
-> mein doesn't fail in w1_2_end
 > Genull description: creature + creature repeat
 > unknown symbols in advlogs
 > typos in advlogs (rula)
-> W2_1 won't unlock
-> weid seq audio -> cutdown tree
+
+> coins counter comes to zero after death
+> debug drawing for waves
