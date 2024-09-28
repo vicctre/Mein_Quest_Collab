@@ -1,3 +1,5 @@
+
+show_debug_message(window_get_height())
 /// Update Camera
 //zoom areas
 var area = noone;

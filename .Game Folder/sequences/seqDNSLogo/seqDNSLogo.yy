@@ -26,8 +26,8 @@
   },
   "name":"seqDNSLogo",
   "parent":{
-    "name":"Current Use",
-    "path":"folders/Sequences/Current Use.yy",
+    "name":"Other Cutscenes",
+    "path":"folders/Sequences/Other Cutscenes.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

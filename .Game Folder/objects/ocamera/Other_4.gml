@@ -6,7 +6,7 @@ if (room == rmTitleScreen)
 switch room {
 	case rmAdventureLogsScreen:
         x = 1376
-        y = 768
+        y = 774 //768
 	break
 	case W1_1_part5:
         x = 240

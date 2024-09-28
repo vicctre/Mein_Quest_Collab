@@ -15,9 +15,9 @@ adventure_logs = {
 	Genull: {
 		name: "Genull",
         sprite: sPage_Genull,
-		description: "Out of all creatures acting strange on eldoon,"
-					 + "these gentle creatures seem indifferent. They never " 
-					 + "look for trouble, but tend to find themselves always caught "
+		description: "With the balance of Eldoon constantly shifting, "
+					 + "these gentle creatures seem indifferent to the situation. They " 
+					 + "never look for trouble, but tend to find themselves always caught "
 					 + "up in something  . . . makes you feel kinda bad"
 	},
 	Rularog: {
@@ -34,7 +34,7 @@ adventure_logs = {
 		name: "Tuffull",
         sprite: sPage_Tuffull,
 		description: "She is sort of a mother figure to the wandering Genulls"
-					 + " in Longroot Lane.Tuffull is very aggressive and territorial," 
+					 + " in Longroot Lane. Tuffull is very aggressive and territorial," 
 					 + " using her size to intimidate and rush down enemies. While not good at" 
 					 + " turning around, shes doing her best!"
 	},
@@ -50,27 +50,36 @@ adventure_logs = {
 	Naturina: {
 		name: "Naturina",
 		sprite: sPage_Naturina, 
-		description: "One of the Sister Spirits who brought new life to Eldoon during the Rebirth."
-					+ "Naturina chooses to isolate herself in dense forests, nurturing the" 
-					+ "environment and creatures in need. Shes a free spirit who is constantly"
+		description: "One of the Sister Spirits who brought life to Eldoon during the Rebirth."
+					+ "She isolates herself in dense forests, nurturing the environment " 
+					+ "and anyone in need. She is a free spirit who is constantly "
 					+ "looking for more to do with her life." 
 	},
 	
 	Fleater: {
 		name: "Fleater",
 		sprite: sPage_Fleater, 
-		description: "Fleaters can be seen flying around, minding its own business." 
-					+ "Don’t really know what this guys deal is but hes always smiling." 
-					+ "Not sure if I should be happy or freaked out…do they feel anything?" 
-					+ "What are they thinking? Maybe they are just silly guys…" 
+		description: "Fleaters can be seen flying around, minding their own business." 
+					+ " Not sure what his deal is, but hes always smiling . . ." 
+					+ "should I be freaked out? What are they thinking? " 
+					+ "Maybe they are just silly guys. . ." 
 	},
+	
+	//Pinnik: {
+		//name: "Pinnik",
+		//sprite: sPage_Pinnik, 
+		//description: "a Sedentary species that has specked fully into defense, " 
+					//+ "surrounded by retractable steel barbs. The carapace shell is " 
+					//+ "impossible to break, making them fully invincible to all attacks. " 
+					//+ "Eating habits are unknown, as they aren’t much for talking." 
+	//},
 	
 	Chantie: {
 		name: "Chantie",
 		sprite: sPage_Chantie, 
-		description: "this predominately female species is known for dancing wherever they find comfort." 
-					+ "Get too close, and they will instinctually whip you with their hair! "  
-					+ "You can find them in groups. The one with the silkiest hair is considered " 
+		description: "This predominately female species is known for dancing in groups wherever they" 
+					+ " find comfort. Get too close, and they will instinctually whip you "  
+					+ "with their hair! The one with the silkiest hair is considered" 
 					+ " the leader of a pack." 
 	},
 }
@@ -86,6 +95,7 @@ var names_order = [
     "Rularog",
 	"Naturina", 
 	"Fleater",
+	//"Pinnik",
 	"Chantie",
 ]
 

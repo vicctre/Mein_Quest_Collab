@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Demo 2 Intro",
-    "path":"folders/Sprites/1Cutscenes/Demo 2 Intro.yy",
+    "name":"Demo 1 Intro",
+    "path":"folders/Sprites/1Cutscenes/Demo 1 Intro.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
