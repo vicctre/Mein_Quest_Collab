@@ -457,3 +457,7 @@ function randomer(first, second=undefined) {
 function irandomer(first, second=undefined) {
     return new IRandomer(first, second).__get
 }
+
+function is_sequence_on_frame(seq, frame) {
+	return layer_sequence_get_headpos(seq) == frame
+}
