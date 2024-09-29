@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"oSfx_Example",
+  "%Name":"oSfx_SS_Awaken",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oSfx_Example",
+  "name":"oSfx_SS_Awaken",
   "overriddenProperties":[],
   "parent":{
     "name":"Template",

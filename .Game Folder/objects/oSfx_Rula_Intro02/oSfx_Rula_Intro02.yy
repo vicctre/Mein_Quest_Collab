@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oSfx_Example",
+  "%Name":"oSfx_Rula_Intro02",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oSfx_Example",
+  "name":"oSfx_Rula_Intro02",
   "overriddenProperties":[],
   "parent":{
-    "name":"Template",
-    "path":"folders/Sequences/Current Use/SFX Objects/Template.yy",
+    "name":"SFX Objects",
+    "path":"folders/Sequences/Current Use/SFX Objects.yy",
   },
   "parentObjectId":{
     "name":"oSfxSeqParent",

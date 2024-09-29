@@ -9,8 +9,8 @@
   "name":"oSfxSeqParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Boss Intros",
-    "path":"folders/Sequences/Current Use/Boss Intros.yy",
+    "name":".ParentsClub",
+    "path":"folders/Objects/.ParentsClub.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Fade_Black",
-    "path":"sprites/Fade_Black/Fade_Black.yy",
+    "name":"sBIG_M_BoomBox",
+    "path":"sprites/sBIG_M_BoomBox/sBIG_M_BoomBox.yy",
   },
   "spriteMaskId":null,
   "visible":true,

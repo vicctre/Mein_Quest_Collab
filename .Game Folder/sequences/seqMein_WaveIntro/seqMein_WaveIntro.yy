@@ -26,8 +26,8 @@
   },
   "name":"seqMein_WaveIntro",
   "parent":{
-    "name":"Mein stuff",
-    "path":"folders/Sequences/Current Use/Mein stuff.yy",
+    "name":"Stage specific",
+    "path":"folders/Sequences/Current Use/Stage specific.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

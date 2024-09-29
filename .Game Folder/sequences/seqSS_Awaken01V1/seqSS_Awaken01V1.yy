@@ -26,8 +26,8 @@
   },
   "name":"seqSS_Awaken01V1",
   "parent":{
-    "name":"Sister Spirit Cutscenes",
-    "path":"folders/Sequences/Current Use/Sister Spirit Cutscenes.yy",
+    "name":"Ref stuff (DONT USE)",
+    "path":"folders/Sequences/Ref stuff (DONT USE).yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

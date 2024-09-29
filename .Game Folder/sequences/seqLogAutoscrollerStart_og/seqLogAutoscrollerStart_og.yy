@@ -26,8 +26,8 @@
   },
   "name":"seqLogAutoscrollerStart_og",
   "parent":{
-    "name":"Stage specific",
-    "path":"folders/Sequences/Other Cutscenes/Stage specific.yy",
+    "name":"Ref stuff (DONT USE)",
+    "path":"folders/Sequences/Ref stuff (DONT USE).yy",
   },
   "playback":0,
   "playbackSpeed":60.0,
