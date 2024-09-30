@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"oSfx_SS_Awaken",
+  "%Name":"oSfx_SS_Victory",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oSfx_SS_Awaken",
+  "name":"oSfx_SS_Victory",
   "overriddenProperties":[],
   "parent":{
     "name":"SFX Objects",

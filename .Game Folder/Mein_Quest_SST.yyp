@@ -302,6 +302,7 @@
     {"id":{"name":"oSfx_Rula_Intro01","path":"objects/oSfx_Rula_Intro01/oSfx_Rula_Intro01.yy",},},
     {"id":{"name":"oSfx_Rula_Intro02","path":"objects/oSfx_Rula_Intro02/oSfx_Rula_Intro02.yy",},},
     {"id":{"name":"oSfx_SS_Awaken","path":"objects/oSfx_SS_Awaken/oSfx_SS_Awaken.yy",},},
+    {"id":{"name":"oSfx_SS_Victory","path":"objects/oSfx_SS_Victory/oSfx_SS_Victory.yy",},},
     {"id":{"name":"oSfx_TreeCut","path":"objects/oSfx_TreeCut/oSfx_TreeCut.yy",},},
     {"id":{"name":"oSFX","path":"objects/oSFX/oSFX.yy",},},
     {"id":{"name":"oSfxSeqParent","path":"objects/oSfxSeqParent/oSfxSeqParent.yy",},},
