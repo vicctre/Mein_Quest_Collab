@@ -1,4 +1,5 @@
 event_inherited()
 
 //PlayAt(global.sfx_additional_hp, 180)
-//PlayAt(SFX_Sparkle, 1381) not until i find a better sfx 
+PlayAt(SFX_J_Dash, 350)
+

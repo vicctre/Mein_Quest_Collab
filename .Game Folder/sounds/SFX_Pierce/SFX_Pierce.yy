@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"SFX_Sparkle",
+  "%Name":"SFX_Pierce",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.365687,
-  "name":"SFX_Sparkle",
+  "duration":0.590544,
+  "name":"SFX_Pierce",
   "parent":{
     "name":"Misc.",
     "path":"folders/Sounds/SFX/Misc..yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"SFX_Sparkle.mp3",
+  "soundFile":"SFX_Pierce.wav",
   "type":0,
-  "volume":1.0,
+  "volume":0.15,
 }
