@@ -6,6 +6,9 @@ enum SpiritByteSequence {
 }
 event_inherited()
 
+//// Adjust delay before transition starts
+transition_end_timer = make_timer(60)
+
 var next_level_room = W1_2_part1
 
 var is_new_adv_logs_collected 
@@ -13,14 +16,14 @@ var is_new_adv_logs_collected
 //next_room = is_new_adv_logs_collected ? rmAdventureLogsScreen : next_level_room
 next_room = rmAdventureLogsScreen
 
-destroy_delay = 90
+destroy_delay = 0
+
 //this is where you can add sequences you make at any time. It will choose from these options 
 sequence = choose(seqPlayerVictory, seqPlayerVictory02, seqPlayerVictory03, seqPlayerVictory04);
 
 // workaround transition becoming invisible for a couple frames
 start_from_frame = undefined
 
-transition_end_timer = make_timer(60)
 
 phase = 0
 

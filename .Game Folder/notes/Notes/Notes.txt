@@ -6,7 +6,6 @@ Refactor:
 Check:
 > Add “pinnik” adventure log page with text. This will be the 2nd log of 2-1 (text and sprite added)
 > victory theme/animation is being cut short for some reason, please try to fix
-
 > “Thanks for playing” screen is playing after every stage is complete, please change so it only plays after defeating Rula and make sure it plays the “thx for playing” music
 > Add a screen shake effect when Rularog lands during his intro cutscene
 
