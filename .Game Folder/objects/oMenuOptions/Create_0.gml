@@ -164,13 +164,13 @@ function PerformButton(index, inp) {
                     - (inp == OptionInputAction.decrease)
             if inp != 0 {
                 menu_input.action(inp)
-                audio_play_sound(global.sfx_select, 7, false)
+                audio_play_sound(SFX_OptionsNav, 7, false)
             }
         break
         case OptionInputType.checkbox:
             if inp == OptionInputAction.click {
                 menu_input.action()
-                audio_play_sound(global.sfx_select, 7, false)
+                audio_play_sound(SFX_OptionsNav, 7, false)
             }
         break
         case undefined:     // go back

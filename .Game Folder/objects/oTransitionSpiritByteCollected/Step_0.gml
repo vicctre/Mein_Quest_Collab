@@ -1,6 +1,6 @@
 
 switch phase {
-	case 0:
+	case SpiritByteSequence.move_mein_to_position:
 		if !global.player.down_free {
 			phase++
             //// Move Mein to the center only in boss rooms
@@ -9,10 +9,11 @@ switch phase {
             }
 		}
 		break
-	case 1:
+	case SpiritByteSequence.start_sequence:
 		if !global.player.is_boss_sequence() {
 			phase++
 			global.player.has_control = false
+            global.player.BecomeInvisibleIn(1)
 			oMusic.switch_music(victory_music, false, 0)
 			sequence_inst = layer_sequence_create(
 					layer, global.player.x, global.player.y, sequence)
@@ -21,16 +22,15 @@ switch phase {
 			}
 		}
 		break
-	case 2:
+	case SpiritByteSequence.end_sequence:
         // turn off player's visibility here
         // to prevent one-frame blink caused by some sort of sequence start delay
-        global.player.visible = false
 		if is_sequence_finished() {
 			layer_sequence_speedscale(sequence_inst, 0)
             phase++
 		}
     break
-	case 3:
+	case SpiritByteSequence.finish_stage:
 		if !transition_end_timer.update() {
             if room == W1_3BOSS
                     and !oStageManager.IsPogoUnlocked() {

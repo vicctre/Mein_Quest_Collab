@@ -340,7 +340,6 @@ function Kill() {
     if is_dead() {
         return;
     }
-	show_debug_message("Kill")
 	global.player_hp = 0
 	sprite_index = sPlayerDead
 	state = PLAYERSTATE.PRE_DEAD
@@ -375,7 +374,6 @@ function Hit(enemy) {
 		return
 	}
 	global.player_hp -= global.player_invincible == false
-	show_debug_message("Hit")
 	audio_play_sound(global.sfx_player_damage, 8, false)
 	//this is for when we have both a voice AND SFX for taking damage 
 	if !global.player_hp {
@@ -598,6 +596,12 @@ function heal(amount) {
     heal_glowing_timer.reset()
 }
 
+function BecomeInvisibleIn(frames) {
+    if frames == 0 {
+        visible = false
+    }
+    alarm[2] = frames
+}
 
 function perform_attack(spr, xscale, dmg, one_frame=true) {
 	var inst = instance_create_layer(x, y, "Player", oAttack, 

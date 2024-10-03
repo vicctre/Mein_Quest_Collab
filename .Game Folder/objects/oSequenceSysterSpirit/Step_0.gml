@@ -5,7 +5,7 @@ if is_sequence_finished() {
         // to prevent Mein blinking beween two seqs
 		prev_sequence_instance = sequence_inst
         layer_sequence_speedscale(sequence_inst, 0)
-        alarm[1] = 1
+        alarm[1] = first_sequence_destroy_delay
 
         sequence = seqSS_Victory01
         sequence_inst = layer_sequence_create(

@@ -39,7 +39,6 @@ if keyboard_check_pressed(vk_right) {
 
 // Do actions
 if (keyboard_check_pressed(vk_anykey)) {
-	show_debug_message("Press {0}", keyboard_key)
 	switch (keyboard_key) {
 		case vk_enter:
 			#region // Send command

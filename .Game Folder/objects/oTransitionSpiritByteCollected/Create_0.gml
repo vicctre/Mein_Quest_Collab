@@ -1,4 +1,9 @@
-
+enum SpiritByteSequence {
+    move_mein_to_position,
+    start_sequence,
+    end_sequence,
+    finish_stage,
+}
 event_inherited()
 
 var next_level_room = W1_2_part1

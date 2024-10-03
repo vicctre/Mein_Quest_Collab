@@ -20,6 +20,11 @@ function ConsoleResetProgress() {
 	console_write_log("Game progress is reset", EZ_CONSOLE_MSG_TYPE.INFO)
 }
 
+function ConsoleShowPopUp() {
+    oUIPopUpMessage.PopUp("Hey there, since the wait for Demo 2 was quite some time, we wanted to give you one more thing to do! The first stage of World 2 has been unlocked, give it a go if you want to see more")
+    oUIPopUpMessage.PopUp("The Sister Spirit has granted you a new ability: The Pogo Attack! Press down and attack midair to bounce off enemies and objects. This can be used in previous stages too, have fun! ")
+}
+
 console_add_command({
 	name: "coins",
 	short: "coins",
@@ -39,4 +44,15 @@ console_add_command({
 	args_desc: [],
 	callback: ConsoleResetProgress
 })
+
+console_add_command({
+	name: "popup",
+	short: "popup",
+	desc: "show test pop up messages",
+	args: [],
+	args_req: [],
+	args_desc: [],
+	callback: ConsoleShowPopUp
+})
+
 

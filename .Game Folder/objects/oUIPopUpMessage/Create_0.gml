@@ -11,7 +11,7 @@ function Message(text) constructor {
     // set up text and box size
 	max_width = 600
     padding = 10
-	sep = 35
+	sep = 42 //35
 	text_max_width = max_width - padding * 2
     w = string_width_ext(text, sep, text_max_width) + padding * 2
 	h = string_height_ext(text, sep, text_max_width) + padding * 2
@@ -20,7 +20,7 @@ function Message(text) constructor {
 
 	self.text = text
 	yst = window_get_height() + 100
-	yto = window_get_height() * 0.5
+	yto = window_get_height() * 0.5 - h * 0.5
 	y = yst
 	x = window_get_width() * 0.5 - w * 0.5
 	speed_ratio = 0.03
@@ -31,20 +31,22 @@ function Message(text) constructor {
 
 	step = function() {
 		if !ease_out {
-			y = approach2(y, yto, speed_ratio, 0.5)
+			// y = approach2(y, yto, speed_ratio, 0.5)
+            y = yto // appear on the screen instantly
 			if (y == yto) and oInput.key_action {
 				ease_out = true
 			}
 		} else {
-			y = approach2(y,
-                yst + 200,              // increase yto to move faster
-                speed_ratio, 0.5)
-			if y > yst {
+            y = yst // go off screen instantly
+			// y = approach2(y,
+            //     yst + 200,              // increase yto to move faster
+            //     speed_ratio, 0.5)
+			if y >= yst {
 				is_done = true
 			}
 		}
 	}
-	
+
 	draw = function() {
 		draw_set_valign(fa_top)
 		draw_set_halign(fa_left)

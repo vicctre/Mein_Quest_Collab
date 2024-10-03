@@ -61,8 +61,8 @@ function game_reset_globals() {
 		global.player_invincible = false
 		global.skip_logos = true
 		// global.dev_level_goto = rmMenuAdventureLogsScreen
-		//  global.dev_level_goto = W1_3BOSS
-        global.dev_level_goto = W1_2_part3
+        // global.dev_level_goto = W1_2_part3
+		 global.dev_level_goto = W1_3BOSS
 		// global.rula_start_state = "tongueChargeState"
 		// global.autoscroller_skip_log_intro = true
         // audio_set_master_gain(0, 0)

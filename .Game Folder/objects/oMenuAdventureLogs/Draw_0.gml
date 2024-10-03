@@ -34,5 +34,8 @@ if mode == "grid" {
 	}
 }
 
+DrawHintText()
+
+
 // middle of the screen
 // draw_line(camw() * 0.5, 0, camw() * 0.5, room_height)

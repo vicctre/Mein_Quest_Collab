@@ -462,7 +462,7 @@ function console_command_debug_overlay(_args) {
 	var _params_len = array_length(_args);
 	var _min_params = 0;
 	var _max_params = 1;
-	
+
 	if (console_check_params_count(_command, _params_len, _min_params, _max_params)) {
 		if (_params_len == 0) {
 			__EzConsole__.console_debug_overlay_show = !__EzConsole__.console_debug_overlay_show;

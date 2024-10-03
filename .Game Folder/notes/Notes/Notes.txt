@@ -13,11 +13,32 @@ Fixes:
 Refactor:
     1. Move control over all chained sequences into control objects like oTransition
         > victory seqs
-        
-Misc. 
-> SFX in sequences are still weird and annoying, maybe we can work together to figure out an optimal way to handle them?
 
-Check
+Check:
+> Also, space out the lines of writing so they aren’t so scrunched up together
+
+
+ToDo:
+???
+> Change font for menu controls tutorial (or show me how)
+???
+Menus
+
+Stage Specific
+> add “seqMein_WaveIntro” cutscene to 2–1 part 3
+> Make sure the “Checkpoint” effect doesn’t appear during the first room of ANY stage, as seen in 2-1, if covers the name
+> Meins HP doesn’t seem to carry over between stages. Make it so that he starts the next stage with the same HP he had at the end of the previous.
+> make sure the data on the wave counter isn’t shown
+
+Adventure logs 
+> Add “pinnik” adventure log page with text. This will be the 2nd log of 2-1 (text and sprite added)
+
+Misc. 
+> victory theme/animation is being cut short for some reason, please try to fix
+> “Thanks for playing” screen is playing after every stage is complete, please change so it only plays after defeating Rula and make sure it plays the “thx for playing” music
+> Add a screen shake effect when Rularog lands during his intro cutscene
+> Rula intro sequence is still misplaced (idk why it won’t work properly)
+
 
 Fix
 > there is an old inifinite cycling in collision

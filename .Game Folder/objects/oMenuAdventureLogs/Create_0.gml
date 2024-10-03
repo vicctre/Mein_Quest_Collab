@@ -1,4 +1,6 @@
 
+control_hint_text = "X/Enter/A - select\nEsc/Back - go back"
+
 has_control = true
 
 frame = 0 // room frame, used for animation
@@ -105,3 +107,13 @@ left_button.visible = false
 right_button.visible = false
 
 
+function DrawHintText() {
+    draw_set_color(c_grey)
+    draw_set_halign(fa_left)
+    draw_text_transformed(
+                room_width * 0.05,
+                room_height * 0.8,
+                control_hint_text,
+                0.75, 0.75, 0)
+    draw_set_color(c_white)
+}

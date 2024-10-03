@@ -10,13 +10,6 @@ if current_message and !next_message and array_length(messages) {
 }
 
 if current_message {
-    /// if the last message is easing out turn on menu
-	if current_message.ease_out and !next_message {
-        with oMenu {
-            has_control = true
-        }
-    }
-	current_message.step()
     // start animating next message if current is easing out
 	if current_message.ease_out and next_message {
         next_message.step()
@@ -25,9 +18,17 @@ if current_message {
             next_message.sound_played = true
         }
     }
+    /// if the last message is easing out turn on menu
+	if current_message.ease_out and !next_message {
+        with oMenu {
+            has_control = true
+        }
+    }
+	current_message.step()
     // move messages queue forward if current message is done
 	if current_message.is_done {
         current_message = next_message
         next_message = undefined
+        array_shift(messages)
 	}
 }
