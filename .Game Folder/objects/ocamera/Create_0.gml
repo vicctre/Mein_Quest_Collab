@@ -32,7 +32,8 @@ y_shake = 0
 buff = 32
 
 smooth_movement_on = true
-smooth_factor = 0.1
+smooth_factor_default = 0.1
+smooth_factor = smooth_factor_default
 
 function set_smooth_movement(turn_on) {
 	smooth_movement_on = turn_on
@@ -48,6 +49,10 @@ function set_target(inst) {
 
 function set_point_target(xx, yy) {
 	follow = new Vec2(xx, yy)
+}
+
+function reset_smooth_factor() {
+	smooth_factor = smooth_factor_default
 }
 
 function set_smooth_factor(factor) {

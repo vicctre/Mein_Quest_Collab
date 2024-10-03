@@ -3,7 +3,7 @@ wave_timer = make_timer(120)
 phase = 0
 
 //// Don't start wave cycle before tutorial cutscene plays
-waves_on = false
+waves_on = true
 if room == W2_1_part3 {
     waves_on = false
 }

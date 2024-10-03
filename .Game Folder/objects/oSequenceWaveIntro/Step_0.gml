@@ -37,7 +37,9 @@ if is_sequence_finished() {
             has_control = true
         }
         oCamera.set_target(global.player)
+        oCamera.reset_smooth_factor()
         instance_destroy()
+        notify_ended()
 	}
 }
 
