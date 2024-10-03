@@ -157,8 +157,8 @@ function DrawHintText() {
     var fnt = draw_get_font()
     draw_set_font(Font01)
     draw_text_transformed(
-                gui_width * 0.05,
-                gui_height * 0.8,
+                gui_width * 0.05,   // = x
+                gui_height * 0.8,   // = y
                 control_hint_text,
                 0.75, 0.75, 0)
     draw_set_color(c_white)
