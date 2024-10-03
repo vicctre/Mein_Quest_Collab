@@ -13,7 +13,7 @@ var is_new_adv_logs_collected
 //next_room = is_new_adv_logs_collected ? rmAdventureLogsScreen : next_level_room
 next_room = rmAdventureLogsScreen
 
-destroy_delay = 60
+destroy_delay = 90
 //this is where you can add sequences you make at any time. It will choose from these options 
 sequence = choose(seqPlayerVictory, seqPlayerVictory02, seqPlayerVictory03, seqPlayerVictory04);
 

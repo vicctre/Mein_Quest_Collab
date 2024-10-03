@@ -10,7 +10,7 @@ function is_sequence_finished() {
 		   >= (layer_sequence_get_length(sequence_inst) - sp)
 }
 
-function is_sequence_on_frame(frame) {
+function is_on_frame(frame) {
 	return layer_sequence_get_headpos(sequence_inst) == frame
 }
 

@@ -1,5 +1,5 @@
 
-if is_sequence_on_frame(camera_start_move_frame) {
+if is_on_frame(camera_start_move_frame) {
 	oCamera.set_point_target(x + camera_delta_x, oCamera.y)
 	oCamera.set_smooth_factor(0.02)
 }

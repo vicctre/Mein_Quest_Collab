@@ -1,13 +1,13 @@
 /*
 The Rula fight intro cutscene is implemented using 3 objects:
 - this one
-- oSequenceRulaAppear2
+- oSequenceRularogIntro02
 - a separate oSequence instance for mein, created in this event
 */
 event_inherited()
 
 function triggerSecondPart() {
-	oSequenceRulaAppear02.unpause()
+	oSequenceRularogIntro02.unpause()
 }
 
 function on_destroy() {

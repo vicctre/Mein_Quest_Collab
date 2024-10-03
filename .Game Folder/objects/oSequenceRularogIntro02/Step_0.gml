@@ -13,6 +13,9 @@ if is_sequence_finished() {
 	oMusic.switch_music(global.msc_bigboss, true, 0)
 }
 
+if is_on_frame(roar_frame) {
+    oCamera.start_shaking()
+}
 
 if DEV and oInput.key_attack and layer_sequence_get_speedscale(sequence_inst) != 0 {
 	layer_sequence_speedscale(sequence_inst, 10)

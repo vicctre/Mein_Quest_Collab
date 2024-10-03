@@ -1,5 +1,5 @@
 
-if is_sequence_on_frame(play_landing_sound_frame) {
+if is_on_frame(play_landing_sound_frame) {
 	audio_play_sound(global.sfx_land, 7, false)
 }
 

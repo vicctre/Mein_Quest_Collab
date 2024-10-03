@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"oSequenceRulaAppear01",
+  "%Name":"oSequenceRularogIntro01",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oSequenceRulaAppear01",
+  "name":"oSequenceRularogIntro01",
   "overriddenProperties":[],
   "parent":{
     "name":"Sequences",
