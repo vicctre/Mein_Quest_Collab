@@ -12,4 +12,5 @@ Fixes
 > there is an old inifinite cycling in collision
 > unknown symbols in advlogs
 > typos in advlogs (rula)
+> fix Rula and cutscene misplacement
 
