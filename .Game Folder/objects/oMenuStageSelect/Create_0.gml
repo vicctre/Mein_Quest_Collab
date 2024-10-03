@@ -1,5 +1,10 @@
 /// @desc GUI/vars/Menu Setup 
 
+if global.player_reset_hp {
+    global.player_hp = global.player_hp_max
+    global.player_reset_hp = false
+}
+
 event_inherited()
 
 control_hint_text = "X/Enter/A - select\nEsc/Back - go back"
@@ -46,7 +51,6 @@ function StageButton(ind, stage, title, spr, stage_locked=false) constructor {
 		} else {
 			RoomTransition(TRANS_MODE.GOTO, stage)
 		}
-		global.player_hp = global.player_hp_max
 		game_reset_globals()
 	}
 

@@ -4,11 +4,7 @@ Refactor:
         > victory seqs
 
 Check:
-> Change font for menu controls tutorial (or show me how)
-> add “seqMein_WaveIntro” cutscene to 2–1 part 3
-> Make sure the “Checkpoint” effect doesn’t appear during the first room of ANY stage, as seen in 2-1, if covers the name
-> Meins HP doesn’t seem to carry over between stages. Make it so that he starts the next stage with the same HP he had at the end of the previous.
-> make sure the data on the wave counter isn’t shown
+> Add “pinnik” adventure log page with text. This will be the 2nd log of 2-1 (text and sprite added)
 
 
 ToDo:
@@ -19,14 +15,12 @@ Fixes
 * Resolution-related picture disruption
 > rula can't get you with jump in corner
 > rula cutscene doesn't reset globally
-
-Menus
-
-
-Stage Specific
-
-Adventure logs 
-> Add “pinnik” adventure log page with text. This will be the 2nd log of 2-1 (text and sprite added)
+> there is an old inifinite cycling in collision
+> unknown symbols in advlogs
+> typos in advlogs (rula)
+> coins counter comes to zero after death
+> return camera speed and UI back after wave cutscene
+> waves not appear in other stages
 
 Misc. 
 > victory theme/animation is being cut short for some reason, please try to fix
@@ -34,12 +28,3 @@ Misc.
 > Add a screen shake effect when Rularog lands during his intro cutscene
 > Rula intro sequence is still misplaced (idk why it won’t work properly)
 
-
-Fix
-> there is an old inifinite cycling in collision
-> Genull description: creature + creature repeat
-> unknown symbols in advlogs
-> typos in advlogs (rula)
-
-> coins counter comes to zero after death
-> debug drawing for waves

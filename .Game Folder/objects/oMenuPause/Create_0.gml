@@ -43,6 +43,7 @@ menu = [
 			RoomTransition(TRANS_MODE.GOTO, rmMainMenu)
 			oPause.SetPaused(false)
 			oEventSystem.Notify(Events.stage_exit)
+            global.player_reset_hp = true
 		}
 	}
 ]

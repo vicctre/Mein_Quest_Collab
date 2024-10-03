@@ -29,6 +29,7 @@ logo_sequence_speed_scale = 1
 music_gain_array = []
 player = oMein
 player_pogo_just_unlocked = false // show pop up message
+player_reset_hp = false
 room_prev = noone
 rula_start_state = undefined
 rula_intro_cutscene_played = false

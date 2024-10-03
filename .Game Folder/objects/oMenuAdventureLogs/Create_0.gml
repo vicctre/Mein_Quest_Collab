@@ -117,5 +117,6 @@ function DrawHintText() {
                 room_height * 0.8,
                 control_hint_text,
                 0.75, 0.75, 0)
-    draw_set_color(c_white)    draw_set_font(fnt)
+    draw_set_color(c_white)
+    draw_set_font(fnt)
 }
