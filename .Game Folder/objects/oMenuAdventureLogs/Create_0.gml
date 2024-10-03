@@ -113,10 +113,10 @@ function DrawHintText() {
     var fnt = draw_get_font()
     draw_set_font(Font01)
     draw_text_transformed(
-                room_width * 0.05,
-                room_height * 0.8,
+                room_width * 0.05,//x position of Hint text 
+                room_height * 0.1,//y position of Hint text
                 control_hint_text,
-                0.75, 0.75, 0)
+                0.55, 0.55, 0)
     draw_set_color(c_white)
     draw_set_font(fnt)
 }

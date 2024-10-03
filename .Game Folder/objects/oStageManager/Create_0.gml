@@ -67,12 +67,12 @@ function DefaultStagesData() {
 					unlocked: false,
                     was_showed_in_adv_log_screen: false
 				},
-				Chantie: {
+				Pinnik: {
 					order: 1,
 					unlocked: false,
                     was_showed_in_adv_log_screen: false
 				},
-                Pinnik: {
+                Chantie: {
 					order: 2,
 					unlocked: false,
                     was_showed_in_adv_log_screen: false

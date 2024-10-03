@@ -31,9 +31,9 @@ adventure_logs = {
 	Rularog: {
 		name: "Rularog",
         sprite: sPage_Rularog,
-		description: "The long tongued loaf enjoys the swamps of Longroot Lane."  
-					+ "While usually lax, something has changed…After being tipped off by a"
-					+ "mysterious figure, he now hordes the power of the Sister Spirit Gem to"
+		description: "The long tongued loaf enjoys the swamps of Longroot Lane. "  
+					+ "While usually lax, something has changed. . .After being tipped off by a"
+					+ "mysterious figure, he now hordes the Sister Spirit Gem to "
 					+ "rule the forest and all the swamps. Quite rude!" 
         // name_rel_y: -240,
         // text_rel_y: 80,
@@ -58,7 +58,7 @@ adventure_logs = {
 	Naturina: {
 		name: "Naturina",
 		sprite: sPage_Naturina, 
-		description: "One of the Sister Spirits who brought life to Eldoon during the Rebirth."
+		description: "One of the Sister Spirits who brought life to Eldoon during the Rebirth. "
 					+ "She isolates herself in dense forests, nurturing the environment " 
 					+ "and anyone in need. She is a free spirit who is constantly "
 					+ "looking for more to do with her life." 
@@ -68,7 +68,7 @@ adventure_logs = {
 		name: "Fleater",
 		sprite: sPage_Fleater, 
 		description: "Fleaters can be seen flying around, minding their own business." 
-					+ " Not sure what his deal is, but hes always smiling . . ." 
+					+ " Not sure what his deal is, but hes always smiling. . ." 
 					+ "should I be freaked out? What are they thinking? " 
 					+ "Maybe they are just silly guys. . ." 
 	},
@@ -76,10 +76,10 @@ adventure_logs = {
 	Pinnik: {
 		name: "Pinnik",
 		sprite: sPage_Pinnik, 
-		description: "A sedentary species that has specked fully into defense, " 
+		description: "A sedentary species that is specked fully into defense, " 
 					+ "surrounded by retractable steel barbs. The carapace shell is " 
 					+ "impossible to break, making them fully invincible to all attacks. " 
-					+ "Eating habits are unknown, as they aren’t much for talking." 
+					+ "Eating habits are unknown, as they don't talk much." 
 	},
 	
 	Chantie: {
