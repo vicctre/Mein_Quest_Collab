@@ -41,7 +41,6 @@ stage_select_show_unlock_animation = false
 boss_stages = [W1_1_part5, W1_3BOSS]
 
 function level_reset_globals() {
-	global.coins = 0
 	global.coins_timer = 0 // for when coins flash yellow on collection
 	global.camera_solid_bounds_on = false
 	global.player_hp = max(global.player_hp, global.player_hp_max)
@@ -49,6 +48,7 @@ function level_reset_globals() {
 
 function game_reset_globals() {
 	level_reset_globals()
+	global.coins = 0
 	global.rooms_with_onto_stage_seq = [
 		W1_1_part1,
 		W1_2_part1,

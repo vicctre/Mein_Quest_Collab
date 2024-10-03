@@ -4,7 +4,6 @@ Refactor:
         > victory seqs
 
 Check:
-> Add “pinnik” adventure log page with text. This will be the 2nd log of 2-1 (text and sprite added)
 
 ToDo:
 
@@ -13,6 +12,4 @@ Fixes
 > there is an old inifinite cycling in collision
 > unknown symbols in advlogs
 > typos in advlogs (rula)
-> coins counter comes to zero after death
 
-> Camera doesn’t follow the Log in 1-2 cutscene
