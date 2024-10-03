@@ -1,6 +1,14 @@
 
 /*
 These are adv logs how they are displayed in adv log screen
+
+How to add a new log:
+1. Add log struct in adventure_logs down below
+2. ... and add log's name to adventure_logs_array 
+3. Update oStageManager.DefaultStagesData function - add new adv log 
+   to the needed stage
+4. After launching the game make sure to reset_progress
+   The game will eventually crash without this
 */
 
 adventure_logs = {

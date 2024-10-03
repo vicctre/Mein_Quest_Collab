@@ -72,6 +72,11 @@ function DefaultStagesData() {
 					unlocked: false,
                     was_showed_in_adv_log_screen: false
 				},
+                Pinnik: {
+					order: 2,
+					unlocked: false,
+                    was_showed_in_adv_log_screen: false
+                }
 			}
 		},
 		W2_2: {
