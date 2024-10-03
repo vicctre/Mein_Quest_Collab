@@ -12,4 +12,4 @@ sequence_inst = layer_sequence_create(
 
 roar_frame = 91
 
-pause()
+unpause()

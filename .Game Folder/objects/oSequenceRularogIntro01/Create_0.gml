@@ -7,7 +7,7 @@ The Rula fight intro cutscene is implemented using 3 objects:
 event_inherited()
 
 function triggerSecondPart() {
-	oSequenceRularogIntro02.unpause()
+	instance_create_layer(oRularog.x, oRularog.y, layer, oSequenceRularogIntro02)
 }
 
 function on_destroy() {
