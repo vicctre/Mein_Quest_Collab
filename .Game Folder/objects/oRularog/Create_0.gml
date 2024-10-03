@@ -206,7 +206,7 @@ jumpState = {
 						var dist = (fast_fall_x - id.x)
 						if abs(dist) < 0.001 {
 							dist = 0
-							fast_fall_x = x
+							fast_fall_x = id.x
 						}
 						hsp = dist / reach_player_time
 						audio_play_sound(global.sfx_rula_jump, 3, false)
