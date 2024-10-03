@@ -294,6 +294,7 @@
     {"id":{"name":"oSequenceRulaAppear02","path":"objects/oSequenceRulaAppear02/oSequenceRulaAppear02.yy",},},
     {"id":{"name":"oSequenceSysterSpirit","path":"objects/oSequenceSysterSpirit/oSequenceSysterSpirit.yy",},},
     {"id":{"name":"oSequenceTuffulAppear","path":"objects/oSequenceTuffulAppear/oSequenceTuffulAppear.yy",},},
+    {"id":{"name":"oSequenceWaveIntro","path":"objects/oSequenceWaveIntro/oSequenceWaveIntro.yy",},},
     {"id":{"name":"oSfx_Antag_Intro01","path":"objects/oSfx_Antag_Intro01/oSfx_Antag_Intro01.yy",},},
     {"id":{"name":"oSfx_Antag_Intro02","path":"objects/oSfx_Antag_Intro02/oSfx_Antag_Intro02.yy",},},
     {"id":{"name":"oSfx_Example","path":"objects/oSfx_Example/oSfx_Example.yy",},},

@@ -1,5 +1,5 @@
 
-if is_paused {
+if is_paused or !waves_on {
     exit
 }
 

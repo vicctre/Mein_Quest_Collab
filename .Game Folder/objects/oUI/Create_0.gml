@@ -50,7 +50,7 @@ checkpoint_indicator = {
 	x: 30,
 	y: gui_h - 50,
 	scale: 4,
-	exclude_levels: [W1_1_part1, W1_2_part1, W1_3_part1],
+	exclude_levels: [W1_1_part1, W1_2_part1, W1_3_part1, W2_1_part1],
 
 	start_animation: function() {
 		image_index = 0

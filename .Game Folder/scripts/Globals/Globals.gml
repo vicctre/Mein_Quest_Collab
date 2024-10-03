@@ -43,7 +43,7 @@ function level_reset_globals() {
 	global.coins = 0
 	global.coins_timer = 0 // for when coins flash yellow on collection
 	global.camera_solid_bounds_on = false
-	global.player_hp = global.player_hp_max
+	global.player_hp = max(global.player_hp, global.player_hp_max)
 }
 
 function game_reset_globals() {
@@ -61,8 +61,8 @@ function game_reset_globals() {
 		global.player_invincible = false
 		global.skip_logos = true
 		// global.dev_level_goto = rmMenuAdventureLogsScreen
-        // global.dev_level_goto = W1_2_part3
-		 global.dev_level_goto = W1_3BOSS
+        global.dev_level_goto = W1_3BOSS
+        global.dev_level_goto = W2_1_part3
 		// global.rula_start_state = "tongueChargeState"
 		// global.autoscroller_skip_log_intro = true
         // audio_set_master_gain(0, 0)

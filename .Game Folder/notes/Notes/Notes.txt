@@ -1,34 +1,29 @@
 
-Alex ToDo:
-> test Rula boss fight
-
-
-Bugs:
-	- collisions with screen and walls
-	- girls hit earlier than aattack frame animation shows
-
-Fixes:
-* Resolution-related picture disruption
-
 Refactor:
     1. Move control over all chained sequences into control objects like oTransition
         > victory seqs
 
 Check:
-> Also, space out the lines of writing so they aren’t so scrunched up together
-
-
-ToDo:
-???
 > Change font for menu controls tutorial (or show me how)
-???
-Menus
-
-Stage Specific
 > add “seqMein_WaveIntro” cutscene to 2–1 part 3
 > Make sure the “Checkpoint” effect doesn’t appear during the first room of ANY stage, as seen in 2-1, if covers the name
 > Meins HP doesn’t seem to carry over between stages. Make it so that he starts the next stage with the same HP he had at the end of the previous.
 > make sure the data on the wave counter isn’t shown
+
+
+ToDo:
+???
+???
+
+Fixes
+* Resolution-related picture disruption
+> rula can't get you with jump in corner
+> rula cutscene doesn't reset globally
+
+Menus
+
+
+Stage Specific
 
 Adventure logs 
 > Add “pinnik” adventure log page with text. This will be the 2nd log of 2-1 (text and sprite added)

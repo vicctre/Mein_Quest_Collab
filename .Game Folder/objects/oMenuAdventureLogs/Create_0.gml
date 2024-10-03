@@ -110,10 +110,12 @@ right_button.visible = false
 function DrawHintText() {
     draw_set_color(c_grey)
     draw_set_halign(fa_left)
+    var fnt = draw_get_font()
+    draw_set_font(Font01)
     draw_text_transformed(
                 room_width * 0.05,
                 room_height * 0.8,
                 control_hint_text,
                 0.75, 0.75, 0)
-    draw_set_color(c_white)
+    draw_set_color(c_white)    draw_set_font(fnt)
 }

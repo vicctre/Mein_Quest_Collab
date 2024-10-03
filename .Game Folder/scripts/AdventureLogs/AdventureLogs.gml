@@ -65,14 +65,14 @@ adventure_logs = {
 					+ "Maybe they are just silly guys. . ." 
 	},
 	
-	//Pinnik: {
-		//name: "Pinnik",
-		//sprite: sPage_Pinnik, 
-		//description: "a Sedentary species that has specked fully into defense, " 
-					//+ "surrounded by retractable steel barbs. The carapace shell is " 
-					//+ "impossible to break, making them fully invincible to all attacks. " 
-					//+ "Eating habits are unknown, as they aren’t much for talking." 
-	//},
+	Pinnik: {
+		name: "Pinnik",
+		sprite: sPage_Pinnik, 
+		description: "A sedentary species that has specked fully into defense, " 
+					+ "surrounded by retractable steel barbs. The carapace shell is " 
+					+ "impossible to break, making them fully invincible to all attacks. " 
+					+ "Eating habits are unknown, as they aren’t much for talking." 
+	},
 	
 	Chantie: {
 		name: "Chantie",
@@ -95,7 +95,7 @@ var names_order = [
     "Rularog",
 	"Naturina", 
 	"Fleater",
-	//"Pinnik",
+	"Pinnik",
 	"Chantie",
 ]
 

@@ -158,6 +158,7 @@
     {"name":"oSequenceRulaAppear02","order":11,"path":"objects/oSequenceRulaAppear02/oSequenceRulaAppear02.yy",},
     {"name":"oSequenceSysterSpirit","order":13,"path":"objects/oSequenceSysterSpirit/oSequenceSysterSpirit.yy",},
     {"name":"oSequenceTuffulAppear","order":3,"path":"objects/oSequenceTuffulAppear/oSequenceTuffulAppear.yy",},
+    {"name":"oSequenceWaveIntro","order":16,"path":"objects/oSequenceWaveIntro/oSequenceWaveIntro.yy",},
     {"name":"oSfx_Antag_Intro01","order":2,"path":"objects/oSfx_Antag_Intro01/oSfx_Antag_Intro01.yy",},
     {"name":"oSfx_Antag_Intro02","order":3,"path":"objects/oSfx_Antag_Intro02/oSfx_Antag_Intro02.yy",},
     {"name":"oSfx_Log_END","order":6,"path":"objects/oSfx_Log_END/oSfx_Log_END.yy",},

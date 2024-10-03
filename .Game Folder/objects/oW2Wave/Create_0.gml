@@ -2,6 +2,12 @@
 wave_timer = make_timer(120)
 phase = 0
 
+//// Don't start wave cycle before tutorial cutscene plays
+waves_on = false
+if room == W2_1_part3 {
+    waves_on = false
+}
+
 wave_y = 0
 wave_max_y = room_height + 32
 wave_frame_index = 0
@@ -33,7 +39,9 @@ final_wave = {
     endy: 0,
 }
 
-wave_height_divider = 3 // 1, 2, 3
+/// Suits as both index for current wave and defines 
+// the max height for current wave: wave_max_y / wave_height_divider
+wave_height_divider = 3 // Changes in order 3 -> 2 -> 1, so every next wave is higher
 current_anim_params = wave_anim_params[wave_height_divider-1]
 layer = layer_get_id(current_anim_params.layer)
 
@@ -60,6 +68,15 @@ function washEveryoneOff() {
         }
         layer = layer_get_id("DeadObjects")
     }
+}
+
+function GetCurrentWaveIndex() {
+    return 4 - wave_height_divider
+}
+
+function StartFromSecondWave() {
+    waves_on = true
+    wave_height_divider = 2
 }
 
 is_paused = false
