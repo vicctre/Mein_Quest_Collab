@@ -25,6 +25,17 @@ function ConsoleShowPopUp() {
     oUIPopUpMessage.PopUp("The Sister Spirit has granted you a new ability: The Pogo Attack! Press down and attack midair to bounce off enemies and objects. This can be used in previous stages too, have fun! ")
 }
 
+function ConsoleDebugTeleport(params) {
+    var to = params[0]
+    with oDebugTeleport {
+        if name == to {
+            global.player.x = x
+            global.player.y = y
+        }
+    }
+    console_write_log($"Not found teleport named {name}")
+}
+
 console_add_command({
 	name: "coins",
 	short: "coins",
@@ -53,6 +64,16 @@ console_add_command({
 	args_req: [],
 	args_desc: [],
 	callback: ConsoleShowPopUp
+})
+
+console_add_command({
+	name: "teleport",
+	short: "tele",
+	desc: "debug teleport",
+	args: ["to"],
+	args_req: [true],
+	args_desc: ["teleport label"],
+	callback: ConsoleDebugTeleport
 })
 
 
