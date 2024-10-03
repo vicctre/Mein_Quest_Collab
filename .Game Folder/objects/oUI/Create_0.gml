@@ -1,4 +1,9 @@
 
+if FIX_PIXELS {
+    instance_destroy()
+    exit
+}
+
 scale = 2
 text_color = c_white
 outline_color = c_black

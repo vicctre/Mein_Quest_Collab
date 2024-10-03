@@ -6,8 +6,10 @@ Read more in manual.
 
 #macro DEV false
 #macro DEMO false
+#macro FIX_PIXELS false
 #macro Dev:DEV true
 #macro Demo:DEMO true
+#macro FixPixels:FIX_PIXELS true
 
 autoscroller_log_sp = 1.5
 autoscroller_log_sp_increased = 4.15
