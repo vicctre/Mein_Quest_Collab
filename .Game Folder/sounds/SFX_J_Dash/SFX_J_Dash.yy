@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"SFX_J_Dash",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.39424,
+  "name":"SFX_J_Dash",
+  "parent":{
+    "name":"Misc.",
+    "path":"folders/Sounds/SFX/Misc..yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"SFX_J_Dash.wav",
+  "type":0,
+  "volume":0.6,
+}

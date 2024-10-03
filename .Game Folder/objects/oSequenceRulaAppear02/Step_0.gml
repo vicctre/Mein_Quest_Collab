@@ -3,7 +3,7 @@ if is_sequence_finished() {
 	oBossHpUI.ease_in()
 	oRularog.visible = true
 	oRularog.state = oRularog.idleState
-	oRularog.x = x
+	oRularog.x = 394
 	if global.rula_start_state != undefined {
 		oRularog.state = variable_instance_get(oRularog, global.rula_start_state)
 	}

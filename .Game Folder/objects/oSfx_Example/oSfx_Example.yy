@@ -8,8 +8,8 @@
   "name":"oSfx_Example",
   "overriddenProperties":[],
   "parent":{
-    "name":"Boss Intros",
-    "path":"folders/Sequences/Current Use/Boss Intros.yy",
+    "name":"Template",
+    "path":"folders/Sequences/Current Use/SFX Objects/Template.yy",
   },
   "parentObjectId":{
     "name":"oSfxSeqParent",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Fade_Black",
-    "path":"sprites/Fade_Black/Fade_Black.yy",
+    "name":"sBIG_M_BoomBox",
+    "path":"sprites/sBIG_M_BoomBox/sBIG_M_BoomBox.yy",
   },
   "spriteMaskId":null,
   "visible":true,

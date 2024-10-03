@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"SFX_Magic.wav",
   "type":0,
-  "volume":0.4,
+  "volume":0.05,
 }

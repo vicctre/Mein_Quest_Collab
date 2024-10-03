@@ -26,5 +26,5 @@
   "sampleRate":44100,
   "soundFile":"BGM_Antag_Motif.wav",
   "type":0,
-  "volume":0.06,
+  "volume":0.3,
 }

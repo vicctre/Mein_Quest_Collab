@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"SFX_Pierce",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.590544,
+  "name":"SFX_Pierce",
+  "parent":{
+    "name":"Misc.",
+    "path":"folders/Sounds/SFX/Misc..yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"SFX_Pierce.wav",
+  "type":0,
+  "volume":0.15,
+}
