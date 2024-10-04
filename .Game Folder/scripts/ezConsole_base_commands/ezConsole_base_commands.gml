@@ -278,6 +278,24 @@ function console_command_instance_set(_args) {
 			? _instance_id
 			: asset_get_index(_instance_id)
 		);
+		
+		if _instance_id == "global" {
+			if !variable_global_exists(_variable_name) {
+				console_write_log($"Global variable {_variable_name} doesn't exist")
+				return;
+			}
+			var _type_of = typeof(variable_global_get(_variable_name))
+			switch(_type_of) {
+				case "number":
+				case "real":
+				case "int32":
+				case "int64":
+					_variable_value = real(_variable_value)
+					break
+			}
+			variable_global_set(_variable_name, _variable_value)
+			return;
+		}
 
 		if (!instance_exists(_inst_to_check) || _inst_to_check == -1) {
 			console_write_log("Instance " + _instance_id + " doesn't exists", EZ_CONSOLE_MSG_TYPE.ERROR);
