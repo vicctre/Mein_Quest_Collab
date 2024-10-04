@@ -144,6 +144,7 @@
     {"name":"oMenuAdvLog","order":2,"path":"objects/oMenuAdvLog/oMenuAdvLog.yy",},
     {"name":"oMenuAdvLogButton","order":3,"path":"objects/oMenuAdvLogButton/oMenuAdvLogButton.yy",},
     {"name":"oMenuOptions","order":2,"path":"objects/oMenuOptions/oMenuOptions.yy",},
+    {"name":"oMouseHider","order":17,"path":"objects/oMouseHider/oMouseHider.yy",},
     {"name":"oMusic","order":8,"path":"objects/oMusic/oMusic.yy",},
     {"name":"oPause","order":5,"path":"objects/oPause/oPause.yy",},
     {"name":"oPauseDummy","order":7,"path":"objects/oPauseDummy/oPauseDummy.yy",},
