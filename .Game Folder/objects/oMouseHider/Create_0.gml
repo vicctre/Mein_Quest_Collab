@@ -1,3 +1,7 @@
+
+//// temp turn off
+instance_destroy()
+
 ensure_singleton()
 
 visible = true
