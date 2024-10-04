@@ -135,6 +135,7 @@
     {"name":"oDNSLogo","order":8,"path":"objects/oDNSLogo/oDNSLogo.yy",},
     {"name":"oDoor","order":4,"path":"objects/oDoor/oDoor.yy",},
     {"name":"oFakeWall","order":5,"path":"objects/oFakeWall/oFakeWall.yy",},
+    {"name":"oFixPixels","order":1,"path":"objects/oFixPixels/oFixPixels.yy",},
     {"name":"oGalish","order":1,"path":"objects/oGalish/oGalish.yy",},
     {"name":"oGuiFixWorkaround","order":1,"path":"objects/oGuiFixWorkaround/oGuiFixWorkaround.yy",},
     {"name":"oInput","order":4,"path":"objects/oInput/oInput.yy",},
