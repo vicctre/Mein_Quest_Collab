@@ -67,17 +67,17 @@ adventure_logs = {
 	Fleater: {
 		name: "Fleater",
 		sprite: sPage_Fleater, 
-		description: "Fleaters can be seen flying around, minding their own business." 
-					+ " Not sure what his deal is, but hes always smiling. . ." 
-					+ "should I be freaked out? What are they thinking? " 
-					+ "Maybe they are just silly guys. . ." 
+		description: "Fleaters can be seen flying around, minding their own business. Not" 
+					+ " sure what his deal is, but he are always smiling constantly." 
+					+ " Should I be freaked out? What are they thinking? " 
+					+ " Maybe they are just silly guys. . ." 
 	},
 	
 	Pinnik: {
 		name: "Pinnik",
 		sprite: sPage_Pinnik, 
-		description: "A sedentary species that is specked fully into defense, " 
-					+ "surrounded by retractable steel barbs. The carapace shell is " 
+		description: "A species that is specked fully into defense, surrounded" 
+					+ " by retractable steel barbs. The carapace shell is " 
 					+ "impossible to break, making them fully invincible to all attacks. " 
 					+ "Eating habits are unknown, as they don't talk much." 
 	},
