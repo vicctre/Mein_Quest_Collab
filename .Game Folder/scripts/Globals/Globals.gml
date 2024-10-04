@@ -56,14 +56,15 @@ function game_reset_globals() {
 	]
     global.rula_intro_cutscene_played = false
 
-	global.dev_level_goto = noone
+	global.dev_level_goto = noone //Change what room Dev mode opens on 
 	if DEV {
 		global.coins = 50
 		global.player_invincible = false
 		global.skip_logos = true
+		// global.dev_level_goto = rmThanksForPlayingScreen
 		// global.dev_level_goto = rmMenuAdventureLogsScreen
-        global.dev_level_goto = W1_3BOSS
-        global.dev_level_goto = W2_1_part3
+         global.dev_level_goto = W1_3BOSS
+        // global.dev_level_goto = W2_1_part3
 		// global.rula_start_state = "tongueChargeState"
 		// global.autoscroller_skip_log_intro = true
         // audio_set_master_gain(0, 0)

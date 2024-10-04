@@ -7,7 +7,7 @@ enum SpiritByteSequence {
 event_inherited()
 
 //// Adjust delay before transition starts
-transition_end_timer = make_timer(60)
+transition_end_timer = make_timer(150)
 
 var next_level_room = W1_2_part1
 
