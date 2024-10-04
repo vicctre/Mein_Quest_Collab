@@ -1,6 +1,8 @@
 /// Drawing the black transition bars 
 
 if is_on {
+    w = display_get_gui_width()
+    h = display_get_gui_height()
 	draw_set_color(c_black)
     switch trans_type {
         case TRANS_TYPE.SLIDE:

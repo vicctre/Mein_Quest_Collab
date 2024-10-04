@@ -1,5 +1,4 @@
 
-
 if (room == rmTitleScreen)
 	exit;
 
