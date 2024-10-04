@@ -4,11 +4,9 @@ Refactor:
         > victory seqs
 
 Check:
+> every stage with wave attacks in 2-1 don’t seem to show the first wave at all
 
 ToDo:
-> During the Jerry intro cutscene (pre_intro02) the music will play, but if the player skips while the music is active, it will continue to play instead of being destroyed. I’ll try to see if I can use something similar to the code used in the opening sequence
-> every stage with wave attacks in 2-1 don’t seem to show the first wave at all
-> during the 1-2 part 3 cutscene, the player still has control for some reason? I dashed to my death while the cutscene was playing. If the player walks or runs, they will go past the cutscene and fall to their death while invisible. However, I found that if you jump into the cutscene, you cannot move as intended and the camera works. Idk why this happens, but please check it out tonight
 
 Fixes
 * Resolution-related picture disruption
