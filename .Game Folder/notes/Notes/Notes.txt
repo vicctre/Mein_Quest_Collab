@@ -4,14 +4,16 @@ Refactor:
         > victory seqs
 
 Check:
-> every stage with wave attacks in 2-1 don’t seem to show the first wave at all
 
 ToDo:
 
 Fixes
-* Resolution-related picture disruption
+??? Notifications are still not centered on the screen and don’t appear from the bottom of the screen
 > there is an old inifinite cycling in collision
-> unknown symbols in advlogs
-> typos in advlogs (rula)
-> fix Rula and cutscene misplacement
 
+
+
+> 1-2 part 4 dying before log breaking within checkpoint causes crash
+> 1-3 BOSS Rula intro cutscene still has full control to the player
+> Fix 2-1 wave stages backgrounds (they are too high for the first wave)
+> Fix GUI size (menus, Pause screen, HUD, enemies HP bars, etc.)

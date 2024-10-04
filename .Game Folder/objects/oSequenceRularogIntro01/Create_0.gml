@@ -32,10 +32,17 @@ sequence_inst = layer_sequence_create(
 
 notify_started()
 
+with global.player {
+    visible = false
+    has_control = false
+    hsp = 0
+    hsp_to = 0
+}
+
+
 // create a separate cutscene for Mein
 mein_sequence = instance_create_layer(global.player.x, global.player.y, layer, oSequence)
 with mein_sequence {
-	global.player.visible = false
 	sequence = seqMeinGemBossIntro
 	sequence_inst = layer_sequence_create(layer, x, y, sequence)
 	on_destroy = function() {

@@ -7,6 +7,8 @@ function SetRoomStartCamera() {
 	}
 }
 
+gui_w = 1366
+gui_h = 768
 
 win_w = window_get_width()
 win_h = window_get_height()

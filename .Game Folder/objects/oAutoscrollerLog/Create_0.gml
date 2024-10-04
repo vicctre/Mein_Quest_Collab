@@ -8,13 +8,19 @@ timer = 0
 shorten_sprites = [sLogShort1, sLogShort2, sLogShort3]
 switch_to_log_ride_when_mein_on_log = false
 
+function SetShortedSpriteEarly() {
+    //// Increase sprite index early
+    // fixes the game crash if Mein fails after reaching checkpoint but before
+    // log truncating
+	global.autoscroller_current_log_sprite_index++
+	global.autoscroller_current_log_sprite_index
+		= min(global.autoscroller_current_log_sprite_index, array_length(shorten_sprites) - 1)
+}
+
 function TruncateByPinnik() {
 	if timer {
 		return;	
 	}
-	global.autoscroller_current_log_sprite_index++
-	global.autoscroller_current_log_sprite_index
-		= min(global.autoscroller_current_log_sprite_index, array_length(shorten_sprites) - 1)
 	sprite_index = shorten_sprites[global.autoscroller_current_log_sprite_index]
 	timer = delay_after_truncate
 	audio_play_sound(global.sfx_bonk, 0, false)

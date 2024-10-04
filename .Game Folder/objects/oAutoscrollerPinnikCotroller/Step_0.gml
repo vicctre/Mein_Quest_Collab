@@ -17,4 +17,6 @@ if !already_triggered and place_meeting(x, y, oAutoscrollerLog) {
 		deactivate_pinniks()
 	}
 	already_triggered = true
+
+    oAutoscrollerLog.SetShortedSpriteEarly()
 }

@@ -1,6 +1,5 @@
 {
   "FolderOrderSettings":[
-    {"name":"FixPixels","order":14,"path":"folders/FixPixels.yy",},
     {"name":"Fonts","order":1,"path":"folders/Fonts.yy",},
     {"name":"Libraries","order":2,"path":"folders/Libraries.yy",},
     {"name":"Notes","order":3,"path":"folders/Notes.yy",},
@@ -135,7 +134,6 @@
     {"name":"oDNSLogo","order":8,"path":"objects/oDNSLogo/oDNSLogo.yy",},
     {"name":"oDoor","order":4,"path":"objects/oDoor/oDoor.yy",},
     {"name":"oFakeWall","order":5,"path":"objects/oFakeWall/oFakeWall.yy",},
-    {"name":"oFixPixels","order":1,"path":"objects/oFixPixels/oFixPixels.yy",},
     {"name":"oGalish","order":1,"path":"objects/oGalish/oGalish.yy",},
     {"name":"oGuiFixWorkaround","order":1,"path":"objects/oGuiFixWorkaround/oGuiFixWorkaround.yy",},
     {"name":"oInput","order":4,"path":"objects/oInput/oInput.yy",},

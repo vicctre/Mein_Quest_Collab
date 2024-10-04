@@ -6,4 +6,4 @@ view_set_hport(0, win_h)
 
 var k = ratio
 surface_resize(application_surface, cam_width * k, cam_height * k)
-display_set_gui_size(win_w, win_h)
+display_set_gui_size(gui_w, gui_h)

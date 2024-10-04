@@ -4,7 +4,7 @@ goto_next = false
 
 adv_logs_to_show = oStageManager.GetNotShowedAdventureLogs()
 if array_length(adv_logs_to_show) == 0 {
-    if DEMO {
+    if DEMO and global.room_prev == W1_3BOSS {
         RoomTransition(TRANS_MODE.GOTO, rmThanksForPlayingScreen)
     } else {
         GoToStageSelect()

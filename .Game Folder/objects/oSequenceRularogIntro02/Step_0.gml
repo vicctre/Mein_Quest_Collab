@@ -8,9 +8,12 @@ if is_sequence_finished() {
 		oRularog.state = variable_instance_get(oRularog, global.rula_start_state)
 	}
 	layer_sequence_speedscale(sequence_inst, 0)
-	global.player.has_control = true
 	instance_destroy()
 	oMusic.switch_music(global.msc_bigboss, true, 0)
+    with global.player {
+        visible = true
+        has_control = true
+    }
 }
 
 if is_on_frame(roar_frame) {
