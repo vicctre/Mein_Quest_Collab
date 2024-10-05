@@ -10,7 +10,7 @@ next_message = undefined
 function Message(text) constructor {
     // set up text and box size
 	max_width = 600
-    padding = 10
+    padding = 20 //10
 	sep = 42 //35
 	text_max_width = max_width - padding * 2
     w = string_width_ext(text, sep, text_max_width) + padding * 2
@@ -55,7 +55,7 @@ function Message(text) constructor {
             x + padding, y + padding, text,
             c_white, c_black, 2,
             sep, text_max_width)
-        draw_sprite(sPopUpArrow, 0, x + w - 10, y + h - 10)
+        draw_sprite(sPopUpArrow, 0 , x + w - 40, y + h - 30) //PopUp Arrow in the bottom of the box
 		// debug text box
 		// draw_rectangle(x, y, x + w, y + h, true)
 	}
