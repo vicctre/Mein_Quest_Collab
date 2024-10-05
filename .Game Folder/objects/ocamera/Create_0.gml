@@ -24,6 +24,22 @@ cam_zoom_current = 1
 cam_zoom_target = cam_zoom_current
 ratio = 1
 
+//// Keep camera size from room editor
+if array_contains([
+    rmIntroSequence,
+    rmTitleScreen,
+    rmMainMenu,
+    rmMenuAdventureLogsScreen,
+    rmThanksForPlayingScreen,
+    // rmAdventureLogsScreen,
+    rmStartingCutscene,],
+    room
+) {
+    cam_width = camera_get_view_width(cam)
+    cam_height = camera_get_view_height(cam)
+}
+
+
 cam_zoom_area = noone
 
 ResizeCamera()
@@ -82,7 +98,7 @@ function adjust_view_size() {
 	cam_width = win_w / ratio
 	cam_height = win_h / ratio
     cam_width_base = cam_width
-	alarm[1] = 10
+	alarm[1] = 3
 }
 
 adjust_view_size()

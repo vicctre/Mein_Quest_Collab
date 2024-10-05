@@ -1,3 +1,4 @@
+
 // start showing messages if just added
 if !current_message and array_length(messages) {
     current_message = array_shift(messages)

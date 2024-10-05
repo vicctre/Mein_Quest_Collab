@@ -18,7 +18,7 @@ if (cam_zoom_area != noone) {
 //update zoom
 if (cam_zoom_current != cam_zoom_target) {
 	cam_zoom_current = lerp(cam_zoom_current, cam_zoom_target, 0.01);
-	if abs(cam_zoom_current - cam_zoom_target) < 0.01 {
+	if abs(cam_zoom_current - cam_zoom_target) < 0.003 {
 		cam_zoom_current = cam_zoom_target	
 	}
 	ResizeCamera();
