@@ -19,10 +19,10 @@ function Message(text) constructor {
 	yscale = h / sprite_get_height(sPopUp)
 
 	self.text = text
-	yst = window_get_height() + 100
-	yto = window_get_height() * 0.5 - h * 0.5
+	yst = display_get_gui_height() + 100
+	yto = display_get_gui_height() * 0.5 - h * 0.5
 	y = yst
-	x = window_get_width() * 0.5 - w * 0.5
+	x = display_get_gui_width() * 0.5 - w * 0.5
 	speed_ratio = 0.03
 	time = 120
 	ease_out = false
