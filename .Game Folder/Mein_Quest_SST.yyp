@@ -196,7 +196,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.1.160",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -485,6 +485,7 @@
     {"id":{"name":"BGM_MiniBoss","path":"sounds/BGM_MiniBoss/BGM_MiniBoss.yy",},},
     {"id":{"name":"BGM_Post_Battle","path":"sounds/BGM_Post_Battle/BGM_Post_Battle.yy",},},
     {"id":{"name":"BGM_Pre_Battle","path":"sounds/BGM_Pre_Battle/BGM_Pre_Battle.yy",},},
+    {"id":{"name":"BGM_SS_Awaken","path":"sounds/BGM_SS_Awaken/BGM_SS_Awaken.yy",},},
     {"id":{"name":"BGM_Thanks_for_playing","path":"sounds/BGM_Thanks_for_playing/BGM_Thanks_for_playing.yy",},},
     {"id":{"name":"BGM_Title_Screen","path":"sounds/BGM_Title_Screen/BGM_Title_Screen.yy",},},
     {"id":{"name":"SFX_Additional_HP","path":"sounds/SFX_Additional_HP/SFX_Additional_HP.yy",},},
