@@ -28,8 +28,10 @@ function Message(text) constructor {
 	ease_out = false
 	is_done = false
     sound_played = false
+    arrow_frame = 0
 
 	step = function() {
+        arrow_frame++
 		if !ease_out {
 			// y = approach2(y, yto, speed_ratio, 0.5)
             y = yto // appear on the screen instantly
@@ -55,7 +57,7 @@ function Message(text) constructor {
             x + padding, y + padding, text,
             c_white, c_black, 2,
             sep, text_max_width)
-        draw_sprite(sPopUpArrow, 0 , x + w - 40, y + h - 30) //PopUp Arrow in the bottom of the box
+        draw_sprite(sPopUpArrow, arrow_frame * 0.2, x + w - 40, y + h - 30) //PopUp Arrow in the bottom of the box
 		// debug text box
 		// draw_rectangle(x, y, x + w, y + h, true)
 	}
