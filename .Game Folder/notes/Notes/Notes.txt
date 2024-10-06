@@ -10,10 +10,10 @@ ToDo:
 Fixes
 ??? Notifications are still not centered on the screen and don’t appear from the bottom of the screen
 > there is an old inifinite cycling in collision
-
-
-
-> 1-2 part 4 dying before log breaking within checkpoint causes crash
-> 1-3 BOSS Rula intro cutscene still has full control to the player
-> Fix 2-1 wave stages backgrounds (they are too high for the first wave)
-> Fix GUI size (menus, Pause screen, HUD, enemies HP bars, etc.)
+	I might have found the line causing this, search for this comment:
+	//// Infinite cycle most probably is caused by this
+	To reproduce:
+	1. Make a room with Mein and log, Mein bbox_bottom is 1 pixel lower 
+		than log's bbox_top
+	2. Set log's speed to 0 and turn off Mein's gravity
+	3. Collide Mein into platform from side

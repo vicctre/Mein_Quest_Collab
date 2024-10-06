@@ -71,9 +71,9 @@ function move_coord_contact_obj(hsp, vsp, obj) {
 function thin_platform_check(hsp, vsp) {
 	var contact_thin = instance_place(x + hsp, y + vsp, oThinPlatform);
 	if (contact_thin == noone
-		|| contact_thin.bbox_top < bbox_bottom
+		|| contact_thin.bbox_top < bbox_bottom	//// Infinite cycle most probably is caused by this
 		|| place_meeting(x, y, contact_thin)
-		|| (contact_thin.object_index == oThinPlatform and key_down))
+		|| ((contact_thin.object_index == oThinPlatform) and key_down))
 		return noone;
 	return contact_thin;
 }

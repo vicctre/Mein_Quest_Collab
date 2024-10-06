@@ -31,7 +31,7 @@ if array_contains([
     rmMainMenu,
     rmMenuAdventureLogsScreen,
     rmThanksForPlayingScreen,
-    // rmAdventureLogsScreen,
+    rmAdventureLogsScreen,
     rmStartingCutscene,],
     room
 ) {
