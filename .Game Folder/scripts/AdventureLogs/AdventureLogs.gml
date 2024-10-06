@@ -68,7 +68,7 @@ adventure_logs = {
 		name: "Fleater",
 		sprite: sPage_Fleater, 
 		description: "Fleaters can be seen flying around, minding their own business. Not" 
-					+ " sure what his deal is, but he are always smiling constantly." 
+					+ " sure what his deal is, but he is always smiling . . ." 
 					+ " Should I be freaked out? What are they thinking? " 
 					+ " Maybe they are just silly guys. . ." 
 	},
