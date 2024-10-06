@@ -21,12 +21,17 @@ function player_move_coord_contact_obj(hsp, vsp, obj) {
 		var dy = lengthdir_y(1, dir)
 		var contact
 		// move in dir until bump contact
+		var max_dist = point_distance(0, 0, hsp, vsp)
 		while true {
 			contact = instance_place(x + dx, y + dy, obj)
 			contact_thin = thin_platform_check(dx, dy);
 			if contact == noone && contact_thin == noone {
 		        x += dx
 		        y += dy
+				max_dist--
+				if max_dist <= 0 {
+					return contact	
+				}
 			} else {
 				break
 			}
