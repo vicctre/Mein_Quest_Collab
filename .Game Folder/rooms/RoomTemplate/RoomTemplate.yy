@@ -23,8 +23,8 @@
   ],
   "name":"RoomTemplate",
   "parent":{
-    "name":"W1-1",
-    "path":"folders/Rooms/Stages/W1-1.yy",
+    "name":"Templates",
+    "path":"folders/Rooms/Stages/Templates.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

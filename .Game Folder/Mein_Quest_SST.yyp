@@ -62,6 +62,7 @@
     {"$GMFolder":"","%Name":"Cutscenes","folderPath":"folders/Rooms/Cutscenes.yy","name":"Cutscenes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Menus","folderPath":"folders/Rooms/Menus.yy","name":"Menus","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Stages","folderPath":"folders/Rooms/Stages.yy","name":"Stages","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Templates","folderPath":"folders/Rooms/Stages/Templates.yy","name":"Templates","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"W1-1","folderPath":"folders/Rooms/Stages/W1-1.yy","name":"W1-1","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"W1-2","folderPath":"folders/Rooms/Stages/W1-2.yy","name":"W1-2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"W1-3","folderPath":"folders/Rooms/Stages/W1-3.yy","name":"W1-3","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -196,7 +197,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.1.160",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -350,6 +351,7 @@
     {"id":{"name":"rmThanksForPlayingScreen","path":"rooms/rmThanksForPlayingScreen/rmThanksForPlayingScreen.yy",},},
     {"id":{"name":"rmTitleScreen","path":"rooms/rmTitleScreen/rmTitleScreen.yy",},},
     {"id":{"name":"rmVicLogo","path":"rooms/rmVicLogo/rmVicLogo.yy",},},
+    {"id":{"name":"RoomTemp_v2","path":"rooms/RoomTemp_v2/RoomTemp_v2.yy",},},
     {"id":{"name":"RoomTemplate","path":"rooms/RoomTemplate/RoomTemplate.yy",},},
     {"id":{"name":"RoomTester","path":"rooms/RoomTester/RoomTester.yy",},},
     {"id":{"name":"TestingGround","path":"rooms/TestingGround/TestingGround.yy",},},
@@ -931,6 +933,7 @@
     {"roomId":{"name":"rmMenuAdventureLogsScreen","path":"rooms/rmMenuAdventureLogsScreen/rmMenuAdventureLogsScreen.yy",},},
     {"roomId":{"name":"W2_1_part6","path":"rooms/W2_1_part6/W2_1_part6.yy",},},
     {"roomId":{"name":"rmStartingCutscene","path":"rooms/rmStartingCutscene/rmStartingCutscene.yy",},},
+    {"roomId":{"name":"RoomTemp_v2","path":"rooms/RoomTemp_v2/RoomTemp_v2.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
