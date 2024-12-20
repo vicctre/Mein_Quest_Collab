@@ -120,3 +120,5 @@ function DrawHintText() {
     draw_set_color(c_white)
     draw_set_font(fnt)
 }
+
+// surface_resize(application_surface, 1366, 768)
