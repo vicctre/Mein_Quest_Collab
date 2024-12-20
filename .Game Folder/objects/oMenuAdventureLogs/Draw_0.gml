@@ -34,7 +34,6 @@ if mode == "grid" {
 	}
 }
 
-DrawHintText()
 
 
 // middle of the screen
