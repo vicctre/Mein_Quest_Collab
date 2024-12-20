@@ -1,4 +1,10 @@
 
+if !window_has_focus() {
+	show_debug_message("Delay camera update due to window is not focused")
+	alarm[1] = 2
+	exit
+}
+
 // camera_set_view_size(cam, view_w, view_h)
 
 view_set_wport(0, win_w)

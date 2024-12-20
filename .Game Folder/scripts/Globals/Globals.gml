@@ -60,10 +60,10 @@ function game_reset_globals() {
 	if DEV {
 		global.coins = 50
 		global.player_invincible = false
-		global.skip_logos = true
+		// global.skip_logos = true
 		// global.dev_level_goto = rmThanksForPlayingScreen
 		// global.dev_level_goto = rmMenuAdventureLogsScreen
-         global.dev_level_goto = W1_3BOSS
+         //global.dev_level_goto = W1_3BOSS
         // global.dev_level_goto = W2_1_part5
 		// global.rula_start_state = "tongueChargeState"
 		// global.autoscroller_skip_log_intro = true

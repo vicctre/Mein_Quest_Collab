@@ -17,3 +17,8 @@ Fixes
 		than log's bbox_top
 	2. Set log's speed to 0 and turn off Mein's gravity
 	3. Collide Mein into platform from side
+
+> resolution in non-stage rooms:
+    - there are different view sizes - why is that?
+    - if we want perfect pixels we have to do the same thing as for stages - change view size
+    - try to figure out what is going on in oCamera room create and maybe move resolution handling to a separate object
