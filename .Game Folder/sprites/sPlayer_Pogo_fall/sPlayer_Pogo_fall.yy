@@ -33,8 +33,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Attacks",
-    "path":"folders/Sprites/Mein Sprites/Attacks.yy",
+    "name":"Unlockable attacks",
+    "path":"folders/Sprites/Mein Sprites/Attacks/Unlockable attacks.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
