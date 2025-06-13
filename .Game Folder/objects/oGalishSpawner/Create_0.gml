@@ -7,8 +7,3 @@ function trigger() {
     spawned = false
     spawn_timer.reset()
 }
-
-
-
-
-

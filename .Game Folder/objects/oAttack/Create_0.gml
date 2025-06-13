@@ -2,6 +2,7 @@
 // damage - define via creation args
 hit_instances_list = ds_list_create()
 new_instances_list = ds_list_create()
+frames = 4
 
 function perform() {
 	var num = instance_place_list(x, y, pCut, new_instances_list, false)
@@ -12,7 +13,8 @@ function perform() {
 			ds_list_add(hit_instances_list, inst)
 		}
 	}
-	if one_frame && !alarm[0] {
+    frames--
+	if !frames {
 		instance_destroy()
 		return;
 	}

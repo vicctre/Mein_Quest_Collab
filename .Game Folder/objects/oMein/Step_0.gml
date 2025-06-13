@@ -98,10 +98,8 @@ switch state {
 		} else {
 			vsp = 0
 		}
-        var test = false
 		if image_index >= attack_perform_frame and !attack_performed {
 			perform_attack(sAttack, image_xscale, 1)
-            test = true
 		}
 		if is_animation_end() {
 			state = PLAYERSTATE.FREE
