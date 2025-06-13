@@ -51,8 +51,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"Basic Functions",
-    "path":"folders/Sprites/Mein Sprites/Basic Functions.yy",
+    "name":"Movement",
+    "path":"folders/Sprites/Mein Sprites/Basic Functions/Movement.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

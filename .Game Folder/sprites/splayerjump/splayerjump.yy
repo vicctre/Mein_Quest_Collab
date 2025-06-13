@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Basic Functions",
-    "path":"folders/Sprites/Mein Sprites/Basic Functions.yy",
+    "name":"Jumping",
+    "path":"folders/Sprites/Mein Sprites/Basic Functions/Jumping.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
