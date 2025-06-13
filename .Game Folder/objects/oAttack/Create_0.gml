@@ -1,8 +1,10 @@
-
-// damage - define via creation args
+///// define via creation args
+// damage
+// auto_destroy
 hit_instances_list = ds_list_create()
 new_instances_list = ds_list_create()
 frames = 4
+auto_destroy = bool(auto_destroy)
 
 function perform() {
 	var num = instance_place_list(x, y, pCut, new_instances_list, false)
@@ -13,7 +15,7 @@ function perform() {
 			ds_list_add(hit_instances_list, inst)
 		}
 	}
-    frames--
+    frames -= auto_destroy
 	if !frames {
 		instance_destroy()
 		return;
