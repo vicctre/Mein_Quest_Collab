@@ -16,7 +16,10 @@ function set_hit(damage=0) {
 		hit_direction = sign(x-global.player.x);
 	}
     oEffects.emit_attack_contact(x, y)
+    self._set_hit()
 }
+
+function _set_hit() {}
 
 function draw_hit_flashing() {
 	if (flash > 0) {

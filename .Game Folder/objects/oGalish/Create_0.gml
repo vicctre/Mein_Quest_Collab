@@ -1,2 +1,20 @@
-event_inherited();
-deadSprite = sGenullDead;
+event_inherited()
+
+deadSprite = sGalish_D
+
+jump_height = 5 * 32
+trigger_range = 5 * 32
+grav = 1
+
+jump_sp = sqrt(grav * jump_height * 2)
+
+vsp = 0
+active = false
+pause_timer = make_timer(60)
+spawner = noone
+
+function _set_hit() {
+    if spawner {
+        spawner.trigger()
+    }
+}
