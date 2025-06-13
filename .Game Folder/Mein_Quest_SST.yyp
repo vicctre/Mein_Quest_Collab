@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"Mein_Quest_SST",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -38,6 +38,7 @@
     {"$GMFolder":"","%Name":"Chantie","folderPath":"folders/Objects/Enemies/Small Enemies/Chantie.yy","name":"Chantie","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fleater","folderPath":"folders/Objects/Enemies/Small Enemies/Fleater.yy","name":"Fleater","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Genull","folderPath":"folders/Objects/Enemies/Small Enemies/Genull.yy","name":"Genull","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Galish","folderPath":"folders/Objects/Enemies/Small Enemies/Galish.yy","name":"Galish","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Klawkin","folderPath":"folders/Objects/Enemies/Small Enemies/Klawkin.yy","name":"Klawkin","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Pinnik","folderPath":"folders/Objects/Enemies/Small Enemies/Pinnik.yy","name":"Pinnik","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Objects/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -191,6 +192,7 @@
     {"$GMFolder":"","%Name":"2-2","folderPath":"folders/Tile Sets/World 2/2-2.yy","name":"2-2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"Born2bSportyV2.ttf","CopyToMask":-1,"filePath":"datafiles","name":"Born2bSportyV2.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"default_commands.json","CopyToMask":3035426170322551022,"filePath":"datafiles/GM-EzConsole","name":"default_commands.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -200,7 +202,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -262,6 +264,7 @@
     {"id":{"name":"oFogController","path":"objects/oFogController/oFogController.yy",},},
     {"id":{"name":"oFogEffect","path":"objects/oFogEffect/oFogEffect.yy",},},
     {"id":{"name":"oGalish","path":"objects/oGalish/oGalish.yy",},},
+    {"id":{"name":"oGalishSpawner","path":"objects/oGalishSpawner/oGalishSpawner.yy",},},
     {"id":{"name":"oGenull","path":"objects/oGenull/oGenull.yy",},},
     {"id":{"name":"oGoal","path":"objects/oGoal/oGoal.yy",},},
     {"id":{"name":"oHealFizzle","path":"objects/oHealFizzle/oHealFizzle.yy",},},
