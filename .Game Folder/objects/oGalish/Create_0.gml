@@ -2,7 +2,6 @@ event_inherited()
 
 deadSprite = sGalish_D
 
-jump_height = 5 * 32
 trigger_range = 5 * 32
 grav = 1
 
