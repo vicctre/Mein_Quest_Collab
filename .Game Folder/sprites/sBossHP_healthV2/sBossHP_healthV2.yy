@@ -50,7 +50,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"v1",
+    "$GMSequence":"",
     "%Name":"sBossHP_healthV2",
     "autoRecord":true,
     "backdropHeight":768,

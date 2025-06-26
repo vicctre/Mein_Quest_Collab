@@ -2,10 +2,10 @@
   "$GMOperaGXOptions":"",
   "%Name":"operagx",
   "ConfigValues":{
-    "Dev":{
+    "Demo":{
       "option_operagx_game_name":"Mein_Quest_SST",
     },
-    "Demo":{
+    "Dev":{
       "option_operagx_game_name":"Mein_Quest_SST",
     },
   },

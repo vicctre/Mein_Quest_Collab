@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"v1",
+  "$GMSequence":"",
   "%Name":"seqUpdate_trailer_V1",
   "autoRecord":true,
   "backdropHeight":768,

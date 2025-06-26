@@ -113,7 +113,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"v1",
+    "$GMSequence":"",
     "%Name":"sCheckpointIndicator",
     "autoRecord":true,
     "backdropHeight":768,

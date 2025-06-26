@@ -80,7 +80,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"v1",
+    "$GMSequence":"",
     "%Name":"sSpikes_Ani",
     "autoRecord":true,
     "backdropHeight":768,

@@ -54,7 +54,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"v1",
+    "$GMSequence":"",
     "%Name":"Gem_01_glow",
     "autoRecord":true,
     "backdropHeight":768,

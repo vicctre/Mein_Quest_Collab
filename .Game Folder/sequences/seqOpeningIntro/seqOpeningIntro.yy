@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"v1",
+  "$GMSequence":"",
   "%Name":"seqOpeningIntro",
   "autoRecord":true,
   "backdropHeight":768,

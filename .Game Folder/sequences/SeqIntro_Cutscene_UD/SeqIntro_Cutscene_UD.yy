@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"v1",
+  "$GMSequence":"",
   "%Name":"SeqIntro_Cutscene_UD",
   "autoRecord":true,
   "backdropHeight":768,

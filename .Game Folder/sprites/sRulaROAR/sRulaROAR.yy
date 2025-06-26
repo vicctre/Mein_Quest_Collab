@@ -71,7 +71,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"v1",
+    "$GMSequence":"",
     "%Name":"sRulaROAR",
     "autoRecord":true,
     "backdropHeight":768,

@@ -76,7 +76,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"v1",
+    "$GMSequence":"",
     "%Name":"sMein_Victory02",
     "autoRecord":true,
     "backdropHeight":768,

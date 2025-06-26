@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"v1",
+  "$GMSequence":"",
   "%Name":"seqLogAutoscrollerStart_og",
   "autoRecord":true,
   "backdropHeight":768,

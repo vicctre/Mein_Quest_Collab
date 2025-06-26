@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"v1",
+  "$GMSequence":"",
   "%Name":"Tufull_Intro",
   "autoRecord":true,
   "backdropHeight":768,

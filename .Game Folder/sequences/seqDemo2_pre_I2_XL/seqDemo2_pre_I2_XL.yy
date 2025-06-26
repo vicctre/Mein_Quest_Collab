@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"v1",
+  "$GMSequence":"",
   "%Name":"seqDemo2_pre_I2_XL",
   "autoRecord":true,
   "backdropHeight":768,
