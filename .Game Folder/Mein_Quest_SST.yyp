@@ -39,6 +39,7 @@
     {"$GMFolder":"","%Name":"Fleater","folderPath":"folders/Objects/Enemies/Small Enemies/Fleater.yy","name":"Fleater","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Galish","folderPath":"folders/Objects/Enemies/Small Enemies/Galish.yy","name":"Galish","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Genull","folderPath":"folders/Objects/Enemies/Small Enemies/Genull.yy","name":"Genull","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Molli","folderPath":"folders/Objects/Enemies/Small Enemies/Molli.yy","name":"Molli","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Klawkin","folderPath":"folders/Objects/Enemies/Small Enemies/Klawkin.yy","name":"Klawkin","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Pinnik","folderPath":"folders/Objects/Enemies/Small Enemies/Pinnik.yy","name":"Pinnik","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Objects/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -202,7 +203,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -282,6 +283,7 @@
     {"id":{"name":"oMenuOptions","path":"objects/oMenuOptions/oMenuOptions.yy",},},
     {"id":{"name":"oMenuPause","path":"objects/oMenuPause/oMenuPause.yy",},},
     {"id":{"name":"oMenuStageSelect","path":"objects/oMenuStageSelect/oMenuStageSelect.yy",},},
+    {"id":{"name":"oMolli","path":"objects/oMolli/oMolli.yy",},},
     {"id":{"name":"oMouseHider","path":"objects/oMouseHider/oMouseHider.yy",},},
     {"id":{"name":"oMusic","path":"objects/oMusic/oMusic.yy",},},
     {"id":{"name":"oPause","path":"objects/oPause/oPause.yy",},},
