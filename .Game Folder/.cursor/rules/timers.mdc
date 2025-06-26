@@ -1,0 +1,19 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Create timer instances with function make_timer from [utils.gml](mdc:scripts/utils/utils.gml).
+Typical usage example:
+
+// Create event
+attack_timer = make_timer(60)
+
+// Step event
+if !attack_timer.update() and is_enemy_nearby {
+    Attack()
+    attack_timer.reset()
+}
+
+Notes:
+- use timers as flags when possible. In the example above instead of adding a bool flag is_ready_to_attack, you rather simply check if attack_timer is still running.

@@ -1,0 +1,13 @@
+---
+description: 
+globs: *Create_0.gml
+alwaysApply: false
+---
+This document describes how to use GameMaker object Create event.
+- create event is akin to object constructor
+- declare all the needed parameters like speed, damage, hp, money, timers, complex state instances, animation parameters
+- declare all instance-bound methods
+
+function SetSpeed(sp) {...}
+function Attack(target) {...}
+function Destroy() {...}

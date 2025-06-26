@@ -1,0 +1,15 @@
+---
+description: 
+globs: *Step_0.gml,*Step_1.gml,*Step_2.gml
+alwaysApply: false
+---
+This document describes how to use GameMaker object Step events.
+- is executed every game frame
+- all the dynamic logic for objects happens here: movement, attacking, collision resolving, complex ai behaviour, animation control (not animation drawing)
+- uses methods defined in Create event for changing instance's state
+- don't define any functions here
+- there are 3 subtypes of Step event: 
+    - Step_0 is usual step event
+    - Step_1 is begin step event, executed before Step_0
+    - Step_2 is end step event, executed after Step_0
+    - So overall execution order of step events is: Step_1 -> Step_0 -> Step_2
