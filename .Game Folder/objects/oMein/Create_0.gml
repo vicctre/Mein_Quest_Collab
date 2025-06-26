@@ -545,6 +545,16 @@ function checkEnterDoor() {
 	}
 }
 
+function check_zap_platform() {
+	var zap_platform = instance_place(x+1, y, oZapPlatform)
+    if !zap_platform {zap_platform = instance_place(x-1, y, oZapPlatform)}
+    if !zap_platform {zap_platform = instance_place(x, y+1, oZapPlatform)}
+    if !zap_platform {zap_platform = instance_place(x, y-1, oZapPlatform)}
+	if zap_platform and zap_platform.IsZap() {
+        Hit(zap_platform)
+    }
+}
+
 function setHspControl(value) {
 	is_hsp_control_on = value
 }

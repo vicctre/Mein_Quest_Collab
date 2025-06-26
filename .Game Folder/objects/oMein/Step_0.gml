@@ -241,6 +241,7 @@ final_hsp = finalizeHsp()
 if abs(final_hsp) or abs(vsp)
 	player_move_coord_contact_obj(final_hsp, vsp, wall_obj)
 
+check_zap_platform()
 
 if global.camera_solid_bounds_on
 		// without this player will teleport to the beginning

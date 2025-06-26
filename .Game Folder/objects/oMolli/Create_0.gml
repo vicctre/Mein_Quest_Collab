@@ -1,5 +1,5 @@
 event_inherited()
-deadSprite = sKlawkin_Dead
+deadSprite = sMolli_D
 
 wanderState = {
     id: id,
@@ -14,72 +14,68 @@ wanderState = {
                 or !collision_point(check_ground_x, id.bbox_bottom + 1,
                                     WALLPARENT, false, false) {
             dir = -dir
+            id.image_xscale = dir
         }
     },
 	onExit: function() {
 
     },
 	onEnter: function() {
-        id.sprite_index = sKlawkin
+        id.sprite_index = sMolli
         attack_cooldown_timer.reset()
     },
 	checkChange: function() {
         if attack_cooldown_timer.update() {
             return undefined
         }
-        if id.attackUpState.checkTriggered() {
-            return id.attackUpState
-        }
-        if id.attackSidesState.checkTriggered() {
-            return id.attackSidesState
+        if id.attackState.checkTriggered() {
+            return id.attackState
         }
         return undefined
     },
-}
-
-
-function attack_step(state) {
-    image_speed = 1
-    if isOnFrame(state.charge_pause_frame) and state.charge_pause_timer.update() {
-        image_index = state.charge_pause_frame
-        image_speed = 0
-    }
-    if isOnFrame(state.attack_frame) {
-        state.attack()
-        audio_play_sound(SFX_Pinch, 3, false)
-    }
-    if isAnimationEnd() {
-        state.finished = true
-    }
 }
 
 attackState = {
     id: id,
     trigger_dist: 128, //distance that activates horizontal attack
     finished: false,
-	attack_relx: 26,
-	attack_width: 30, //30
+	attack_relx: -10,
+    attack_rely: -10,
+	attack_width: 60, //30
 	attack_height: 40,//40
-    attack_frame: 6,
-    charge_pause_timer: make_timer(12),
-    charge_pause_frame: 2,
 
     checkTriggered: function() {
         return inst_dist(global.player) < self.trigger_dist
     },
     attack: function() {
-        create_enemy_attack(id.x+attack_relx, id.y, attack_width, attack_height)
-        
+        with create_enemy_attack(
+            id.x+attack_relx*id.image_xscale, id.y+attack_rely,
+            attack_width, attack_height) {
+            alarm[0] = 10
+        }
+        with id {
+            var zap_platform = instance_place(x, y+1, oZapPlatform)
+            if zap_platform != noone {
+                zap_platform.Zap()
+            }
+        }
     },
 	step: function() {
-		id.attack_step(self)
+        with id {
+            if isAnimationEnd() {
+                if sprite_index == sMolli_Attack_Prep {
+                    other.attack()
+                    sprite_index = sMolli_Attack
+                } else {
+                    other.finished = true
+                }
+            }
+        }
     },
 	onExit: function() {},
 	onEnter: function() {
         finished = false
-        id.image_index = 0
-        id.sprite_index = sKlawkin_Attack
-		charge_pause_timer.reset()
+        id.sprite_index = sMolli_Attack_Prep
     },
 	checkChange: function() {
         return finished ? id.wanderState : undefined
