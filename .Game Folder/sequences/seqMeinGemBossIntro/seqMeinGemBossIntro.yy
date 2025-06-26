@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seqMeinGemBossIntro",
   "autoRecord":true,
   "backdropHeight":768,

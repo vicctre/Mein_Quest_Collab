@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seqSS_Rebirth",
   "autoRecord":true,
   "backdropHeight":768,

@@ -53,7 +53,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Mein_W1_2Chop_strip22",
     "autoRecord":true,
     "backdropHeight":768,

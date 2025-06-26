@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seqLogEnd",
   "autoRecord":true,
   "backdropHeight":768,

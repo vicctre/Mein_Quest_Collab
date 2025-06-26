@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seqDNSLogo",
   "autoRecord":true,
   "backdropHeight":768,

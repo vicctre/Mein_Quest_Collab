@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"Mein_Quest_SST",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -192,6 +192,7 @@
     {"$GMFolder":"","%Name":"2-2","folderPath":"folders/Tile Sets/World 2/2-2.yy","name":"2-2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"Born2bSportyV2.ttf","CopyToMask":-1,"filePath":"datafiles","name":"Born2bSportyV2.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"default_commands.json","CopyToMask":3035426170322551022,"filePath":"datafiles/GM-EzConsole","name":"default_commands.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},

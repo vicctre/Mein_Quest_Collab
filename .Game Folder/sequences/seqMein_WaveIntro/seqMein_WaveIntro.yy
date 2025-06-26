@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seqMein_WaveIntro",
   "autoRecord":true,
   "backdropHeight":768,

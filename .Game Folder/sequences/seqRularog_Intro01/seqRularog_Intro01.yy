@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seqRularog_Intro01",
   "autoRecord":true,
   "backdropHeight":768,

@@ -32,7 +32,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"SS_Temple_Intro_Cutscene",
     "autoRecord":true,
     "backdropHeight":768,

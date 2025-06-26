@@ -53,7 +53,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Planet_Eldoon",
     "autoRecord":true,
     "backdropHeight":768,

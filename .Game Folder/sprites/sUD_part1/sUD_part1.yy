@@ -85,7 +85,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"sUD_part1",
     "autoRecord":true,
     "backdropHeight":768,

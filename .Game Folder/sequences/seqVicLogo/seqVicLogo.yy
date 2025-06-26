@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seqVicLogo",
   "autoRecord":true,
   "backdropHeight":768,

@@ -37,7 +37,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"sD2_Temple_inside_Intro_v2",
     "autoRecord":true,
     "backdropHeight":768,

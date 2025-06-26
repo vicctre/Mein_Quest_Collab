@@ -57,7 +57,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"sTuffull_ROAR",
     "autoRecord":true,
     "backdropHeight":768,

@@ -36,7 +36,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"MEIN_HP_FINAL_strip5",
     "autoRecord":true,
     "backdropHeight":768,
