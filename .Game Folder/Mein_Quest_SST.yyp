@@ -39,8 +39,8 @@
     {"$GMFolder":"","%Name":"Fleater","folderPath":"folders/Objects/Enemies/Small Enemies/Fleater.yy","name":"Fleater","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Galish","folderPath":"folders/Objects/Enemies/Small Enemies/Galish.yy","name":"Galish","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Genull","folderPath":"folders/Objects/Enemies/Small Enemies/Genull.yy","name":"Genull","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Molli","folderPath":"folders/Objects/Enemies/Small Enemies/Molli.yy","name":"Molli","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Klawkin","folderPath":"folders/Objects/Enemies/Small Enemies/Klawkin.yy","name":"Klawkin","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Molli","folderPath":"folders/Objects/Enemies/Small Enemies/Molli.yy","name":"Molli","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Pinnik","folderPath":"folders/Objects/Enemies/Small Enemies/Pinnik.yy","name":"Pinnik","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Objects/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"INGAME_Objects","folderPath":"folders/Objects/INGAME_Objects.yy","name":"INGAME_Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -203,7 +203,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.0.190",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"Mein_Quest_SST",
   "resources":[
