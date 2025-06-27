@@ -66,6 +66,7 @@
     {"name":"inst_6DBE0E57","path":"rooms/W2_2_part2/W2_2_part2.yy",},
     {"name":"inst_1FC6144A","path":"rooms/W2_2_part2/W2_2_part2.yy",},
     {"name":"inst_70EC6C29","path":"rooms/W2_2_part2/W2_2_part2.yy",},
+    {"name":"inst_ED3B4BC","path":"rooms/W2_2_part2/W2_2_part2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -184,6 +185,7 @@
     {"$GMRInstanceLayer":"","%Name":"Enemies","depth":200,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_1FC6144A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1FC6144A","objectId":{"name":"oKlawkin","path":"objects/oKlawkin/oKlawkin.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":424.0,"y":247.0,},
         {"$GMRInstance":"v2","%Name":"inst_70EC6C29","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_70EC6C29","objectId":{"name":"oChantie","path":"objects/oChantie/oChantie.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":514.0,"y":211.0,},
+        {"$GMRInstance":"v2","%Name":"inst_ED3B4BC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_ED3B4BC","objectId":{"name":"oChantie","path":"objects/oChantie/oChantie.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1568.0,"y":144.0,},
       ],"layers":[],"name":"Enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_22B9B070_3_1","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_22B9B070_3_1","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sKlawkin","path":"sprites/sKlawkin/sKlawkin.yy",},"x":426.0,"y":247.0,},
