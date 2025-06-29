@@ -43,14 +43,16 @@ attackState = {
     hitbox_shift_y: -10,
 	hitbox_width: 60, //30
 	hitbox_height: 40,//40
+    startup_timer: make_timer(60),
+    attack_timer: make_timer(60),
 
     checkTriggered: function() {
         return inst_dist(global.player) < self.trigger_dist
     },
     attack: function() {
         with create_enemy_attack(
-            id.x+hitbox_shift_x*id.image_xscale, id.y+hitbox_shift_y,
-            hitbox_width, hitbox_height) {
+                id.x+hitbox_shift_x*id.image_xscale, id.y+hitbox_shift_y,
+                hitbox_width, hitbox_height) {
             alarm[0] = 10
         }
         with id {
@@ -61,19 +63,19 @@ attackState = {
         }
     },
 	step: function() {
-        with id {
-            if isAnimationEnd() {
-                if sprite_index == sMolli_Attack_Prep {
-                    other.attack()
-                    sprite_index = sMolli_Attack
-                } else {
-                    other.finished = true
-                }
-            }
+        if !startup_timer.update() {
+            attack()
+            sprite_index = sMolli_Attack
+        } else { return; }
+        if !attack_timer.update() {
+            finished = true
+            return;
         }
     },
 	onExit: function() {},
 	onEnter: function() {
+        startup_timer.reset()
+        attack_timer.reset()
         finished = false
         id.sprite_index = sMolli_Attack_Prep
     },
