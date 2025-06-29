@@ -39,18 +39,18 @@ attackState = {
     id: id,
     trigger_dist: 128, //distance that activates horizontal attack
     finished: false,
-	attack_relx: -10,
-    attack_rely: -10,
-	attack_width: 60, //30
-	attack_height: 40,//40
+	hitbox_shift_x: -10,
+    hitbox_shift_y: -10,
+	hitbox_width: 60, //30
+	hitbox_height: 40,//40
 
     checkTriggered: function() {
         return inst_dist(global.player) < self.trigger_dist
     },
     attack: function() {
         with create_enemy_attack(
-            id.x+attack_relx*id.image_xscale, id.y+attack_rely,
-            attack_width, attack_height) {
+            id.x+hitbox_shift_x*id.image_xscale, id.y+hitbox_shift_y,
+            hitbox_width, hitbox_height) {
             alarm[0] = 10
         }
         with id {
