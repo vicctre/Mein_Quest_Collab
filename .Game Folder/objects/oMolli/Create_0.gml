@@ -3,9 +3,9 @@ deadSprite = sMolli_D
 
 wanderState = {
     id: id,
-    sp: 0.5,
+    sp: 0.3,
     dir: 1,
-    attack_cooldown_timer: make_timer(90), 
+    attack_cooldown_timer: make_timer(120),//Molli attack cooldown 
 
 	step: function() {
         id.move(sp * dir, 0)
@@ -39,7 +39,7 @@ attackState = {
     id: id,
     trigger_dist: 128, //distance that activates horizontal attack
     finished: false,
-	hitbox_shift_x: -10,
+	hitbox_shift_x: -0,
     hitbox_shift_y: -10,
 	hitbox_width: 60, //30
 	hitbox_height: 40,//40

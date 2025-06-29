@@ -1,5 +1,5 @@
 
-zap_timer = make_timer(120, 0) // Timer for zap state duration
+zap_timer = make_timer(70, 0) // Timer for zap state duration
 adjacent_positions = [
     {x: x + 1, y: y},     // Right
     {x: x - 1, y: y},     // Left  
