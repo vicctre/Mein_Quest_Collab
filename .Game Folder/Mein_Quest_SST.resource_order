@@ -348,6 +348,7 @@
     {"name":"sAL_HUD","order":7,"path":"sprites/sAL_HUD/sAL_HUD.yy",},
     {"name":"sAL_Icon","order":3,"path":"sprites/sAL_Icon/sAL_Icon.yy",},
     {"name":"sApploonSpawner","order":1,"path":"sprites/sApploonSpawner/sApploonSpawner.yy",},
+    {"name":"sAttack_1","order":6,"path":"sprites/sAttack_1/sAttack_1.yy",},
     {"name":"sAttack","order":1,"path":"sprites/sAttack/sAttack.yy",},
     {"name":"sAttackCirlce","order":2,"path":"sprites/sAttackCirlce/sAttackCirlce.yy",},
     {"name":"sBG7","order":1,"path":"sprites/sBG7/sBG7.yy",},

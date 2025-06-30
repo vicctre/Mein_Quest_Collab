@@ -43,8 +43,8 @@ attackState = {
     hitbox_shift_y: -10,
 	hitbox_width: 60, //30
 	hitbox_height: 40,//40
-    startup_timer: make_timer(60),
-    attack_timer: make_timer(60),
+    startup_timer: make_timer(90),
+    attack_timer: make_timer(120),
 
     checkTriggered: function() {
         return inst_dist(global.player) < self.trigger_dist
@@ -65,7 +65,7 @@ attackState = {
 	step: function() {
         if !startup_timer.update() {
             attack()
-            sprite_index = sMolli_Attack
+            sprite_index = sMolli_Attack_Prep
         } else { return; }
         if !attack_timer.update() {
             finished = true
@@ -77,7 +77,7 @@ attackState = {
         startup_timer.reset()
         attack_timer.reset()
         finished = false
-        id.sprite_index = sMolli_Attack_Prep
+        id.sprite_index = sMolli_Attack
     },
 	checkChange: function() {
         return finished ? id.wanderState : undefined
