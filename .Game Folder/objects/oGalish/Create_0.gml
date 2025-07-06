@@ -3,7 +3,7 @@ event_inherited()
 deadSprite = sGalish_D
 
 trigger_range = 5 * 32
-grav = 0.2
+grav = 0.12
 
 jump_sp = sqrt(grav * jump_height * 2)
 
