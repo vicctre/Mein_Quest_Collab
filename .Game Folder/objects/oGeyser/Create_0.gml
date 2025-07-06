@@ -1,7 +1,7 @@
 
-pause_timer = make_timer(120)
-prepare_timer = make_timer(60)
-geyser_timer = make_timer(120)
+pause_timer = make_timer(pause_time)
+prepare_timer = make_timer(prepare_time)
+geyser_timer = make_timer(geyser_time)
 
 ground_sprite = sGeyser_Ground
 yscale_speed = 0.15
