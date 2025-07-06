@@ -28,7 +28,7 @@
   ],
   "name":"sGeyser_Ground",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"Geyser",
     "path":"folders/Sprites/Hazards/World 2/Geyser.yy",
@@ -83,7 +83,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":16,
-    "yorigin":5,
+    "yorigin":10,
   },
   "swatchColours":null,
   "swfPrecision":2.525,
