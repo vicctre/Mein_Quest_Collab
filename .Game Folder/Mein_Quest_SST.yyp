@@ -203,7 +203,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.0.190",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -610,6 +610,7 @@
     {"id":{"name":"sApploon_D","path":"sprites/sApploon_D/sApploon_D.yy",},},
     {"id":{"name":"sApploon","path":"sprites/sApploon/sApploon.yy",},},
     {"id":{"name":"sApploonSpawner","path":"sprites/sApploonSpawner/sApploonSpawner.yy",},},
+    {"id":{"name":"sAttack_1","path":"sprites/sAttack_1/sAttack_1.yy",},},
     {"id":{"name":"sAttack_Hitbox01","path":"sprites/sAttack_Hitbox01/sAttack_Hitbox01.yy",},},
     {"id":{"name":"sAttack","path":"sprites/sAttack/sAttack.yy",},},
     {"id":{"name":"sAttackCirlce","path":"sprites/sAttackCirlce/sAttackCirlce.yy",},},

@@ -1,13 +1,18 @@
 {
   "$GMSprite":"",
-  "%Name":"sAttack",
+  "%Name":"sAttack_1",
   "bboxMode":0,
-  "bbox_bottom":57,
-  "bbox_left":29,
+  "bbox_bottom":61,
+  "bbox_left":21,
   "bbox_right":83,
-  "bbox_top":14,
+  "bbox_top":8,
   "collisionKind":1,
   "collisionTolerance":0,
+  "ConfigValues":{
+    "Dev":{
+      "textureGroupId":"{ \"name\":\"Default\", \"path\":\"texturegroups/Default\" }",
+    },
+  },
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
@@ -19,10 +24,10 @@
   "height":84,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"247bbefc-ee45-4e98-8db2-a88d0cc1966a","blendMode":0,"displayName":"Hitbox","isLocked":false,"name":"247bbefc-ee45-4e98-8db2-a88d0cc1966a","opacity":60.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"4f76c8eb-a033-4401-ad1e-b412f9910e8f","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"4f76c8eb-a033-4401-ad1e-b412f9910e8f","opacity":60.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"33dc6bd4-db5d-4fd7-a4ba-0e8299b2a30d","blendMode":0,"displayName":"default","isLocked":false,"name":"33dc6bd4-db5d-4fd7-a4ba-0e8299b2a30d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
-  "name":"sAttack",
+  "name":"sAttack_1",
   "nineSlice":null,
   "origin":9,
   "parent":{
@@ -72,14 +77,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3c52140a-04fa-4b07-bd56-0246c4142ae8","path":"sprites/sAttack/sAttack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3c52140a-04fa-4b07-bd56-0246c4142ae8","path":"sprites/sAttack_1/sAttack_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"16654fd3-ed73-4dd0-83c5-a75fe965d5d6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":38,
-    "yorigin":42,
+    "xorigin":36,
+    "yorigin":40,
   },
   "swatchColours":null,
   "swfPrecision":2.525,
