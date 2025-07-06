@@ -65,7 +65,7 @@ attackState = {
 	step: function() {
         if !startup_timer.update() {
             attack()
-            sprite_index = sMolli_Attack
+            id.sprite_index = sMolli_Attack
         } else { return; }
         if !attack_timer.update() {
             finished = true
