@@ -43,11 +43,4 @@ function _StageExitCallback() {
 }
 
 oEventSystem.Subscribe(Events.stage_exit, id, _StageExitCallback)
-
-
-
-
-
-
-
-
+oEventSystem.Subscribe(Events.stage_win, id, _StageExitCallback)
