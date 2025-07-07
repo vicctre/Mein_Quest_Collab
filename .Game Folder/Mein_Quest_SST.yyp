@@ -43,8 +43,8 @@
     {"$GMFolder":"","%Name":"Molli","folderPath":"folders/Objects/Enemies/Small Enemies/Molli.yy","name":"Molli","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Pinnik","folderPath":"folders/Objects/Enemies/Small Enemies/Pinnik.yy","name":"Pinnik","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Objects/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Hazards","folderPath":"folders/Objects/INGAME_Objects/Hazards.yy","name":"Hazards","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"INGAME_Objects","folderPath":"folders/Objects/INGAME_Objects.yy","name":"INGAME_Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Hazards","folderPath":"folders/Objects/INGAME_Objects/Hazards.yy","name":"Hazards","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Universal","folderPath":"folders/Objects/INGAME_Objects/Universal.yy","name":"Universal","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"W2_1","folderPath":"folders/Objects/INGAME_Objects/W2_1.yy","name":"W2_1","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Items","folderPath":"folders/Objects/Items.yy","name":"Items","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -204,7 +204,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.0.190",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"Mein_Quest_SST",
   "resources":[

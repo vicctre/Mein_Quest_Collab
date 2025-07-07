@@ -5,7 +5,7 @@ wanderState = {
     id: id,
     sp: 0.3,
     dir: 1,
-    attack_cooldown_timer: make_timer(120),//Molli attack cooldown 
+    attack_cooldown_timer: make_timer(120),//Molli attack cooldown
 
 	step: function() {
         id.move(sp * dir, 0)
@@ -77,7 +77,7 @@ attackState = {
         startup_timer.reset()
         attack_timer.reset()
         finished = false
-        id.sprite_index = sMolli_Attack
+        id.sprite_index = sMolli_Attack_Prep
     },
 	checkChange: function() {
         return finished ? id.wanderState : undefined

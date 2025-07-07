@@ -4,4 +4,4 @@ prepare_timer = make_timer(prepare_time)
 geyser_timer = make_timer(geyser_time)
 
 ground_sprite = sGeyser_Ground
-yscale_speed = 0.15
+yscale_speed = 0.05
