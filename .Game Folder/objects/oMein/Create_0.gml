@@ -45,8 +45,8 @@ rotation = 0
 
 throw_with_control_conf = {
     hsp_max: 2,
-    height: 5 * 32,
-    restrict_hsp_timer: make_timer(30),
+    // height: 5 * 32,
+    // restrict_hsp_timer: make_timer(30),
     throw_sp: 6,
     hsp_decel: 0.2
     // throw_hsp: 6,
@@ -55,7 +55,7 @@ throw_with_control_conf = {
 
 function throw_with_control(dir) {
     var conf = throw_with_control_conf
-    conf.restrict_hsp_timer.reset()
+    // conf.restrict_hsp_timer.reset()
     setHspControl(false)
     state = PLAYERSTATE.THROWED_WITH_CONTROL
     hsp = lengthdir_x(conf.throw_sp, dir)
