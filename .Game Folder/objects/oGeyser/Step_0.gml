@@ -1,4 +1,8 @@
 
+if startup_timer.update() {
+	exit
+}
+
 switch sprite_index {
     case sGeyser_Ground:
         if !pause_timer.update() {
