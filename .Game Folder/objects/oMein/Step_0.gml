@@ -220,11 +220,14 @@ switch state {
         } else {
             setHspControl(true)
         }
+		
+		image_draw_angle += throw_with_control_conf.rot_sp
 
         if vsp >= 0 and abs(hsp) < throw_with_control_conf.hsp_max {
             setHspControl(true)
             hsp_max = hsp_max_base
             state = PLAYERSTATE.FREE
+			image_draw_angle = 0
         }
         break
     }

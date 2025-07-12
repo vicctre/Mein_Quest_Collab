@@ -48,7 +48,9 @@ throw_with_control_conf = {
     // height: 5 * 32,
     // restrict_hsp_timer: make_timer(30),
     throw_sp: 11,
-    hsp_decel: 0.2
+    hsp_decel: 0.2,
+	spr: sPlayerDead,
+	rot_sp: 6,
     // throw_hsp: 6,
     // throw_vsp: -7,
 }
@@ -66,6 +68,7 @@ function throw_with_control(dir) {
         vsp = lengthdir_y(conf.throw_sp, dir)
     }
     hsp_max = conf.hsp_max
+	sprite_index = conf.spr
 }
 
 function choose_idle_animation() {
