@@ -214,6 +214,20 @@ switch state {
 		}
 		break
 	}
+    case PLAYERSTATE.THROWED_WITH_CONTROL: {
+        if abs(hsp) > throw_with_control_conf.hsp_max {
+            hsp = approach(hsp, 0, throw_with_control_conf.hsp_decel)
+        } else {
+            setHspControl(true)
+        }
+
+        if vsp >= 0 and abs(hsp) < throw_with_control_conf.hsp_max {
+            setHspControl(true)
+            hsp_max = hsp_max_base
+            state = PLAYERSTATE.FREE
+        }
+        break
+    }
 	case PLAYERSTATE.BOSS_END_SEQUENCE: {
         if down_free {
             break

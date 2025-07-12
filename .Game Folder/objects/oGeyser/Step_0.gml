@@ -19,6 +19,9 @@ switch sprite_index {
             sprite_index = sGeyser_End
             geyser_timer.reset()
         }
+        with instance_place(x, y, global.player) {
+            global.player.throw_with_control(other.image_angle + 90)
+        }
     break
     case sGeyser_End:
         if is_animation_end() {

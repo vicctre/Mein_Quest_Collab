@@ -34,7 +34,12 @@ hp_shake = new Shaker()
 
 // Draw adv logs
 // Take needed data from stage manager
-stage_logs = oStageManager.GetStageData(room).adv_logs
+stage_logs = {}
+var stage_data = oStageManager.GetStageData(room)
+if stage_data != undefined {
+	stage_logs = stage_data.adv_logs
+}
+
 stage_log_names = oStageManager.GetStageAdvLogNames(room)
 stage_logs_num = array_length(stage_log_names)
 

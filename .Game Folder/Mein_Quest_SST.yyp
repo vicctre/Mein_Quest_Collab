@@ -204,7 +204,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -328,6 +328,7 @@
     {"id":{"name":"oSpiritBytePosition","path":"objects/oSpiritBytePosition/oSpiritBytePosition.yy",},},
     {"id":{"name":"oStageManager","path":"objects/oStageManager/oStageManager.yy",},},
     {"id":{"name":"oStartingCutscene","path":"objects/oStartingCutscene/oStartingCutscene.yy",},},
+    {"id":{"name":"oTestingGround","path":"objects/oTestingGround/oTestingGround.yy",},},
     {"id":{"name":"oThanksForPlayingScreen","path":"objects/oThanksForPlayingScreen/oThanksForPlayingScreen.yy",},},
     {"id":{"name":"oThinPlatform","path":"objects/oThinPlatform/oThinPlatform.yy",},},
     {"id":{"name":"oTitleScreen","path":"objects/oTitleScreen/oTitleScreen.yy",},},

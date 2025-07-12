@@ -8,6 +8,9 @@ autoscroller_skip_log_intro = false
 bgr1_xoffset = 0
 bgr2_xoffset = 0
 bgr3_xoffset = 0
+bgr1_yoffset = 0
+bgr2_yoffset = 0
+bgr3_yoffset = 0
 bgr1_parallax = 0.5
 bgr2_parallax = 0.7
 bgr3_parallax = 0.9
@@ -65,7 +68,8 @@ function game_reset_globals() {
 		// global.dev_level_goto = rmMenuAdventureLogsScreen
          //global.dev_level_goto = W1_3BOSS
         // global.dev_level_goto = W2_1_part5
-        global.dev_level_goto = W2_2_part3
+        global.dev_level_goto = TestingGround
+        // global.dev_level_goto = W2_2_part3
 		// global.rula_start_state = "tongueChargeState"
 		// global.autoscroller_skip_log_intro = true
         // audio_set_master_gain(0, 0)

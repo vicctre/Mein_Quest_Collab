@@ -13,6 +13,7 @@ enum PLAYERSTATE {
 	ENTER_DOOR,
 	GRABBED,
 	THROWED,
+    THROWED_WITH_CONTROL,
     BOSS_END_SEQUENCE,
 }
 
@@ -24,7 +25,8 @@ is_hsp_control_on = true // whether common hsp control code should be run
 
 /// main parameters
 // hp - see global.player_hp
-hsp_max = 2.5
+hsp_max_base = 2.5
+hsp_max = hsp_max_base
 vsp_max = 6
 acc = global.player_accel
 decel = global.player_decel
@@ -40,6 +42,27 @@ move_h = 0
 idle_time = 0
 idle_delay = 400 //time before idle animation plays
 rotation = 0
+
+throw_with_control_conf = {
+    hsp_max: 2,
+    height: 5 * 32,
+    restrict_hsp_timer: make_timer(30),
+    throw_sp: 6,
+    hsp_decel: 0.2
+    // throw_hsp: 6,
+    // throw_vsp: -7,
+}
+
+function throw_with_control(dir) {
+    var conf = throw_with_control_conf
+    conf.restrict_hsp_timer.reset()
+    setHspControl(false)
+    state = PLAYERSTATE.THROWED_WITH_CONTROL
+    hsp = lengthdir_x(conf.throw_sp, dir)
+    vsp += lengthdir_y(conf.throw_sp, dir)
+    vsp = min(abs(vsp), conf.throw_sp) * sign(vsp)
+    hsp_max = conf.hsp_max
+}
 
 function choose_idle_animation() {
 	currentIdleAnimation = choose(Idle02, Idle03, Idle04, Idle05)

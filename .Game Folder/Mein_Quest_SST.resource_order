@@ -183,6 +183,7 @@
     {"name":"oSpiritByte_1","order":2,"path":"objects/oSpiritByte_1/oSpiritByte_1.yy",},
     {"name":"oStageManager","order":6,"path":"objects/oStageManager/oStageManager.yy",},
     {"name":"oStartingCutscene","order":14,"path":"objects/oStartingCutscene/oStartingCutscene.yy",},
+    {"name":"oTestingGround","order":14,"path":"objects/oTestingGround/oTestingGround.yy",},
     {"name":"oThinPlatform","order":7,"path":"objects/oThinPlatform/oThinPlatform.yy",},
     {"name":"oTriggerLogAutoscrollerStart","order":15,"path":"objects/oTriggerLogAutoscrollerStart/oTriggerLogAutoscrollerStart.yy",},
     {"name":"oUIPopUpMessage","order":1,"path":"objects/oUIPopUpMessage/oUIPopUpMessage.yy",},
