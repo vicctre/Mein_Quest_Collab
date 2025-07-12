@@ -47,20 +47,24 @@ throw_with_control_conf = {
     hsp_max: 2,
     // height: 5 * 32,
     // restrict_hsp_timer: make_timer(30),
-    throw_sp: 6,
+    throw_sp: 11,
     hsp_decel: 0.2
     // throw_hsp: 6,
     // throw_vsp: -7,
 }
 
 function throw_with_control(dir) {
+    aeral_attack_finish()
+    has_control = true
     var conf = throw_with_control_conf
     // conf.restrict_hsp_timer.reset()
     setHspControl(false)
     state = PLAYERSTATE.THROWED_WITH_CONTROL
     hsp = lengthdir_x(conf.throw_sp, dir)
-    vsp += lengthdir_y(conf.throw_sp, dir)
-    vsp = min(abs(vsp), conf.throw_sp) * sign(vsp)
+    var push_vsp = lengthdir_y(conf.throw_sp, dir)
+    if push_vsp != 0 {
+        vsp = lengthdir_y(conf.throw_sp, dir)
+    }
     hsp_max = conf.hsp_max
 }
 
