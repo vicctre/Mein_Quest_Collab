@@ -179,7 +179,11 @@ function GetStageAdvLogNames(stage) {
 	/* 
 	in order defined in stage_data
 	*/
-	var logs = GetStageData(stage).adv_logs
+	var data = GetStageData(stage)
+	if data == undefined {
+		return []	
+	}
+	var logs = data.adv_logs
 	var unordered_names = variable_struct_get_names(logs)
 	var ordered_names = []
 	for (var i = 0; i < array_length(unordered_names); ++i) {
