@@ -416,6 +416,7 @@ function Hit(enemy) {
 	hit.timer = hit.time
 	state = PLAYERSTATE.HIT
 	sprite_index = sPlayerDamage
+    image_draw_angle = 0
 	invincibility_timer.reset()
 	oUI.shake_hp()
 }

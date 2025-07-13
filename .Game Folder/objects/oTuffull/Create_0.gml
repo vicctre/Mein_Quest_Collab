@@ -12,7 +12,7 @@ image_xscale = -size;
 hsp_target = 0; //speed to accelerate hsp towards
 
 if DEV {
-    hp = 1
+    // hp = 1
 }
 
 idle_time = 64;
