@@ -440,6 +440,7 @@
     {"name":"sPlayerDoubleJump","order":3,"path":"sprites/sPlayerDoubleJump/sPlayerDoubleJump.yy",},
     {"name":"sPlayerFallDj","order":2,"path":"sprites/sPlayerFallDj/sPlayerFallDj.yy",},
     {"name":"sPlayerFalling","order":1,"path":"sprites/sPlayerFalling/sPlayerFalling.yy",},
+    {"name":"sPlayerThrown","order":6,"path":"sprites/sPlayerThrown/sPlayerThrown.yy",},
     {"name":"sPlayerW","order":1,"path":"sprites/sPlayerW/sPlayerW.yy",},
     {"name":"sPogoAtk_Example","order":3,"path":"sprites/sPogoAtk_Example/sPogoAtk_Example.yy",},
     {"name":"sPopUp","order":1,"path":"sprites/sPopUp/sPopUp.yy",},

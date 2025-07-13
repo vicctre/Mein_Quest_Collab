@@ -204,7 +204,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.0.190",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -766,6 +766,7 @@
     {"id":{"name":"sPlayerFallDj","path":"sprites/sPlayerFallDj/sPlayerFallDj.yy",},},
     {"id":{"name":"sPlayerFalling","path":"sprites/sPlayerFalling/sPlayerFalling.yy",},},
     {"id":{"name":"sPlayerJump","path":"sprites/sPlayerJump/sPlayerJump.yy",},},
+    {"id":{"name":"sPlayerThrown","path":"sprites/sPlayerThrown/sPlayerThrown.yy",},},
     {"id":{"name":"sPlayerW","path":"sprites/sPlayerW/sPlayerW.yy",},},
     {"id":{"name":"sPogoAtk_Example","path":"sprites/sPogoAtk_Example/sPogoAtk_Example.yy",},},
     {"id":{"name":"sPopUp","path":"sprites/sPopUp/sPopUp.yy",},},

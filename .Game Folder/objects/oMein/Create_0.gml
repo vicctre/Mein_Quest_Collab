@@ -25,6 +25,7 @@ is_hsp_control_on = true // whether common hsp control code should be run
 
 /// main parameters
 // hp - see global.player_hp
+//Player stats
 hsp_max_base = 2.5
 hsp_max = hsp_max_base
 vsp_max = 6
@@ -45,12 +46,12 @@ rotation = 0
 
 throw_with_control_conf = {
     hsp_max: 2,
-    // height: 5 * 32,
+    //height: 5 * 32,
     // restrict_hsp_timer: make_timer(30),
     throw_sp: 11,
     hsp_decel: 0.2,
-	spr: sPlayerDead,
-	rot_sp: 6,
+	spr: sPlayerThrown,
+	rot_sp: -10, //rotation speed
     // throw_hsp: 6,
     // throw_vsp: -7,
 }
@@ -94,9 +95,9 @@ has_control = true
 state = PLAYERSTATE.FREE
 
 // attacks
-attack_pause_time = 15
+attack_pause_time = 15 //endlag of attack
 attack_pause_timer = 0
-attack_perform_frame = 2
+attack_perform_frame = 2 //Startup of basic attack 
 attack_performed = false
 list_hit_by_attack = ds_list_create()
 

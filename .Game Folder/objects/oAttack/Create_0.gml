@@ -3,7 +3,7 @@
 // auto_destroy
 hit_instances_list = ds_list_create()
 new_instances_list = ds_list_create()
-frames = 4
+frames = 4 //how long attack lasts 
 auto_destroy = bool(auto_destroy)
 
 function perform() {
