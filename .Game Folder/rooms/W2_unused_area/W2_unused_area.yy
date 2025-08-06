@@ -405,8 +405,8 @@
   ],
   "name":"W2_unused_area",
   "parent":{
-    "name":"WIP Stages",
-    "path":"folders/Rooms/WIP Stages.yy",
+    "name":"Cutting room floor",
+    "path":"folders/Rooms/WIP Stages/Cutting room floor.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
