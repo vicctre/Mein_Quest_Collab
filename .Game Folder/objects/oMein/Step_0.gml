@@ -221,7 +221,7 @@ switch state {
             setHspControl(true)
         }
 		
-		image_draw_angle += throw_with_control_conf.rot_sp
+		image_draw_angle += throw_with_control_conf.rot_sp * (hsp == 0 ? 1 : sign(hsp))
 
         if vsp >= 0 and abs(hsp) < throw_with_control_conf.hsp_max {
             setHspControl(true)
