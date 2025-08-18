@@ -1,4 +1,57 @@
 
+Geyser notes 
+
+I’d like to know where I can change the height a geyser sends you. Maybe make a variable that I can change for each geyser
+When Mein spinning, I’d like him to spin based on which direction the player is facing. Always turning right when facing right, always turning left when facing left
+When Mein takes damage and is hit by a geyser, the flashing sprite doesn’t rotate or update with the actual sprite rotation animation
+When the player is shot from a geyser, and doesn’t collide with a wall or input a different action, Mein can be found spinning on the ground with reduced stats before reverting to walking again. It’s funny, but we want him to turn back to normal as soon as he touches the ground, AND right after the push timer ends
+
+These are things that already work as intended, but might need some slight adjustments to feel better. 
+
+1-2
+When revisiting stage, part 4 will always place the player at the last checkpoint. This means if they missed the Adventure log in the room, there is no way to go back and get it. Please change this so that the progress of these checkpoints resets after restarting or leaving the room
+When the Pinnik land on the last log before part 5, the camera jitters down slightly for some reason. Idk why this happens but let’s try to iron it out
+
+Adventure Logs
+for some reason, Tuffulls log still appears first when collecting the logs for the first time. It’s weird and idk why it happens when the log order is correct in the Adv Log Menu
+
+Bosses
+Start creating new hurtboxes for bosses that extent a bit father than their collision box. This will allow for players to attack them from a more forgiving distance
+Decrease Tuffulls walking speed ever so slightly. Whenever I tried to do this, she wouldn’t walk fully across the arena. Idk why, please investigate
+Decrease Rulas Walking speed slightly, or have him accelerate to the current speed. This will make it easier to react to him starting to walk
+Would it be best for Rula to jump to the opposite side where the player is at rather than where he is closest to? I’ve noticed people have a few issues with him jumping on top of them based on where he last hopped and they don’t seem to understand why he jumps to the side he’s closest to
+
+Meins Quest Summer 2025 To-Do list (After demo 2)
+
+Enemies
+Start work on enemy “Molli” the green, crystal slug. Details on her behavior are in the doc, but she will follow a similar behavior to most other enemies, attacking when the player is a certain distance away. She will move around slowly, and when Mein is a decent distance away, she will begin her attack
+Adjust Galishs physics so they stall in the air a bit longer before falling back down, or give me a variable to adjust
+Add SFX for Galish jumping in and out of the water
+
+2-2
+Implement water geysers (details in the doc in the “Gimmicks” category for World 2)
+Give each geyser a variable for a “erupt timer” that can be changed and messed around with.
+
+3-1
+Create beta “shock tiles” that react to the Molli enemy attack. The plan is to create a hazard that is directly affected by an enemy, causing the player to think and strategize around how to deal with these hazards properly
+
+Mein
+Begin work on Wave Strike (Counter attack) which will be the next unlock-able move. Frame data and functionality details are in the “Expanded moveset” doc
+Increase Joystick deadzone when in mid air to make inputting POGO attack easier and more consistent
+Allow players can Grab objects from Chests slightly faster (tell me what variable to change)
+
+Polish 
+when Mein uses a pogo to pick up a Spirit Byte, the victory animation will play with Mein floating above ground. Please have him fall back down before starting the animation
+
+1-2 log checkpoint 
+if the player hits a checkpoint and exits the stage, then re-enters the stage, they will be taken to the last checkpoint they hit. We should change this
+This also produces the glitch where Mein will walk into the water after collecting the Spirit Byte
+
+Regaining HP from Bites 
+If someone enters a boss battle with EX HP (6 Hits) and dies, they should respawn with with all 6 hit points, or be booted back to the starting area where they can heal already. Just have the game save the HP you enter the room with/leave the stage with.
+Reduce the amount of Spirit Bites it takes to gain/heal HP. We could try anywhere from 30-50 bites.
+Add some flashy effect to the player HP when they heal, maybe a short flash and slight increase in scale?
+
 Refactor:
     1. Move control over all chained sequences into control objects like oTransition
         > victory seqs
