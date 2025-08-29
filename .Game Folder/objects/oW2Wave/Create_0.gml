@@ -1,4 +1,12 @@
 
+enum WavePhase {
+    pause,
+    pre_waves,
+    final_up,
+    final_flood,
+    final_end,
+}
+
 wave_timer = make_timer(120)
 phase = 0
 
@@ -25,7 +33,7 @@ wave_anim_params = [
 
 // Final wave params
 final_wave = {
-    speed: 4,   // how fast it falls
+    speed_down: 5, // how fast it falls
     ystart: -200,
     ymax: room_height * 1.25,   // how far beyond screen it goes
                                 // basically defines a dealy before
