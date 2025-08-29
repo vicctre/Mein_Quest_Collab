@@ -51,6 +51,7 @@ throw_with_control_conf = {
     hsp_decel: 0.2,
 	spr: sPlayerThrown,
 	rot_sp: -10, //rotation speed
+    rot_dir: 1,
     // throw_hsp: 6,
     // throw_vsp: -7,
 }
