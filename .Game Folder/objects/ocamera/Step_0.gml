@@ -25,16 +25,23 @@ if (cam_zoom_current != cam_zoom_target) {
 
 //update destination aka where ever the player is 
 
-if is_struct(follow) or (instance_exists(follow))
-{
+if is_struct(follow) or (instance_exists(follow)) {
 	xTo = follow.x + x_shift;
 	yTo = follow.y;
 }
 
+var smooth_factor_add = 0
+if instance_exists(follow)
+        and follow.object_index == oMein
+        and follow.state == PLAYERSTATE.FREE {
+    var over_hsp = max(0, abs(follow.hsp) - follow.hsp_max)
+    smooth_factor_add = power(over_hsp, 2) * 0.1
+}
+
 // update object position
 if smooth_movement_on {
-	x += (xTo - x) * smooth_factor
-	y += (yTo - y) * smooth_factor
+	x += (xTo - x) * (smooth_factor + smooth_factor_add)
+	y += (yTo - y) * (smooth_factor + smooth_factor_add)
 } else {
 	x = xTo;
 	y = yTo;
