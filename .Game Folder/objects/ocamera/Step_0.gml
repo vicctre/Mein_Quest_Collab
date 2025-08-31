@@ -33,10 +33,12 @@ if is_struct(follow) or (instance_exists(follow)) {
 var smooth_factor_add = 0
 if instance_exists(follow)
         and follow.object_index == oMein
-        and follow.state == PLAYERSTATE.FREE {
-    var over_hsp = max(0, abs(follow.hsp) - follow.hsp_max)
+        and (follow.state == PLAYERSTATE.FREE
+             or follow.state == PLAYERSTATE.ATTACK_AERAL) {
+    var over_hsp = clamp(abs(follow.hsp) - follow.hsp_max, 0, 1.5)
     smooth_factor_add = power(over_hsp, 2) * 0.1
 }
+
 
 // update object position
 if smooth_movement_on {
