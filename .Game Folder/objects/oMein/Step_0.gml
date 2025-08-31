@@ -53,11 +53,11 @@ else if !down_free {
 
 switch state {
 	case PLAYERSTATE.FREE: {
-		check_perform_attack()
+        check_perform_jump()
 		check_perform_sprint()
 		check_perform_crouch()
 		check_perform_push()
-		check_perform_jump()
+		check_perform_attack()
 		check_spikes()
 		if check_just_landed() {
 			audio_play_sound(SFX_Land, 5, false);
@@ -83,8 +83,8 @@ switch state {
 	}
 	case PLAYERSTATE.PUSHING: {
 		check_perform_jump()
-		check_perform_attack()
 		check_perform_crouch()
+		check_perform_attack()
 		if !(key_right and !right_free
 				 or key_left and !left_free) {
 			state = ENEMYSTATE.FREE
