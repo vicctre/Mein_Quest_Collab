@@ -165,8 +165,9 @@ jumpState = {
 	maybe_switch_to_finish: function() {
 		var dist_to_left = id.left_side_x - id.x
 		var dist_to_right = id.right_side_x - id.x
-		var dist = min(abs(dist_to_left), abs(dist_to_right))
-		
+		var dir = sign(id.x - global.player.x) > 0 ? 1: -1 // jump the direction opposite from player
+		var dist = dir == 1 ? abs(dist_to_right) : abs(dist_to_left)
+
 		if dist < finish_edge_dist_treshold {
             // switch to walk state to come closer to the wall
             id.walkState.prepare_to_tongue_attack = true
@@ -176,7 +177,6 @@ jumpState = {
 		}
         // switch to finish substate
 		state = RulaJump.finish
-		var dir = dist == dist_to_right ? 1 : -1
 		vsp = -sqrt(0.5 * dist * finish_gr * finish_vsp_hsp_ratio)
 		hsp = abs(vsp) * dir / finish_vsp_hsp_ratio
 	},
