@@ -19,7 +19,7 @@ death_pause_time = 60
 
 enemy_hit_blinking_color = #FFFF65
 
-heal_coins_number = 100
+heal_coins_number = 100 //amount of Bytes it takes to gain Additional HP
 heal_amount_large = 3
 heal_amount_small = 1
 heal_glowing_color = #A9F8BC // can set hex like #ff00ff
