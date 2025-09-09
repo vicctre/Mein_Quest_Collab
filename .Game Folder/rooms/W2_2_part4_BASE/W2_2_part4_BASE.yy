@@ -816,8 +816,8 @@
   ],
   "name":"W2_2_part4_BASE",
   "parent":{
-    "name":"W2-2",
-    "path":"folders/Rooms/Stages/W2-2.yy",
+    "name":"WIP Stages",
+    "path":"folders/Rooms/WIP Stages.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

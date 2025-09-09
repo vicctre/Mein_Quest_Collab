@@ -398,6 +398,7 @@
     {"id":{"name":"W2_2_part4_BASE","path":"rooms/W2_2_part4_BASE/W2_2_part4_BASE.yy",},},
     {"id":{"name":"W2_2_part4","path":"rooms/W2_2_part4/W2_2_part4.yy",},},
     {"id":{"name":"W2_2_part5","path":"rooms/W2_2_part5/W2_2_part5.yy",},},
+    {"id":{"name":"W2_2_part6","path":"rooms/W2_2_part6/W2_2_part6.yy",},},
     {"id":{"name":"W2_unused_area","path":"rooms/W2_unused_area/W2_unused_area.yy",},},
     {"id":{"name":"__scr_ssave_3rdparty_sphinx","path":"scripts/__scr_ssave_3rdparty_sphinx/__scr_ssave_3rdparty_sphinx.yy",},},
     {"id":{"name":"__scr_ssave_header","path":"scripts/__scr_ssave_header/__scr_ssave_header.yy",},},
@@ -964,6 +965,7 @@
     {"roomId":{"name":"W2_2_part4_BASE","path":"rooms/W2_2_part4_BASE/W2_2_part4_BASE.yy",},},
     {"roomId":{"name":"W2_2_part4","path":"rooms/W2_2_part4/W2_2_part4.yy",},},
     {"roomId":{"name":"W2_2_part5","path":"rooms/W2_2_part5/W2_2_part5.yy",},},
+    {"roomId":{"name":"W2_2_part6","path":"rooms/W2_2_part6/W2_2_part6.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
