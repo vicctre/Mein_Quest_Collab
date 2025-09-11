@@ -17,8 +17,8 @@
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"2-2",
-    "path":"folders/Tile Sets/World 2/2-2.yy",
+    "name":"World 3",
+    "path":"folders/Tile Sets/World 3.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
