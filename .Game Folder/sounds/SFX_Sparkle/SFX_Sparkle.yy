@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.365687,
+  "duration":0.0,
   "name":"SFX_Sparkle",
   "parent":{
     "name":"Misc.",

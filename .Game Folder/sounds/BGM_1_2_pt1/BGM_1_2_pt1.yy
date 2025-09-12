@@ -14,7 +14,7 @@
     },
   },
   "conversionMode":0,
-  "duration":58.5366,
+  "duration":35.29433,
   "name":"BGM_1_2_pt1",
   "parent":{
     "name":"Stage themes",

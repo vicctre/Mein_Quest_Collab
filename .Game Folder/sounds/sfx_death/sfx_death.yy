@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.261565,
+  "duration":0.2615646,
   "name":"SFX_Death",
   "parent":{
     "name":"Use Later",

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"BGM_3_1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":72.0,
+  "name":"BGM_3_1",
+  "parent":{
+    "name":"Stage themes",
+    "path":"folders/Sounds/BMG/Stage themes.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"BGM_3_1.wav",
+  "type":0,
+  "volume":0.4,
+}

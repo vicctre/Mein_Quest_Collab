@@ -22,14 +22,14 @@ msc_stage1_1 = BGM_1_1
 msc_stage1_2 = BGM_1_2_pt1
 msc_stage1_2_2 = BGM_1_2_pt2
 msc_stage2_1 = BGM_2_1
-//Stage2_2 = 
-//Stage3_1 =
-//Stage3_2 = 
-//Stage3_3 = 
-//Stage4_1 = 
-//Stage4_2 = 
-//Stage5_1 = 
-//Stage5_2 = 
+msc_stage2_2 = BGM_2_2
+msc_stage3_1 = BGM_3_1
+msc_stage3_2 = BGM_3_2
+//msc_stage3_3 = 
+//msc_stage4_1 = 
+//msc_stage4_2 = 
+//msc_stage5_1 = 
+//msc_stage5_2 = 
 
 //Boss themes 
 msc_miniboss = BGM_MiniBoss
