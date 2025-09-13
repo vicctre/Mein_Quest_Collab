@@ -708,7 +708,7 @@ deadState = {
 			vsp = 0
 			id.sprite_index = sRulaDead
 			if !syster_spirit_triggered and !syster_spirit_timer.update() {
-                oMein.start_boss_end_sequence()
+                oMein.startBossEndSequence()
 				syster_spirit_triggered = true
 			}
 		}

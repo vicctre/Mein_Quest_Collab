@@ -5,12 +5,12 @@ switch phase {
 			phase++
             //// Move Mein to the center only in boss rooms
             if array_contains(global.boss_stages, room) {
-                global.player.start_boss_end_sequence()
+                global.player.startBossEndSequence()
             }
 		}
 		break
 	case SpiritByteSequence.start_sequence:
-		if !global.player.is_boss_sequence() {
+		if !global.player.isBossSequence() {
 			phase++
 			global.player.has_control = false
             global.player.BecomeInvisibleIn(1)

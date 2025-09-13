@@ -56,6 +56,61 @@ throw_with_control_conf = {
     // throw_vsp: -7,
 }
 
+function Kill() {
+    if is_dead() {
+        return;
+    }
+	global.player_hp = 0
+	sprite_index = sPlayerDead
+	state = PLAYERSTATE.PRE_DEAD
+	has_control = false
+	hsp = 0
+	//y -= 30
+	//visible = false
+	oMusic.switch_music(noone, false, 0)
+	oPause.PauseWithTimer(global.death_pause_time)
+	oUI.shake_hp()
+}
+
+function Hit(enemy) {
+	if is_dead() {
+		return	
+	}
+	if (invincibility_timer.timer or invincibility_timer_no_flashing.timer)
+            and enemy != -1000 // indicate death from pit
+    {
+		return
+	}
+	if state == PLAYERSTATE.GRABBED {
+		return;
+	}
+	if state == PLAYERSTATE.ATTACK_AERAL and instance_exists(aeral_attack_inst) {
+		instance_destroy(aeral_attack_inst)
+		attack_performed = false
+	}
+	if enemy && enemy.object_index == oRulaTongueTip {
+		become_grabbed()
+		audio_play_sound(SFX_Grab, 3, false)
+		return
+	}
+	global.player_hp -= global.player_invincible == false
+	audio_play_sound(global.sfx_player_damage, 8, false)
+	//this is for when we have both a voice AND SFX for taking damage 
+	if !global.player_hp {
+		Kill()
+		return
+	}
+	vsp = hit.vsp
+	hsp = hit.hsp * -image_xscale
+	has_control = false
+	hit.timer = hit.time
+	state = PLAYERSTATE.HIT
+	sprite_index = sPlayerDamage
+    image_draw_angle = 0
+	invincibility_timer.reset()
+	oUI.shake_hp()
+}
+
 function throw_with_control(dir, push_sp) {
     aeral_attack_finish()
     has_control = true
@@ -71,14 +126,6 @@ function throw_with_control(dir, push_sp) {
     hsp_max = conf.hsp_max
 	sprite_index = conf.spr
 }
-
-function choose_idle_animation() {
-	currentIdleAnimation = choose(Idle02, Idle03, Idle04, Idle05)
-}
-function choose_idle_delay() {
-	return choose(250, 250, 300, 400)
-}
-choose_idle_animation()
 
 rm_sp_min = 5
 
@@ -168,6 +215,13 @@ animation_stop_update_timer = make_timer(2)
 // create player-related ui
 instance_create_layer(0, 0, "ui", oUI)
 
+function perform_attack(spr, xscale, dmg, auto_destroy=true) {
+	var inst = instance_create_layer(x, y, "Player", oAttack, 
+		{sprite_index: spr, image_xscale: xscale, damage: dmg, auto_destroy: auto_destroy})
+	attack_performed = true
+	return inst
+}
+
 function start_crouch_transition(reverse = false) {
 	sprite_index = sCrouchTransition
 	image_index = reverse ? (image_number - 1) : 0
@@ -192,6 +246,43 @@ function create_death_animation() {
 	inst.hsp = global.player_dead_hsp * -image_xscale
 	inst.image_xscale = image_xscale
 }
+
+function start_slash_attack() {
+    state = PLAYERSTATE.ATTACK_SLASH
+    sprite_index = sPlayerAttack
+    audio_play_sound(SFX_AttackWiff,5,false)
+    attack_pause_timer = attack_pause_time
+}
+function start_aeral_attack() {
+    state = PLAYERSTATE.ATTACK_AERAL
+    sprite_index = sPlayerAttackAeral
+    aeral_attack_timer = aeral_attack_time
+    aeral_attack_inst = perform_attack(sAttackCirlce, 1, 1, false)
+    audio_play_sound(SFX_AttackWiff,5,false)
+    attack_pause_timer = attack_pause_time
+    aeral_attack_used = true
+}
+function start_pogo_attack() {
+    state = PLAYERSTATE.ATTACK_POGO
+    sprite_index = sPlayer_PogoAttack
+    hsp = 0
+    hsp_to = 0
+    vsp = 0
+    has_control = false
+    audio_play_sound(global.sfx_pogo_start, 0, false)
+}
+function pogo_bounce() {
+    pogo_cooldown_timer.reset()
+    state = PLAYERSTATE.FREE
+    has_control = true
+    vsp = pogo_vsp_bounce
+    jumps = 1       // reset d-jump
+    aeral_attack_used = false   // reset aeral attack
+    audio_play_sound(global.sfx_pogo_bounce, 0, false)
+    animation_stop_update_timer.reset()
+}
+
+//// Event checkers
 function check_perform_jump() {
 	if key_jump {
 		jump_pressed = jump_press_delay
@@ -265,31 +356,17 @@ function check_perform_attack() {
 	attack_pause_timer--
 	if key_attack and !attack_pause_timer {
 		image_index = 0
-        if oStageManager.IsPogoUnlocked() and down_free and key_down and !pogo_cooldown_timer.timer {
-            state = PLAYERSTATE.ATTACK_POGO
-            sprite_index = sPlayer_PogoAttack
-            hsp = 0
-			hsp_to = 0
-            vsp = 0
-            has_control = false
-            audio_play_sound(global.sfx_pogo_start, 0, false)
+        if oStageManager.IsPogoUnlocked() and down_free 
+                and key_down and !pogo_cooldown_timer.timer {
+            start_pogo_attack()
             return true
         }
         if !down_free {
-			state = PLAYERSTATE.ATTACK_SLASH
-			sprite_index = sPlayerAttack
-			audio_play_sound(SFX_AttackWiff,5,false)
-			attack_pause_timer = attack_pause_time
+            start_slash_attack()
             return true
 		}
         if !aeral_attack_used {
-			state = PLAYERSTATE.ATTACK_AERAL
-			sprite_index = sPlayerAttackAeral
-			aeral_attack_timer = aeral_attack_time
-			aeral_attack_inst = perform_attack(sAttackCirlce, 1, 1, false)
-			audio_play_sound(SFX_AttackWiff,5,false)
-			attack_pause_timer = attack_pause_time
-			aeral_attack_used = true
+            start_aeral_attack()
             return true
 		}
 	}
@@ -299,132 +376,6 @@ function check_spikes() {
 	var spike = instance_place(x, y, oSpikes)
 	if spike != noone {
 		Hit()
-	}
-}
-
-function Animate() {
-    if animation_stop_update_timer.update() {
-        return
-    }
-	image_speed = 1
-	switch state {
-        case PLAYERSTATE.BOSS_END_SEQUENCE:
-		case PLAYERSTATE.FREE:
-			if animate_crouch_transition(sPlayer, -1) {
-				break	
-			}
-			animate_update_xscale()
-			if down_free {
-				if vsp < 0 {
-					if jumps {
-						sprite_index = sPlayerJump
-					} else {
-						sprite_index = sPlayerDoubleJump
-						if is_animation_end() {
-							image_speed = 0	
-						}
-					}
-				} else {
-					if jumps {
-						sprite_index = sPlayerFalling
-					} else {
-						sprite_index = sPlayerFallDj
-					}
-				}
-				break
-			}
-			if abs(hsp) {
-				if is_sprinting {
-					sprite_index = sRun
-				} else {
-					sprite_index = sPlayerW
-				}
-			} else {
-				if (idle_time < idle_delay)
-					sprite_index = sPlayer
-				if (idle_time >= idle_delay && sprite_index == sPlayer) {
-					sprite_index = currentIdleAnimation
-					image_index = 0
-					idle_delay = choose_idle_delay()
-				}
-			}
-			break
-		case PLAYERSTATE.ENTER_DOOR:
-			image_speed = global.player_door_enter_anim_sp
-			if is_animation_end() {
-				image_speed = 0
-			}
-			break
-		case PLAYERSTATE.CROUCH:
-			if !animate_crouch_transition(sCrouch, 1) {
-				sprite_index = sCrouch
-			}
-			break
-        case PLAYERSTATE.ATTACK_POGO:
-            if is_animation_end() {
-                image_speed = 0
-            }
-	}
-}
-
-function Kill() {
-    if is_dead() {
-        return;
-    }
-	global.player_hp = 0
-	sprite_index = sPlayerDead
-	state = PLAYERSTATE.PRE_DEAD
-	has_control = false
-	hsp = 0
-	//y -= 30
-	//visible = false
-	oMusic.switch_music(noone, false, 0)
-	oPause.PauseWithTimer(global.death_pause_time)
-	oUI.shake_hp()
-}
-
-function Hit(enemy) {
-	if is_dead() {
-		return	
-	}
-	if (invincibility_timer.timer or invincibility_timer_no_flashing.timer)
-            and enemy != -1000 // indicate death from pit
-    {
-		return
-	}
-	if state == PLAYERSTATE.GRABBED {
-		return;
-	}
-	if state == PLAYERSTATE.ATTACK_AERAL and instance_exists(aeral_attack_inst) {
-		instance_destroy(aeral_attack_inst)
-		attack_performed = false
-	}
-	if enemy && enemy.object_index == oRulaTongueTip {
-		become_grabbed()
-		audio_play_sound(SFX_Grab, 3, false)
-		return
-	}
-	global.player_hp -= global.player_invincible == false
-	audio_play_sound(global.sfx_player_damage, 8, false)
-	//this is for when we have both a voice AND SFX for taking damage 
-	if !global.player_hp {
-		Kill()
-		return
-	}
-	vsp = hit.vsp
-	hsp = hit.hsp * -image_xscale
-	has_control = false
-	hit.timer = hit.time
-	state = PLAYERSTATE.HIT
-	sprite_index = sPlayerDamage
-    image_draw_angle = 0
-	invincibility_timer.reset()
-	oUI.shake_hp()
-}
-
-function animate_update_xscale() {
-	if hsp != 0 {
-		image_xscale = sign(hsp)
 	}
 }
 
@@ -454,11 +405,11 @@ function sprint_effect() {
 	oEffects.emit_sprint_dust(x, bbox_bottom + _dust_yoffset, -input_move_h)
 }
 
-function should_play_onto_stage_sequence() {
+function shouldPlayOntoStageSequence() {
 	return array_contains(global.rooms_with_onto_stage_seq, room)
 }
 
-function play_onto_stage_sequence() {
+function playOntoStageSequence() {
 	visible = false
 	has_control = false
 	instance_create_layer(x, y, layer, oSequenceOntoLevel)
@@ -557,7 +508,7 @@ function checkCollidingEnemy() {
 	var attack = instance_place(x, y, ENEMYATTACK)
 	if enemy != noone or attack != noone {
 		Hit(enemy)
-		// force finish airal attack
+		// force finish aeral attack
 		if !invincibility_timer and state == PLAYERSTATE.ATTACK_AERAL
 				and instance_exists(aeral_attack_inst) {
 			instance_destroy(aeral_attack_inst)
@@ -587,21 +538,6 @@ function check_zap_platform() {
     }
 }
 
-function setHspControl(value) {
-	is_hsp_control_on = value
-}
-
-function updateHspControl() {
-	if is_hsp_control_on {
-		var is_accelerating = sign(hsp) == 0 or sign(hsp) == sign(hsp_to)
-		hsp = approach(hsp, hsp_to * (1 + is_sprinting*sprint_add_sp_gain), is_accelerating ? acc : decel)
-	}
-}
-
-function applyGravity() {
-	vsp = approach(vsp, vsp_max, grav)
-}
-
 function checkFloatOnLog() {
     // floating on log
 	// additional hsp will keep untill land on common ground
@@ -618,6 +554,21 @@ function checkFloatOnLog() {
 			ground_hsp = 0
 		}
 	}
+}
+
+function setHspControl(value) {
+	is_hsp_control_on = value
+}
+
+function updateHspControl() {
+	if is_hsp_control_on {
+		var is_accelerating = sign(hsp) == 0 or sign(hsp) == sign(hsp_to)
+		hsp = approach(hsp, hsp_to * (1 + is_sprinting*sprint_add_sp_gain), is_accelerating ? acc : decel)
+	}
+}
+
+function applyGravity() {
+	vsp = approach(vsp, vsp_max, grav)
 }
 
 function finalizeHsp() {
@@ -645,48 +596,109 @@ function BecomeInvisibleIn(frames) {
     alarm[2] = frames
 }
 
-function perform_attack(spr, xscale, dmg, auto_destroy=true) {
-	var inst = instance_create_layer(x, y, "Player", oAttack, 
-		{sprite_index: spr, image_xscale: xscale, damage: dmg, auto_destroy: auto_destroy})
-	attack_performed = true
-	return inst
-}
-
-function pogo_bounce() {
-    pogo_cooldown_timer.reset()
-    state = PLAYERSTATE.FREE
-    has_control = true
-    vsp = pogo_vsp_bounce
-    jumps = 1       // reset d-jump
-    aeral_attack_used = false   // reset aeral attack
-    audio_play_sound(global.sfx_pogo_bounce, 0, false)
-    animation_stop_update_timer.reset()
-}
-
-function can_finish_boss_sequence() {
+function catFinishBossSequence() {
     /// Check if in the room's center
     return (abs(room_width * 0.5 - x) < hsp_max) and !down_free
 }
 
-function start_boss_end_sequence() {
+function startBossEndSequence() {
     /// Turn off controls and start moving to the room center
     // used after boss fights
-    if can_finish_boss_sequence() {
+    if catFinishBossSequence() {
         return;
     }
     state = PLAYERSTATE.BOSS_END_SEQUENCE
 	has_control = false
 }
 
-function is_boss_sequence() {
+function isBossSequence() {
     return state == PLAYERSTATE.BOSS_END_SEQUENCE
 }
+
+function animate() {
+    if animation_stop_update_timer.update() {
+        return
+    }
+	image_speed = 1
+	switch state {
+        case PLAYERSTATE.BOSS_END_SEQUENCE:
+		case PLAYERSTATE.FREE:
+			if animate_crouch_transition(sPlayer, -1) {
+				break	
+			}
+			animateUpdateXscale()
+			if down_free {
+				if vsp < 0 {
+					if jumps {
+						sprite_index = sPlayerJump
+					} else {
+						sprite_index = sPlayerDoubleJump
+						if is_animation_end() {
+							image_speed = 0	
+						}
+					}
+				} else {
+					if jumps {
+						sprite_index = sPlayerFalling
+					} else {
+						sprite_index = sPlayerFallDj
+					}
+				}
+				break
+			}
+			if abs(hsp) {
+				if is_sprinting {
+					sprite_index = sRun
+				} else {
+					sprite_index = sPlayerW
+				}
+			} else {
+				if (idle_time < idle_delay)
+					sprite_index = sPlayer
+				if (idle_time >= idle_delay && sprite_index == sPlayer) {
+					sprite_index = currentIdleAnimation
+					image_index = 0
+					idle_delay = choose_idle_delay()
+				}
+			}
+			break
+		case PLAYERSTATE.ENTER_DOOR:
+			image_speed = global.player_door_enter_anim_sp
+			if is_animation_end() {
+				image_speed = 0
+			}
+			break
+		case PLAYERSTATE.CROUCH:
+			if !animate_crouch_transition(sCrouch, 1) {
+				sprite_index = sCrouch
+			}
+			break
+        case PLAYERSTATE.ATTACK_POGO:
+            if is_animation_end() {
+                image_speed = 0
+            }
+	}
+}
+
+function animateUpdateXscale() {
+	if hsp != 0 {
+		image_xscale = sign(hsp)
+	}
+}
+
+function chooseIdleAnimation() {
+	currentIdleAnimation = choose(Idle02, Idle03, Idle04, Idle05)
+}
+function choose_idle_delay() {
+	return choose(250, 250, 300, 400)
+}
+chooseIdleAnimation()
 
 
 instance_create_layer(x, y, layer, oCamera)
 
-if should_play_onto_stage_sequence() {
-	play_onto_stage_sequence()
+if shouldPlayOntoStageSequence() {
+	playOntoStageSequence()
 }
 
 dev_autoscroller_camera_solid_walls_workaround_timer = 3

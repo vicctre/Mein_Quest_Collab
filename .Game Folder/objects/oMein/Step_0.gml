@@ -1,12 +1,22 @@
 
-key_left_pressed = oInput.key_left_pressed * has_control
-key_right_pressed = oInput.key_right_pressed * has_control
-key_up_pressed = oInput.key_up_pressed * has_control
-key_left = oInput.key_left * has_control
-key_right = oInput.key_right * has_control
-key_down = oInput.key_down * has_control
-key_jump = oInput.key_jump * has_control
-key_attack = oInput.key_attack * has_control
+key_left_pressed = false
+key_right_pressed = false
+key_up_pressed = false
+key_left = false
+key_right = false
+key_down = false
+key_jump = false
+key_attack = false
+if has_control {
+    key_left_pressed = oInput.key_left_pressed
+    key_right_pressed = oInput.key_right_pressed
+    key_up_pressed = oInput.key_up_pressed
+    key_left = oInput.key_left
+    key_right = oInput.key_right
+    key_down = oInput.key_down
+    key_jump = oInput.key_jump
+    key_attack = oInput.key_attack
+}
 
 prev_is_sprinting = is_sprinting
 prev_down_free = down_free
@@ -241,7 +251,7 @@ switch state {
         }
         var x_to = room_width * 0.5
         hsp_to = hsp_max * sign(x_to - x)
-        if can_finish_boss_sequence() {
+        if catFinishBossSequence() {
             x = x_to
             hsp = 0
 			hsp_to = 0
@@ -279,7 +289,7 @@ if global.camera_solid_bounds_on
 	x = clamp(x, xmin, xmax)
 }
 
-Animate()
+animate()
 
 // fall out of world
 if (global.player_hp > 0 && bbox_bottom > room_height) {
