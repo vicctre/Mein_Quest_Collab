@@ -218,8 +218,15 @@ function start_pogo_attack() {
     has_control = false
     audio_play_sound(global.sfx_pogo_start, 0, false)
 }
-function start_counter_attack() {
+function enter_counter_attack_state() {
     state = PLAYERSTATE.ATTACK_COUNTER
+    counter_attack_conf.timer.reset()
+    counter_attack_conf.perform_attack = false
+}
+function counter_attack() {
+    counter_attack_conf.perform_attack = true
+    sprite_index = sPlayer_CounterAttack
+    image_index = 0
 }
 function pogo_bounce() {
     pogo_cooldown_timer.reset()
@@ -311,10 +318,6 @@ function check_perform_attack() {
             start_pogo_attack()
             return true
         }
-        if oStageManager.IsCounterUnlocked() and !down_free and state == PLAYERSTATE.CROUCH {
-            start_counter_attack()
-            return true
-		}
         if !down_free {
             start_slash_attack()
             return true
@@ -416,7 +419,9 @@ function Hit(enemy) {
 		return
 	}
     if state == PLAYERSTATE.ATTACK_COUNTER {
-        counter_attack_conf.perform_attack = true
+        if !counter_attack_conf.perform_attack {
+            counter_attack()
+        }
         return
     }
 	if state == PLAYERSTATE.GRABBED {
@@ -692,6 +697,18 @@ function animateUpdateXscale() {
 	if hsp != 0 {
 		image_xscale = sign(hsp)
 	}
+}
+function animate_crouch_transition(sprite_to, img_sp) {
+	if sprite_index == sCrouchTransition {
+		image_speed = img_sp
+		if is_animation_end() {
+			sprite_index = sprite_to
+			// transition finished
+			return false
+		}
+		return true
+	}
+	return false
 }
 
 function chooseIdleAnimation() {

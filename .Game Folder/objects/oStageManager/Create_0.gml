@@ -303,6 +303,9 @@ function UnlockPogoAttack() {
 function IsPogoUnlocked() {
     return mein_pogo_attack_enabled
 }
+function IsCounterUnlocked() {
+    return true
+}
 
 function CheckOpenNextStage() {
 	var unlock_stage = noone
