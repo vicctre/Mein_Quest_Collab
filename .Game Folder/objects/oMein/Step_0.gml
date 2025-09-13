@@ -174,6 +174,24 @@ switch state {
         }
 		break
 	}
+    case PLAYERSTATE.ATTACK_COUNTER: {
+        if !counter_attack_conf.perform_attack {
+            if !counter_attack_conf.timer.update() {
+                state = PLAYERSTATE.FREE
+            }
+            break
+        }
+        sprite_index = sPlayer_CounterAttack
+        if is_animation_at_frame(counter_attack_conf.attack_frame) {
+            perform_attack(sAttack, 1, counter_attack_conf.dmg)
+            perform_attack(sAttack, -1, counter_attack_conf.dmg)
+        }
+        if is_animation_end() {
+            state = PLAYERSTATE.FREE
+            counter_attack_conf.perform_attack = false
+        }
+        break
+    }
 	case PLAYERSTATE.PRE_DEAD: {
 		state = PLAYERSTATE.DEAD
 		break	

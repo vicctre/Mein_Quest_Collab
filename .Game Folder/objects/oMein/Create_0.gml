@@ -7,6 +7,7 @@ enum PLAYERSTATE {
 	ATTACK_COMBO,
 	ATTACK_AERAL,
     ATTACK_POGO,
+    ATTACK_COUNTER,
 	PRE_DEAD,
 	DEAD,
 	HIT,
@@ -143,6 +144,13 @@ allow_exit_throw_delay = make_timer(5)
 // in pogo animation during pause
 animation_stop_update_timer = make_timer(2)
 
+counter_attack_conf = {
+    timer: make_timer(30),
+    dmg: 3,
+    perform_attack: false,
+    attack_frame: 3,
+}
+
 function perform_attack(spr, xscale, dmg, auto_destroy=true) {
 	var inst = instance_create_layer(x, y, "Player", oAttack, 
 		{sprite_index: spr, image_xscale: xscale, damage: dmg, auto_destroy: auto_destroy})
@@ -209,6 +217,9 @@ function start_pogo_attack() {
     vsp = 0
     has_control = false
     audio_play_sound(global.sfx_pogo_start, 0, false)
+}
+function start_counter_attack() {
+    state = PLAYERSTATE.ATTACK_COUNTER
 }
 function pogo_bounce() {
     pogo_cooldown_timer.reset()
@@ -300,6 +311,10 @@ function check_perform_attack() {
             start_pogo_attack()
             return true
         }
+        if oStageManager.IsCounterUnlocked() and !down_free and state == PLAYERSTATE.CROUCH {
+            start_counter_attack()
+            return true
+		}
         if !down_free {
             start_slash_attack()
             return true
@@ -400,6 +415,10 @@ function Hit(enemy) {
     {
 		return
 	}
+    if state == PLAYERSTATE.ATTACK_COUNTER {
+        counter_attack_conf.perform_attack = true
+        return
+    }
 	if state == PLAYERSTATE.GRABBED {
 		return;
 	}
