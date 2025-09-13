@@ -44,7 +44,7 @@ if has_control {
     checkEnterDoor()
 }
 
-updateHspControl()
+updateHsp()
 applyGravity()
 
 // handle vertical sp

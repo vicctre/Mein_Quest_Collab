@@ -20,9 +20,6 @@ enum PLAYERSTATE {
 global.player = id
 global.VAR_BAR_ROW_DELTA = 30
 
-is_hsp_control_on = true // whether common hsp control code should be run
-						 // see step event and updateHspControl()
-
 /// main parameters
 // hp - see global.player_hp
 //Player stats
@@ -56,77 +53,6 @@ throw_with_control_conf = {
     // throw_vsp: -7,
 }
 
-function Kill() {
-    if is_dead() {
-        return;
-    }
-	global.player_hp = 0
-	sprite_index = sPlayerDead
-	state = PLAYERSTATE.PRE_DEAD
-	has_control = false
-	hsp = 0
-	//y -= 30
-	//visible = false
-	oMusic.switch_music(noone, false, 0)
-	oPause.PauseWithTimer(global.death_pause_time)
-	oUI.shake_hp()
-}
-
-function Hit(enemy) {
-	if is_dead() {
-		return	
-	}
-	if (invincibility_timer.timer or invincibility_timer_no_flashing.timer)
-            and enemy != -1000 // indicate death from pit
-    {
-		return
-	}
-	if state == PLAYERSTATE.GRABBED {
-		return;
-	}
-	if state == PLAYERSTATE.ATTACK_AERAL and instance_exists(aeral_attack_inst) {
-		instance_destroy(aeral_attack_inst)
-		attack_performed = false
-	}
-	if enemy && enemy.object_index == oRulaTongueTip {
-		become_grabbed()
-		audio_play_sound(SFX_Grab, 3, false)
-		return
-	}
-	global.player_hp -= global.player_invincible == false
-	audio_play_sound(global.sfx_player_damage, 8, false)
-	//this is for when we have both a voice AND SFX for taking damage 
-	if !global.player_hp {
-		Kill()
-		return
-	}
-	vsp = hit.vsp
-	hsp = hit.hsp * -image_xscale
-	has_control = false
-	hit.timer = hit.time
-	state = PLAYERSTATE.HIT
-	sprite_index = sPlayerDamage
-    image_draw_angle = 0
-	invincibility_timer.reset()
-	oUI.shake_hp()
-}
-
-function throw_with_control(dir, push_sp) {
-    aeral_attack_finish()
-    has_control = true
-    var conf = throw_with_control_conf
-    // conf.restrict_hsp_timer.reset()
-    setHspControl(false)
-    state = PLAYERSTATE.THROWED_WITH_CONTROL
-    hsp = lengthdir_x(push_sp, dir)
-    var push_vsp = lengthdir_y(push_sp, dir)
-    if push_vsp != 0 {
-        vsp = lengthdir_y(push_sp, dir)
-    }
-    hsp_max = conf.hsp_max
-	sprite_index = conf.spr
-}
-
 rm_sp_min = 5
 
 jumps_max = 1
@@ -138,8 +64,13 @@ is_on_log = false
 
 wall_obj = oWall
 
-has_control = true
 state = PLAYERSTATE.FREE
+
+has_control = true  // whether player listens to inputs
+is_hsp_control_on = true // whether common hsp control code should be run
+						 // see step event and updateHsp()
+                         // e.g. player won't stop if no input
+                         // Usage example: implementing "throwed" states
 
 // attacks
 attack_pause_time = 15 //endlag of attack
@@ -212,9 +143,6 @@ allow_exit_throw_delay = make_timer(5)
 // in pogo animation during pause
 animation_stop_update_timer = make_timer(2)
 
-// create player-related ui
-instance_create_layer(0, 0, "ui", oUI)
-
 function perform_attack(spr, xscale, dmg, auto_destroy=true) {
 	var inst = instance_create_layer(x, y, "Player", oAttack, 
 		{sprite_index: spr, image_xscale: xscale, damage: dmg, auto_destroy: auto_destroy})
@@ -222,22 +150,29 @@ function perform_attack(spr, xscale, dmg, auto_destroy=true) {
 	return inst
 }
 
-function start_crouch_transition(reverse = false) {
-	sprite_index = sCrouchTransition
-	image_index = reverse ? (image_number - 1) : 0
-}
-function animate_crouch_transition(sprite_to, img_sp) {
-	if sprite_index == sCrouchTransition {
-		image_speed = img_sp
-		if is_animation_end() {
-			sprite_index = sprite_to
-			// transition finished
-			return false
-		}
-		return true
+function updateHsp() {
+	if is_hsp_control_on {
+		var is_accelerating = sign(hsp) == 0 or sign(hsp) == sign(hsp_to)
+		hsp = approach(hsp, hsp_to * (1 + is_sprinting*sprint_add_sp_gain), is_accelerating ? acc : decel)
 	}
-	return false
 }
+
+function applyGravity() {
+	vsp = approach(vsp, vsp_max, grav)
+}
+
+function finalizeHsp() {
+    /// Handle riding on log
+	var final_hsp = hsp + ground_hsp
+	dir = point_direction(0, 0, final_hsp, vsp)
+	// block hor sp if wall contact
+	if ((final_hsp > 0) and !right_free) or ((final_hsp < 0) and !left_free) {
+		final_hsp = 0
+		hsp = 0
+	}
+	return final_hsp
+}
+
 function create_death_animation() {
 	var inst = instance_create_layer(x, y, layer, oDeadEnemy)
 	inst.sprite_index = sPlayerDead
@@ -247,6 +182,10 @@ function create_death_animation() {
 	inst.image_xscale = image_xscale
 }
 
+function start_crouch_transition(reverse = false) {
+	sprite_index = sCrouchTransition
+	image_index = reverse ? (image_number - 1) : 0
+}
 function start_slash_attack() {
     state = PLAYERSTATE.ATTACK_SLASH
     sprite_index = sPlayerAttack
@@ -436,6 +375,77 @@ function is_dead() {
 		   or state == PLAYERSTATE.PRE_DEAD
 }
 
+function Kill() {
+    if is_dead() {
+        return;
+    }
+	global.player_hp = 0
+	sprite_index = sPlayerDead
+	state = PLAYERSTATE.PRE_DEAD
+	has_control = false
+	hsp = 0
+	//y -= 30
+	//visible = false
+	oMusic.switch_music(noone, false, 0)
+	oPause.PauseWithTimer(global.death_pause_time)
+	oUI.shake_hp()
+}
+
+function Hit(enemy) {
+	if is_dead() {
+		return	
+	}
+	if (invincibility_timer.timer or invincibility_timer_no_flashing.timer)
+            and enemy != -1000 // indicate death from pit
+    {
+		return
+	}
+	if state == PLAYERSTATE.GRABBED {
+		return;
+	}
+	if state == PLAYERSTATE.ATTACK_AERAL and instance_exists(aeral_attack_inst) {
+		instance_destroy(aeral_attack_inst)
+		attack_performed = false
+	}
+	if enemy && enemy.object_index == oRulaTongueTip {
+		become_grabbed()
+		audio_play_sound(SFX_Grab, 3, false)
+		return
+	}
+	global.player_hp -= global.player_invincible == false
+	audio_play_sound(global.sfx_player_damage, 8, false)
+	//this is for when we have both a voice AND SFX for taking damage 
+	if !global.player_hp {
+		Kill()
+		return
+	}
+	vsp = hit.vsp
+	hsp = hit.hsp * -image_xscale
+	has_control = false
+	hit.timer = hit.time
+	state = PLAYERSTATE.HIT
+	sprite_index = sPlayerDamage
+    image_draw_angle = 0
+	invincibility_timer.reset()
+	oUI.shake_hp()
+}
+
+function throw_with_control(dir, push_sp) {
+    aeral_attack_finish()
+    has_control = true
+    var conf = throw_with_control_conf
+    // conf.restrict_hsp_timer.reset()
+    setHspControl(false)
+    state = PLAYERSTATE.THROWED_WITH_CONTROL
+    hsp = lengthdir_x(push_sp, dir)
+    var push_vsp = lengthdir_y(push_sp, dir)
+    if push_vsp != 0 {
+        vsp = lengthdir_y(push_sp, dir)
+    }
+    hsp_max = conf.hsp_max
+	sprite_index = conf.spr
+}
+
 function start_log_ride() {
 	var yy = oAutoscrollerLog.y - 7
 	with instance_create_layer(x, yy, layer, oMeinOnLog) {
@@ -560,28 +570,6 @@ function setHspControl(value) {
 	is_hsp_control_on = value
 }
 
-function updateHspControl() {
-	if is_hsp_control_on {
-		var is_accelerating = sign(hsp) == 0 or sign(hsp) == sign(hsp_to)
-		hsp = approach(hsp, hsp_to * (1 + is_sprinting*sprint_add_sp_gain), is_accelerating ? acc : decel)
-	}
-}
-
-function applyGravity() {
-	vsp = approach(vsp, vsp_max, grav)
-}
-
-function finalizeHsp() {
-	var final_hsp = hsp + ground_hsp
-	dir = point_direction(0, 0, final_hsp, vsp)
-	// block hor sp if wall contact
-	if ((final_hsp > 0) and !right_free) or ((final_hsp < 0) and !left_free) {
-		final_hsp = 0
-		hsp = 0
-	}
-	return final_hsp
-}
-
 function heal(amount) {
 	if global.player_hp < global.player_hp_max {
 		global.player_hp = min(global.player_hp_max, global.player_hp+amount)
@@ -590,6 +578,7 @@ function heal(amount) {
 }
 
 function BecomeInvisibleIn(frames) {
+    /// Used by cutscene controllers
     if frames == 0 {
         visible = false
     }
@@ -700,6 +689,9 @@ instance_create_layer(x, y, layer, oCamera)
 if shouldPlayOntoStageSequence() {
 	playOntoStageSequence()
 }
+
+// create player-related ui
+instance_create_layer(0, 0, "ui", oUI)
 
 dev_autoscroller_camera_solid_walls_workaround_timer = 3
 
