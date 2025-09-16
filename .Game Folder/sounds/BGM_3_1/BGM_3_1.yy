@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":72.0,
+  "duration":20.147665,
   "name":"BGM_3_1",
   "parent":{
     "name":"Stage themes",
