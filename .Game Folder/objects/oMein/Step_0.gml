@@ -181,6 +181,8 @@ switch state {
 	}
     case PLAYERSTATE.ATTACK_COUNTER: {
         if !counter_attack_conf.perform_attack {
+			hsp = 0
+			sprite_index = sPlayer_CounterPrep
             if !counter_attack_conf.timer.update() {
                 state = PLAYERSTATE.FREE
             }

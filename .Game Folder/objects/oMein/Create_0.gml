@@ -145,8 +145,8 @@ allow_exit_throw_delay = make_timer(5)
 animation_stop_update_timer = make_timer(2)
 
 counter_attack_conf = {
-    timer: make_timer(30),
-    dmg: 3,
+    timer: make_timer(60),//Counter Duration 
+    dmg: 3,//counter attack damage
     perform_attack: false,
     attack_frame: 3,
 }

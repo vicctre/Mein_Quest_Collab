@@ -311,7 +311,7 @@
   "name":"TestingGround2",
   "parent":{
     "name":"Testing Area",
-    "path":"folders/Rooms/WIP Stages/Testing Area.yy",
+    "path":"folders/Rooms/Testing Area.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

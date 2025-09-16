@@ -48,6 +48,7 @@
     {"name":"inst_6B41FAD3","path":"rooms/TrainingRoom/TrainingRoom.yy",},
     {"name":"inst_33C5ECF","path":"rooms/TrainingRoom/TrainingRoom.yy",},
     {"name":"inst_571D026B","path":"rooms/TrainingRoom/TrainingRoom.yy",},
+    {"name":"inst_3A50A58E","path":"rooms/TrainingRoom/TrainingRoom.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -55,7 +56,8 @@
         {"$GMRInstance":"v2","%Name":"inst_554A76D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_554A76D","objectId":{"name":"oSFX","path":"objects/oSFX/oSFX.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":96.0,},
       ],"layers":[],"name":"sfx_tester","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"ui","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_571D026B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_571D026B","objectId":{"name":"oTestingGround","path":"objects/oTestingGround/oTestingGround.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":124.0,"y":147.0,},
+        {"$GMRInstance":"v2","%Name":"inst_571D026B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_571D026B","objectId":{"name":"oTestingGround","path":"objects/oTestingGround/oTestingGround.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":48.0,},
+        {"$GMRInstance":"v2","%Name":"inst_3A50A58E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3A50A58E","objectId":{"name":"oPause","path":"objects/oPause/oPause.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":73.0,},
       ],"layers":[],"name":"ui","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Player","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_76CFC2CE_1_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_76CFC2CE_1_3","objectId":{"name":"oMein","path":"objects/oMein/oMein.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":141.0,"y":370.0,},
@@ -123,7 +125,7 @@
   "name":"TrainingRoom",
   "parent":{
     "name":"Testing Area",
-    "path":"folders/Rooms/WIP Stages/Testing Area.yy",
+    "path":"folders/Rooms/Testing Area.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

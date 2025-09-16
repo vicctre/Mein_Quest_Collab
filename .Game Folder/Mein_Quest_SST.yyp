@@ -74,7 +74,7 @@
     {"$GMFolder":"","%Name":"W3-1","folderPath":"folders/Rooms/Stages/W3-1.yy","name":"W3-1","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"WIP Stages","folderPath":"folders/Rooms/WIP Stages.yy","name":"WIP Stages","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Cutting room floor","folderPath":"folders/Rooms/WIP Stages/Cutting room floor.yy","name":"Cutting room floor","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Testing Area","folderPath":"folders/Rooms/WIP Stages/Testing Area.yy","name":"Testing Area","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Testing Area","folderPath":"folders/Rooms/Testing Area.yy","name":"Testing Area","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"libs","folderPath":"folders/Scripts/libs.yy","name":"libs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Music_n_Sounds","folderPath":"folders/Scripts/Music_n_Sounds.yy","name":"Music_n_Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
