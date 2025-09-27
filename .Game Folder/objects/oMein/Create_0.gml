@@ -418,12 +418,6 @@ function Hit(enemy) {
     {
 		return
 	}
-    if state == PLAYERSTATE.ATTACK_COUNTER {
-        if !counter_attack_conf.perform_attack {
-            counter_attack()
-        }
-        return
-    }
 	if state == PLAYERSTATE.GRABBED {
 		return;
 	}
@@ -436,6 +430,12 @@ function Hit(enemy) {
 		audio_play_sound(SFX_Grab, 3, false)
 		return
 	}
+    if state == PLAYERSTATE.ATTACK_COUNTER {
+        if !counter_attack_conf.perform_attack {
+            counter_attack()
+        }
+        return
+    }
 	global.player_hp -= global.player_invincible == false
 	audio_play_sound(global.sfx_player_damage, 8, false)
 	//this is for when we have both a voice AND SFX for taking damage 

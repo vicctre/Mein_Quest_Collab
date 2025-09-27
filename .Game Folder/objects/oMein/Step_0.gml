@@ -180,6 +180,7 @@ switch state {
 		break
 	}
     case PLAYERSTATE.ATTACK_COUNTER: {
+        hsp = 0
         if !counter_attack_conf.perform_attack {
 			hsp = 0
 			sprite_index = sPlayer_CounterPrep
@@ -194,6 +195,7 @@ switch state {
         }
         if is_animation_end() {
             state = PLAYERSTATE.FREE
+            attack_performed = false
             counter_attack_conf.perform_attack = false
         }
         break
