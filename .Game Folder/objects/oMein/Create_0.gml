@@ -329,6 +329,17 @@ function check_perform_attack() {
 	}
     return false
 }
+function check_perform_counter() {
+	if !key_attack or attack_pause_timer {
+        return false
+    }
+    if !down_free and oStageManager.IsCounterUnlocked() {
+        mask_index = sPlayer
+        sprite_index = sPlayer_CounterPrep
+        enter_counter_attack_state()
+        return true
+    }
+}
 function check_spikes() {
 	var spike = instance_place(x, y, oSpikes)
 	if spike != noone {

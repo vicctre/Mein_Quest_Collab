@@ -1,5 +1,1 @@
-Fix:
 > counter attack
-    > cancel Mein movement
-    > fix slash attack not spawning hurtbox after
-    > don't trigger counter by rula tongue

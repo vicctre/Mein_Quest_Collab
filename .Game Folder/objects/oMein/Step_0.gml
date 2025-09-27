@@ -89,11 +89,7 @@ switch state {
 			mask_index = sPlayer
 			start_crouch_transition(true)
 		}
-        if key_attack and oStageManager.IsCounterUnlocked() {
-			mask_index = sPlayer
-            sprite_index = sPlayer
-            enter_counter_attack_state()
-        }
+        check_perform_counter()
 		break
 	}
 	case PLAYERSTATE.PUSHING: {
