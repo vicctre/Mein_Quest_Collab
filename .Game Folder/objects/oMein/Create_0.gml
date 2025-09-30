@@ -146,7 +146,7 @@ animation_stop_update_timer = make_timer(2)
 
 counter_attack_conf = {
     timer: make_timer(60),//Counter Duration 
-    dmg: 3,//counter attack damage
+    dmg: 1.5,//counter attack damage
     perform_attack: false,
     attack_frame: 3,
 }
