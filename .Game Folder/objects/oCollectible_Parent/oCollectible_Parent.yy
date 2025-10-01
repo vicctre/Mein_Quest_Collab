@@ -11,8 +11,8 @@
   "name":"oCollectible_Parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Items",
-    "path":"folders/Objects/Items.yy",
+    "name":".ParentsClub",
+    "path":"folders/Objects/.ParentsClub.yy",
   },
   "parentObjectId":null,
   "persistent":false,

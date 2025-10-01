@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Items",
-    "path":"folders/Objects/Items.yy",
+    "path":"folders/Objects/INGAME_Objects/Items.yy",
   },
   "parentObjectId":null,
   "persistent":false,

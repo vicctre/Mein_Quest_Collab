@@ -1,7 +1,7 @@
 vspd = -3;
 grav = 0.3;
 activated = true;
-activation_delay = 30;
+activation_delay = 12; //how long it takes to pick up objects from Chest
 flashing = object_index != oCoin;
 flash_timer = 0;
 flash_loop_duration = 100;
