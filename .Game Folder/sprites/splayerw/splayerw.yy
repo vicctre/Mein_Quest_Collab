@@ -52,7 +52,7 @@
   "origin":4,
   "parent":{
     "name":"Movement",
-    "path":"folders/Sprites/Characters/Mein/Basic Functions/Movement.yy",
+    "path":"folders/Sprites/Characters/Mein/Movement.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
