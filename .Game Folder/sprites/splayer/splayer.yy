@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"Idle Animations",
-    "path":"folders/Sprites/Mein Sprites/Idle Animations.yy",
+    "path":"folders/Sprites/Characters/Mein/Idle Animations.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

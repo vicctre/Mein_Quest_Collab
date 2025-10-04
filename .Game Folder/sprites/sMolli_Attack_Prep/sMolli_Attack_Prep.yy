@@ -32,7 +32,7 @@
   "origin":9,
   "parent":{
     "name":"Molli",
-    "path":"folders/Sprites/Enemy Sprites/Basic NME/Molli.yy",
+    "path":"folders/Sprites/Characters/Enemies/Molli.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

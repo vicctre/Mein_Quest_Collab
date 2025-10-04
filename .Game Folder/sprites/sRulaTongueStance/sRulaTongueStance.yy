@@ -31,7 +31,7 @@
   "origin":9,
   "parent":{
     "name":"Rularog",
-    "path":"folders/Sprites/Enemy Sprites/World Bosses/Rularog.yy",
+    "path":"folders/Sprites/Characters/Bosses/Rularog.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

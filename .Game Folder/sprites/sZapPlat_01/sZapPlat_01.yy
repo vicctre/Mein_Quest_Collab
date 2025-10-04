@@ -46,7 +46,7 @@
   "origin":0,
   "parent":{
     "name":"World 3",
-    "path":"folders/Sprites/Hazards/World 3.yy",
+    "path":"folders/Sprites/Levels/Hazards/World 3.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

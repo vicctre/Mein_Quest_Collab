@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Basic Functions",
-    "path":"folders/Sprites/Mein Sprites/Basic Functions.yy",
+    "path":"folders/Sprites/Characters/Mein/Basic Functions.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

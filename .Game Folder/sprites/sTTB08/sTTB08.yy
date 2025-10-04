@@ -34,7 +34,7 @@
   "origin":4,
   "parent":{
     "name":"Tutorial Bubbles",
-    "path":"folders/Sprites/Labels/Tutorial Bubbles.yy",
+    "path":"folders/Sprites/Levels/Tutorial Bubbles.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

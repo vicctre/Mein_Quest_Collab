@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Obj.",
-    "path":"folders/Sprites/Obj..yy",
+    "path":"folders/Sprites/Levels/Obj..yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

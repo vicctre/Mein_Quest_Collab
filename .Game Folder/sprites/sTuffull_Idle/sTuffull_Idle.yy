@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"Tuffull",
-    "path":"folders/Sprites/Enemy Sprites/Mini Bosses/Tuffull.yy",
+    "path":"folders/Sprites/Characters/Bosses/Tuffull.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

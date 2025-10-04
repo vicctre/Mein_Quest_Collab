@@ -32,7 +32,7 @@
   "origin":9,
   "parent":{
     "name":"Hitboxes",
-    "path":"folders/Sprites/Mein Sprites/Hitboxes.yy",
+    "path":"folders/Sprites/Characters/Mein/Hitboxes.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -29,7 +29,7 @@
   "origin":9,
   "parent":{
     "name":"Klawkin",
-    "path":"folders/Sprites/Enemy Sprites/Basic NME/Klawkin.yy",
+    "path":"folders/Sprites/Characters/Enemies/Klawkin.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -47,7 +47,7 @@
   "origin":4,
   "parent":{
     "name":"Cutscenes-Exp",
-    "path":"folders/Sprites/Mein Sprites/Other Animations/Cutscenes-Exp.yy",
+    "path":"folders/Sprites/Characters/Mein/Other Animations/Cutscenes-Exp.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

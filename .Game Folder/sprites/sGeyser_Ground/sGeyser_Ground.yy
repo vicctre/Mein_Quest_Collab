@@ -31,7 +31,7 @@
   "origin":7,
   "parent":{
     "name":"Geyser",
-    "path":"folders/Sprites/Hazards/World 2/Geyser.yy",
+    "path":"folders/Sprites/Levels/Hazards/World 2/Geyser.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -39,7 +39,7 @@
   "origin":9,
   "parent":{
     "name":"Other Animations",
-    "path":"folders/Sprites/Mein Sprites/Other Animations.yy",
+    "path":"folders/Sprites/Characters/Mein/Other Animations.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

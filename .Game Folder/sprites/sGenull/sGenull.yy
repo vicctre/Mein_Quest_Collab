@@ -33,7 +33,7 @@
   "origin":9,
   "parent":{
     "name":"Genull",
-    "path":"folders/Sprites/Enemy Sprites/Basic NME/Genull.yy",
+    "path":"folders/Sprites/Characters/Enemies/Genull.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

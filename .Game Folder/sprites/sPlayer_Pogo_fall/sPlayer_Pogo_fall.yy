@@ -34,7 +34,7 @@
   "origin":9,
   "parent":{
     "name":"Unlockable attacks",
-    "path":"folders/Sprites/Mein Sprites/Attacks/Unlockable attacks.yy",
+    "path":"folders/Sprites/Characters/Mein/Attacks/Unlockable attacks.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -76,10 +76,18 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"43e460c9-60c0-44af-ba8f-a4f7581db3d5","path":"sprites/sPlayer_Pogo_fall/sPlayer_Pogo_fall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"b052fb35-972e-490e-ac9e-754bf8b4bd16","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"002a9e8e-a1f0-4843-b687-c2ac0113b9a7","path":"sprites/sPlayer_Pogo_fall/sPlayer_Pogo_fall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e17ef678-ea0d-4ee0-bd54-3f8b867adeb6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7b4b35f2-0a7e-4058-9c1e-b517a0e4f468","path":"sprites/sPlayer_Pogo_fall/sPlayer_Pogo_fall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e1815cbd-eeaa-4223-b0b6-04ae72f20486","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"5d2ea0d7-c2c9-4031-ae02-c21bbbc35efd","path":"sprites/sPlayer_Pogo_fall/sPlayer_Pogo_fall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"341553f5-f308-4a9e-bdc3-4a598624744e","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"43e460c9-60c0-44af-ba8f-a4f7581db3d5","path":"sprites/sPlayer_Pogo_fall/sPlayer_Pogo_fall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b052fb35-972e-490e-ac9e-754bf8b4bd16","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"002a9e8e-a1f0-4843-b687-c2ac0113b9a7","path":"sprites/sPlayer_Pogo_fall/sPlayer_Pogo_fall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e17ef678-ea0d-4ee0-bd54-3f8b867adeb6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7b4b35f2-0a7e-4058-9c1e-b517a0e4f468","path":"sprites/sPlayer_Pogo_fall/sPlayer_Pogo_fall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e1815cbd-eeaa-4223-b0b6-04ae72f20486","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5d2ea0d7-c2c9-4031-ae02-c21bbbc35efd","path":"sprites/sPlayer_Pogo_fall/sPlayer_Pogo_fall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"341553f5-f308-4a9e-bdc3-4a598624744e","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

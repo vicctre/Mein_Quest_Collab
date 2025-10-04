@@ -31,7 +31,7 @@
   "origin":4,
   "parent":{
     "name":"Stage Tiles",
-    "path":"folders/Sprites/Tile_Tests/Stage Tiles.yy",
+    "path":"folders/Sprites/Levels/Tiles/Stage Tiles.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

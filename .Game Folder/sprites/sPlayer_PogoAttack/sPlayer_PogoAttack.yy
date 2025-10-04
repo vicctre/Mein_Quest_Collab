@@ -33,7 +33,7 @@
   "origin":9,
   "parent":{
     "name":"Unlockable attacks",
-    "path":"folders/Sprites/Mein Sprites/Attacks/Unlockable attacks.yy",
+    "path":"folders/Sprites/Characters/Mein/Attacks/Unlockable attacks.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

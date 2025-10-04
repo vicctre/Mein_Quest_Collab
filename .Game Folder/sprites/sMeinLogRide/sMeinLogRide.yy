@@ -35,7 +35,7 @@
   "origin":4,
   "parent":{
     "name":"Log stuff",
-    "path":"folders/Sprites/Mein Sprites/Other Animations/Log stuff.yy",
+    "path":"folders/Sprites/Characters/Mein/Other Animations/Log stuff.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"Fleater",
-    "path":"folders/Sprites/Enemy Sprites/Basic NME/Fleater.yy",
+    "path":"folders/Sprites/Characters/Enemies/Fleater.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

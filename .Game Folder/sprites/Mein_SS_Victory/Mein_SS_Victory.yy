@@ -73,7 +73,7 @@
   "origin":4,
   "parent":{
     "name":"Victory Animations",
-    "path":"folders/Sprites/Mein Sprites/Victory Animations.yy",
+    "path":"folders/Sprites/Characters/Mein/Victory Animations.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":6,
   "parent":{
-    "name":"Labels",
-    "path":"folders/Sprites/Labels.yy",
+    "name":"Programmer art",
+    "path":"folders/Sprites/Programmer art.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -33,7 +33,7 @@
   "origin":4,
   "parent":{
     "name":"Bytes",
-    "path":"folders/Sprites/Sister Spirits/Bytes.yy",
+    "path":"folders/Sprites/Characters/Sister Spirits/Bytes.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

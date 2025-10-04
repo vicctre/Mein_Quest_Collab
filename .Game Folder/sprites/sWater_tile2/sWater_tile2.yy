@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"2_1",
-    "path":"folders/Sprites/Environment decor/2_1.yy",
+    "path":"folders/Sprites/Levels/Level Decorations/2_1.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

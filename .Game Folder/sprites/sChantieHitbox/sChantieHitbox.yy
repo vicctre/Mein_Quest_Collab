@@ -46,7 +46,7 @@
   "origin":4,
   "parent":{
     "name":"Chantie",
-    "path":"folders/Sprites/Enemy Sprites/Basic NME/Chantie.yy",
+    "path":"folders/Sprites/Characters/Enemies/Chantie.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -29,7 +29,7 @@
   "origin":9,
   "parent":{
     "name":"Galish",
-    "path":"folders/Sprites/Enemy Sprites/Basic NME/Galish.yy",
+    "path":"folders/Sprites/Characters/Enemies/Galish.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
