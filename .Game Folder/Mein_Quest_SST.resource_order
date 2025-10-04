@@ -516,7 +516,6 @@
     {"name":"sZapPlat_02","order":1,"path":"sprites/sZapPlat_02/sZapPlat_02.yy",},
     {"name":"sZapPlat_03","order":2,"path":"sprites/sZapPlat_03/sZapPlat_03.yy",},
     {"name":"sZapPlat_04","order":3,"path":"sprites/sZapPlat_04/sZapPlat_04.yy",},
-    {"name":"sZapPlatform","order":7,"path":"sprites/sZapPlatform/sZapPlatform.yy",},
     {"name":"W2_2_Tileset_2","order":2,"path":"sprites/W2_2_Tileset_2/W2_2_Tileset_2.yy",},
     {"name":"W2_2_Tileset_3","order":3,"path":"sprites/W2_2_Tileset_3/W2_2_Tileset_3.yy",},
     {"name":"W2_2_Tileset","order":1,"path":"sprites/W2_2_Tileset/W2_2_Tileset.yy",},

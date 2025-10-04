@@ -53,7 +53,7 @@ attackState = {
         with create_enemy_attack(
                 id.x+hitbox_shift_x*id.image_xscale, id.y+hitbox_shift_y,
                 hitbox_width, hitbox_height) {
-            alarm[0] = 10
+            alarm[0] = other.attack_timer.time
         }
         with id {
             var zap_platform = instance_place(x, y+1, oZapPlatform)

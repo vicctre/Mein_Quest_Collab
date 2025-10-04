@@ -207,7 +207,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"Mein_Quest_SST",
   "resources":[
@@ -893,7 +893,6 @@
     {"id":{"name":"sZapPlat_03","path":"sprites/sZapPlat_03/sZapPlat_03.yy",},},
     {"id":{"name":"sZapPlat_04","path":"sprites/sZapPlat_04/sZapPlat_04.yy",},},
     {"id":{"name":"sZapPlat","path":"sprites/sZapPlat/sZapPlat.yy",},},
-    {"id":{"name":"sZapPlatform","path":"sprites/sZapPlatform/sZapPlatform.yy",},},
     {"id":{"name":"Testing1","path":"sprites/Testing1/Testing1.yy",},},
     {"id":{"name":"Testing2","path":"sprites/Testing2/Testing2.yy",},},
     {"id":{"name":"Testing3","path":"sprites/Testing3/Testing3.yy",},},
