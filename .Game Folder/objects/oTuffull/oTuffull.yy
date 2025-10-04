@@ -14,8 +14,8 @@
     "path":"folders/Objects/Enemies/Bosses.yy",
   },
   "parentObjectId":{
-    "name":"ENEMYBOSS",
-    "path":"objects/ENEMYBOSS/ENEMYBOSS.yy",
+    "name":"oEnemyBossParent",
+    "path":"objects/oEnemyBossParent/oEnemyBossParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

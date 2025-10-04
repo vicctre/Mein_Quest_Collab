@@ -12,7 +12,7 @@ function AddDeactivatedEnemy(inst) {
 }
 
 function InitEnemies() {
-	with ENEMY {
+	with oEnemyParent {
 		if autoscroller_activate_distance != undefined {
 			oAutoscrollerController.AddDeactivatedEnemy(id)
 			instance_deactivate_object(id)

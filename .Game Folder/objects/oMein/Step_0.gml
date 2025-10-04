@@ -153,7 +153,7 @@ switch state {
         if enemy {
             y -= vsp    // prevent enemy collision on next step
             enemy.set_hit(1)
-            if object_is_ancestor(enemy.object_index, ENEMY) {
+            if object_is_ancestor(enemy.object_index, oEnemyParent) {
                 pogo_bounce()
             }
             break

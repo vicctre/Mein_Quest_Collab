@@ -8,17 +8,17 @@
   "managed":true,
   "name":"oApploon",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"grv","path":"objects/ENEMY/ENEMY.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"hsp","path":"objects/ENEMY/ENEMY.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"vsp","path":"objects/ENEMY/ENEMY.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemyParent","path":"objects/oEnemyParent/oEnemyParent.yy",},"propertyId":{"name":"grv","path":"objects/oEnemyParent/oEnemyParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemyParent","path":"objects/oEnemyParent/oEnemyParent.yy",},"propertyId":{"name":"hsp","path":"objects/oEnemyParent/oEnemyParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemyParent","path":"objects/oEnemyParent/oEnemyParent.yy",},"propertyId":{"name":"vsp","path":"objects/oEnemyParent/oEnemyParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
   ],
   "parent":{
     "name":"Apploon",
     "path":"folders/Objects/Enemies/Small Enemies/Apploon.yy",
   },
   "parentObjectId":{
-    "name":"ENEMY",
-    "path":"objects/ENEMY/ENEMY.yy",
+    "name":"oEnemyParent",
+    "path":"objects/oEnemyParent/oEnemyParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -12,7 +12,7 @@ wanderState = {
 		var check_ground_x = dir ? id.bbox_right : id.bbox_left
         if id.colliding_wall(id.x + dir, id.y)
                 or !collision_point(check_ground_x, id.bbox_bottom + 1,
-                                    WALLPARENT, false, false) {
+                                    oWallParent, false, false) {
             dir = -dir
         }
     },
@@ -131,7 +131,7 @@ function colliding_wall(xx, yy) {
 }
 
 function move(hsp, vsp) {
-	return move_coord_contact_obj(hsp, vsp, WALLPARENT)
+	return move_coord_contact_obj(hsp, vsp, oWallParent)
 }
 
 function isAnimationEnd() {

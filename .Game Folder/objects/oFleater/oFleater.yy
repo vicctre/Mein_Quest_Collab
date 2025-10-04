@@ -8,15 +8,15 @@
   "managed":true,
   "name":"oFleater",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ENEMY","path":"objects/ENEMY/ENEMY.yy",},"propertyId":{"name":"grv","path":"objects/ENEMY/ENEMY.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemyParent","path":"objects/oEnemyParent/oEnemyParent.yy",},"propertyId":{"name":"grv","path":"objects/oEnemyParent/oEnemyParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
   ],
   "parent":{
     "name":"Fleater",
     "path":"folders/Objects/Enemies/Small Enemies/Fleater.yy",
   },
   "parentObjectId":{
-    "name":"ENEMY",
-    "path":"objects/ENEMY/ENEMY.yy",
+    "name":"oEnemyParent",
+    "path":"objects/oEnemyParent/oEnemyParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

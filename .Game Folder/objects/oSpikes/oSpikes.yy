@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Hazards",
-    "path":"folders/Objects/INGAME_Objects/Hazards.yy",
+    "path":"folders/Objects/LevelObjects/Hazards.yy",
   },
   "parentObjectId":null,
   "persistent":false,

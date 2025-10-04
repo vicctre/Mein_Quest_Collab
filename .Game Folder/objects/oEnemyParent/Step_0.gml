@@ -11,7 +11,7 @@ if (!flying)
 //dont walk off edges 
 if (grounded) && (afraidofheights) 
 		&& (!collision_point(x + abs(bbox_right-x) * image_xscale,
-						     bbox_bottom+1, WALLPARENT, false, true) 
+						     bbox_bottom+1, oWallParent, false, true) 
 		&& !flying) {
 	hsp = -hsp; 
 }
@@ -19,9 +19,9 @@ if (flying && abs(baseX-x) > leashRange) {
 	hsp_goal = abs(hsp_goal)*sign(baseX-x);
 }
 //Collision (horizontal) 
-if (place_meeting(x+hsp,y,WALLPARENT))
+if (place_meeting(x+hsp,y,oWallParent))
 {
-	while (!place_meeting(x+sign(hsp),y,WALLPARENT))
+	while (!place_meeting(x+sign(hsp),y,oWallParent))
 	{
 		x = x + sign(hsp); 
 	}
@@ -39,9 +39,9 @@ if (flying && abs(baseY-y) > leashRange) {
 	vsp_goal = abs(vsp_goal)*sign(baseY-y);
 }
 //Collision (vertical) 
-if (place_meeting(x,y+vsp,WALLPARENT))
+if (place_meeting(x,y+vsp,oWallParent))
 {
-	while (!place_meeting(x,y+sign(vsp),WALLPARENT))
+	while (!place_meeting(x,y+sign(vsp),oWallParent))
 	{
 		y = y + sign(vsp);
 	}
@@ -57,7 +57,7 @@ y = y + vsp;
 
 //Animations 
 
-if (!place_meeting(x,y+1,WALLPARENT)) 
+if (!place_meeting(x,y+1,oWallParent)) 
 {
 	grounded = false; 
 }

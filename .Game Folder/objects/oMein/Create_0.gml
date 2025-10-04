@@ -384,8 +384,8 @@ function playOntoStageSequence() {
 }
 
 function colliding_enemy() {
-	var enemy = instance_place(x, y, ENEMY)
-	if enemy and object_is_ancestor(enemy.object_index, ENEMYBOSS)
+	var enemy = instance_place(x, y, oEnemyParent)
+	if enemy and object_is_ancestor(enemy.object_index, oEnemyBossParent)
 			and enemy.isDead() {
 		return noone
 	}
@@ -550,7 +550,7 @@ function updateCoyoteTimer() {
 
 function checkCollidingEnemy() {
 	var enemy = colliding_enemy()
-	var attack = instance_place(x, y, ENEMYATTACK)
+	var attack = instance_place(x, y, oEnemyAttack)
 	if enemy != noone or attack != noone {
 		Hit(enemy)
 		// force finish aeral attack

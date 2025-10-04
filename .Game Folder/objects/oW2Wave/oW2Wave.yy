@@ -12,8 +12,8 @@
   "name":"oW2Wave",
   "overriddenProperties":[],
   "parent":{
-    "name":"W2_1",
-    "path":"folders/Objects/INGAME_Objects/W2_1.yy",
+    "name":"WaveSystem",
+    "path":"folders/Objects/SystemObjects/LevelWise/WaveSystem.yy",
   },
   "parentObjectId":null,
   "persistent":false,

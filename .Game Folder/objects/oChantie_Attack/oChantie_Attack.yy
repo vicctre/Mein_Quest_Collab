@@ -10,8 +10,8 @@
     "path":"folders/Objects/Enemies/Small Enemies/Chantie.yy",
   },
   "parentObjectId":{
-    "name":"ENEMYATTACK",
-    "path":"objects/ENEMYATTACK/ENEMYATTACK.yy",
+    "name":"oEnemyAttack",
+    "path":"objects/oEnemyAttack/oEnemyAttack.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

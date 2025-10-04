@@ -14,8 +14,8 @@
     "path":"folders/Objects/Enemies/Small Enemies/Klawkin.yy",
   },
   "parentObjectId":{
-    "name":"ENEMY",
-    "path":"objects/ENEMY/ENEMY.yy",
+    "name":"oEnemyParent",
+    "path":"objects/oEnemyParent/oEnemyParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

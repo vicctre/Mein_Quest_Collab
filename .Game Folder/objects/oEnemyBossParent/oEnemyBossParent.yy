@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oChantie",
+  "%Name":"oEnemyBossParent",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oChantie",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemyParent","path":"objects/oEnemyParent/oEnemyParent.yy",},"propertyId":{"name":"walksp","path":"objects/oEnemyParent/oEnemyParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
-  ],
+  "name":"oEnemyBossParent",
+  "overriddenProperties":[],
   "parent":{
-    "name":"Chantie",
-    "path":"folders/Objects/Enemies/Small Enemies/Chantie.yy",
+    "name":".ParentsClub",
+    "path":"folders/Objects/.ParentsClub.yy",
   },
   "parentObjectId":{
     "name":"oEnemyParent",
@@ -35,10 +34,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sChantieIdle",
-    "path":"sprites/sChantieIdle/sChantieIdle.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

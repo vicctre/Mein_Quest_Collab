@@ -12,11 +12,11 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Items",
-    "path":"folders/Objects/INGAME_Objects/Items.yy",
+    "path":"folders/Objects/LevelObjects/Items.yy",
   },
   "parentObjectId":{
-    "name":"oCollectible_Parent",
-    "path":"objects/oCollectible_Parent/oCollectible_Parent.yy",
+    "name":"oCollectibleParent",
+    "path":"objects/oCollectibleParent/oCollectibleParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

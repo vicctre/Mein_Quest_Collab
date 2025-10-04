@@ -10,12 +10,12 @@
   "name":"oCrate",
   "overriddenProperties":[],
   "parent":{
-    "name":"Universal",
-    "path":"folders/Objects/INGAME_Objects/Universal.yy",
+    "name":"Common",
+    "path":"folders/Objects/LevelObjects/Common.yy",
   },
   "parentObjectId":{
-    "name":"pCut",
-    "path":"objects/pCut/pCut.yy",
+    "name":"oHitableParent",
+    "path":"objects/oHitableParent/oHitableParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

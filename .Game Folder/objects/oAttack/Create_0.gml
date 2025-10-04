@@ -7,7 +7,7 @@ frames = 4 //how long attack lasts
 auto_destroy = bool(auto_destroy)
 
 function perform() {
-	var num = instance_place_list(x, y, pCut, new_instances_list, false)
+	var num = instance_place_list(x, y, oHitableParent, new_instances_list, false)
 	for (var i = 0; i < num; ++i) {
 		var inst = new_instances_list[| i]
 		if ds_list_find_index(hit_instances_list, inst) == -1 {

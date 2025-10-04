@@ -10,8 +10,8 @@
   "name":"oZapPlatform",
   "overriddenProperties":[],
   "parent":{
-    "name":"Universal",
-    "path":"folders/Objects/INGAME_Objects/Universal.yy",
+    "name":"Common",
+    "path":"folders/Objects/LevelObjects/Common.yy",
   },
   "parentObjectId":{
     "name":"oWall",

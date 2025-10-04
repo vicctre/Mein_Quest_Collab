@@ -1,21 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"ENEMY",
+  "%Name":"oEnemyParent",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"ENEMY",
+  "name":"oEnemyParent",
   "overriddenProperties":[],
   "parent":{
     "name":".ParentsClub",
     "path":"folders/Objects/.ParentsClub.yy",
   },
   "parentObjectId":{
-    "name":"pCut",
-    "path":"objects/pCut/pCut.yy",
+    "name":"oHitableParent",
+    "path":"objects/oHitableParent/oHitableParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

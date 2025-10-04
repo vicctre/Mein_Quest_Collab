@@ -29,7 +29,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"one_frame","filters":[],"listItems":[],"multiselect":false,"name":"one_frame","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
-    {"$GMObjectProperty":"v1","%Name":"target_object","filters":[],"listItems":[],"multiselect":false,"name":"target_object","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"pCut","path":"objects/pCut/pCut.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"pCut","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"target_object","filters":[],"listItems":[],"multiselect":false,"name":"target_object","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"oHitableParent","path":"objects/oHitableParent/oHitableParent.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"oHitableParent","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"damage","filters":[],"listItems":[],"multiselect":false,"name":"damage","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
   ],
   "resourceType":"GMObject",

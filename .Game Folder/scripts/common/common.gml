@@ -12,6 +12,6 @@ function draw_hit_blinking(phase, color=global.player_damage_blinking_color) {
 }
 
 function create_enemy_attack(x, y, w, h) {
-	return instance_create_layer(x, y, "Enemies", ENEMYATTACK,
+	return instance_create_layer(x, y, "Enemies", oEnemyAttack,
 								 {width: w, height: h})
 }

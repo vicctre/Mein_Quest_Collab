@@ -9,7 +9,7 @@ dim_alpha = 0
 dim_ratio = 0.01
 
 dummy_replaced_objects = [
-    ENEMY, oDeadEnemy, oAutoscrollerLog, oRulaTongue,
+    oEnemyParent, oDeadEnemy, oAutoscrollerLog, oRulaTongue,
     oMein, oMeinOnLog
 ]
 

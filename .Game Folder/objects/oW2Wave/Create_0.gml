@@ -58,7 +58,7 @@ instance_create_layer(0, 0, final_wave.layer, oW2WaveFinalWave)
 function washEveryoneOff() {
     var x0 = camx(), x1 = x0 + camw(),
         y0 = final_wave.endy, y1 = final_wave.y
-	with pCut {
+	with oHitableParent {
         if object_index == oPinnik {
             continue
         }
