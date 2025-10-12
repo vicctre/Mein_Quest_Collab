@@ -147,6 +147,7 @@
     {"name":"inst_69068CBC","path":"rooms/Gav_Room/Gav_Room.yy",},
     {"name":"inst_20F8B9F","path":"rooms/Gav_Room/Gav_Room.yy",},
     {"name":"inst_6BD5E580","path":"rooms/Gav_Room/Gav_Room.yy",},
+    {"name":"inst_50C830C6","path":"rooms/Gav_Room/Gav_Room.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -305,6 +306,7 @@
         {"$GMRInstance":"v2","%Name":"inst_69068CBC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_69068CBC","objectId":{"name":"oZapPlatform","path":"objects/oZapPlatform/oZapPlatform.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":1.0,"x":480.0,"y":768.0,},
         {"$GMRInstance":"v2","%Name":"inst_20F8B9F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_20F8B9F","objectId":{"name":"oZapPlatform","path":"objects/oZapPlatform/oZapPlatform.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-3.0,"scaleY":1.0,"x":288.0,"y":704.0,},
         {"$GMRInstance":"v2","%Name":"inst_6BD5E580","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6BD5E580","objectId":{"name":"oMolli","path":"objects/oMolli/oMolli.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":768.0,},
+        {"$GMRInstance":"v2","%Name":"inst_50C830C6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_50C830C6","objectId":{"name":"oZapPlatform","path":"objects/oZapPlatform/oZapPlatform.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":7.0,"scaleY":1.0,"x":320.0,"y":704.0,},
       ],"layers":[],"name":"oWall","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"AutoTile","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"AutoTile","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":32,"SerialiseWidth":49,"TileCompressedData":[
           -384,-2147483648,1,34,-7,20,-41,-2147483648,1,16,-7,47,-41,-2147483648,1,16,-7,47,-41,-2147483648,1,

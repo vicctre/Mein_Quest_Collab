@@ -63,15 +63,17 @@ function game_reset_globals() {
 	if DEV {
 		global.coins = 50
 		global.player_invincible = false
-		 global.dev_level_goto = Gav_Room
-		// global.dev_level_goto = TestingGround
+		 //global.dev_level_goto = Gav_Room
+		//global.dev_level_goto = TrainingRoom
 		// global.skip_logos = true
 		// global.dev_level_goto = rmThanksForPlayingScreen
 		// global.dev_level_goto = rmMenuAdventureLogsScreen
         // global.dev_level_goto = W1_3BOSS
         // global.dev_level_goto = W1_1_part5
-         //global.dev_level_goto = W2_1_part1
+        // global.dev_level_goto = W2_1_part1
         // global.dev_level_goto = W2_2_part5
+		// global.dev_level_goto = W3_1_part1
+	     global.dev_level_goto = W3_1_part4
 		// global.rula_start_state = "tongueChargeState"
 		// global.autoscroller_skip_log_intro = true
         // audio_set_master_gain(0, 0)
