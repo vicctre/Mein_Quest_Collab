@@ -27,6 +27,10 @@ switch room {
         follow = id
         //cam_width = 480
 	break
+	case W3_1_part5:
+        cam_zoom_target = 0.8125
+        SnapCamera()
+	break
 	default:
         SetRoomStartCamera()
         ResizeCamera()

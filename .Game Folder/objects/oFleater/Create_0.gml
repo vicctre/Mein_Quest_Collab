@@ -14,6 +14,10 @@ switch (FlyPattern) {
 		walksp = 1;
 		flysp = 0;
 	break;
+	//case "RightLeft": //I want to make them move the opposite direction first 
+	//	walksp = -1;
+	//	flysp = 0;
+	//break;
 	case "Still":
 		hsp = 0;
 		hsp_goal = hsp;
