@@ -53,6 +53,8 @@ tuffull_intro_roar_time = 178
 
 voleyball = false
 
+molli_zap_time = 120
+
 // fog effect for parallax backgrounds
 // you can override this setting for each level
 // in oFogController RoomStart event

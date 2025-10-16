@@ -44,7 +44,7 @@ attackState = {
 	hitbox_width: 60, //30
 	hitbox_height: 40,//40
     startup_timer: make_timer(90),
-    attack_timer: make_timer(120),
+    attack_timer: make_timer(global.molli_zap_time),
     attack_inst: noone,
     zapped_platforms: [],
 
