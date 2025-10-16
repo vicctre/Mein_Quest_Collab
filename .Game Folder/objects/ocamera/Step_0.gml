@@ -31,7 +31,7 @@ if is_struct(follow) or (instance_exists(follow)) {
 }
 
 var smooth_factor_add = 0
-if instance_exists(follow)
+if instance_exists(follow) and !is_struct(follow)
         and follow.object_index == oMein
         and (follow.state == PLAYERSTATE.FREE
              or follow.state == PLAYERSTATE.ATTACK_AERAL) {
