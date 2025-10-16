@@ -3,7 +3,7 @@ deadSprite = sMolli_D
 
 wanderState = {
     id: id,
-    sp: 0.3,
+    sp: 0.4,
     dir: 1,
     attack_cooldown_timer: make_timer(120),//Molli attack cooldown
 
