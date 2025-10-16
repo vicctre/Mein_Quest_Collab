@@ -11,6 +11,7 @@ Read more in manual.
 
 autoscroller_log_sp = 1.5
 autoscroller_log_sp_increased = 4.15
+autoscroller_kart_sp = 4.15
 ///used to change autocroller log speed
 
 

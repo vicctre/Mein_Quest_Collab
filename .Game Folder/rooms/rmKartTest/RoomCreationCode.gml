@@ -1,0 +1,1 @@
+with oWall { visible = true }

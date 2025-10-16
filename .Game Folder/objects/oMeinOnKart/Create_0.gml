@@ -4,17 +4,13 @@ event_inherited()
 global.player = id
 
 hsp_to = global.autoscroller_log_sp_increased
-hsp = global.autoscroller_log_sp_increased
+hsp = global.autoscroller_kart_sp
 accel = 0.05
 vsp = 0
-min_float_up_vsp = -0.1 //used to adjust float when landing in water?
 jump_sp = -7
-bottom_bound_y = y
 has_control = true
 grav = 0.3
 jump_timer = 0
-is_floating = true
-was_floating = true
 was_down_free = true
 
 death_delay = 45

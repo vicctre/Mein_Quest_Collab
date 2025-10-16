@@ -43,8 +43,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Log-Kart stuff",
-    "path":"folders/Sprites/Characters/Mein/Other Animations/Log-Kart stuff.yy",
+    "name":"Kart staff",
+    "path":"folders/Sprites/Characters/Mein/Other Animations/Kart staff.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
