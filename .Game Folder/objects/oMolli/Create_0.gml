@@ -45,26 +45,32 @@ attackState = {
 	hitbox_height: 40,//40
     startup_timer: make_timer(90),
     attack_timer: make_timer(120),
+    attack_inst: noone,
+    zapped_platforms: [],
 
     checkTriggered: function() {
         return inst_dist(global.player) < self.trigger_dist
     },
     attack: function() {
-        with create_enemy_attack(
+        attack_inst = create_enemy_attack(
                 id.x+hitbox_shift_x*id.image_xscale, id.y+hitbox_shift_y,
-                hitbox_width, hitbox_height) {
+                hitbox_width, hitbox_height)
+        with attack_inst {
             alarm[0] = other.attack_timer.time
         }
+        array_empty(zapped_platforms)
         with id {
             var zap_platform = instance_place(x, y+1, oZapPlatform)
             if zap_platform != noone {
-                zap_platform.Zap()
+                zap_platform.Zap(other.zapped_platforms)
             }
         }
     },
 	step: function() {
         if !startup_timer.update() {
-            attack()
+			if !instance_exists(attack_inst) {
+				attack()
+			}
             id.sprite_index = sMolli_Attack
         } else { return; }
         if !attack_timer.update() {

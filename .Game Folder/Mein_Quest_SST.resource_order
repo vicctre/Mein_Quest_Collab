@@ -207,7 +207,7 @@
     {"name":"oWallParent","order":3,"path":"objects/oWallParent/oWallParent.yy",},
     {"name":"oWaveSafeZone","order":2,"path":"objects/oWaveSafeZone/oWaveSafeZone.yy",},
     {"name":"oZapPlatform","order":10,"path":"objects/oZapPlatform/oZapPlatform.yy",},
-    {"name":"Gav_Room","order":3,"path":"rooms/Gav_Room/Gav_Room.yy",},
+    {"name":"rmGav","order":3,"path":"rooms/rmGav/rmGav.yy",},
     {"name":"rmMainMenu","order":1,"path":"rooms/rmMainMenu/rmMainMenu.yy",},
     {"name":"rmMenuAdventureLogsScreen","order":2,"path":"rooms/rmMenuAdventureLogsScreen/rmMenuAdventureLogsScreen.yy",},
     {"name":"rmStart","order":1,"path":"rooms/rmStart/rmStart.yy",},

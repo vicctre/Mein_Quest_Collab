@@ -15,6 +15,7 @@ baseY = y;
 flying = false;
 flysp = 0;
 attacking = false;
+hit_direction = 1
 
 /* varialble definitions description
 autoscroller_activate_distance - if not undefined will start moving only

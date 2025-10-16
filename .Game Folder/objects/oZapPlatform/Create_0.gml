@@ -13,18 +13,19 @@ sprites = []
 width = 32
 image_speed = 0
 
-function Zap() {
+function Zap(zapped_platforms) {
 	// Set zap state by starting the timer
+    array_push(zapped_platforms, id)
 	zap_timer.reset()
 	image_speed = 1
 	for (var i = 0; i < array_length(adjacent_positions); i++) {
 		var pos = adjacent_positions[i]
 		var adjacent_platform = instance_place(pos.x, pos.y, oZapPlatform)
-		
+
 		if (adjacent_platform != noone) {
 			// Only trigger if the adjacent platform is not already zapped
 			if (!adjacent_platform.IsJustZapped()) {
-				adjacent_platform.Zap()
+				adjacent_platform.Zap(zapped_platforms)
 			}
 		}
 	}
@@ -36,6 +37,10 @@ function IsZap() {
 
 function IsJustZapped() {
     return zap_timer.timer == zap_timer.time
+}
+
+function UnZap() {
+    zap_timer.reset(0)
 }
 
 function InitSprites() {

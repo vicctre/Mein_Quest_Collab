@@ -63,7 +63,7 @@ function game_reset_globals() {
 	if DEV {
 		global.coins = 50
 		global.player_invincible = false
-		 //global.dev_level_goto = Gav_Room
+		 global.dev_level_goto = rmGav
 		//global.dev_level_goto = TrainingRoom
 		// global.skip_logos = true
 		// global.dev_level_goto = rmThanksForPlayingScreen

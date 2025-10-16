@@ -6,3 +6,7 @@ if new_state != undefined {
 	state = new_state
 	new_state.onEnter()
 }
+
+if keyboard_check_pressed(ord("K")) {
+	hp = 0
+}
