@@ -64,7 +64,7 @@ function game_reset_globals() {
 		global.coins = 50
 		global.player_invincible = false
 		 global.dev_level_goto = Gav_Room
-		// global.dev_level_goto = TestingGround
+		 //global.dev_level_goto = TestingGround
 		// global.skip_logos = true
 		// global.dev_level_goto = rmThanksForPlayingScreen
 		// global.dev_level_goto = rmMenuAdventureLogsScreen

@@ -37,7 +37,7 @@ wanderState = {
 
 attackState = {
     id: id,
-    trigger_dist: 128, //distance that activates horizontal attack
+    trigger_dist: trigger_dist, //distance that activates horizontal attack
     finished: false,
 	hitbox_shift_x: -0,
     hitbox_shift_y: -10,
