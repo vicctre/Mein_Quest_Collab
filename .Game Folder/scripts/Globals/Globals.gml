@@ -27,7 +27,6 @@ lose_coins_punishment = 30
 
 goto_stage_select = false
 gui_adjusted = false
-gui_workaround_restart_happened = false
 logo_sequence_speed_scale = 1
 music_gain_array = []
 player = oMein
