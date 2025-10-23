@@ -10,8 +10,8 @@
   "name":"oZapPlatform",
   "overriddenProperties":[],
   "parent":{
-    "name":"Common",
-    "path":"folders/Objects/LevelObjects/Common.yy",
+    "name":"Hazards",
+    "path":"folders/Objects/LevelObjects/Hazards.yy",
   },
   "parentObjectId":{
     "name":"oWall",

@@ -207,7 +207,7 @@
     {"name":"oWall","order":8,"path":"objects/oWall/oWall.yy",},
     {"name":"oWallParent","order":3,"path":"objects/oWallParent/oWallParent.yy",},
     {"name":"oWaveSafeZone","order":2,"path":"objects/oWaveSafeZone/oWaveSafeZone.yy",},
-    {"name":"oZapPlatform","order":10,"path":"objects/oZapPlatform/oZapPlatform.yy",},
+    {"name":"oZapPlatform","order":2,"path":"objects/oZapPlatform/oZapPlatform.yy",},
     {"name":"rmGav","order":3,"path":"rooms/rmGav/rmGav.yy",},
     {"name":"rmKartTest","order":4,"path":"rooms/rmKartTest/rmKartTest.yy",},
     {"name":"rmMainMenu","order":1,"path":"rooms/rmMainMenu/rmMainMenu.yy",},
