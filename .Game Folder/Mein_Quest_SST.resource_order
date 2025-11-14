@@ -416,6 +416,7 @@
     {"name":"sHurtBox","order":4,"path":"sprites/sHurtBox/sHurtBox.yy",},
     {"name":"sHurtBoxPogo","order":5,"path":"sprites/sHurtBoxPogo/sHurtBoxPogo.yy",},
     {"name":"Sister_gem_effect","order":5,"path":"sprites/Sister_gem_effect/Sister_gem_effect.yy",},
+    {"name":"sJump_Effect","order":2,"path":"sprites/sJump_Effect/sJump_Effect.yy",},
     {"name":"sLeafSINGLE","order":1,"path":"sprites/sLeafSINGLE/sLeafSINGLE.yy",},
     {"name":"sLog_Cutscene","order":1,"path":"sprites/sLog_Cutscene/sLog_Cutscene.yy",},
     {"name":"sLog_Ride_Break","order":2,"path":"sprites/sLog_Ride_Break/sLog_Ride_Break.yy",},

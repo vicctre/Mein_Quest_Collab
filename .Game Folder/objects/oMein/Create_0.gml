@@ -657,6 +657,7 @@ function animate() {
 						sprite_index = sPlayerJump
 					} else {
 						sprite_index = sPlayerDoubleJump
+						// I want this to happen right under Mein "sJump_Effect" 
 						if is_animation_end() {
 							image_speed = 0	
 						}

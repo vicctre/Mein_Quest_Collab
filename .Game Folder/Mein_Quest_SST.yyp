@@ -712,6 +712,7 @@
     {"id":{"name":"sInchL","path":"sprites/sInchL/sInchL.yy",},},
     {"id":{"name":"sInchR","path":"sprites/sInchR/sInchR.yy",},},
     {"id":{"name":"Sister_gem_effect","path":"sprites/Sister_gem_effect/Sister_gem_effect.yy",},},
+    {"id":{"name":"sJump_Effect","path":"sprites/sJump_Effect/sJump_Effect.yy",},},
     {"id":{"name":"sKlawkin_Attack","path":"sprites/sKlawkin_Attack/sKlawkin_Attack.yy",},},
     {"id":{"name":"sKlawkin_AttackUp","path":"sprites/sKlawkin_AttackUp/sKlawkin_AttackUp.yy",},},
     {"id":{"name":"sKlawkin_Charge","path":"sprites/sKlawkin_Charge/sKlawkin_Charge.yy",},},

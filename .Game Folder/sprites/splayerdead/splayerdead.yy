@@ -12,18 +12,18 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"74e48453-28fd-4e3f-a3f7-1c7184eef53c","name":"74e48453-28fd-4e3f-a3f7-1c7184eef53c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"be28fae7-ba36-4c2e-ae47-266cebb874af","name":"be28fae7-ba36-4c2e-ae47-266cebb874af","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":36,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"afa19675-ae57-4f40-b801-fa1065b2f972","blendMode":0,"displayName":"default","isLocked":false,"name":"afa19675-ae57-4f40-b801-fa1065b2f972","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"97bedf06-5462-462b-8be7-a6ce963a9eac","blendMode":0,"displayName":"default","isLocked":false,"name":"97bedf06-5462-462b-8be7-a6ce963a9eac","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sPlayerDead",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Movement",
     "path":"folders/Sprites/Characters/Mein/Movement.yy",
@@ -71,14 +71,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"74e48453-28fd-4e3f-a3f7-1c7184eef53c","path":"sprites/sPlayerDead/sPlayerDead.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7a32b1ca-0773-4e00-95d3-b57921020993","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"be28fae7-ba36-4c2e-ae47-266cebb874af","path":"sprites/sPlayerDead/sPlayerDead.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"724d383c-8996-4872-84f6-b2dd3cbc90b9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
     "xorigin":24,
-    "yorigin":18,
+    "yorigin":19,
   },
   "swatchColours":null,
   "swfPrecision":2.525,
